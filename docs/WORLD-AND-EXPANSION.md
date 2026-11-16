@@ -1,5 +1,7 @@
 # World and expansion
 
+R3.1 update: the owner requested visual refinement after accepting R3 technically. Current native art/framing, 1,091 passing assertions and 574-map-descendant measurements are recorded in [R3.1 validation](R31-VALIDATION.md). The [modular art recommendation](R31-ART-STRATEGY.md) remains a proposal; no uploads or future gameplay are authorized. Historical R3 measurements below are retained.
+
 Status: procedural sectors, 2D construction and bounded expansion are confirmed. Generation algorithms and limits are proposals D04/D05. See [Data](DATA-AND-SECURITY.md) for storage ownership and [UI](UI-UX.md) for interactions.
 
 ## Sector identity and generation
@@ -33,6 +35,8 @@ Proposed later region consolidation replaces a completed region's interior with 
 National Eras provide additional progression but remain optional. Long-term alternatives are region upgrades and consolidation. An endlessly growing list of consolidated regions also needs higher-level merging and a bounded history strategy. Approval and a tested design for this are required before claiming virtually unlimited expansion at launch.
 
 ## Map rendering and data interest
+
+R3 presentation prototype (implemented, not a world-generation milestone): the existing 1200×800 authored plane is retained, with 17 cosmetic patches, five asset markers and three sample links. Rendering has independent terrain/infrastructure/connection/label/selection containers, a fixed reusable pool, conservative viewport culling and a hard 600-map-descendant ceiling. Actual fixture count is 448. No sector acquisition, authority, resync protocol or persistent 1024-unit sector conversion is implemented. The mechanisms below remain future contracts; native art does not prove their larger-world budgets. See [R3 validation](R3-VALIDATION.md).
 
 Partition GUI rendering into sector chunks indexed by a spatial lookup. Compute visible world bounds from pan/zoom; request only owned visible chunks plus a one-chunk margin. Server validates interest requests against ownership and request-size/rate limits. Preview descriptors expose only permitted information. Maintain a small LRU cache; discard stale revisions on resync.
 

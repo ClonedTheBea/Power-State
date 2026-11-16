@@ -1,0 +1,37 @@
+--!strict
+local CurrencyFormat = require(game:GetService("ReplicatedStorage").Shared.Util.CurrencyFormat)
+return function()
+	local count = 0
+	local function check(value: number?, compact: boolean, expected: string)
+		assert(CurrencyFormat.format(value, compact) == expected, "Currency formatting: " .. tostring(value))
+		count += 1
+	end
+	check(nil, false, "Unavailable")
+	check(0 / 0, false, "Unavailable")
+	check(math.huge, false, "Unavailable")
+	check(-1, false, "Unavailable")
+	check(0.5, false, "Unavailable")
+	check(10 ^ 15 + 1, false, "Unavailable")
+	check(0, false, "0 Credits")
+	check(1, false, "0.01 Credits")
+	check(99, false, "0.99 Credits")
+	check(100, false, "1 Credits")
+	check(110, false, "1.10 Credits")
+	check(99999, false, "999.99 Credits")
+	check(100000, false, "1,000 Credits")
+	check(10000000, false, "100,000 Credits")
+	check(123456789, false, "1,234,567.89 Credits")
+	check(10 ^ 15, false, "10,000,000,000,000 Credits")
+	check(99999, true, "999.99 Credits")
+	check(100000, true, "1K Credits")
+	check(123456, true, "1.23K Credits")
+	check(99999999, true, "999.99K Credits")
+	check(10000000, true, "100K Credits")
+	check(100000000, true, "1M Credits")
+	check(125000000, true, "1.25M Credits")
+	check(100000000000, true, "1B Credits")
+	check(100000000000000, true, "1T Credits")
+	check(10 ^ 15, true, "10T Credits")
+	print(string.format("[Power State R1 Currency] PASS: %d assertions", count))
+	return count
+end

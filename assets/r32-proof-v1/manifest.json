@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "atlasRevision": 1,
+  "atlasKey": "power-state-map-proof-v1",
+  "atlasFile": "power-state-map-proof-v1.png",
+  "atlasSha256": "6e58f3094f50a08d15178d5b32ae5cf3c48af62a8adfde86a0b29587a97348b1",
+  "size": [
+    1024,
+    1024
+  ],
+  "format": "8-bit RGBA PNG, straight alpha, embedded sRGB",
+  "gutterPx": 8,
+  "processing": "Alpha-bounds crop; uniform premultiplied-alpha Lanczos fit; centred inside unchanged content canvas; 8-step RGB edge dilation without alpha expansion",
+  "provenance": {
+    "date": "2026-11-15",
+    "tool": "OpenAI built-in image_gen",
+    "model": "Not exposed by tool",
+    "references": "Text briefs only; no reference image supplied",
+    "promptRecord": "production-inputs.json",
+    "rightsStatus": "AI-generated local proof; no third-party input art. No legal or exclusivity assurance; owner rights/destination review pending before upload.",
+    "ownerVisualAcceptance": "Pending",
+    "uploadApproval": false,
+    "robloxAssetId": null
+  },
+  "sprites": [
+    {
+      "artId": "coast-headland",
+      "artRevision": 1,
+      "cell": [
+        0,
+        0,
+        512,
+        512
+      ],
+      "sourceRect": [
+        8,
+        8,
+        496,
+        496
+      ],
+      "worldCanvasSize": [
+        248,
+        248
+      ],
+      "pivotPx": [
+        248,
+        248
+      ],
+      "groundAnchorWorld": [
+        217.5,
+        362.5
+      ],
+      "visualBounds": [
+        93.5,
+        238.5,
+        248,
+        248
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:west-cape"
+      ],
+      "renderOrder": "shore-base-before-native-meadows",
+      "sourceFile": "sources/coast-headland-generated.png",
+      "sourceSha256": "da4ed0240bd6d291939462f17626b7df423e1552d5d56eafbf113e5400e63e17",
+      "exportFile": "sprites/coast-headland.png",
+      "exportSha256": "94b06830a1032aaff42ca23960892d3283ae6fa0ad153147718d3743445f5734",
+      "sourceAlphaCrop": [
+        0,
+        8,
+        1464,
+        1067
+      ],
+      "uniformFitSize": [
+        480,
+        347
+      ],
+      "contentPlacement": [
+        8,
+        74
+      ],
+      "edgeProfile": {
+        "status": "Local review only; coast join not approved"
+      }
+    },
+    {
+      "artId": "mountain-ridge",
+      "artRevision": 1,
+      "cell": [
+        512,
+        0,
+        512,
+        256
+      ],
+      "sourceRect": [
+        520,
+        8,
+        496,
+        240
+      ],
+      "worldCanvasSize": [
+        248,
+        120
+      ],
+      "pivotPx": [
+        248,
+        120
+      ],
+      "groundAnchorWorld": [
+        587.5,
+        180
+      ],
+      "visualBounds": [
+        463.5,
+        120.0,
+        248,
+        120
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:highlands"
+      ],
+      "renderOrder": "terrain",
+      "sourceFile": "sources/mountain-ridge-generated.png",
+      "sourceSha256": "767e477ce4d79aa98b249dd61dceed7492cefae4f39916e8345f4679fc2ba619",
+      "exportFile": "sprites/mountain-ridge.png",
+      "exportSha256": "a750cda29c249240490d1988590158a27876e0ec3d5965124af52ea3dd4c74cf",
+      "sourceAlphaCrop": [
+        0,
+        9,
+        1798,
+        875
+      ],
+      "uniformFitSize": [
+        465,
+        224
+      ],
+      "contentPlacement": [
+        15,
+        8
+      ],
+      "edgeProfile": {
+        "status": "Isolated organic silhouette; no tiling contract"
+      }
+    },
+    {
+      "artId": "forest-cluster",
+      "artRevision": 1,
+      "cell": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "sourceRect": [
+        520,
+        264,
+        240,
+        240
+      ],
+      "worldCanvasSize": [
+        150,
+        150
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "groundAnchorWorld": [
+        290,
+        422.5
+      ],
+      "visualBounds": [
+        215.0,
+        347.5,
+        150,
+        150
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:wood-west"
+      ],
+      "renderOrder": "terrain",
+      "sourceFile": "sources/forest-cluster-generated.png",
+      "sourceSha256": "55ff02f81c15e3ae5e5c8ee2957b0e8849b87c22a8bb233574a2d0340bf29722",
+      "exportFile": "sprites/forest-cluster.png",
+      "exportSha256": "8a58947795deac641e9140238a7c596f17ac6abcbbbdd9682aa92b53f5218359",
+      "sourceAlphaCrop": [
+        0,
+        10,
+        1236,
+        1254
+      ],
+      "uniformFitSize": [
+        223,
+        224
+      ],
+      "contentPlacement": [
+        8,
+        8
+      ],
+      "edgeProfile": {
+        "status": "Isolated organic silhouette; no tiling contract"
+      }
+    },
+    {
+      "artId": "agriculture",
+      "artRevision": 1,
+      "cell": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "sourceRect": [
+        776,
+        264,
+        240,
+        240
+      ],
+      "worldCanvasSize": [
+        160,
+        160
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "groundAnchorWorld": [
+        772.5,
+        430
+      ],
+      "visualBounds": [
+        692.5,
+        350.0,
+        160,
+        160
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:fields"
+      ],
+      "renderOrder": "terrain",
+      "sourceFile": "sources/agriculture-generated.png",
+      "sourceSha256": "d7bf151fa074fe96463694ab19697470e8d84fbea14f220a060fad492d5d9421",
+      "exportFile": "sprites/agriculture.png",
+      "exportSha256": "e1d82b6ca5693cac8bfb68eb9b2ed6e21661c8a9fa512fff34e38c6fc7b56ade",
+      "sourceAlphaCrop": [
+        0,
+        0,
+        1253,
+        1254
+      ],
+      "uniformFitSize": [
+        224,
+        224
+      ],
+      "contentPlacement": [
+        8,
+        8
+      ],
+      "edgeProfile": {
+        "status": "Isolated organic silhouette; no tiling contract"
+      }
+    },
+    {
+      "artId": "settlement",
+      "artRevision": 1,
+      "cell": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "sourceRect": [
+        8,
+        520,
+        240,
+        240
+      ],
+      "worldCanvasSize": [
+        150,
+        150
+      ],
+      "pivotPx": [
+        120,
+        160
+      ],
+      "groundAnchorWorld": [
+        755,
+        300
+      ],
+      "visualBounds": [
+        680.0,
+        200.0,
+        150,
+        150
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:newford"
+      ],
+      "renderOrder": "terrain",
+      "sourceFile": "sources/settlement-generated.png",
+      "sourceSha256": "7898b7a54f6ba74f8f7e4772149e6ca9e9c15ad23ff05be1b5cad826156d159e",
+      "exportFile": "sprites/settlement.png",
+      "exportSha256": "1e9045a9e843586319d255db1722765436a9b6b8ce690b1e46b26519c79d5ecc",
+      "sourceAlphaCrop": [
+        0,
+        9,
+        1282,
+        1180
+      ],
+      "uniformFitSize": [
+        224,
+        205
+      ],
+      "contentPlacement": [
+        8,
+        17
+      ],
+      "edgeProfile": {
+        "status": "Isolated organic silhouette; no tiling contract"
+      }
+    },
+    {
+      "artId": "gas-station",
+      "artRevision": 1,
+      "cell": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "sourceRect": [
+        264,
+        520,
+        240,
+        240
+      ],
+      "worldCanvasSize": [
+        150,
+        150
+      ],
+      "pivotPx": [
+        120,
+        160
+      ],
+      "groundAnchorWorld": [
+        340,
+        345
+      ],
+      "visualBounds": [
+        265.0,
+        245.0,
+        150,
+        150
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:industry"
+      ],
+      "renderOrder": "terrain",
+      "sourceFile": "sources/gas-station-generated.png",
+      "sourceSha256": "6e40aae5fdd3b698e56d5344e9321b70e88b305d8db413d4ba0e344e3df91b3e",
+      "exportFile": "sprites/gas-station.png",
+      "exportSha256": "900266a0853cfd9135aad5478b6af52eed37527b1a2ae8cdabe3ba71f7b2461d",
+      "sourceAlphaCrop": [
+        0,
+        19,
+        1293,
+        1159
+      ],
+      "uniformFitSize": [
+        224,
+        197
+      ],
+      "contentPlacement": [
+        8,
+        21
+      ],
+      "edgeProfile": {
+        "status": "Isolated organic silhouette; no tiling contract"
+      }
+    }
+  ]
+}

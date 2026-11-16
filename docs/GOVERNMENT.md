@@ -1,6 +1,10 @@
 # Government
 
-Status: Government owns national policy, research, subsidies, major projects and strategic upgrades. Policy values and administrative mechanics are proposals D06/D09. [Economy](ECONOMY-AND-REBIRTHS.md) defines the single treasury.
+Status: Government owns national policy, research, subsidies, major projects and strategic upgrades. Policy values and administrative mechanics are proposals D06/D09. [Economy](ECONOMY-AND-REBIRTHS.md) defines the single Bank balance.
+
+## Future interface
+
+Owner-confirmed R1 clarification: Government will use inner tabs **Overview, Policies, Projects, Priorities and Legislation**. This is a future layout requirement, not R1 implementation or approval of new legislation/election gameplay. Tab contents remain governed by the relevant phase and system decisions.
 
 ## Responsibilities and data
 
@@ -14,8 +18,8 @@ Budget categories: operations, maintenance, development, research and subsidies.
 | --- | --- | --- |
 | Household tariff | Changes billed price and residential demand elasticity | High rates reduce approval and growth |
 | Efficiency campaign | Reduces residential MW per resident after enactment | Program cost and gradual adoption |
-| Industrial development grant | Accelerates funded industry's development | Greater future MW demand; treasury expense |
-| Clean-energy support | Discounts eligible construction from a finite subsidy envelope | Consumes treasury allocation; no unlimited refund |
+| Industrial development grant | Accelerates funded industry's development | Greater future MW demand; expense paid from the Bank |
+| Clean-energy support | Discounts eligible construction from a finite subsidy envelope | Consumes a budget allocation from the Bank; no unlimited refund |
 | Emissions standard | Restricts dirty-plant dispatch or adds an explicit emissions operating cost | May reduce affordable capacity and approval in underserved regions |
 | Reliability standard | Sets reserve targets and manager maintenance priorities | Less optional export and more maintenance spending |
 

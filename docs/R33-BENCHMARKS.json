@@ -1,0 +1,153 @@
+{
+  "date": "2026-11-16",
+  "studioVersion": "0.747.330.7470002",
+  "device": "Intel Core i9-11900K; NVIDIA RTX 3090; approximately 32 GiB RAM",
+  "settings": "Studio desktop, warm modules; graphics quality not recorded; no atlas request or GPU/texture-memory measurement",
+  "method": "Three passes per mode and safe-root; 360 synchronous draw calls then 120 rendered pan/zoom frames per pass; Native here retains the attached proof pool, dormant; existing R3 native baseline separately measured",
+  "samples": [
+    {
+      "mode": "Native",
+      "safeRoot": [
+        360,
+        580
+      ],
+      "passNumber": 1,
+      "drawP50Ms": 0.045,
+      "drawP95Ms": 0.437,
+      "frameP50Ms": 16.62,
+      "frameP95Ms": 17.88
+    },
+    {
+      "mode": "Hybrid",
+      "safeRoot": [
+        360,
+        580
+      ],
+      "passNumber": 1,
+      "drawP50Ms": 0.048,
+      "drawP95Ms": 0.418,
+      "frameP50Ms": 16.56,
+      "frameP95Ms": 17.79
+    },
+    {
+      "mode": "Native",
+      "safeRoot": [
+        360,
+        580
+      ],
+      "passNumber": 2,
+      "drawP50Ms": 0.045,
+      "drawP95Ms": 0.411,
+      "frameP50Ms": 16.63,
+      "frameP95Ms": 17.86
+    },
+    {
+      "mode": "Hybrid",
+      "safeRoot": [
+        360,
+        580
+      ],
+      "passNumber": 2,
+      "drawP50Ms": 0.047,
+      "drawP95Ms": 0.507,
+      "frameP50Ms": 16.59,
+      "frameP95Ms": 17.79
+    },
+    {
+      "mode": "Native",
+      "safeRoot": [
+        360,
+        580
+      ],
+      "passNumber": 3,
+      "drawP50Ms": 0.046,
+      "drawP95Ms": 0.421,
+      "frameP50Ms": 16.62,
+      "frameP95Ms": 17.84
+    },
+    {
+      "mode": "Hybrid",
+      "safeRoot": [
+        360,
+        580
+      ],
+      "passNumber": 3,
+      "drawP50Ms": 0.047,
+      "drawP95Ms": 0.429,
+      "frameP50Ms": 16.61,
+      "frameP95Ms": 18.15
+    },
+    {
+      "mode": "Native",
+      "safeRoot": [
+        1366,
+        704
+      ],
+      "passNumber": 1,
+      "drawP50Ms": 0.048,
+      "drawP95Ms": 0.544,
+      "frameP50Ms": 16.62,
+      "frameP95Ms": 17.72
+    },
+    {
+      "mode": "Hybrid",
+      "safeRoot": [
+        1366,
+        704
+      ],
+      "passNumber": 1,
+      "drawP50Ms": 0.047,
+      "drawP95Ms": 0.541,
+      "frameP50Ms": 16.64,
+      "frameP95Ms": 17.56
+    },
+    {
+      "mode": "Native",
+      "safeRoot": [
+        1366,
+        704
+      ],
+      "passNumber": 2,
+      "drawP50Ms": 0.044,
+      "drawP95Ms": 0.563,
+      "frameP50Ms": 16.63,
+      "frameP95Ms": 17.95
+    },
+    {
+      "mode": "Hybrid",
+      "safeRoot": [
+        1366,
+        704
+      ],
+      "passNumber": 2,
+      "drawP50Ms": 0.046,
+      "drawP95Ms": 0.544,
+      "frameP50Ms": 16.67,
+      "frameP95Ms": 17.71
+    },
+    {
+      "mode": "Native",
+      "safeRoot": [
+        1366,
+        704
+      ],
+      "passNumber": 3,
+      "drawP50Ms": 0.08,
+      "drawP95Ms": 0.752,
+      "frameP50Ms": 16.61,
+      "frameP95Ms": 17.66
+    },
+    {
+      "mode": "Hybrid",
+      "safeRoot": [
+        1366,
+        704
+      ],
+      "passNumber": 3,
+      "drawP50Ms": 0.045,
+      "drawP95Ms": 0.529,
+      "frameP50Ms": 16.63,
+      "frameP95Ms": 17.81
+    }
+  ]
+}

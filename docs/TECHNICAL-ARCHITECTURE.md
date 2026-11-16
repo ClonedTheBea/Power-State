@@ -1,14 +1,20 @@
 # Technical architecture
 
-Status: Roblox, Luau, GUI-only and server authority are confirmed. Module layout, tool choices, budgets and protocols are proposals D01–D05/D16–D17. API references were checked on 15 November 2026; no software or Roblox integration has been exercised in this task.
+Status: P1 uses plain strict Luau modules, the existing Rojo mapping and a dependency-free Studio harness (D01/D17–D19). Future services, budgets and protocols remain proposals. API references were checked on 15 November 2026; observed runtime evidence is in [P1 validation](P1-VALIDATION.md).
+
+R2 evolves only the client presentation layer. `DashboardView` composes HeaderView, KpiStripView, NavigationView/NavigationIcon, DrawerView, the existing MapView, InspectorView and FeedbackView. `AppController` coordinates routes and local selection; `KeyboardController` owns focus/activation; `MapInputController` owns map input; `MapController` retains bounded camera/pointer behavior. Pure `Layout` and `ShellState` are presentation utilities, not server models. Scope owns connection cleanup. The frozen preview fixture remains the sole sample-data source, with no new server services/remotes/dependencies. See [R2 validation](R2-VALIDATION.md) and D33–D37.
+
+R3 replaces only the map presentation: `Views/Map/MapFixture` is immutable cosmetic data, `MapArt` builds native illustration primitives, `MapGeometry` handles visibility/zoom bands and `TerrainRenderer` owns a bounded reusable patch pool. `MapView` keeps infrastructure/links/labels/selection independent; `MapController` retains camera/input and adds explicit Locate. Layers reuses DrawerView and the existing action/focus registry. All gameplay/server boundaries remain unchanged. See D38–D40 and [R3 validation](R3-VALIDATION.md) for measured counts/timing and limitations; native construction does not need asset downloads/uploads.
 
 ## Architecture recommendation
+
+R3.3 adds an isolated cosmetic proof: `SpriteManifest`, `SpriteAtlasLoader` and `SpriteTerrainRenderer` live beside native TerrainRenderer. Only the test mapping's HybridProof attaches them. The manifest is immutable; the loader is injected and synthetic with no hosted image; the renderer owns six fixed ImageLabels and replacement visibility. Native terrain remains the default with no added instances in production. No app state, camera, asset coordinates or gameplay authority moves into these modules. See [R3.3 boundary and validation](R33-VALIDATION.md).
 
 Use one Roblox experience place initially, with multiple independent countries per server. Disable ordinary character-driven gameplay as part of the Studio shell setup; the user interface is the game surface. No Workspace model is the canonical representation of an electrical asset. Render strategic state through client GUI objects and keep the full country graph in server tables.
 
 Prefer plain typed modules and explicit dependency injection before adopting a large framework. Pure domain modules depend on data and injected clock/random interfaces, never Roblox services. Service adapters own network, storage and cross-server calls. Client controllers consume view models and send intent. This separation makes solver/economy tests possible without creating a live server.
 
-## Proposed source layout (not created yet)
+## Source layout (foundation created in P1; gameplay modules deferred)
 
 | Future path | Roblox destination / role |
 | --- | --- |
@@ -24,11 +30,23 @@ Prefer plain typed modules and explicit dependency injection before adopting a l
 | `src/client/Bootstrap.client.luau` | Client initialization only |
 | `tests/unit/`, `tests/integration/`, `tests/fixtures/` | Test suites and versioned saved/replay examples |
 | `assets/` | Curated source assets with provenance; separate from canonical country state |
-| `default.project.json` | Future Rojo mapping, reviewed before Studio sync |
+| `default.project.json` | Owner Rojo mapping, retained and build-verified |
+
+P1 adds client Theme, Navigation, PreviewData and Util/Scope; shared Types/ShellTypes and Util/Layout/MapTransform. AppController owns navigation/lifecycle; MapController owns pointer input; KeyboardController owns focus traversal; Views own GUI construction. Server Bootstrap only disables automatic characters. Catalog, Domain, Services and Adapters contain placeholders. See the [file inventory](P1-VALIDATION.md#file-inventory).
 
 Use PascalCase files/modules/types, camelCase functions/fields and UPPER_SNAKE_CASE constants. Use `.server.luau`/`.client.luau` suffixes for entry scripts after verifying pinned Rojo handling; ordinary modules use `.luau`. Strict Luau is recommended, with explicit boundary validation. Comments explain units, invariants and algorithm decisions. Avoid circular service dependencies: pass narrow interfaces or publish typed domain events through the country orchestrator.
 
 ## Ownership and contracts
+
+### Proposed redesign integration (no code changes)
+
+The [GUI layout migration](GUI-LAYOUT-SPEC.md#migration-and-validation-plan) evolves existing Theme/Views/Controllers and pure Layout/MapTransform modules; it does not introduce a framework or move gameplay into the client. New Header/KpiStrip/Navigation/NewsTicker/Shop views can be extracted as cohesive modules when their slices are authorized. Shared behavior and local view models serve every screen size. Preview adapters remain clearly separate from future authoritative snapshots.
+
+A future chunk/layer renderer consumes versioned sector descriptors and server asset state, pools bounded instances and varies cosmetic detail by zoom. Artwork cannot define ownership, line capacity, terrain legality, demand or latent faults. Existing world/replication budgets still apply; no giant static country image or unbounded decorative object graph.
+
+Energy Shop is a separate, unscheduled live integration after ledger/persistence gates. Proposed `CommerceService` in server Services serializes Credits purchases/benefit timing with country settlement; a narrow `MarketplaceAdapter` in server Adapters verifies platform pass ownership. Economy consumes one server-derived factor (1 or 2), never client multipliers. Commerce data sits outside era-reset country state. UI may fetch player-appropriate price metadata for display but cannot authorize payment or rewards. [Data/security](DATA-AND-SECURITY.md#energy-shop-persistence-and-authority-design-only) defines checkpoint/fencing proposals and unresolved approval gates. No commerce modules/remotes are added by the design task.
+
+The header has no permanent Standard simulation indicator; paused/delayed/unavailable states appear only when relevant (D27). No simulation-speed controls or paid acceleration are part of the design (D22); a future server-owned suspension contract must freeze both progression and temporary-benefit time rather than trust local menu state.
 
 | Module/service | Owns | Inputs → outputs |
 | --- | --- | --- |
@@ -66,7 +84,7 @@ Avoid Parallel Luau/Actors initially. Pure country steps may become candidates a
 
 ## Development workflow and human boundary
 
-Proposed workflow: source edited locally → format/type/test checks → Rojo build/sync into a dedicated development Studio place → Studio server/client/device tests → review → separately authorized publish. Git/GitHub provide history and review once repository setup is authorized; no repository was initialized in this task.
+P1 workflow: source → local build/boundary checks → Rojo sync into the owner's development Studio place → Studio Script Analysis/runtime/device tests → review → separately authorized publish. The owner initialized Git before P1. Build artifacts are ignored under `.build/`; a separate mapping adds tests only to the test build. Commands are in [Studio setup](STUDIO-SETUP.md).
 
 Rojo has a server/CLI and Studio plugin, with a matching major version required. The official [installation guide](https://rojo.space/docs/v7/getting-started/installation/) documents those components. Pin exact tool versions when P1 begins; this blueprint does not claim a specific latest release. Prefer the official Rojo toolchain path, with installation still requiring authorization. A package manager, formatting tool and test framework are optional until deliberately selected.
 
@@ -98,4 +116,4 @@ Checked 15 November 2026 by reading official project/platform documentation. The
 
 ## Acceptance
 
-P1 proves tool/version selection and a responsive GUI shell only after authorized setup. P2 proves pure simulation contracts; P3 proves persistence against an isolated Roblox environment. Profiling gates precede higher world caps, extra countries per server and event launch. No document here constitutes evidence that a tool is installed, an API succeeds under load or the target frame rate has been reached.
+Current presentation evidence and remaining hardware checks are recorded in [R3 validation](R3-VALIDATION.md); [P1 validation](P1-VALIDATION.md) preserves the initial milestone. P2 proves simulation contracts; P3 proves persistence against an isolated Roblox environment. Profiling gates precede higher world caps, extra countries per server and event launch. Written performance targets are not measured results.

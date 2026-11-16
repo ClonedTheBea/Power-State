@@ -27,7 +27,7 @@ An inspection produces findings and confidence; it does not restore condition. A
 | Research manager | Runs research queue | Approved priorities and funded research budget |
 | Government adviser | Explains policy effects and flags pressure | Recommendation only unless an explicit policy automation is enabled |
 
-MVP has a starter abstraction for operation; staff simulation arrives later. Proposed staff representation is teams/counts by role and skill tier, not hundreds of individual NPCs. Each team has wage/hour, availability, assigned order and supported capabilities. Hiring costs and payroll are treasury expenses; firing cannot cancel already-spent work into a refund. Team count and work queue length have explicit caps (proposed 32 teams and 128 queued orders per country).
+MVP has a starter abstraction for operation; staff simulation arrives later. Proposed staff representation is teams/counts by role and skill tier, not hundreds of individual NPCs. Each team has wage/hour, availability, assigned order and supported capabilities. Hiring costs and payroll are expenses paid from the Bank; firing cannot cancel already-spent work into a refund. Team count and work queue length have explicit caps (proposed 32 teams and 128 queued orders per country).
 
 ## Inspection modes
 

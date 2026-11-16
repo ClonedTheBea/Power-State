@@ -1,10 +1,14 @@
 # Development roadmap
 
-Status: proposed implementation sequence. P0 is this documentation milestone. **Stop after P0 until the owner requests implementation.** Each later phase is independently reviewable; acceptance requires observed evidence, not only written specifications. See [Decisions](docs/DECISIONS.md) for approvals and [Testing](docs/TESTING.md) for shared gates.
+Latest authorized task: **R3.2 art-proof planning complete**; see [the proposal and planning checks](docs/R32-ART-PROOF-PLAN.md). This supersedes the earlier R3.1 stop point only for documentation. Artwork production, uploads and hybrid implementation remain unstarted and require separate authorization.
+
+Status: P0 complete. P1 implementation authorized by the owner and implemented on 15 November 2026; validation evidence and remaining manual checks are recorded below. **Stop before P2.** Each later phase is independently reviewable; acceptance requires observed evidence, not only written specifications. See [Decisions](docs/DECISIONS.md) for approvals and [Testing](docs/TESTING.md) for shared gates.
+
+GUI redesign follow-up: the three specifications are approved. **R1, R2 and R3 implemented under separate owner requests.** R2 desktop visual review was accepted in the R3 request. R3 adds a bounded modular illustrated map and retains the placeholder-data boundary. See [R3 validation](docs/R3-VALIDATION.md) for current checks and remaining visual/hardware acceptance. R3.1 visual refinement was subsequently authorized and implemented; see [R3.1 validation](docs/R31-VALIDATION.md) and [art strategy](docs/R31-ART-STRATEGY.md). Stop after R3.1: R4/R5/P2, dependencies and monetisation are not authorized.
 
 P1–P4 together produce the first playable. A passing phase does not authorize installation, publishing, committing or pushing outside the user's instructions. At each boundary report actual deliverables, checks run, manual Studio work and remaining limitations.
 
-## P0 — Blueprint (current task)
+## P0 — Blueprint (complete)
 
 - **Scope:** inspect existing folder; produce the 19 requested Markdown documents and verify current API/tool recommendations using official sources.
 - **Dependencies:** supplied product brief; access to local folder and official documentation.
@@ -13,7 +17,7 @@ P1–P4 together produce the first playable. A passing phase does not authorize 
 - **Testing:** document completeness/link checks and manual consistency review. Gameplay tests are not applicable yet.
 - **Out of scope:** implementation, tool installation, Git initialization, Studio configuration and deployment.
 
-## P1 — Development foundation and responsive GUI shell (recommended next)
+## P1 — Development foundation and responsive GUI shell (implemented)
 
 - **Scope:** choose/pin authorized tooling, establish proposed client/server/shared structure and a responsive GUI shell. Resolve D01, initial D12 choices and D17.
 - **Dependencies:** P0; owner implementation request; authorization for any necessary installations; available Studio access.
@@ -22,7 +26,21 @@ P1–P4 together produce the first playable. A passing phase does not authorize 
 - **Testing:** build/type checks available in the selected toolchain; Studio launch; resize/touch-emulation checks; basic harness verification.
 - **Out of scope:** persistent player data, electrical dispatch, money, real construction and all social systems.
 
+Implementation status:
+
+- [x] Preserve existing Rojo mapping/tool pin; establish strict client/shared/server modules.
+- [x] Responsive dashboard, reusable components, navigation, illustrative pannable/zoomable map and inspector.
+- [x] Loading/notice/error previews, startup error fallback, keyboard navigation and connection cleanup.
+- [x] Dependency-free test harness; normal/test Rojo builds and static boundary checks.
+- [x] Studio runtime: 98 pure layout/map assertions and 80 engine GUI assertions passed.
+- [x] Setup instructions, implementation decisions and evidence/file inventory documented.
+- [ ] Owner visual acceptance and actual touch-device checks (safe areas, dragging, rotation, long-session usability).
+
+See [P1 validation](docs/P1-VALIDATION.md) for exact evidence and limitations. This is a presentation shell, not the first playable. No future-phase feature is authorized by completion of P1.
+
 ## P2 — Small country and electricity slice
+
+The GUI redesign does not authorize or start this phase. See the separate review/migration sequence below.
 
 - **Scope:** starter map/asset fixture, fixed simulation clock, one generator type, aggregate demand, substations and capacity-constrained transmission. Resolve D02–D04.
 - **Dependencies:** P1; pure domain test harness.
@@ -87,7 +105,7 @@ P1–P4 together produce the first playable. A passing phase does not authorize 
 
 ## P7 — Government, research and industry
 
-- **Scope:** tariff and efficiency policies, subsidies within one treasury, approval/industry effects, one research chain, one national project, research manager and government adviser roles.
+- **Scope:** tariff and efficiency policies, subsidies within one Bank balance, approval/industry effects, one research chain, one national project, research manager and government adviser roles.
 - **Dependencies:** P6b; D06/D09 policy model; bounded order/budget services.
 - **Deliverables:** Government tab, DerivedModifiers, DAG research, staged project commissioning and tutorial lessons 8–10 including practice emergency.
 - **Acceptance:** policies change actual demand/cost/growth; unfunded programmes pause; project completion creates ordinary constrained assets once; full ten-lesson tutorial is available and replayable.
@@ -101,7 +119,7 @@ P1–P4 together produce the first playable. A passing phase does not authorize 
 - **Deliverables:** era UI/service, eligibility report, permanent-upgrade catalog and migration fixtures.
 - **Acceptance:** reset applies once or not at all after failure; current infrastructure/money/population reset; lifetime statistics/achievements persist; a player can decline and continue playing.
 - **Testing:** lost response, reconnect during reset, old request replay, max numeric thresholds, maximum-upgrade stacks and no starter-money farming.
-- **Out of scope:** forced rebirth, premium boosts, profiles/rankings publication and event participation until their phases.
+- **Out of scope:** forced rebirth, shop implementation (separate milestone), profiles/rankings publication and event participation until their phases.
 
 ## P9 — Company profiles, achievements and rankings
 
@@ -139,6 +157,43 @@ P1–P4 together produce the first playable. A passing phase does not authorize 
 - **Testing:** aggregate-versus-detailed scenario comparison, migration recovery, repeated consolidation and multi-hour load tests.
 - **Out of scope:** promising literal infinity, silently forcing eras, implementing elections or AC power flow merely because they are listed as possibilities.
 
+## GUI redesign — separate review and migration sequence
+
+Design-only R0 deliverables: [GUI vision](docs/GUI-VISION.md), [layout specification](docs/GUI-LAYOUT-SPEC.md) and [component specification](docs/GUI-COMPONENT-SPEC.md), plus terminology/economy/security decisions. All eight Inspiration references reviewed; code, tests, mappings and assets preserved. No approved price or live purchase path exists.
+
+Implementation slices (R1–R3 authorized; later slices require a separate task):
+
+1. **R1 — implemented:** approved theme tokens, Bank/Credits copy, integer-minor-unit formatter and exact Bank details control; P1 layout/navigation/map preserved. Existing suites retained; currency/GUI coverage added. See [R1 validation](docs/R1-VALIDATION.md) for passing local and engine checks plus remaining hardware/accessibility review.
+2. **R2 — implemented:** compact responsive header/operational metrics, grouped/collapsible navigation, phone five-item bar, inspector stages, local text enlargement and explicit map/UI input paths. Selection/camera survive panel and route transitions. Future routes stay previews. See [validation and remaining acceptance](docs/R2-VALIDATION.md).
+3. **R3 — implemented:** modular native terrain/asset artwork, separate connections/labels/selection, zoom detail/culling, layer availability/overlay controls and Locate. Existing world coordinates and input paths retained. See [R3 evidence](docs/R3-VALIDATION.md); no procedural expansion or solver implementation.
+   **R3.1 — implemented:** settled-layout camera framing, richer native relief/settlement/infrastructure motifs; 1,091 assertions passed and 574 map descendants within the existing 600 ceiling. No external art introduced. Hybrid artwork is a documented recommendation, pending separate approval.
+4. **R4:** sample ticker, news/alert components, reduced-motion and collapse behavior; no live feeds.
+5. **R5:** nontransactional Energy Shop preview with Credits/Robux states; no platform prompts, grants or purchase remotes.
+
+Each slice runs relevant builds/Script Analysis/regression tests, then desktop/tablet/mobile and input-accessibility checks. See the [detailed migration and validation plan](docs/GUI-LAYOUT-SPEC.md#migration-and-validation-plan). Sample map/news/shop states must remain labelled; new art provenance/upload authorization is separate. Successful mock screens do not satisfy future domain acceptance.
+
+R2 completion evidence: both Rojo builds/static checks passed; final Studio suites passed 324/26/348/16/135 assertions (849 total); final edit-mode Script Analysis reported zero errors/warnings. The ten-minute smoke passed 591 cycles with 411 GUI descendants stable; final orientation/covered-focus fixes were followed by targeted device/regression checks. Desktop, iPhone portrait/landscape, tablet and gamepad emulator paths were inspected. The owner accepted R2 desktop visuals in the subsequent R3 request; actual touch/controller hardware remains outstanding. See the historical R2 report for precise limitations. R3 evidence is recorded separately.
+
+R3 completion evidence: both Rojo builds/static checks passed; Studio suites passed 1,039 assertions including 190 R3 assertions, with zero Script Analysis errors/warnings. The 600.8-second smoke passed 591 cycles with 803 shell descendants stable (448 map descendants). A subsequent resize-focus correction passed full regressions and phone orientation checks. Native illustration remains subject to owner visual review and real-device acceptance; see the R3 report for measurements and limitations.
+
+### Proposed live Energy Shop milestone (unscheduled, not authorized)
+
+Prerequisites: completed P3 ledger/persistence and explicit owner authorization; approved Credits price model, operating reserve, active-time checkpoint protocol and ownership-outage policy; D30/D31 already confirm ordinary-menu behavior and dormant temporary remainder. Requires current Roblox API verification and separately authorized pass setup. No simulation-speed products or extra income stacking.
+
+Deliverables: server-authoritative atomic Credits purchase, active-time persistence, verified permanent entitlement and truthful price/status/confirmation UI. Acceptance: identical 2× eligible sales factor, unchanged expenses/energy, no double grants/debits, no offline/paused duration consumption, recoverable ambiguous transactions and explicit financial advantage disclosure. Test physical accounting isolation, save failures, multi-session races, expiry, regional/personalised prices and real platform ownership in an isolated environment. P6a adds export eligibility tests; P8 verifies rebirth preservation and resolves the held legacy income track; P9 reviews Bank leaderboard treatment. No phase is silently renumbered or expanded.
+
+## R3.2 — modular illustrated art proof (local production complete; join revision needed)
+
+After planning completion, the owner authorized local production against the six-motif atlas specification. Produced the 1024×1024 RGBA atlas, six exports, original generated raster sources, editable six-layer OpenRaster, projected-size contact sheet, manifest/provenance and inspection diagnostics. All 70 local automated artwork checks pass. The native-coast proxy reveals a visible grass seam and abrupt shoreline transitions: coast join acceptance remains unresolved. See [local validation and limitations](docs/R32-LOCAL-ART-VALIDATION.md). No upload, Roblox IDs or renderer implementation; R3.1 remains the running baseline.
+
 ## Recommended next request
 
-Implement **P1 only** after confirming the initial architecture/layout and authorizing any required tooling setup. This creates a reviewable foundation without entangling the first UI decisions with saving or electricity balance. P2 follows once the shell and test workflow are verified.
+**R3.3 — isolated mock renderer implemented:** owner accepted all six motifs for proof use; native remains default. Frozen manifest, six-sprite pool, injected readiness/failure lifecycle, native replacement ownership and test-only attribute comparison are implemented. Both builds and local asset checks pass; Studio suites pass 1,830 assertions including 739 synthetic hybrid checks. Proof count is 580 map / 935 shell. See [R3.3 validation](docs/R33-VALIDATION.md) for final soak/analysis evidence and benchmark limits. Real texture testing is blocked at the missing approved asset ID; request separate checksum/destination-specific upload approval before real-adapter testing. Historical R3.2 notes follow.
+
+R3.3 completion evidence: 83 read-only asset/mapping checks passed; owner reports no Script Analysis errors with the current-script filter disabled. Existing native soak passed 600.9 seconds / 591 cycles with 929 shell descendants stable. Synthetic hybrid draw p95 remained below 1ms in all measured passes; no texture/GPU/memory result is claimed. Stop at this mock boundary.
+
+R3.2b local raster correction delivered in [atlas revision 3](assets/r32-proof-v3/README.md): inspected curved grass seam removed, central mismatch zero, source inland and both endpoint overlap bands alpha 255. 70 atlas and 161 coast assertions pass. Natural cliff endpoints remain abrupt and one southern filtered sample is alpha 254; owner visual review is still required. See [R3.2b validation](docs/R32B-COAST-VALIDATION.md). No runtime integration or upload; prior revision notes below remain historical.
+
+R3.2a local refinement delivered: five non-coast motifs accepted by the owner for proof use and preserved byte-for-byte; only coast art revision changes in atlas revision 2. The central colour seam diagnostic improves 37.93%. Strict opaque interior and both proposed endpoint overlap gates remain unmet; coast visual acceptance is pending. See [R3.2a validation](docs/R32A-COAST-VALIDATION.md) and [before/after](assets/r32-proof-v2/coast-before-after.png). Review this candidate and resolve the precise paint/alpha joins before any integration approval.
+
+Review the [latest contact sheet](assets/r32-proof-v3/contact-sheet.png) and [high-resolution coast comparison](assets/r32-proof-v3/coast-high-resolution-comparison.png). Review the remaining endpoint appearance before integration acceptance. Upload approval must identify the reviewed artwork/checksum and intended Roblox owner/experience; runtime integration is separate. The native baseline remains available. R4/R5/P2 have not started; P2 still requires D02–D04 resolution.

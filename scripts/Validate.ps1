@@ -1,0 +1,34 @@
+param()
+$ErrorActionPreference = 'Stop'
+$projectRoot = Split-Path -Parent $PSScriptRoot
+Push-Location $projectRoot
+try {
+    New-Item -ItemType Directory -Force -Path '.build' | Out-Null
+    foreach ($project in @('default', 'test')) {
+        $config = Get-Content -Raw -LiteralPath "$project.project.json" | ConvertFrom-Json
+        if ($config.tree.'$className' -ne 'DataModel') { throw 'Expected a DataModel project root.' }
+        $output = if ($project -eq 'default') { '.build/PowerState.rbxlx' } else { '.build/PowerStateTests.rbxlx' }
+        & rojo build "$project.project.json" -o $output
+        if ($LASTEXITCODE -ne 0) { throw "Rojo build failed: $project" }
+    }
+    [xml]$place = Get-Content -Raw -LiteralPath '.build/PowerState.rbxlx'
+    $scripts = @($place.SelectNodes('//Item[@class="Script" or @class="LocalScript" or @class="ModuleScript"]'))
+    if ($scripts.Count -lt 15) { throw 'Missing expected source modules in the built place.' }
+    $clientEntry = @($place.SelectNodes('//Item[@class="LocalScript"]/Properties/string[@name="Name"]') | Where-Object InnerText -eq 'Bootstrap')
+    if ($clientEntry.Count -ne 1) { throw 'Expected exactly one client Bootstrap LocalScript.' }
+    $remotes = @($place.SelectNodes('//Item[@class="RemoteEvent" or @class="RemoteFunction"]'))
+    if ($remotes.Count -ne 0) { throw 'P1 must not introduce gameplay remotes.' }
+    foreach ($file in Get-ChildItem -Recurse -File src, tests -Filter '*.luau') {
+        $source = Get-Content -Raw -LiteralPath $file.FullName
+        if (-not $source.StartsWith('--!strict')) { throw "Missing strict mode: $($file.FullName)" }
+        if ($source -match 'GetDataStore\(|GetOrderedDataStore\(|FireServer\(|InvokeServer\(') {
+            throw "Unexpected future-phase service use: $($file.FullName)"
+        }
+    }
+    & git diff --check
+    if ($LASTEXITCODE -ne 0) { throw 'Git whitespace check failed.' }
+    Write-Output "PASS: two Rojo builds, source mapping, client entrypoint, P1 boundary checks and Git whitespace."
+    Write-Output 'This does not replace Luau Script Analysis or Studio runtime/device tests.'
+} finally {
+    Pop-Location
+}

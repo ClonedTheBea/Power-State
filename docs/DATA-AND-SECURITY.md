@@ -9,6 +9,7 @@ Status: authoritative gameplay and persistent profiles are confirmed. Schema, le
 | Player profile | `u:<userId>` in versioned standard store | Canonical private state and ownership lease |
 | Country | Nested in profile: era ID, seed, generation version, clock, sectors, assets, demand, cash | One active country per player |
 | Progression | Nested: lifetime totals, legacy points/upgrades, achievements, era history | Survives eras |
+| Commerce (proposed, not implemented) | Nested outside country reset: temporary boost remainder, versioned purchase records and entitlement verification metadata | Server transactions; Roblox is source of pass ownership; survives eras |
 | Social identity | Nested raw customization and safe selections | Sanitized before publication |
 | Event participation | Nested instance records, cumulative meters, claims and outbox revisions | Canonical personal event state |
 | Public profile | `u:<userId>` in separate standard store | Derived sanitized projection |
@@ -61,6 +62,41 @@ Remote intent envelope: protocol version, session epoch, request ID, expected re
 Proposed starting limits: five mutating requests/second with burst ten, two viewport requests/second with coalescing, one public-profile request/second; payload ceiling 8 KiB plus command-specific smaller limits. Tune through normal touch/desktop use and adversarial tests. Remote event queueing is not permission to do unbounded graph work. Reject malformed requests without echoing unsafe text; record sampled diagnostics without logging private full profiles.
 
 The [official client-server security guide](https://create.roblox.com/docs/scripting/security/client-server-boundary) requires server validation and rate limiting around client-triggered behavior. Shared Luau types help development but provide no runtime security. Clients may display replicated catalog prices but cannot declare payment, output, population, research completion or achievements.
+
+## Energy Shop persistence and authority (design only)
+
+Owner-confirmed product constraints are in [Economy](ECONOMY-AND-REBIRTHS.md#energy-shop-and-double-income--design-only), D21–D23. The following is a proposed protocol, not implemented commerce. It must be tested against the existing session fencing, atomic profile mutations and budget limits before sale.
+
+Persist commerce outside the resettable country: versioned offer ID, temporary benefit purchase operation ID, remaining active milliseconds (0–1,800,000), checkpoint/sequence and activation state; bounded recent purchase results; verified pass ID/user ID/source/time for reconciliation. Store remaining time, not an offline expiry timestamp. Do not persist client clocks or a mutable client-provided income factor. No raw payment details/Robux balance belong in the game profile. A cached ownership record is evidence to reconcile, not an independent purchasable entitlement store.
+
+### Credits purchase
+
+1. Server validates session, catalogue offer/version, request shape/rate, current authoritative price, sufficient unencumbered Bank balance after the protected reserve, no active temporary benefit and no verified permanent ownership. Ownership Unknown blocks purchase rather than charging someone who may already own the pass.
+2. Return a bounded-lived server quote containing product, exact Credits price, duration, eligibility and revision. Confirm intent includes quote ID and stable operation ID, never a client price, multiplier or remaining duration.
+3. Serialize the command with country settlement. In one fenced profile mutation debit Credits, create the 1,800-second benefit and record the result. Report success only after durable confirmation; keep activation pending rather than consuming time during an unconfirmed grant.
+4. If the service response is ambiguous, reconcile the same operation ID. Never charge again to repair a lost response. Reject stale epochs/sequence numbers even after bounded cached results are evicted. Reconnect returns the committed benefit/result without duplicating it.
+
+All grant/debit transformations are pure; no marketplace call or remote send inside UpdateAsync. A new legitimate purchase after expiry has a new operation ID, not a replayed prior grant. Rebirth preserves the commerce subtree and snapshots its current remainder in the reset transaction.
+
+### Timer and income checkpointing
+
+The server measures monotonic active elapsed time and applies the eligibility predicate in Economy. Clients receive display snapshots (remaining duration, active/paused/permanent state, revision), not authority to pause/extend. Large/discontinuous deltas cannot advance arbitrary rewards. On known country suspension freeze both progression and duration; on reconnect resume from the canonical remainder. Offline UTC differences never subtract time. Ordinary menus do not pause active online simulation time (D30); only actual server-known simulation suspension changes eligibility.
+
+Every durable checkpoint that records boost-derived income or a later spend must include the corresponding consumed duration in the **same profile revision**. Split activation/expiry intervals deterministically. Ordinary autosave may roll back uncommitted income and consumed duration together after a crash; it must never retain the income while restoring that time. Critical purchases, construction, era resets and rewards snapshot both before durable acknowledgement. Publish rankings/projections only from committed records. Server ownership epoch fences stale shutdown writes.
+
+This is a proposed bounded rollback model, consistent with existing autosave semantics, not a claim that crashes preserve every last second of progress. Verify economic replay safety across spending and every external effect; if tests reveal exploitable rollback or unacceptable lost progress, require a stronger durable-window protocol before commerce. Do not solve it by writing every second without budget evidence. Define maximum rollback exposure and checkpoint cadence in the live-commerce design review. Failed durable grant must leave either old balance/no benefit or new balance/full benefit, never a charged player with no entitlement.
+
+### Permanent Game Pass
+
+Use a separately configured allowlisted pass for this experience; no IDs are chosen here. Client UI may request current player-appropriate price for display and deliberately open the native prompt after review. The server verifies ownership through Roblox, including on join and following purchase completion. Never accept a client success flag, fake receipt, pass ID or claimed Robux debit as authority. A completion notification triggers authoritative reconciliation, not repeated grants.
+
+Price-loading failure, off-sale product, cancellation and ownership-check failure are separate UI states. Unknown ownership prevents duplicate prompts/temporary purchases; retain existing verified evidence for reconciliation and do not erase it because an API call failed. The duration/benefit policy during an ownership outage needs explicit approval: a safe proposal is to continue already server-verified session ownership, while new unresolved ownership shows Pending verification without fabricating success. Roblox remains the ownership source; game save recovery must not make a previously purchased pass permanently disappear.
+
+Both sources reduce to a single factor of 1 or 2, never multiplication of flags. When permanent ownership arrives during a temporary boost, apply the owner-confirmed dormant-remainder policy (D31) atomically with verification state; no automatic refund or extra reward is assumed. Current APIs/pricing references are in [Components](GUI-COMPONENT-SPEC.md#roblox-integration-boundary-verified-15-november-2026). Credits purchases use our ledger; pass purchases use Roblox's pass lifecycle, not an invented developer-product receipt flow.
+
+### Required adversarial cases
+
+Duplicate confirms; stale quotes; two concurrent purchases; forged price/duration/ownership; purchased pass while Credits request is pending; failed ownership lookup; cancellation; success with lost response; expired lease and stale server resumption; disconnect during grant; crash after income but before save; spend after a boost interval; reconnect/era reset at expiry; repeated pause/resume; timer rollback; version migration; max-money caps; mismatched player/offer; off-sale/changed/personalised price; outside-experience pass acquisition. Assert no double debit/grant, no 4× income, no duration loss offline, and no retained income with replayed consumed time. Actual isolated platform tests are required before production commerce.
 
 ## Migration, recovery and privacy
 

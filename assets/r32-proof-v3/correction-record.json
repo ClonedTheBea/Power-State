@@ -1,0 +1,38 @@
+{
+  "authorization": "R3.2b user request explicitly authorizes local raster compositing",
+  "input": "../r32-proof-v2/sprites/coast-headland.png",
+  "inputSha256": "8757c7c63f5637040fca55c838e1a1354dc5769d8c20e7d343782f26f850246d",
+  "method": "Pillow deterministic fixed-canvas grass-only smoothstep blend plus occluded inland source-over fill",
+  "nativeColour": [
+    107,
+    132,
+    99
+  ],
+  "worldOrigin": [
+    93.5,
+    238.5
+  ],
+  "worldUnitsPerPixel": 0.5,
+  "nativeBoundary": "x=350-sqrt(175^2-(y-365)^2)",
+  "grassCriteria": "alpha>=240, G-R>=5, G-B>=8",
+  "blendWorldDistance": [
+    -30,
+    -4
+  ],
+  "fillWorldY": [
+    289,
+    439
+  ],
+  "fillFullyOpaqueWorldY": [
+    293,
+    435
+  ],
+  "fillFullyOpaqueDistanceInside": 0.25,
+  "changedContentPixels": 100155,
+  "preservedNonGrassExteriorPixels": 16697,
+  "alphaChange": "Grass corrected to 255; new coverage only under existing native meadow; exterior non-grass alpha preserved",
+  "geometryChange": false,
+  "artRevision": 3,
+  "ownerVisualAcceptance": "Pending",
+  "newGeneratedArtwork": false
+}

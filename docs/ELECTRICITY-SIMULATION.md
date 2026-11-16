@@ -8,13 +8,15 @@ Status: networked delivery is confirmed. The solver, units, clocks and tuning he
 | --- | --- |
 | Capacity, dispatch, demand, line flow | MW, nonnegative magnitudes; signed flow only for edge direction |
 | Energy and storage state | MWh |
-| Cash | Integer hundredths of a fictional credit; no Robux conversion |
+| Cash | Integer hundredths of a Credit; user-facing balance is Bank, no Robux conversion |
 | Condition, availability, efficiency, service ratio | Bounded 0–1 |
 | Simulation | Fixed one-second wall scheduler; each completed step advances 1/60 simulated hour |
-| Operating cost / fuel | Credits per simulated hour, credits per MWh, and fuel units per MWh |
+| Operating cost / fuel | Credits per simulated hour, Credits per MWh, and fuel units per MWh |
 | Calendar events | Server UTC timestamps, independent of simulated time |
 
 At this speed a simulated day lasts 24 wall minutes. Growth and research use explicit simulated-hour rates; event dates use UTC. A step delivering 6 MW produces 0.1 MWh. Do not multiply MW directly by a price per MWh. Keep fractional money/energy remainder accumulators and round at settlement boundaries; repeated tiny steps must not create or destroy billable energy.
+
+D22 confirms one standard simulation speed for all countries and removes all proposed player/paid speed controls. The exact standard conversion above remains a D03 proposal. Double Income (design only) multiplies eligible sales revenue in Economy, never this clock, physical outputs, demand, growth, maintenance, reliability, lifetime energy or event contribution meters. A future confirmed country pause suspends progression and active boost time together; no client-only timer pause is authoritative. Event UTC schedules continue independently.
 
 Use a monotonic scheduler, not client clocks. Process at most two overdue steps per frame slice; if overload persists, drop accumulated wall backlog without advancing the simulation clock, record lag and display slowed simulation. No giant delta-time catch-up or unbounded loops. Exact scheduler targets require profiling.
 

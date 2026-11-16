@@ -6,7 +6,7 @@ Status: an in-depth, fully skippable and replayable tutorial is confirmed. The a
 
 Chief Grid Adviser **Alex Rowan** explains each lesson in plain language, shows one relevant control and waits for an observable outcome. TutorialService tracks lesson/version/completion; client presentation only highlights controls and displays dialogue. Tutorial completion never trusts a “finished” remote alone.
 
-First run uses the player's real country and adaptive predicates. Full replay uses an isolated server-side practice country with no live treasury, persistence rewards, lifetime statistics, leaderboards or event contributions. Label practice mode throughout and restore the live country when leaving. If a practice country is not implemented yet, offer read-only lesson review rather than pretending replay is safely isolated.
+First run uses the player's real country and adaptive predicates. Full replay uses an isolated server-side practice country with no live Bank balance, persistence rewards, lifetime statistics, leaderboards or event contributions. Label practice mode throughout and restore the live country when leaving. If a practice country is not implemented yet, offer read-only lesson review rather than pretending replay is safely isolated.
 
 Skip current lesson, skip all, replay, back/review and help must always be reachable. Skipping changes tutorial preference, not progression eligibility. Proposed tutorial grants no repeatable currency; starter resources belong to country initialization. Completion achievements, if added, are one-time and cannot be earned from sandbox output.
 

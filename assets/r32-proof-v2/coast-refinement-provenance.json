@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-15",
+  "tool": "OpenAI built-in image_gen",
+  "model": "Not exposed",
+  "input": "../r32-proof-v1/sources/coast-headland-generated.png",
+  "attempts": [
+    {
+      "attempt": 1,
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied isolated coastal headland sprite. Refine ONLY its inland transition for a native flat-sage land join. Preserve the softly painted 2.5D strategy style, west-facing irregular rocky coast, upper-left light, short lower-right shadows, overall wide silhouette, transparent outer background, and no labels/infrastructure. CRITICAL: eliminate the yellow streaky grass inland. The right TWO THIRDS of the entire land mass must be a quiet flat opaque sage RGB(107,132,99), hex #6B8463, with essentially no texture, gradients, cast shadow or yellow highlights. From the left third, gradually blend painted grassy clifftops to this exact flat sage well BEFORE the centre. Keep convincing textured grey rocks and a narrow teal shallow fringe only on the far west side. Upper and lower ends of the rocky coastal edge should taper smoothly eastward into plain sage grass instead of ending as square cliff cuts. Retain the broad eastern overlap tongue with no dark rim at its edge, no ocean rectangle. Do not make an island. Output just this one transparent RGBA sprite; keep whole subject and padding. No checkerboard, text, UI, other motifs, or mockup.",
+      "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-a7064e46-950b-4d14-ab5b-900f2c092744.png",
+      "status": "Rejected: interior alpha loss"
+    },
+    {
+      "attempt": 2,
+      "prompt": "Use case: precise-object-edit. Correct the supplied coastal sprite. The dark/transparent hole across the right-hand grass is an ERROR: fill the ENTIRE land interior with solid opaque matte sage green #6B8463 (RGB107,132,99), alpha255. Genuine transparency ONLY OUTSIDE the outer headland silhouette, never inside land. No crater, hole, vignette, gradient, inland shadow or dark ring. Keep the same rocky far-left coast and narrow teal fringe, lighting and size/shape. Replace the yellow-green inland grass with darker desaturated sage that gradually becomes essentially flat by the left third, then extends uninterrupted to the right edge. Flat means uniform painted grass COLOUR, NOT transparency. Coastal rocks retain upper-left illumination. No labels or UI. Export RGBA isolated sprite. The entire broad right two thirds must visibly be filled green, no black area.",
+      "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-55587022-a243-4e31-8a80-d253233f2fdb.png",
+      "status": "Rejected: interior alpha loss"
+    },
+    {
+      "attempt": 3,
+      "prompt": "Use case: precise-object-edit. Edit this existing isolated west-facing coastal sprite for a painted strategy game. Preserve its outline, rocks, thin teal fringe, transparent exterior, camera angle and upper-left lighting. Change ONLY grassy land colour and texture: make all grass more muted, cool, desaturated medium sage green centred on RGB107,132,99 (#6B8463). Remove yellow highlights and long bright diagonal streaks. From immediately inland of the western cliff rims through the entire right-hand peninsula use very subtle continuous small brush texture of nearly identical medium sage hues, minimal contrast, NO broad lighting gradients. Keep the grass fully filled, continuous and opaque throughout; no holes or central shadows. Reduce grass contrast at upper/lower coastal ends too, allowing their rocks to taper into grass more softly. Do not add new objects. The right interior should match a native sage background closely at all points, not fade out. True alpha transparency only beyond the existing external silhouette. No black patches, no crater, no blur/darkened vignette. Crisp rocks with quiet sage clifftops. Same broad headland composition, generous transparent padding, no text.",
+      "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-d2d3fe6c-22d3-4c60-be26-ef5fbec3ab88.png",
+      "status": "Rejected after inspection: interior alpha loss"
+    }
+  ],
+  "status": "Superseded by refinement-history.json; attempt 3 rejected after alpha inspection"
+}

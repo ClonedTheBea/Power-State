@@ -4,9 +4,15 @@ Power State is a GUI-only Roblox electricity-grid strategy and tycoon game. Each
 
 ## Project status
 
-Documentation bootstrap completed on 15 November 2026. This folder was empty and was not a Git repository when inspected. There is no gameplay implementation, installed toolchain, Studio place, or verified playable build. No dependencies were installed and nothing was committed, pushed, deployed or published.
+Documentation bootstrap and P1 GUI foundation implemented on 15 November 2026. The owner initialized Git and connected Rojo before P1. The responsive shell runs in Studio with illustrative metrics, map navigation and feedback components. Electricity simulation, economy and persistence are not implemented.
 
-**This milestone is documentation only. Stop before implementation.** Future implementation requires a new task from the owner. The recommended first task is phase P1 in [PLANS.md](PLANS.md).
+**Presentation shell only; P2 has not started.** See [Studio setup and tests](docs/STUDIO-SETUP.md) and [P1 validation and file inventory](docs/P1-VALIDATION.md). No dependencies were installed and no commits, pushes, publishing or deployment were performed.
+
+The GUI specifications are approved: [vision](docs/GUI-VISION.md), [layouts and migration](docs/GUI-LAYOUT-SPEC.md), [components and theme](docs/GUI-COMPONENT-SPEC.md). R1 implements theme tokens and Bank/Credits. **R2 implements the responsive shell:** compact header, operational metrics, grouped collapsible rail, five-item mobile navigation and contextual inspector. **R3 adds the modular illustrated country prototype**, with bounded native terrain, separate infrastructure/links/labels, layer controls and Locate. R3.1 refines native artwork and initial camera framing; see [current validation](docs/R31-VALIDATION.md) and [the modular art proposal](docs/R31-ART-STRATEGY.md). See [R3 validation and file inventory](docs/R3-VALIDATION.md) for current evidence and limitations; [R2 validation](docs/R2-VALIDATION.md) and [R1 validation](docs/R1-VALIDATION.md) preserve earlier milestones. R4, Energy Shop and simulation have not started.
+
+R3.2 local artwork is produced; five motifs are owner-accepted for proof use. [R3.2b local coast correction](docs/R32B-COAST-VALIDATION.md) fixes the inspected grass seam and source opacity; natural cliff endpoints and one filtered-alpha sample remain open for review. See the [six-motif atlas and integration proposal](docs/R32-ART-PROOF-PLAN.md). No hybrid runtime or uploads; R3.1 remains the executable baseline.
+
+R3.3 update: all six motifs are now approved for an isolated proof. The [test-only mock hybrid renderer](docs/R33-VALIDATION.md) passes engine regressions and synthetic benchmarks; native remains the default/fallback. No atlas is uploaded or configured, and the mock displays only labelled diagnostic footprints. Real texture testing requires separate approval. R4/R5/P2 remain unstarted.
 
 ## How to read this blueprint
 
@@ -31,6 +37,9 @@ Documentation bootstrap completed on 15 November 2026. This folder was empty and
 | [Government](docs/GOVERNMENT.md) | Policy, research and strategic projects |
 | [Infrastructure and staff](docs/INFRASTRUCTURE-AND-STAFF.md) | Assets, inspections, repair and automation |
 | [UI/UX](docs/UI-UX.md) | Desktop, tablet, mobile and accessibility |
+| [GUI vision](docs/GUI-VISION.md) | Reference review, illustrated country art direction, terminology and scope conflicts |
+| [GUI layout specification](docs/GUI-LAYOUT-SPEC.md) | Responsive wireframes, navigation, map/inspector/ticker interactions and migration slices |
+| [GUI component specification](docs/GUI-COMPONENT-SPEC.md) | Theme/contrast, reusable component states, shop presentation and input contracts |
 | [Tutorial](docs/TUTORIAL.md) | Chief Grid Adviser and replayable learning |
 | [Multiplayer and news](docs/MULTIPLAYER-AND-NEWS.md) | Isolation, rankings and news delivery |
 | [Events](docs/EVENTS.md) | Shared objectives and Operation Christmas Cheer |
@@ -44,4 +53,4 @@ Documentation bootstrap completed on 15 November 2026. This folder was empty and
 
 A responsive map shows a small country with existing generation and connected settlements. The player connects an underserved settlement, sees power delivered and billed, expands generation, observes population growth, saves and reloads, and completes or skips an introductory tutorial. Phases P1–P4 reach this destination; maintenance, storage and social systems follow incrementally.
 
-Development is intended to use Luau, Roblox Studio, Rojo, Git and GitHub. Exact versions, test runner and repository setup remain proposals. See [the setup boundary](docs/TECHNICAL-ARCHITECTURE.md#development-workflow-and-human-boundary) before using tools or changing Studio settings.
+Development uses strict Luau, Roblox Studio, Rojo and Git. The existing Rokit configuration pins Rojo 7.7.0; the observed Studio plugin is 7.7.1. Tests use a dependency-free Studio assertion harness. See [the setup guide](docs/STUDIO-SETUP.md) for commands and [the setup boundary](docs/TECHNICAL-ARCHITECTURE.md#development-workflow-and-human-boundary) before changing Studio settings.

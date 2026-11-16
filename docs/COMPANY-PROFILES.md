@@ -9,8 +9,8 @@ One company belongs to one Roblox user ID. The public profile is a sanitized, in
 | Public field | Source / meaning |
 | --- | --- |
 | Company name, motto, colors, logo ID | Validated customization; safe defaults on filtering failure |
-| Current population and money | Latest committed country totals, not lifetime highs |
-| Financial summary | Current cash and recent aggregate revenue/expense; no raw transaction IDs |
+| Current population and Bank | Latest committed country totals, Bank displayed in Credits, not lifetime highs |
+| Financial summary | Current Bank balance and recent aggregate revenue/expense; no raw transaction IDs |
 | Lifetime generated MWh | Actual generator output across eras; excludes imports and storage discharge |
 | Era count | Number of completed durable resets |
 | Operational summary | Delivered energy, service ratio, renewable share and outage summary with period labels |
