@@ -15,11 +15,13 @@ local Layout = require(Shared.Util.Layout)
 local ShellState = require(Shared.Util.ShellState)
 local CurrencyFormat = require(Shared.Util.CurrencyFormat)
 local AppController = {}
-function AppController.mount(playerGui: PlayerGui)
+function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
+	local preview = data or Preview
+	local presenter: (() -> ())? = nil
 	local scope = Scope.new()
 	local previousOrientation = playerGui.ScreenOrientation
 	playerGui.ScreenOrientation = Enum.ScreenOrientation.Sensor
-	local view = DashboardView.create(playerGui, Preview)
+	local view = DashboardView.create(playerGui, preview)
 	local state = ShellState.new()
 	local actions: { [TextButton]: () -> () } = {}
 	local invoker: GuiObject? = nil
@@ -49,7 +51,7 @@ function AppController.mount(playerGui: PlayerGui)
 	local function bind(button: TextButton, action: () -> ())
 		actions[button] = action
 		scope.add(button.Activated:Connect(function(input)
-			if input.UserInputType ~= Enum.UserInputType.Keyboard and not string.find(input.UserInputType.Name, "Gamepad", 1, true) then action() end
+			if input.UserInputType ~= Enum.UserInputType.Keyboard and not string.find(input.UserInputType.Name, "Gamepad", 1, true) then actions[button]() end
 		end))
 	end
 	local function refresh()
@@ -78,6 +80,7 @@ function AppController.mount(playerGui: PlayerGui)
 			marker.TextColor3 = if selected then Theme.onAccent else Theme.accent
 			marker:SetAttribute("Selected", selected)
 		end
+		if presenter then presenter() end
 	end
 	local function restoreFocus()
 		local target = invoker
@@ -112,9 +115,10 @@ function AppController.mount(playerGui: PlayerGui)
 		focusControl(view.drawer.close)
 	end
 	local function showSelection()
+		if presenter then presenter(); return end
 		for _, button in view.inspector.demos do button.Visible = false end
 		local selected = state.selectedId
-		for _, node in Preview.nodes do
+		for _, node in preview.nodes do
 			if node.id == selected then
 				view.inspector.set(node.name, node.kind .. " · Illustrative asset", node.name .. "\n\n" .. node.description)
 				view.inspector.note.Text = "Operating status and history: unavailable. No live grid, construction or saving is connected."
@@ -174,7 +178,7 @@ function AppController.mount(playerGui: PlayerGui)
 	for _, destination in Navigation do
 		bind(view.drawer.buttons[destination.id], function() navigate(destination.id) end)
 	end
-	for _, node in Preview.nodes do bind(view.drawer.buttons["Asset_" .. node.id], function() selectAsset(node.id) end) end
+	for _, node in preview.nodes do bind(view.drawer.buttons["Asset_" .. node.id], function() selectAsset(node.id) end) end
 	bind(view.header.overview, function() overview(view.header.overview) end)
 	bind(view.drawer.buttons.Overview, function() overview(view.drawer.buttons.Overview) end)
 	bind(view.assetList, function() showDrawer("Assets", view.assetList) end)
@@ -196,7 +200,7 @@ function AppController.mount(playerGui: PlayerGui)
 		end)
 	end
 	bind(view.inspector.locate, function()
-		for _, node in Preview.nodes do if node.id == state.selectedId then
+		for _, node in preview.nodes do if node.id == state.selectedId then
 			ShellState.closeInspector(state); refresh()
 			task.defer(function() if not destroyed then mapController.locate(node.x, node.y) end end)
 			focusControl(view.details)
@@ -236,7 +240,7 @@ function AppController.mount(playerGui: PlayerGui)
 		bind(view.drawer.buttons["Text" .. percent], function() view.root:SetAttribute("TextScale", percent / 100) end)
 	end
 	for index, button in view.kpis.buttons do bind(button, function()
-		local metric = Preview.metrics[index]
+		local metric = preview.metrics[index]
 		local message = if index == 1 then CurrencyFormat.format(metric.currencyMinor) .. "\n\nIllustrative balance, not live money. Finance and income benefits are unavailable."
 			elseif index == 2 then "7 / 9 MW · illustrative supply / demand. These are authored samples, not a dispatch calculation. Delivered power and unmet regional demand require P2."
 			elseif index == 3 then "92% · illustrative reliability. There is no live observation period or outage history yet."
@@ -291,7 +295,7 @@ function AppController.mount(playerGui: PlayerGui)
 		if not destroyed then mapController.recenter() end
 	end)
 	return { view = view, state = state, actions = actions, navigate = navigate, selectAsset = selectAsset,
-		refresh = refresh, keyboard = keyboard, mapController = mapController, back = back,
+		refresh = refresh, bind = bind, showFeedback = showFeedback, setPresenter = function(callback: () -> ()) presenter = callback; refresh() end, keyboard = keyboard, mapController = mapController, back = back,
 		destroy = function() cleanup(); view.gui:Destroy() end }
 end
 return AppController

@@ -1,5 +1,9 @@
 # Technical architecture
 
+**P2b update — 17 November 2026:** P2b adds server-only `World` modules (integer fields, climate, starter validation, generation, demand and service), a generated descriptor adapter and bounded Native terrain cells. P2a retains its fixed fixture. The generated service is Studio/Test guarded and uses the existing owner/sequence/rate-checked intent handler. [P2b evidence](P2B-VALIDATION.md).
+
+P2a implementation: the isolated `src/server/Simulation/` namespace contains pure NetworkModel, GridSolver, Country and IntentHandler modules plus the SimulationService Roblox adapter. `src/client/Simulation/` converts private snapshots into the existing presentation. These cohesive proof namespaces preserve the domain/adapter separation described below without creating unrelated future services. Activation requires Studio and Test universe 10776833313; no persistence or economy is active. See [P2a validation](P2A-VALIDATION.md) and D71–D75. Earlier phase descriptions below are historical.
+
 17 November 2026: [Foundation design](PROCEDURAL-GAMEPLAY-FOUNDATION.md) proposes server-side ClimateModel and DemandModel as pure bounded inputs to GridSolver, with WorldGenerator producing immutable versioned fields. Cosmetic descriptors and client renderer consume data without calculating authority. PlanningService and NationalDemandEventService remain future design interfaces, distinct from global EventService. No modules or dependencies are added.
 
 Status: P1 uses plain strict Luau modules, the existing Rojo mapping and a dependency-free Studio harness (D01/D17–D19). Future services, budgets and protocols remain proposals. API references were checked on 15 November 2026; observed runtime evidence is in [P1 validation](P1-VALIDATION.md).

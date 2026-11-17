@@ -17,6 +17,9 @@ function MapController.attach(view: View, onSelect: (string) -> (), canInteract:
 			if input.UserInputType ~= Enum.UserInputType.Keyboard and not string.find(input.UserInputType.Name, "Gamepad", 1, true) and (not canInteract or canInteract()) then action() end
 		end))
 	end
+	local worldWidth = (view.root:GetAttribute("WorldWidth") or Transform.WORLD_WIDTH) :: number
+	local worldHeight = (view.root:GetAttribute("WorldHeight") or Transform.WORLD_HEIGHT) :: number
+	local generated = view.root:GetAttribute("WorldWidth") ~= nil
 	local x, y, zoom = 0, 0, 0.8
 	local previousSize = view.viewport.AbsoluteSize
 	local initialized = false
@@ -26,8 +29,8 @@ function MapController.attach(view: View, onSelect: (string) -> (), canInteract:
 	local suppressClickUntil = 0
 	local function draw()
 		local size = view.viewport.AbsoluteSize
-		x = Transform.clampAxis(x, size.X, Transform.WORLD_WIDTH, zoom)
-		y = Transform.clampAxis(y, size.Y, Transform.WORLD_HEIGHT, zoom)
+		x = Transform.clampAxis(x, size.X, worldWidth, zoom)
+		y = Transform.clampAxis(y, size.Y, worldHeight, zoom)
 		view.render(x, y, zoom)
 		view.root:SetAttribute("CameraX", x)
 		view.root:SetAttribute("CameraY", y)
@@ -35,9 +38,9 @@ function MapController.attach(view: View, onSelect: (string) -> (), canInteract:
 	end
 	local function recenter()
 		local size = view.viewport.AbsoluteSize
-		zoom = Transform.homeZoom(size.X, size.Y)
-		x = (size.X - Transform.WORLD_WIDTH * zoom) / 2
-		y = size.Y / 2 - 390 * zoom
+		zoom = if generated then math.clamp(math.min(size.X/1024,size.Y/1024),Transform.MIN_ZOOM,Transform.MAX_ZOOM) else Transform.homeZoom(size.X, size.Y)
+		x = (size.X - worldWidth * zoom) / 2
+		y = size.Y / 2 - (if generated then 512 else 390) * zoom
 		draw()
 		initialized = true
 		previousSize = size

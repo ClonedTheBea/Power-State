@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-17",
+  "scope": "Actual Studio Test sessions; synthetic scheduler bursts labelled separately. os.clock active elapsed work is not OS per-thread CPU.",
+  "maximumActualPlayers": 8,
+  "sameAccountRejoinVerified": false,
+  "logs": [
+    {
+      "log": "0.747.330.7470002_20261117T172729Z_Studio_A355F_last.log",
+      "records": [
+        "2026-11-17T17:27:37.914Z,8.914851,8a34,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 22.19 ms",
+        "2026-11-17T17:30:11.588Z,162.588501,9d48,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"resumes\":21,\"wallMs\":329.63049999671059,\"yields\":20,\"resumeMs\":27.335999999195339,\"queueMs\":1.348399993730709,\"cpuMs\":26.941899996018038,\"userId\":-1,\"waitMs\":300.9431999817025}",
+        "2026-11-17T17:30:12.321Z,163.321014,98d4,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"resumes\":21,\"wallMs\":330.17929998459297,\"yields\":20,\"resumeMs\":20.270499953767286,\"queueMs\":1.1075999937020243,\"cpuMs\":19.88610011176206,\"userId\":-2,\"waitMs\":308.7976000388153}"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173924Z_Studio_0588B_last.log",
+      "records": [
+        "2026-11-17T17:39:30.158Z,6.158816,6848,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 26.06 ms",
+        "2026-11-17T17:39:41.441Z,17.441967,42e0,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":177.1454999980051,\"resumes\":22,\"resumeMs\":27.276499953586609,\"queueMs\":1.6161000239662827,\"cpuMs\":27.046000002883376,\"yields\":21,\"waitMs\":148.25290002045223},\"userId\":-1,\"ready\":true}",
+        "2026-11-17T17:39:45.931Z,21.931545,15b8,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":333.275799988769,\"resumes\":21,\"resumeMs\":27.465199964353816,\"queueMs\":4.736300004879013,\"cpuMs\":27.337500039720909,\"yields\":20,\"waitMs\":301.07430001953619},\"userId\":-2,\"ready\":true}",
+        "2026-11-17T17:39:45.932Z,21.932543,15b8,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":331.5759999968577,\"resumes\":21,\"resumeMs\":29.523500037612395,\"queueMs\":3.6585000052582474,\"cpuMs\":29.419500060612337,\"yields\":20,\"waitMs\":298.3939999539871},\"userId\":-3,\"ready\":true}",
+        "2026-11-17T17:39:50.711Z,26.711229,6848,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":214.00949999224395,\"resumes\":22,\"resumeMs\":32.47060001012869,\"queueMs\":1.2949999945703895,\"cpuMs\":32.36090001882985,\"yields\":21,\"waitMs\":180.24389998754487},\"userId\":-4,\"ready\":true}",
+        "2026-11-17T17:39:52.160Z,28.160179,42e0,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":162.3422999982722,\"resumes\":21,\"resumeMs\":27.79950003605336,\"queueMs\":1.2036999978590757,\"cpuMs\":27.68049997393973,\"yields\":20,\"waitMs\":133.33909996435978},\"userId\":-5,\"ready\":true}",
+        "2026-11-17T17:39:54.208Z,30.208263,6848,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":165.7339000084903,\"resumes\":21,\"resumeMs\":28.263899992452936,\"queueMs\":1.445600006263703,\"cpuMs\":28.16120005445555,\"yields\":20,\"waitMs\":136.02440000977368},\"userId\":-6,\"ready\":true}",
+        "2026-11-17T17:39:55.659Z,31.659058,3e28,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":202.3979999939911,\"resumes\":22,\"resumeMs\":33.965000009629878,\"queueMs\":2.775899978587404,\"cpuMs\":33.85019995039329,\"yields\":21,\"waitMs\":165.65710000577384},\"userId\":-7,\"ready\":true}",
+        "2026-11-17T17:40:01.743Z,37.743973,3e28,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":162.28669998236,\"resumes\":22,\"resumeMs\":31.90960007486865,\"queueMs\":1.3146999990567566,\"cpuMs\":31.799899938050659,\"yields\":21,\"waitMs\":129.0623999084346},\"userId\":-8,\"ready\":true}",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 actual players] [{\"requestedMWh\":9.359999999999963,\"userId\":-1,\"countryId\":\"5a444a21-261a-4a51-84e9-c800aa615cc6\",\"online\":true,\"seed\":\"1b7f479ffb634931bb9499ef66894fd2\",\"deliveredMWh\":9.359999999999963,\"controlRevision\":0,\"step\":180,\"timing\":{\"waitMs\":148.25290002045223,\"wallMs\":177.1454999980051,\"resumeMs\":27.276499953586609,\"queueMs\":1.6161000239662827,\"status\":\"complete\",\"cpuMs\":27.046000002883376,\"yields\":21,\"resumes\":22}},{\"requestedMWh\":9.151999999999964,\"userId\":-2,\"countryId\":\"b1f714a1-a3dc-48b4-8e3c-a575b41963da\",\"online\":true,\"seed\":\"66cbbfde7702477fbf379f6170cd7171\",\"deliveredMWh\":9.151999999999964,\"controlRevision\":0,\"step\":176,\"timing\":{\"waitMs\":301.07430001953619,\"wallMs\":333.275799988769,\"resumeMs\":27.465199964353816,\"queueMs\":4.736300004879013,\"status\":\"complete\",\"cpuMs\":27.337500039720909,\"yields\":20,\"resumes\":21}},{\"requestedMWh\":9.151999999999964,\"userId\":-3,\"countryId\":\"68a7675f-a772-4758-a474-40665a47d8bf\",\"on",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -1 5a444a21-261a-4a51-84e9-c800aa615cc6 5a444a21-261a-4a51-84e9-c800aa615cc6:0,0:generator",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -2 b1f714a1-a3dc-48b4-8e3c-a575b41963da b1f714a1-a3dc-48b4-8e3c-a575b41963da:0,0:generator",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -3 68a7675f-a772-4758-a474-40665a47d8bf 68a7675f-a772-4758-a474-40665a47d8bf:0,0:generator",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -4 16d9877e-05fa-4420-b60b-407242a1ffbf 16d9877e-05fa-4420-b60b-407242a1ffbf:0,0:generator",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -5 a177d31c-01be-4648-a16d-873e5f602192 a177d31c-01be-4648-a16d-873e5f602192:0,0:generator",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -6 35b54ee3-6a48-439a-a856-3e1e86736358 35b54ee3-6a48-439a-a856-3e1e86736358:0,0:generator",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -7 bc148b46-7c7c-4802-8593-eab3bb3e455b bc148b46-7c7c-4802-8593-eab3bb3e455b:0,0:generator",
+        "2026-11-17T17:42:41.711Z,197.711426,3e28,6,Info [FLog::CreatorOutput] [P2b.1 target] -8 de0f953d-451a-466f-8a2c-c94c5bc3ad6b de0f953d-451a-466f-8a2c-c94c5bc3ad6b:0,0:generator",
+        "2026-11-17T17:42:42.593Z,198.593491,5160,6,Info [FLog::CreatorOutput] [P2b.1 scheduler] PASS 47 assertions; eight synthetic jobs 866.826ms / 51 Heartbeats",
+        "2026-11-17T17:49:32.873Z,608.873413,42e0,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -1 / 8 real players",
+        "2026-11-17T17:49:47.890Z,623.890137,3e28,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -2 / 8 real players",
+        "2026-11-17T17:50:02.906Z,638.906189,5160,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -3 / 8 real players",
+        "2026-11-17T17:50:17.921Z,653.921936,15b8,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -4 / 8 real players",
+        "2026-11-17T17:50:32.937Z,668.937012,6848,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -5 / 8 real players",
+        "2026-11-17T17:50:47.953Z,683.953918,15b8,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -6 / 8 real players",
+        "2026-11-17T17:51:02.969Z,698.969666,6848,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -7 / 8 real players",
+        "2026-11-17T17:51:17.985Z,713.985596,6848,6,Info [FLog::CreatorOutput] [P2b.1 peer isolation] PASS actor -8 / 8 real players",
+        "2026-11-17T17:51:17.985Z,713.985596,6848,6,Info [FLog::CreatorOutput] [P2b.1 all clients] PASS eight real-client control/isolation rounds",
+        "2026-11-17T17:54:58.278Z,934.278809,5160,6,Info [FLog::CreatorOutput] [P2b.1 actual players] [{\"requestedMWh\":47.3830333333333,\"userId\":-1,\"countryId\":\"5a444a21-261a-4a51-84e9-c800aa615cc6\",\"online\":true,\"seed\":\"1b7f479ffb634931bb9499ef66894fd2\",\"deliveredMWh\":47.229699999999969,\"controlRevision\":2,\"step\":917,\"timing\":{\"waitMs\":148.25290002045223,\"wallMs\":177.1454999980051,\"resumeMs\":27.276499953586609,\"queueMs\":1.6161000239662827,\"status\":\"complete\",\"cpuMs\":27.046000002883376,\"yields\":21,\"resumes\":22}},{\"requestedMWh\":47.19436666666663,\"userId\":-2,\"countryId\":\"b1f714a1-a3dc-48b4-8e3c-a575b41963da\",\"online\":true,\"seed\":\"66cbbfde7702477fbf379f6170cd7171\",\"deliveredMWh\":47.04509999999996,\"controlRevision\":2,\"step\":913,\"timing\":{\"waitMs\":301.07430001953619,\"wallMs\":333.275799988769,\"resumeMs\":27.465199964353816,\"queueMs\":4.736300004879013,\"status\":\"complete\",\"cpuMs\":27.337500039720909,\"yields\":20,\"resumes\":21}},{\"requestedMWh\":47.19436666666663,\"userId\":-3,\"countryId\":\"68a7675f-a772-4758-a474-40665a47d8bf\",\"on",
+        "2026-11-17T17:54:58.278Z,934.278809,5160,6,Info [FLog::CreatorOutput] [P2b.1 leave] PASS PlayerRemoving completed; seven retained countries",
+        "2026-11-17T17:58:36.113Z,1152.113770,6848,6,Info [FLog::CreatorOutput] [P2b.1 timing] {\"timing\":{\"status\":\"complete\",\"wallMs\":221.37499999371358,\"resumes\":23,\"resumeMs\":34.66770000522956,\"queueMs\":10.64380002208054,\"cpuMs\":34.550399985164407,\"yields\":22,\"waitMs\":176.06349996640348},\"userId\":-9,\"ready\":true}",
+        "2026-11-17T17:58:36.473Z,1152.473022,6848,6,Info [FLog::CreatorOutput] [P2b.1 actual players] [{\"requestedMWh\":58.43746666666662,\"userId\":-1,\"countryId\":\"5a444a21-261a-4a51-84e9-c800aa615cc6\",\"online\":true,\"seed\":\"1b7f479ffb634931bb9499ef66894fd2\",\"deliveredMWh\":58.28413333333329,\"controlRevision\":2,\"step\":1135,\"timing\":{\"waitMs\":148.25290002045223,\"wallMs\":177.1454999980051,\"resumeMs\":27.276499953586609,\"queueMs\":1.6161000239662827,\"status\":\"complete\",\"cpuMs\":27.046000002883376,\"yields\":21,\"resumes\":22}},{\"requestedMWh\":58.20459999999996,\"userId\":-2,\"countryId\":\"b1f714a1-a3dc-48b4-8e3c-a575b41963da\",\"online\":true,\"seed\":\"66cbbfde7702477fbf379f6170cd7171\",\"deliveredMWh\":58.05533333333329,\"controlRevision\":2,\"step\":1131,\"timing\":{\"waitMs\":301.07430001953619,\"wallMs\":333.275799988769,\"resumeMs\":27.465199964353816,\"queueMs\":4.736300004879013,\"status\":\"complete\",\"cpuMs\":27.337500039720909,\"yields\":20,\"resumes\":21}},{\"requestedMWh\":58.20459999999996,\"userId\":-3,\"countryId\":\"68a7675f-a772-4758-a474-40665a47d8bf\",",
+        "2026-11-17T17:58:36.473Z,1152.473022,6848,6,Info [FLog::CreatorOutput] [P2b.1 replacement] PASS new local user -9; eight countries, no old state reused",
+        "2026-11-17T18:00:00.153Z,1236.153687,3e28,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 22.29 ms",
+        "2026-11-17T18:02:43.656Z,1399.656982,15b8,6,Info [FLog::CreatorOutput] [Power State P2b world] PASS: 2916780 assertions",
+        "2026-11-17T18:02:43.795Z,1399.795166,15b8,6,Info [FLog::CreatorOutput] [P2b.1 server regressions] PASS",
+        "2026-11-17T18:13:01.590Z,2017.590942,5160,6,Info [FLog::CreatorOutput] [P2b.1 scheduler] PASS 49 assertions; eight synthetic jobs 1004.223ms / 59 Heartbeats"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173930Z_Studio_B2BCA_last.log",
+      "records": [
+        "2026-11-17T17:49:26.210Z,595.210266,8634,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 15 own packets / user -1",
+        "2026-11-17T18:02:54.778Z,1403.778198,2544,6,Info [FLog::CreatorOutput] [Power State P2a GUI] PASS: 57 assertions; map 541 descendants",
+        "2026-11-17T18:03:30.860Z,1439.860229,2544,6,Info [FLog::CreatorOutput] [Power State P2b GUI] PASS: 88 assertions; map 345 descendants",
+        "2026-11-17T18:04:13.325Z,1482.325562,8d90,6,Info [FLog::CreatorOutput] [Power State P2a remotes] PASS: 32 actual transport assertions",
+        "2026-11-17T18:04:26.226Z,1495.226685,8634,6,Info [FLog::CreatorOutput] [Power State P2b remotes] PASS: 32 actual transport assertions",
+        "2026-11-17T18:04:26.226Z,1495.226685,8634,6,Info [FLog::CreatorOutput] [P2b.1 client regressions] PASS"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173931Z_Studio_BF350_last.log",
+      "records": [
+        "2026-11-17T17:49:41.218Z,609.218872,5b4c,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 15 own packets / user -2"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173932Z_Studio_A972A_last.log",
+      "records": [
+        "2026-11-17T17:49:56.228Z,623.228821,2d2c,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 15 own packets / user -3"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173934Z_Studio_E79D1_last.log",
+      "records": [
+        "2026-11-17T17:50:56.076Z,682.076233,1380,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 15 own packets / user -7"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173935Z_Studio_74D12_last.log",
+      "records": [
+        "2026-11-17T17:50:41.200Z,666.200684,25b4,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 15 own packets / user -6"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173936Z_Studio_CA2BF_last.log",
+      "records": [
+        "2026-11-17T17:50:27.195Z,650.195190,4360,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 15 own packets / user -5"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173937Z_Studio_3E53E_last.log",
+      "records": [
+        "2026-11-17T17:51:12.987Z,693.987732,1c2c,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 14 own packets / user -8"
+      ]
+    },
+    {
+      "log": "0.747.330.7470002_20261117T173939Z_Studio_33D9B_last.log",
+      "records": [
+        "2026-11-17T17:50:12.221Z,632.221130,5f20,6,Info [FLog::CreatorOutput] [P2b.1 client] PASS 14 assertions / 15 own packets / user -4"
+      ]
+    }
+  ]
+}

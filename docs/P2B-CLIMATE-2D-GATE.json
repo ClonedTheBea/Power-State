@@ -1,0 +1,138 @@
+{
+  "kind": "Python integer reference only; amended v1 outer radius 4608",
+  "outerRadius": 4608,
+  "requestedRandomSeeds": 256,
+  "adversarialSeeds": [
+    "df307a52185f423288df5749229f0808",
+    "dfff043298824c4da9e3e4e45da85bc6",
+    "00000000000040008000000000000000",
+    "ffffffffffff4fffbfffffffffffffff",
+    "aaaaaaaaaaaa4aaa8aaaaaaaaaaaaaaa",
+    "55555555555545559555555555555555"
+  ],
+  "sampling": "Global 64-unit 2D grid over transition annulus, radii 1984..4736; X/Y and both diagonals. Diagonal threshold scales with Euclidean distance, checked with exact squared integers.",
+  "seedsCompleted": 262,
+  "points": 3868168,
+  "pairs": 14877408,
+  "diagonalPairs": 7438704,
+  "maxTemperaturePer64C": 1.68,
+  "maxRainfallPer64Mm": 69.0,
+  "passed": true,
+  "failure": null,
+  "referenceChecks": [
+    "Repeated coordinate parity",
+    "Negative coordinate floor/local reconstruction"
+  ],
+  "amendedVectors": [
+    {
+      "seed": "df307a52185f423288df5749229f0808",
+      "x": 512,
+      "y": -2752,
+      "elevationM": 24,
+      "rawTemperatureCentiC": -1835,
+      "lapseCentiC": -14,
+      "temperateWeightQ12": 2777,
+      "temperatureCentiC": 557,
+      "rainfallMm": 1033
+    },
+    {
+      "seed": "df307a52185f423288df5749229f0808",
+      "x": 512,
+      "y": -2816,
+      "elevationM": 63,
+      "rawTemperatureCentiC": -1834,
+      "lapseCentiC": -38,
+      "temperateWeightQ12": 2632,
+      "temperatureCentiC": 423,
+      "rainfallMm": 1034
+    },
+    {
+      "seed": "df307a52185f423288df5749229f0808",
+      "x": 0,
+      "y": 0,
+      "elevationM": 156,
+      "rawTemperatureCentiC": -1917,
+      "lapseCentiC": -94,
+      "temperateWeightQ12": 4096,
+      "temperatureCentiC": 1700,
+      "rainfallMm": 1000
+    },
+    {
+      "seed": "df307a52185f423288df5749229f0808",
+      "x": -1024,
+      "y": -64,
+      "elevationM": 34,
+      "rawTemperatureCentiC": -1749,
+      "lapseCentiC": -20,
+      "temperateWeightQ12": 4096,
+      "temperatureCentiC": 1700,
+      "rainfallMm": 1000
+    },
+    {
+      "seed": "df307a52185f423288df5749229f0808",
+      "x": 512,
+      "y": 512,
+      "elevationM": -29,
+      "rawTemperatureCentiC": -1851,
+      "lapseCentiC": 0,
+      "temperateWeightQ12": 4096,
+      "temperatureCentiC": 1700,
+      "rainfallMm": 1000
+    },
+    {
+      "seed": "dfff043298824c4da9e3e4e45da85bc6",
+      "x": 512,
+      "y": -2752,
+      "elevationM": 111,
+      "rawTemperatureCentiC": -1942,
+      "lapseCentiC": -67,
+      "temperateWeightQ12": 2777,
+      "temperatureCentiC": 506,
+      "rainfallMm": 1087
+    },
+    {
+      "seed": "dfff043298824c4da9e3e4e45da85bc6",
+      "x": 512,
+      "y": -2816,
+      "elevationM": 172,
+      "rawTemperatureCentiC": -1942,
+      "lapseCentiC": -103,
+      "temperateWeightQ12": 2632,
+      "temperatureCentiC": 361,
+      "rainfallMm": 1099
+    },
+    {
+      "seed": "dfff043298824c4da9e3e4e45da85bc6",
+      "x": 0,
+      "y": 0,
+      "elevationM": -18,
+      "rawTemperatureCentiC": -1948,
+      "lapseCentiC": 0,
+      "temperateWeightQ12": 4096,
+      "temperatureCentiC": 1700,
+      "rainfallMm": 1000
+    },
+    {
+      "seed": "dfff043298824c4da9e3e4e45da85bc6",
+      "x": -1024,
+      "y": -64,
+      "elevationM": -53,
+      "rawTemperatureCentiC": -1757,
+      "lapseCentiC": 0,
+      "temperateWeightQ12": 4096,
+      "temperatureCentiC": 1700,
+      "rainfallMm": 1000
+    },
+    {
+      "seed": "dfff043298824c4da9e3e4e45da85bc6",
+      "x": 512,
+      "y": 512,
+      "elevationM": 142,
+      "rawTemperatureCentiC": -1902,
+      "lapseCentiC": -85,
+      "temperateWeightQ12": 4096,
+      "temperatureCentiC": 1700,
+      "rainfallMm": 1000
+    }
+  ]
+}

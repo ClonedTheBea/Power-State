@@ -1,5 +1,11 @@
 # Testing and evidence
 
+**P2b.1:** actual eight-client ownership/control/replication checks and generation queue timing/cancellation are covered by `P2b1Multiplayer.spec`, `P2b1.spec`, the dormant cloned `P2b1Probe`, and `P2b1Scheduler.spec`. Live service inspection must run in a server Script context. [P2b.1 procedure, measurements and limitations](P2B1-VALIDATION.md).
+
+**P2b update — 17 November 2026:** P2b validation adds `P2bWorld.spec` (10,000-start sweep, reference/replay/fairness/demand/performance), `P2b.spec` (live generated GUI), `P2bSoak.spec` (ten-minute live generated endurance), and the existing remote suite parameterized for both services. Python climate checks remain independent reference evidence. [Current results and reproduction](P2B-VALIDATION.md).
+
+P2a update,17 November2026: the owner subsequently approved the fixed5 MW generator/3 MW demand/10 MW substation fixture and isolated live implementation. [Current P2a contract and evidence](P2A-VALIDATION.md) supersedes earlier P2a candidate values/status below; future procedural/climate/economy proposals remain unimplemented.
+
 17 November 2026 design gates: [Starting country](STARTING-COUNTRY.md), [Climate/demand](CLIMATE-AND-DEMAND.md), [Minimal simulation](MINIMAL-SIMULATION.md), [Planning](PLANNING-APPLICATIONS.md) and [Demand events](NATIONAL-DEMAND-EVENTS.md) define future golden-seed, fairness, border, energy, replay, idempotency and bounded-work fixtures. These are planned tests, not newly passing runtime suites. Current documentation-only evidence is in [Foundation validation](PROCEDURAL-FOUNDATION-VALIDATION.md).
 
 R3.1 update: the owner requested visual refinement after accepting R3 technically. Current native art/framing, 1,091 passing assertions and 574-map-descendant measurements are recorded in [R3.1 validation](R31-VALIDATION.md). The [modular art recommendation](R31-ART-STRATEGY.md) remains a proposal; no uploads or future gameplay are authorized. Historical R3 measurements below are retained.

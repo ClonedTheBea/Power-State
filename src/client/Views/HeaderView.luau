@@ -43,6 +43,6 @@ function HeaderView.create(parent: Instance)
 		identity.Text = if layout.metrics.height == 0 then "100K Credits · 7 / 9 MW" else "POWER STATE"
 		status.Text = if layout.metrics.height == 0 then "Preview · Overview" elseif narrow then "Illustrative grid · Overview" else "Westhaven · Illustrative grid · Overview"
 	end
-	return { root = root, overview = overview, buttons = buttons, apply = apply }
+	return { root = root, identity = identity, status = status, overview = overview, buttons = buttons, apply = apply }
 end
 return HeaderView

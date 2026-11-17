@@ -164,6 +164,38 @@ Source: owner's **Procedural World and Gameplay Foundation** request. This autho
 
 No existing save migration or code change occurs. Future persistence must retain pinned generator versions and coordinate identities; do not promote the cosmetic fixture into player data. Rebirth seed changes remain later balancing, not a guaranteed reroll feature. Global exclusive terrain/name uniqueness remains unresolved; random diversity alone cannot guarantee it.
 
+## P2a implementation — 17 November 2026
+
+- **D71 (owner-approved fixture/scope):** fixed Westhaven, population 1,000, generic generator 5 MW, demand 3 MW, substation 10 MW, online connected; this supersedes D68's candidate .75/3 MW values for P2a. Two 10 MW links and one 10 MW demand distribution gate are implementation choices consistent with full initial service. Bank remains placeholder. No P2b, economy/persistence or production rollout.
+- **D72 (implemented narrow solver/clock):** server-only single-source/sink integer-kW residual max flow, shared physical capacity and node gates; deterministic ID ordering. Equal costs make full min-cost/fairness stages unnecessary for this slice. One wall second advances one simulated minute, at most two catch-up steps; excess lag advances no time. Immediate On/Off power change integrates no extra energy. Later technologies remain gated.
+- **D73 (implemented session protocol):** Studio Test 10776833313 only; separate capped player sessions, private snapshots, exact flat intents, token bucket, epoch/sequence/control revision, duplicate/stale rejection. No client authoritative quantities. Graph/report/energy stay server-owned; country state expires on leave. Default/Production Native behavior and prior illustrative profiles remain intact.
+- **D74 (implemented history/presentation):** exact 1,440 one-minute energy ring replaces proposed 24 hourly buckets for precise rolling eviction. Show observed duration/Unknown before demand history. Live profile reuses 3 existing coordinate anchors; demo files unchanged. Bank/terrain remain labelled preview, population fixed. Proposed financial estimates are deferred in favor of the current narrower energy-only boundary; no ledger or costs are charged.
+- **D75 (validation boundary):** retain all earlier visual tests and add pure solver/intent and real snapshot/GUI tests plus supplementary hostile transport cases. [P2a evidence](P2A-VALIDATION.md) records measured results and outstanding device/multi-client limitations. No pure mock is labelled a real Roblox service guarantee.
+
+## P2b Stage 1 review — 17 November 2026
+
+Source: owner's **P2b — Seeded Starting Country and Climate-Aware Demand** request. Stage 1 review/documentation only; Stage 2 explicitly requires separate approval. [Complete proposed contract](P2B-DECISION-PROPOSAL.md) contains numeric choices, conflicts, validation and limits.
+
+- **D76 (owner-confirmed):** P2a is accepted as the foundation for further gameplay. This does not approve procedural/climate implementation or production rollout.
+- **D77 (proposed, approval pending):** server-issued 16-byte GUID-derived seed and independent identity; tagged canonical FNV-1a-32 coordinate sampling with exact integer arithmetic; independent pinned generator/climate/demand/starter/name versions. Geography and names are diverse, not globally exclusive. Session-only recreation is not persistence.
+- **D78 (proposed, approval pending):** Q12 smooth absolute fields, explicit elevation/temperature/rainfall lattices, temperate correction fading across radii two to four sectors, overlapping biome weights. No weather/season/resource gameplay in this slice; these narrow D66/D67 rather than approve their full future scope.
+- **D79 (proposed, approval pending):** fixed 1,000 residents, 5 MW generator and 10 MW network gates; eight bounded candidates plus validated safe fallback, protected asset/development pads and two dry cardinal exits. Geometric ±10% opportunity proxy replaces unmeasurable monetary affordability until P3; 10,000-seed sweep and fallback/diversity reporting required.
+- **D80 (proposed, approval pending):** 3 MW comfortable unit-curve demand, explicit mean-one hourly tables, 18/24°C HVAC thresholds, repeating 12–22°C day and 4.10 MW starter envelope. This would supersede older .75 MW/3 MW equipment/2 MW envelope proposals for P2b, not alter the P2a regression. Seasonal weather remains deferred rather than silently implemented.
+- **D81 (proposed, approval pending):** separate generated 1024-square coordinate profile, floor-divided signed sectors, sixteenth-unit anchors, bounded address domain. Existing authored demo and fixed P2a identities/positions remain unchanged; no save migration.
+- **D82 (proposed, approval pending):** one live sector, at most nine internal validation descriptors, bounded generation scheduling/memory/replication targets and <=600 map descendants; reuse Native presentation slots. Retain P2a solver limits rather than enabling D05's larger expansion graph. Performance figures are targets, not observations.
+
+Conflicts and consequences are explicit in the proposal: keep P2a's accepted scale instead of reverting to old candidate numbers; narrow broad climate proposals to deterministic daily inputs; separate generated coordinates from demo migration; defer affordability, saving and globally exclusive naming. Unknown versions/budget failures must not silently substitute another world. No P2b source, tests, dependencies, asset or Studio changes are made by this review.
+
+## P2b Stage 2 authorization and gate — 17 November 2026
+
+- **D83 (owner-approved):** the attached Stage 2 authorization approves the exact v1 contract in [P2B-DECISION-PROPOSAL](P2B-DECISION-PROPOSAL.md), including D77–D82, names, ratings, integer hash/kernel, curves, seed/coordinate contracts and limits. This supersedes their earlier pending status. Implementation is authorized in Studio Test 10776833313 only; P2a fixed fixtures, Native default and Production isolation remain mandatory. No weakening of failed gates is authorized.
+- **D84 (observed failure; unresolved):** independent integer climate reference finds four >2°C adjacent-sample changes among 1,280,000 cardinal-ray pairs across 10,000 seeds, maximum 2.07°C. Exact rational recomputation confirms the counterexample. [P2b validation](P2B-VALIDATION.md) records evidence; runtime integration stops before committing to an incompatible generated profile.
+- **D85 (proposed amendment, approval pending):** widen the temperate outer blend radius from 4096 to 4608 units, retaining inner radius 2048 and the 2°C/150 mm thresholds. The unapproved comparison passes 1,600,000 cardinal-ray pairs (maximum 1.78°C), but broader coverage and all remaining runtime gates are outstanding. No formula change is adopted until explicitly approved.
+
+## P2b approved radius amendment — 17 November 2026
+
+- **D86 (owner-approved):** replace only the v1 outer temperate-transition radius 4096 with 4608 world units. Inner radius remains 2048; temperature/rainfall thresholds remain 2.00°C/150 mm per 64 units. All other hash, interpolation, lapse, field, starter, demand and coordinate rules remain unchanged. This supersedes D85's pending status and authorizes continuation of Stage 2, subject to stopping at any further failed required gate. Reference defaults and the current v1 specification now use 4608; original failure/candidate artifacts remain historical evidence.
+
 ## Earlier architectural proposals
 
 | ID | Proposal and rationale | Alternatives / consequences | Approval needed before |
@@ -217,8 +249,18 @@ Balance numbers in system documents inherit proposal status even when absent fro
 | One Bank balance makes subsidies confusing | Medium | Internal transfer labels, clear expense ledger, usability tests |
 | Automation removes meaningful decisions | Medium | Player policies/budgets, transparent work explanations and enduring capacity constraints |
 
+## P2b implementation details — 17 November 2026
+
+- **D87 (implementation within D83/D86):** generated Native presentation uses 256 preallocated 64-unit terrain cells and the existing native infrastructure/interaction layers; measured map size 345 descendants. It replaces the authored terrain only for the generated Test profile. No new artwork, construction rules or climate authority are introduced on the client.
+- **D88 (implementation within approved scope):** demand step evaluation uses a common integer denominator of 14,400,000,000 for residential, commercial and HVAC components, rounding only the aggregate to kW. This implements the approved coefficients/midpoint curves exactly, avoiding floating-point half-step rounding artifacts; no balance change.
+- **D89 (transport lifecycle):** add a strict two-field `Unsubscribe` intent for mounted proof cleanup, using the same owner/rate validation. It stops periodic snapshots for a detached GUI and does not pause the server simulation, reset the country or change gameplay. Initial generated mounts ignore periodic packets until the static descriptor arrives through Sync.
+- **D90 (cosmetic/geometric detail):** starter reservations use the union of the horizontal exit corridor and two orthogonal 128-wide routes to the prospective pads, feathered by 64 units. Quarter-turns preserve all approved anchors and route lengths. The measured route-length sum is 1792 units, equal to its unrotated reference; this is a geometric proxy, not a price or construction permission.
+
 ## Next approval checkpoint
 
-Review the [17 November foundation package](PROCEDURAL-GAMEPLAY-FOUNDATION.md). The recommended smallest next request is P2a, after explicitly approving its solver/clock, fixed starter values and operating-intent scope. Seed algorithm, climate curves, fairness/uniqueness and persistence migration remain later P2b/P3 review gates. R3.7 direction is accepted, but Hybrid default and device acceptance are still separate. R4/R5, planning/events and all later implementations remain independently gated.
+- **D91 (owner-approved, 17 November 2026):** P2b accepted as the basis for P2b.1 multiplayer/generation stability verification and remediation. No generation arithmetic, balance, fairness threshold, watchdog increase, later phase or Production rollout is authorized.
+- **D92 (P2b.1 scheduling implementation):** replace one-resume-per-Heartbeat scheduling with a bounded 2 ms round-robin work target and 64-resume hard ceiling, retaining eight jobs and existing generator yield boundaries. Keep the two-second wall deadline, including queue delay, and reject completion after it. Cancel pending jobs on leave. Timing affects execution scheduling only; versioned world output is unchanged. Server-only copied diagnostics support actual-player verification without exposing a new remote.
+
+D86 resolves the radius approval gate. The authorized P2b Stage 2 implementation and available validation are complete; see [results and outstanding device/multi-client review](P2B-VALIDATION.md). P2b was subsequently owner-approved as the basis for P2b.1. Available eight-client and scheduler validation is complete; see [P2b.1 evidence and remaining acceptance](P2B1-VALIDATION.md). The next checkpoint is owner review of these results and outstanding device/same-account checks, not automatic progression. No later phase or Production rollout is authorized. No threshold or additional formula amendment was required.
 
 Record future changes with date, status (proposed/approved/rejected/superseded), owner/source of approval, rationale, affected files, migration impact and verification required. Do not rewrite a rejected option into an apparently approved historical decision.

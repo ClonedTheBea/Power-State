@@ -17,17 +17,20 @@ try {
     $clientEntry = @($place.SelectNodes('//Item[@class="LocalScript"]/Properties/string[@name="Name"]') | Where-Object InnerText -eq 'Bootstrap')
     if ($clientEntry.Count -ne 1) { throw 'Expected exactly one client Bootstrap LocalScript.' }
     $remotes = @($place.SelectNodes('//Item[@class="RemoteEvent" or @class="RemoteFunction"]'))
-    if ($remotes.Count -ne 0) { throw 'P1 must not introduce gameplay remotes.' }
+    if ($remotes.Count -ne 0) { throw 'Proof remotes must be created only by the guarded Test server.' }
     foreach ($file in Get-ChildItem -Recurse -File src, tests -Filter '*.luau') {
         $source = Get-Content -Raw -LiteralPath $file.FullName
         if (-not $source.StartsWith('--!strict')) { throw "Missing strict mode: $($file.FullName)" }
-        if ($source -match 'GetDataStore\(|GetOrderedDataStore\(|FireServer\(|InvokeServer\(') {
+        if ($source -match 'GetDataStore\(|GetOrderedDataStore\(|InvokeServer\(') {
             throw "Unexpected future-phase service use: $($file.FullName)"
+        }
+        if ($source -match 'FireServer\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/client/Simulation/SimulationClient.luau'), (Join-Path $projectRoot 'tests/integration/P2aRemote.spec.luau'), (Join-Path $projectRoot 'tests/integration/P2b1.spec.luau'))) {
+            throw "Unapproved remote sender: $($file.FullName)"
         }
     }
     & git diff --check
     if ($LASTEXITCODE -ne 0) { throw 'Git whitespace check failed.' }
-    Write-Output "PASS: two Rojo builds, source mapping, client entrypoint, P1 boundary checks and Git whitespace."
+    Write-Output "PASS: two Rojo builds, source mapping, client entrypoint, P2a persistence/remote boundary checks and Git whitespace."
     Write-Output 'This does not replace Luau Script Analysis or Studio runtime/device tests.'
 } finally {
     Pop-Location

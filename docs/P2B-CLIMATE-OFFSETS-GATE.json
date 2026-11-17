@@ -1,0 +1,11 @@
+{
+  "kind": "Independent Python reference; integer positions offset from the regular 64-unit grid",
+  "seeds": 132,
+  "outerRadius": 4608,
+  "pairs": 2179584,
+  "passed": true,
+  "maxTemperaturePer64C": 1.63,
+  "maxRainfallPer64Mm": 68.0,
+  "failure": null,
+  "sampling": "32 angular spokes; radii 1984..4672 step64; paired jitter -1/31/63; X/Y and both diagonals"
+}

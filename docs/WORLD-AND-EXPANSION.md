@@ -1,5 +1,9 @@
 # World and expansion
 
+**P2b update — 17 November 2026:** The P2b isolated implementation follows [approved v1](P2B-DECISION-PROPOSAL.md) with one active 1024-square starting sector, 3x3 internal validation descriptors and the D86 climate-radius amendment. It does not stream, explore or purchase further sectors. [Validation](P2B-VALIDATION.md).
+
+17 November 2026 P2b Stage 1: [specific implementation recommendations](P2B-DECISION-PROPOSAL.md) now consolidate the earlier options and identify conflicts with accepted P2a. **Historical gate: the original radius failed pre-integration validation. D86 subsequently approved 4608 units; the amended implementation and available [validation](P2B-VALIDATION.md) now pass.** Historical candidate values below are not silently promoted or replaced.
+
 17 November 2026 design update: [Starting country](STARTING-COUNTRY.md) defines the owner-confirmed one-settlement temperate start and proposed seed/delta contract. [Climate and demand](CLIMATE-AND-DEMAND.md) separates continuous environment from cosmetic biome art. [Foundation plan](PROCEDURAL-GAMEPLAY-FOUNDATION.md) proposes P2a/P2b; none is implemented. Older R3 measurements below are historical.
 
 R3.1 update: the owner requested visual refinement after accepting R3 technically. Current native art/framing, 1,091 passing assertions and 574-map-descendant measurements are recorded in [R3.1 validation](R31-VALIDATION.md). The [modular art recommendation](R31-ART-STRATEGY.md) remains a proposal; no uploads or future gameplay are authorized. Historical R3 measurements below are retained.

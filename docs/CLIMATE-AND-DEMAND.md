@@ -1,5 +1,9 @@
 # Climate and aggregate electricity demand
 
+**P2b update — 17 November 2026:** P2b v1 implementation uses the owner-approved [contract](P2B-DECISION-PROPOSAL.md), including D86 outer radius 4608 / inner radius 2048, unchanged gradient thresholds, exact midpoint demand curves and aggregate kW rounding. The initial climate is protected; no seasons, random weather or events are implemented. [Current validation](P2B-VALIDATION.md).
+
+17 November 2026 P2b Stage 1: [specific implementation recommendations](P2B-DECISION-PROPOSAL.md) now consolidate the earlier options and identify conflicts with accepted P2a. **Historical gate: the original radius failed pre-integration validation. D86 subsequently approved 4608 units; the amended implementation and available [validation](P2B-VALIDATION.md) now pass.** Historical candidate values below are not silently promoted or replaced.
+
 17 November 2026. Owner confirms the required influences; formulas, coefficients and calendar below are **proposals D67/D68**, not measured weather realism or balanced gameplay. Use [Simulation](ELECTRICITY-SIMULATION.md) units and [Starting country](STARTING-COUNTRY.md) guarantees.
 
 ## Continuous environment before biome labels

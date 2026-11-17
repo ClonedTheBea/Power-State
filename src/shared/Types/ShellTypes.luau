@@ -5,5 +5,5 @@ export type MapNode = { id: string, name: string, kind: string, x: number, y: nu
 export type MapLink = { from: string, to: string }
 export type Destination = { id: string, label: string, shortLabel: string, group: string, phase: string, description: string }
 -- Runtime immutability is enforced by PreviewData's nested table.freeze calls.
-export type Preview = { metrics: { Metric }, nodes: { MapNode }, links: { MapLink } }
+export type Preview = { metrics: { Metric }, nodes: { MapNode }, links: { MapLink }, world: any? }
 return {}

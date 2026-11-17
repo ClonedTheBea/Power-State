@@ -1,5 +1,7 @@
 # Electricity simulation
 
+P2a update,17 November2026: the owner subsequently approved the fixed5 MW generator/3 MW demand/10 MW substation fixture and isolated live implementation. [Current P2a contract and evidence](P2A-VALIDATION.md) supersedes earlier P2a candidate values/status below; future procedural/climate/economy proposals remain unimplemented.
+
 17 November 2026: [Minimal simulation](MINIMAL-SIMULATION.md) narrows the proposed P2a enabled features; [Climate and demand](CLIMATE-AND-DEMAND.md) specifies the proposed component demand model for P2b and later. Existing 7 MW examples remain regression fixtures, not the revised starting-country content. P2 reports sales/cost estimates only; spendable settlement remains P3. No simulation is implemented.
 
 Status: networked delivery is confirmed. The solver, units, clocks and tuning here are proposals D02–D03. This is the authoritative specification for power accounting; [Economy](ECONOMY-AND-REBIRTHS.md) bills its outputs.

@@ -6,6 +6,10 @@ local player=game:GetService("Players").LocalPlayer
 local playerGui=player:WaitForChild("PlayerGui") :: PlayerGui
 playerGui:WaitForChild("PowerStateShell")
 task.wait(1)
+require(script.Parent["P2a.spec"])(playerGui)
+require(script.Parent["P2b.spec"])(playerGui)
+require(script.Parent["P2aRemote.spec"])()
+require(script.Parent["P2aRemote.spec"])("P2b")
 local total=0
 for _,run in {require(script.Parent["Gui.spec"]),require(script.Parent["R1.spec"]),require(script.Parent["R2.spec"]),
 	require(script.Parent["R3.spec"]),require(script.Parent["R31.spec"]),require(script.Parent["R33.spec"])} do
@@ -17,5 +21,6 @@ require(script.Parent["R37.spec"])(playerGui)
 require(script.Parent["R34.spec"])(playerGui)
 print("[Power State isolated client] Starting existing ten-minute native Soak.spec")
 require(script.Parent["Soak.spec"])(playerGui)
+require(script.Parent["P2bSoak.spec"])(playerGui)
 local shell=playerGui:FindFirstChild("PowerStateShell"); if shell then shell:Destroy() end
-require(script.Parent.SettlementProof).mount(playerGui)
+require(script.Parent.Parent.Client.Simulation.SimulationClient).mount(playerGui, "P2b")

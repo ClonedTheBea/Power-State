@@ -1,0 +1,68 @@
+{
+  "kind": "independent Python arithmetic, not Luau/Studio",
+  "seedCount": 10000,
+  "outerRadius": 4608,
+  "approvedContract": true,
+  "sampling": "64-unit global grid along four cardinal rays through (512,512), radii 2048..4608; consecutive pairs",
+  "temperatureLimitCentiC": 200,
+  "rainfallLimitMm": 150,
+  "pairs": 1600000,
+  "temperatureViolations": 0,
+  "rainfallViolations": 0,
+  "maxTemperatureDifferenceCentiC": 178,
+  "maxRainfallDifferenceMm": 69,
+  "firstViolation": null,
+  "worstTemperaturePair": {
+    "seedIndex": 3815,
+    "seed": "800e3b0c9dc8495281b71c42ba6ea820",
+    "a": {
+      "x": 512,
+      "y": -3328,
+      "elevationM": 34,
+      "rawTemperatureCentiC": -1959,
+      "lapseCentiC": -20,
+      "temperateWeightQ12": 1330,
+      "temperatureCentiC": -784,
+      "rainfallMm": 947
+    },
+    "b": {
+      "x": 512,
+      "y": -3392,
+      "elevationM": 100,
+      "rawTemperatureCentiC": -1959,
+      "lapseCentiC": -60,
+      "temperateWeightQ12": 1164,
+      "temperatureCentiC": -962,
+      "rainfallMm": 938
+    },
+    "deltaCentiC": 178,
+    "deltaRainfallMm": 9
+  },
+  "canonicalVectors": [
+    {
+      "seed": "b5b45c5ea54b47679b7a759c9144292c",
+      "tag": "temperature",
+      "x": -1,
+      "y": 0,
+      "index": 0,
+      "hash": "1c4becb1"
+    },
+    {
+      "seed": "4f23d98f6df8446394bf5da476a7afaa",
+      "tag": "temperature",
+      "x": -1,
+      "y": 0,
+      "index": 0,
+      "hash": "e920dce0"
+    },
+    {
+      "seed": "1e900caef74c4e51959b5def23e29f4d",
+      "tag": "temperature",
+      "x": -1,
+      "y": 0,
+      "index": 0,
+      "hash": "65b6254f"
+    }
+  ],
+  "passed": true
+}

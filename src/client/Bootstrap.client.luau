@@ -7,8 +7,13 @@ local existing = playerGui:FindFirstChild("PowerStateShell")
 if existing then existing:Destroy() end
 
 local ok, result = xpcall(function()
+	if game:GetService("RunService"):IsStudio() and game.GameId == 10776833313 then
+		require(script.Parent.Simulation.SimulationClient).mount(playerGui, "P2b")
+		return true
+	end
 	local AppController = require(script.Parent.Controllers.AppController)
-	return AppController.mount(playerGui)
+	AppController.mount(playerGui)
+	return true
 end, function(problem: unknown): string
 	return debug.traceback(tostring(problem))
 end)

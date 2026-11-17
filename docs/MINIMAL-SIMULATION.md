@@ -1,5 +1,9 @@
 # Minimal server-authoritative electricity slice
 
+17 November 2026 P2b Stage 1: [specific implementation recommendations](P2B-DECISION-PROPOSAL.md) now consolidate the earlier options and identify conflicts with accepted P2a. **Subsequently approved for Stage 2 (D83), but pre-integration climate validation failed; [gate and proposed correction](P2B-VALIDATION.md) await review.** Historical candidate values below are not silently promoted or replaced.
+
+P2a update,17 November2026: the owner subsequently approved the fixed5 MW generator/3 MW demand/10 MW substation fixture and isolated live implementation. [Current P2a contract and evidence](P2A-VALIDATION.md) supersedes earlier P2a candidate values/status below; future procedural/climate/economy proposals remain unimplemented.
+
 17 November 2026. Proposed P2 split under D68/D69; **not implementation approval**. [Electricity simulation](ELECTRICITY-SIMULATION.md) remains the conservation/solver authority; this narrows its first enabled features. [Foundation plan](PROCEDURAL-GAMEPLAY-FOUNDATION.md) defines subsequent gates.
 
 ## Smallest interactive P2a candidate

@@ -14,7 +14,9 @@ function MapView.create(parent: Instance, preview: Types.Preview)
 	root:SetAttribute("LabelsVisible", true); root:SetAttribute("LinksVisible", true)
 	local viewport = C.frame(root, "Viewport", Theme.map)
 	viewport.Size = UDim2.fromScale(1, 1); viewport.ClipsDescendants = true; viewport.Active = true
-	local terrain = Terrain.create(viewport)
+	local terrain = if preview.world then require(script.Parent.Map.GeneratedTerrain).create(viewport, preview.world) else Terrain.create(viewport)
+	local renderTerrain: (number, number, number, Vector2) -> () = terrain.render
+	if preview.world then root:SetAttribute("WorldWidth",1024);root:SetAttribute("WorldHeight",1024)end
 	local function layer(name: string, z: number): Frame
 		local frame = C.frame(viewport, name)
 		frame.BackgroundTransparency = 1; frame.Size = UDim2.fromScale(1, 1); frame.ZIndex = z
@@ -79,7 +81,7 @@ function MapView.create(parent: Instance, preview: Types.Preview)
 	local function render(x: number, y: number, zoom: number)
 		cameraX, cameraY, cameraZoom = x, y, zoom
 		local size = viewport.AbsoluteSize
-		terrain.render(x, y, zoom, size); band = Geometry.band(band, zoom)
+		renderTerrain(x, y, zoom, size); band = Geometry.band(band, zoom)
 		connections.Visible = root:GetAttribute("LinksVisible") == true
 		for index, link in preview.links do
 			local a, b = byId[link.from], byId[link.to]
@@ -131,7 +133,7 @@ function MapView.create(parent: Instance, preview: Types.Preview)
 		root:Destroy()
 		error("R3 total map descendant budget exceeded")
 	end
-	return { root = root, viewport = viewport, markers = markers, toolbar = toolbar, terrain = terrain,
+	return { root = root, viewport = viewport, markers = markers, linkFrames = linkFrames, toolbar = toolbar, terrain = terrain,
 		zoomIn = zoomIn, zoomOut = zoomOut, reset = reset, render = render,
 		setSelected = function(id: string?) selectedId = id; render(cameraX, cameraY, cameraZoom) end,
 		setOptions = function(showLabels: boolean, showLinks: boolean)

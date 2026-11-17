@@ -1,0 +1,198 @@
+{
+  "environment": "Power States - Test, desktop Studio; physical device not measured",
+  "runStartedUtc": "2026-11-17T09:23:34.812Z",
+  "nativeSoakComplete": true,
+  "records": [
+    {
+      "utc": "2026-11-17T09:23:34.812Z",
+      "message": "[Power State R2 Shell] PASS: 324 assertions"
+    },
+    {
+      "utc": "2026-11-17T09:23:34.812Z",
+      "message": "[Power State R1 Currency] PASS: 26 assertions"
+    },
+    {
+      "utc": "2026-11-17T09:23:34.856Z",
+      "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.64 ms"
+    },
+    {
+      "utc": "2026-11-17T09:23:44.203Z",
+      "message": "[Power State P2a GUI] PASS: 57 assertions; map 541 descendants"
+    },
+    {
+      "utc": "2026-11-17T09:23:45.788Z",
+      "message": "[Power State R2 GUI] PASS: 348 engine layout assertions"
+    },
+    {
+      "utc": "2026-11-17T09:23:46.118Z",
+      "message": "[Power State R1 Currency GUI] PASS: 16 assertions"
+    },
+    {
+      "utc": "2026-11-17T09:23:51.902Z",
+      "message": "[Power State R2 Interaction] PASS: 135 assertions"
+    },
+    {
+      "utc": "2026-11-17T09:23:54.319Z",
+      "message": "[Power State R3 profile] cold mount 23.18 ms; warm map draw p50 0.343 / p95 0.438 ms; map 574 / shell 929 descendants"
+    },
+    {
+      "utc": "2026-11-17T09:23:56.385Z",
+      "message": "[Power State R3 frames] 360x580 safe root: p50 16.71 / p95 17.63 ms (Studio desktop, not mobile hardware)"
+    },
+    {
+      "utc": "2026-11-17T09:23:58.451Z",
+      "message": "[Power State R3 frames] 1366x704 safe root: p50 16.67 / p95 17.72 ms (Studio desktop, not mobile hardware)"
+    },
+    {
+      "utc": "2026-11-17T09:23:58.482Z",
+      "message": "[Power State R3] PASS: 190 rendering/interaction assertions"
+    },
+    {
+      "utc": "2026-11-17T09:23:59.867Z",
+      "message": "[Power State R3.1] PASS: 52 framing/refinement assertions"
+    },
+    {
+      "utc": "2026-11-17T09:24:25.433Z",
+      "message": "[Power State R3.3] PASS: 739 synthetic assertions; no atlas fetched"
+    },
+    {
+      "utc": "2026-11-17T09:24:25.433Z",
+      "message": "[Power State isolated client] PASS: 1480 assertions; server suites report separately"
+    },
+    {
+      "utc": "2026-11-17T09:24:26.947Z",
+      "message": "[Power State R3.5] PASS: 217 presentation assertions"
+    },
+    {
+      "utc": "2026-11-17T09:24:44.717Z",
+      "message": "[R3.7 benchmark] Native 360x580 draw p50/p95 0.066/0.447 ms; frame 16.67/17.66 ms; map 595"
+    },
+    {
+      "utc": "2026-11-17T09:24:46.833Z",
+      "message": "[R3.7 benchmark] Original 360x580 draw p50/p95 0.070/0.477 ms; frame 16.61/17.68 ms; map 595"
+    },
+    {
+      "utc": "2026-11-17T09:24:48.932Z",
+      "message": "[R3.7 benchmark] Settlements 360x580 draw p50/p95 0.068/0.474 ms; frame 16.58/17.86 ms; map 595"
+    },
+    {
+      "utc": "2026-11-17T09:24:51.016Z",
+      "message": "[R3.7 benchmark] Native 1366x704 draw p50/p95 0.069/0.135 ms; frame 16.70/17.58 ms; map 595"
+    },
+    {
+      "utc": "2026-11-17T09:24:53.115Z",
+      "message": "[R3.7 benchmark] Original 1366x704 draw p50/p95 0.074/0.173 ms; frame 16.63/17.56 ms; map 595"
+    },
+    {
+      "utc": "2026-11-17T09:24:55.216Z",
+      "message": "[R3.7 benchmark] Settlements 1366x704 draw p50/p95 0.073/0.141 ms; frame 16.67/17.35 ms; map 595"
+    },
+    {
+      "utc": "2026-11-17T09:34:55.274Z",
+      "message": "[R3.7 soak] PASS 600.1 seconds / 589 cycles / 595 map descendants"
+    },
+    {
+      "utc": "2026-11-17T09:35:00.391Z",
+      "message": "[Power State R3.7] PASS: 1411 assertions (real profile plus labelled synthetic faults)"
+    },
+    {
+      "utc": "2026-11-17T09:35:05.541Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 1 draw p50/p95 0.052/0.470 ms; frame 16.60/17.60 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:07.708Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 1 draw p50/p95 0.051/0.423 ms; frame 16.68/17.65 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:09.875Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 2 draw p50/p95 0.051/0.428 ms; frame 16.64/17.55 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:12.041Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 2 draw p50/p95 0.055/0.631 ms; frame 16.68/17.46 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:14.207Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 3 draw p50/p95 0.051/0.424 ms; frame 16.66/17.53 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:16.375Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 3 draw p50/p95 0.050/0.427 ms; frame 16.62/17.61 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:18.606Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 1 draw p50/p95 0.052/0.545 ms; frame 16.67/17.21 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:20.791Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 1 draw p50/p95 0.065/0.571 ms; frame 16.62/17.41 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:22.956Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 2 draw p50/p95 0.052/0.549 ms; frame 16.61/17.45 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:25.123Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 2 draw p50/p95 0.052/0.558 ms; frame 16.58/17.48 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:27.291Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 3 draw p50/p95 0.051/0.545 ms; frame 16.59/17.56 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:29.475Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 3 draw p50/p95 0.050/0.586 ms; frame 16.71/17.58 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:31.723Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 1 draw p50/p95 0.050/0.659 ms; frame 16.60/17.67 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:33.908Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 1 draw p50/p95 0.049/0.566 ms; frame 16.59/17.66 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:36.090Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 2 draw p50/p95 0.052/0.588 ms; frame 16.70/17.69 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:38.273Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 2 draw p50/p95 0.051/0.560 ms; frame 16.61/17.86 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:40.473Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 3 draw p50/p95 0.053/0.857 ms; frame 16.69/17.56 ms"
+    },
+    {
+      "utc": "2026-11-17T09:35:42.656Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 3 draw p50/p95 0.052/0.623 ms; frame 16.60/17.66 ms"
+    },
+    {
+      "utc": "2026-11-17T09:39:49.280Z",
+      "message": "[Power State P2a remotes] PASS: 32 actual transport assertions"
+    },
+    {
+      "utc": "2026-11-17T09:45:43.167Z",
+      "message": "[R3.4 REAL soak] PASS 600.5 seconds / 590 cycles / 935 descendants"
+    },
+    {
+      "utc": "2026-11-17T09:45:43.218Z",
+      "message": "[Power State R3.4] PASS: 259 real-texture assertions"
+    },
+    {
+      "utc": "2026-11-17T09:55:44.107Z",
+      "message": "[Power State R2 Soak] PASS: 600.9 seconds, 591 cycles, 929 GUI descendants stable"
+    }
+  ],
+  "notes": [
+    "R3.3 is synthetic. R3.4/R3.7 contain actual approved textures plus explicitly synthetic failure tests.",
+    "P2a remote suite executed exact local module body in Test client command bar during R3.4 soak; no runtime source changed.",
+    "P2a GUI prints its 57-assertion count before two cleanup/remount assertions; following suites confirm they completed."
+  ],
+  "manualReview": {
+    "desktop": "Normal, lost and restored supply captured using inspector clicks at matching viewport/camera.",
+    "deviceSimulator": "iPhone 17 Pro portrait and landscape: Off/On, rotation, inspector scroll, pan, zoom and recenter observed. Desktop emulator, not physical hardware.",
+    "runnerRestored": true,
+    "playStopped": true
+  }
+}

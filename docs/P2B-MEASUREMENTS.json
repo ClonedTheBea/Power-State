@@ -1,0 +1,1319 @@
+{
+  "environment": "Power States - Test, Studio desktop; physical devices and eight real player clients unmeasured",
+  "status": "available validation complete; owner visual, device and actual multi-client review outstanding",
+  "records": [
+    {
+      "utc": "2026-11-17T16:12:11.332Z",
+      "message": "[P2a] Isolated server started; 1 wall second = 1 simulated minute; no persistence or economy"
+    },
+    {
+      "utc": "2026-11-17T16:12:11.333Z",
+      "message": "[P2b] Test service: GUID seed, version 1; session only; Native presentation"
+    },
+    {
+      "utc": "2026-11-17T16:12:11.333Z",
+      "message": "[Power State R2 Shell] PASS: 324 assertions"
+    },
+    {
+      "utc": "2026-11-17T16:12:11.335Z",
+      "message": "[Power State R1 Currency] PASS: 26 assertions"
+    },
+    {
+      "utc": "2026-11-17T16:12:11.376Z",
+      "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.74 ms"
+    },
+    {
+      "utc": "2026-11-17T16:12:13.236Z",
+      "message": "[P2b generation] CPU 16.153ms; wall 1795.879ms; samples 2667"
+    },
+    {
+      "utc": "2026-11-17T16:12:21.951Z",
+      "message": "[Power State P2a GUI] PASS: 57 assertions; map 541 descendants"
+    },
+    {
+      "utc": "2026-11-17T16:12:29.417Z",
+      "message": "[Power State P2b GUI] PASS: 57 assertions; map 345 descendants"
+    },
+    {
+      "utc": "2026-11-17T16:12:43.283Z",
+      "message": "[Power State P2a remotes] PASS: 32 actual transport assertions"
+    },
+    {
+      "utc": "2026-11-17T16:12:56.599Z",
+      "message": "[Power State P2b remotes] PASS: 32 actual transport assertions"
+    },
+    {
+      "utc": "2026-11-17T16:12:58.085Z",
+      "message": "[Power State R2 GUI] PASS: 348 engine layout assertions"
+    },
+    {
+      "utc": "2026-11-17T16:12:58.416Z",
+      "message": "[Power State R1 Currency GUI] PASS: 16 assertions"
+    },
+    {
+      "utc": "2026-11-17T16:13:04.181Z",
+      "message": "[Power State R2 Interaction] PASS: 135 assertions"
+    },
+    {
+      "utc": "2026-11-17T16:13:10.765Z",
+      "message": "[Power State R3] PASS: 190 rendering/interaction assertions"
+    },
+    {
+      "utc": "2026-11-17T16:13:12.154Z",
+      "message": "[Power State R3.1] PASS: 52 framing/refinement assertions"
+    },
+    {
+      "utc": "2026-11-17T16:13:15.132Z",
+      "message": "[R3.3 SYNTHETIC] Native 360x580 pass 1 draw p50/p95 0.048/0.417 ms; frame 16.61/17.51 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:17.166Z",
+      "message": "[R3.3 SYNTHETIC] Hybrid 360x580 pass 1 draw p50/p95 0.048/0.451 ms; frame 16.59/17.69 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:19.199Z",
+      "message": "[R3.3 SYNTHETIC] Native 360x580 pass 2 draw p50/p95 0.051/0.494 ms; frame 16.64/17.46 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:21.232Z",
+      "message": "[R3.3 SYNTHETIC] Hybrid 360x580 pass 2 draw p50/p95 0.047/0.500 ms; frame 16.55/17.66 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:23.265Z",
+      "message": "[R3.3 SYNTHETIC] Native 360x580 pass 3 draw p50/p95 0.048/0.464 ms; frame 16.62/17.52 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:25.298Z",
+      "message": "[R3.3 SYNTHETIC] Hybrid 360x580 pass 3 draw p50/p95 0.048/0.463 ms; frame 16.65/17.78 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:27.414Z",
+      "message": "[R3.3 SYNTHETIC] Native 1366x704 pass 1 draw p50/p95 0.048/0.611 ms; frame 16.60/17.54 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:29.464Z",
+      "message": "[R3.3 SYNTHETIC] Hybrid 1366x704 pass 1 draw p50/p95 0.048/0.624 ms; frame 16.65/17.47 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:31.515Z",
+      "message": "[R3.3 SYNTHETIC] Native 1366x704 pass 2 draw p50/p95 0.047/0.648 ms; frame 16.64/17.55 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:33.564Z",
+      "message": "[R3.3 SYNTHETIC] Hybrid 1366x704 pass 2 draw p50/p95 0.048/0.582 ms; frame 16.65/17.46 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:35.615Z",
+      "message": "[R3.3 SYNTHETIC] Native 1366x704 pass 3 draw p50/p95 0.048/0.629 ms; frame 16.67/17.45 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:37.666Z",
+      "message": "[R3.3 SYNTHETIC] Hybrid 1366x704 pass 3 draw p50/p95 0.049/0.605 ms; frame 16.61/17.44 ms"
+    },
+    {
+      "utc": "2026-11-17T16:13:37.699Z",
+      "message": "[Power State R3.3] PASS: 739 synthetic assertions; no atlas fetched"
+    },
+    {
+      "utc": "2026-11-17T16:13:37.699Z",
+      "message": "[Power State isolated client] PASS: 1480 assertions; server suites report separately"
+    },
+    {
+      "utc": "2026-11-17T16:13:38.796Z",
+      "message": "[Power State R3.5] PASS: 217 presentation assertions"
+    },
+    {
+      "utc": "2026-11-17T16:15:07.312Z",
+      "message": "[R3.7 soak] 60 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:16:08.441Z",
+      "message": "[R3.7 soak] 120 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:17:09.574Z",
+      "message": "[R3.7 soak] 180 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:18:10.705Z",
+      "message": "[R3.7 soak] 240 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:19:11.835Z",
+      "message": "[R3.7 soak] 300 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:20:12.964Z",
+      "message": "[R3.7 soak] 360 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:21:14.095Z",
+      "message": "[R3.7 soak] 420 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:21:51.095Z",
+      "message": "[P2b memory] eight retained descriptors: 863.75 KiB/country (allocator/GC noise)"
+    },
+    {
+      "utc": "2026-11-17T16:21:51.130Z",
+      "message": "[P2b demand] stepP95=0.0360ms batchP95=0.2562ms"
+    },
+    {
+      "utc": "2026-11-17T16:21:52.613Z",
+      "message": "[P2b sweep] 100/10000 unique=100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:21:54.099Z",
+      "message": "[P2b sweep] 200/10000 unique=200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:21:55.572Z",
+      "message": "[P2b sweep] 300/10000 unique=300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:21:57.046Z",
+      "message": "[P2b sweep] 400/10000 unique=400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:21:58.513Z",
+      "message": "[P2b sweep] 500/10000 unique=500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:21:59.957Z",
+      "message": "[P2b sweep] 600/10000 unique=600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:01.416Z",
+      "message": "[P2b sweep] 700/10000 unique=700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:02.896Z",
+      "message": "[P2b sweep] 800/10000 unique=800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:04.363Z",
+      "message": "[P2b sweep] 900/10000 unique=900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:05.833Z",
+      "message": "[P2b sweep] 1000/10000 unique=1000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:07.304Z",
+      "message": "[P2b sweep] 1100/10000 unique=1100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:08.787Z",
+      "message": "[P2b sweep] 1200/10000 unique=1200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:10.265Z",
+      "message": "[P2b sweep] 1300/10000 unique=1300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:11.763Z",
+      "message": "[P2b sweep] 1400/10000 unique=1400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:13.251Z",
+      "message": "[P2b sweep] 1500/10000 unique=1500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:14.712Z",
+      "message": "[P2b sweep] 1600/10000 unique=1600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:16.150Z",
+      "message": "[P2b sweep] 1700/10000 unique=1700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:17.580Z",
+      "message": "[P2b sweep] 1800/10000 unique=1800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:19.021Z",
+      "message": "[P2b sweep] 1900/10000 unique=1900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:20.457Z",
+      "message": "[P2b sweep] 2000/10000 unique=2000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:21.904Z",
+      "message": "[P2b sweep] 2100/10000 unique=2100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:23.349Z",
+      "message": "[P2b sweep] 2200/10000 unique=2200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:24.791Z",
+      "message": "[P2b sweep] 2300/10000 unique=2300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:26.218Z",
+      "message": "[P2b sweep] 2400/10000 unique=2400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:27.642Z",
+      "message": "[P2b sweep] 2500/10000 unique=2500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:29.126Z",
+      "message": "[P2b sweep] 2600/10000 unique=2600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:30.562Z",
+      "message": "[P2b sweep] 2700/10000 unique=2700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:32.007Z",
+      "message": "[P2b sweep] 2800/10000 unique=2800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:33.445Z",
+      "message": "[P2b sweep] 2900/10000 unique=2900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:33.447Z",
+      "message": "[R3.7 soak] 480 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:22:34.917Z",
+      "message": "[P2b sweep] 3000/10000 unique=3000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:36.363Z",
+      "message": "[P2b sweep] 3100/10000 unique=3100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:37.806Z",
+      "message": "[P2b sweep] 3200/10000 unique=3200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:39.281Z",
+      "message": "[P2b sweep] 3300/10000 unique=3300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:40.722Z",
+      "message": "[P2b sweep] 3400/10000 unique=3400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:42.191Z",
+      "message": "[P2b sweep] 3500/10000 unique=3500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:43.666Z",
+      "message": "[P2b sweep] 3600/10000 unique=3600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:45.109Z",
+      "message": "[P2b sweep] 3700/10000 unique=3700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:46.556Z",
+      "message": "[P2b sweep] 3800/10000 unique=3800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:48.005Z",
+      "message": "[P2b sweep] 3900/10000 unique=3900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:49.453Z",
+      "message": "[P2b sweep] 4000/10000 unique=4000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:50.892Z",
+      "message": "[P2b sweep] 4100/10000 unique=4100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:52.349Z",
+      "message": "[P2b sweep] 4200/10000 unique=4200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:53.792Z",
+      "message": "[P2b sweep] 4300/10000 unique=4300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:55.259Z",
+      "message": "[P2b sweep] 4400/10000 unique=4400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:56.734Z",
+      "message": "[P2b sweep] 4500/10000 unique=4500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:58.191Z",
+      "message": "[P2b sweep] 4600/10000 unique=4600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:22:59.679Z",
+      "message": "[P2b sweep] 4700/10000 unique=4700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:01.253Z",
+      "message": "[P2b sweep] 4800/10000 unique=4800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:02.742Z",
+      "message": "[P2b sweep] 4900/10000 unique=4900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:04.248Z",
+      "message": "[P2b sweep] 5000/10000 unique=5000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:05.712Z",
+      "message": "[P2b sweep] 5100/10000 unique=5100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:07.244Z",
+      "message": "[P2b sweep] 5200/10000 unique=5200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:08.697Z",
+      "message": "[P2b sweep] 5300/10000 unique=5300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:10.232Z",
+      "message": "[P2b sweep] 5400/10000 unique=5400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:11.724Z",
+      "message": "[P2b sweep] 5500/10000 unique=5500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:13.175Z",
+      "message": "[P2b sweep] 5600/10000 unique=5600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:14.630Z",
+      "message": "[P2b sweep] 5700/10000 unique=5700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:16.121Z",
+      "message": "[P2b sweep] 5800/10000 unique=5800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:17.621Z",
+      "message": "[P2b sweep] 5900/10000 unique=5900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:19.099Z",
+      "message": "[P2b sweep] 6000/10000 unique=6000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:20.566Z",
+      "message": "[P2b sweep] 6100/10000 unique=6100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:22.031Z",
+      "message": "[P2b sweep] 6200/10000 unique=6200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:23.544Z",
+      "message": "[P2b sweep] 6300/10000 unique=6300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:25.105Z",
+      "message": "[P2b sweep] 6400/10000 unique=6400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:26.589Z",
+      "message": "[P2b sweep] 6500/10000 unique=6500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:28.052Z",
+      "message": "[P2b sweep] 6600/10000 unique=6600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:29.503Z",
+      "message": "[P2b sweep] 6700/10000 unique=6700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:31.185Z",
+      "message": "[P2b sweep] 6800/10000 unique=6800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:32.654Z",
+      "message": "[P2b sweep] 6900/10000 unique=6900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:34.187Z",
+      "message": "[P2b sweep] 7000/10000 unique=7000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:35.646Z",
+      "message": "[P2b sweep] 7100/10000 unique=7100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:37.066Z",
+      "message": "[P2b sweep] 7200/10000 unique=7200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:38.480Z",
+      "message": "[P2b sweep] 7300/10000 unique=7300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:39.900Z",
+      "message": "[P2b sweep] 7400/10000 unique=7400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:41.322Z",
+      "message": "[P2b sweep] 7500/10000 unique=7500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:42.746Z",
+      "message": "[P2b sweep] 7600/10000 unique=7600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:44.164Z",
+      "message": "[P2b sweep] 7700/10000 unique=7700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:45.574Z",
+      "message": "[P2b sweep] 7800/10000 unique=7800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:47.031Z",
+      "message": "[P2b sweep] 7900/10000 unique=7900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:48.453Z",
+      "message": "[P2b sweep] 8000/10000 unique=8000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:49.878Z",
+      "message": "[P2b sweep] 8100/10000 unique=8100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:51.324Z",
+      "message": "[P2b sweep] 8200/10000 unique=8200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:52.779Z",
+      "message": "[P2b sweep] 8300/10000 unique=8300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:54.220Z",
+      "message": "[P2b sweep] 8400/10000 unique=8400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:55.681Z",
+      "message": "[P2b sweep] 8500/10000 unique=8500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:57.136Z",
+      "message": "[P2b sweep] 8600/10000 unique=8600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:58.556Z",
+      "message": "[P2b sweep] 8700/10000 unique=8700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:23:59.962Z",
+      "message": "[P2b sweep] 8800/10000 unique=8800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:01.371Z",
+      "message": "[P2b sweep] 8900/10000 unique=8900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:02.796Z",
+      "message": "[P2b sweep] 9000/10000 unique=9000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:04.251Z",
+      "message": "[P2b sweep] 9100/10000 unique=9100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:05.681Z",
+      "message": "[P2b sweep] 9200/10000 unique=9200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:07.150Z",
+      "message": "[P2b sweep] 9300/10000 unique=9300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:08.607Z",
+      "message": "[P2b sweep] 9400/10000 unique=9400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:10.046Z",
+      "message": "[P2b sweep] 9500/10000 unique=9500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:11.476Z",
+      "message": "[P2b sweep] 9600/10000 unique=9600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:12.892Z",
+      "message": "[P2b sweep] 9700/10000 unique=9700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:12.892Z",
+      "message": "[R3.7 soak] 540 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-17T16:24:12.892Z",
+      "message": "[R3.7 soak] PASS 606.7 seconds / 540 cycles / 595 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:24:14.302Z",
+      "message": "[P2b sweep] 9800/10000 unique=9800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:15.736Z",
+      "message": "[P2b sweep] 9900/10000 unique=9900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:17.150Z",
+      "message": "[P2b sweep] 10000/10000 unique=10000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:24:17.152Z",
+      "message": "[P2b gates] unique=10000/10000 fallback=0 cpuP95=15.960ms maxEncoded=43705 samples=2667 dayMWh=75.457983 peakMW=3.811"
+    },
+    {
+      "utc": "2026-11-17T16:24:17.152Z",
+      "message": "[P2b distributions] rotations=[2482,2460,2589,2469] names=[1205,1258,1292,1255,1244,1219,1236,1291]"
+    },
+    {
+      "utc": "2026-11-17T16:24:17.152Z",
+      "message": "[Power State P2b world] PASS: 2913433 assertions"
+    },
+    {
+      "utc": "2026-11-17T16:24:18.011Z",
+      "message": "[Power State R3.7] PASS: 1410 assertions (real profile plus labelled synthetic faults)"
+    },
+    {
+      "utc": "2026-11-17T16:24:23.162Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 1 draw p50/p95 0.050/0.412 ms; frame 16.61/17.66 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:25.328Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 1 draw p50/p95 0.049/0.420 ms; frame 16.59/17.71 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:27.496Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 2 draw p50/p95 0.049/0.447 ms; frame 16.67/17.63 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:29.662Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 2 draw p50/p95 0.049/0.422 ms; frame 16.63/17.69 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:31.828Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 3 draw p50/p95 0.050/0.414 ms; frame 16.60/17.55 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:33.994Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 3 draw p50/p95 0.051/0.418 ms; frame 16.58/17.64 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:36.228Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 1 draw p50/p95 0.050/0.536 ms; frame 16.63/17.62 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:38.396Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 1 draw p50/p95 0.050/0.536 ms; frame 16.61/17.61 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:40.560Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 2 draw p50/p95 0.051/0.544 ms; frame 16.63/17.48 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:42.728Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 2 draw p50/p95 0.052/0.537 ms; frame 16.57/17.69 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:44.894Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 3 draw p50/p95 0.051/0.546 ms; frame 16.60/17.44 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:47.060Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 3 draw p50/p95 0.050/0.534 ms; frame 16.63/17.51 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:49.294Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 1 draw p50/p95 0.050/0.543 ms; frame 16.61/17.61 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:51.476Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 1 draw p50/p95 0.048/0.549 ms; frame 16.68/17.46 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:53.660Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 2 draw p50/p95 0.052/0.549 ms; frame 16.59/17.57 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:55.843Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 2 draw p50/p95 0.054/0.580 ms; frame 16.64/17.52 ms"
+    },
+    {
+      "utc": "2026-11-17T16:24:58.027Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 3 draw p50/p95 0.059/0.558 ms; frame 16.66/17.34 ms"
+    },
+    {
+      "utc": "2026-11-17T16:25:00.208Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 3 draw p50/p95 0.053/0.558 ms; frame 16.61/17.47 ms"
+    },
+    {
+      "utc": "2026-11-17T16:26:01.207Z",
+      "message": "[R3.4 REAL soak] 60 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:27:02.205Z",
+      "message": "[R3.4 REAL soak] 120 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:28:03.203Z",
+      "message": "[R3.4 REAL soak] 180 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:28:47.384Z",
+      "message": "[P2b cold] first start 13.077ms; stages {\"terrainMs\":12.346800009254367,\"validationMs\":0.7153999758884311,\"layoutMs\":0.011800002539530397}"
+    },
+    {
+      "utc": "2026-11-17T16:28:47.640Z",
+      "message": "[P2b memory] eight retained descriptors: 858.62 KiB/country (allocator/GC noise)"
+    },
+    {
+      "utc": "2026-11-17T16:28:47.673Z",
+      "message": "[P2b demand] stepP95=0.0326ms batchP95=0.2563ms"
+    },
+    {
+      "utc": "2026-11-17T16:28:49.185Z",
+      "message": "[P2b sweep] 100/10000 unique=100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:28:50.669Z",
+      "message": "[P2b sweep] 200/10000 unique=200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:28:52.123Z",
+      "message": "[P2b sweep] 300/10000 unique=300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:28:53.662Z",
+      "message": "[P2b sweep] 400/10000 unique=400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:28:55.109Z",
+      "message": "[P2b sweep] 500/10000 unique=500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:28:56.560Z",
+      "message": "[P2b sweep] 600/10000 unique=600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:28:58.009Z",
+      "message": "[P2b sweep] 700/10000 unique=700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:28:59.474Z",
+      "message": "[P2b sweep] 800/10000 unique=800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:00.904Z",
+      "message": "[P2b sweep] 900/10000 unique=900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:02.369Z",
+      "message": "[P2b sweep] 1000/10000 unique=1000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:03.830Z",
+      "message": "[P2b sweep] 1100/10000 unique=1100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:05.333Z",
+      "message": "[P2b sweep] 1200/10000 unique=1200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:06.785Z",
+      "message": "[P2b sweep] 1300/10000 unique=1300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:08.242Z",
+      "message": "[P2b sweep] 1400/10000 unique=1400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:09.683Z",
+      "message": "[P2b sweep] 1500/10000 unique=1500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:11.142Z",
+      "message": "[P2b sweep] 1600/10000 unique=1600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:12.597Z",
+      "message": "[P2b sweep] 1700/10000 unique=1700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:14.042Z",
+      "message": "[P2b sweep] 1800/10000 unique=1800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:14.042Z",
+      "message": "[R3.4 REAL soak] 240 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:29:15.500Z",
+      "message": "[P2b sweep] 1900/10000 unique=1900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:16.953Z",
+      "message": "[P2b sweep] 2000/10000 unique=2000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:18.382Z",
+      "message": "[P2b sweep] 2100/10000 unique=2100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:19.832Z",
+      "message": "[P2b sweep] 2200/10000 unique=2200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:21.267Z",
+      "message": "[P2b sweep] 2300/10000 unique=2300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:22.728Z",
+      "message": "[P2b sweep] 2400/10000 unique=2400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:24.201Z",
+      "message": "[P2b sweep] 2500/10000 unique=2500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:25.650Z",
+      "message": "[P2b sweep] 2600/10000 unique=2600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:27.103Z",
+      "message": "[P2b sweep] 2700/10000 unique=2700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:28.541Z",
+      "message": "[P2b sweep] 2800/10000 unique=2800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:29.998Z",
+      "message": "[P2b sweep] 2900/10000 unique=2900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:31.437Z",
+      "message": "[P2b sweep] 3000/10000 unique=3000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:32.863Z",
+      "message": "[P2b sweep] 3100/10000 unique=3100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:34.302Z",
+      "message": "[P2b sweep] 3200/10000 unique=3200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:35.755Z",
+      "message": "[P2b sweep] 3300/10000 unique=3300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:37.191Z",
+      "message": "[P2b sweep] 3400/10000 unique=3400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:38.626Z",
+      "message": "[P2b sweep] 3500/10000 unique=3500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:40.052Z",
+      "message": "[P2b sweep] 3600/10000 unique=3600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:41.486Z",
+      "message": "[P2b sweep] 3700/10000 unique=3700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:42.925Z",
+      "message": "[P2b sweep] 3800/10000 unique=3800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:44.357Z",
+      "message": "[P2b sweep] 3900/10000 unique=3900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:45.775Z",
+      "message": "[P2b sweep] 4000/10000 unique=4000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:47.203Z",
+      "message": "[P2b sweep] 4100/10000 unique=4100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:48.648Z",
+      "message": "[P2b sweep] 4200/10000 unique=4200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:50.082Z",
+      "message": "[P2b sweep] 4300/10000 unique=4300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:51.511Z",
+      "message": "[P2b sweep] 4400/10000 unique=4400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:52.935Z",
+      "message": "[P2b sweep] 4500/10000 unique=4500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:54.355Z",
+      "message": "[P2b sweep] 4600/10000 unique=4600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:55.775Z",
+      "message": "[P2b sweep] 4700/10000 unique=4700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:57.205Z",
+      "message": "[P2b sweep] 4800/10000 unique=4800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:29:58.658Z",
+      "message": "[P2b sweep] 4900/10000 unique=4900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:00.082Z",
+      "message": "[P2b sweep] 5000/10000 unique=5000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:01.519Z",
+      "message": "[P2b sweep] 5100/10000 unique=5100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:02.957Z",
+      "message": "[P2b sweep] 5200/10000 unique=5200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:04.382Z",
+      "message": "[P2b sweep] 5300/10000 unique=5300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:05.802Z",
+      "message": "[P2b sweep] 5400/10000 unique=5400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:07.240Z",
+      "message": "[P2b sweep] 5500/10000 unique=5500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:08.667Z",
+      "message": "[P2b sweep] 5600/10000 unique=5600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:10.087Z",
+      "message": "[P2b sweep] 5700/10000 unique=5700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:11.537Z",
+      "message": "[P2b sweep] 5800/10000 unique=5800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:12.970Z",
+      "message": "[P2b sweep] 5900/10000 unique=5900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:14.417Z",
+      "message": "[P2b sweep] 6000/10000 unique=6000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:15.841Z",
+      "message": "[P2b sweep] 6100/10000 unique=6100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:17.251Z",
+      "message": "[P2b sweep] 6200/10000 unique=6200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:18.677Z",
+      "message": "[P2b sweep] 6300/10000 unique=6300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:20.103Z",
+      "message": "[P2b sweep] 6400/10000 unique=6400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:21.513Z",
+      "message": "[P2b sweep] 6500/10000 unique=6500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:22.937Z",
+      "message": "[P2b sweep] 6600/10000 unique=6600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:24.330Z",
+      "message": "[P2b sweep] 6700/10000 unique=6700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:25.771Z",
+      "message": "[P2b sweep] 6800/10000 unique=6800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:27.197Z",
+      "message": "[P2b sweep] 6900/10000 unique=6900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:28.625Z",
+      "message": "[P2b sweep] 7000/10000 unique=7000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:30.044Z",
+      "message": "[P2b sweep] 7100/10000 unique=7100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:31.458Z",
+      "message": "[P2b sweep] 7200/10000 unique=7200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:32.873Z",
+      "message": "[P2b sweep] 7300/10000 unique=7300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:34.281Z",
+      "message": "[P2b sweep] 7400/10000 unique=7400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:35.730Z",
+      "message": "[P2b sweep] 7500/10000 unique=7500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:37.158Z",
+      "message": "[P2b sweep] 7600/10000 unique=7600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:38.601Z",
+      "message": "[P2b sweep] 7700/10000 unique=7700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:40.035Z",
+      "message": "[P2b sweep] 7800/10000 unique=7800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:40.035Z",
+      "message": "[R3.4 REAL soak] 300 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:30:41.474Z",
+      "message": "[P2b sweep] 7900/10000 unique=7900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:42.951Z",
+      "message": "[P2b sweep] 8000/10000 unique=8000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:44.373Z",
+      "message": "[P2b sweep] 8100/10000 unique=8100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:45.787Z",
+      "message": "[P2b sweep] 8200/10000 unique=8200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:47.208Z",
+      "message": "[P2b sweep] 8300/10000 unique=8300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:48.623Z",
+      "message": "[P2b sweep] 8400/10000 unique=8400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:50.023Z",
+      "message": "[P2b sweep] 8500/10000 unique=8500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:51.431Z",
+      "message": "[P2b sweep] 8600/10000 unique=8600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:52.839Z",
+      "message": "[P2b sweep] 8700/10000 unique=8700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:54.267Z",
+      "message": "[P2b sweep] 8800/10000 unique=8800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:55.689Z",
+      "message": "[P2b sweep] 8900/10000 unique=8900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:57.091Z",
+      "message": "[P2b sweep] 9000/10000 unique=9000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:58.486Z",
+      "message": "[P2b sweep] 9100/10000 unique=9100 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:30:59.880Z",
+      "message": "[P2b sweep] 9200/10000 unique=9200 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:01.328Z",
+      "message": "[P2b sweep] 9300/10000 unique=9300 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:02.746Z",
+      "message": "[P2b sweep] 9400/10000 unique=9400 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:04.164Z",
+      "message": "[P2b sweep] 9500/10000 unique=9500 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:05.570Z",
+      "message": "[P2b sweep] 9600/10000 unique=9600 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:06.964Z",
+      "message": "[P2b sweep] 9700/10000 unique=9700 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:08.355Z",
+      "message": "[P2b sweep] 9800/10000 unique=9800 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:09.742Z",
+      "message": "[P2b sweep] 9900/10000 unique=9900 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:11.140Z",
+      "message": "[P2b sweep] 10000/10000 unique=10000 fallback=0"
+    },
+    {
+      "utc": "2026-11-17T16:31:11.142Z",
+      "message": "[P2b gates] unique=10000/10000 fallback=0 cpuP95=15.590ms maxEncoded=43705 samples=2667 dayMWh=75.457983 peakMW=3.811"
+    },
+    {
+      "utc": "2026-11-17T16:31:11.142Z",
+      "message": "[P2b distributions] rotations=[2482,2460,2589,2469] names=[1205,1258,1292,1255,1244,1219,1236,1291]"
+    },
+    {
+      "utc": "2026-11-17T16:31:11.142Z",
+      "message": "[Power State P2b world] PASS: 2916780 assertions"
+    },
+    {
+      "utc": "2026-11-17T16:31:49.765Z",
+      "message": "[R3.4 REAL soak] 360 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:32:50.763Z",
+      "message": "[R3.4 REAL soak] 420 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:33:51.759Z",
+      "message": "[R3.4 REAL soak] 480 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:34:32.392Z",
+      "message": "[P2b scheduler] PASS eight synthetic jobs, 339.954ms wall / 21 rounds; identical descriptors"
+    },
+    {
+      "utc": "2026-11-17T16:34:52.757Z",
+      "message": "[R3.4 REAL soak] 540 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-17T16:35:00.892Z",
+      "message": "[R3.4 REAL soak] PASS 600.7 seconds / 548 cycles / 935 descendants"
+    },
+    {
+      "utc": "2026-11-17T16:35:00.970Z",
+      "message": "[Power State R3.4] PASS: 259 real-texture assertions"
+    },
+    {
+      "utc": "2026-11-17T16:35:00.970Z",
+      "message": "[Power State isolated client] Starting existing ten-minute native Soak.spec"
+    },
+    {
+      "utc": "2026-11-17T16:36:02.007Z",
+      "message": "[Power State R2 Soak] 60 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:37:03.003Z",
+      "message": "[Power State R2 Soak] 120 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:38:04.000Z",
+      "message": "[Power State R2 Soak] 180 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:39:05.000Z",
+      "message": "[Power State R2 Soak] 240 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:40:05.996Z",
+      "message": "[Power State R2 Soak] 300 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:41:06.994Z",
+      "message": "[Power State R2 Soak] 360 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:42:07.990Z",
+      "message": "[Power State R2 Soak] 420 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:43:08.988Z",
+      "message": "[Power State R2 Soak] 480 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:44:09.986Z",
+      "message": "[Power State R2 Soak] 540 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-17T16:45:01.865Z",
+      "message": "[Power State R2 Soak] PASS: 600.9 seconds, 591 cycles, 929 GUI descendants stable"
+    },
+    {
+      "utc": "2026-11-17T16:46:03.398Z",
+      "message": "[P2b soak] 60 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:47:04.396Z",
+      "message": "[P2b soak] 120 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:48:05.394Z",
+      "message": "[P2b soak] 180 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:48:15.126Z",
+      "message": "[P2b accounting] PASS 2941 assertions; two-day requested 150.915967 / delivered 139.355967 MWh"
+    },
+    {
+      "utc": "2026-11-17T16:49:06.390Z",
+      "message": "[P2b soak] 240 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:50:07.388Z",
+      "message": "[P2b soak] 300 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:51:08.388Z",
+      "message": "[P2b soak] 360 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:52:09.384Z",
+      "message": "[P2b soak] 420 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:53:10.382Z",
+      "message": "[P2b soak] 480 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:54:11.378Z",
+      "message": "[P2b soak] 540 cycles; stable 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:55:03.234Z",
+      "message": "[P2b soak] PASS 600.8s / 591 cycles / 345 map descendants"
+    },
+    {
+      "utc": "2026-11-17T16:57:04.505Z",
+      "message": "[P2b rendering] 1366x704 CPU p50/p95 0.0962/0.1077ms frame 16.68/17.51ms map 345"
+    },
+    {
+      "utc": "2026-11-17T16:57:06.572Z",
+      "message": "[P2b rendering] 360x580 CPU p50/p95 0.1249/0.1519ms frame 16.61/17.71ms map 345"
+    },
+    {
+      "utc": "2026-11-17T16:57:08.638Z",
+      "message": "[P2b rendering] 768x960 CPU p50/p95 0.0980/0.1197ms frame 16.58/17.64ms map 345"
+    },
+    {
+      "utc": "2026-11-17T16:57:10.855Z",
+      "message": "[Power State P2b GUI] PASS: 88 assertions; map 345 descendants"
+    },
+    {
+      "utc": "2026-11-17T16:57:11.457Z",
+      "message": "[P2b encoded full] 44873"
+    },
+    {
+      "utc": "2026-11-17T16:57:11.966Z",
+      "message": "[P2b review] ready Willowmere"
+    },
+    {
+      "utc": "2026-11-17T16:57:12.322Z",
+      "message": "[P2b encoded dynamic] 1907"
+    },
+    {
+      "utc": "2026-11-17T16:59:55.458Z",
+      "message": "[P2b visual] corrected profile label"
+    },
+    {
+      "utc": "2026-11-17T17:10:06.492Z",
+      "message": "P2b final cleanup: Test edit mode, development runner enabled"
+    },
+    {
+      "utc": "2026-11-17T17:20:29.386Z",
+      "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 20.67 ms",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:29.406Z",
+      "message": "[P2b cold] first start 15.775ms; stages {\"terrainMs\":14.873200008878485,\"validationMs\":0.8891999896150082,\"layoutMs\":0.010399991879239679}",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:29.667Z",
+      "message": "[P2b memory] eight retained descriptors: 917.75 KiB/country (allocator/GC noise)",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:29.703Z",
+      "message": "[P2b demand] stepP95=0.0368ms batchP95=0.2779ms",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:31.255Z",
+      "message": "[P2b sweep] 100/100 unique=100 fallback=0",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:31.255Z",
+      "message": "[P2b gates] unique=100/100 fallback=0 cpuP95=15.994ms maxEncoded=43705 samples=2667 dayMWh=75.457983 peakMW=3.811",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:31.255Z",
+      "message": "[P2b distributions] rotations=[25,21,23,31] names=[12,13,16,5,16,16,11,11]",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:31.255Z",
+      "message": "[Power State P2b world] PASS: 35880 assertions",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:31.384Z",
+      "message": "[P2b accounting] PASS 2941 assertions; two-day requested 150.915967 / delivered 139.355967 MWh",
+      "run": "final fresh-source focused regression"
+    },
+    {
+      "utc": "2026-11-17T17:20:31.386Z",
+      "message": "P2b final fresh-source regression PASS",
+      "run": "final fresh-source focused regression"
+    }
+  ],
+  "limitations": [
+    "Safe-root layout measurements are desktop Studio, not device hardware or Device Simulator.",
+    "Eight-job scheduling and retained-country batches are synthetic, not eight actual clients.",
+    "Some retained renderer soaks overlapped heavy server seed sweeps."
+  ],
+  "excluded_attempts": [
+    {
+      "utc": "2026-11-17T17:18:26Z",
+      "reason": "Edit-mode require reused old cached modules; accounting failed on missing meanTemperatureCentiC. Superseded by exact local-source clone run at 17:20:29Z."
+    }
+  ]
+}
