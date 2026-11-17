@@ -6,13 +6,11 @@ Status: confirmed loop and feature scope; starting values, timings and command r
 
 Inspect demand and reliability → find the limiting generator, line or substation → compare investment and policy options → submit construction or operational orders → observe delivered electricity and costs → grow population and industry → reinvest. Later layers add maintenance scheduling, storage dispatch and delegated decisions. Players can always inspect why a region is underserved.
 
-## Starting fixture
+## Starting country
 
-Use one owned sector with a 12 MW gas station, two 10 MW substations, a 6 MW transfer line, two connected settlements requesting 4 MW and 3 MW, and an unconnected 2 MW settlement. Route the first 4 MW load locally and the second across the transfer line. Initial reachable demand is 7 MW, so the grid works and has room to improve. Give assets 80–90% condition without an immediate forced failure. Condition mechanics activate only in their later phase.
+17 November 2026 owner requirements supersede the earlier three-settlement starter proposal: one small settlement, one generator, one substation and an already-connected network that meets starting demand, within a reproducible temperate country with fair early expansion. See [Starting country](STARTING-COUNTRY.md) for confirmed requirements and separately marked numeric/algorithm proposals, and [Minimal simulation](MINIMAL-SIMULATION.md) for the proposed first interactive slice. Curated names do not imply globally unique names.
 
-Proposed start: 100,000 credits, 10,000 total residents distributed 4,000/3,000/3,000 across these settlements; settlement demand coefficients produce the fixture above and may differ by development level. Unconnected residents exist but do not pay electricity bills. These values are test fixtures, not balanced launch promises. Site costs must leave at least one affordable valid connection and enough reserve for ten simulated operating hours. Validate this when construction prices are set.
-
-The initial choice is connecting the third settlement, not building the first source of electricity. Explain that 12 MW nameplate is available potential: dispatch initially generates only the 7 MW needed by connected customers.
+The old 12 MW gas / two substations / 4+3 MW served and 2 MW isolated example remains a regression scenario, not new-player content. No runtime demo is changed. The first learning action is inspecting supply and controlled interruption/recovery; a future P3 construction opportunity can connect new development rather than starting with an already-unserved settlement. Exact tutorial progression, Bank grant and construction affordability need P3/P4 balancing.
 
 ## Order lifecycle
 

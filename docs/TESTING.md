@@ -1,10 +1,14 @@
 # Testing and evidence
 
+17 November 2026 design gates: [Starting country](STARTING-COUNTRY.md), [Climate/demand](CLIMATE-AND-DEMAND.md), [Minimal simulation](MINIMAL-SIMULATION.md), [Planning](PLANNING-APPLICATIONS.md) and [Demand events](NATIONAL-DEMAND-EVENTS.md) define future golden-seed, fairness, border, energy, replay, idempotency and bounded-work fixtures. These are planned tests, not newly passing runtime suites. Current documentation-only evidence is in [Foundation validation](PROCEDURAL-FOUNDATION-VALIDATION.md).
+
 R3.1 update: the owner requested visual refinement after accepting R3 technically. Current native art/framing, 1,091 passing assertions and 574-map-descendant measurements are recorded in [R3.1 validation](R31-VALIDATION.md). The [modular art recommendation](R31-ART-STRATEGY.md) remains a proposal; no uploads or future gameplay are authorized. Historical R3 measurements below are retained.
 
 Status: P1 uses a dependency-free Studio assertion harness (D17). Simulation and other gameplay fixtures below remain future-phase specifications.
 
 ## Current presentation harness (P1/R1/R2/R3)
+
+R3.5: the isolated Test runner retains all existing suites and adds `R35.spec` for real-atlas marker/label presentation, 44px targets, mode/fallback restoration, fixed anchors, bounded movement and cleanup. `ValidateR35.py` checks the two new modules are excluded from the production build. See [current R3.5 evidence](R35-VALIDATION.md); historical counts below remain historical. Production contains no development runner or comparison controls.
 
 R1 adds `tests/unit/CurrencyFormat.spec.luau` (26 cases) and `tests/integration/R1.spec.luau` (16 client assertions). Both passed in Studio. R2 preserves that coverage, revises the existing shell/engine geometry assertions for approved responsive behavior and adds production-controller interaction and ten-minute smoke suites. Current execution evidence, commands and limitations are in [R3 validation](R3-VALIDATION.md); earlier R1/R2 evidence remains historical. R3 adds 190 rendering/interaction assertions, bounded-instance checks and desktop Studio draw/frame profiling while retaining every existing suite.
 

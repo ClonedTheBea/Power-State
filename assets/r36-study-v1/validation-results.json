@@ -1,0 +1,31 @@
+{
+  "passed": 14,
+  "checks": [
+    "Approved atlas exact SHA-256",
+    "Study atlas RGBA",
+    "Study atlas size",
+    "southbank-candidate rectangle bounds",
+    "southbank-candidate pivot within rectangle",
+    "southbank-candidate transparent gutter",
+    "southbank-candidate transparent and opaque pixels",
+    "southbank-candidate antialiased alpha",
+    "eastmere-candidate rectangle bounds",
+    "eastmere-candidate pivot within rectangle",
+    "eastmere-candidate transparent gutter",
+    "eastmere-candidate transparent and opaque pixels",
+    "eastmere-candidate antialiased alpha",
+    "Nonoverlapping cells"
+  ],
+  "notEstablished": [
+    "Roblox filtering or permissions",
+    "Visual acceptance",
+    "Seamless tile compatibility",
+    "Physical-device readability or performance"
+  ],
+  "files": {
+    "contact-sheet.png": "26b6f5fc3d5d90997a7e653a17375bb4f33f290f54ee2729e0e25143b9521b08",
+    "settlement-study-atlas.png": "baff92a631e89bbf9a1506f5401488e40fc2d5fe56a71399b1f410df5b05ff4e",
+    "terrain-transition-concepts.png": "00e3040cee49e644a79b01e8a4858ca10affa4a6dabcab6b518cab391dad581b",
+    "zoom-pivot-review.png": "b0245311cbd56ba1cf2a9691427b54d6253fb4554aa89af8f9ad1be26197ef00"
+  }
+}

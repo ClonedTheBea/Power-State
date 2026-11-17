@@ -1,0 +1,60 @@
+{
+  "decal": {
+    "AssetTypeId": 13,
+    "TargetId": 138420314032574,
+    "IsNew": false,
+    "Updated": "2026-11-16T20:49:19.105Z",
+    "AssetId": 138420314032574,
+    "ProductId": 0,
+    "MinimumMembershipLevel": 0,
+    "Created": "2026-11-16T20:49:19.048Z",
+    "ContentRatingTypeId": 0,
+    "Creator": {
+      "Name": "missawfulname",
+      "CreatorTargetId": 149564436,
+      "Id": 149564436,
+      "HasVerifiedBadge": false,
+      "CreatorType": "User"
+    },
+    "IsLimited": false,
+    "Sales": 0,
+    "PriceDiscountDetails": [],
+    "IsPublicDomain": false,
+    "Name": "power-state-settlements-proof-v1",
+    "IsForSale": false,
+    "Description": "",
+    "IconImageAssetId": 0,
+    "IsLimitedUnique": false
+  },
+  "image": {
+    "AssetTypeId": 1,
+    "TargetId": 0,
+    "IsNew": false,
+    "Updated": "2026-11-16T20:49:18.716Z",
+    "AssetId": 90608851718773,
+    "ProductId": 0,
+    "MinimumMembershipLevel": 0,
+    "Created": "2026-11-16T20:49:18.652Z",
+    "ContentRatingTypeId": 0,
+    "Creator": {
+      "Name": "missawfulname",
+      "CreatorTargetId": 149564436,
+      "Id": 149564436,
+      "HasVerifiedBadge": false,
+      "CreatorType": "User"
+    },
+    "IsLimited": false,
+    "Sales": 0,
+    "PriceDiscountDetails": [],
+    "IsPublicDomain": false,
+    "Name": "power-state-settlements-proof-v1",
+    "IsForSale": false,
+    "Description": "",
+    "IconImageAssetId": 0,
+    "IsLimitedUnique": false
+  },
+  "relationship": "InsertService:LoadAsset(138420314032574), unparented Decal.Texture and ColorMap both rbxassetid://90608851718773; container destroyed",
+  "accessEvidence": "Test Studio edit-mode ContentProvider Success and ImageLabel.IsLoaded true; Test client real two-atlas readiness, all six labels and settlement profile passed R37.spec (1411 assertions) plus 600.1-second/589-cycle endurance at 595 map descendants on 2026-11-16. No permissions changed.",
+  "privacy": "No permission settings inspected or changed in this session; IsPublicDomain=false is not a full privacy/access-policy audit",
+  "sourceSha256": "baff92a631e89bbf9a1506f5401488e40fc2d5fe56a71399b1f410df5b05ff4e"
+}

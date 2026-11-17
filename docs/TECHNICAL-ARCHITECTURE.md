@@ -1,5 +1,7 @@
 # Technical architecture
 
+17 November 2026: [Foundation design](PROCEDURAL-GAMEPLAY-FOUNDATION.md) proposes server-side ClimateModel and DemandModel as pure bounded inputs to GridSolver, with WorldGenerator producing immutable versioned fields. Cosmetic descriptors and client renderer consume data without calculating authority. PlanningService and NationalDemandEventService remain future design interfaces, distinct from global EventService. No modules or dependencies are added.
+
 Status: P1 uses plain strict Luau modules, the existing Rojo mapping and a dependency-free Studio harness (D01/D17–D19). Future services, budgets and protocols remain proposals. API references were checked on 15 November 2026; observed runtime evidence is in [P1 validation](P1-VALIDATION.md).
 
 R2 evolves only the client presentation layer. `DashboardView` composes HeaderView, KpiStripView, NavigationView/NavigationIcon, DrawerView, the existing MapView, InspectorView and FeedbackView. `AppController` coordinates routes and local selection; `KeyboardController` owns focus/activation; `MapInputController` owns map input; `MapController` retains bounded camera/pointer behavior. Pure `Layout` and `ShellState` are presentation utilities, not server models. Scope owns connection cleanup. The frozen preview fixture remains the sole sample-data source, with no new server services/remotes/dependencies. See [R2 validation](R2-VALIDATION.md) and D33–D37.
@@ -7,6 +9,8 @@ R2 evolves only the client presentation layer. `DashboardView` composes HeaderVi
 R3 replaces only the map presentation: `Views/Map/MapFixture` is immutable cosmetic data, `MapArt` builds native illustration primitives, `MapGeometry` handles visibility/zoom bands and `TerrainRenderer` owns a bounded reusable patch pool. `MapView` keeps infrastructure/links/labels/selection independent; `MapController` retains camera/input and adds explicit Locate. Layers reuses DrawerView and the existing action/focus registry. All gameplay/server boundaries remain unchanged. See D38–D40 and [R3 validation](R3-VALIDATION.md) for measured counts/timing and limitations; native construction does not need asset downloads/uploads.
 
 ## Architecture recommendation
+
+R3.4 extends the optional proof presentation with a test-only `RealAtlas` adapter and approved same-upload image reference. The real adapter is guarded to the Test universe in Studio client mode and excluded from production builds. The shared renderer keeps its existing fixed six-label pool, transform and native replacement logic. Production Bootstrap still never attaches the proof. See [R3.4 validation](R34-VALIDATION.md) for actual delivery and visual evidence; R3.3 results below remain historical synthetic evidence.
 
 R3.3 adds an isolated cosmetic proof: `SpriteManifest`, `SpriteAtlasLoader` and `SpriteTerrainRenderer` live beside native TerrainRenderer. Only the test mapping's HybridProof attaches them. The manifest is immutable; the loader is injected and synthetic with no hosted image; the renderer owns six fixed ImageLabels and replacement visibility. Native terrain remains the default with no added instances in production. No app state, camera, asset coordinates or gameplay authority moves into these modules. See [R3.3 boundary and validation](R33-VALIDATION.md).
 

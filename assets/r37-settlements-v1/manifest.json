@@ -1,0 +1,106 @@
+{
+  "status": "Owner-accepted artwork; upload-ready, real-texture integration pending",
+  "atlasFile": "power-state-settlements-proof-v1.png",
+  "atlasSha256": "baff92a631e89bbf9a1506f5401488e40fc2d5fe56a71399b1f410df5b05ff4e",
+  "size": [
+    512,
+    256
+  ],
+  "gutterPx": 8,
+  "assetId": null,
+  "owner": {
+    "username": "missawfulname",
+    "userId": 149564436,
+    "type": "personal"
+  },
+  "privacy": "Restricted",
+  "testUniverseId": 10776833313,
+  "productionUniverseIdDoNotModify": 10776828545,
+  "provenance": {
+    "acceptedSource": "../r36-study-v1/manifest.json",
+    "prompts": "../r36-study-v1/prompts.json",
+    "production": "Byte-identical copy of accepted R3.6 atlas; no regeneration or colour/alpha changes",
+    "ownerAcceptance": "R3.7 request: both settlements accepted for isolated proof use",
+    "uploadOperator": "Owner only"
+  },
+  "sprites": [
+    {
+      "artId": "southbank",
+      "settlementId": "south",
+      "artRevision": 1,
+      "placementRevision": 2,
+      "sourceRect": [
+        8,
+        8,
+        240,
+        240
+      ],
+      "worldCanvasSize": [
+        130,
+        130
+      ],
+      "pivotPx": [
+        150,
+        182
+      ],
+      "groundAnchorWorld": [
+        685,
+        590
+      ],
+      "connectionAnchorWorld": [
+        665,
+        535
+      ],
+      "worldBounds": [
+        603.75,
+        491.4166666666667,
+        130,
+        130
+      ],
+      "fallbackPatchId": "art1:0:0:southbank",
+      "terminalInContentPx": [
+        113.07692307692308,
+        80.46153846153847
+      ]
+    },
+    {
+      "artId": "eastmere",
+      "settlementId": "east",
+      "artRevision": 1,
+      "placementRevision": 1,
+      "sourceRect": [
+        264,
+        8,
+        240,
+        240
+      ],
+      "worldCanvasSize": [
+        140,
+        140
+      ],
+      "pivotPx": [
+        120,
+        160
+      ],
+      "groundAnchorWorld": [
+        945,
+        510
+      ],
+      "connectionAnchorWorld": [
+        930,
+        455
+      ],
+      "worldBounds": [
+        875.0,
+        416.6666666666667,
+        140,
+        140
+      ],
+      "fallbackPatchId": "art1:0:0:eastmere",
+      "terminalInContentPx": [
+        94.28571428571428,
+        65.71428571428571
+      ]
+    }
+  ]
+}

@@ -13,7 +13,8 @@ type Native = {
 	setReplacements: ({[string]: boolean}) -> (),
 	render: (number, number, number, Vector2) -> (),
 }
-function Renderer.attach(mapRoot: Frame, terrain: Native, request: Loader.Request?, clock: (() -> number)?, descriptors: {Manifest.Sprite}?)
+export type Texture = {uri: string, request: ({ImageLabel}) -> Loader.Request}
+function Renderer.attach(mapRoot: Frame, terrain: Native, request: Loader.Request?, clock: (() -> number)?, descriptors: {Manifest.Sprite}?, texture: Texture?)
 	assert(RunService:IsStudio(), "R3.3 isolated Studio proof only")
 	assert(not terrain.root:GetAttribute("HybridProofAttached"), "Destroy the existing proof before remounting")
 	local source = descriptors or Manifest.entries
@@ -21,7 +22,6 @@ function Renderer.attach(mapRoot: Frame, terrain: Native, request: Loader.Reques
 	valid = validated and valid
 	-- Validation accepts only this frozen revision; never retain caller-mutable descriptors.
 	if valid then source = Manifest.entries end
-	local loader = Loader.new(if valid then request else nil, clock)
 	local images: {ImageLabel} = {}
 	local replacements: {[string]: boolean} = {}
 	local empty: {[string]: boolean} = {}
@@ -41,7 +41,7 @@ function Renderer.attach(mapRoot: Frame, terrain: Native, request: Loader.Reques
 		for _,e in source do
 			local image = Instance.new("ImageLabel")
 			image.Name = "ProofSprite_"..e.id
-			image.Image = "" -- Intentionally no texture or fabricated asset ID.
+			image.Image = if texture then texture.uri else ""
 			image.ImageRectOffset = Vector2.new(e.rect[1],e.rect[2])
 			image.ImageRectSize = Vector2.new(e.rect[3],e.rect[4])
 			local position = Manifest.position(e)
@@ -50,28 +50,42 @@ function Renderer.attach(mapRoot: Frame, terrain: Native, request: Loader.Reques
 			image.Position = UDim2.fromScale(position.X/1200,position.Y/800)
 			image.Size = UDim2.fromOffset(e.world.X,e.world.Y)
 			image.BackgroundColor3 = Theme.accent
-			image.BackgroundTransparency = 0.82 -- Explicit synthetic footprint, never presented as artwork.
+			image.BackgroundTransparency = if texture then 1 else 0.82
 			image.Active = false; image.Selectable = false; image.Visible = false
 			image.ZIndex = if e.coast then 2 else 3
-			image:SetAttribute("Synthetic", true); image:SetAttribute("ArtRevision", e.revision)
+			image:SetAttribute("Synthetic", texture == nil); image:SetAttribute("ArtRevision", e.revision)
 			image.Parent = terrain.root
 			table.insert(images,image); replacements[e.patchId] = true
 		end
 	end
+	local loader = Loader.new(if valid then (if texture then texture.request(images) else request) else nil, clock)
+	local function imagesReady(): boolean
+		if not texture then return true end
+		for _,image in images do if image.Image ~= texture.uri or not image.IsLoaded then return false end end
+		return #images == 6
+	end
+	local lastReady = false
 	local function draw(nextX: number, nextY: number, nextZoom: number, nextSize: Vector2)
 		if destroyed then return end
 		x,y,zoom,size = nextX,nextY,nextZoom,nextSize
 		local state = if valid then loader.state() else "InvalidManifest"
+		lastReady = imagesReady()
+		if state == "Ready" and not lastReady then state = "ImageUnavailable" end
 		local active = mode == "Hybrid" and state == "Ready"
 		terrain.setReplacements(if active then replacements else empty)
 		originalRender(x,y,zoom,size)
 		for i,image in images do
 			local p,e = Manifest.position(source[i]),source[i]
-			image.Visible = active and Geometry.intersects(x+p.X*zoom,y+p.Y*zoom,e.world.X*zoom,e.world.Y*zoom,size.X,size.Y,0)
+			-- Studio does not resolve IsLoaded for hidden/fully transparent labels.
+			-- Warm beneath the intact native fallback; only promote after all six load.
+			local warming = texture ~= nil and mode == "Hybrid" and (state == "Loading" or state == "ImageUnavailable")
+			image.ImageTransparency = 0
+			image.ZIndex = if warming then 0 elseif e.coast then 2 else 3
+			image.Visible = warming or (active and Geometry.intersects(x+p.X*zoom,y+p.Y*zoom,e.world.X*zoom,e.world.Y*zoom,size.X,size.Y,0))
 		end
 		mapRoot:SetAttribute("ProofMode",mode)
 		mapRoot:SetAttribute("ProofLoadState",state)
-		mapRoot:SetAttribute("ProofSynthetic",request ~= nil)
+		mapRoot:SetAttribute("ProofSynthetic",texture == nil and request ~= nil)
 	end
 	terrain.render = draw
 	local function refresh() draw(x,y,zoom,size) end
@@ -90,6 +104,7 @@ function Renderer.attach(mapRoot: Frame, terrain: Native, request: Loader.Reques
 	table.insert(connections,mapRoot.Destroying:Connect(destroy))
 	table.insert(connections,RunService.Heartbeat:Connect(function()
 		if mapRoot:GetAttribute("ProofLoadState") == "Loading" and loader.state() ~= "Loading" then refresh() end
+		if texture and loader.state() == "Ready" and imagesReady() ~= lastReady then refresh() end
 	end))
 	refresh()
 	return {images=images, refresh=refresh, destroy=destroy, state=loader.state,

@@ -1,5 +1,7 @@
 # Economy and National Eras
 
+17 November 2026: [Starting country](STARTING-COUNTRY.md) replaces the old multi-settlement opening requirement. The 7 MW price/boost arithmetic below remains an illustrative regression/balance example, not the new opening income. [Minimal simulation](MINIMAL-SIMULATION.md) defines P2 nonspendable estimates; P3 ledger, funded operation and balance gates are unchanged. New-country seeds at rebirth remain subject to separate reset/balance approval.
+
 Status: delivered-energy revenue, growth and optional rebirths are confirmed. The 15 November GUI brief also confirms Bank/Credits terminology and the Double Income product rules (D20–D23), for design only. Prices, transaction/timer engineering and balance remain proposals. Electricity reports are defined in [Simulation](ELECTRICITY-SIMULATION.md).
 
 ## Single consolidated Bank balance

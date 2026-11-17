@@ -1,5 +1,7 @@
 # Global events
 
+17 November 2026: [National Demand Events](NATIONAL-DEMAND-EVENTS.md) is a separate future country-load design, not this global export/reward framework and not an R4 ticker implementation. Domestic pulses/weather affect actual demand through the ordinary solver; forecast displays never award energy or money.
+
 Status: data-driven limited-time shared events and Operation Christmas Cheer are confirmed. Calendar timezone, accounting protocol, targets and rewards are proposed D15. [Simulation](ELECTRICITY-SIMULATION.md) supplies physical delivery; [Data](DATA-AND-SECURITY.md) supplies durable commits.
 
 ## Definition and instance

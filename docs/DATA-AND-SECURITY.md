@@ -1,5 +1,7 @@
 # Data and security
 
+17 November 2026 design extension: [Starting country](STARTING-COUNTRY.md) specifies proposed seed/version/template records, stable coordinates, name snapshots, immutable generated base plus player deltas/tombstones, and fail-closed generator migration. Existing one-key/fenced transaction rules remain. No profile schema or persistence code changes in this task.
+
 Status: authoritative gameplay and persistent profiles are confirmed. Schema, lease policy and limits are proposals D01/D05/D16. Platform API facts are sourced in [Technical architecture](TECHNICAL-ARCHITECTURE.md); protocols below are application designs, not built-in Roblox guarantees.
 
 ## Canonical data relationships

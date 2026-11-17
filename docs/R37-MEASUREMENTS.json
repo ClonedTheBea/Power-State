@@ -1,0 +1,538 @@
+{
+  "status": "Completed final run; actual Test Studio results with synthetic fault cases labelled",
+  "testUniverseId": 10776833313,
+  "events": [
+    {
+      "utc": "2026-11-16T21:21:53.367Z",
+      "message": "[Power State R2 Shell] PASS: 324 assertions"
+    },
+    {
+      "utc": "2026-11-16T21:21:53.371Z",
+      "message": "[Power State R1 Currency] PASS: 26 assertions"
+    },
+    {
+      "utc": "2026-11-16T21:21:56.535Z",
+      "message": "[Power State R2 GUI] PASS: 348 engine layout assertions"
+    },
+    {
+      "utc": "2026-11-16T21:21:56.867Z",
+      "message": "[Power State R1 Currency GUI] PASS: 16 assertions"
+    },
+    {
+      "utc": "2026-11-16T21:22:02.648Z",
+      "message": "[Power State R2 Interaction] PASS: 135 assertions"
+    },
+    {
+      "utc": "2026-11-16T21:22:05.066Z",
+      "message": "[Power State R3 profile] cold mount 23.31 ms; warm map draw p50 0.328 / p95 0.412 ms; map 574 / shell 929 descendants"
+    },
+    {
+      "utc": "2026-11-16T21:22:07.132Z",
+      "message": "[Power State R3 frames] 360x580 safe root: p50 16.59 / p95 17.58 ms (Studio desktop, not mobile hardware)"
+    },
+    {
+      "utc": "2026-11-16T21:22:09.199Z",
+      "message": "[Power State R3 frames] 1366x704 safe root: p50 16.64 / p95 17.51 ms (Studio desktop, not mobile hardware)"
+    },
+    {
+      "utc": "2026-11-16T21:22:09.226Z",
+      "message": "[Power State R3] PASS: 190 rendering/interaction assertions"
+    },
+    {
+      "utc": "2026-11-16T21:22:10.593Z",
+      "message": "[Power State R3.1] PASS: 52 framing/refinement assertions"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.261Z",
+      "message": "[Power State R3.3] PASS: 739 synthetic assertions; no atlas fetched"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.261Z",
+      "message": "[Power State isolated client] PASS: 1480 assertions; server suites report separately"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.363Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.363Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.363Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.363Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.363Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.363Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:22:36.378Z",
+      "message": "[R3.4 REAL load] ready=true elapsed=32.535 ms; cache state unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:37.359Z",
+      "message": "[Power State R3.5] PASS: 217 presentation assertions"
+    },
+    {
+      "utc": "2026-11-16T21:22:37.460Z",
+      "message": "[R3.7 REAL load] Original ready=true 32.617 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:37.695Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 32.188 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:38.914Z",
+      "message": "[R3.7 REAL load] Original ready=true 16.686 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:40.128Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 15.467 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:42.613Z",
+      "message": "[R3.7 REAL load] Original ready=true 16.543 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:43.828Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 15.501 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:46.312Z",
+      "message": "[R3.7 REAL load] Original ready=true 16.128 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:47.527Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 15.639 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:49.878Z",
+      "message": "[R3.7 REAL load] Original ready=true 16.166 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:50.964Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 16.673 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:54.246Z",
+      "message": "[R3.7 benchmark] Native 360x580 draw p50/p95 0.067/0.472 ms; frame 16.61/17.64 ms; map 595"
+    },
+    {
+      "utc": "2026-11-16T21:22:54.261Z",
+      "message": "[R3.7 REAL load] Original ready=true 15.603 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:56.347Z",
+      "message": "[R3.7 benchmark] Original 360x580 draw p50/p95 0.066/0.435 ms; frame 16.63/17.61 ms; map 595"
+    },
+    {
+      "utc": "2026-11-16T21:22:56.363Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 15.422 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:22:58.445Z",
+      "message": "[R3.7 benchmark] Settlements 360x580 draw p50/p95 0.065/0.480 ms; frame 16.62/17.70 ms; map 595"
+    },
+    {
+      "utc": "2026-11-16T21:23:00.531Z",
+      "message": "[R3.7 benchmark] Native 1366x704 draw p50/p95 0.066/0.099 ms; frame 16.62/17.66 ms; map 595"
+    },
+    {
+      "utc": "2026-11-16T21:23:00.546Z",
+      "message": "[R3.7 REAL load] Original ready=true 15.894 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:23:02.628Z",
+      "message": "[R3.7 benchmark] Original 1366x704 draw p50/p95 0.083/0.218 ms; frame 16.66/17.63 ms; map 595"
+    },
+    {
+      "utc": "2026-11-16T21:23:02.644Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 15.873 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:23:04.730Z",
+      "message": "[R3.7 benchmark] Settlements 1366x704 draw p50/p95 0.071/0.113 ms; frame 16.64/17.62 ms; map 595"
+    },
+    {
+      "utc": "2026-11-16T21:23:34.214Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.502 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:24:04.781Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.569 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:24:05.859Z",
+      "message": "[R3.7 soak] 60 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:24:35.347Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.492 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:25:05.910Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.442 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:25:06.992Z",
+      "message": "[R3.7 soak] 120 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:25:36.476Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.489 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:26:07.042Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.454 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:26:08.121Z",
+      "message": "[R3.7 soak] 180 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:26:37.609Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.483 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:27:08.171Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.475 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:27:09.253Z",
+      "message": "[R3.7 soak] 240 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:27:38.738Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.478 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:28:09.304Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.495 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:28:10.382Z",
+      "message": "[R3.7 soak] 300 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:28:39.871Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.508 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:29:10.437Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.487 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:29:11.515Z",
+      "message": "[R3.7 soak] 360 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:29:41.000Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.495 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:30:11.566Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.483 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:30:12.644Z",
+      "message": "[R3.7 soak] 420 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:30:42.132Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.475 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:31:12.699Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.497 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:31:13.777Z",
+      "message": "[R3.7 soak] 480 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:31:43.261Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.687 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:32:13.843Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 0.543 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:32:14.921Z",
+      "message": "[R3.7 soak] 540 cycles / stable 595"
+    },
+    {
+      "utc": "2026-11-16T21:32:44.410Z",
+      "message": "[R3.7 REAL load] Original ready=true 0.483 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:33:04.804Z",
+      "message": "[R3.7 soak] PASS 600.1 seconds / 589 cycles / 595 map descendants"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.871Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 6.009 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.906Z",
+      "message": "[Power State R3.7] PASS: 1411 assertions (real profile plus labelled synthetic faults)"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.988Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.988Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.988Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.988Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.988Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:33:09.988Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:33:10.003Z",
+      "message": "[R3.4 REAL load] ready=true elapsed=33.811 ms; cache state unknown"
+    },
+    {
+      "utc": "2026-11-16T21:33:10.007Z",
+      "message": "[R3.4 REAL readiness] state=Ready elapsed=35.918 ms; GraphicsTexture before=33.056182861328125 after=33.056182861328125 MiB (whole client, not atlas-only)"
+    },
+    {
+      "utc": "2026-11-16T21:33:15.039Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 1 draw p50/p95 0.049/0.410 ms; frame 16.53/17.86 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:17.207Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 1 draw p50/p95 0.050/0.432 ms; frame 16.62/17.72 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:19.371Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 2 draw p50/p95 0.052/0.428 ms; frame 16.63/17.90 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:21.535Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 2 draw p50/p95 0.052/0.417 ms; frame 16.64/17.67 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:23.707Z",
+      "message": "[R3.4 REAL benchmark] Native 360x580 pass 3 draw p50/p95 0.052/0.429 ms; frame 16.66/17.63 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:25.871Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 360x580 pass 3 draw p50/p95 0.051/0.411 ms; frame 16.61/17.53 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:28.105Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 1 draw p50/p95 0.051/0.547 ms; frame 16.62/17.55 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:30.269Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 1 draw p50/p95 0.052/0.543 ms; frame 16.66/17.41 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:32.437Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 2 draw p50/p95 0.050/0.545 ms; frame 16.65/17.34 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:34.605Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 2 draw p50/p95 0.051/0.549 ms; frame 16.60/17.53 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:36.789Z",
+      "message": "[R3.4 REAL benchmark] Native 768x960 pass 3 draw p50/p95 0.051/0.593 ms; frame 16.65/17.43 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:38.953Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 768x960 pass 3 draw p50/p95 0.050/0.541 ms; frame 16.61/17.45 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:41.203Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 1 draw p50/p95 0.050/0.549 ms; frame 16.66/17.55 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:43.386Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 1 draw p50/p95 0.051/0.585 ms; frame 16.64/17.35 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:45.570Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 2 draw p50/p95 0.050/0.555 ms; frame 16.61/17.41 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:47.753Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 2 draw p50/p95 0.052/0.559 ms; frame 16.61/17.54 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:49.917Z",
+      "message": "[R3.4 REAL benchmark] Native 1366x704 pass 3 draw p50/p95 0.049/0.547 ms; frame 16.60/17.50 ms"
+    },
+    {
+      "utc": "2026-11-16T21:33:52.101Z",
+      "message": "[R3.4 REAL benchmark] Hybrid 1366x704 pass 3 draw p50/p95 0.053/0.549 ms; frame 16.65/17.49 ms"
+    },
+    {
+      "utc": "2026-11-16T21:34:53.101Z",
+      "message": "[R3.4 REAL soak] 60 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:35:54.101Z",
+      "message": "[R3.4 REAL soak] 120 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:36:55.093Z",
+      "message": "[R3.4 REAL soak] 180 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:37:56.093Z",
+      "message": "[R3.4 REAL soak] 240 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:38:57.093Z",
+      "message": "[R3.4 REAL soak] 300 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:39:58.089Z",
+      "message": "[R3.4 REAL soak] 360 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:40:59.085Z",
+      "message": "[R3.4 REAL soak] 420 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:42:00.082Z",
+      "message": "[R3.4 REAL soak] 480 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:43:01.082Z",
+      "message": "[R3.4 REAL soak] 540 cycles; pool/readiness stable"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.929Z",
+      "message": "[R3.4 REAL soak] PASS 600.8 seconds / 591 cycles / 935 descendants"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.964Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.964Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.964Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.964Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.964Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.964Z",
+      "message": "[R3.4 REAL fetch] Success"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.976Z",
+      "message": "[R3.4 REAL load] ready=true elapsed=19.432 ms; cache state unknown"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.980Z",
+      "message": "[Power State R3.4] PASS: 259 real-texture assertions"
+    },
+    {
+      "utc": "2026-11-16T21:43:52.980Z",
+      "message": "[Power State isolated client] Starting existing ten-minute native Soak.spec"
+    },
+    {
+      "utc": "2026-11-16T21:44:54.011Z",
+      "message": "[Power State R2 Soak] 60 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:45:55.007Z",
+      "message": "[Power State R2 Soak] 120 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:46:56.003Z",
+      "message": "[Power State R2 Soak] 180 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:47:57.003Z",
+      "message": "[Power State R2 Soak] 240 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:48:58.000Z",
+      "message": "[Power State R2 Soak] 300 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:49:58.996Z",
+      "message": "[Power State R2 Soak] 360 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:50:59.996Z",
+      "message": "[Power State R2 Soak] 420 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:52:00.992Z",
+      "message": "[Power State R2 Soak] 480 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:53:01.992Z",
+      "message": "[Power State R2 Soak] 540 resize/pan cycles; instance count stable"
+    },
+    {
+      "utc": "2026-11-16T21:53:53.867Z",
+      "message": "[Power State R2 Soak] PASS: 600.9 seconds, 591 cycles, 929 GUI descendants stable"
+    },
+    {
+      "utc": "2026-11-16T21:55:26.503Z",
+      "message": "> assert(game.GameId==10776833313); local m=game.Players.LocalPlayer.PlayerGui:FindFirstChild(\"CountryMap\",true); m:SetAttribute(\"RequestedProofProfile\",\"Settlements\"); m:SetAttribute(\"RequestedProofMode\",\"Native\"); print(\"[R37 visual] Native\",m.AbsoluteSize,m:GetAttribute(\"CameraX\"),m:GetAttribute(\"CameraY\"),m:GetAttribute(\"CameraZoom\"))"
+    },
+    {
+      "utc": "2026-11-16T21:55:26.535Z",
+      "message": "[R37 visual] Native 1394, 551 322.24590163934425 25.663934426229503 0.6245901639344262"
+    },
+    {
+      "utc": "2026-11-16T21:56:11.570Z",
+      "message": "> assert(game.GameId==10776833313); local m=game.Players.LocalPlayer.PlayerGui:FindFirstChild(\"CountryMap\",true); m:SetAttribute(\"RequestedProofMode\",\"Hybrid\"); print(\"[R37 visual] Settlements\",m.AbsoluteSize,m:GetAttribute(\"CameraX\"),m:GetAttribute(\"CameraY\"),m:GetAttribute(\"CameraZoom\"))"
+    },
+    {
+      "utc": "2026-11-16T21:56:11.601Z",
+      "message": "[R37 visual] Settlements 1394, 551 322.24590163934425 25.663934426229503 0.6245901639344262"
+    },
+    {
+      "utc": "2026-11-16T21:56:11.632Z",
+      "message": "[R3.7 REAL load] Settlements ready=true 32.362 ms; cache unknown"
+    },
+    {
+      "utc": "2026-11-16T22:00:38.968Z",
+      "message": "> assert(game.GameId==10776833313); local m=game.Players.LocalPlayer.PlayerGui:FindFirstChild(\"CountryMap\",true); m:SetAttribute(\"RequestedProofMode\",\"Native\"); print(\"[R37 visual] mobile pair\",m.AbsoluteSize,m:GetAttribute(\"CameraX\"),m:GetAttribute(\"CameraY\"),m:GetAttribute(\"CameraZoom\"))"
+    },
+    {
+      "utc": "2026-11-16T22:00:38.972Z",
+      "message": "[R37 visual] mobile pair 344, 376 -268 -26.50000000000003 0.55"
+    }
+  ]
+}

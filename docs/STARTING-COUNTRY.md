@@ -1,0 +1,45 @@
+# Starting country and deterministic generation
+
+17 November 2026. **Design only.** D65–D69 in [Decisions](DECISIONS.md) distinguish owner requirements from engineering proposals. This specification extends [World and expansion](WORLD-AND-EXPANSION.md); it does not migrate the current demonstration fixture.
+
+## Confirmed starting contract
+
+Every new player receives a reproducible fictional country, a curated randomly selected settlement name, a temperate starting region, one small settlement, one generator, one substation and an already-connected basic network. Initial deliverable capacity meets initial demand. Early expansion must be fair across seeds. A rebirth may choose a new seed only under a later balanced reset design. Illustrated settlements are accepted as a continuing direction; Hybrid is not approved as default.
+
+“Unique” means a distinct country identity and high-diversity seeded geography. A finite seed/name pool cannot guarantee every rendered country or name is globally different. Proposed: a server-issued country ID and 128-bit seed, independent of public username; record seed once under the existing fenced profile initialization transaction. A retry reuses the prepared seed/country ID, not new random work inside the persistence callback. Names may repeat across countries. If globally exclusive geography or names are required, that is an unresolved product requirement needing a registry, not a promise supplied by a random seed.
+
+## Proposed starting content and fairness
+
+One owned 1024×1024-unit sector at `(0,0)`; existing proposed scale remains 10 map metres/unit. Start with a 1,000-person village, a 3 MW gas generator, a 3 MW substation and two 3 MW physical links: generator → substation → settlement demand bus. The demand bus is not a second substation. Nameplate is capacity, never guaranteed output. These numbers are **balance candidates**, not approvals. No random starter faults, terrain cost penalties or inferior equipment. Initial Bank and operating reserve remain unresolved P3 balance; the earlier 100,000 Credits is only a candidate, not an automatic grant.
+
+A bounded starting-region overlay reserves connected low-relief land, legal asset pads, two unobstructed routes and two future development pads. It also reserves a land corridor to at least one cardinal adjacent sector and comparable access to a second prospective expansion direction. Seeded rivers/cliffs/resources cannot block those reserved sites. Expansion benefits need not be identical, but the first valid route/site costs must lie within an approved band (proposed ±10% of reference), with no forced specialist water crossing or technology dependency. At least one early construction option must be affordable after preserving ten simulated hours of operating reserve when P3 prices exist. Unknown prices mean affordability remains unproven.
+
+Generate up to eight deterministic candidates for this bounded neighborhood, validate the full starter graph, temperature envelope, construction corridors and early opportunity score, then use a versioned safe template if all fail. Save the chosen template/candidate index and generator version. Do not endlessly reroll or silently change the seed. Apply the reservation as part of terrain generation so subsequent adjacent sectors see the same geometry. The temperate starting protection covers the owned start and its reserved early corridor; it does not force the whole country to be temperate.
+
+For the proposed first simulated day: ambient temperature remains 12–22°C and the starter demand envelope must stay ≤2 MW, leaving at least 1 MW capacity headroom. Validate all hourly curves and bounded weather extrema, not only the opening tick. This is a proposed novice envelope, not a claim that temperate countries never have cold weather. Later seasons, events and player development may exceed initial capacity and should be forecast, not perpetually suppressed. P2a uses fixed 15°C and fixed 0.75 MW demand before time-varying demand is enabled.
+
+## Seed, coordinates and stable identity
+
+Proposed generation key: `(seed, generationVersion, climateVersion, resourceVersion, startTemplateVersion)`. Cosmetic `artRevision` is independent. Use signed integer sector coordinates, floor division for negative world coordinates and local positions in `[0,1024)`. A point on the east/south edge belongs to the next sector; `(-1,0)` world units resolves to sector `(-1,0)`, local `(1023,0)`. Quantize authoritative positions to 1/16 world unit; do not persist camera/pixel positions as asset coordinates.
+
+Use a versioned, fully specified integer hash/PRNG implementation with golden vectors before implementation approval. Hash canonical signed-coordinate bytes, seed bytes, version and stream tag; never table traversal order or platform-default random/noise behavior. Terrain, resources, names, settlement placement and decorative variants use independent named streams. Drawing more trees cannot reroll fuel deposits. Sort candidates and use explicit tie-break IDs before selection. Same key and coordinate must produce identical authoritative quantized descriptors on supported servers, irrespective of discovery order.
+
+Generated IDs include country/era, sector coordinate and stable semantic slot, not an array index. Player-built assets use monotonically allocated server IDs within country/era. Population changes or village→town artwork never rename IDs or move electrical terminals. Save selected curated `nameId`, `namePoolVersion` and a safe display snapshot so pool edits cannot rename an existing settlement. A proposed initial pool includes Alderwick, Brackenford, Elmstead, Hazelbrook, Merefield, Oakcombe, Rowanbridge and Willowmere; editorial/localisation review is still required.
+
+## Base generation plus persistent changes
+
+Canonical country record (proposed): country/era IDs; seed and generation/climate/resource/balance/schema versions; chosen starter template; simulated step/calendar; owned sectors; generated-object overrides and deletion tombstones; built nodes/lines; population/development/efficiency; fuel depletion; committed orders; Bank/rounding remainders; bounded reliability history; later active demand-event state. Seeds reconstruct immutable terrain and initial candidates; they do not reconstruct player actions, earnings or population growth.
+
+Load pinned base descriptors, apply validated deltas in revision order, then validate references, ownership, capacities and bounds. Tombstones prevent sold generated assets reappearing. Missing generator/version or invalid references suspend loading for recovery; never substitute a new country or overwrite a failed load. Keep the existing one-key active profile proposal and size limits; do not create a multi-key chunk transaction implicitly. See [Data/security](DATA-AND-SECURITY.md).
+
+A generator upgrade needs old-version replay fixtures and an explicit migration mapping for IDs, terrain legality and deltas. Default is to retain old generation for existing countries. Cosmetic atlas updates cannot change terrain legality. Balance updates require separate version transitions; replay must record the effective version. Rebirth, if later approved to reroll, atomically saves the new seed/starter with the era reset and preserves lifetime/commerce records; response loss cannot generate another new country.
+
+## Demonstration migration — proposed, not performed
+
+Keep the current 1200×800 authored island as `demo-v1`, including all five IDs/anchors and transmission endpoints. Do not rescale it into a 1024-unit sector or turn its illustrative population/Bank values into a save. Preserve Southbank `south` at `(665,535)` and Eastmere `east` at `(930,455)`; cosmetic anchors/pivots remain as approved in [R3.7](R37-VALIDATION.md).
+
+Later introduce a separate server-generated test-country source behind the same view-model boundary. Adapter carries world bounds, stable IDs, revision and coordinate frame; renderer projects them without deriving authority. Compare demo and generated profiles independently. Migration into player saves is needed only if real persistent countries exist then; inspect actual schema rather than assuming a fixture-to-save conversion is safe. No renderer adoption follows from this design.
+
+## Acceptance before enabling generated starts
+
+Golden seed corpus includes negative coordinates, boundary points, extreme resources and safe-template fallback. Generate sectors in different orders, reload saved deltas and compare canonical hashes. Sweep at least 10,000 deterministic candidate seeds plus adversarial seeds (proposed test sample, not a proof over all seeds); every start must meet graph, climate, demand and reserved-site checks. Log opportunity score distributions and template-fallback rate. Reject generation failure without charging or overwriting state. Verify seed initialization races/retry, tombstone replay, old-version saves and name-pool revisions. No such generator or tests are implemented in this documentation task.

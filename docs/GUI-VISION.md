@@ -1,5 +1,9 @@
 # GUI vision — illustrated country, clear control room
 
+17 November 2026 owner decision: R3.7 technical validation and illustrated settlement direction are accepted for continued development; Hybrid is still not the production default. [Procedural foundation](PROCEDURAL-GAMEPLAY-FOUNDATION.md) preserves Native fallback, fixed interaction anchors and separate cosmetic descriptors. Its procedural rendering proposal uses 600 total map descendants, superseding the older 600-objects-plus-200-labels planning target; no GUI changes are made.
+
+R3.5 follow-up: R3.4 technical evidence is owner-accepted, but Hybrid is not approved as default. The [Test-only marker experiment and proposed terrain/settlement grammar](R35-VISUAL-COHESION.md) preserve this document's interaction and art-direction requirements; future artwork remains separately gated.
+
 R3.1 update: the owner requested visual refinement after accepting R3 technically. Current native art/framing, 1,091 passing assertions and 574-map-descendant measurements are recorded in [R3.1 validation](R31-VALIDATION.md). The [modular art recommendation](R31-ART-STRATEGY.md) remains a proposal; no uploads or future gameplay are authorized. Historical R3 measurements below are retained.
 
 15 November 2026 · Approved design requirements · R1–R3 implemented; later slices remain gated

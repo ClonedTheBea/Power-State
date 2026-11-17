@@ -1,16 +1,21 @@
 --!strict
 -- Isolated test mapping only. Restart Play after Rojo sync to reload all modules.
 if not game:GetService("RunService"):IsStudio() then return end
+if game.GameId ~= 10776833313 then warn("Isolated runner requires approved Test universe"); return end
 local player=game:GetService("Players").LocalPlayer
 local playerGui=player:WaitForChild("PlayerGui") :: PlayerGui
 playerGui:WaitForChild("PowerStateShell")
 task.wait(1)
 local total=0
-for _,name in {"Gui.spec","R1.spec","R2.spec","R3.spec","R31.spec","R33.spec"} do
-	local module=script.Parent:WaitForChild(name) :: ModuleScript
-	local run=require(module)
+for _,run in {require(script.Parent["Gui.spec"]),require(script.Parent["R1.spec"]),require(script.Parent["R2.spec"]),
+	require(script.Parent["R3.spec"]),require(script.Parent["R31.spec"]),require(script.Parent["R33.spec"])} do
 	total+=run(playerGui)
 end
 print(string.format("[Power State isolated client] PASS: %d assertions; server suites report separately",total))
+require(script.Parent["R35.spec"])(playerGui)
+require(script.Parent["R37.spec"])(playerGui)
+require(script.Parent["R34.spec"])(playerGui)
 print("[Power State isolated client] Starting existing ten-minute native Soak.spec")
-require(script.Parent:WaitForChild("Soak.spec") :: ModuleScript)(playerGui)
+require(script.Parent["Soak.spec"])(playerGui)
+local shell=playerGui:FindFirstChild("PowerStateShell"); if shell then shell:Destroy() end
+require(script.Parent.SettlementProof).mount(playerGui)

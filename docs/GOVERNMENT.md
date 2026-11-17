@@ -1,5 +1,7 @@
 # Government
 
+17 November 2026: [Planning applications](PLANNING-APPLICATIONS.md) proposes permission, conditional approval, funding and idempotent commissioning as a separately gated future P7 extension. Permission alone creates neither population nor electrical capacity. No initial-simulation planning or staff gameplay is authorized.
+
 Status: Government owns national policy, research, subsidies, major projects and strategic upgrades. Policy values and administrative mechanics are proposals D06/D09. [Economy](ECONOMY-AND-REBIRTHS.md) defines the single Bank balance.
 
 ## Future interface

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "status": "LOCAL STUDY ONLY; not the frozen runtime manifest",
+  "atlasFile": "settlement-study-atlas.png",
+  "size": [
+    512,
+    256
+  ],
+  "gutterPx": 8,
+  "atlasSha256": "baff92a631e89bbf9a1506f5401488e40fc2d5fe56a71399b1f410df5b05ff4e",
+  "approvedAtlasPreservedSha256": "e1dcb61948e575bab85d94a6eed3dce1939fe87389455fc3bce735a28cab63cb",
+  "provenance": {
+    "tool": "Built-in OpenAI image_gen",
+    "model": "Not exposed",
+    "date": "2026-11-16",
+    "reference": "Project-owned approved Newford sprite and approved motif contact sheet",
+    "prompts": "prompts.json",
+    "rights": "AI-generated candidates from project references; no exclusivity or legal clearance asserted; owner review required",
+    "uploadApproval": false
+  },
+  "sprites": [
+    {
+      "artId": "southbank-candidate",
+      "revision": 1,
+      "sourceFile": "sources/southbank-generated.png",
+      "sourceSha256": "97ad7f6f4382aa41911ab40976b3ac6480adf1053db965b33cfe32b3fcda947f",
+      "sourceAlphaBounds": [
+        0,
+        9,
+        1254,
+        1254
+      ],
+      "sourceFitSize": [
+        224,
+        222
+      ],
+      "sourceFitOffset": [
+        8,
+        9
+      ],
+      "sourceRect": [
+        8,
+        8,
+        240,
+        240
+      ],
+      "cell": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "pivotPx": [
+        120,
+        160
+      ],
+      "worldCanvasSize": [
+        130,
+        130
+      ],
+      "proposedGroundAnchorWorld": [
+        685,
+        590
+      ],
+      "unchangedConnectionAnchorWorld": [
+        665,
+        535
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:southbank"
+      ],
+      "status": "Local proposal; pivot and placement require Studio review"
+    },
+    {
+      "artId": "eastmere-candidate",
+      "revision": 1,
+      "sourceFile": "sources/eastmere-generated.png",
+      "sourceSha256": "c9e609090f55e0a21e6004f8e033561d0d0461cbeb263b41126370b1c6461b21",
+      "sourceAlphaBounds": [
+        0,
+        9,
+        1246,
+        1254
+      ],
+      "sourceFitSize": [
+        224,
+        224
+      ],
+      "sourceFitOffset": [
+        8,
+        8
+      ],
+      "sourceRect": [
+        264,
+        8,
+        240,
+        240
+      ],
+      "cell": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "pivotPx": [
+        120,
+        160
+      ],
+      "worldCanvasSize": [
+        140,
+        140
+      ],
+      "proposedGroundAnchorWorld": [
+        945,
+        510
+      ],
+      "unchangedConnectionAnchorWorld": [
+        930,
+        455
+      ],
+      "fallbackPatchIds": [
+        "art1:0:0:eastmere"
+      ],
+      "status": "Local proposal; pivot and placement require Studio review"
+    }
+  ]
+}

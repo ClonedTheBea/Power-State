@@ -1,0 +1,189 @@
+{
+  "date": "2026-11-16",
+  "scope": "Real same-upload Image 86222383311104, cached desktop Studio; not low-end mobile",
+  "hardware": "Core i9-11900K / RTX 3090 / 31.88 GiB physical RAM",
+  "studioVersion": "0.747.330.7470002",
+  "graphicsQuality": "Not recorded during benchmarks",
+  "samples": [
+    {
+      "mode": "Native",
+      "width": 360,
+      "height": 580,
+      "passNumber": 1,
+      "drawP50": 0.053,
+      "drawP95": 0.438,
+      "frameP50": 16.66,
+      "frameP95": 17.35
+    },
+    {
+      "mode": "Hybrid",
+      "width": 360,
+      "height": 580,
+      "passNumber": 1,
+      "drawP50": 0.051,
+      "drawP95": 0.432,
+      "frameP50": 16.65,
+      "frameP95": 17.29
+    },
+    {
+      "mode": "Native",
+      "width": 360,
+      "height": 580,
+      "passNumber": 2,
+      "drawP50": 0.053,
+      "drawP95": 0.439,
+      "frameP50": 16.61,
+      "frameP95": 17.51
+    },
+    {
+      "mode": "Hybrid",
+      "width": 360,
+      "height": 580,
+      "passNumber": 2,
+      "drawP50": 0.056,
+      "drawP95": 0.431,
+      "frameP50": 16.65,
+      "frameP95": 17.38
+    },
+    {
+      "mode": "Native",
+      "width": 360,
+      "height": 580,
+      "passNumber": 3,
+      "drawP50": 0.052,
+      "drawP95": 0.448,
+      "frameP50": 16.65,
+      "frameP95": 17.29
+    },
+    {
+      "mode": "Hybrid",
+      "width": 360,
+      "height": 580,
+      "passNumber": 3,
+      "drawP50": 0.055,
+      "drawP95": 0.43,
+      "frameP50": 16.65,
+      "frameP95": 17.41
+    },
+    {
+      "mode": "Native",
+      "width": 768,
+      "height": 960,
+      "passNumber": 1,
+      "drawP50": 0.055,
+      "drawP95": 0.565,
+      "frameP50": 16.64,
+      "frameP95": 17.69
+    },
+    {
+      "mode": "Hybrid",
+      "width": 768,
+      "height": 960,
+      "passNumber": 1,
+      "drawP50": 0.055,
+      "drawP95": 0.645,
+      "frameP50": 16.62,
+      "frameP95": 17.6
+    },
+    {
+      "mode": "Native",
+      "width": 768,
+      "height": 960,
+      "passNumber": 2,
+      "drawP50": 0.052,
+      "drawP95": 0.632,
+      "frameP50": 16.62,
+      "frameP95": 17.61
+    },
+    {
+      "mode": "Hybrid",
+      "width": 768,
+      "height": 960,
+      "passNumber": 2,
+      "drawP50": 0.053,
+      "drawP95": 0.65,
+      "frameP50": 16.6,
+      "frameP95": 17.84
+    },
+    {
+      "mode": "Native",
+      "width": 768,
+      "height": 960,
+      "passNumber": 3,
+      "drawP50": 0.056,
+      "drawP95": 0.643,
+      "frameP50": 16.61,
+      "frameP95": 17.59
+    },
+    {
+      "mode": "Hybrid",
+      "width": 768,
+      "height": 960,
+      "passNumber": 3,
+      "drawP50": 0.055,
+      "drawP95": 0.61,
+      "frameP50": 16.63,
+      "frameP95": 17.65
+    },
+    {
+      "mode": "Native",
+      "width": 1366,
+      "height": 704,
+      "passNumber": 1,
+      "drawP50": 0.054,
+      "drawP95": 0.636,
+      "frameP50": 16.65,
+      "frameP95": 17.33
+    },
+    {
+      "mode": "Hybrid",
+      "width": 1366,
+      "height": 704,
+      "passNumber": 1,
+      "drawP50": 0.053,
+      "drawP95": 0.636,
+      "frameP50": 16.66,
+      "frameP95": 17.57
+    },
+    {
+      "mode": "Native",
+      "width": 1366,
+      "height": 704,
+      "passNumber": 2,
+      "drawP50": 0.052,
+      "drawP95": 0.638,
+      "frameP50": 16.66,
+      "frameP95": 17.69
+    },
+    {
+      "mode": "Hybrid",
+      "width": 1366,
+      "height": 704,
+      "passNumber": 2,
+      "drawP50": 0.053,
+      "drawP95": 0.616,
+      "frameP50": 16.65,
+      "frameP95": 17.52
+    },
+    {
+      "mode": "Native",
+      "width": 1366,
+      "height": 704,
+      "passNumber": 3,
+      "drawP50": 0.051,
+      "drawP95": 0.621,
+      "frameP50": 16.6,
+      "frameP95": 17.71
+    },
+    {
+      "mode": "Hybrid",
+      "width": 1366,
+      "height": 704,
+      "passNumber": 3,
+      "drawP50": 0.054,
+      "drawP95": 0.617,
+      "frameP50": 16.66,
+      "frameP95": 17.28
+    }
+  ]
+}

@@ -5,6 +5,7 @@
 - Read [README.md](README.md), [PLANS.md](PLANS.md), [docs/DECISIONS.md](docs/DECISIONS.md) and the relevant system specifications before changes. Follow confirmed requirements and recorded approved decisions. Proposals are not approvals.
 - The bootstrap task is documentation only. Do not implement the game under that task. Later tasks may authorize their stated implementation scope.
 - Preserve existing work. Implement only the requested phase or fix; avoid unrelated features. Do not install dependencies, publish, deploy, commit or push without authorization covering that action.
+- For future artwork, prepare local files and upload instructions; the owner uploads to Roblox and supplies asset IDs. Do not automate Creator Dashboard uploads unless specifically requested for that upload.
 - Resolve specification conflicts in the decision log. Record important new decisions, rationale, status and consequences; update affected documentation when behavior changes.
 
 ## Engineering

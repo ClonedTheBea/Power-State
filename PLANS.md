@@ -1,6 +1,8 @@
 # Development roadmap
 
-Latest authorized task: **R3.2 art-proof planning complete**; see [the proposal and planning checks](docs/R32-ART-PROOF-PLAN.md). This supersedes the earlier R3.1 stop point only for documentation. Artwork production, uploads and hybrid implementation remain unstarted and require separate authorization.
+Latest task — **17 November 2026 procedural/gameplay foundation: design complete only.** [Design package and proposed slices](docs/PROCEDURAL-GAMEPLAY-FOUNDATION.md) define a seeded temperate one-settlement start, climate/demand, minimal network and deferred planning/events. Owner accepts the illustrated settlement direction; Native remains default. **P2 has not started.** Recommended next implementation request: narrowly scoped P2a after its listed approval gates. Historical milestone records follow.
+
+Previous implementation task: **R3.7 — real settlement integration**, implemented in the isolated Test mapping; engine validation complete: 3,717 assertions, both builds, 128 local checks and three ten-minute soaks passed; matched real desktop/mobile-safe-root captures recorded. Device-emulator/physical-device review remains outstanding. Owner-uploaded Decal 138420314032574 resolves to Image 90608851718773, owned by missawfulname. Separate Original/Settlements profiles reuse six ImageLabels and preserve the original frozen manifest; native forest/fields return in the settlement profile. [R3.7 validation](docs/R37-VALIDATION.md) records current evidence and comparison instructions. Terrain concepts remain direction only; Native remains production default. Stop after R3.7; older stop points below are historical milestones.
 
 Status: P0 complete. P1 implementation authorized by the owner and implemented on 15 November 2026; validation evidence and remaining manual checks are recorded below. **Stop before P2.** Each later phase is independently reviewable; acceptance requires observed evidence, not only written specifications. See [Decisions](docs/DECISIONS.md) for approvals and [Testing](docs/TESTING.md) for shared gates.
 
@@ -40,12 +42,12 @@ See [P1 validation](docs/P1-VALIDATION.md) for exact evidence and limitations. T
 
 ## P2 — Small country and electricity slice
 
-The GUI redesign does not authorize or start this phase. See the separate review/migration sequence below.
+The GUI redesign and the 17 November design task do not authorize or start this phase. Proposed split: **P2a** fixed one-settlement interactive electricity proof; **P2b** bounded seed-generated start and climate-aware demand. See [minimal simulation](docs/MINIMAL-SIMULATION.md) and [foundation milestones](docs/PROCEDURAL-GAMEPLAY-FOUNDATION.md). All values/algorithms require the recorded approval gates.
 
-- **Scope:** starter map/asset fixture, fixed simulation clock, one generator type, aggregate demand, substations and capacity-constrained transmission. Resolve D02–D04.
+- **Scope:** one settlement/generator/substation with connected basic network, fixed simulation clock, one generator type, aggregate demand and capacity-constrained transmission. P2b adds starting terrain only; resolve D02–D04 and D66–D69.
 - **Dependencies:** P1; pure domain test harness.
 - **Deliverables:** deterministic country fixture, NetworkModel/GridSolver, report contract, map selection and supply/congestion/disconnection displays.
-- **Acceptance:** existing 7 MW connected demand is served in the starter fixture; a 4 MW bottleneck only delivers 4 MW; an isolated settlement receives zero; all accounting invariants pass and state remains server-owned.
+- **Acceptance:** all initial demand is served in the revised one-settlement starter; the retained 7 MW regression behind a 4 MW bottleneck delivers only 4 MW; an isolated settlement receives zero; all accounting invariants pass and state remains server-owned.
 - **Testing:** pure flow/unit/replay fixtures, cyclic/parallel-edge rerouting, server-client isolation and initial profiling. Compare fair allocation prototype separately before enabling extra priority tiers.
 - **Out of scope:** save/load, construction purchases, population growth, staff, storage and trade.
 
@@ -69,7 +71,7 @@ The GUI redesign does not authorize or start this phase. See the separate review
 
 ## P5a — Procedural sectors and bounded expansion
 
-- **Scope:** seeded adjacent-sector acquisition, terrain construction costs, legal sites, chunked map rendering and capacity guards.
+- **Scope:** extend the proposed P2b starting generator to seeded adjacent-sector acquisition, terrain construction costs, legal sites, chunked map rendering and capacity guards. Starting-country generation is no longer wholly deferred to this phase; the split remains proposed.
 - **Dependencies:** P4; D05 accepted engineering envelope; save schema prepared for seed/version/deltas.
 - **Deliverables:** WorldGenerator, discovery/purchase commands, stable sector IDs, zoom detail/culling and limit UI.
 - **Acceptance:** discovery order and reload preserve identical sectors; terrain visibly affects quotes; offscreen demand still simulates; limits reject before spending.
@@ -186,7 +188,11 @@ Deliverables: server-authoritative atomic Credits purchase, active-time persiste
 
 After planning completion, the owner authorized local production against the six-motif atlas specification. Produced the 1024×1024 RGBA atlas, six exports, original generated raster sources, editable six-layer OpenRaster, projected-size contact sheet, manifest/provenance and inspection diagnostics. All 70 local automated artwork checks pass. The native-coast proxy reveals a visible grass seam and abrupt shoreline transitions: coast join acceptance remains unresolved. See [local validation and limitations](docs/R32-LOCAL-ART-VALIDATION.md). No upload, Roblox IDs or renderer implementation; R3.1 remains the running baseline.
 
-## Recommended next request
+## Historical visual follow-up recommendations
+
+**R3.5 — isolated visual cohesion complete:** 22px badges inside unchanged 44px targets, contextual names and immediate Native/missing-art restoration are implemented only in the Test decorator. Map count is bounded at 595. Final coverage: 2,306 engine assertions, 101 local checks, both builds, zero Script Analysis errors/warnings; retained real/native ten-minute soaks each passed 591 cycles. Desktop/tablet/mobile comparisons and limitations are in [R3.5 validation](docs/R35-VALIDATION.md). Owner visual acceptance and real-device testing remain pending. Review the candidate, then separately authorize a small local art study from [the terrain and settlement proposal](docs/R35-VISUAL-COHESION.md). No new artwork or progression system implemented; stop after R3.5.
+
+**R3.4 — Stage 2 isolated proof complete:** real adapter uses verified Image `86222383311104` from uploaded Decal `105986918888502`, owned by `missawfulname` / `149564436`. Both builds and 83+14 local checks pass; 2,089 engine assertions pass. Real-texture soak passed 600.8 seconds / 591 cycles / 935 stable descendants; native soak passed 600.9 seconds / 591 cycles / 929 descendants. Script Analysis: zero errors/warnings. Actual desktop, phone and tablet emulator comparisons are recorded. Recommend visual refinement and physical-device testing before adoption; owner visual acceptance remains pending. Production remains Native and was not synced; no permissions, uploads or gameplay changes. See [R3.4 validation](docs/R34-VALIDATION.md). Stop after Stage 2.
 
 **R3.3 — isolated mock renderer implemented:** owner accepted all six motifs for proof use; native remains default. Frozen manifest, six-sprite pool, injected readiness/failure lifecycle, native replacement ownership and test-only attribute comparison are implemented. Both builds and local asset checks pass; Studio suites pass 1,830 assertions including 739 synthetic hybrid checks. Proof count is 580 map / 935 shell. See [R3.3 validation](docs/R33-VALIDATION.md) for final soak/analysis evidence and benchmark limits. Real texture testing is blocked at the missing approved asset ID; request separate checksum/destination-specific upload approval before real-adapter testing. Historical R3.2 notes follow.
 
