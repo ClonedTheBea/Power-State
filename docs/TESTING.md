@@ -1,5 +1,7 @@
 # Testing and evidence
 
+**P3a design-only gate:** the [persistence test matrix](P3A-DECISION-PROPOSAL.md#required-test-matrix) adds atomic initialization, fencing, ambiguous writes, same-account races, restore accounting and actual Test DataStore acceptance. No persistence tests have run yet; existing P2a/P2b/P2b.1 results remain regression evidence only.
+
 **P2b.1:** actual eight-client ownership/control/replication checks and generation queue timing/cancellation are covered by `P2b1Multiplayer.spec`, `P2b1.spec`, the dormant cloned `P2b1Probe`, and `P2b1Scheduler.spec`. Live service inspection must run in a server Script context. [P2b.1 procedure, measurements and limitations](P2B1-VALIDATION.md).
 
 **P2b update — 17 November 2026:** P2b validation adds `P2bWorld.spec` (10,000-start sweep, reference/replay/fairness/demand/performance), `P2b.spec` (live generated GUI), `P2bSoak.spec` (ten-minute live generated endurance), and the existing remote suite parameterized for both services. Python climate checks remain independent reference evidence. [Current results and reproduction](P2B-VALIDATION.md).

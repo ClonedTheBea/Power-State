@@ -1,5 +1,7 @@
 # Power State
 
+**Current task: P3a persistent-country design complete, awaiting owner approval.** [Decision proposal](docs/P3A-DECISION-PROPOSAL.md) covers schema, leases/fencing, checkpoints, retries, migrations and acceptance tests. Documentation only; persistence code and real-service access are not authorized. Earlier milestone statuses below are historical.
+
 **P2b.1 available validation complete (17 November 2026).** Bounded generation scheduling retains the two-second watchdog and unchanged deterministic rules. Eight actual Studio clients passed isolation/control checks; removal and replacement joining passed. The full 10,000-seed sweep and relevant regressions passed. [Results, measurements and remaining same-account/device checks](docs/P2B1-VALIDATION.md). P2b is owner-approved as the basis for this task. Stop after P2b.1; Production remains untouched. Older statuses below are historical.
 
 Power State is a GUI-only Roblox electricity-grid strategy and tycoon game. Each player runs the energy infrastructure and national energy policy of a separate fictional country, starting with a small connected grid that meets initial demand and offers room to develop.

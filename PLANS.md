@@ -1,5 +1,7 @@
 # Development roadmap
 
+**P3a persistent-country design complete; awaiting approval.** [Decision proposal](docs/P3A-DECISION-PROPOSAL.md) separates persistence from the later P3 economy/construction work. Owner authorization covers documentation only. D94–D99 remain proposed; no DataStore implementation, API settings or Production changes. Stop at this approval gate.
+
 **P2b.1 available validation complete (17 November 2026).** Bounded generation scheduling retains the two-second watchdog and unchanged deterministic rules. Eight actual Studio clients passed isolation/control checks; removal and replacement joining passed. The full 10,000-seed sweep and relevant regressions passed. [Results, measurements and remaining same-account/device checks](docs/P2B1-VALIDATION.md). P2b is owner-approved as the basis for this task. Stop after P2b.1; Production remains untouched. Older statuses below are historical.
 
 **P2b Stage 2 implemented and available validation complete in isolated Test (17 November 2026).** Approved D86 radius 4608 is implemented with unchanged thresholds/formulas. Broader 2D/diagonal/offset climate, 10,000-start fairness/diversity, memory, exact demand/accounting replay, live GUI/security, retained regressions, both builds and four endurance runs passed. [Evidence, file inventory, screenshots and Studio instructions](docs/P2B-VALIDATION.md). Owner visual review, device testing and actual multi-client checks remain outstanding; synthetic eight-job validation is not real multi-client acceptance. Stop after P2b. No later phase or Production rollout authorized.
@@ -58,6 +60,16 @@ The later explicit P2a implementation request authorizes only the fixed proof. P
 - **Out of scope:** save/load, construction purchases, population growth, staff, storage and trade.
 
 ## P3 — Construction, economy and persistence
+
+### P3a — Persistent countries (design complete; implementation not authorized)
+
+- **Scope:** save/restore pinned country identity, starter network, online state, simulation accounting and zero/nonspendable Bank schema; fenced ownership, failure handling and migrations.
+- **Deliverable:** [P3a decision proposal](docs/P3A-DECISION-PROPOSAL.md), including D94–D99 owner choices, implementation stages and adversarial/real-service acceptance matrix.
+- **Current evidence:** documentation/links/protected-file checks only. Existing P2b.1 results do not prove persistence or same-account reconnect.
+- **Gate:** explicit owner design approval and separate implementation authorization. Actual Test service access/key namespace require verification before writes; no permission/publishing changes implied.
+- **Excluded:** spendable income, billing/reserves, construction, growth, land purchases and all later systems. Their original P3 gates below remain unresolved.
+
+### Remaining P3 economy/construction scope (not authorized)
 
 - **Scope:** straight legal connections, basic gas construction, money, domestic billing, bounded population growth and safe save/load. Resolve D05/D06/D16 and review D08 recovery before external playtesting.
 - **Dependencies:** P2; isolated Roblox test experience and API access configured by an authorized operator.

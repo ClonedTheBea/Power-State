@@ -1,5 +1,7 @@
 # Data and security
 
+**P3a design proposal:** [Persistent-country approval gate](P3A-DECISION-PROPOSAL.md) specifies candidate schema/lifecycle and D94–D99. It narrows the initial save to the existing one-sector starter, zero/nonspendable Bank and 256 KiB cap. These remain pending, not implemented replacements for the broader proposals below.
+
 17 November 2026 design extension: [Starting country](STARTING-COUNTRY.md) specifies proposed seed/version/template records, stable coordinates, name snapshots, immutable generated base plus player deltas/tombstones, and fail-closed generator migration. Existing one-key/fenced transaction rules remain. No profile schema or persistence code changes in this task.
 
 Status: authoritative gameplay and persistent profiles are confirmed. Schema, lease policy and limits are proposals D01/D05/D16. Platform API facts are sourced in [Technical architecture](TECHNICAL-ARCHITECTURE.md); protocols below are application designs, not built-in Roblox guarantees.

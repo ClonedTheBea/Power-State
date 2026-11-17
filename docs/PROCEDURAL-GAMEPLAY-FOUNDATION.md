@@ -1,5 +1,7 @@
 # Procedural world and gameplay foundation
 
+**Current follow-up:** P2b and P2b.1 completed available validation. [P3a persistent-country design](P3A-DECISION-PROPOSAL.md) is the documentation-only persistence subset of P3; implementation and economic/construction work require separate approval. Earlier failed-gate/unstarted statuses below are historical.
+
 17 November 2026 P2b Stage 1: [specific implementation recommendations](P2B-DECISION-PROPOSAL.md) now consolidate the earlier options and identify conflicts with accepted P2a. **Subsequently approved for Stage 2 (D83), but pre-integration climate validation failed; [gate and proposed correction](P2B-VALIDATION.md) await review.** Historical candidate values below are not silently promoted or replaced.
 
 17 November 2026. **Documentation complete; no gameplay implementation authorized or performed.** Owner accepts R3.7 technical validation and the illustrated settlement direction for continued development. Hybrid remains an isolated proof; Native remains production default. Existing demo coordinates, artwork and source remain unchanged.
