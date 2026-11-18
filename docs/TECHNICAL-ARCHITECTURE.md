@@ -1,5 +1,7 @@
 # Technical architecture
 
+**P3a follow-up:** D94–D99 are owner-approved (D100); D104 authorizes the completed single-key real Studio/Test proof. [P3a validation](P3A-VALIDATION.md) records actual create/checkpoint/reconnect/release evidence and remaining service limits. Real start requires the approved account, universe and key; normal bootstrap remains unchanged. Earlier design-only wording below is historical.
+
 **P3a design only:** [Persistent-country proposal](P3A-DECISION-PROPOSAL.md) maps future ProfileSchema/Migrations to Domain, ProfileService to Services and DataStoreAdapter to Adapters. It identifies required country-ID/session-epoch separation without changing current modules, Native presentation or Test guards.
 
 **P2b update — 17 November 2026:** P2b adds server-only `World` modules (integer fields, climate, starter validation, generation, demand and service), a generated descriptor adapter and bounded Native terrain cells. P2a retains its fixed fixture. The generated service is Studio/Test guarded and uses the existing owner/sequence/rate-checked intent handler. [P2b evidence](P2B-VALIDATION.md).

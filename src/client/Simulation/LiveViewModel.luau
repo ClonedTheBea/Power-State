@@ -14,7 +14,9 @@ function ViewModel.create(snapshot:any):Types.Preview
 
  return {nodes=nodes,links=links,world=snapshot.world,metrics={
 
- {label="BANK · PREVIEW",value="100,000 Credits",currencyMinor=10000000,detail="Not spendable"},
+ {label=if snapshot.profile=="P3b" then "BANK · LIVE" elseif snapshot.profile=="P3a" then "BANK · NONSPENDABLE" else "BANK · PREVIEW",
+  value=if snapshot.profile=="P3b" then require(script.Parent.BankPresentation).compact(snapshot) elseif snapshot.profile=="P3a" then "0 Credits" else "100,000 Credits",
+  currencyMinor=if snapshot.profile=="P3b" then snapshot.bankMinor elseif snapshot.profile=="P3a" then 0 else 10000000,detail=if snapshot.profile=="P3b" then "Live; checkpoint status in Bank" else "Not spendable"},
 
  {label="DELIVERED / DEMAND",value="Waiting",detail="Server MW"},
 

@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-18",
+  "scope": "Local historical replay and fake-storage Test validation; zero real DataStore calls",
+  "historicalCanonicalSha256": "d846d13a398113d1442ff1e0a3feeccbf2397fdf286cad88583f635524c75a65",
+  "forecast": {
+    "finalStep": 242,
+    "fixedCarry": 20000,
+    "intervals": 124,
+    "variableExpenseMinor": 54273,
+    "variableCarry": 4000,
+    "finalProfileBytes": 16905,
+    "salesMinor": 81409,
+    "affordableBankMinor": 125003,
+    "previousIntervalBankMinor": 124796,
+    "postPurchaseBankMinor": 25003,
+    "salesCarry": 36000,
+    "fixedExpenseMinor": 2133
+  },
+  "checks": {
+    "worldAssertions": 2916780,
+    "constructionGuiAssertions": 50,
+    "repeatRuns": 2,
+    "constructionMapDescendants": 362,
+    "retainedPrimaryClientAssertions": 1480,
+    "staticAssertions": 891,
+    "rojoBuilds": 2,
+    "seedCorpus": 10000,
+    "scriptAnalysisErrors": 0,
+    "scriptAnalysisWarnings": 0,
+    "newFakeAssertions": 62
+  },
+  "unresolved": [
+    "R35.spec: Existing focus object retained; invalid GuiService.SelectedObject warning at 10:09:35 UTC",
+    "R37/R34 full suites and endurance not reached",
+    "Physical touch/gamepad and real-service construction remain unverified"
+  ],
+  "sourceSha256": {
+    "src/server/Domain/ConstructionProofPlan.luau": "78296a56ac90121c3343963f358b8081bfc7100f4574b6116be803f711ab50c2",
+    "src/server/Services/ConstructionProofRunner.luau": "0a654de9677f898468af39114c1006f3e19ca74e0d62c81a85d04eff5d06d81c",
+    "src/server/Services/ConstructionProofExecution.luau": "64722cb433b5a22e18c59ff51e2d665c72ce8747927fb0b657b7157348435aac",
+    "src/server/Adapters/Schema3ConstructionAdapter.luau": "81600316388f86d2c944d407b6cc4ab1b40109a742e9b2b6876b172fd28ea8c6",
+    "src/server/Services/ProfileService.luau": "095d39c6455479484cb924aac6baa54400aea87daf029ab0f65d96f3a6d25c5c",
+    "tests/unit/P3c3.spec.luau": "64c04df2773130945b47a5b756cf53dd53ad281e4524146833ab4878051ffcb4",
+    "scripts/ValidateP3c3.py": "e643a5d3818cd1444dd473344fb344832b22ed06bab19119d2029e0d9c3d0768"
+  }
+}

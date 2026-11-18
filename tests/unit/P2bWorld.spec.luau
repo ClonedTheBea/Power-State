@@ -1,6 +1,6 @@
 --!strict
 -- Pure modules exercised inside Roblox; the 10,000 starts are a bounded test corpus, not player worlds.
-return function(sweepCount:number?)
+return function(sweepCount:number?,inspectConstruction:((any)->())?)
  local world=game:GetService("ServerScriptService").Server.World
  local Hash=require(world.IntegerField);local Climate=require(world.ClimateModel)
  local Generator=require(world.WorldGenerator);local Starter=require(world.StarterValidator);local Demand=require(world.DemandModel)
@@ -106,6 +106,7 @@ return function(sweepCount:number?)
  for i=1,count do
   local seed=string.format("%08x%08x%08x%08x",Hash.fnv("seed-a:"..i),Hash.fnv("seed-b:"..i),Hash.fnv("seed-c:"..i),Hash.fnv("seed-d:"..i))
   local generated=Generator.create(seed,"sweep",1)
+  if inspectConstruction then inspectConstruction(generated)end
   local f=generated.fairness;check(f.exitCount==2 and f.maxPadSlope<=.02 and f.routeRatio>=.9 and f.routeRatio<=1.1,"Seed fairness")
   check(generated.network.population==1000 and generated.network.nodes[1].capacity==5,"Equal initial equipment")
   local pieces={}

@@ -23,6 +23,15 @@ function KeyboardController.attach(root: GuiObject, actions: { [TextButton]: () 
 	focusLabel.Visible = false
 	local function isVisible(button: TextButton, focusRoot: GuiObject): boolean
 		if not button:IsDescendantOf(focusRoot) or not button.Selectable then return false end
+		-- A virtual/test safe root can exceed the rendered ScreenGui. The engine
+		-- rejects focus outside that area even when every GuiObject is Visible.
+		local gui = button:FindFirstAncestorWhichIsA("ScreenGui")
+		if not gui or not gui.Enabled then return false end
+		local p, s = button.AbsolutePosition, button.AbsoluteSize
+		local a, b = gui.AbsolutePosition, gui.AbsoluteSize
+		-- Scroll-list candidates remain reachable: focus() scrolls them into view.
+		if (p.X + s.X <= a.X or p.Y + s.Y <= a.Y or p.X >= a.X + b.X or p.Y >= a.Y + b.Y)
+			and not button:FindFirstAncestorWhichIsA("ScrollingFrame") then return false end
 		local cover = getOccluder()
 		if cover and cover.Parent and button:IsDescendantOf(cover.Parent) and not button:IsDescendantOf(cover) then
 			local centre = button.AbsolutePosition + button.AbsoluteSize / 2
@@ -59,7 +68,7 @@ function KeyboardController.attach(root: GuiObject, actions: { [TextButton]: () 
 			if top < 0 then scroll.CanvasPosition += Vector2.new(0, top)
 			elseif bottom > scroll.AbsoluteSize.Y then scroll.CanvasPosition += Vector2.new(0, bottom - scroll.AbsoluteSize.Y) end
 		end
-		GuiService.SelectedObject = button
+		if isVisible(button, getFocusRoot()) then GuiService.SelectedObject = button end
 	end
 	local function step(direction: number)
 		local list = candidates()

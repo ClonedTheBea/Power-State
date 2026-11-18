@@ -1,10 +1,11 @@
 --!strict
-return function(playerGui:PlayerGui)
+return function(playerGui:PlayerGui,profile:string?)
+ local profileName=profile or "P2b"
  local Client=require(script.Parent.Parent.Client.Simulation.SimulationClient)
  local RunService=game:GetService("RunService")
  local count=0;local function check(ok:boolean,label:string)assert(ok,label);count+=1 end
  local existing=playerGui:FindFirstChild("PowerStateShell");if existing then existing:Destroy() end
- local live=Client.mount(playerGui,"P2b");local app=live.app;local generatorId=live.current().generatorId
+ local live=Client.mount(playerGui,profileName);local app=live.app;local generatorId=live.current().generatorId
  local function settle()for _=1,4 do RunService.RenderStepped:Wait() end end
  local function waitState(online:boolean)
   local start=os.clock();repeat RunService.Heartbeat:Wait() until live.current().online==online or os.clock()-start>5
@@ -30,7 +31,7 @@ return function(playerGui:PlayerGui)
    check(app.view.root:GetAttribute("LiveDeliveredMW")==0,"Responsive live KPI")
    task.wait(.6);app.actions[live.toggle]();waitState(true)
    check(live.current().report.deliveredMW==live.current().report.demandMW and live.current().report.unmetMW==0,"Supply restored")
-   check(string.find(app.view.kpis.cards[1].label.Text,"PREVIEW")~=nil,"Bank explicitly placeholder")
+   check(string.find(app.view.kpis.cards[1].label.Text,if profileName=="P3b" then "LIVE" elseif profileName=="P3a" then "NONSPENDABLE" else "PREVIEW")~=nil,"Bank explicitly labels its economic authority")
    check(string.find(app.view.kpis.cards[4].label.Text,"FIXED")~=nil,"Population not growth")
    app.navigate("Government");app.navigate("Map");check(app.state.selectedId==generatorId,"Navigation selection")
    app.actions[app.view.inspector.locate]();settle();app.mapController.recenter()
@@ -57,15 +58,15 @@ return function(playerGui:PlayerGui)
     table.insert(frames,RunService.RenderStepped:Wait()*1000)
    end
    table.sort(cpu);table.sort(frames)
-   print(string.format("[P2b rendering] %dx%d CPU p50/p95 %.4f/%.4fms frame %.2f/%.2fms map %d",size[1],size[2],cpu[60],cpu[114],frames[60],frames[114],pool))
+   print(string.format("["..profileName.." rendering] %dx%d CPU p50/p95 %.4f/%.4fms frame %.2f/%.2fms map %d",size[1],size[2],cpu[60],cpu[114],frames[60],frames[114],pool))
   end
   local before=live.current().deliveredMWh;task.wait(2.2)
   check(live.current().deliveredMWh>before,"Actual server energy advances")
-  print(string.format("[Power State P2b GUI] PASS: %d assertions; map %d descendants",count,pool))
+  print(string.format("[Power State "..profileName.." GUI] PASS: %d assertions; map %d descendants",count,pool))
  end,function(err:unknown):string return debug.traceback(tostring(err)) end)
  live.destroy();check(not playerGui:FindFirstChild("PowerStateShell"),"Cleanup")
  if not ok then error(tostring(problem)) end
- local remount=Client.mount(playerGui,"P2b");check(remount.current().online,"Remount sync preserves server state");remount.destroy()
+ local remount=Client.mount(playerGui,profileName);check(remount.current().online,"Remount sync preserves server state");remount.destroy()
  require(script.Parent.Parent.Client.Controllers.AppController).mount(playerGui)
  return count
 end

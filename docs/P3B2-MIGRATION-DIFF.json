@@ -1,0 +1,152 @@
+{
+  "scope": "Pure migration dry run only; no real write or lease. Envelope acquire changes documented separately.",
+  "observed": {
+    "schemaVersion": 1,
+    "profileRevision": 15,
+    "countryRevision": 123,
+    "sessionEpoch": 4
+  },
+  "readUtcMs": 1794980952862,
+  "readMs": 462.878999998793,
+  "platformVersion": "08DF44E1F51DCFA5.000000000F.08DF44E28A32164D.01",
+  "preimageSha256": "d812a9752fa685f9d6976e08ea0821510b4d82c405fa11df558c2903628655df",
+  "preimageBytes": 6620,
+  "pureMigrationSha256": "68cdcb0723bf19e742c37b869908f442e10e8c40e2570a85297ce58bdbc72f38",
+  "pureMigrationBytes": 7269,
+  "fieldChanges": [
+    {
+      "op": "replace",
+      "path": "/country/bank/balanceMinor",
+      "old": 0,
+      "value": 100000
+    },
+    {
+      "op": "replace",
+      "path": "/country/bank/ledgerVersion",
+      "old": 1,
+      "value": 2
+    },
+    {
+      "op": "add",
+      "path": "/country/bank/openingGrantId",
+      "value": "P3bOpeningV1:55e35a88-e3b9-4f72-9e69-d9024e7730a4"
+    },
+    {
+      "op": "add",
+      "path": "/country/bank/openingGrantMinor",
+      "value": 100000
+    },
+    {
+      "op": "add",
+      "path": "/country/bank/operatingBufferMinor",
+      "value": 25000
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/activationOperationId",
+      "value": "[planned operation GUID recorded in private PureMigration.json]"
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/activationStep",
+      "value": 113
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/balanceVersion",
+      "value": 1
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/baseSalesMinor",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/baseSalesRemainder",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/baselineDeliveredMWh",
+      "value": 5.355999999999993
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/baselineRequestedMWh",
+      "value": 5.875999999999989
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/bonusSalesMinor",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/bonusSalesRemainder",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/deliveredKwMinutes",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/economyVersion",
+      "value": 1
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/fixedExpenseMinor",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/fixedExpenseRemainder",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/fromSchema",
+      "value": 1
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/generatedKwMinutes",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/lastSettledStep",
+      "value": 113
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/onlineSteps",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/statements",
+      "value": {}
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/variableExpenseMinor",
+      "value": 0
+    },
+    {
+      "op": "add",
+      "path": "/country/economy/variableExpenseRemainder",
+      "value": 0
+    },
+    {
+      "op": "replace",
+      "path": "/schemaVersion",
+      "old": 1,
+      "value": 2
+    }
+  ],
+  "privateDiffSha256": "0743f73014da7a6a831433208c708b05512f6515bcf09e6cd056dc340202a081"
+}

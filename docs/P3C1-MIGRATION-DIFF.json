@@ -1,0 +1,39 @@
+[
+  {
+    "path": "/country/bank/constructionSpentMinor",
+    "operation": "add",
+    "value": 0
+  },
+  {
+    "path": "/country/bank/ledgerVersion",
+    "operation": "replace",
+    "old": 2,
+    "value": 3
+  },
+  {
+    "path": "/country/construction/compositionVersion",
+    "operation": "add",
+    "value": 2
+  },
+  {
+    "path": "/country/construction/constructionDemandVersion",
+    "operation": "add",
+    "value": 1
+  },
+  {
+    "path": "/country/construction/constructionVersion",
+    "operation": "add",
+    "value": 1
+  },
+  {
+    "path": "/country/construction/topologyRevision",
+    "operation": "add",
+    "value": 0
+  },
+  {
+    "path": "/schemaVersion",
+    "operation": "replace",
+    "old": 2,
+    "value": 3
+  }
+]

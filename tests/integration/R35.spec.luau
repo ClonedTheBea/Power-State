@@ -3,12 +3,29 @@ return function(playerGui: PlayerGui)
 	local Proof=require(script.Parent.HybridProof)
 	local RunService=game:GetService("RunService")
 	local GuiService=game:GetService("GuiService")
+	local FocusTarget=require(script.Parent.FocusTarget)
 	local count=0
 	local function check(value:boolean,message:string) assert(value,message);count+=1 end
 	local existing=playerGui:FindFirstChild("PowerStateShell");if existing then existing:Destroy() end
 	local mounted=Proof.mount(playerGui,"real")
 	local app,proof=mounted.app,mounted.proof
 	local map=app.view.map
+	local originalStation=map.markers.station
+	local function focusTrace(phase:string)
+		local marker=map.markers.station
+		local ancestors={};local parent:Instance?=marker
+		while parent and #ancestors<10 do
+			table.insert(ancestors,parent.Name..(if parent:IsA("GuiObject") then ":visible="..tostring(parent.Visible) else ""))
+			parent=parent.Parent
+		end
+		print("[R35 focus] "..game:GetService("HttpService"):JSONEncode({phase=phase,
+			size=tostring(app.view.root.AbsoluteSize),selected=if GuiService.SelectedObject then GuiService.SelectedObject:GetFullName() else "nil",
+			marker=marker:GetFullName(),sameObject=marker==originalStation,mounted=marker:IsDescendantOf(playerGui),
+			visible=marker.Visible,selectable=marker.Selectable,active=marker.Active,position=tostring(marker.AbsolutePosition),
+			sizeMarker=tostring(marker.AbsoluteSize),viewport=tostring(map.viewport.AbsoluteSize),ancestors=ancestors,
+			guiSize=tostring(app.view.gui.AbsoluteSize),guiPosition=tostring(app.view.gui.AbsolutePosition),guiEnabled=app.view.gui.Enabled,
+			keyboardEligible=app.keyboard.valid(marker)}))
+	end
 	local function settle() for _=1,4 do RunService.RenderStepped:Wait() end end
 	local ok,problem=xpcall(function()
 		settle();proof.setMode("Hybrid")
@@ -51,8 +68,28 @@ return function(playerGui: PlayerGui)
 				if label:IsA("TextLabel") then check(not label.Visible,"Labels toggle respected") end
 			end
 			map.setOptions(true,true)
-			GuiService.SelectedObject=map.markers.station;settle()
+			-- A tablet-sized virtual root is not a tablet-sized engine viewport.
+			-- Close the occluding inspector, then pan the SAME target into the
+			-- real screen intersection. Never skip the engine-focus assertion.
+			app.actions[app.view.inspector.close]();settle()
+			FocusTarget.reveal(app,map.markers.station)
+			check(map.markers.station==originalStation and FocusTarget.onScreen(app.view.gui,originalStation) and app.keyboard.valid(originalStation),"Original mounted marker is eligible on screen")
+			focusTrace("before")
+			GuiService.SelectedObject=map.markers.station;focusTrace("assigned");settle();focusTrace("settled")
 			check(GuiService.SelectedObject==map.markers.station,"Existing focus object retained")
+			for _,mode in {"Native","Hybrid"} do
+				proof.setMode(mode);settle()
+				check(GuiService.SelectedObject==originalStation,"Mode switch preserves actual focus object")
+			end
+			map.render(-5000,-5000,1)
+			check(not app.keyboard.valid(originalStation),"Culled marker is excluded from navigation")
+			-- The engine may already have selected a different valid control when
+			-- culling hides the marker. Do not activate that unrelated fallback.
+			if GuiService.SelectedObject==originalStation then app.keyboard.activate() end
+			check(GuiService.SelectedObject~=originalStation,"Culled focus cannot activate infrastructure")
+			app.mapController.recenter();FocusTarget.reveal(app,originalStation)
+			app.keyboard.focus(originalStation);settle()
+			check(GuiService.SelectedObject==originalStation,"Revealed marker reuses focus after culling")
 			for _=1,60 do app.mapController.pan(2,-1);app.mapController.changeZoom(0.01) end
 			check(#map.root:GetDescendants()==pool,"Repeated pan/zoom has no instance growth")
 		end

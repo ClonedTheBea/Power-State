@@ -1,0 +1,2474 @@
+{
+  "trace": [
+    {
+      "side": "client-corrected",
+      "revision": 8,
+      "utcMs": 1794948979354,
+      "clock": 43607.367994599976,
+      "kind": "accepted",
+      "step": 2,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 8,
+      "utcMs": 1794948979355,
+      "clock": 43607.36923719998,
+      "kind": "received",
+      "step": 2,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 8,
+      "utcMs": 1794948979355,
+      "clock": 43607.36923869999,
+      "kind": "accepted",
+      "step": 2,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 10,
+      "utcMs": 1794948980070,
+      "clock": 43608.08442499998,
+      "kind": "received",
+      "step": 3,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 10,
+      "utcMs": 1794948980070,
+      "clock": 43608.08442689999,
+      "kind": "accepted",
+      "step": 3,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 11,
+      "utcMs": 1794948980387,
+      "clock": 43608.40135109998,
+      "kind": "received",
+      "step": 3,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 11,
+      "utcMs": 1794948980387,
+      "clock": 43608.40135399997,
+      "kind": "accepted",
+      "step": 3,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 11,
+      "utcMs": 1794948980389,
+      "clock": 43608.40319759998,
+      "kind": "received",
+      "step": 3,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 11,
+      "utcMs": 1794948980389,
+      "clock": 43608.4031996,
+      "kind": "accepted",
+      "step": 3,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 13,
+      "utcMs": 1794948981088,
+      "clock": 43609.1017073,
+      "kind": "received",
+      "step": 4,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 13,
+      "utcMs": 1794948981088,
+      "clock": 43609.10171029999,
+      "kind": "accepted",
+      "step": 4,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 13,
+      "utcMs": 1794948981404,
+      "clock": 43609.418038099975,
+      "kind": "received",
+      "step": 4,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 13,
+      "utcMs": 1794948981404,
+      "clock": 43609.41803999999,
+      "kind": "accepted",
+      "step": 4,
+      "bank": 100000
+    },
+    {
+      "side": "client-corrected",
+      "revision": 14,
+      "utcMs": 1794948982404,
+      "clock": 43610.41800219999,
+      "kind": "received",
+      "step": 5,
+      "bank": 100192
+    },
+    {
+      "side": "client-corrected",
+      "revision": 14,
+      "utcMs": 1794948982404,
+      "clock": 43610.418004899984,
+      "kind": "accepted",
+      "step": 5,
+      "bank": 100192
+    },
+    {
+      "side": "client-corrected",
+      "revision": 15,
+      "utcMs": 1794948983421,
+      "clock": 43611.434632699995,
+      "kind": "received",
+      "step": 6,
+      "bank": 100383
+    },
+    {
+      "side": "client-corrected",
+      "revision": 15,
+      "utcMs": 1794948983421,
+      "clock": 43611.43463469998,
+      "kind": "accepted",
+      "step": 6,
+      "bank": 100383
+    },
+    {
+      "side": "client-corrected",
+      "revision": 16,
+      "utcMs": 1794948984421,
+      "clock": 43612.4349846,
+      "kind": "received",
+      "step": 7,
+      "bank": 100574
+    },
+    {
+      "side": "client-corrected",
+      "revision": 16,
+      "utcMs": 1794948984421,
+      "clock": 43612.43498649998,
+      "kind": "accepted",
+      "step": 7,
+      "bank": 100574
+    },
+    {
+      "side": "client-corrected",
+      "revision": 17,
+      "utcMs": 1794948985437,
+      "clock": 43613.45110579999,
+      "kind": "received",
+      "step": 8,
+      "bank": 100766
+    },
+    {
+      "side": "client-corrected",
+      "revision": 17,
+      "utcMs": 1794948985437,
+      "clock": 43613.45110789998,
+      "kind": "accepted",
+      "step": 8,
+      "bank": 100766
+    },
+    {
+      "side": "client-corrected",
+      "revision": 18,
+      "utcMs": 1794948986454,
+      "clock": 43614.46769349999,
+      "kind": "received",
+      "step": 9,
+      "bank": 100957
+    },
+    {
+      "side": "client-corrected",
+      "revision": 18,
+      "utcMs": 1794948986454,
+      "clock": 43614.46769629998,
+      "kind": "accepted",
+      "step": 9,
+      "bank": 100957
+    },
+    {
+      "side": "client-corrected",
+      "revision": 19,
+      "utcMs": 1794948987470,
+      "clock": 43615.48390229998,
+      "kind": "received",
+      "step": 10,
+      "bank": 101148
+    },
+    {
+      "side": "client-corrected",
+      "revision": 19,
+      "utcMs": 1794948987470,
+      "clock": 43615.48390519997,
+      "kind": "accepted",
+      "step": 10,
+      "bank": 101148
+    },
+    {
+      "side": "client-corrected",
+      "revision": 20,
+      "utcMs": 1794948988487,
+      "clock": 43616.50102539998,
+      "kind": "received",
+      "step": 11,
+      "bank": 101340
+    },
+    {
+      "side": "client-corrected",
+      "revision": 20,
+      "utcMs": 1794948988487,
+      "clock": 43616.50102829997,
+      "kind": "accepted",
+      "step": 11,
+      "bank": 101340
+    },
+    {
+      "side": "client-corrected",
+      "revision": 21,
+      "utcMs": 1794948989487,
+      "clock": 43617.50068819997,
+      "kind": "received",
+      "step": 12,
+      "bank": 101531
+    },
+    {
+      "side": "client-corrected",
+      "revision": 21,
+      "utcMs": 1794948989487,
+      "clock": 43617.50069009999,
+      "kind": "accepted",
+      "step": 12,
+      "bank": 101531
+    },
+    {
+      "side": "client-corrected",
+      "utcMs": 1794948989627,
+      "clock": 43617.64069629999,
+      "kind": "subscribe"
+    },
+    {
+      "side": "client-corrected",
+      "revision": 22,
+      "utcMs": 1794948989670,
+      "clock": 43617.6841553,
+      "kind": "received",
+      "step": 13,
+      "bank": 101722
+    },
+    {
+      "side": "client-corrected",
+      "revision": 22,
+      "utcMs": 1794948989670,
+      "clock": 43617.68415679998,
+      "kind": "accepted",
+      "step": 13,
+      "bank": 101722
+    },
+    {
+      "side": "client-corrected",
+      "revision": 22,
+      "utcMs": 1794948990160,
+      "clock": 43618.17444599999,
+      "kind": "viewModel:mounted",
+      "step": 13,
+      "bank": 101722
+    },
+    {
+      "side": "client-corrected",
+      "utcMs": 1794949003577,
+      "clock": 43631.59113699998,
+      "kind": "subscribe"
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949003620,
+      "clock": 43631.633810799976,
+      "kind": "received",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949003620,
+      "clock": 43631.63381229999,
+      "kind": "accepted",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949003620,
+      "clock": 43631.6339817,
+      "kind": "received",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949003620,
+      "clock": 43631.63398319998,
+      "kind": "accepted",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949004107,
+      "clock": 43632.12049589999,
+      "kind": "viewModel:mounted",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949004136,
+      "clock": 43632.150263699994,
+      "kind": "received",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949004136,
+      "clock": 43632.15026569998,
+      "kind": "accepted",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "utcMs": 1794949004323,
+      "clock": 43632.3372597,
+      "kind": "bank:opened",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 38,
+      "detail": 39,
+      "utcMs": 1794949004323,
+      "clock": 43632.33729929998,
+      "kind": "test:begin",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "client-corrected",
+      "revision": 39,
+      "utcMs": 1794949004637,
+      "clock": 43632.650747899985,
+      "kind": "received",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "client-corrected",
+      "revision": 39,
+      "utcMs": 1794949004637,
+      "clock": 43632.650750499975,
+      "kind": "accepted",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "client-corrected",
+      "revision": 39,
+      "utcMs": 1794949004638,
+      "clock": 43632.651843499974,
+      "kind": "bank:rendered",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "client-corrected",
+      "revision": 39,
+      "detail": 0.31490309999207966,
+      "utcMs": 1794949004638,
+      "clock": 43632.652312599996,
+      "kind": "test:progressed",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "client-corrected",
+      "revision": 39,
+      "utcMs": 1794949004855,
+      "clock": 43632.8695186,
+      "kind": "bank:opened",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "client-corrected",
+      "revision": 39,
+      "detail": 40,
+      "utcMs": 1794949004856,
+      "clock": 43632.869551299984,
+      "kind": "test:begin",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "client-corrected",
+      "revision": 40,
+      "utcMs": 1794949005637,
+      "clock": 43633.650866399985,
+      "kind": "received",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "client-corrected",
+      "revision": 40,
+      "utcMs": 1794949005637,
+      "clock": 43633.65086959998,
+      "kind": "accepted",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "client-corrected",
+      "revision": 40,
+      "utcMs": 1794949005638,
+      "clock": 43633.65195119998,
+      "kind": "bank:rendered",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "client-corrected",
+      "revision": 40,
+      "detail": 0.7826783000200521,
+      "utcMs": 1794949005638,
+      "clock": 43633.6523396,
+      "kind": "test:progressed",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "client-corrected",
+      "revision": 40,
+      "utcMs": 1794949005857,
+      "clock": 43633.87028629999,
+      "kind": "bank:opened",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "client-corrected",
+      "revision": 40,
+      "detail": 41,
+      "utcMs": 1794949005857,
+      "clock": 43633.87032169997,
+      "kind": "test:begin",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "client-corrected",
+      "revision": 41,
+      "utcMs": 1794949006652,
+      "clock": 43634.66638509999,
+      "kind": "received",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "client-corrected",
+      "revision": 41,
+      "utcMs": 1794949006652,
+      "clock": 43634.66638709998,
+      "kind": "accepted",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "client-corrected",
+      "revision": 41,
+      "utcMs": 1794949006654,
+      "clock": 43634.66754979998,
+      "kind": "bank:rendered",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "client-corrected",
+      "revision": 41,
+      "detail": 0.7975467999931425,
+      "utcMs": 1794949006654,
+      "clock": 43634.668018799974,
+      "kind": "test:progressed",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "client-corrected",
+      "revision": 41,
+      "utcMs": 1794949006872,
+      "clock": 43634.886395599984,
+      "kind": "bank:opened",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "client-corrected",
+      "revision": 41,
+      "detail": 42,
+      "utcMs": 1794949006872,
+      "clock": 43634.886427699996,
+      "kind": "test:begin",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949007653,
+      "clock": 43635.66682969997,
+      "kind": "received",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949007653,
+      "clock": 43635.666831599985,
+      "kind": "accepted",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949007654,
+      "clock": 43635.66781209997,
+      "kind": "bank:rendered",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "detail": 0.7816642000107095,
+      "utcMs": 1794949007654,
+      "clock": 43635.66820669998,
+      "kind": "test:progressed",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949007665,
+      "clock": 43635.6790335,
+      "kind": "bank:opened",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "utcMs": 1794949007671,
+      "clock": 43635.68554319997,
+      "kind": "subscribe"
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949007722,
+      "clock": 43635.736258699995,
+      "kind": "received",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949007722,
+      "clock": 43635.73626019998,
+      "kind": "accepted",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949008206,
+      "clock": 43636.220106199995,
+      "kind": "viewModel:mounted",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949008236,
+      "clock": 43636.25031229999,
+      "kind": "received",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949008236,
+      "clock": 43636.25031439998,
+      "kind": "accepted",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "utcMs": 1794949008424,
+      "clock": 43636.43804669997,
+      "kind": "bank:opened",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 42,
+      "detail": 43,
+      "utcMs": 1794949008424,
+      "clock": 43636.43808339999,
+      "kind": "test:begin",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "client-corrected",
+      "revision": 43,
+      "utcMs": 1794949008670,
+      "clock": 43636.68370729999,
+      "kind": "received",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "client-corrected",
+      "revision": 43,
+      "utcMs": 1794949008670,
+      "clock": 43636.68370989998,
+      "kind": "accepted",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "client-corrected",
+      "revision": 43,
+      "utcMs": 1794949008671,
+      "clock": 43636.68485229998,
+      "kind": "bank:rendered",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "client-corrected",
+      "revision": 43,
+      "detail": 0.24708410000312142,
+      "utcMs": 1794949008671,
+      "clock": 43636.68528339997,
+      "kind": "test:progressed",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "client-corrected",
+      "revision": 43,
+      "utcMs": 1794949008890,
+      "clock": 43636.90406919998,
+      "kind": "bank:opened",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "client-corrected",
+      "revision": 43,
+      "detail": 44,
+      "utcMs": 1794949008890,
+      "clock": 43636.90410469999,
+      "kind": "test:begin",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "client-corrected",
+      "revision": 44,
+      "utcMs": 1794949009686,
+      "clock": 43637.70034769998,
+      "kind": "received",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "client-corrected",
+      "revision": 44,
+      "utcMs": 1794949009686,
+      "clock": 43637.70035119998,
+      "kind": "accepted",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "client-corrected",
+      "revision": 44,
+      "utcMs": 1794949009687,
+      "clock": 43637.70128569999,
+      "kind": "bank:rendered",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "client-corrected",
+      "revision": 44,
+      "detail": 0.797503300011158,
+      "utcMs": 1794949009688,
+      "clock": 43637.701717899996,
+      "kind": "test:progressed",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "client-corrected",
+      "revision": 44,
+      "utcMs": 1794949009906,
+      "clock": 43637.920307099994,
+      "kind": "bank:opened",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "client-corrected",
+      "revision": 44,
+      "detail": 45,
+      "utcMs": 1794949009906,
+      "clock": 43637.92034349998,
+      "kind": "test:begin",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "client-corrected",
+      "revision": 45,
+      "utcMs": 1794949010686,
+      "clock": 43638.69979799999,
+      "kind": "received",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "client-corrected",
+      "revision": 45,
+      "utcMs": 1794949010686,
+      "clock": 43638.699800099974,
+      "kind": "accepted",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "client-corrected",
+      "revision": 45,
+      "utcMs": 1794949010687,
+      "clock": 43638.70099899999,
+      "kind": "bank:rendered",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "client-corrected",
+      "revision": 45,
+      "detail": 0.7809488999773748,
+      "utcMs": 1794949010687,
+      "clock": 43638.70140789999,
+      "kind": "test:progressed",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "client-corrected",
+      "revision": 45,
+      "utcMs": 1794949010906,
+      "clock": 43638.919689399976,
+      "kind": "bank:opened",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "client-corrected",
+      "revision": 45,
+      "detail": 46,
+      "utcMs": 1794949010906,
+      "clock": 43638.919722499995,
+      "kind": "test:begin",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949011703,
+      "clock": 43639.71733469999,
+      "kind": "received",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949011703,
+      "clock": 43639.71733819999,
+      "kind": "accepted",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949011704,
+      "clock": 43639.718417899974,
+      "kind": "bank:rendered",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "detail": 0.7990160000044852,
+      "utcMs": 1794949011705,
+      "clock": 43639.71885939999,
+      "kind": "test:progressed",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949011716,
+      "clock": 43639.73015799999,
+      "kind": "bank:opened",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "utcMs": 1794949011722,
+      "clock": 43639.73616509998,
+      "kind": "subscribe"
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949011753,
+      "clock": 43639.767147899984,
+      "kind": "received",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949011753,
+      "clock": 43639.767149399995,
+      "kind": "accepted",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949012257,
+      "clock": 43640.270586599974,
+      "kind": "viewModel:mounted",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949012286,
+      "clock": 43640.29999029997,
+      "kind": "received",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949012286,
+      "clock": 43640.29999239999,
+      "kind": "accepted",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "utcMs": 1794949012473,
+      "clock": 43640.487305999995,
+      "kind": "bank:opened",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 46,
+      "detail": 47,
+      "utcMs": 1794949012473,
+      "clock": 43640.48733989999,
+      "kind": "test:begin",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "client-corrected",
+      "revision": 47,
+      "utcMs": 1794949012720,
+      "clock": 43640.73379499998,
+      "kind": "received",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "client-corrected",
+      "revision": 47,
+      "utcMs": 1794949012720,
+      "clock": 43640.733798299974,
+      "kind": "accepted",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "client-corrected",
+      "revision": 47,
+      "utcMs": 1794949012721,
+      "clock": 43640.73529759998,
+      "kind": "bank:rendered",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "client-corrected",
+      "revision": 47,
+      "detail": 0.24833440000656992,
+      "utcMs": 1794949012722,
+      "clock": 43640.735789599974,
+      "kind": "test:progressed",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "client-corrected",
+      "revision": 47,
+      "utcMs": 1794949012938,
+      "clock": 43640.95228139998,
+      "kind": "bank:opened",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "client-corrected",
+      "revision": 47,
+      "detail": 48,
+      "utcMs": 1794949012938,
+      "clock": 43640.952315199975,
+      "kind": "test:begin",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "client-corrected",
+      "revision": 48,
+      "utcMs": 1794949013736,
+      "clock": 43641.74986339998,
+      "kind": "received",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "client-corrected",
+      "revision": 48,
+      "utcMs": 1794949013736,
+      "clock": 43641.749865699996,
+      "kind": "accepted",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "client-corrected",
+      "revision": 48,
+      "utcMs": 1794949013737,
+      "clock": 43641.751021199976,
+      "kind": "bank:rendered",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "client-corrected",
+      "revision": 48,
+      "detail": 0.7990729000011925,
+      "utcMs": 1794949013737,
+      "clock": 43641.75153099999,
+      "kind": "test:progressed",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "client-corrected",
+      "revision": 48,
+      "utcMs": 1794949013955,
+      "clock": 43641.96903869999,
+      "kind": "bank:opened",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "client-corrected",
+      "revision": 48,
+      "detail": 49,
+      "utcMs": 1794949013955,
+      "clock": 43641.96907259998,
+      "kind": "test:begin",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "client-corrected",
+      "revision": 49,
+      "utcMs": 1794949014736,
+      "clock": 43642.750186699996,
+      "kind": "received",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "client-corrected",
+      "revision": 49,
+      "utcMs": 1794949014736,
+      "clock": 43642.75018979999,
+      "kind": "accepted",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "client-corrected",
+      "revision": 49,
+      "utcMs": 1794949014737,
+      "clock": 43642.75138189999,
+      "kind": "bank:rendered",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "client-corrected",
+      "revision": 49,
+      "detail": 0.7826055000186898,
+      "utcMs": 1794949014738,
+      "clock": 43642.75179349998,
+      "kind": "test:progressed",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "client-corrected",
+      "revision": 49,
+      "utcMs": 1794949014955,
+      "clock": 43642.96916779998,
+      "kind": "bank:opened",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "client-corrected",
+      "revision": 49,
+      "detail": 50,
+      "utcMs": 1794949014955,
+      "clock": 43642.969205499976,
+      "kind": "test:begin",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "client-corrected",
+      "revision": 50,
+      "utcMs": 1794949015753,
+      "clock": 43643.76670399998,
+      "kind": "received",
+      "step": 39,
+      "bank": 106123
+    },
+    {
+      "side": "client-corrected",
+      "revision": 50,
+      "utcMs": 1794949015753,
+      "clock": 43643.766706099996,
+      "kind": "accepted",
+      "step": 39,
+      "bank": 106123
+    },
+    {
+      "side": "client-corrected",
+      "revision": 50,
+      "utcMs": 1794949015754,
+      "clock": 43643.767851299985,
+      "kind": "bank:rendered",
+      "step": 39,
+      "bank": 106123
+    },
+    {
+      "side": "client-corrected",
+      "revision": 50,
+      "detail": 0.7989800999930594,
+      "utcMs": 1794949015754,
+      "clock": 43643.768306199985,
+      "kind": "test:progressed",
+      "step": 39,
+      "bank": 106123
+    },
+    {
+      "side": "client-corrected",
+      "revision": 50,
+      "utcMs": 1794949015769,
+      "clock": 43643.78252299997,
+      "kind": "bank:opened",
+      "step": 39,
+      "bank": 106123
+    },
+    {
+      "side": "server-corrected",
+      "revision": 29,
+      "detail": 0.6817391579970717,
+      "utcMs": 1794948996253,
+      "clock": 43624.267067899986,
+      "kind": "publish:Duplicate",
+      "step": 19,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 29,
+      "detail": 0.9481414975598454,
+      "utcMs": 1794948996504,
+      "clock": 43624.517879399995,
+      "kind": "publish:periodic",
+      "step": 19,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 30,
+      "detail": 0.016157752834260464,
+      "utcMs": 1794948996571,
+      "clock": 43624.58538559999,
+      "kind": "settled",
+      "step": 20,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 30,
+      "detail": 0.36596572399139404,
+      "utcMs": 1794948996937,
+      "clock": 43624.950747999974,
+      "kind": "intent:NoChange",
+      "step": 20,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 30,
+      "detail": 0.36596572399139404,
+      "utcMs": 1794948996937,
+      "clock": 43624.95079889998,
+      "kind": "publish:NoChange",
+      "step": 20,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 30,
+      "detail": 0.9660176979377866,
+      "utcMs": 1794948997520,
+      "clock": 43625.53411899999,
+      "kind": "publish:periodic",
+      "step": 20,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 31,
+      "detail": 0.01602064725011587,
+      "utcMs": 1794948997572,
+      "clock": 43625.58627929998,
+      "kind": "settled",
+      "step": 21,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 31,
+      "detail": 0.03302165027707815,
+      "utcMs": 1794948997603,
+      "clock": 43625.61710199999,
+      "kind": "intent:StaleRevision",
+      "step": 21,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 31,
+      "detail": 0.03302165027707815,
+      "utcMs": 1794948997603,
+      "clock": 43625.617144899996,
+      "kind": "publish:StaleRevision",
+      "step": 21,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 32,
+      "detail": 0.7149820309132338,
+      "utcMs": 1794948998288,
+      "clock": 43626.30237359999,
+      "kind": "intent:Accepted",
+      "step": 21,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 32,
+      "detail": 0.7149820309132338,
+      "utcMs": 1794948998288,
+      "clock": 43626.30242589998,
+      "kind": "publish:Accepted",
+      "step": 21,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 32,
+      "detail": 0.9656916446983814,
+      "utcMs": 1794948998520,
+      "clock": 43626.53431389999,
+      "kind": "publish:periodic",
+      "step": 21,
+      "bank": 102679
+    },
+    {
+      "side": "server-corrected",
+      "revision": 33,
+      "detail": 0.01469380222260952,
+      "utcMs": 1794948998571,
+      "clock": 43626.58506249997,
+      "kind": "settled",
+      "step": 22,
+      "bank": 102870
+    },
+    {
+      "side": "server-corrected",
+      "revision": 33,
+      "detail": 0.9829360572621226,
+      "utcMs": 1794948999538,
+      "clock": 43627.55156219998,
+      "kind": "publish:periodic",
+      "step": 22,
+      "bank": 102870
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.014899159781634808,
+      "utcMs": 1794948999571,
+      "clock": 43627.58511319998,
+      "kind": "settled",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000469,
+      "clock": 43628.48371389997,
+      "kind": "intent:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48377709999,
+      "kind": "publish:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48385979998,
+      "kind": "intent:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.483888799994,
+      "kind": "publish:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48393929997,
+      "kind": "intent:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.483964199986,
+      "kind": "publish:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48401189997,
+      "kind": "intent:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48403559998,
+      "kind": "publish:Malformed",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48407919999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48409579997,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48411249998,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.484132099984,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48414819999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48416339999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48417909999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48419419999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48420939999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000470,
+      "clock": 43628.48422469999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000471,
+      "clock": 43628.48425019998,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000471,
+      "clock": 43628.48427799999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000471,
+      "clock": 43628.484298999974,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000471,
+      "clock": 43628.48432029999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000471,
+      "clock": 43628.48434069997,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.8990277899429202,
+      "utcMs": 1794949000471,
+      "clock": 43628.48436639999,
+      "kind": "intent:RateLimited",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 34,
+      "detail": 0.999062585644424,
+      "utcMs": 1794949000553,
+      "clock": 43628.56731579997,
+      "kind": "publish:periodic",
+      "step": 23,
+      "bank": 103062
+    },
+    {
+      "side": "server-corrected",
+      "revision": 35,
+      "detail": 0.015080041252076626,
+      "utcMs": 1794949000571,
+      "clock": 43628.585162299976,
+      "kind": "settled",
+      "step": 24,
+      "bank": 103253
+    },
+    {
+      "side": "server-corrected",
+      "revision": 35,
+      "detail": 0.9988304898142815,
+      "utcMs": 1794949001553,
+      "clock": 43629.56737829998,
+      "kind": "publish:periodic",
+      "step": 24,
+      "bank": 103253
+    },
+    {
+      "side": "server-corrected",
+      "revision": 36,
+      "detail": 0.014803064987063408,
+      "utcMs": 1794949001571,
+      "clock": 43629.5851536,
+      "kind": "settled",
+      "step": 25,
+      "bank": 103444
+    },
+    {
+      "side": "server-corrected",
+      "revision": 37,
+      "detail": 0.014604135416448116,
+      "utcMs": 1794949002571,
+      "clock": 43630.58513329999,
+      "kind": "settled",
+      "step": 26,
+      "bank": 103636
+    },
+    {
+      "side": "server-corrected",
+      "revision": 37,
+      "detail": 0.014604135416448116,
+      "utcMs": 1794949002571,
+      "clock": 43630.5851726,
+      "kind": "publish:periodic",
+      "step": 26,
+      "bank": 103636
+    },
+    {
+      "side": "server-corrected",
+      "revision": 37,
+      "detail": 0.9485246846452355,
+      "utcMs": 1794949003520,
+      "clock": 43631.53406199999,
+      "kind": "intent:Synced",
+      "step": 26,
+      "bank": 103636
+    },
+    {
+      "side": "server-corrected",
+      "revision": 37,
+      "detail": 0.9485246846452355,
+      "utcMs": 1794949003520,
+      "clock": 43631.534462599986,
+      "kind": "publish:Synced",
+      "step": 26,
+      "bank": 103636
+    },
+    {
+      "side": "server-corrected",
+      "revision": 38,
+      "detail": 0.015103663317859173,
+      "utcMs": 1794949003571,
+      "clock": 43631.58510249999,
+      "kind": "settled",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "server-corrected",
+      "revision": 38,
+      "detail": 0.015103663317859173,
+      "utcMs": 1794949003587,
+      "clock": 43631.60059769999,
+      "kind": "intent:Unsubscribed",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "server-corrected",
+      "revision": 38,
+      "detail": 0.015103663317859173,
+      "utcMs": 1794949003587,
+      "clock": 43631.60063859998,
+      "kind": "intent:Synced",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "server-corrected",
+      "revision": 38,
+      "detail": 0.015103663317859173,
+      "utcMs": 1794949003587,
+      "clock": 43631.601013899985,
+      "kind": "publish:Synced",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "server-corrected",
+      "revision": 38,
+      "detail": 0.033096625469624996,
+      "utcMs": 1794949003588,
+      "clock": 43631.601608799974,
+      "kind": "publish:periodic",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "server-corrected",
+      "revision": 38,
+      "detail": 0.5321328155696392,
+      "utcMs": 1794949004113,
+      "clock": 43632.12684979997,
+      "kind": "intent:Synced",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "server-corrected",
+      "revision": 38,
+      "detail": 0.5321328155696392,
+      "utcMs": 1794949004113,
+      "clock": 43632.12719659999,
+      "kind": "publish:Synced",
+      "step": 27,
+      "bank": 103827
+    },
+    {
+      "side": "server-corrected",
+      "revision": 39,
+      "detail": 0.01600946020334959,
+      "utcMs": 1794949004571,
+      "clock": 43632.58543539999,
+      "kind": "settled",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "server-corrected",
+      "revision": 39,
+      "detail": 0.04807157348841429,
+      "utcMs": 1794949004602,
+      "clock": 43632.616674799996,
+      "kind": "publish:periodic",
+      "step": 28,
+      "bank": 104018
+    },
+    {
+      "side": "server-corrected",
+      "revision": 40,
+      "detail": 0.014949713833630085,
+      "utcMs": 1794949005571,
+      "clock": 43633.585075699986,
+      "kind": "settled",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "server-corrected",
+      "revision": 40,
+      "detail": 0.04901472199708223,
+      "utcMs": 1794949005604,
+      "clock": 43633.61733409998,
+      "kind": "publish:periodic",
+      "step": 29,
+      "bank": 104210
+    },
+    {
+      "side": "server-corrected",
+      "revision": 41,
+      "detail": 0.014935905113816261,
+      "utcMs": 1794949006571,
+      "clock": 43634.58509539999,
+      "kind": "settled",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "server-corrected",
+      "revision": 41,
+      "detail": 0.06485196575522423,
+      "utcMs": 1794949006620,
+      "clock": 43634.633795199974,
+      "kind": "publish:periodic",
+      "step": 30,
+      "bank": 104401
+    },
+    {
+      "side": "server-corrected",
+      "revision": 42,
+      "detail": 0.014871696010231972,
+      "utcMs": 1794949007571,
+      "clock": 43635.585341,
+      "kind": "settled",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "server-corrected",
+      "revision": 42,
+      "detail": 0.0649927370250225,
+      "utcMs": 1794949007620,
+      "clock": 43635.63387239998,
+      "kind": "publish:periodic",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "server-corrected",
+      "revision": 42,
+      "detail": 0.09803157858550549,
+      "utcMs": 1794949007673,
+      "clock": 43635.68704209998,
+      "kind": "intent:Unsubscribed",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "server-corrected",
+      "revision": 42,
+      "detail": 0.09803157858550549,
+      "utcMs": 1794949007673,
+      "clock": 43635.68708819998,
+      "kind": "intent:Synced",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "server-corrected",
+      "revision": 42,
+      "detail": 0.09803157858550549,
+      "utcMs": 1794949007674,
+      "clock": 43635.68765319997,
+      "kind": "publish:Synced",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "server-corrected",
+      "revision": 42,
+      "detail": 0.6321052080020308,
+      "utcMs": 1794949008212,
+      "clock": 43636.22659939999,
+      "kind": "intent:Synced",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "server-corrected",
+      "revision": 42,
+      "detail": 0.6321052080020308,
+      "utcMs": 1794949008213,
+      "clock": 43636.22700859999,
+      "kind": "publish:Synced",
+      "step": 31,
+      "bank": 104592
+    },
+    {
+      "side": "server-corrected",
+      "revision": 43,
+      "detail": 0.015942980535328388,
+      "utcMs": 1794949008571,
+      "clock": 43636.585428599996,
+      "kind": "settled",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "server-corrected",
+      "revision": 43,
+      "detail": 0.08273013215512037,
+      "utcMs": 1794949008637,
+      "clock": 43636.65130159998,
+      "kind": "publish:periodic",
+      "step": 32,
+      "bank": 104784
+    },
+    {
+      "side": "server-corrected",
+      "revision": 44,
+      "detail": 0.015194579027593136,
+      "utcMs": 1794949009571,
+      "clock": 43637.585168699996,
+      "kind": "settled",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "server-corrected",
+      "revision": 44,
+      "detail": 0.09783343877643347,
+      "utcMs": 1794949009653,
+      "clock": 43637.66696839998,
+      "kind": "publish:periodic",
+      "step": 33,
+      "bank": 104975
+    },
+    {
+      "side": "server-corrected",
+      "revision": 45,
+      "detail": 0.014469561167061329,
+      "utcMs": 1794949010571,
+      "clock": 43638.58523529998,
+      "kind": "settled",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "server-corrected",
+      "revision": 45,
+      "detail": 0.09880801197141409,
+      "utcMs": 1794949010653,
+      "clock": 43638.66737649997,
+      "kind": "publish:periodic",
+      "step": 34,
+      "bank": 105166
+    },
+    {
+      "side": "server-corrected",
+      "revision": 46,
+      "detail": 0.01600082777440548,
+      "utcMs": 1794949011571,
+      "clock": 43639.58547739999,
+      "kind": "settled",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "server-corrected",
+      "revision": 46,
+      "detail": 0.11451618000864983,
+      "utcMs": 1794949011670,
+      "clock": 43639.68386259998,
+      "kind": "publish:periodic",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "server-corrected",
+      "revision": 46,
+      "detail": 0.14840789139270782,
+      "utcMs": 1794949011723,
+      "clock": 43639.73755419999,
+      "kind": "intent:Unsubscribed",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "server-corrected",
+      "revision": 46,
+      "detail": 0.14840789139270782,
+      "utcMs": 1794949011724,
+      "clock": 43639.737581299996,
+      "kind": "intent:Synced",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "server-corrected",
+      "revision": 46,
+      "detail": 0.14840789139270782,
+      "utcMs": 1794949011724,
+      "clock": 43639.73795269997,
+      "kind": "publish:Synced",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "server-corrected",
+      "revision": 46,
+      "detail": 0.6817167764529586,
+      "utcMs": 1794949012264,
+      "clock": 43640.277565799974,
+      "kind": "intent:Synced",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "server-corrected",
+      "revision": 46,
+      "detail": 0.6817167764529586,
+      "utcMs": 1794949012264,
+      "clock": 43640.2779512,
+      "kind": "publish:Synced",
+      "step": 35,
+      "bank": 105358
+    },
+    {
+      "side": "server-corrected",
+      "revision": 47,
+      "detail": 0.014760010410100222,
+      "utcMs": 1794949012571,
+      "clock": 43640.585503799986,
+      "kind": "settled",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "server-corrected",
+      "revision": 47,
+      "detail": 0.13143836567178369,
+      "utcMs": 1794949012686,
+      "clock": 43640.700317399984,
+      "kind": "publish:periodic",
+      "step": 36,
+      "bank": 105549
+    },
+    {
+      "side": "server-corrected",
+      "revision": 48,
+      "detail": 0.014896966982632875,
+      "utcMs": 1794949013572,
+      "clock": 43641.58566389998,
+      "kind": "settled",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "server-corrected",
+      "revision": 48,
+      "detail": 0.14802881376817822,
+      "utcMs": 1794949013702,
+      "clock": 43641.71654989998,
+      "kind": "publish:periodic",
+      "step": 37,
+      "bank": 105740
+    },
+    {
+      "side": "server-corrected",
+      "revision": 49,
+      "detail": 0.01442961161956191,
+      "utcMs": 1794949014572,
+      "clock": 43642.585594099975,
+      "kind": "settled",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "server-corrected",
+      "revision": 49,
+      "detail": 0.14833065262064338,
+      "utcMs": 1794949014703,
+      "clock": 43642.71673699998,
+      "kind": "publish:periodic",
+      "step": 38,
+      "bank": 105932
+    },
+    {
+      "side": "server-corrected",
+      "revision": 50,
+      "detail": 0.014687173534184694,
+      "utcMs": 1794949015571,
+      "clock": 43643.58525819998,
+      "kind": "settled",
+      "step": 39,
+      "bank": 106123
+    },
+    {
+      "side": "server-corrected",
+      "revision": 50,
+      "detail": 0.16476016910746694,
+      "utcMs": 1794949015720,
+      "clock": 43643.733762899996,
+      "kind": "publish:periodic",
+      "step": 39,
+      "bank": 106123
+    },
+    {
+      "side": "server-corrected",
+      "revision": 51,
+      "detail": 0.014405425637960434,
+      "utcMs": 1794949016571,
+      "clock": 43644.58508219998,
+      "kind": "settled",
+      "step": 40,
+      "bank": 106314
+    },
+    {
+      "side": "server-corrected",
+      "revision": 51,
+      "detail": 0.1810096399858594,
+      "utcMs": 1794949016736,
+      "clock": 43644.749920199974,
+      "kind": "publish:periodic",
+      "step": 40,
+      "bank": 106314
+    },
+    {
+      "side": "server-corrected",
+      "revision": 52,
+      "detail": 0.014493619091808796,
+      "utcMs": 1794949017572,
+      "clock": 43645.58541019997,
+      "kind": "settled",
+      "step": 41,
+      "bank": 106506
+    },
+    {
+      "side": "server-corrected",
+      "revision": 52,
+      "detail": 0.19871943164616823,
+      "utcMs": 1794949017753,
+      "clock": 43645.76746189999,
+      "kind": "publish:periodic",
+      "step": 41,
+      "bank": 106506
+    },
+    {
+      "side": "server-corrected",
+      "revision": 53,
+      "detail": 0.014333988539874554,
+      "utcMs": 1794949018570,
+      "clock": 43646.584265399986,
+      "kind": "settled",
+      "step": 42,
+      "bank": 106697
+    },
+    {
+      "side": "server-corrected",
+      "revision": 53,
+      "detail": 0.21429453324526548,
+      "utcMs": 1794949018769,
+      "clock": 43646.782844299974,
+      "kind": "publish:periodic",
+      "step": 42,
+      "bank": 106697
+    },
+    {
+      "side": "server-corrected",
+      "revision": 54,
+      "detail": 0.01586373895406723,
+      "utcMs": 1794949019571,
+      "clock": 43647.58560019999,
+      "kind": "settled",
+      "step": 43,
+      "bank": 106888
+    },
+    {
+      "side": "server-corrected",
+      "revision": 54,
+      "detail": 0.21449237875640392,
+      "utcMs": 1794949019770,
+      "clock": 43647.78375959999,
+      "kind": "publish:periodic",
+      "step": 43,
+      "bank": 106888
+    },
+    {
+      "side": "server-corrected",
+      "revision": 55,
+      "detail": 0.015534520149230957,
+      "utcMs": 1794949020572,
+      "clock": 43648.58569769998,
+      "kind": "settled",
+      "step": 44,
+      "bank": 107080
+    },
+    {
+      "side": "server-corrected",
+      "revision": 55,
+      "detail": 0.2145022414624691,
+      "utcMs": 1794949020770,
+      "clock": 43648.78393019998,
+      "kind": "publish:periodic",
+      "step": 44,
+      "bank": 107080
+    },
+    {
+      "side": "server-corrected",
+      "revision": 56,
+      "detail": 0.016181347891688347,
+      "utcMs": 1794949021571,
+      "clock": 43649.58558829999,
+      "kind": "settled",
+      "step": 45,
+      "bank": 107271
+    },
+    {
+      "side": "server-corrected",
+      "revision": 56,
+      "detail": 0.2320221494883299,
+      "utcMs": 1794949021786,
+      "clock": 43649.8003719,
+      "kind": "publish:periodic",
+      "step": 45,
+      "bank": 107271
+    },
+    {
+      "side": "server-corrected",
+      "revision": 57,
+      "detail": 0.015067007392644882,
+      "utcMs": 1794949022571,
+      "clock": 43650.58531929998,
+      "kind": "settled",
+      "step": 46,
+      "bank": 107462
+    },
+    {
+      "side": "server-corrected",
+      "revision": 57,
+      "detail": 0.24770510010421276,
+      "utcMs": 1794949022803,
+      "clock": 43650.816772499995,
+      "kind": "publish:periodic",
+      "step": 46,
+      "bank": 107462
+    },
+    {
+      "side": "server-corrected",
+      "revision": 58,
+      "detail": 0.014859797433018684,
+      "utcMs": 1794949023571,
+      "clock": 43651.585523999995,
+      "kind": "settled",
+      "step": 47,
+      "bank": 107654
+    },
+    {
+      "side": "server-corrected",
+      "revision": 58,
+      "detail": 0.2640671990811825,
+      "utcMs": 1794949023819,
+      "clock": 43651.832970899995,
+      "kind": "publish:periodic",
+      "step": 47,
+      "bank": 107654
+    },
+    {
+      "side": "server-corrected",
+      "revision": 59,
+      "detail": 0.013564389199018478,
+      "utcMs": 1794949024570,
+      "clock": 43652.584130199975,
+      "kind": "settled",
+      "step": 48,
+      "bank": 107845
+    },
+    {
+      "side": "server-corrected",
+      "revision": 59,
+      "detail": 0.2647276483476162,
+      "utcMs": 1794949024820,
+      "clock": 43652.8337699,
+      "kind": "publish:periodic",
+      "step": 48,
+      "bank": 107845
+    },
+    {
+      "side": "server-corrected",
+      "revision": 60,
+      "detail": 0.01633741706609726,
+      "utcMs": 1794949025572,
+      "clock": 43653.58574329998,
+      "kind": "settled",
+      "step": 49,
+      "bank": 108036
+    },
+    {
+      "side": "server-corrected",
+      "revision": 60,
+      "detail": 0.28053184039890766,
+      "utcMs": 1794949025835,
+      "clock": 43653.849073699996,
+      "kind": "publish:periodic",
+      "step": 49,
+      "bank": 108036
+    },
+    {
+      "side": "server-corrected",
+      "revision": 61,
+      "detail": 0.013658184558153152,
+      "utcMs": 1794949026571,
+      "clock": 43654.584930399986,
+      "kind": "settled",
+      "step": 50,
+      "bank": 108228
+    },
+    {
+      "side": "server-corrected",
+      "revision": 61,
+      "detail": 0.2799887899309397,
+      "utcMs": 1794949026835,
+      "clock": 43654.84909739997,
+      "kind": "publish:periodic",
+      "step": 50,
+      "bank": 108228
+    },
+    {
+      "side": "server-corrected",
+      "revision": 62,
+      "detail": 0.0141006363555789,
+      "utcMs": 1794949027571,
+      "clock": 43655.58436289997,
+      "kind": "settled",
+      "step": 51,
+      "bank": 108419
+    },
+    {
+      "side": "server-corrected",
+      "revision": 62,
+      "detail": 0.2805292075499892,
+      "utcMs": 1794949027835,
+      "clock": 43655.84910969998,
+      "kind": "publish:periodic",
+      "step": 51,
+      "bank": 108419
+    },
+    {
+      "side": "server-corrected",
+      "revision": 63,
+      "detail": 0.015237514860928059,
+      "utcMs": 1794949028572,
+      "clock": 43656.58581789999,
+      "kind": "settled",
+      "step": 52,
+      "bank": 108610
+    },
+    {
+      "side": "server-corrected",
+      "revision": 63,
+      "detail": 0.2808421915397048,
+      "utcMs": 1794949028836,
+      "clock": 43656.84957599998,
+      "kind": "publish:periodic",
+      "step": 52,
+      "bank": 108610
+    },
+    {
+      "side": "server-corrected",
+      "revision": 64,
+      "detail": 0.015072958543896675,
+      "utcMs": 1794949029571,
+      "clock": 43657.58479339999,
+      "kind": "settled",
+      "step": 53,
+      "bank": 108802
+    },
+    {
+      "side": "server-corrected",
+      "revision": 64,
+      "detail": 0.2981342002749443,
+      "utcMs": 1794949029852,
+      "clock": 43657.86609589998,
+      "kind": "publish:periodic",
+      "step": 53,
+      "bank": 108802
+    },
+    {
+      "side": "server-corrected",
+      "revision": 65,
+      "detail": 0.013621829450130463,
+      "utcMs": 1794949030570,
+      "clock": 43658.58403479998,
+      "kind": "settled",
+      "step": 54,
+      "bank": 108993
+    },
+    {
+      "side": "server-corrected",
+      "revision": 65,
+      "detail": 0.2978924047201872,
+      "utcMs": 1794949030852,
+      "clock": 43658.86629159999,
+      "kind": "publish:periodic",
+      "step": 54,
+      "bank": 108993
+    },
+    {
+      "side": "server-corrected",
+      "revision": 66,
+      "detail": 0.01412565540522337,
+      "utcMs": 1794949031571,
+      "clock": 43659.58460869998,
+      "kind": "settled",
+      "step": 55,
+      "bank": 109184
+    },
+    {
+      "side": "server-corrected",
+      "revision": 66,
+      "detail": 0.3151140045374632,
+      "utcMs": 1794949031869,
+      "clock": 43659.88321839998,
+      "kind": "publish:periodic",
+      "step": 55,
+      "bank": 109184
+    },
+    {
+      "side": "server-corrected",
+      "revision": 67,
+      "detail": 0.015811671502888203,
+      "utcMs": 1794949032572,
+      "clock": 43660.58575989999,
+      "kind": "settled",
+      "step": 56,
+      "bank": 109376
+    },
+    {
+      "side": "server-corrected",
+      "revision": 67,
+      "detail": 0.32935424987226725,
+      "utcMs": 1794949032885,
+      "clock": 43660.899045899976,
+      "kind": "publish:periodic",
+      "step": 56,
+      "bank": 109376
+    },
+    {
+      "side": "server-corrected",
+      "revision": 68,
+      "detail": 0.013742652721703053,
+      "utcMs": 1794949033571,
+      "clock": 43661.58493209997,
+      "kind": "settled",
+      "step": 57,
+      "bank": 109567
+    },
+    {
+      "side": "server-corrected",
+      "revision": 68,
+      "detail": 0.3305817013606429,
+      "utcMs": 1794949033886,
+      "clock": 43661.899697999994,
+      "kind": "publish:periodic",
+      "step": 57,
+      "bank": 109567
+    },
+    {
+      "side": "server-corrected",
+      "revision": 69,
+      "detail": 0.015088391490280628,
+      "utcMs": 1794949034570,
+      "clock": 43662.58457289997,
+      "kind": "settled",
+      "step": 58,
+      "bank": 109758
+    },
+    {
+      "side": "server-corrected",
+      "revision": 69,
+      "detail": 0.3466421030461788,
+      "utcMs": 1794949034902,
+      "clock": 43662.91567179997,
+      "kind": "publish:periodic",
+      "step": 58,
+      "bank": 109758
+    },
+    {
+      "side": "server-corrected",
+      "revision": 70,
+      "detail": 0.014172293245792389,
+      "utcMs": 1794949035570,
+      "clock": 43663.58399869999,
+      "kind": "settled",
+      "step": 59,
+      "bank": 109950
+    },
+    {
+      "side": "server-corrected",
+      "revision": 70,
+      "detail": 0.347416247241199,
+      "utcMs": 1794949035902,
+      "clock": 43663.91597819998,
+      "kind": "publish:periodic",
+      "step": 59,
+      "bank": 109950
+    }
+  ],
+  "progressionLogs": [
+    "2026-11-17T20:56:44.734Z,43634.734375,7f78,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 1366x704 initial step/rev 27/38 expected >=28/39 observed 28/39 wait 0.3149s exceeds1.2=false",
+    "2026-11-17T20:56:45.734Z,43635.734375,a660,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 360x580 initial step/rev 28/39 expected >=29/40 observed 29/40 wait 0.7827s exceeds1.2=false",
+    "2026-11-17T20:56:46.750Z,43636.750000,71f0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 640x300 initial step/rev 29/40 expected >=30/41 observed 30/41 wait 0.7975s exceeds1.2=false",
+    "2026-11-17T20:56:47.750Z,43637.750000,a660,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 768x960 initial step/rev 30/41 expected >=31/42 observed 31/42 wait 0.7817s exceeds1.2=false",
+    "2026-11-17T20:56:48.769Z,43638.769531,71f0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 1366x704 initial step/rev 31/42 expected >=32/43 observed 32/43 wait 0.2471s exceeds1.2=false",
+    "2026-11-17T20:56:49.785Z,43639.785156,560c,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 360x580 initial step/rev 32/43 expected >=33/44 observed 33/44 wait 0.7975s exceeds1.2=false",
+    "2026-11-17T20:56:50.785Z,43640.785156,ab68,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 640x300 initial step/rev 33/44 expected >=34/45 observed 34/45 wait 0.7809s exceeds1.2=false",
+    "2026-11-17T20:56:51.800Z,43641.800781,ab68,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 768x960 initial step/rev 34/45 expected >=35/46 observed 35/46 wait 0.7990s exceeds1.2=false",
+    "2026-11-17T20:56:52.816Z,43642.816406,abe0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 1366x704 initial step/rev 35/46 expected >=36/47 observed 36/47 wait 0.2483s exceeds1.2=false",
+    "2026-11-17T20:56:53.832Z,43643.832031,02d0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 360x580 initial step/rev 36/47 expected >=37/48 observed 37/48 wait 0.7991s exceeds1.2=false",
+    "2026-11-17T20:56:54.835Z,43644.835938,6e88,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 640x300 initial step/rev 37/48 expected >=38/49 observed 38/49 wait 0.7826s exceeds1.2=false",
+    "2026-11-17T20:56:55.851Z,43645.851562,71f0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 768x960 initial step/rev 38/49 expected >=39/50 observed 39/50 wait 0.7990s exceeds1.2=false",
+    "2026-11-17T20:59:42.593Z,43812.593750,6e88,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 1366x704 initial step/rev 1/2 expected >=2/3 observed 2/3 wait 0.9298s exceeds1.2=false",
+    "2026-11-17T20:59:43.609Z,43813.609375,02d0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 360x580 initial step/rev 2/3 expected >=3/4 observed 3/4 wait 0.7990s exceeds1.2=false",
+    "2026-11-17T20:59:44.628Z,43814.628906,02d0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 640x300 initial step/rev 3/4 expected >=4/5 observed 4/5 wait 0.7975s exceeds1.2=false",
+    "2026-11-17T20:59:45.644Z,43815.644531,2328,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 768x960 initial step/rev 4/5 expected >=5/6 observed 5/6 wait 0.7989s exceeds1.2=false",
+    "2026-11-17T20:59:47.660Z,43817.660156,2328,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 1366x704 initial step/rev 6/7 expected >=7/8 observed 7/8 wait 0.9649s exceeds1.2=false",
+    "2026-11-17T20:59:48.675Z,43818.675781,897c,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 360x580 initial step/rev 7/8 expected >=8/9 observed 8/9 wait 0.7980s exceeds1.2=false",
+    "2026-11-17T20:59:49.679Z,43819.679688,2328,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 640x300 initial step/rev 8/9 expected >=9/10 observed 9/10 wait 0.7825s exceeds1.2=false",
+    "2026-11-17T20:59:50.695Z,43820.695312,2328,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 768x960 initial step/rev 9/10 expected >=10/11 observed 10/11 wait 0.7987s exceeds1.2=false",
+    "2026-11-17T20:59:52.726Z,43822.726562,ab68,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 1366x704 initial step/rev 11/12 expected >=12/13 observed 12/13 wait 0.8644s exceeds1.2=false",
+    "2026-11-17T20:59:53.726Z,43823.726562,2328,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 360x580 initial step/rev 12/13 expected >=13/14 observed 13/14 wait 0.7830s exceeds1.2=false",
+    "2026-11-17T20:59:54.742Z,43824.742188,560c,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 640x300 initial step/rev 13/14 expected >=14/15 observed 14/15 wait 0.7990s exceeds1.2=false",
+    "2026-11-17T20:59:55.746Z,43825.746094,abe0,6,Info [FLog::CreatorOutput] [P3b.1 Bank progression] 768x960 initial step/rev 14/15 expected >=15/16 observed 15/16 wait 0.7831s exceeds1.2=false"
+  ]
+}

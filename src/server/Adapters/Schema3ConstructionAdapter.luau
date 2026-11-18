@@ -1,0 +1,70 @@
+--!strict
+-- Preparation only. No caller can open this gate; no ordinary startup/remote caller.
+local REAL_CONSTRUCTION_PROOF_APPROVED=false
+local C=require(script.Parent.Parent.Domain.ProfileCodec)
+local V=require(script.Parent.Parent.Domain.ProfileSchema3)
+local Plan=require(script.Parent.Parent.Domain.ConstructionProofPlan)
+local Adapter={}
+local approved:any=setmetatable({}, {__mode="k"})
+local attempted=false
+function Adapter.isApproved(value:any):boolean return approved[value]==true end
+function Adapter.create(phase:string,reviewedCanonical:string):any
+ assert(REAL_CONSTRUCTION_PROOF_APPROVED,"P3c.3 preparation only; no real access authorized")
+ local run=game:GetService("RunService")
+ assert(run:IsStudio() and not run:IsRunning() and game.GameId==10776833313,"Stopped Test Studio only")
+ assert(game.CreatorType==Enum.CreatorType.User and game.CreatorId==149564436,"Personal creator only")
+ local function authenticate()assert(game:GetService("StudioService"):GetUserId()==149564436,"Approved authenticated Studio account only")end
+ authenticate();assert(not attempted,"One phase per manual adapter lifetime")
+ assert(phase=="Fund" or phase=="Build","Unknown phase")
+ local h=game:GetService("HttpService");local function scalar(v:any):string return h:JSONEncode(v)end
+ local reviewed=h:JSONDecode(reviewedCanonical);V.validate(reviewed,Plan.OWNER,scalar)
+ assert(C.encode(reviewed,scalar)==reviewedCanonical and not reviewed.lease,"Canonical released review required")
+ if phase=="Fund" then
+  local raw=game:GetService("EncodingService"):ComputeStringHash(reviewedCanonical,Enum.HashAlgorithm.Sha256)
+  local sha=(raw:gsub(".",function(c:string):string return string.format("%02x",string.byte(c))end))
+  assert(sha=="d846d13a398113d1442ff1e0a3feeccbf2397fdf286cad88583f635524c75a65","Reviewed P3c2 final record required")
+ end
+ local plan=Plan.create(reviewed,phase,scalar)
+ attempted=true
+ local service=game:GetService("DataStoreService")
+ local store=service:GetDataStore("PowerStateProfilesP3aTest") -- Default/global; never caller-selected.
+ local records={};local originalMetadata:any=nil;local originalUsers:any=nil
+ local function metadata(info:any)
+  assert(info~=nil,"Missing platform metadata")
+  local users=info:GetUserIds();assert(#users==1 and users[1]==149564436,"Unexpected user association")
+  if originalMetadata then
+   assert(C.encode(info:GetMetadata(),scalar)==C.encode(originalMetadata,scalar) and C.encode(users,scalar)==C.encode(originalUsers,scalar),"Changed metadata")
+  else originalMetadata=info:GetMetadata();originalUsers=users end
+ end
+ local function measured(kind:string,fn:()->any):any
+  assert(#records<65,"Total request ceiling including preflight")
+  local start=os.clock();local ok,value=pcall(fn)
+  table.insert(records,{kind=kind,ok=ok,ms=(os.clock()-start)*1000})
+  if not ok then error("Construction proof transport failed; reconcile or stop")end;return value
+ end
+ local function read(key:string):any
+  assert(key==Plan.KEY,"Exact approved key only");authenticate()
+  return measured("Read",function()
+   local options=Instance.new("DataStoreGetOptions");options.UseCache=false
+   local ok,value,info=pcall(function()return store:GetAsync(key,options)end);options:Destroy()
+   assert(ok,"Uncached read failed");metadata(info);return value
+  end)
+ end
+ local initial=read(Plan.KEY)
+ assert(C.encode(initial,scalar)==reviewedCanonical,"Fresh profile differs from review; stop")
+ authenticate()
+ local transport={mode="Real",read=read,
+  budget=function():boolean return service:GetRequestBudgetForRequestType(Enum.DataStoreRequestType.GetAsync)>0 and service:GetRequestBudgetForRequestType(Enum.DataStoreRequestType.SetIncrementAsync)>0 end,
+  update=function(key:string,transform:(any)->any):any
+   assert(key==Plan.KEY,"Exact approved key only");authenticate()
+   return measured("Update",function()return store:UpdateAsync(key,function(current:any,info:any)
+    metadata(info)
+    local nextValue=transform(current);if not nextValue then return nil end
+    return nextValue,info:GetUserIds(),info:GetMetadata()
+   end)end)
+  end}
+ local adapter=Plan.guard(transport,plan,scalar);approved[adapter]=true
+ return {adapter=table.freeze(adapter),plan=plan,records=function()return C.copy(records)end}
+end
+
+return table.freeze(Adapter)

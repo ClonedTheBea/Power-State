@@ -5,6 +5,7 @@ return function(playerGui:PlayerGui)
 	local Proof=require(script.Parent.SettlementProof)
 	local Profiles=require(script.Parent.SettlementProfiles)
 	local Manifest=require(script.Parent.Parent.Client.Views.Map.SpriteManifest)
+	local Fixture=require(script.Parent.Parent.Client.Views.Map.MapFixture)
 	local Geometry=require(script.Parent.Parent.Client.Views.Map.MapGeometry)
 	local App=require(script.Parent.Parent.Client.Controllers.AppController)
 	local Renderer=require(script.Parent.SettlementRenderer)
@@ -49,10 +50,10 @@ return function(playerGui:PlayerGui)
 						check(math.abs(image.AbsoluteSize.X-e.world.X*zoom)<2,"Single camera scale")
 					end
 				end
-				for _,entry in map.terrain.entries do
+				for _,entry in ipairs(map.terrain.entries) do
 					local id=entry.patch.id
 					if id=="art1:0:0:wood-west" or id=="art1:0:0:fields" then
-						local p=entry.patch
+						local p=entry.patch :: Fixture.Patch
 						local visible=Geometry.intersects(-40+p.x*1.8,-50+p.y*1.8,p.width*1.8,p.height*1.8,map.viewport.AbsoluteSize.X,map.viewport.AbsoluteSize.Y,64*1.8)
 						check(entry.root.Visible==(name=="Settlements" and visible),"Displaced forest/fields restore native with culling")
 					end
@@ -89,7 +90,19 @@ return function(playerGui:PlayerGui)
 			check(proof.fetchCount()==2,"Profile changes reuse at most two atlas preload operations")
 		end
 		app.view.root.Size=UDim2.fromOffset(1366,704);settle();map.render(0,0,.55)
+		settle()
+		local focusTarget=require(script.Parent.FocusTarget)
+		local south=map.markers.south
+		print("[R37 focus before] marker="..tostring(south.AbsolutePosition).." gui="..tostring(app.view.gui.AbsoluteSize).." mounted="..tostring(south:IsDescendantOf(playerGui)))
+		if not focusTarget.onScreen(app.view.gui,south) then
+			-- Retain minimum zoom: this direct-render label probe may translate
+			-- its fixture into the actual host screen, not outside engine bounds.
+			map.render(0,app.view.gui.AbsoluteSize.Y/2-south.AbsolutePosition.Y,.55);settle()
+		end
+		check(focusTarget.onScreen(app.view.gui,south) and app.keyboard.valid(south),"Minimum-zoom focus target is actually on screen")
 		GuiService.SelectedObject=map.markers.south;settle()
+		check(GuiService.SelectedObject==south,"Minimum-zoom engine focus retained")
+		print("[R37 focus after] marker="..tostring(south.AbsolutePosition).." same="..tostring(south==map.markers.south).." focused="..tostring(GuiService.SelectedObject==south))
 		local label=(map.viewport:FindFirstChild("MapLabels") :: Frame):FindFirstChild("Name_south") :: TextLabel
 		check(label.Visible,"Contextual focus name at minimum zoom")
 		map.setOptions(false,true);check(not label.Visible,"Label toggle survives profiles");map.setOptions(true,true)

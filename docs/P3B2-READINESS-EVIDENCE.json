@@ -1,0 +1,36 @@
+{
+  "studioVersion": "0.748.0.7481526",
+  "executionMode": "Stopped Studio Command Bar; actual engine, fake adapters for regressions",
+  "realOperations": {
+    "GetAsyncUncached": 1,
+    "writes": 0,
+    "leaseChanges": 0
+  },
+  "localChecks": {
+    "P3a": 159,
+    "P3b": 149,
+    "RojoBuilds": 2
+  },
+  "sourceHashes": {
+    "src/server/Domain/ProfileCodec.luau": "550e2b39788b6520e15096925235741a426d07b40174063efc74b23513a853dc",
+    "src/server/Domain/ProfileSchema.luau": "ac8e61e81d223838286626cce57b76a981a7cc87aeaea4a86b06a06670768ba2",
+    "src/server/Domain/ProfileSchema2.luau": "871d3fdceb17165de736395542b4c73fcf2d28c293f591b11d0602760b6e91e3",
+    "src/server/Domain/ProfileMigrations2.luau": "b012e150bc90dd9a9ba370eec86c1f8b6a6e6507f652b9aedc70d9c99e51ed73",
+    "src/server/Domain/ProfileLease.luau": "3b7c8bf31babcbfc6d3d283e1f1403692bc200eea461fb9731830e823f2ca188",
+    "src/server/Domain/ProfileLease2.luau": "cd7065dd6d920f29c2947dbf9ca2da27f90ad8a4d36378864f73ec643ade1d53",
+    "src/server/Domain/Economy.luau": "828d38de2a67a424a36caa838f881963df3b7bfb0027aded9476bff9e7fe19b6",
+    "src/server/Adapters/DataStoreAdapter.luau": "5416df36d970f381bf8744b861348430fc9a5900437d4393aaf93d7cd57f4f66"
+  },
+  "sanitizedLogEvidence": [
+    "2026-11-18T05:46:19.153Z,332.153961,8078,6,Info [FLog::CreatorOutput] [P3b.2 identity] 10776833313 Enum.CreatorType.User 149564436 149564436 missawfulname",
+    "2026-11-18T05:46:39.703Z,352.703735,49ec,6,Info [FLog::CreatorOutput] [P3b.2 identity] 10776833313 Enum.CreatorType.User 149564436 149564436 missawfulname",
+    "2026-11-18T05:49:12.591Z,505.591858,49ec,6,Info [FLog::CreatorOutput] [P3b.2 read] {\"bankMinor\":0,\"sessionEpoch\":4,\"preimageBytes\":6620,\"step\":113,\"windowRequested\":5.875999999999989,\"countryRevision\":123,\"historyIndex\":113,\"readMs\":462.878999998793,\"profileRevision\":15,\"proposedBytes\":7269,\"lease\":\"Absent\",\"windowDelivered\":5.355999999999993,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"online\":true,\"name\":\"Rowanbridge\",\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"historyCount\":113,\"deliveredMWh\":5.355999999999993,\"schema\":1,\"requestedMWh\":5.875999999999989}",
+    "2026-11-18T05:49:12.591Z,505.591858,49ec,6,Info [FLog::CreatorOutput] [P3b.2 migration] PASS: v1/v2 validation, once-only grant, exact preservation, cutover, no backbilling; private local export selected; zero writes",
+    "2026-11-18T05:56:11.696Z,924.696533,49ec,6,Info [FLog::CreatorOutput] [P3b.2 atomic preview] PASS: local-only acquire candidate, revisions 16/124, epoch 5, 180s lease, receipt retry identical, competitor denied; no real lease",
+    "2026-11-18T05:56:12.055Z,925.055847,49ec,6,Info [FLog::CreatorOutput] [P3a fake] PASS 178 assertions; max checkpoint 84620 bytes; canonical encode p95 7.937 ms; no real DataStore calls",
+    "2026-11-18T05:56:16.614Z,929.614441,8078,6,Info [FLog::CreatorOutput] [P3b economy-only] 8000 settlements p95 0.0268 ms; serial workload, not concurrent players; fake only",
+    "2026-11-18T05:56:16.614Z,929.614441,8078,6,Info [FLog::CreatorOutput] [P3b] PASS: 93 assertions; full profile 89670 bytes; whole candidate-step p95 0.499 ms (includes physical history clone/validation, not economy-only)",
+    "2026-11-18T05:56:16.614Z,929.614441,8078,6,Info [FLog::CreatorOutput] [P3b.2 regressions] PASS: fake-only suites completed; no DataStore service invoked by readiness preview",
+    "2026-11-18T05:59:08.223Z,1101.223999,49ec,6,Info [FLog::CreatorOutput] [P3b.2 cleanup] PASS: private capture detached from edit model; Studio remains stopped; no live adapter started"
+  ]
+}

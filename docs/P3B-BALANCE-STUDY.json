@@ -1,0 +1,126 @@
+{
+  "status": "PROPOSED BALANCE; offline Python arithmetic study, not Roblox execution or approval",
+  "demandSource": "src/server/World/DemandModel.luau",
+  "sourceSha256": "bc3cb0bb65c393d83166085f6d386b07a9e5d625627b4e71cbf5a1b40f4c950f",
+  "population": 1000,
+  "meanTemperatureCentiC": 1700,
+  "stepsPerDay": 1440,
+  "MWhExact": "4527479/60000",
+  "MWh": 75.45798333333333,
+  "peakMW": 3.811,
+  "minimumMW": 2.517,
+  "prices": {
+    "saleCreditsPerMWh": 120,
+    "variableCreditsPerMWh": 80,
+    "fixedCreditsPerSimHour": 10
+  },
+  "scenarios": [
+    {
+      "scenario": "Full service",
+      "deliveredMWh": 75.45798333333333,
+      "salesCredits": 9054.958,
+      "variableCostCredits": 6036.638666666667,
+      "fixedCostCredits": 240.0,
+      "netCredits": 2778.3193333333334
+    },
+    {
+      "scenario": "Half delivery stress",
+      "deliveredMWh": 37.724183333333336,
+      "salesCredits": 4526.902,
+      "variableCostCredits": 3017.9346666666665,
+      "fixedCostCredits": 240.0,
+      "netCredits": 1268.9673333333333
+    },
+    {
+      "scenario": "1 MW bottleneck",
+      "deliveredMWh": 24.0,
+      "salesCredits": 2880.0,
+      "variableCostCredits": 1920.0,
+      "fixedCostCredits": 240.0,
+      "netCredits": 720.0
+    },
+    {
+      "scenario": "0.25 MW bottleneck",
+      "deliveredMWh": 6.0,
+      "salesCredits": 720.0,
+      "variableCostCredits": 480.0,
+      "fixedCostCredits": 240.0,
+      "netCredits": 0.0
+    },
+    {
+      "scenario": "Zero delivery, On",
+      "deliveredMWh": 0.0,
+      "salesCredits": 0.0,
+      "variableCostCredits": 0.0,
+      "fixedCostCredits": 240.0,
+      "netCredits": -240.0
+    },
+    {
+      "scenario": "Off",
+      "deliveredMWh": 0.0,
+      "salesCredits": 0.0,
+      "variableCostCredits": 0.0,
+      "fixedCostCredits": 0.0,
+      "netCredits": 0.0
+    }
+  ],
+  "candidateCosts": [
+    {
+      "variableCreditsPerMWh": 50,
+      "dailyNetCredits": 5042.0588333333335
+    },
+    {
+      "variableCreditsPerMWh": 80,
+      "dailyNetCredits": 2778.3193333333334
+    },
+    {
+      "variableCreditsPerMWh": 100,
+      "dailyNetCredits": 1269.1596666666667
+    }
+  ],
+  "progressBenchmarksNotPurchasePrices": [
+    {
+      "additionalNetCredits": 1000,
+      "daysAtDailyMean": 0.3599298280807174,
+      "activeMinutesAtDailyMean": 8.638315873937216
+    },
+    {
+      "additionalNetCredits": 5000,
+      "daysAtDailyMean": 1.7996491404035868,
+      "activeMinutesAtDailyMean": 43.19157936968609
+    },
+    {
+      "additionalNetCredits": 10000,
+      "daysAtDailyMean": 3.5992982808071736,
+      "activeMinutesAtDailyMean": 86.38315873937218
+    },
+    {
+      "additionalNetCredits": 25000,
+      "daysAtDailyMean": 8.998245702017934,
+      "activeMinutesAtDailyMean": 215.95789684843044
+    }
+  ],
+  "roundedFullDay": {
+    "initialBankMinor": 100000,
+    "finalBankMinor": 377832,
+    "salesMinor": 905495,
+    "variableExpenseMinor": 603663,
+    "fixedExpenseMinor": 24000,
+    "remaindersNumeratorOver60000": [
+      48000,
+      52000,
+      0
+    ],
+    "maxStepReservationMinor": 684,
+    "lowestBankMinor": 100000
+  },
+  "protectedFiles": 217,
+  "method": "Exact integer reproduction of DemandModel.atStep for steps 0..1439 at 1700 centidegrees and 1000 residents; rational MWh sum and proposed prices; no Roblox execution.",
+  "designArithmeticChecks": [
+    "Accepted daily MWh reference reproduced",
+    "Full-day integer Bank conservation",
+    "120000 expense-remainder cases establish 684-minor maximum reservation",
+    "Eight exact meter partition cases",
+    "Three-minute fixed-cost carry posts exactly 50 minor"
+  ]
+}

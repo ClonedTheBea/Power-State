@@ -1,6 +1,30 @@
 # Development roadmap
 
-**P3a persistent-country design complete; awaiting approval.** [Decision proposal](docs/P3A-DECISION-PROPOSAL.md) separates persistence from the later P3 economy/construction work. Owner authorization covers documentation only. D94–D99 remain proposed; no DataStore implementation, API settings or Production changes. Stop at this approval gate.
+**P3c.3a focus correction and available regression gate complete (18 November 2026).** Offscreen virtual-tablet marker reproduced in fresh isolated and full-sequence runs; stable object/parentage rules out stale references. Scoped keyboard eligibility and test onscreen preparation preserve original assertions. Twelve corrected R35 runs passed, including three after the entire sequence; R37/R34, four ten-minute endurance runs, construction/Bank/security, fresh fake funding/persistence and10,000-seed regression passed. Both builds,891 static assertions and full-project Script Analysis0/0 passed. See [P3c.3a evidence](docs/P3C3-VALIDATION.md#p3c3a--keyboard-focus-investigation-18-november-2026). Physical touch/gamepad acceptance remains separate. Ready for review of the separately gated real procedure; no real execution authority.
+
+**P3c.3 historical preparation result; focus blocker resolved by P3c.3a above (18 November 2026).** P3c.2 accepted. Disabled exact-account schema3 construction capability, finite funding replay and explicit Fund/Build runner prepared. Historical replay reaches 1,250.03 Credits after 124 intervals; one purchase leaves 250.03 with no further simulation. Funding, persistence, construction GUI and 10,000-seed tests passed; later R3.5 focus retention failed and is recorded without weakening coverage. No real DataStore access, quote, purchase or simulation occurred. [Implementation, validation and proposed bounded execution](docs/P3C3-VALIDATION.md). Resolve the failed regression and obtain separate real-execution approval; normal real startup remains disabled.
+
+**P3c.2 guarded real migration complete (18 November 2026).** Exact reviewed Rowanbridge profile migrated once to schema3 and fenced lease released: profile26/country132/epoch8/no lease, Bank1007.66 and step118 unchanged, empty construction. Three uncached reads/two updates, all confirmed; execution gate closed. [Validation and service evidence](docs/P3C2-VALIDATION.md). No real purchase, spending, simulation, revenue or ordinary real startup. Stop; a purchase requires separate approval. Earlier milestone scopes below are historical.
+
+**P3c.1 read-only readiness complete (18 November 2026).** One guarded uncached Test read verified Rowanbridge schema2/profile24/country131/epoch7, Bank1007.66, step118, no lease. Protected preimage and exact seven-change v3 preview validated; 549 pure/fake assertions, full-day accounting, 759 static checks, both builds and clean Script Analysis passed using fresh modules. [Readiness, recovery and proposed execution](docs/P3C1-READINESS.md). No real write, migration, lease or simulation advancement. Separate guarded-v3 adapter preparation and explicit execution approval remain required. Two UI polish items and physical touch/gamepad acceptance are recorded, not implemented. Earlier milestone scopes below are historical.
+
+**P3c fake-storage implementation and available validation complete (18 November 2026).** D136 approves D131–D135 for pure/fake/Test implementation only. One fixed district connection, schema3 atomic construction and Test GUI are implemented. Pure/safety tests, full-day billing/reloads,10,000-seed route checks,50 final GUI assertions, retained regressions and both builds passed; Script Analysis has0 errors/0 warnings. Physical device/controller acceptance and real-service proof remain separate. See [evidence and limitations](docs/P3C-VALIDATION.md). No real schema3 migration, purchase or DataStore access is authorized; real economy remains disabled.
+
+**P3b.5 bounded real economy proof complete (18 November 2026):** exactly five intervals across two authenticated Test sessions; seven updates/five uncached reads. Rowanbridge Bank1,007.66 Credits, step118, generator On, profile revision24/country revision131/epoch7/no lease. Both economy execution gates closed afterward; ordinary real startup remains disabled. [Actual results and remaining boundaries](docs/P3B5-VALIDATION.md). Earlier statuses below are historical.
+
+**P3b.4 preparation and available validation complete (18 November 2026):** added a disabled, exact-Test/account existing-schema-v2 economy path and fake validation; no real DataStore calls or migration. See [guarded integration and proposed execution](docs/P3B4-VALIDATION.md). Separate real execution approval remains required. Earlier statuses below are historical.
+
+**P3b.3 migration proof complete (18 November 2026):** exact approved Rowanbridge Test profile migrated once to schema2, verified by uncached read, and its fenced lease released and verified. Final profile revision17 / country revision124 / epoch5 / no lease; Bank1,000 Credits, step113 and historical energy unchanged. Five real calls only; no ongoing economic gameplay. Required pre-write tests/builds passed; four unchanged artwork warnings remain. [Outcome and next boundaries](docs/P3B3-VALIDATION.md). Earlier statuses below are historical.
+
+**P3b.2 read-only migration readiness complete (18 November 2026):** fresh authenticated Test read verified Rowanbridge schema1, profile revision15, country revision123, epoch4, no lease and Bank0. Exact local v2 preview, protected preimage/checksum and recovery procedure prepared; fake persistence/economy regressions and both builds passed. No real write, lease or migration. Separate guarded-v2 implementation/execution approval remains required. [Readiness report](docs/P3B2-READINESS.md). Earlier milestone statuses below are historical.
+
+**P3b.1 timing correction validated:** reproduced the original Bank failure and confirmed independent simulation/publication phases invalidated the 1.2-second sleep inference. The documented authoritative step/revision test passed six runs across four layouts, with exact rendered Bank checks. Required fake-economy/persistence, GUI/security and generation regressions, both builds and Script Analysis passed. Real schema-v2 migration remains separately gated; Rowanbridge and Production are untouched. [Evidence and remaining migration prerequisites](docs/P3B-VALIDATION.md). Earlier statuses below are historical.
+
+**Current task: P3b economy design complete; owner approval pending.** [P3b proposal](docs/P3B-DECISION-PROPOSAL.md) presents D106–D112 prices, opening funding, exact billing, insolvency, schema2 and replay-safe checkpoints. D105 authorizes documentation only. No runtime changes or Rowanbridge migration; stop before implementation.
+
+**P3a owner-authorized single-key real persistence proof passed available checks.** Authenticated Test sessions created, checkpointed, restored and released the approved profile; Bank remains zero. [Evidence, measurements and remaining service limits](docs/P3A-VALIDATION.md). Real start is explicit and restricted to Studio/Test/account/key; normal startup is unchanged. Stop after P3a. Earlier statuses below are historical.
+
+**Historical P3a design gate — superseded by D100.** [Decision proposal](docs/P3A-DECISION-PROPOSAL.md) separates persistence from the later P3 economy/construction work. D94–D99 are now approved for pure/fake implementation; real-service access remains a separate gate as described above.
 
 **P2b.1 available validation complete (17 November 2026).** Bounded generation scheduling retains the two-second watchdog and unchanged deterministic rules. Eight actual Studio clients passed isolation/control checks; removal and replacement joining passed. The full 10,000-seed sweep and relevant regressions passed. [Results, measurements and remaining same-account/device checks](docs/P2B1-VALIDATION.md). P2b is owner-approved as the basis for this task. Stop after P2b.1; Production remains untouched. Older statuses below are historical.
 
@@ -61,15 +85,30 @@ The later explicit P2a implementation request authorizes only the fixed proof. P
 
 ## P3 — Construction, economy and persistence
 
-### P3a — Persistent countries (design complete; implementation not authorized)
+### P3a — Persistent countries (isolated real-service proof validated)
 
 - **Scope:** save/restore pinned country identity, starter network, online state, simulation accounting and zero/nonspendable Bank schema; fenced ownership, failure handling and migrations.
 - **Deliverable:** [P3a decision proposal](docs/P3A-DECISION-PROPOSAL.md), including D94–D99 owner choices, implementation stages and adversarial/real-service acceptance matrix.
-- **Current evidence:** documentation/links/protected-file checks only. Existing P2b.1 results do not prove persistence or same-account reconnect.
-- **Gate:** explicit owner design approval and separate implementation authorization. Actual Test service access/key namespace require verification before writes; no permission/publishing changes implied.
+- **Current evidence:** [P3a validation](docs/P3A-VALIDATION.md) includes fake tests and the owner-accepted real single-key create/checkpoint/reconnect/release proof. Actual multi-server contention, outages and recovery remain unverified.
+- **Gate:** D104 authorizes the completed single-key Test execution after D103 readiness. Remaining multi-server/outage/recovery limits are documented; no Production rollout, new keys, P3b/P3c, settings or publishing is implied.
 - **Excluded:** spendable income, billing/reserves, construction, growth, land purchases and all later systems. Their original P3 gates below remain unresolved.
 
-### Remaining P3 economy/construction scope (not authorized)
+### P3b — Bank and electricity revenue (design only; approval pending)
+
+- **Deliverables:** [decision proposal](docs/P3B-DECISION-PROPOSAL.md), [starter balance study](docs/P3B-BALANCE-STUDY.json), [design validation](docs/P3B-DESIGN-VALIDATION.md).
+- **Proposed:** fixed 120 Credits/MWh sale price, 80 variable cost, 10/hour fixed; 1,000-Credit once-only opening grant, 250 operating buffer; exact per-interval billing and atomic schema2 migration/checkpoint.
+- **Gate:** owner approval of D106–D112 and separate implementation authority. Real Rowanbridge migration requires another exact-key/preimage approval; D104 does not cover it.
+- **Unresolved choice:** accept no self-recovery at zero for the isolated proof, or request a separate restricted-recovery design. No silent bailout.
+- **Excluded:** construction/P3c, growth, land purchases, Shop/entitlements, climate events, R4, Production changes.
+
+### P3c — Approved fake-storage implementation and validation
+
+- **Completed:** project/route, price and progression study, quote/commit/recovery protocol, schema3 migration design, beginner UI and test matrix in [P3c proposal](docs/P3C-DECISION-PROPOSAL.md).
+- **Approved:** D131–D135 via D136, including district/two-sink extension,1,000-Credit price/250 buffer, schema3 and the critical save barrier.
+- **Current:** pure/fake implementation and isolated Test validation; [results](docs/P3C-VALIDATION.md). Real migration readiness/execution and a later real purchase require separate approvals. No real reads or writes in P3c.
+- **Excluded:** growth, general construction catalogue, territory, planning, refunds/selling, Shop/R4/R5, Production and new artwork.
+
+### Broader remaining P3 construction and later economy scope (not authorized)
 
 - **Scope:** straight legal connections, basic gas construction, money, domestic billing, bounded population growth and safe save/load. Resolve D05/D06/D16 and review D08 recovery before external playtesting.
 - **Dependencies:** P2; isolated Roblox test experience and API access configured by an authorized operator.

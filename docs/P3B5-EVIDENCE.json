@@ -1,0 +1,282 @@
+{
+  "date": "2026-11-18",
+  "scope": "Authorized bounded real Test proof; 5 intervals; no Production",
+  "realRequests": [
+    {
+      "utc": "2026-11-18T07:15:01.631Z",
+      "ms": 212.60829997481778,
+      "writeBudget": 688,
+      "kind": "Read",
+      "readBudget": 687,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:15:02.298Z",
+      "ms": 637.8874000220094,
+      "writeBudget": 689,
+      "kind": "Update",
+      "readBudget": 689,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:15:02.697Z",
+      "ms": 351.202399993781,
+      "writeBudget": 688,
+      "kind": "Update",
+      "readBudget": 689,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:15:02.848Z",
+      "ms": 146.76970001892187,
+      "writeBudget": 688,
+      "kind": "Read",
+      "readBudget": 688,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:15:03.215Z",
+      "ms": 356.795300001977,
+      "writeBudget": 688,
+      "kind": "Update",
+      "readBudget": 689,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:15:03.915Z",
+      "ms": 633.5177999862935,
+      "writeBudget": 687,
+      "kind": "Update",
+      "readBudget": 689,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:15:04.098Z",
+      "ms": 148.08700000867248,
+      "writeBudget": 687,
+      "kind": "Read",
+      "readBudget": 688,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:17:30.926Z",
+      "ms": 179.44550001993775,
+      "writeBudget": 686,
+      "kind": "Read",
+      "readBudget": 685,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:17:31.458Z",
+      "ms": 502.8238999948371,
+      "writeBudget": 687,
+      "kind": "Update",
+      "readBudget": 687,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:17:31.826Z",
+      "ms": 337.4984999827575,
+      "writeBudget": 686,
+      "kind": "Update",
+      "readBudget": 687,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:17:32.225Z",
+      "ms": 316.4962999871932,
+      "writeBudget": 685,
+      "kind": "Update",
+      "readBudget": 687,
+      "ok": true
+    },
+    {
+      "utc": "2026-11-18T07:17:32.391Z",
+      "ms": 130.71200001286343,
+      "writeBudget": 687,
+      "kind": "Read",
+      "readBudget": 688,
+      "ok": true
+    }
+  ],
+  "realResults": [
+    {
+      "utc": "2026-11-18T07:15:01.414Z",
+      "message": "[P3b5 authenticated session] phase1 account=missawfulname user=149564436"
+    },
+    {
+      "utc": "2026-11-18T07:15:01.631Z",
+      "message": "[P3b5 request] {\"ms\":212.60829997481779,\"writeBudget\":688,\"kind\":\"Read\",\"readBudget\":687,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:15:01.634Z",
+      "message": "[P3b5 preflight] {\"leaseAbsent\":true,\"creator\":149564436,\"phase\":1,\"epoch\":5,\"step\":113,\"universe\":10776833313,\"countryRevision\":124,\"online\":true,\"player\":149564436,\"profileRevision\":17,\"schema\":2,\"bank\":100000}"
+    },
+    {
+      "utc": "2026-11-18T07:15:01.634Z",
+      "message": "[P3b5 preflight finance] {\"variable\":0,\"fixed\":0,\"grant\":100000,\"carry\":[0,0,0,0],\"sales\":0,\"cursor\":113,\"activation\":113}"
+    },
+    {
+      "utc": "2026-11-18T07:15:01.657Z",
+      "message": "[P3b5 Starting] {\"leaseAbsent\":true,\"profileRevision\":17,\"meters\":[0,0,0],\"phase\":1,\"epoch\":5,\"step\":113,\"carry\":[0,0,0],\"activation\":113,\"online\":true,\"countryRevision\":124,\"cursor\":113,\"fixed\":0,\"variable\":0,\"sales\":0,\"bank\":100000}"
+    },
+    {
+      "utc": "2026-11-18T07:15:01.657Z",
+      "message": "[P3b5 history] {\"deliveredMWh\":5.355999999999993,\"requestedMWh\":5.875999999999989,\"windowDelivered\":5.355999999999993,\"historyIndex\":113,\"historyCount\":113,\"windowRequested\":5.875999999999989}"
+    },
+    {
+      "utc": "2026-11-18T07:15:02.298Z",
+      "message": "[P3b5 request] {\"ms\":637.8874000220094,\"writeBudget\":689,\"kind\":\"Update\",\"readBudget\":689,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:15:02.697Z",
+      "message": "[P3b5 request] {\"ms\":351.202399993781,\"writeBudget\":688,\"kind\":\"Update\",\"readBudget\":689,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:15:02.848Z",
+      "message": "[P3b5 request] {\"ms\":146.76970001892188,\"writeBudget\":688,\"kind\":\"Read\",\"readBudget\":688,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:15:02.852Z",
+      "message": "[P3b5 Checkpoint] {\"leaseAbsent\":false,\"profileRevision\":19,\"meters\":[9360,9360,3],\"phase\":1,\"epoch\":6,\"step\":116,\"carry\":[0,0,0],\"activation\":113,\"online\":true,\"countryRevision\":127,\"cursor\":116,\"fixed\":50,\"variable\":1248,\"sales\":1872,\"bank\":100574}"
+    },
+    {
+      "utc": "2026-11-18T07:15:02.852Z",
+      "message": "[P3b5 history] {\"deliveredMWh\":5.511999999999992,\"requestedMWh\":6.031999999999988,\"windowDelivered\":5.511999999999992,\"historyIndex\":116,\"historyCount\":116,\"windowRequested\":6.031999999999988}"
+    },
+    {
+      "utc": "2026-11-18T07:15:03.215Z",
+      "message": "[P3b5 request] {\"ms\":356.795300001977,\"writeBudget\":688,\"kind\":\"Update\",\"readBudget\":689,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:15:03.219Z",
+      "message": "[P3b5 Checkpoint] {\"leaseAbsent\":false,\"profileRevision\":20,\"meters\":[9360,9360,3],\"phase\":1,\"epoch\":6,\"step\":117,\"carry\":[0,0,0],\"activation\":113,\"online\":false,\"countryRevision\":129,\"cursor\":117,\"fixed\":50,\"variable\":1248,\"sales\":1872,\"bank\":100574}"
+    },
+    {
+      "utc": "2026-11-18T07:15:03.219Z",
+      "message": "[P3b5 history] {\"deliveredMWh\":5.511999999999992,\"requestedMWh\":6.083999999999987,\"windowDelivered\":5.511999999999992,\"historyIndex\":117,\"historyCount\":117,\"windowRequested\":6.083999999999987}"
+    },
+    {
+      "utc": "2026-11-18T07:15:03.915Z",
+      "message": "[P3b5 request] {\"ms\":633.5177999862935,\"writeBudget\":687,\"kind\":\"Update\",\"readBudget\":689,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:15:04.098Z",
+      "message": "[P3b5 request] {\"ms\":148.08700000867249,\"writeBudget\":687,\"kind\":\"Read\",\"readBudget\":688,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:15:04.103Z",
+      "message": "[P3b5 Released] {\"leaseAbsent\":true,\"profileRevision\":21,\"meters\":[9360,9360,3],\"phase\":1,\"epoch\":6,\"step\":117,\"carry\":[0,0,0],\"activation\":113,\"online\":false,\"countryRevision\":129,\"cursor\":117,\"fixed\":50,\"variable\":1248,\"sales\":1872,\"bank\":100574}"
+    },
+    {
+      "utc": "2026-11-18T07:15:04.103Z",
+      "message": "[P3b5 history] {\"deliveredMWh\":5.511999999999992,\"requestedMWh\":6.083999999999987,\"windowDelivered\":5.511999999999992,\"historyIndex\":117,\"historyCount\":117,\"windowRequested\":6.083999999999987}"
+    },
+    {
+      "utc": "2026-11-18T07:15:04.104Z",
+      "message": "[P3b5 complete] {\"bytes\":7609,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"name\":\"Rowanbridge\",\"calls\":7,\"phase\":1,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"sha256\":\"c111e12fd45b5ed0c9d612ba31567f32c3f3f40b95324ca38c14635dcee6fc04\",\"completedIntervals\":4}"
+    },
+    {
+      "utc": "2026-11-18T07:17:30.742Z",
+      "message": "[P3b5 authenticated session] phase2 reconnected account=missawfulname user=149564436"
+    },
+    {
+      "utc": "2026-11-18T07:17:30.926Z",
+      "message": "[P3b5 request] {\"ms\":179.44550001993776,\"writeBudget\":686,\"kind\":\"Read\",\"readBudget\":685,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:17:30.929Z",
+      "message": "[P3b5 preflight] {\"leaseAbsent\":true,\"creator\":149564436,\"phase\":2,\"epoch\":6,\"step\":117,\"universe\":10776833313,\"countryRevision\":129,\"online\":false,\"player\":149564436,\"profileRevision\":21,\"schema\":2,\"bank\":100574}"
+    },
+    {
+      "utc": "2026-11-18T07:17:30.929Z",
+      "message": "[P3b5 preflight finance] {\"variable\":1248,\"fixed\":50,\"grant\":100000,\"carry\":[0,0,0,0],\"sales\":1872,\"cursor\":117,\"activation\":113}"
+    },
+    {
+      "utc": "2026-11-18T07:17:30.952Z",
+      "message": "[P3b5 Starting] {\"leaseAbsent\":true,\"profileRevision\":21,\"meters\":[9360,9360,3],\"phase\":2,\"epoch\":6,\"step\":117,\"carry\":[0,0,0],\"activation\":113,\"online\":false,\"countryRevision\":129,\"cursor\":117,\"fixed\":50,\"variable\":1248,\"sales\":1872,\"bank\":100574}"
+    },
+    {
+      "utc": "2026-11-18T07:17:30.952Z",
+      "message": "[P3b5 history] {\"deliveredMWh\":5.511999999999992,\"requestedMWh\":6.083999999999987,\"windowDelivered\":5.511999999999992,\"historyIndex\":117,\"historyCount\":117,\"windowRequested\":6.083999999999987}"
+    },
+    {
+      "utc": "2026-11-18T07:17:31.458Z",
+      "message": "[P3b5 request] {\"ms\":502.8238999948371,\"writeBudget\":687,\"kind\":\"Update\",\"readBudget\":687,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:17:31.826Z",
+      "message": "[P3b5 request] {\"ms\":337.4984999827575,\"writeBudget\":686,\"kind\":\"Update\",\"readBudget\":687,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:17:31.846Z",
+      "message": "[P3b5 Checkpoint] {\"leaseAbsent\":false,\"profileRevision\":23,\"meters\":[12480,12480,4],\"phase\":2,\"epoch\":7,\"step\":118,\"carry\":[0,0,40000],\"activation\":113,\"online\":true,\"countryRevision\":131,\"cursor\":118,\"fixed\":66,\"variable\":1664,\"sales\":2496,\"bank\":100766}"
+    },
+    {
+      "utc": "2026-11-18T07:17:31.846Z",
+      "message": "[P3b5 history] {\"deliveredMWh\":5.563999999999991,\"requestedMWh\":6.135999999999987,\"windowDelivered\":5.563999999999991,\"historyIndex\":118,\"historyCount\":118,\"windowRequested\":6.135999999999987}"
+    },
+    {
+      "utc": "2026-11-18T07:17:32.225Z",
+      "message": "[P3b5 request] {\"ms\":316.4962999871932,\"writeBudget\":685,\"kind\":\"Update\",\"readBudget\":687,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:17:32.391Z",
+      "message": "[P3b5 request] {\"ms\":130.71200001286344,\"writeBudget\":687,\"kind\":\"Read\",\"readBudget\":688,\"ok\":true}"
+    },
+    {
+      "utc": "2026-11-18T07:17:32.396Z",
+      "message": "[P3b5 Released] {\"leaseAbsent\":true,\"profileRevision\":24,\"meters\":[12480,12480,4],\"phase\":2,\"epoch\":7,\"step\":118,\"carry\":[0,0,40000],\"activation\":113,\"online\":true,\"countryRevision\":131,\"cursor\":118,\"fixed\":66,\"variable\":1664,\"sales\":2496,\"bank\":100766}"
+    },
+    {
+      "utc": "2026-11-18T07:17:32.396Z",
+      "message": "[P3b5 history] {\"deliveredMWh\":5.563999999999991,\"requestedMWh\":6.135999999999987,\"windowDelivered\":5.563999999999991,\"historyIndex\":118,\"historyCount\":118,\"windowRequested\":6.135999999999987}"
+    },
+    {
+      "utc": "2026-11-18T07:17:32.397Z",
+      "message": "[P3b5 complete] {\"bytes\":7654,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"name\":\"Rowanbridge\",\"calls\":5,\"phase\":2,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"sha256\":\"dcc3b32a12b48032f4d1f3ac2ea3536da68e7412ea3fbdba12c43a04dd504bd2\",\"completedIntervals\":1}"
+    }
+  ],
+  "staticPrewrite": {
+    "ValidateP3b5.py": 70,
+    "ValidateP3b4.py": 69,
+    "ValidateP3b3.py": 57,
+    "ValidateP3b.py": 149,
+    "ValidateP3a.py": 163,
+    "ValidateP2a.py": 34,
+    "ValidateP2b.py": 38
+  },
+  "fakeAssertions": {
+    "P3b5": 50,
+    "P3b4": 33,
+    "P3a": 178,
+    "P3b": 93,
+    "P3b3": 44
+  },
+  "builds": [
+    "default passed",
+    "test passed"
+  ],
+  "scriptAnalysis": {
+    "errors": 0,
+    "preexistingWarnings": 4,
+    "newWarnings": 0
+  },
+  "finalSourceSha256": {
+    "src/server/Adapters/Schema2GameplayAdapter.luau": "106b74174ae29db99803abbd4be86fc6978d8acd583329dc9fac1fd10fe8f4f6",
+    "src/server/Domain/BoundedEconomyPlan.luau": "cb70964b469d3baa1c7c4b0a498da111051bad67895cd1f4eba11757b77d3b42",
+    "src/server/Services/BoundedEconomyRunner.luau": "e2922c56920704f0047b4dc31a2db03cc2d0eadbf5f69e09f78d284931fc0399",
+    "src/server/Services/BoundedEconomyProof.luau": "c0a9faa1459f9eea9d977dab00886a2804eb6a71ea0fc4761d1c3dc6d02a49f2",
+    "tests/unit/P3b5.spec.luau": "a8fb53702d8947d9735f166918e66d365926522bd8dcdd0cf9f47baf4aefcc63"
+  },
+  "limitations": [
+    "Application calls measured; internal Roblox callback invocation count not separately measured",
+    "No destructive real faults or competing keys",
+    "Normal live economy/UI startup remained disabled",
+    "Nonpersistent P2a/P2b preview heartbeat services also ran during Play; they had no access to the real Rowanbridge profile. All-heartbeat isolation was not achieved."
+  ],
+  "closure": {
+    "utc": "2026-11-18T07:21:55.282Z",
+    "message": "[P3b5 closed] Both gates disabled, Play stopped, development runner restored; no further service calls"
+  }
+}

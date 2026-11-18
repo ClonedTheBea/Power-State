@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-18",
+  "scope": "One conditional Test migration and release; no gameplay",
+  "preflightMatched": true,
+  "schemaVersion": 2,
+  "migrationProfileRevision": 16,
+  "releasedProfileRevision": 17,
+  "countryRevision": 124,
+  "sessionEpoch": 5,
+  "leaseAbsent": true,
+  "bankMinor": 100000,
+  "activationStep": 113,
+  "lastSettledStep": 113,
+  "earnedMinor": 0,
+  "spentMinor": 0,
+  "historyPreservedByExactCanonicalComparison": true,
+  "migrationVersion": "08DF44E1F51DCFA5.0000000010.08DF453B9ABDCF1F.01",
+  "releasedVersion": "08DF44E1F51DCFA5.0000000011.08DF453B9B0E2C6E.01",
+  "releasedCanonicalSha256": "ea9847e05aeca2b0590e085276fa10dd322acc98e72160400e15b83ea0a97cee",
+  "releasedBytes": 7269,
+  "requests": [
+    {
+      "ms": 191.6751000098884,
+      "writeBudget": 2500,
+      "kind": "Read",
+      "readBudget": 2498,
+      "ok": true
+    },
+    {
+      "ms": 502.8549999988172,
+      "writeBudget": 2499,
+      "kind": "MigrateAcquire",
+      "readBudget": 2498,
+      "ok": true
+    },
+    {
+      "ms": 148.53170001879334,
+      "writeBudget": 2499,
+      "kind": "Read",
+      "readBudget": 2497,
+      "ok": true
+    },
+    {
+      "ms": 317.2912000154611,
+      "writeBudget": 2498,
+      "kind": "Release",
+      "readBudget": 2497,
+      "ok": true
+    },
+    {
+      "ms": 134.00689998525195,
+      "writeBudget": 2498,
+      "kind": "Read",
+      "readBudget": 2496,
+      "ok": true
+    }
+  ],
+  "engineAssertions": {
+    "P3b3": 44,
+    "P3a": 178,
+    "P3b": 93
+  },
+  "staticChecks": {
+    "P3b3": 57,
+    "P3a": 161,
+    "P3b": 149,
+    "P2a": 34,
+    "P2b": 38
+  },
+  "rojoBuilds": 2,
+  "scriptAnalysis": {
+    "errors": 0,
+    "preexistingArtworkWarnings": 4,
+    "newWarnings": 0
+  },
+  "sanitizedLogs": [
+    "2026-11-18T06:11:20.392Z,1833.392822,98dc,6,Info [FLog::CreatorOutput] [P3b.3 fake] PASS: 44 assertions; no real DataStore access",
+    "2026-11-18T06:11:25.361Z,1838.361450,6058,6,Info [FLog::CreatorOutput] [P3b.3 validation] PASS: all required fake suites completed before any real call",
+    "2026-11-18T06:17:20.962Z,2193.962402,6058,6,Info [FLog::CreatorOutput] [P3b.3 request] {\"ms\":191.6751000098884,\"writeBudget\":2500,\"kind\":\"Read\",\"readBudget\":2498,\"ok\":true}",
+    "2026-11-18T06:17:20.964Z,2193.964355,6058,6,Info [FLog::CreatorOutput] [P3b.3 preflight] PASS: exact authenticated Test/global/key, reviewed version and SHA-256, schema1 revisions15/123 epoch4, absent lease",
+    "2026-11-18T06:17:21.479Z,2194.479736,62b4,6,Info [FLog::CreatorOutput] [P3b.3 request] {\"ms\":502.8549999988172,\"writeBudget\":2499,\"kind\":\"MigrateAcquire\",\"readBudget\":2498,\"ok\":true}",
+    "2026-11-18T06:17:21.628Z,2194.628906,6058,6,Info [FLog::CreatorOutput] [P3b.3 request] {\"ms\":148.53170001879335,\"writeBudget\":2499,\"kind\":\"Read\",\"readBudget\":2497,\"ok\":true}",
+    "2026-11-18T06:17:21.962Z,2194.962891,6058,6,Info [FLog::CreatorOutput] [P3b.3 request] {\"ms\":317.2912000154611,\"writeBudget\":2498,\"kind\":\"Release\",\"readBudget\":2497,\"ok\":true}",
+    "2026-11-18T06:17:22.097Z,2195.097412,49ec,6,Info [FLog::CreatorOutput] [P3b.3 request] {\"ms\":134.00689998525196,\"writeBudget\":2498,\"kind\":\"Read\",\"readBudget\":2496,\"ok\":true}",
+    "2026-11-18T06:17:22.102Z,2195.102295,49ec,6,Info [FLog::CreatorOutput] [P3b.3 result] {\"leaseAbsent\":true,\"bankMinor\":100000,\"sessionEpoch\":5,\"variableExpenseRemainder\":0,\"step\":113,\"bonusSalesRemainder\":0,\"receiptKind\":\"Release\",\"profileRevision\":17,\"encodedBytes\":7269,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"name\":\"Rowanbridge\",\"onlineSteps\":0,\"schema\":2,\"operations\":[{\"kind\":\"MigrateAcquire\",\"responseReceived\":true,\"reconciled\":false},{\"kind\":\"Release\",\"responseReceived\":true,\"reconciled\":false}],\"lastSettledStep\":113,\"earnedMinor\":0,\"generatedKwMinutes\":0,\"baseSalesRemainder\":0,\"countryRevision\":124,\"grantMinor\":100000,\"activationStep\":113,\"historyIndex\":113,\"sha256\":\"ea9847e05aeca2b0590e085276fa10dd322acc98e72160400e15b83ea0a97cee\",\"migrationVersion\":\"08DF44E1F51DCFA5.0000000010.08DF453B9ABDCF1F.01\",\"historyCount\":113,\"version\":\"08DF44E1F51DCFA5.0000000011.08DF453B9B0E2C6E.01\",\"fixedExpenseRemainder\":0,\"online\":true,\"deliveredKwMinutes\":0,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"requestedM",
+    "2026-11-18T06:17:22.102Z,2195.102295,49ec,6,Info [FLog::CreatorOutput] [P3b.3 complete] PASS: migrated once, uncached verified, fenced release uncached verified; no simulation advancement; private package detached"
+  ],
+  "limitations": [
+    "The single long result log line is truncated by Studio; complete-profile comparison and completion assertions passed.",
+    "No continued real economy, reconnect or endurance testing authorized."
+  ],
+  "sourceHashes": {
+    "src/server/Adapters/Schema2MigrationAdapter.luau": "c048c5d776849efdd16422ce8c33f44b10c7d3d9194bd7b448b8a08a642c47f7",
+    "src/server/Domain/ReviewedMigration.luau": "0accdd8e20a168860b2afd43a032e67874f1bdc79a7da55179df79574a55059a",
+    "src/server/Services/MigrationRunner.luau": "7e49f6101c732049b897bccfc82cba713a02eb9a72284e64fe534dbf4334e561",
+    "tests/unit/P3b3.spec.luau": "3e90a86becaf154c0e32de13526a62e25f8698a15dd71834d51a028fa9e45813"
+  },
+  "unchangedArtworkTestHashes": {
+    "tests/integration/R33.spec.luau": "03fccc6c6d08f3675cfae79671e3520d9e752e4a4a5bef0f7779c9ed141f603a",
+    "tests/integration/R37.spec.luau": "434d391f7ff2d896a5aa9a39b78c34131b4f509a869d6abe76834da2d72bb24f"
+  }
+}

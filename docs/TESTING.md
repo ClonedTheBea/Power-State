@@ -1,5 +1,7 @@
 # Testing and evidence
 
+**P3a follow-up:** D94–D99 are owner-approved (D100); D104 authorizes the completed single-key real Studio/Test proof. [P3a validation](P3A-VALIDATION.md) records actual create/checkpoint/reconnect/release evidence and remaining service limits. Real start requires the approved account, universe and key; normal bootstrap remains unchanged. Earlier design-only wording below is historical.
+
 **P3a design-only gate:** the [persistence test matrix](P3A-DECISION-PROPOSAL.md#required-test-matrix) adds atomic initialization, fencing, ambiguous writes, same-account races, restore accounting and actual Test DataStore acceptance. No persistence tests have run yet; existing P2a/P2b/P2b.1 results remain regression evidence only.
 
 **P2b.1:** actual eight-client ownership/control/replication checks and generation queue timing/cancellation are covered by `P2b1Multiplayer.spec`, `P2b1.spec`, the dormant cloned `P2b1Probe`, and `P2b1Scheduler.spec`. Live service inspection must run in a server Script context. [P2b.1 procedure, measurements and limitations](P2B1-VALIDATION.md).

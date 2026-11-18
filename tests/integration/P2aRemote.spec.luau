@@ -2,7 +2,7 @@
 -- Manual supplementary client suite: real RemoteEvent traffic, no invented owner authority.
 return function(profile:string?)
  assert(game:GetService("RunService"):IsStudio() and game.GameId==10776833313,"Test only")
- local folder=game:GetService("ReplicatedStorage"):WaitForChild(if profile=="P2b" then "P2bSimulation" else "P2aSimulation")
+ local folder=game:GetService("ReplicatedStorage"):WaitForChild(if profile=="P3b" then "P3bSimulation" elseif profile=="P3a" then "P3aSimulation" elseif profile=="P2b" then "P2bSimulation" else "P2aSimulation")
  local intent=folder.Intent :: RemoteEvent;local remote=folder.Snapshot :: RemoteEvent
  local latest:any=nil;local results:{any}={};local count=0
  local connection=remote.OnClientEvent:Connect(function(s:any)

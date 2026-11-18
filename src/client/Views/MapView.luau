@@ -15,7 +15,6 @@ function MapView.create(parent: Instance, preview: Types.Preview)
 	local viewport = C.frame(root, "Viewport", Theme.map)
 	viewport.Size = UDim2.fromScale(1, 1); viewport.ClipsDescendants = true; viewport.Active = true
 	local terrain = if preview.world then require(script.Parent.Map.GeneratedTerrain).create(viewport, preview.world) else Terrain.create(viewport)
-	local renderTerrain: (number, number, number, Vector2) -> () = terrain.render
 	if preview.world then root:SetAttribute("WorldWidth",1024);root:SetAttribute("WorldHeight",1024)end
 	local function layer(name: string, z: number): Frame
 		local frame = C.frame(viewport, name)
@@ -81,6 +80,8 @@ function MapView.create(parent: Instance, preview: Types.Preview)
 	local function render(x: number, y: number, zoom: number)
 		cameraX, cameraY, cameraZoom = x, y, zoom
 		local size = viewport.AbsoluteSize
+		-- Resolve the current renderer: isolated hybrid attachment replaces this callback.
+		local renderTerrain: (number, number, number, Vector2) -> () = terrain.render
 		renderTerrain(x, y, zoom, size); band = Geometry.band(band, zoom)
 		connections.Visible = root:GetAttribute("LinksVisible") == true
 		for index, link in preview.links do

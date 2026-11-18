@@ -21,13 +21,17 @@ try {
     foreach ($file in Get-ChildItem -Recurse -File src, tests -Filter '*.luau') {
         $source = Get-Content -Raw -LiteralPath $file.FullName
         if (-not $source.StartsWith('--!strict')) { throw "Missing strict mode: $($file.FullName)" }
-        if ($source -match 'GetDataStore\(|GetOrderedDataStore\(|InvokeServer\(') {
+        if ($source -match 'GetOrderedDataStore\(|InvokeServer\(' -or ($source -match 'GetDataStore\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/server/Adapters/DataStoreAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema2MigrationAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema3MigrationAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema3ConstructionAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema2GameplayAdapter.luau')))) {
             throw "Unexpected future-phase service use: $($file.FullName)"
         }
-        if ($source -match 'FireServer\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/client/Simulation/SimulationClient.luau'), (Join-Path $projectRoot 'tests/integration/P2aRemote.spec.luau'), (Join-Path $projectRoot 'tests/integration/P2b1.spec.luau'))) {
+        if ($source -match 'FireServer\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/client/Simulation/SimulationClient.luau'), (Join-Path $projectRoot 'src/client/Simulation/ConstructionClient.luau'), (Join-Path $projectRoot 'tests/integration/P2aRemote.spec.luau'), (Join-Path $projectRoot 'tests/integration/P2b1.spec.luau'))) {
             throw "Unapproved remote sender: $($file.FullName)"
         }
     }
+    $adapter = Get-Content -Raw -LiteralPath 'src/server/Adapters/DataStoreAdapter.luau'
+    if ($adapter -notmatch 'local LIVE_ACCESS_APPROVED=true' -or $adapter -notmatch '10776833313' -or $adapter -notmatch 'player.UserId==149564436' -or $adapter -notmatch 'run:IsStudio\(\)') { throw 'P3a real access must remain exact-account and Studio/Test guarded.' }
+    $economyAdapter = Get-Content -Raw -LiteralPath 'src/server/Adapters/Schema2GameplayAdapter.luau'
+    if (-not $economyAdapter.Contains('local REAL_ECONOMY_EXECUTION_APPROVED=false') -or -not $economyAdapter.Contains('assert(REAL_ECONOMY_EXECUTION_APPROVED') -or $economyAdapter.IndexOf('assert(REAL_ECONOMY_EXECUTION_APPROVED') -gt $economyAdapter.IndexOf('GetService("DataStoreService")')) { throw 'P3b.4 real economy execution must remain disabled before service access.' }
     & git diff --check
     if ($LASTEXITCODE -ne 0) { throw 'Git whitespace check failed.' }
     Write-Output "PASS: two Rojo builds, source mapping, client entrypoint, P2a persistence/remote boundary checks and Git whitespace."

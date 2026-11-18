@@ -3,6 +3,7 @@
 local C=require(script.Parent.Parent.Components)
 local T=require(script.Parent.Parent.Parent.Theme)
 local Geometry=require(script.Parent.MapGeometry)
+local Fixture=require(script.Parent.MapFixture)
 local Terrain={}
 function Terrain.create(parent:Instance,world:any)
  assert(world.width==1024 and world.height==1024 and #world.samples==289,"Generated descriptor bounds")
@@ -18,7 +19,10 @@ function Terrain.create(parent:Instance,world:any)
   tile.Position=UDim2.fromOffset(col*64,row*64);tile.Size=UDim2.fromOffset(64,64)
   table.insert(cells,tile)
  end end
- return {root=root,entries={},shores={},setReplacements=function(_value:{[string]:boolean})end,
+ -- Empty generated-art collections share the authored renderer's typed contract.
+ local entries:{{root:Frame,detail:Frame,patch:Fixture.Patch}}={}
+ local shores:{{root:Frame,patch:Fixture.Patch}}={}
+ return {root=root,entries=entries,shores=shores,setReplacements=function(_value:{[string]:boolean})end,
   render=function(x:number,y:number,zoom:number,size:Vector2)
    root.Position=UDim2.fromOffset(x,y);scale.Scale=zoom
    for i,tile in cells do

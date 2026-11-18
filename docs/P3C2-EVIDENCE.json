@@ -1,0 +1,70 @@
+{
+  "leaseAbsent": true,
+  "profileRevision": 26,
+  "bytes": 7796,
+  "epoch": 8,
+  "step": 118,
+  "operations": [
+    {
+      "kind": "MigrateAcquire",
+      "responseReceived": true,
+      "reconciled": false
+    },
+    {
+      "kind": "Release",
+      "responseReceived": true,
+      "reconciled": false
+    }
+  ],
+  "records": [
+    {
+      "ms": 219.9652999988757,
+      "writeBudget": 2498,
+      "kind": "Read",
+      "readBudget": 2494,
+      "ok": true
+    },
+    {
+      "ms": 501.3372999965213,
+      "writeBudget": 2497,
+      "kind": "MigrateAcquire",
+      "readBudget": 2494,
+      "ok": true
+    },
+    {
+      "ms": 134.11220000125468,
+      "writeBudget": 2497,
+      "kind": "Read",
+      "readBudget": 2493,
+      "ok": true
+    },
+    {
+      "ms": 323.686199990334,
+      "writeBudget": 2496,
+      "kind": "Release",
+      "readBudget": 2493,
+      "ok": true
+    },
+    {
+      "ms": 150.0823000096716,
+      "writeBudget": 2496,
+      "kind": "Read",
+      "readBudget": 2492,
+      "ok": true
+    }
+  ],
+  "sha256": "d846d13a398113d1442ff1e0a3feeccbf2397fdf286cad88583f635524c75a65",
+  "countryRevision": 132,
+  "migrationVersion": "08DF44E1F51DCFA5.0000000019.08DF45575FAF0326.01",
+  "version": "08DF44E1F51DCFA5.000000001A.08DF45575FFF3C24.01",
+  "capital": 0,
+  "schema": 3,
+  "bankMinor": 100766,
+  "scope": "One approved stopped-Studio Test migration/release; no simulation or construction",
+  "sources": {
+    "src\\server\\Adapters\\Schema3MigrationAdapter.luau": "db4765d7c2bbd96c9bb61e805242b9ca42bc85df20fe9c6731aff6f6ffc328c1",
+    "src\\server\\Domain\\ReviewedMigration3.luau": "1e5a6b09c3242bce758fd646a071538e25ca995305c2d0bc342f7ecc74aee8bd",
+    "src\\server\\Services\\MigrationRunner3.luau": "949c26a9b2b62d137ce7eee1bd95f1ed05a80a862eacb0765e5bb35a544323fe",
+    "tests\\unit\\P3c2.spec.luau": "5a0cc2fcaf4671af2c66ce27c97b268ca5948971831437b0becdde8347359b64"
+  }
+}

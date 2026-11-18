@@ -1,5 +1,7 @@
 # Economy and National Eras
 
+**P3b design gate, 17 November 2026:** [focused proposal](P3B-DECISION-PROPOSAL.md) evaluates the accepted 1,000-resident P2b starter. It proposes 120 Credits/MWh sales, **80** inclusive variable cost (instead of the illustrative 50 below), 10/hour fixed, 1,000 opening grant and 250 operating buffer. D106–D112 are pending; no new prices, grants, billing or migration are approved/implemented. The proposed P3b scope excludes the broader growth, tariff controls and commerce systems below. D98 zero Bank remains the schema1 rule until an explicitly authorized schema2 migration.
+
 17 November 2026: [Starting country](STARTING-COUNTRY.md) replaces the old multi-settlement opening requirement. The 7 MW price/boost arithmetic below remains an illustrative regression/balance example, not the new opening income. [Minimal simulation](MINIMAL-SIMULATION.md) defines P2 nonspendable estimates; P3 ledger, funded operation and balance gates are unchanged. New-country seeds at rebirth remain subject to separate reset/balance approval.
 
 Status: delivered-energy revenue, growth and optional rebirths are confirmed. The 15 November GUI brief also confirms Bank/Credits terminology and the Double Income product rules (D20–D23), for design only. Prices, transaction/timer engineering and balance remain proposals. Electricity reports are defined in [Simulation](ELECTRICITY-SIMULATION.md).

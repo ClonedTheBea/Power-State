@@ -1,6 +1,6 @@
 # P3a — Persistent countries: decision proposal
 
-17 November 2026. **Design only — awaiting owner approval.** No persistence code, DataStore calls, settings changes or publishing. P2b.1 passed available local multiplayer validation; its same-account reconnect, pending-generation disconnect and hosted/device gaps remain open. This proposal prepares those persistence-specific acceptance checks, not a claim that they passed.
+17 November 2026. **Subsequently approved D94–D99.** The owner separately authorized pure implementation and fake/Test preparation; [current implementation evidence and real-service approval gate](P3A-VALIDATION.md) supersede the pending status below. This document preserves the reviewed contract and its original design-stage wording. No persistence code, DataStore calls, settings changes or publishing. P2b.1 passed available local multiplayer validation; its same-account reconnect, pending-generation disconnect and hosted/device gaps remain open. This proposal prepares those persistence-specific acceptance checks, not a claim that they passed.
 
 ## Scope and approval boundary
 

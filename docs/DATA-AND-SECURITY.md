@@ -1,5 +1,9 @@
 # Data and security
 
+**P3b design only:** [schema2 and migration proposal](P3B-DECISION-PROPOSAL.md#compatible-schema-version-2) adds a financial cursor, exact fractional accounting and one-time opening grant without resetting existing countries. D110/D111 require owner approval; no current schema, key or service behavior changes. Real Rowanbridge migration needs separate authorization and reviewed preimage.
+
+**P3a follow-up:** D94–D99 are owner-approved (D100); D104 authorizes the completed single-key real Studio/Test proof. [P3a validation](P3A-VALIDATION.md) records actual create/checkpoint/reconnect/release evidence and remaining service limits. Real start requires the approved account, universe and key; normal bootstrap remains unchanged. Earlier design-only wording below is historical.
+
 **P3a design proposal:** [Persistent-country approval gate](P3A-DECISION-PROPOSAL.md) specifies candidate schema/lifecycle and D94–D99. It narrows the initial save to the existing one-sector starter, zero/nonspendable Bank and 256 KiB cap. These remain pending, not implemented replacements for the broader proposals below.
 
 17 November 2026 design extension: [Starting country](STARTING-COUNTRY.md) specifies proposed seed/version/template records, stable coordinates, name snapshots, immutable generated base plus player deltas/tombstones, and fail-closed generator migration. Existing one-key/fenced transaction rules remain. No profile schema or persistence code changes in this task.

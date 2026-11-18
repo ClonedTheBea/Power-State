@@ -1,0 +1,261 @@
+{
+  "date": "2026-11-17",
+  "universe": 10776833313,
+  "owner": 149564436,
+  "store": "PowerStateProfilesP3aTest",
+  "scope": "global (default)",
+  "key": "u:149564436",
+  "sourceLog": "0.747.330.7470002_20261117T084929Z_Studio_F0BEA_last.log",
+  "scopeNote": "Actual Studio single-key proof. First CreateOff result was truncated by Studio logging; excluded from latency aggregation. API calls, not internal HTTP attempts.",
+  "calls": {
+    "GetAsync": 11,
+    "UpdateAsync": 15,
+    "total": 26,
+    "basis": "Three completed scripted phases (7 each), live service acquire/checkpoint/release plus preflight (4), final read (1); final profile revision 15."
+  },
+  "latency": {
+    "Read": {
+      "samples": 8,
+      "p50Ms": 156.333849998191,
+      "p95Ms": 330.1213000086136,
+      "minMs": 133.48350001615472,
+      "maxMs": 330.1213000086136
+    },
+    "Update": {
+      "samples": 10,
+      "p50Ms": 483.7254500162089,
+      "p95Ms": 834.6022999903653,
+      "minMs": 283.09250000165775,
+      "maxMs": 834.6022999903653
+    }
+  },
+  "measuredRequests": [
+    {
+      "phase": "ReconnectOn",
+      "index": 1,
+      "ms": 162.68469998613,
+      "writeBudget": 585,
+      "readBudget": 584,
+      "ok": true,
+      "kind": "Read"
+    },
+    {
+      "phase": "ReconnectOn",
+      "index": 2,
+      "ms": 484.8556000215467,
+      "writeBudget": 584,
+      "readBudget": 584,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "ReconnectOn",
+      "index": 3,
+      "ms": 632.5041000091005,
+      "writeBudget": 594,
+      "readBudget": 594,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "ReconnectOn",
+      "index": 4,
+      "ms": 148.4053999884054,
+      "writeBudget": 594,
+      "readBudget": 593,
+      "ok": true,
+      "kind": "Read"
+    },
+    {
+      "phase": "ReconnectOn",
+      "index": 5,
+      "ms": 283.09250000165775,
+      "writeBudget": 595,
+      "readBudget": 595,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "ReconnectOn",
+      "index": 6,
+      "ms": 332.3044999851845,
+      "writeBudget": 594,
+      "readBudget": 595,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "ReconnectOn",
+      "index": 7,
+      "ms": 133.48350001615472,
+      "writeBudget": 594,
+      "readBudget": 594,
+      "ok": true,
+      "kind": "Read"
+    },
+    {
+      "phase": "VerifyOn",
+      "index": 1,
+      "ms": 330.1213000086136,
+      "writeBudget": 585,
+      "readBudget": 584,
+      "ok": true,
+      "kind": "Read"
+    },
+    {
+      "phase": "VerifyOn",
+      "index": 2,
+      "ms": 834.6022999903653,
+      "writeBudget": 585,
+      "readBudget": 585,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "VerifyOn",
+      "index": 3,
+      "ms": 530.1748999918345,
+      "writeBudget": 584,
+      "readBudget": 585,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "VerifyOn",
+      "index": 4,
+      "ms": 316.09710000338964,
+      "writeBudget": 586,
+      "readBudget": 586,
+      "ok": true,
+      "kind": "Read"
+    },
+    {
+      "phase": "VerifyOn",
+      "index": 5,
+      "ms": 365.265400003409,
+      "writeBudget": 585,
+      "readBudget": 586,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "VerifyOn",
+      "index": 6,
+      "ms": 300.5264999810606,
+      "writeBudget": 584,
+      "readBudget": 586,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "VerifyOn",
+      "index": 7,
+      "ms": 149.983000010252,
+      "writeBudget": 586,
+      "readBudget": 587,
+      "ok": true,
+      "kind": "Read"
+    },
+    {
+      "phase": "Live",
+      "index": 1,
+      "ms": 313.8508000120055,
+      "writeBudget": 586,
+      "readBudget": 586,
+      "ok": true,
+      "kind": "Read"
+    },
+    {
+      "phase": "Live",
+      "index": 2,
+      "ms": 482.59530001087114,
+      "writeBudget": 585,
+      "readBudget": 586,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "Live",
+      "index": 3,
+      "ms": 583.0650999851059,
+      "writeBudget": 682,
+      "readBudget": 683,
+      "ok": true,
+      "kind": "Update"
+    },
+    {
+      "phase": "FinalRead",
+      "index": 1,
+      "ms": 148.36980000836775,
+      "writeBudget": 585,
+      "readBudget": 584,
+      "ok": true,
+      "kind": "Read"
+    }
+  ],
+  "selectedOutput": [
+    "2026-11-17T19:35:34.199Z,38764.199219,ab68,6,Info [FLog::CreatorOutput] [Power State R2 Shell] PASS: 324 assertions",
+    "2026-11-17T19:35:34.203Z,38764.203125,ab68,6,Info [FLog::CreatorOutput] [Power State R1 Currency] PASS: 26 assertions",
+    "2026-11-17T19:35:34.246Z,38764.246094,ab68,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.52 ms",
+    "2026-11-17T19:35:37.542Z,38767.542969,71f0,6,Info [FLog::CreatorOutput] [P3a resources] 32 fake reconnects, 64 calls, 1 retained key; Lua memory delta -458.0 KiB (GC-sensitive)",
+    "2026-11-17T19:35:37.542Z,38767.542969,71f0,6,Info [FLog::CreatorOutput] [P3a fake] PASS 178 assertions; max checkpoint 84620 bytes; canonical encode p95 7.427 ms; no real DataStore calls",
+    "2026-11-17T19:35:46.199Z,38776.199219,ab68,6,Info [FLog::CreatorOutput] [P3a REAL RESULT] {\"profileRevision\":4,\"checks\":18,\"phase\":\"CreateOff\",\"versions\":{\"namePoolVersion\":1,\"fallback\":false,\"climateVersion\":1,\"demandVersion\":1,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"generationVersion\":1,\"candidate\":0,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"startTemplateVersion\":1,\"networkVersion\":1},\"userId\":149564436,\"requests\":{\"records\":[{\"ms\":205.44040002278053,\"writeBudget\":585,\"readBudget\":584,\"ok\":true,\"kind\":\"Read\"},{\"ms\":734.411999990698,\"writeBudget\":585,\"readBudget\":584,\"ok\":true,\"kind\":\"Update\"},{\"ms\":632.6873000070918,\"writeBudget\":596,\"readBudget\":595,\"ok\":true,\"kind\":\"Update\"},{\"ms\":132.52149999607355,\"writeBudget\":596,\"readBudget\":594,\"ok\":true,\"kind\":\"Read\"},{\"ms\":299.4835000135936,\"writeBudget\":595,\"readBudget\":594,\"ok\":true,\"kind\":\"Update\"},{\"ms\":299.95109999435956,\"writeBudget\":594,\"readBudget\":594,\"ok\":true,\"kind\":\"Update\"},{\"ms\":133.97880000411534,\"writeBudget\":596,\"readBudget\":595,\"ok",
+    "2026-11-17T19:36:38.171Z,38828.171875,897c,6,Info [FLog::CreatorOutput] [Power State R2 Shell] PASS: 324 assertions",
+    "2026-11-17T19:36:38.171Z,38828.171875,897c,6,Info [FLog::CreatorOutput] [Power State R1 Currency] PASS: 26 assertions",
+    "2026-11-17T19:36:38.214Z,38828.214844,897c,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.28 ms",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL RESULT] {\"bankMinor\":0,\"sessionEpoch\":2,\"userId\":149564436,\"historyIndex\":12,\"profileRevision\":8,\"checks\":21,\"phase\":\"ReconnectOn\",\"versions\":{\"namePoolVersion\":1,\"fallback\":false,\"climateVersion\":1,\"demandVersion\":1,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"generationVersion\":1,\"candidate\":0,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"startTemplateVersion\":1,\"networkVersion\":1},\"coordinator\":{\"peakInFlight\":1,\"calls\":4,\"inFlight\":0,\"profiles\":0},\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"universe\":10776833313,\"encodedBytes\":2769,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"deliveredMWh\":0.312,\"requestedMWh\":0.6240000000000001,\"online\":true,\"step\":12}",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] ReconnectOn 1 {\"ms\":162.68469998613,\"writeBudget\":585,\"readBudget\":584,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] ReconnectOn 2 {\"ms\":484.8556000215467,\"writeBudget\":584,\"readBudget\":584,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] ReconnectOn 3 {\"ms\":632.5041000091005,\"writeBudget\":594,\"readBudget\":594,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] ReconnectOn 4 {\"ms\":148.4053999884054,\"writeBudget\":594,\"readBudget\":593,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] ReconnectOn 5 {\"ms\":283.09250000165778,\"writeBudget\":595,\"readBudget\":595,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] ReconnectOn 6 {\"ms\":332.3044999851845,\"writeBudget\":594,\"readBudget\":595,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:36:49.746Z,38839.746094,a660,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] ReconnectOn 7 {\"ms\":133.48350001615473,\"writeBudget\":594,\"readBudget\":594,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:37:58.789Z,38908.789062,a660,6,Info [FLog::CreatorOutput] [Power State R2 Shell] PASS: 324 assertions",
+    "2026-11-17T19:37:58.789Z,38908.789062,a660,6,Info [FLog::CreatorOutput] [Power State R1 Currency] PASS: 26 assertions",
+    "2026-11-17T19:37:58.832Z,38908.832031,a660,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.66 ms",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL RESULT] {\"bankMinor\":0,\"sessionEpoch\":3,\"userId\":149564436,\"historyIndex\":12,\"profileRevision\":12,\"checks\":14,\"phase\":\"VerifyOn\",\"versions\":{\"namePoolVersion\":1,\"fallback\":false,\"climateVersion\":1,\"demandVersion\":1,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"generationVersion\":1,\"candidate\":0,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"startTemplateVersion\":1,\"networkVersion\":1},\"coordinator\":{\"peakInFlight\":1,\"calls\":4,\"inFlight\":0,\"profiles\":0},\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"universe\":10776833313,\"encodedBytes\":2772,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"deliveredMWh\":0.312,\"requestedMWh\":0.6240000000000001,\"online\":true,\"step\":12}",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] VerifyOn 1 {\"ms\":330.1213000086136,\"writeBudget\":585,\"readBudget\":584,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] VerifyOn 2 {\"ms\":834.6022999903653,\"writeBudget\":585,\"readBudget\":585,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] VerifyOn 3 {\"ms\":530.1748999918345,\"writeBudget\":584,\"readBudget\":585,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] VerifyOn 4 {\"ms\":316.09710000338967,\"writeBudget\":586,\"readBudget\":586,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] VerifyOn 5 {\"ms\":365.265400003409,\"writeBudget\":585,\"readBudget\":586,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] VerifyOn 6 {\"ms\":300.5264999810606,\"writeBudget\":584,\"readBudget\":586,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:38:04.812Z,38914.812500,2328,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] VerifyOn 7 {\"ms\":149.983000010252,\"writeBudget\":586,\"readBudget\":587,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:38:05.128Z,38915.128906,897c,6,Info [FLog::CreatorOutput] [P3a] Explicit isolated proof storage: Real",
+    "2026-11-17T19:38:12.410Z,38922.410156,7334,6,Info [FLog::CreatorOutput] [P3a rendering] 1366x704 CPU p50/p95 0.0923/0.1220ms frame 16.64/17.50ms map 345",
+    "2026-11-17T19:38:14.476Z,38924.476562,7334,6,Info [FLog::CreatorOutput] [P3a rendering] 360x580 CPU p50/p95 0.1206/0.1616ms frame 16.60/17.57ms map 345",
+    "2026-11-17T19:38:16.542Z,38926.542969,7334,6,Info [FLog::CreatorOutput] [P3a rendering] 768x960 CPU p50/p95 0.0942/0.1238ms frame 16.62/17.51ms map 345",
+    "2026-11-17T19:38:18.757Z,38928.757812,897c,6,Info [FLog::CreatorOutput] [Power State P3a GUI] PASS: 88 assertions; map 345 descendants",
+    "2026-11-17T19:38:19.867Z,38929.867188,6e88,6,Info [FLog::CreatorOutput] [P3a REAL GUI] actual real-storage disclosure and zero Bank PASS",
+    "2026-11-17T19:39:15.140Z,38985.140625,ab68,6,Info [FLog::CreatorOutput] [P3a REAL LIVE] {\"historyIndex\":70,\"profileRevision\":14,\"coordinator\":{\"peakInFlight\":1,\"calls\":2,\"inFlight\":0,\"profiles\":1},\"step\":70,\"deliveredMWh\":3.1200000000000025,\"online\":true,\"status\":{\"state\":\"Live\",\"lastSavedAtUtc\":1794944344,\"storage\":\"Real\",\"softLimit\":false,\"savedRevision\":80},\"mode\":\"Real\",\"requestedMWh\":3.640000000000003}",
+    "2026-11-17T19:39:15.140Z,38985.140625,ab68,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] Live 1 {\"ms\":313.8508000120055,\"writeBudget\":586,\"readBudget\":586,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:39:15.140Z,38985.140625,ab68,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] Live 2 {\"ms\":482.59530001087117,\"writeBudget\":585,\"readBudget\":586,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:39:15.140Z,38985.140625,ab68,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] Live 3 {\"ms\":583.0650999851059,\"writeBudget\":682,\"readBudget\":683,\"ok\":true,\"kind\":\"Update\"}",
+    "2026-11-17T19:39:15.140Z,38985.140625,ab68,6,Info [FLog::CreatorOutput] [P3a REAL LIVE] automatic checkpoint PASS",
+    "2026-11-17T19:40:20.242Z,39050.242188,897c,6,Info [FLog::CreatorOutput] [Power State R2 Shell] PASS: 324 assertions",
+    "2026-11-17T19:40:20.242Z,39050.242188,897c,6,Info [FLog::CreatorOutput] [Power State R1 Currency] PASS: 26 assertions",
+    "2026-11-17T19:40:20.285Z,39050.285156,897c,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.58 ms",
+    "2026-11-17T19:40:23.406Z,39053.406250,02d0,6,Info [FLog::CreatorOutput] [P3a REAL FINAL] {\"historyIndex\":113,\"profileRevision\":15,\"sessionEpoch\":4,\"encodedBytes\":6620,\"deliveredMWh\":5.355999999999993,\"step\":113,\"windowRequested\":5.875999999999989,\"countryId\":\"55e35a88-e3b9-4f72-9e69-d9024e7730a4\",\"online\":true,\"windowDelivered\":5.355999999999993,\"seed\":\"1441a4d819354af7b306ef8797931e15\",\"requestedMWh\":5.875999999999989,\"bankMinor\":0,\"town\":\"Rowanbridge\",\"leaseReleased\":true}",
+    "2026-11-17T19:40:23.406Z,39053.406250,02d0,6,Info [FLog::CreatorOutput] [P3a REAL REQUEST] FinalRead 1 {\"ms\":148.36980000836776,\"writeBudget\":585,\"readBudget\":584,\"ok\":true,\"kind\":\"Read\"}",
+    "2026-11-17T19:40:23.406Z,39053.406250,02d0,6,Info [FLog::CreatorOutput] [P3a REAL FINAL] shutdown release and exact restoration PASS; no write in this session",
+    "2026-11-17T19:40:23.511Z,39053.511719,02d0,6,Info [FLog::CreatorOutput] [P2b accounting] PASS 2941 assertions; two-day requested 150.915967 / delivered 139.355967 MWh",
+    "2026-11-17T19:40:24.433Z,39054.433594,ab68,6,Info [FLog::CreatorOutput] [P2b.1 scheduler] PASS 49 assertions; eight synthetic jobs 906.890ms / 54 Heartbeats",
+    "2026-11-17T19:40:24.437Z,39054.437500,ab68,6,Info [FLog::CreatorOutput] [P3a] Explicit isolated proof storage: Fake",
+    "2026-11-17T19:40:31.371Z,39061.371094,ab68,6,Info [FLog::CreatorOutput] [Power State P2a GUI] PASS: 57 assertions; map 541 descendants",
+    "2026-11-17T19:40:45.050Z,39075.050781,2328,6,Info [FLog::CreatorOutput] [Power State P2b GUI] PASS: 88 assertions; map 345 descendants",
+    "2026-11-17T19:40:58.867Z,39088.867188,560c,6,Info [FLog::CreatorOutput] [Power State P2a remotes] PASS: 32 actual transport assertions",
+    "2026-11-17T19:41:12.167Z,39102.167969,2328,6,Info [FLog::CreatorOutput] [Power State P2b remotes] PASS: 32 actual transport assertions",
+    "2026-11-17T19:41:18.871Z,39108.871094,7334,6,Info [FLog::CreatorOutput] [P3a rendering] 1366x704 CPU p50/p95 0.0998/0.1280ms frame 16.64/17.65ms map 345",
+    "2026-11-17T19:41:20.933Z,39110.933594,7334,6,Info [FLog::CreatorOutput] [P3a rendering] 360x580 CPU p50/p95 0.1285/0.1647ms frame 16.56/17.62ms map 345",
+    "2026-11-17T19:41:23.003Z,39113.003906,7334,6,Info [FLog::CreatorOutput] [P3a rendering] 768x960 CPU p50/p95 0.1016/0.1188ms frame 16.55/17.65ms map 345",
+    "2026-11-17T19:41:25.218Z,39115.218750,560c,6,Info [FLog::CreatorOutput] [Power State P3a GUI] PASS: 88 assertions; map 345 descendants",
+    "2026-11-17T19:41:39.152Z,39129.152344,ab68,6,Info [FLog::CreatorOutput] [Power State P3a remotes] PASS: 32 actual transport assertions",
+    "2026-11-17T19:41:39.695Z,39129.695312,560c,6,Info [FLog::CreatorOutput] [P3a live fake GUI] PASS 15 presentation/privacy assertions; status changes synthetic; remounted for inspection",
+    "2026-11-17T19:44:17.078Z,39287.078125,02d0,6,Info [FLog::CreatorOutput] [P3a harness] baseline shell restored for waiting GUI suite",
+    "2026-11-17T19:44:18.566Z,39288.566406,7334,6,Info [FLog::CreatorOutput] [Power State R2 GUI] PASS: 348 engine layout assertions",
+    "2026-11-17T19:44:24.343Z,39294.343750,7334,6,Info [FLog::CreatorOutput] [Power State R2 Interaction] PASS: 135 assertions",
+    "2026-11-17T19:44:24.343Z,39294.343750,7334,6,Info [FLog::CreatorOutput] [P3a final regressions] PASS",
+    "2026-11-17T19:45:30.976Z,39360.976562,02d0,6,Info [FLog::CreatorOutput] [P3a REAL cleanup] PASS; no auto real runner; normal test runner restored"
+  ]
+}

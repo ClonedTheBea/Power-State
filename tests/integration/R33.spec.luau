@@ -94,7 +94,7 @@ return function(playerGui: PlayerGui)
 			local test=mount(function(done) done(result);return function() end end)
 			test.setMode("Hybrid")
 			check(map.root:GetAttribute("ProofLoadState")== (if result then "Ready" else "Failed"),"Synchronous loader terminal state")
-			for _,entry in map.terrain.entries do if entry.patch.id==Manifest.entries[1].patchId then
+			for _,entry in ipairs(map.terrain.entries) do if entry.patch.id==Manifest.entries[1].patchId then
 				if result then check(not entry.root.Visible,"Hybrid suppresses meadow bundle") end
 			end end
 			test.destroy()
@@ -104,8 +104,8 @@ return function(playerGui: PlayerGui)
 		check(#map.root:GetDescendants()<=600,"Hybrid remains below hard map budget")
 		print(string.format("[R3.3 SYNTHETIC counts] native %d / proof %d map descendants; shell %d",baseline,#map.root:GetDescendants(),#app.view.gui:GetDescendants()))
 		check(map.root:GetAttribute("ProofMode")=="Native","Native remains default")
-		for _,entry in map.terrain.entries do check(entry.root.ZIndex>test.images[1].ZIndex,"Coast beneath every native meadow") end
-		for _,shore in map.terrain.shores do check(shore.root.ZIndex<test.images[1].ZIndex,"Coast in shore/base pass") end
+		for _,entry in ipairs(map.terrain.entries) do check(entry.root.ZIndex>test.images[1].ZIndex,"Coast beneath every native meadow") end
+		for _,shore in ipairs(map.terrain.shores) do check(shore.root.ZIndex<test.images[1].ZIndex,"Coast in shore/base pass") end
 		for _,image in test.images do check(not image.Active and not image.Selectable and image.Image=="","Noninteractive synthetic bounds, no texture") end
 		local pool=#app.view.gui:GetDescendants()
 		for _,dimensions in {{360,580},{640,300},{768,960},{1024,708},{1366,704},{1920,1020}} do

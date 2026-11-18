@@ -1,5 +1,7 @@
 # Procedural world and gameplay foundation
 
+**P3a follow-up:** D94–D99 are owner-approved (D100); D104 authorizes the completed single-key real Studio/Test proof. [P3a validation](P3A-VALIDATION.md) records actual create/checkpoint/reconnect/release evidence and remaining service limits. Real start requires the approved account, universe and key; normal bootstrap remains unchanged. Earlier design-only wording below is historical.
+
 **Current follow-up:** P2b and P2b.1 completed available validation. [P3a persistent-country design](P3A-DECISION-PROPOSAL.md) is the documentation-only persistence subset of P3; implementation and economic/construction work require separate approval. Earlier failed-gate/unstarted statuses below are historical.
 
 17 November 2026 P2b Stage 1: [specific implementation recommendations](P2B-DECISION-PROPOSAL.md) now consolidate the earlier options and identify conflicts with accepted P2a. **Subsequently approved for Stage 2 (D83), but pre-integration climate validation failed; [gate and proposed correction](P2B-VALIDATION.md) await review.** Historical candidate values below are not silently promoted or replaced.

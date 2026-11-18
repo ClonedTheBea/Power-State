@@ -1,0 +1,277 @@
+{
+  "date": "2026-11-18",
+  "scope": "Fake storage and local Studio only; no real DataStore calls",
+  "static": {
+    "ValidateP3b4.py": {
+      "passed": 69,
+      "scope": "local disabled preparation only"
+    },
+    "ValidateP3b3.py": {
+      "passed": 57,
+      "scope": "local static isolation only"
+    },
+    "ValidateP3b.py": {
+      "passed": 149,
+      "scope": "source/build checks only; no services"
+    },
+    "ValidateP3a.py": {
+      "passed": 163,
+      "scope": "local static/build evidence only; real adapter requires explicit authenticated Test start"
+    },
+    "ValidateP2a.py": {
+      "passed": 34,
+      "scope": "local static and built mappings only"
+    },
+    "ValidateP2b.py": {
+      "passed": 38,
+      "scope": "local source/mapping checks only"
+    }
+  },
+  "builds": [
+    "default passed",
+    "test passed"
+  ],
+  "scriptAnalysis": {
+    "errors": 0,
+    "preexistingWarnings": 4,
+    "newWarnings": 0,
+    "currentScriptOnly": false
+  },
+  "sourceSha256": {
+    "src/server/Adapters/Schema2GameplayAdapter.luau": "a624e6e96bb1975e95f0a26022eb6bf38acde40c7a1aa60860eab896dacc840a",
+    "src/server/Domain/ExistingEconomyLease.luau": "4ae0f5211f6d3cae3772c5bd327200474697c796c78b288c6861c0f97b5f7421",
+    "src/server/Domain/ExistingEconomyStore.luau": "028c02784df5e86f0c74f45220755a45e7dd0afbc92c6e47c17239fd32ef312b",
+    "src/server/Services/ProfileService.luau": "84a65fa9eb75d89c1d33e83adfdd0c2a5186d9713c360d61d8c3dc88d00f286f",
+    "src/server/Services/PersistentTestService.luau": "e4f747f2149d64b5341b6a4596493ccc8fa4e961efefb0b8e2d8acaefcde12b2",
+    "tests/unit/P3b4.spec.luau": "4da62d9457048aa5d03df5e71be44db36812bbe9a5594cabd926fc9c9fde3c5d",
+    "tests/unit/P3b4Fixture.luau": "e928f8d4eafa24c08d082dbe6283b59b59e7b40ebd3e611b7711dd0b25ec2cb4"
+  },
+  "studioResults": [
+    {
+      "utc": "2026-11-18T06:44:49.400Z",
+      "message": "[Power State R2 Shell] PASS: 324 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:44:49.401Z",
+      "message": "[Power State R1 Currency] PASS: 26 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:44:49.443Z",
+      "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.33 ms"
+    },
+    {
+      "utc": "2026-11-18T06:46:41.412Z",
+      "message": "[Power State R2 Shell] PASS: 324 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:46:41.413Z",
+      "message": "[Power State R1 Currency] PASS: 26 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:46:41.454Z",
+      "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.54 ms"
+    },
+    {
+      "utc": "2026-11-18T06:46:45.629Z",
+      "message": "[P3b4 arithmetic] [{\"salesCarry\":0,\"sales\":624,\"step\":114,\"fixedCarry\":40000,\"variableCarry\":0,\"fixed\":16,\"kw\":3120,\"variable\":416,\"bank\":100192},{\"salesCarry\":0,\"sales\":1248,\"step\":115,\"fixedCarry\":20000,\"variableCarry\":0,\"fixed\":33,\"kw\":3120,\"variable\":832,\"bank\":100383},{\"salesCarry\":0,\"sales\":1872,\"step\":116,\"fixedCarry\":0,\"variableCarry\":0,\"fixed\":50,\"kw\":3120,\"variable\":1248,\"bank\":100574}]"
+    },
+    {
+      "utc": "2026-11-18T06:46:45.629Z",
+      "message": "[P3b4] PASS 33 assertions; fake only; 7683 bytes; 14 calls / 8 writes"
+    },
+    {
+      "utc": "2026-11-18T06:46:53.997Z",
+      "message": "[P3a resources] 32 fake reconnects, 64 calls, 1 retained key; Lua memory delta -2189.0 KiB (GC-sensitive)"
+    },
+    {
+      "utc": "2026-11-18T06:46:53.997Z",
+      "message": "[P3a fake] PASS 178 assertions; max checkpoint 84620 bytes; canonical encode p95 7.339 ms; no real DataStore calls"
+    },
+    {
+      "utc": "2026-11-18T06:46:58.275Z",
+      "message": "[P3b economy-only] 8000 settlements p95 0.0305 ms; serial workload, not concurrent players; fake only"
+    },
+    {
+      "utc": "2026-11-18T06:46:58.276Z",
+      "message": "[P3b] PASS: 93 assertions; full profile 89670 bytes; whole candidate-step p95 0.485 ms (includes physical history clone/validation, not economy-only)"
+    },
+    {
+      "utc": "2026-11-18T06:46:58.567Z",
+      "message": "[P3b.3 fake] PASS: 44 assertions; no real DataStore access"
+    },
+    {
+      "utc": "2026-11-18T06:46:58.673Z",
+      "message": "[P2b accounting] PASS 2941 assertions; two-day requested 150.915967 / delivered 139.355967 MWh"
+    },
+    {
+      "utc": "2026-11-18T06:46:59.609Z",
+      "message": "[P2b.1 scheduler] PASS 49 assertions; eight synthetic jobs 922.057ms / 53 Heartbeats"
+    },
+    {
+      "utc": "2026-11-18T06:46:59.610Z",
+      "message": "[P3b4 server regressions] PASS"
+    },
+    {
+      "utc": "2026-11-18T06:47:11.275Z",
+      "message": "[Power State P3b GUI] PASS: 88 assertions; map 345 descendants"
+    },
+    {
+      "utc": "2026-11-18T06:47:25.158Z",
+      "message": "[Power State P3b remotes] PASS: 32 actual transport assertions"
+    },
+    {
+      "utc": "2026-11-18T06:47:26.008Z",
+      "message": "[P3b.1 Bank progression] 1366x704 initial step/rev 152/163 expected >=153/164 observed 153/164 wait 0.0973s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:47:27.026Z",
+      "message": "[P3b.1 Bank progression] 360x580 initial step/rev 153/164 expected >=154/165 observed 154/165 wait 0.7989s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:47:28.042Z",
+      "message": "[P3b.1 Bank progression] 640x300 initial step/rev 154/165 expected >=155/166 observed 155/166 wait 0.7991s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:47:29.042Z",
+      "message": "[P3b.1 Bank progression] 768x960 initial step/rev 155/166 expected >=156/167 observed 156/167 wait 0.7818s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:47:29.053Z",
+      "message": "[P3b Bank GUI] PASS 83 assertions; status faults synthetic; actual server uses fake storage"
+    },
+    {
+      "utc": "2026-11-18T06:47:29.053Z",
+      "message": "[P3b4 client regressions] PASS"
+    },
+    {
+      "utc": "2026-11-18T06:49:47.386Z",
+      "message": "[Power State R2 Shell] PASS: 324 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:49:47.387Z",
+      "message": "[Power State R1 Currency] PASS: 26 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:49:47.429Z",
+      "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.58 ms"
+    },
+    {
+      "utc": "2026-11-18T06:49:51.594Z",
+      "message": "[P3b4 arithmetic] [{\"salesCarry\":0,\"sales\":624,\"step\":114,\"fixedCarry\":40000,\"variableCarry\":0,\"fixed\":16,\"kw\":3120,\"variable\":416,\"bank\":100192},{\"salesCarry\":0,\"sales\":1248,\"step\":115,\"fixedCarry\":20000,\"variableCarry\":0,\"fixed\":33,\"kw\":3120,\"variable\":832,\"bank\":100383},{\"salesCarry\":0,\"sales\":1872,\"step\":116,\"fixedCarry\":0,\"variableCarry\":0,\"fixed\":50,\"kw\":3120,\"variable\":1248,\"bank\":100574}]"
+    },
+    {
+      "utc": "2026-11-18T06:49:51.594Z",
+      "message": "[P3b4] PASS 33 assertions; fake only; 7683 bytes; 14 calls / 8 writes"
+    },
+    {
+      "utc": "2026-11-18T06:49:59.961Z",
+      "message": "[P3a resources] 32 fake reconnects, 64 calls, 1 retained key; Lua memory delta -576.0 KiB (GC-sensitive)"
+    },
+    {
+      "utc": "2026-11-18T06:49:59.961Z",
+      "message": "[P3a fake] PASS 178 assertions; max checkpoint 84620 bytes; canonical encode p95 6.785 ms; no real DataStore calls"
+    },
+    {
+      "utc": "2026-11-18T06:50:04.152Z",
+      "message": "[P3b economy-only] 8000 settlements p95 0.0301 ms; serial workload, not concurrent players; fake only"
+    },
+    {
+      "utc": "2026-11-18T06:50:04.152Z",
+      "message": "[P3b] PASS: 93 assertions; full profile 89670 bytes; whole candidate-step p95 0.460 ms (includes physical history clone/validation, not economy-only)"
+    },
+    {
+      "utc": "2026-11-18T06:50:04.431Z",
+      "message": "[P3b.3 fake] PASS: 44 assertions; no real DataStore access"
+    },
+    {
+      "utc": "2026-11-18T06:50:04.537Z",
+      "message": "[P2b accounting] PASS 2941 assertions; two-day requested 150.915967 / delivered 139.355967 MWh"
+    },
+    {
+      "utc": "2026-11-18T06:50:05.448Z",
+      "message": "[P2b.1 scheduler] PASS 49 assertions; eight synthetic jobs 897.120ms / 52 Heartbeats"
+    },
+    {
+      "utc": "2026-11-18T06:50:05.448Z",
+      "message": "[P3b4 server regressions] PASS"
+    },
+    {
+      "utc": "2026-11-18T06:50:17.151Z",
+      "message": "[Power State P3b GUI] PASS: 88 assertions; map 345 descendants"
+    },
+    {
+      "utc": "2026-11-18T06:50:31.084Z",
+      "message": "[Power State P3b remotes] PASS: 32 actual transport assertions"
+    },
+    {
+      "utc": "2026-11-18T06:50:31.936Z",
+      "message": "[P3b.1 Bank progression] 1366x704 initial step/rev 152/163 expected >=153/164 observed 153/164 wait 0.0972s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:50:32.952Z",
+      "message": "[P3b.1 Bank progression] 360x580 initial step/rev 153/164 expected >=154/165 observed 154/165 wait 0.7991s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:50:33.968Z",
+      "message": "[P3b.1 Bank progression] 640x300 initial step/rev 154/165 expected >=155/166 observed 155/166 wait 0.7983s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:50:34.968Z",
+      "message": "[P3b.1 Bank progression] 768x960 initial step/rev 155/166 expected >=156/167 observed 156/167 wait 0.7812s exceeds1.2=false"
+    },
+    {
+      "utc": "2026-11-18T06:50:34.978Z",
+      "message": "[P3b Bank GUI] PASS 83 assertions; status faults synthetic; actual server uses fake storage"
+    },
+    {
+      "utc": "2026-11-18T06:53:10.831Z",
+      "message": "[Power State R2 GUI] PASS: 348 engine layout assertions"
+    },
+    {
+      "utc": "2026-11-18T06:53:11.162Z",
+      "message": "[Power State R1 Currency GUI] PASS: 16 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:53:16.926Z",
+      "message": "[Power State R2 Interaction] PASS: 135 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:53:23.842Z",
+      "message": "[Power State P2a GUI] PASS: 57 assertions; map 541 descendants"
+    },
+    {
+      "utc": "2026-11-18T06:53:37.509Z",
+      "message": "[Power State P2b GUI] PASS: 88 assertions; map 345 descendants"
+    },
+    {
+      "utc": "2026-11-18T06:53:51.426Z",
+      "message": "[Power State P2a remotes] PASS: 32 actual transport assertions"
+    },
+    {
+      "utc": "2026-11-18T06:54:04.725Z",
+      "message": "[Power State P2b remotes] PASS: 32 actual transport assertions"
+    },
+    {
+      "utc": "2026-11-18T06:54:04.726Z",
+      "message": "[P3b4 client regressions] PASS"
+    },
+    {
+      "utc": "2026-11-18T06:58:20.368Z",
+      "message": "[P2b gates] unique=10000/10000 fallback=0 cpuP95=16.149ms maxEncoded=43705 samples=2667 dayMWh=75.457983 peakMW=3.811"
+    },
+    {
+      "utc": "2026-11-18T06:58:20.368Z",
+      "message": "[Power State P2b world] PASS: 2916780 assertions"
+    },
+    {
+      "utc": "2026-11-18T06:58:20.368Z",
+      "message": "[P3b4 retained generation] PASS"
+    }
+  ],
+  "limitations": [
+    "Not a real-service proof",
+    "No new actual multiplayer session or physical-device validation",
+    "First new fake test failure fixed before two successful fresh sessions",
+    "Temporary GUI harness prerequisite remounted before GUI suite completion"
+  ]
+}

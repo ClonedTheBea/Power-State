@@ -1,0 +1,43 @@
+{
+  "status": "Proposed design; independent Python arithmetic, not Studio execution",
+  "districtRule": "floor((starter requested integer kW + 2)/4)",
+  "priceMinor": 100000,
+  "bufferMinor": 25000,
+  "scenarios": [
+    {
+      "name": "Starter",
+      "kwMinutes": 4527479,
+      "peakKW": 3811,
+      "MWh": 75.45798333333333,
+      "salesMinor": 905495,
+      "variableMinor": 603663,
+      "fixedMinor": 24000,
+      "netMinor": 277832,
+      "salesCarry": 48000,
+      "variableCarry": 52000
+    },
+    {
+      "name": "Connected district",
+      "kwMinutes": 5659536,
+      "peakKW": 4764,
+      "MWh": 94.3256,
+      "salesMinor": 1131907,
+      "variableMinor": 754604,
+      "fixedMinor": 24000,
+      "netMinor": 353303,
+      "salesCarry": 12000,
+      "variableCarry": 48000
+    }
+  ],
+  "districtKwMinutes": 1132057,
+  "districtPeakKW": 953,
+  "incrementalNetCredits": 754.7046666666666,
+  "paybackActiveMinutes": 31.80051887846637,
+  "historicalStartAffordability": {
+    "startStep": 118,
+    "startBankMinor": 100766,
+    "activeSteps": 124,
+    "bankMinor": 125003
+  },
+  "protectedFiles": 243
+}
