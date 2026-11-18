@@ -136,7 +136,7 @@ function Service.start()
      return false
     end
     a.quotes.tick()
-    if profiles.canMutate(e)then
+    if profiles.canMutate(e) and player:GetAttribute("OperationsTraining")~=true then
      a.elapsed+=dt
      if a.elapsed>=1 then
       local steps=math.min(2,math.floor(a.elapsed));a.elapsed=if a.elapsed>=3 then 0 else a.elapsed-steps

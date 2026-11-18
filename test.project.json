@@ -8,6 +8,7 @@
       "DevelopmentTests": {
         "$className": "Folder",
         "Run": { "$path": "tests/Run.server.luau" },
+        "OperationsRun": { "$path": "tests/OperationsRun.server.luau" },
         "unit": { "$path": "tests/unit" }
       }
     },

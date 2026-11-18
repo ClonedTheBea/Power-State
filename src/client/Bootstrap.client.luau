@@ -11,7 +11,11 @@ local ok, result = xpcall(function()
 		if game.ReplicatedStorage:GetAttribute("RunRegressionTests")==true then
 			require(script.Parent.Simulation.SimulationClient).mount(playerGui, "P2b")
 		else
-			require(script.Parent.Simulation.ConstructionClient).mount(playerGui)
+			local function openFirstPlayable()
+				local first = require(script.Parent.Simulation.ConstructionClient).mount(playerGui)
+				require(script.Parent.Simulation.OperationsClient).attachEntry(first, playerGui, openFirstPlayable)
+			end
+			openFirstPlayable()
 		end
 		return true
 	end

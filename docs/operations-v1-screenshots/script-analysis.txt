@@ -1,0 +1,9 @@
+Final edit-mode full-project Script Analysis, 18 November 2026. Current-script-only remained disabled.
+							52 checkbox (settable, string) Display only current script ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.DisplayCurrentScriptCheckbox
+							53 checkbox (settable, string) 0 of 0 Errors ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.ErrorsToolButton
+							55 checkbox (settable, string) 0 of 0 Warnings ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.WarningsToolButton
+							57 checkbox (settable, string) 0 of 0 Information ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.InformationToolButton
+							52 checkbox (settable, string) Display only current script ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.DisplayCurrentScriptCheckbox
+							53 checkbox (settable, string) 0 of 0 Errors ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.ErrorsToolButton
+							55 checkbox (settable, string) 0 of 0 Warnings ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.WarningsToolButton
+							57 checkbox (settable, string) 0 of 0 Information ID: Layout37.Layout36.scriptAnalysisPanel.ScriptingAnalysisWidget.InformationToolButton

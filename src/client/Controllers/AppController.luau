@@ -18,6 +18,7 @@ local AppController = {}
 function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
 	local preview = data or Preview
 	local presenter: (() -> ())? = nil
+	local layoutAdapter: ((Layout.Result, string) -> boolean?)? = nil
 	local scope = Scope.new()
 	local previousOrientation = playerGui.ScreenOrientation
 	playerGui.ScreenOrientation = Enum.ScreenOrientation.Sensor
@@ -56,7 +57,6 @@ function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
 	end
 	local function refresh()
 		local isMap = state.route == "Map" or state.route == "Build"
-		view.map.root.Visible = isMap
 		view.page.Visible = not isMap
 		view.inspector.root.Visible = isMap and state.inspectorStage ~= "closed"
 		local layout = Layout.resolve(view.root.AbsoluteSize.X, view.root.AbsoluteSize.Y, {
@@ -64,6 +64,8 @@ function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
 			inspectorStage = if view.inspector.root.Visible then state.inspectorStage else "closed",
 			textScale = view.root:GetAttribute("TextScale") :: number,
 		})
+		local mapVisible = if layoutAdapter then layoutAdapter(layout, state.route) else nil
+		view.map.root.Visible = if mapVisible ~= nil then mapVisible else isMap
 		view.applyLayout(layout, state.route, state.inspectorStage)
 		view.blocker.Visible = view.drawer.root.Visible or view.feedback.root.Visible
 		view.mapFocus.Text = if state.mapFocus then "UI focus" else "Map focus"
@@ -296,6 +298,7 @@ function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
 	end)
 	return { view = view, state = state, actions = actions, navigate = navigate, selectAsset = selectAsset,
 		refresh = refresh, bind = bind, showFeedback = showFeedback, setPresenter = function(callback: () -> ()) presenter = callback; refresh() end, keyboard = keyboard, mapController = mapController, back = back,
+		setLayoutAdapter = function(callback: (Layout.Result, string) -> boolean?) layoutAdapter = callback; refresh() end,
 		destroy = function() cleanup(); view.gui:Destroy() end }
 end
 return AppController

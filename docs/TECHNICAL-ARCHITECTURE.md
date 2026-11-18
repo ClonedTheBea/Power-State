@@ -1,5 +1,7 @@
 # Technical architecture
 
+**Operations v1 isolated training:** server Operations domain/ledger/scenario modules feed one resumable batch and a non-yielding full-state compare/install. Separate fake service/store publishes allowlisted projections to the responsive shell. Legacy solvers, persistent schemas and real adapters remain unchanged. [Modules and evidence](NATIONAL-GRID-OPERATIONS-V1-IMPLEMENTATION.md). Do not promote this temporary store to real persistence.
+
 **P3a follow-up:** D94–D99 are owner-approved (D100); D104 authorizes the completed single-key real Studio/Test proof. [P3a validation](P3A-VALIDATION.md) records actual create/checkpoint/reconnect/release evidence and remaining service limits. Real start requires the approved account, universe and key; normal bootstrap remains unchanged. Earlier design-only wording below is historical.
 
 **P3a design only:** [Persistent-country proposal](P3A-DECISION-PROPOSAL.md) maps future ProfileSchema/Migrations to Domain, ProfileService to Services and DataStoreAdapter to Adapters. It identifies required country-ID/session-epoch separation without changing current modules, Native presentation or Test guards.

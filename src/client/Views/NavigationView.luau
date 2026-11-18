@@ -67,6 +67,8 @@ function NavigationView.create(parent: Instance)
 			local label = labels[destination.id]
 			label.TextSize = (if layout.railExpanded then 14 else 10) * layout.textScale
 			label.Text = if layout.railExpanded then destination.label .. (if destination.id ~= "Map" then " · Later" else "") else destination.shortLabel
+			local override = button:GetAttribute(if layout.railExpanded then "LabelOverride" else "ShortLabelOverride")
+			if type(override) == "string" then label.Text = override end
 			label.Position = if layout.railExpanded then UDim2.fromOffset(34, 2) else UDim2.fromOffset(0, 29)
 			label.Size = if layout.railExpanded then UDim2.new(1, -40, 1, -4) else UDim2.new(1, 0, 1, -30)
 			label.TextXAlignment = if layout.railExpanded then Enum.TextXAlignment.Left else Enum.TextXAlignment.Center

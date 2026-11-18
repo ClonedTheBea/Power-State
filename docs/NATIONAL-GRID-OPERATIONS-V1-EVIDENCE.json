@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-18",
+  "environment": "Roblox Studio, Test 10776833313, pure modules, no real storage",
+  "status": "Stage 1 performance gate FAILED; Stages 2-3 not started",
+  "oracleCases": 2187,
+  "small": {
+    "assertionsBeforeTimingGates": 6655,
+    "p95Ms": 0.9799,
+    "maxMs": 1.398,
+    "eightCountryMs": 8.463,
+    "maxOperations": 5501
+  },
+  "maximum": {
+    "sources": 4,
+    "sinks": 8,
+    "nodes": 32,
+    "lines": 48,
+    "requestedKW": 100000,
+    "deliveredKW": 61000,
+    "eachSinkKW": 7625,
+    "fairnessAndCapacityChecksPassed": 9,
+    "p95Ms": 85.1707,
+    "maxMs": 94.0892,
+    "eightCountryMs": 629.6831,
+    "operations": 607549
+  },
+  "limits": {
+    "smallP95Ms": 2,
+    "eightCountryMs": 16,
+    "relaxationsPerSolve": 2000000
+  },
+  "retainedEngine": {
+    "P2a": 432,
+    "P3c": 94
+  },
+  "scriptAnalysis": {
+    "errors": 0,
+    "warnings": 0
+  },
+  "rojoBuilds": [
+    "default PASS",
+    "test PASS"
+  ],
+  "sha256": {
+    "src/server/Operations/FleetNetworkModel.luau": "8cf82647b5047968e9df831c75eeaf366e1fbe31999ba44d935771d9c08310d6",
+    "src/server/Operations/FleetFlow.luau": "bdb4331715bca47b2abd33120e90812b83fc4d20f0804b9bc3d89de9e05830f6",
+    "src/server/Operations/FleetSolver.luau": "06e3904ee5b467b00b973bfd88690a1fcd93dd2692fb1572a43742d5900051f8",
+    "tests/unit/FleetSolver.spec.luau": "fe99dab6e1a775fa04d12708ddfc5c02b229e245a772e0e07b53f52952b6b07b"
+  }
+}

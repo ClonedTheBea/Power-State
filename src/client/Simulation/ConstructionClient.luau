@@ -4,6 +4,7 @@ local ViewModel=require(script.Parent.LiveViewModel)
 local C=require(script.Parent.Parent.Views.Components)
 local Theme=require(script.Parent.Parent.Theme)
 local Bank=require(script.Parent.BankPresentation)
+local QuoteAction=require(script.Parent.ConstructionQuoteAction)
 local Client={}
 local mounted:any=nil
 function Client.active():any return mounted end
@@ -68,7 +69,7 @@ function Client.mount(playerGui:PlayerGui)
   local sequence=nextSequence;nextSequence+=1
   intent:FireServer({version=1,epoch=current.epoch,sequence=sequence,command=command,quoteId=if command=="Confirm"then current.construction.quoteId else nil})
  end
- local descriptions={Available="Available to build",InsufficientCredits="Not enough Credits",QuoteExpired="Quote expired — review again",
+ local descriptions={Available="Available to build",InsufficientCredits="Not enough Credits",QuoteExpired="Quote expired — refresh to review a new quote",
   Saving="Saving construction — checking result",Built="District connected and saved",AlreadyBuilt="Already built",Unavailable="Outcome unavailable — do not repurchase",DrainingSave="Waiting for current save — review again"}
  local function text():string
   local status=current.construction
@@ -99,10 +100,11 @@ function Client.mount(playerGui:PlayerGui)
   end
   view.map.markers[p.id]:SetAttribute("AccessibleLabel",label)
   confirm.Visible=view.feedback.root:GetAttribute("ConstructionOverview")==true
-  confirm.Active=healthy and current.construction.state=="Available" and not current.suspended and current.bankMinor>=125000 and current.construction.expiresIn>0
-  confirm.Selectable=confirm.Active
+  local action=QuoteAction.resolve(current,healthy,os.clock()-received)
+  confirm.Active=action~="Disabled";confirm.Selectable=confirm.Active
   confirm.BackgroundColor3=if confirm.Active then Theme.raised else Theme.panel
-  confirm.Text=if current.built then "Connected · saved in this Test server"elseif current.construction.state=="Saving" then "Checking saved result…"else "Build for 1,000 Credits"
+  confirm.Text=if current.built then "Connected · saved in this Test server"elseif current.construction.state=="Saving" then "Checking saved result…"elseif action=="Quote" then "Refresh Quote"else "Build for 1,000 Credits"
+  confirm:SetAttribute("AccessibleLabel",confirm.Text)
   if view.feedback.root.Visible and confirm.Visible then
    scroll.Size=UDim2.new(1,-32,1,-140);view.feedback.updateText(text())
   elseif view.feedback.root.Visible and view.feedback.root:GetAttribute("ConstructionBank")==true then
@@ -119,7 +121,13 @@ function Client.mount(playerGui:PlayerGui)
   view.feedback.root:SetAttribute("ConstructionOverview",false);view.feedback.root:SetAttribute("ConstructionBank",true)
   app.showFeedback("Bank · Test session",Bank.text(current),view.kpis.buttons[1]);refresh()
  end
- app.bind(confirm,function()if confirm.Active then send("Confirm");confirm.Active=false;confirm.Selectable=false end end)
+ app.bind(confirm,function()
+  if not confirm.Active then return end
+  -- Re-evaluate at activation: a key press can race the last displayed snapshot.
+  local action=QuoteAction.resolve(current,os.clock()-received<3,os.clock()-received)
+  if action=="Disabled"then return end
+  send(action);confirm.Active=false;confirm.Selectable=false
+ end)
  local function requestToggle()
   if os.clock()-received>=3 or current.suspended then return end
   local sequence=controlSequence;controlSequence+=1
@@ -128,7 +136,7 @@ function Client.mount(playerGui:PlayerGui)
  playable=require(script.Parent.PlayablePresentation).attach(app,function()return current end,function()return os.clock()-received<3 end,requestToggle,function()app.actions[button]()end)
  update=function()app.refresh()end
  app.setPresenter(refresh)
- local beat=game:GetService("RunService").Heartbeat:Connect(function()if os.clock()-received>=3 then refresh()end end)
+ local beat=game:GetService("RunService").Heartbeat:Connect(function()if os.clock()-received>=3 or (confirm.Visible and view.feedback.root.Visible and current.construction.expiresIn>0 and os.clock()-received>=current.construction.expiresIn)then refresh()end end)
  local function cleanup()
   if destroyed then return end;destroyed=true;mounted=nil
   intent:FireServer({version=1,command="Unsubscribe"});connection:Disconnect();beat:Disconnect();for _,c in canvasConnections do c:Disconnect()end;update=nil

@@ -29,7 +29,7 @@ return function(playerGui:PlayerGui)
   app.actions[app.view.feedback.close]()
  end
  waitFor(function()return live.current().bankMinor>=125000 end,180)
- app.actions[live.button]();waitFor(function()return live.confirm.Active end,3)
+ app.actions[live.button]();waitFor(function()return live.confirm.Active and live.current().construction.state=="Available" and live.current().construction.expiresIn>0 end,3)
  local camera=app.view.map.root:GetAttribute("CameraX")
  app.actions[live.confirm]();app.actions[app.view.feedback.close]()
  waitFor(function()return live.current().built end,5)
