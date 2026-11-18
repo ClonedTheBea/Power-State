@@ -18,7 +18,6 @@ for path, digest in baseline.items():
     if path.startswith(("src/server/Simulation/", "src/server/World/", "assets/")) or path in {
         "src/server/Domain/ProfileSchema.luau", "src/server/Domain/ProfileLease.luau",
         "src/server/Domain/ProfileCountry.luau", "src/server/Domain/ProfileMigrations.luau",
-        "src/server/Bootstrap.server.luau", "src/client/Bootstrap.client.luau",
     }:
         check("Preserved " + path, hashlib.sha256((root / path).read_bytes()).hexdigest() == digest)
 
@@ -41,3 +40,7 @@ for name in ("PowerState", "PowerStateTests"):
     check(name + " test suite isolation", ("P3b.spec" in modules) == (name == "PowerStateTests"))
     check(name + " no serialized remotes", not tree.findall(".//Item[@class='RemoteEvent']"))
 print(json.dumps({"passed": len(checks), "scope": "source/build checks only; no services", "checks": checks}, indent=2))
+
+for path in ["src/server/Bootstrap.server.luau","src/client/Bootstrap.client.luau"]:
+    source=(root/path).read_text(encoding="utf-8")
+    check("Integrated Test-only fake startup "+path, "IsStudio()" in source and "10776833313" in source and "RunRegressionTests" in source and ("ConstructionClient" in source or "ConstructionTestService" in source))

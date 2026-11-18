@@ -1,4 +1,5 @@
 --!strict
+if game.ReplicatedStorage:GetAttribute("RunRegressionTests")~=true then return end
 -- Isolated test mapping only. Restart Play after Rojo sync to reload all modules.
 if not game:GetService("RunService"):IsStudio() then return end
 if game.GameId ~= 10776833313 then warn("Isolated runner requires approved Test universe"); return end

@@ -1,0 +1,235 @@
+{
+  "scope": "Actual stopped Studio Test service proof; no ordinary gameplay",
+  "sessionA": {
+    "bytes": 17081,
+    "stats": {
+      "writes": 3,
+      "reads": 3,
+      "calls": 6
+    },
+    "profileRevision": 40,
+    "coordinator": {
+      "peakInFlight": 1,
+      "calls": 3,
+      "inFlight": 0,
+      "profiles": 0
+    },
+    "elapsed": 4.991020500019658,
+    "epoch": 11,
+    "sha256": "65c29cfcb8fab584a1209415c84f540384d5618faf4d96ec06202380c92b2182",
+    "countryRevision": 260,
+    "version": "08DF44E1F51DCFA5.0000000028.08DF4578A617D567.01",
+    "leaseAbsent": true,
+    "bankMinor": 25797,
+    "step": 245
+  },
+  "sessionB": {
+    "bytes": 17214,
+    "stats": {
+      "writes": 3,
+      "reads": 3,
+      "calls": 6
+    },
+    "profileRevision": 43,
+    "coordinator": {
+      "peakInFlight": 1,
+      "calls": 3,
+      "inFlight": 0,
+      "profiles": 0
+    },
+    "elapsed": 4.041469799994957,
+    "epoch": 12,
+    "sha256": "db36eff825daf3cefd24411151f5c7e0ed1a084b283d99e116eaa35c53ab1dd2",
+    "countryRevision": 262,
+    "version": "08DF44E1F51DCFA5.000000002B.08DF4579E5C1E88F.01",
+    "leaseAbsent": true,
+    "bankMinor": 26328,
+    "step": 247
+  },
+  "finalPlatform": {
+    "userIds": [
+      149564436
+    ],
+    "updatedTime": 1795009395794,
+    "version": "08DF44E1F51DCFA5.000000002B.08DF4579E5C1E88F.01",
+    "createdTime": 1794944138060,
+    "metadata": []
+  },
+  "records": [
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 37,
+      "ms": 200.75749995885417,
+      "writeBudget": 2485,
+      "readBudget": 2479,
+      "step": 242,
+      "kind": "Read"
+    },
+    {
+      "ok": true,
+      "transition": "Acquire",
+      "profileRevision": 38,
+      "ms": 811.4560999674723,
+      "writeBudget": 2484,
+      "readBudget": 2478,
+      "step": 242,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 39,
+      "ms": 357.9934999579564,
+      "writeBudget": 2483,
+      "readBudget": 2478,
+      "step": 245,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 39,
+      "ms": 141.08799997484311,
+      "writeBudget": 2483,
+      "readBudget": 2477,
+      "step": 245,
+      "kind": "Read"
+    },
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 40,
+      "ms": 349.6226000133902,
+      "writeBudget": 2482,
+      "readBudget": 2477,
+      "step": 245,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 40,
+      "ms": 146.27939998172224,
+      "writeBudget": 2482,
+      "readBudget": 2476,
+      "step": 245,
+      "kind": "Read"
+    },
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 40,
+      "ms": 187.2214999748394,
+      "writeBudget": 2482,
+      "readBudget": 2475,
+      "step": 245,
+      "kind": "Read"
+    },
+    {
+      "ok": true,
+      "transition": "Acquire",
+      "profileRevision": 41,
+      "ms": 746.878599980846,
+      "writeBudget": 2481,
+      "readBudget": 2474,
+      "step": 245,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 42,
+      "ms": 392.5308000179939,
+      "writeBudget": 2480,
+      "readBudget": 2474,
+      "step": 247,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 42,
+      "ms": 139.49960004538298,
+      "writeBudget": 2480,
+      "readBudget": 2473,
+      "step": 247,
+      "kind": "Read"
+    },
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 43,
+      "ms": 432.5874999631196,
+      "writeBudget": 2479,
+      "readBudget": 2473,
+      "step": 247,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 43,
+      "ms": 145.1263000490144,
+      "writeBudget": 2479,
+      "readBudget": 2472,
+      "step": 247,
+      "kind": "Read"
+    }
+  ],
+  "rows": [
+    {
+      "fixedMinor": 17,
+      "districtKW": 843,
+      "variableMinor": 561,
+      "bankMinor": 25268,
+      "salesMinor": 843,
+      "step": 243,
+      "townKW": 3370
+    },
+    {
+      "fixedMinor": 16,
+      "districtKW": 844,
+      "variableMinor": 563,
+      "bankMinor": 25532,
+      "salesMinor": 843,
+      "step": 244,
+      "townKW": 3374
+    },
+    {
+      "fixedMinor": 17,
+      "districtKW": 845,
+      "variableMinor": 563,
+      "bankMinor": 25797,
+      "salesMinor": 845,
+      "step": 245,
+      "townKW": 3378
+    },
+    {
+      "fixedMinor": 17,
+      "districtKW": 846,
+      "variableMinor": 564,
+      "bankMinor": 26062,
+      "salesMinor": 846,
+      "step": 246,
+      "townKW": 3382
+    },
+    {
+      "fixedMinor": 16,
+      "districtKW": 847,
+      "variableMinor": 564,
+      "bankMinor": 26328,
+      "salesMinor": 846,
+      "step": 247,
+      "townKW": 3386
+    }
+  ],
+  "sourceHash": "72299d6608dda5275d48e0a35c78dca8c48254fd11d2783a40b67bc86d01cd85",
+  "finalHash": "db36eff825daf3cefd24411151f5c7e0ed1a084b283d99e116eaa35c53ab1dd2",
+  "incomeMinor": 4223,
+  "variableCostMinor": 2815,
+  "fixedCostMinor": 83,
+  "netMinor": 1325,
+  "newEnergyKwMinutes": 21115,
+  "originalHistoryEntriesPreserved": 242
+}

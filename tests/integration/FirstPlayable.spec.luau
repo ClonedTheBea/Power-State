@@ -1,0 +1,48 @@
+--!strict
+return function(playerGui:PlayerGui)
+ local Client=require(script.Parent.Parent.Client.Simulation.ConstructionClient)
+ local live=Client.active();assert(live,"Normal entry must already be mounted")
+ local app=live.app;local checks=0;local start=os.clock()
+ local function check(v:boolean,why:string)assert(v,why);checks+=1 end
+ local function waitFor(fn:()->boolean,limit:number)
+  local deadline=os.clock()+limit;repeat task.wait(.05)until fn() or os.clock()>deadline;check(fn(),"Authoritative progression deadline")
+ end
+ check(app.view.gui:GetAttribute("FirstPlayableFake")==true,"Normal fake GUI entry")
+ check(not game.ReplicatedStorage:FindFirstChild("P2aSimulation") and not game.ReplicatedStorage:FindFirstChild("P2bSimulation"),"No unrelated preview heartbeats")
+ app.selectAsset(live.current().generatorId)
+ check(live.toggle.Visible and live.toggle.AbsoluteSize.Y>=44,"Generator control accessible")
+ app.actions[live.toggle]();waitFor(function()return not live.current().online end,3)
+ local off=live.current();waitFor(function()return live.current().step>off.step+1 end,4)
+ check(live.current().bankMinor==off.bankMinor and live.current().report.deliveredMW==0,"Off: no income or costs")
+ app.actions[live.toggle]();waitFor(function()return live.current().online and live.current().report.deliveredMW>0 end,3)
+ local income=live.current().bankMinor
+ app.actions[app.view.kpis.buttons[1]]()
+ waitFor(function()return live.current().bankMinor>income end,4)
+ check(app.view.feedback.root.Visible,"Bank stays open while real server income progresses")
+ app.actions[app.view.feedback.close]()
+ for _,size in {{1366,704},{768,960},{360,580},{640,300}}do
+  app.view.root.Size=UDim2.fromOffset(size[1],size[2]);task.wait(.3)
+  app.actions[app.view.navigation.bottom.Build]()
+  check(app.state.selectedId==live.current().proposedNode.id and app.view.feedback.root.Visible,"Build navigation opens actual project")
+  check(live.confirm.AbsoluteSize.X>=44 and live.confirm.AbsoluteSize.Y>=44,"Responsive confirm target")
+  check(#app.view.map.root:GetDescendants()<=600,"Map descendant bound")
+  app.actions[app.view.feedback.close]()
+ end
+ waitFor(function()return live.current().bankMinor>=125000 end,180)
+ app.actions[live.button]();waitFor(function()return live.confirm.Active end,3)
+ local camera=app.view.map.root:GetAttribute("CameraX")
+ app.actions[live.confirm]();app.actions[app.view.feedback.close]()
+ waitFor(function()return live.current().built end,5)
+ local built=live.current()
+ check(built.finance.bank.constructionSpentMinor==100000 and built.finance.bank.openingGrantMinor==100000,"One capital debit and opening grant")
+ check(built.bankMinor>=25000 and #built.report.sinks==2,"Buffer and two sinks")
+ waitFor(function()return live.current().step>built.step and live.current().report.sinks[2].deliveredMW>0 end,3)
+ check(app.view.map.root:GetAttribute("CameraX")==camera,"Build preserves camera")
+ app.actions[live.button]();waitFor(function()return live.current().construction.state=="AlreadyBuilt"end,3)
+ check(not live.confirm.Active and string.find(live.confirm.Text,"Connected",1,true)~=nil,"Completed action has clear wording")
+ app.actions[app.view.feedback.close]()
+ local serialized=game:GetService("HttpService"):JSONEncode(live.current())
+ for _,field in {"ownerSessionId","lastCommit","operationId","sessionEpoch"}do check(not string.find(serialized,field,1,true),"Private field not replicated")end
+ app.view.root.Size=UDim2.fromScale(1,1);app.refresh()
+ print(string.format("[First Playable normal journey] PASS: %d assertions; %.3f seconds; step %d; bank %d; map %d",checks,os.clock()-start,live.current().step,live.current().bankMinor,#app.view.map.root:GetDescendants()))
+end

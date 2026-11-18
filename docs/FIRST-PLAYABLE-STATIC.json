@@ -1,0 +1,66 @@
+[
+  {
+    "script": "scripts\\ValidateFirstPlayable.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP2a.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP2b.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3a.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3b.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3b3.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3b4.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3b5.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3c.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3c2.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3c3.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateP3c6.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateR33.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateR34.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateR35.py",
+    "passed": true
+  },
+  {
+    "script": "scripts\\ValidateR37.py",
+    "passed": true
+  }
+]

@@ -8,13 +8,14 @@ function Service.create(deps:any)
  local Schema=deps.schema or DefaultSchema;local Lease=deps.lease or DefaultLease
  local approvedEconomy=require(script.Parent.Parent.Adapters.Schema2GameplayAdapter).isApproved(deps.adapter)
  local approvedConstruction=require(script.Parent.Parent.Adapters.Schema3ConstructionAdapter).isApproved(deps.adapter)
- if approvedConstruction then
+ local approvedPostBuild=require(script.Parent.Parent.Adapters.PostBuildProofAdapter).isApproved(deps.adapter)
+ if approvedConstruction or approvedPostBuild then
   assert(deps.schema==require(script.Parent.Parent.Domain.ProfileSchema3) and deps.lease==require(script.Parent.Parent.Domain.ProfileLease3),"Bounded construction contract required")
  end
  if approvedEconomy then
   assert(deps.schema==require(script.Parent.Parent.Domain.ProfileSchema2) and deps.lease==require(script.Parent.Parent.Domain.ExistingEconomyLease),"Existing economy contract required")
  end
- assert(not deps.schema or tostring(deps.adapter.mode)=="Fake" or approvedEconomy or approvedConstruction,"Economic profiles are fake-storage only unless explicitly approved")
+ assert(not deps.schema or tostring(deps.adapter.mode)=="Fake" or approvedEconomy or approvedConstruction or approvedPostBuild,"Economic profiles are fake-storage only unless explicitly approved")
  local entries:{[number]:any}={};local count=0;local inFlight=0;local closing=false
  local peak=0;local calls=0;local lastUtc=deps.utcMs();local lastMono=deps.mono()
  local function owns(e:any):boolean

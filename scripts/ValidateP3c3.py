@@ -22,7 +22,12 @@ for token in ['local REAL_CONSTRUCTION_PROOF_APPROVED=false', 'not run:IsRunning
               'assert(not attempted', 'd846d13a398113d1442ff1e0a3feeccbf2397fdf286cad88583f635524c75a65']:
     check(token, token in a)
 check('Gate precedes all service access', a.index('assert(REAL_CONSTRUCTION_PROOF_APPROVED') < a.index('GetService('))
-check('Stage B denied before service access', a.index('assert(phase=="Fund"') < a.index('GetService('))
+check('Stage B independently gated before service access', a.index('assert(REAL_BUILD_PROOF_APPROVED and not REAL_CONSTRUCTION_PROOF_APPROVED') < a.index('GetService('))
+check('Stage B gate closed', 'local REAL_BUILD_PROOF_APPROVED=false' in a)
+check('Stage A cannot use Build authority', 'REAL_CONSTRUCTION_PROOF_APPROVED and not REAL_BUILD_PROOF_APPROVED' in a)
+check('Build pinned to funded preimage', '802d28f694d61242376bd9746f2724a2b85591ab9563199e50d9efed1ef2c548' in a)
+check('Build platform checked before capability', a.index('Funded platform head differs') < a.index('approved[adapter]=true'))
+check('Preimage acknowledgement phase-specific', 'assert(sha256==expectedSha' in a)
 check('Preimage retention precedes update', a.index('assert(preimageRetained') < a.index('store:UpdateAsync'))
 check('Bounded platform audit capture', 'initialPlatform=C.copy(initialPlatform)' in a and 'latestPlatform=C.copy(latestPlatform)' in a)
 check('Request budgets recorded', 'readBudget=service:GetRequestBudgetForRequestType' in a and 'writeBudget=service:GetRequestBudgetForRequestType' in a)

@@ -8,7 +8,11 @@ if existing then existing:Destroy() end
 
 local ok, result = xpcall(function()
 	if game:GetService("RunService"):IsStudio() and game.GameId == 10776833313 then
-		require(script.Parent.Simulation.SimulationClient).mount(playerGui, "P2b")
+		if game.ReplicatedStorage:GetAttribute("RunRegressionTests")==true then
+			require(script.Parent.Simulation.SimulationClient).mount(playerGui, "P2b")
+		else
+			require(script.Parent.Simulation.ConstructionClient).mount(playerGui)
+		end
 		return true
 	end
 	local AppController = require(script.Parent.Controllers.AppController)
@@ -33,7 +37,7 @@ if not ok then
 	message.TextColor3 = Color3.fromRGB(237, 244, 248)
 	message.TextSize = 18
 	message.TextWrapped = true
-	message.Text = "Power State could not open the interface.\nStop and restart Play after checking Studio Output.\nNo country data was loaded or changed."
+	message.Text = "Power State could not open the interface.\nStop and restart Play after checking Studio Output.\nYour last confirmed state may still be held by this Test server.\nFake saves are lost when Play stops."
 	message.Parent = gui
 	gui.Parent = playerGui
 end

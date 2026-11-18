@@ -1,5 +1,7 @@
 # Power State
 
+**First playable fake-storage Test integration (18 November 2026):** normal Test Play now opens the generated country, generator controls, Bank and the existing district construction loop. Stop Play discards fake saves. [Validation, screenshots and setup](docs/FIRST-PLAYABLE-VALIDATION.md). No real persistence or Production changes. Earlier phase summaries below are historical.
+
 **P3b.5 bounded real economy proof complete (18 November 2026):** exactly five intervals across two authenticated Test sessions; seven updates/five uncached reads. Rowanbridge Bank1,007.66 Credits, step118, generator On, profile revision24/country revision131/epoch7/no lease. Both economy execution gates closed afterward; ordinary real startup remains disabled. [Actual results and remaining boundaries](docs/P3B5-VALIDATION.md). Earlier statuses below are historical.
 
 **P3b.3 migration proof complete (18 November 2026):** exact approved Rowanbridge Test profile migrated once to schema2, verified by uncached read, and its fenced lease released and verified. Final profile revision17 / country revision124 / epoch5 / no lease; Bank1,000 Credits, step113 and historical energy unchanged. Five real calls only; no ongoing economic gameplay. Required pre-write tests/builds passed; four unchanged artwork warnings remain. [Outcome and next boundaries](docs/P3B3-VALIDATION.md). Earlier statuses below are historical.

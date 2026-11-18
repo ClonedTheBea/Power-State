@@ -1,3 +1,12 @@
 .build/
 *.rbxl.lock
 *.rbxlx.lock
+
+# Local credentials/recovery packages must never become checkpoint content.
+.env
+.env.*
+*.pem
+*.key
+/private/
+/recovery/
+/secrets/

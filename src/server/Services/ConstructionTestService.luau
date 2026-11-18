@@ -13,10 +13,10 @@ local Base=require(script.Parent.Parent.Simulation.Country)
 local Generator=require(script.Parent.Parent.World.WorldGenerator)
 local Demand=require(script.Parent.Parent.World.DemandModel)
 local Codec=require(Domain.ProfileCodec)
-local Service={};local started=false
+local Service={};local started=false;local host:any=nil
 function Service.start()
  assert(Run:IsStudio() and Run:IsServer() and game.GameId==10776833313,"Construction Test only")
- assert(not started,"Construction proof already started");started=true
+ if started then return host end;started=true
  local store=require(script.Parent.Parent.Adapters.FakeDataStoreAdapter).create()
  local function id():string return Http:GenerateGUID(false)end
  local function scalar(v:any):string return Http:JSONEncode(v)end
@@ -27,9 +27,15 @@ function Service.start()
  local intent=Instance.new("RemoteEvent");intent.Name="Intent";intent.Parent=folder
  local remote=Instance.new("RemoteEvent");remote.Name="Snapshot";remote.Parent=folder
  local function send(player:Player,a:any)
-  if not a.state or not a.subscribed then return end
+  if not a.subscribed then return end
+  if not a.state then
+   remote:FireClient(player,{version=1,profile="P3c",loadState=if a.entry then profiles.status(a.entry).state else "Loading"})
+   return
+  end
   local value:any=Base.snapshot(a.state)
   value.world=Generator.snapshot(a.world);value.save=profiles.status(a.entry);value.profile="P3c"
+  value.generatorId=a.state.network.generatorId;value.demandId=a.state.network.demandId
+  value.controlOutcome=a.controlOutcome
   value.bankMinor=a.state.bank.balanceMinor;value.construction=a.quotes.status();value.built=a.state.construction.receipt~=nil
   value.finance={bank=Codec.copy(a.state.bank),economy=Codec.copy(a.state.economy)}
   value.finance.economy.activationOperationId=nil
@@ -80,10 +86,11 @@ function Service.start()
   end)
  end
  Players.PlayerAdded:Connect(add)
- Players.PlayerRemoving:Connect(function(p)
+ local function remove(p:Player)
   local a=actors[p];if not a then return end
   if a.entry then profiles.close(a.entry)end;actors[p]=nil;admitted-=1
- end)
+ end
+ Players.PlayerRemoving:Connect(remove)
  for _,p in Players:GetPlayers()do add(p)end
  intent.OnServerEvent:Connect(function(player,payload,...)
   local a=actors[player];if not a or select("#",...)~=0 then return end
@@ -99,6 +106,13 @@ function Service.start()
    return
   end
   if not a.quotes then return end
+  if type(payload)=="table" and payload.kind=="SetGenerator" then
+   local ok,candidate,outcome=pcall(require(script.Parent.ConstructionControls).handle,a.state,a.world,player.UserId,payload,os.clock(),profiles.canMutate(a.entry))
+   if not ok then profiles.unavailable(a.entry,"ControlFailure");return end
+   a.state=candidate;a.controlOutcome=outcome
+   if outcome=="Accepted" then profiles.stage(a.entry,Country.capture(a.world,a.state),a.state.revision)end
+   if outcome=="Accepted" or outcome=="NoChange" or outcome=="StaleRevision" or outcome=="Suspended" then send(player,a)end;return
+  end
   local ok,response=pcall(a.quotes.handle,player.UserId,payload)
   if not ok then profiles.unavailable(a.entry,"ConstructionCommandFailure");return end
   if response.state~="Rejected" then send(player,a)end
@@ -117,7 +131,10 @@ function Service.start()
       canResume=function()return profiles.canMutate(e)end,
       install=function(p)a.state=Country.restore(p,a.world,e.commandEpoch);a.elapsed=0 end})
     end
-    if not a.state then return false end
+    if not a.state then
+     if os.clock()-a.lastSend>=1 then a.lastSend=os.clock();send(player,a)end
+     return false
+    end
     a.quotes.tick()
     if profiles.canMutate(e)then
      a.elapsed+=dt
@@ -138,6 +155,12 @@ function Service.start()
   while profiles.stats().profiles>0 and os.clock()-start<20 do profiles.tick();task.wait(.05)end
  end)
  folder.Parent=game.ReplicatedStorage
- print("[P3c Fake] Test-only construction host; no real storage adapter")
+ host={
+  -- Server-only test surface. No transport exposes these capabilities.
+  connect=add,disconnect=remove,inspect=function(player:Player)return actors[player]end,
+  storage=store,profiles=profiles,
+ }
+ print("[Power State Test] Fake saves last only while this server runs; Stop Play discards them")
+ return host
 end
 return table.freeze(Service)

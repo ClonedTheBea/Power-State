@@ -1,0 +1,80 @@
+{
+  "scope": "Independent local integer forecast; no real service access",
+  "sourceSha256": "72299d6608dda5275d48e0a35c78dca8c48254fd11d2783a40b67bc86d01cd85",
+  "rows": [
+    {
+      "startStep": 242,
+      "endStep": 243,
+      "townKW": 3370,
+      "districtKW": 843,
+      "totalKW": 4213,
+      "salesMinor": 843,
+      "variableMinor": 561,
+      "fixedMinor": 17,
+      "bankMinor": 25268,
+      "salesCarry": 12000,
+      "variableCarry": 48000,
+      "fixedCarry": 0
+    },
+    {
+      "startStep": 243,
+      "endStep": 244,
+      "townKW": 3374,
+      "districtKW": 844,
+      "totalKW": 4218,
+      "salesMinor": 843,
+      "variableMinor": 563,
+      "fixedMinor": 16,
+      "bankMinor": 25532,
+      "salesCarry": 48000,
+      "variableCarry": 12000,
+      "fixedCarry": 40000
+    },
+    {
+      "startStep": 244,
+      "endStep": 245,
+      "townKW": 3378,
+      "districtKW": 845,
+      "totalKW": 4223,
+      "salesMinor": 845,
+      "variableMinor": 563,
+      "fixedMinor": 17,
+      "bankMinor": 25797,
+      "salesCarry": 24000,
+      "variableCarry": 16000,
+      "fixedCarry": 20000
+    },
+    {
+      "startStep": 245,
+      "endStep": 246,
+      "townKW": 3382,
+      "districtKW": 846,
+      "totalKW": 4228,
+      "salesMinor": 846,
+      "variableMinor": 564,
+      "fixedMinor": 17,
+      "bankMinor": 26062,
+      "salesCarry": 0,
+      "variableCarry": 0,
+      "fixedCarry": 0
+    },
+    {
+      "startStep": 246,
+      "endStep": 247,
+      "townKW": 3386,
+      "districtKW": 847,
+      "totalKW": 4233,
+      "salesMinor": 846,
+      "variableMinor": 564,
+      "fixedMinor": 16,
+      "bankMinor": 26328,
+      "salesCarry": 36000,
+      "variableCarry": 24000,
+      "fixedCarry": 40000
+    }
+  ],
+  "totalKwMinutes": 21115,
+  "townKwMinutes": 16890,
+  "districtKwMinutes": 4225,
+  "finalBankMinor": 26328
+}

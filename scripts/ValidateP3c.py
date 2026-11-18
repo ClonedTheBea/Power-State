@@ -19,11 +19,15 @@ for path, digest in saved.items():
         'src/server/Domain/Economy.luau', 'src/server/Domain/ProfileSchema.luau',
         'src/server/Domain/ProfileSchema2.luau', 'src/server/Domain/ProfileLease.luau',
         'src/server/Domain/ProfileLease2.luau', 'src/server/Adapters/Schema2GameplayAdapter.luau',
-        'src/server/Bootstrap.server.luau', 'src/client/Bootstrap.client.luau',
     ]:
         check(hashlib.sha256((root / path).read_bytes()).hexdigest() == digest, 'Preserved ' + path)
 
-modules = ['ConstructionProject', 'ConstructionCountry', 'ProfileSchema3', 'ProfileMigrations3',
+for path in ['src/server/Bootstrap.server.luau', 'src/client/Bootstrap.client.luau']:
+    source = (root/path).read_text()
+    check('IsStudio()' in source and '10776833313' in source and 'RunRegressionTests' in source, 'Test-only integrated startup '+path)
+    check('ConstructionTestService' in source or 'ConstructionClient' in source, 'Fake normal entry '+path)
+
+modules = ['ConstructionProject' , 'ConstructionCountry', 'ProfileSchema3', 'ProfileMigrations3',
            'ProfileLease3', 'DistrictSolver', 'ConstructionQuotes', 'ConstructionTestService']
 for name in modules:
     candidates = list((root / 'src/server').rglob(name + '.luau'))

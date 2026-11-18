@@ -21,10 +21,10 @@ try {
     foreach ($file in Get-ChildItem -Recurse -File src, tests -Filter '*.luau') {
         $source = Get-Content -Raw -LiteralPath $file.FullName
         if (-not $source.StartsWith('--!strict')) { throw "Missing strict mode: $($file.FullName)" }
-        if ($source -match 'GetOrderedDataStore\(|InvokeServer\(' -or ($source -match 'GetDataStore\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/server/Adapters/DataStoreAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema2MigrationAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema3MigrationAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema3ConstructionAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema2GameplayAdapter.luau')))) {
+        if ($source -match 'GetOrderedDataStore\(|InvokeServer\(' -or ($source -match 'GetDataStore\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/server/Adapters/PostBuildProofAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/DataStoreAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema2MigrationAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema3MigrationAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema3ConstructionAdapter.luau'), (Join-Path $projectRoot 'src/server/Adapters/Schema2GameplayAdapter.luau')))) {
             throw "Unexpected future-phase service use: $($file.FullName)"
         }
-        if ($source -match 'FireServer\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/client/Simulation/SimulationClient.luau'), (Join-Path $projectRoot 'src/client/Simulation/ConstructionClient.luau'), (Join-Path $projectRoot 'tests/integration/P2aRemote.spec.luau'), (Join-Path $projectRoot 'tests/integration/P2b1.spec.luau'))) {
+        if ($source -match 'FireServer\(' -and $file.FullName -notin @((Join-Path $projectRoot 'src/client/Simulation/SimulationClient.luau'), (Join-Path $projectRoot 'src/client/Simulation/ConstructionClient.luau'), (Join-Path $projectRoot 'tests/integration/P2aRemote.spec.luau'), (Join-Path $projectRoot 'tests/integration/FirstPlayableRemote.spec.luau'), (Join-Path $projectRoot 'tests/integration/P2b1.spec.luau'))) {
             throw "Unapproved remote sender: $($file.FullName)"
         }
     }
