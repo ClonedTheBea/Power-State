@@ -22,6 +22,10 @@ for token in ['local REAL_CONSTRUCTION_PROOF_APPROVED=false', 'not run:IsRunning
               'assert(not attempted', 'd846d13a398113d1442ff1e0a3feeccbf2397fdf286cad88583f635524c75a65']:
     check(token, token in a)
 check('Gate precedes all service access', a.index('assert(REAL_CONSTRUCTION_PROOF_APPROVED') < a.index('GetService('))
+check('Stage B denied before service access', a.index('assert(phase=="Fund"') < a.index('GetService('))
+check('Preimage retention precedes update', a.index('assert(preimageRetained') < a.index('store:UpdateAsync'))
+check('Bounded platform audit capture', 'initialPlatform=C.copy(initialPlatform)' in a and 'latestPlatform=C.copy(latestPlatform)' in a)
+check('Request budgets recorded', 'readBudget=service:GetRequestBudgetForRequestType' in a and 'writeBudget=service:GetRequestBudgetForRequestType' in a)
 for token in ['MAX_INTERVALS=128', 'KEY="u:149564436"', 'COUNTRY_ID="55e35a88-e3b9-4f72-9e69-d9024e7730a4"',
               'calls<64', 'reads<24', 'writes<40', 'No post-build simulation authority',
               'Only reviewed acquisition', 'Release only confirmed country', 'Only exact reviewed purchase']:
@@ -35,6 +39,9 @@ check('Coordinator uses private capability', 'Schema3ConstructionAdapter' in s a
 for file in [root/'src/server/Bootstrap.server.luau', *list((root/'src/client').rglob('*.luau')), root/'tests/Run.server.luau']:
     check('No automatic execution: '+str(file.relative_to(root)), 'ConstructionProofExecution' not in file.read_text() and 'Schema3ConstructionAdapter' not in file.read_text())
 check('Prior real economy gate closed', 'local REAL_ECONOMY_EXECUTION_APPROVED=false' in source('src/server/Adapters/Schema2GameplayAdapter.luau'))
+check('Legacy P3a real gate closed', 'local LIVE_ACCESS_APPROVED=false' in source('src/server/Adapters/DataStoreAdapter.luau'))
+check('Bounded prior economy gate closed', 'local BOUNDED_P3B5_EXECUTION_APPROVED=false' in source('src/server/Adapters/Schema2GameplayAdapter.luau'))
+check('Prior migration gate closed', 'local EXECUTION_APPROVED=false' in source('src/server/Adapters/Schema3MigrationAdapter.luau'))
 check('Original schema validation retained', (root/'tests/unit/P3a.spec.luau').exists())
 check('New fake integration coverage retained', 'Historical capture untouched' in source('tests/unit/P3c3.spec.luau'))
 print(json.dumps({'passed': len(checks), 'scope': 'local static isolation only'}, indent=2))

@@ -1,0 +1,187 @@
+{
+  "date": "2026-11-18",
+  "scope": "Reauthorized Stage A only, stopped authenticated Test Studio",
+  "result": {
+    "bytes": 16232,
+    "checkpoints": 5,
+    "profileRevision": 33,
+    "intervals": 124,
+    "elapsed": 131.2193091000081,
+    "quoteState": "NotRequested",
+    "sha256": "802d28f694d61242376bd9746f2724a2b85591ab9563199e50d9efed1ef2c548",
+    "version": "08DF44E1F51DCFA5.0000000021.08DF456CA2E2E5D0.01",
+    "leaseAbsent": true,
+    "countryRevision": 256,
+    "bankMinor": 125003,
+    "step": 242,
+    "epoch": 9,
+    "coordinator": {
+      "peakInFlight": 1,
+      "calls": 7,
+      "inFlight": 0,
+      "profiles": 0
+    },
+    "stats": {
+      "writes": 7,
+      "reads": 2,
+      "calls": 9
+    }
+  },
+  "records": [
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 26,
+      "ms": 199.0063000121154,
+      "writeBudget": 2496,
+      "readBudget": 2491,
+      "step": 118,
+      "kind": "Read"
+    },
+    {
+      "ok": true,
+      "transition": "Acquire",
+      "profileRevision": 27,
+      "ms": 830.0350999925286,
+      "writeBudget": 2495,
+      "readBudget": 2490,
+      "step": 118,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 28,
+      "ms": 727.5431000161916,
+      "writeBudget": 2494,
+      "readBudget": 2489,
+      "step": 148,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 29,
+      "ms": 725.7161000161432,
+      "writeBudget": 2493,
+      "readBudget": 2488,
+      "step": 178,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 30,
+      "ms": 606.4791000098921,
+      "writeBudget": 2492,
+      "readBudget": 2487,
+      "step": 208,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 31,
+      "ms": 723.4312999644317,
+      "writeBudget": 2491,
+      "readBudget": 2486,
+      "step": 238,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 32,
+      "ms": 421.97979998309165,
+      "writeBudget": 2490,
+      "readBudget": 2486,
+      "step": 242,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Checkpoint",
+      "profileRevision": 32,
+      "ms": 155.294900003355,
+      "writeBudget": 2490,
+      "readBudget": 2485,
+      "step": 242,
+      "kind": "Read"
+    },
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 33,
+      "ms": 533.5737999994308,
+      "writeBudget": 2489,
+      "readBudget": 2485,
+      "step": 242,
+      "kind": "Update"
+    },
+    {
+      "ok": true,
+      "transition": "Release",
+      "profileRevision": 33,
+      "ms": 161.5987999830395,
+      "writeBudget": 2489,
+      "readBudget": 2484,
+      "step": 242,
+      "kind": "Read"
+    }
+  ],
+  "preimageSha256": "d846d13a398113d1442ff1e0a3feeccbf2397fdf286cad88583f635524c75a65",
+  "finalPlatform": {
+    "userIds": [
+      149564436
+    ],
+    "updatedTime": 1795003700146,
+    "version": "08DF44E1F51DCFA5.0000000021.08DF456CA2E2E5D0.01",
+    "createdTime": 1794944138060,
+    "metadata": []
+  },
+  "fundingDelta": {
+    "baseSalesMinor": 78913,
+    "variableExpenseMinor": 52609,
+    "fixedExpenseMinor": 2067,
+    "deliveredKwMinutes": 394568,
+    "generatedKwMinutes": 394568
+  },
+  "finalFinance": {
+    "activationStep": 113,
+    "balanceVersion": 1,
+    "baseSalesMinor": 81409,
+    "baseSalesRemainder": 36000,
+    "baselineDeliveredMWh": 5.355999999999993,
+    "baselineRequestedMWh": 5.875999999999989,
+    "bonusSalesMinor": 0,
+    "bonusSalesRemainder": 0,
+    "deliveredKwMinutes": 407048,
+    "economyVersion": 1,
+    "fixedExpenseMinor": 2133,
+    "fixedExpenseRemainder": 20000,
+    "fromSchema": 1,
+    "generatedKwMinutes": 407048,
+    "lastSettledStep": 242,
+    "onlineSteps": 128,
+    "variableExpenseMinor": 54273,
+    "variableExpenseRemainder": 4000
+  },
+  "finalElectricity": {
+    "deliveredMWh": 12.140133333333301,
+    "historyIndex": 242,
+    "online": true,
+    "requestedMWh": 12.712133333333297,
+    "simulationVersion": 1,
+    "step": 242,
+    "windowDelivered": 12.140133333333301,
+    "windowRequested": 12.712133333333297
+  },
+  "staticAssertions": 898,
+  "realReads": 3,
+  "realUpdates": 7,
+  "applicationRetries": 0,
+  "separateRenewals": 0,
+  "stageBExecuted": false,
+  "privatePackage": "C:\\Users\\matt9\\.codex\\private\\PowerState\\P3c4-20261118",
+  "temporaryCapabilityRemoved": true
+}

@@ -1,7 +1,7 @@
 --!strict
 -- Owner-approved single-account Studio proof. Never selected by normal bootstrap.
 local Adapter={}
-local LIVE_ACCESS_APPROVED=true
+local LIVE_ACCESS_APPROVED=false
 local Codec=require(script.Parent.Parent.Domain.ProfileCodec)
 local Schema=require(script.Parent.Parent.Domain.ProfileSchema)
 function Adapter.create(player:Player,expectedCountryId:string?)

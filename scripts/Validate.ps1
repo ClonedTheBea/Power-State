@@ -29,7 +29,7 @@ try {
         }
     }
     $adapter = Get-Content -Raw -LiteralPath 'src/server/Adapters/DataStoreAdapter.luau'
-    if ($adapter -notmatch 'local LIVE_ACCESS_APPROVED=true' -or $adapter -notmatch '10776833313' -or $adapter -notmatch 'player.UserId==149564436' -or $adapter -notmatch 'run:IsStudio\(\)') { throw 'P3a real access must remain exact-account and Studio/Test guarded.' }
+    if ($adapter -notmatch 'local LIVE_ACCESS_APPROVED=false' -or $adapter -notmatch '10776833313' -or $adapter -notmatch 'player.UserId==149564436' -or $adapter -notmatch 'run:IsStudio\(\)') { throw 'P3a real access must remain disabled and exact-account Studio/Test guarded.' }
     $economyAdapter = Get-Content -Raw -LiteralPath 'src/server/Adapters/Schema2GameplayAdapter.luau'
     if (-not $economyAdapter.Contains('local REAL_ECONOMY_EXECUTION_APPROVED=false') -or -not $economyAdapter.Contains('assert(REAL_ECONOMY_EXECUTION_APPROVED') -or $economyAdapter.IndexOf('assert(REAL_ECONOMY_EXECUTION_APPROVED') -gt $economyAdapter.IndexOf('GetService("DataStoreService")')) { throw 'P3b.4 real economy execution must remain disabled before service access.' }
     & git diff --check

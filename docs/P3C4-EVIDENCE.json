@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-18",
+  "status": "Stopped before real access: initial legacy P3a execution flag was true; now closed",
+  "realReads": 0,
+  "realWrites": 0,
+  "realSimulationIntervals": 0,
+  "stageBApproved": false,
+  "staticAssertions": 898,
+  "builds": [
+    "default.project.json",
+    "test.project.json"
+  ],
+  "scriptAnalysis": {
+    "errors": 0,
+    "warnings": 0,
+    "currentScriptOnly": false
+  },
+  "sourceSha256": {
+    "src/server/Adapters/DataStoreAdapter.luau": "77f99cf6335343965b20e736076ca981cce8cd66654b0bc732408875c4e5f0a6",
+    "src/server/Adapters/Schema3ConstructionAdapter.luau": "08a05d3c8765ed8c54f3eec70353e784492d368dbbcbe89b65f81fe7a7cea8e3",
+    "scripts/Validate.ps1": "ec809274a27b36be6c1fa5859b70399bfd972e6704c04f6400bb928cdc11d885",
+    "scripts/ValidateP2a.py": "b9a4e5762d1ee816758a435e18fb7f64c4582783b8cd56441de09f14d41c15ac",
+    "scripts/ValidateP2b.py": "91bf85faa1c88b86b8af497e3ca29402db4eef735185ebafaeacf3cce1ccfe26",
+    "scripts/ValidateP3a.py": "815fda624219dc45f6789e462200fa2effabc5ee905728db8dddfbc019319c3d",
+    "scripts/ValidateP3c3.py": "29f827c6785c5b68afad0215aca450d2fc09fd1b3245394a1d2f8c6b847cc451"
+  },
+  "fakeResults": [
+    "2026-11-18T11:46:17.316Z,21930.316406,6058,6,Info [FLog::CreatorOutput] [P3c3 forecast] {\"fundingCalls\":{\"writes\":7,\"reads\":2,\"calls\":9},\"intervals\":124,\"bytes\":16905,\"sales\":81409,\"step\":242,\"purchaseCalls\":{\"writes\":4,\"reads\":2,\"calls\":6},\"variableCarry\":4000,\"fixedCarry\":20000,\"beforeThreshold\":124796,\"salesCarry\":36000,\"fixed\":2133,\"variable\":54273,\"afterPurchase\":25003,\"bank\":125003}",
+    "2026-11-18T11:46:17.316Z,21930.316406,6058,6,Info [FLog::CreatorOutput] [P3c3 fake] PASS: 62 assertions; no real access",
+    "2026-11-18T11:46:17.669Z,21930.669922,6058,6,Info [FLog::CreatorOutput] [P3a fake] PASS 178 assertions; max checkpoint 84620 bytes; canonical encode p95 7.410 ms; no real DataStore calls",
+    "2026-11-18T11:46:24.298Z,21937.298828,47e4,6,Info [FLog::CreatorOutput] [P3b] PASS: 93 assertions; full profile 89670 bytes; whole candidate-step p95 2.777 ms (includes physical history clone/validation, not economy-only)",
+    "2026-11-18T11:46:24.603Z,21937.603516,47e4,6,Info [FLog::CreatorOutput] [P3b.3 fake] PASS: 44 assertions; no real DataStore access",
+    "2026-11-18T11:46:24.824Z,21937.824219,47e4,6,Info [FLog::CreatorOutput] [P3b4] PASS 33 assertions; fake only; 7683 bytes; 14 calls / 8 writes",
+    "2026-11-18T11:46:25.951Z,21938.951172,47e4,6,Info [FLog::CreatorOutput] [P3b5 fake] PASS 50 assertions; 5 intervals / 7 commits / 5 reads; four fault scenarios; no real calls",
+    "2026-11-18T11:46:26.792Z,21939.792969,23d8,6,Info [FLog::CreatorOutput] [P2b.1 scheduler] PASS 49 assertions; eight synthetic jobs 827.542ms / 49 Heartbeats",
+    "2026-11-18T11:46:28.097Z,21941.097656,98dc,6,Info [FLog::CreatorOutput] [P3c accounting] PASS: 1440 billed intervals / 12 exact restores; net 353303 minor; full-ring profile 92283 bytes; elapsed 1.236s",
+    "2026-11-18T11:48:57.478Z,22090.478516,23d8,6,Info [FLog::CreatorOutput] [Power State P2b world] PASS: 2916780 assertions",
+    "2026-11-18T11:48:57.478Z,22090.478516,23d8,6,Info [FLog::CreatorOutput] [Power State P3c world] PASS: 10000 accepted seed routes/pads, four rotations and safe fallback; retained P2b gates",
+    "2026-11-18T11:48:57.478Z,22090.478516,23d8,6,Info [FLog::CreatorOutput] [P3c retained server regression] PASS; fake/local only",
+    "2026-11-18T11:48:57.478Z,22090.478516,23d8,6,Info [FLog::CreatorOutput] [P3c3 result] true nil"
+  ]
+}

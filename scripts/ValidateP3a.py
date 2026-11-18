@@ -17,7 +17,7 @@ for name, digest in json.loads((root / "docs/P3A-PRESERVED-SOURCE.json").read_te
     check(f"Preserved {name}", hashlib.sha256((root / name).read_bytes()).hexdigest() == digest)
 
 adapter = (root / "src/server/Adapters/DataStoreAdapter.luau").read_text()
-check("Live access explicitly approved", "local LIVE_ACCESS_APPROVED=true" in adapter)
+check("Legacy live access closed", "local LIVE_ACCESS_APPROVED=false" in adapter)
 check("Exact authenticated account and key", all(x in adapter for x in ('player.UserId==149564436','key=="u:149564436"','game.CreatorId==149564436')))
 check("Studio only", "run:IsStudio()" in adapter)
 check("Preflight protects first atomic update", "Profile changed since preflight; stop" in adapter and "Unexpected existing country; stop" in adapter)
