@@ -8,6 +8,7 @@ while game.ReplicatedStorage:GetAttribute("OperationsTestsReady") ~= true do
 	task.wait(.1)
 end
 require(script.Parent["Operations.spec"])()
+require(script.Parent["OperationsInteraction.spec"])()
 require(script.Parent["OperationsRemote.spec"])()
 require(script.Parent["OperationsJourney.spec"])()
 print("[Operations integrated runner] PASS: complete fake-only operator journey")

@@ -81,6 +81,7 @@ function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
 			marker.BackgroundColor3 = if selected then Theme.accent else Theme.raised
 			marker.TextColor3 = if selected then Theme.onAccent else Theme.accent
 			marker:SetAttribute("Selected", selected)
+			if Theme.visualRedesign then local stroke=marker:FindFirstChildOfClass("UIStroke");if stroke then stroke.Color=if selected then Theme.grid else Theme.borderInteractive;stroke.Thickness=if selected then 2 else 1 end end
 		end
 		if presenter then presenter() end
 	end
@@ -297,7 +298,7 @@ function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
 		if not destroyed then mapController.recenter() end
 	end)
 	return { view = view, state = state, actions = actions, navigate = navigate, selectAsset = selectAsset,
-		refresh = refresh, bind = bind, showFeedback = showFeedback, setPresenter = function(callback: () -> ()) presenter = callback; refresh() end, keyboard = keyboard, mapController = mapController, back = back,
+		refresh = refresh, present = function() if presenter then presenter() end end, bind = bind, showFeedback = showFeedback, setPresenter = function(callback: () -> ()) presenter = callback; refresh() end, keyboard = keyboard, mapController = mapController, back = back,
 		setLayoutAdapter = function(callback: (Layout.Result, string) -> boolean?) layoutAdapter = callback; refresh() end,
 		destroy = function() cleanup(); view.gui:Destroy() end }
 end

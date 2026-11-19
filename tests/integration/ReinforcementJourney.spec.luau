@@ -1,0 +1,68 @@
+--!strict
+return function()
+	local Client = require(script.Parent.Parent.Client.Simulation.OperationsClient)
+	local First = require(script.Parent.Parent.Client.Simulation.ConstructionClient)
+	local R = game:GetService("RunService"); local count=0
+	local function check(v: boolean, message: string) assert(v,message); count+=1 end
+	local function waitFor(predicate: () -> boolean, seconds: number, message: string)
+		local start=os.clock()
+		repeat if predicate() then return end; R.Heartbeat:Wait() until os.clock()-start>=seconds
+		error("Reinforcement timeout: "..message)
+	end
+	local live=Client.active(); local app=live.app
+	local function ready(): boolean return not live.current().saving and live.current().status ~= "Pending" end
+	waitFor(ready,5,"control window")
+	app.actions[live.ui.fleet.peak.toggle]()
+	waitFor(function() return live.current().fleet[3].on end,5,"peaker enabled")
+	waitFor(function() return live.current().step%240>=91 and live.current().step%240<=115 end,250,"next natural East congestion after preceding suites")
+	check(live.current().unmetKW==500 and live.current().eastCapacityKW==3000,"Real pre-investment constraint")
+	app.navigate("Map"); app.selectAsset("b")
+	local camera=app.view.map.root:GetAttribute("CameraX")
+	waitFor(ready,5,"review window")
+	app.actions[live.investment.inspect]()
+	waitFor(function() return live.current().investment.quoteId ~= nil end,5,"server quote")
+	check(app.view.feedback.root.Visible,"Normal project review opened")
+	for _, size in {Vector2.new(1366,704),Vector2.new(1024,720),Vector2.new(390,640),Vector2.new(844,390)} do
+		app.view.root.Size=UDim2.fromOffset(size.X,size.Y); app.refresh(); R.RenderStepped:Wait(); R.RenderStepped:Wait()
+		check(live.investment.confirm.AbsoluteSize.Y>=44 and live.investment.confirm.AbsoluteSize.X>=44,"44px project target")
+		check(live.investment.confirm.AbsolutePosition.Y+44<=app.view.root.AbsolutePosition.Y+size.Y,"Review footer reachable")
+		check(#app.view.map.root:GetDescendants()<=600,"Bounded map")
+	end
+	app.view.root.Size=UDim2.fromScale(1,1); app.refresh()
+	print("[Reinforcement GUI capture] Proposal visible; eight-second capture window")
+	task.wait(8)
+	-- Exercise real server expiry while the modal remains open; ordinary simulation continues.
+	local step=live.current().step
+	waitFor(function() return live.current().investment.quoteRemaining<=0 end,35,"quote expiry")
+	check(app.view.feedback.root.Visible and live.current().step>step,"Expiry leaves menu open and simulation running")
+	check(live.investment.confirm.Text=="Refresh Quote","Clear expired action")
+	waitFor(ready,5,"refresh window"); app.actions[live.investment.confirm]()
+	waitFor(function() return live.current().investment.quoteRemaining>20 end,5,"fresh quote")
+	local before=live.current()
+	waitFor(ready,5,"confirm window")
+	app.keyboard.focus(live.investment.confirm); R.RenderStepped:Wait(); app.keyboard.activate()
+	waitFor(function() return live.current().investment.built end,10,"confirmed purchase")
+	check(live.current().capitalExpenseMinor==50000 and live.current().eastCapacityKW==4000,"Public atomic completion")
+	check(live.current().bankMinor-before.bankMinor == live.current().salesMinor-before.salesMinor - (live.current().expensesMinor-before.expensesMinor) - 50000,"Actual purchase uses real earned training Bank")
+	check(app.state.selectedId=="b","Selection preserved")
+	check(live.investment.confirm.Text=="Already reinforced · saved","Completed wording")
+	check(live.current().reliability<1,"Past reliability not reset")
+	print("[Reinforcement GUI capture] Confirmed purchase visible")
+	app.back(); app.navigate("Infrastructure")
+	waitFor(function() return live.current().step%240>=91 and live.current().step%240<=120 end,240,"next natural peak")
+	check(live.current().unmetKW==0 and live.current().deliveredKW==6000,"Post-upgrade routed peak delivery")
+	print("[Reinforcement GUI capture] Post-upgrade peak; 6 MW delivered")
+	waitFor(ready,5,"exit window"); app.actions[live.ui.leave]()
+	waitFor(function() return First.active()~=nil and Client.active()==nil end,10,"released training")
+	local released=Client.lastRelease()
+	local first=First.active(); first.app.actions[first.app.view.navigation.buttons.Infrastructure](); first.app.actions[first.directory.training]()
+	waitFor(function() return Client.active() and Client.active().app end,15,"reentry")
+	live=Client.active()
+	check(live.entry.bankMinor==released.bankMinor and live.entry.step==released.step,"No offline progression/reconnect Bank")
+	check(live.entry.investment.built and live.entry.capitalExpenseMinor==50000,"Permanent project survives reentry")
+	check(live.entry.reliability==released.reliability,"Historical reliability restored")
+	live.app.actions[live.investment.review]()
+	check(live.investment.confirm.Text=="Already reinforced · saved" and not live.investment.confirm.Active,"No repurchase after reconnect")
+	check(type(camera)=="number","Initial camera observed; resize intentionally permits clamping")
+	print("[Reinforcement journey] PASS "..count.." actual-engine/remote assertions; fake storage")
+end

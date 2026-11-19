@@ -24,6 +24,9 @@ return function()
 			cpuPeak = math.max(cpuPeak, m.cpuMs); installPeak = math.max(installPeak, m.installMs)
 		end
 		for _, actor in actors do
+			if actor.status ~= "Completed" or actor.state.step ~= step then
+				warn("[Operations lifecycle diagnostic] " .. H:JSONEncode({expectedStep=step,observedStep=actor.state.step,status=actor.status,reason=actor.reason,elapsedMs=(os.clock()-began)*1000,batch=batch.stats()}))
+			end
 			check(actor.status == "Completed" and actor.state.step == step and actor.state.ledger.cursor == step, "Independent exact fleet progression")
 			began = os.clock(); local ok, result = store.save(actor.record, actor.state, false)
 			savePeak = math.max(savePeak, (os.clock() - began) * 1000)

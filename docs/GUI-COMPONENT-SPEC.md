@@ -131,3 +131,31 @@ For each component, exercise all applicable states above at desktop/tablet/phone
 Integration invariants: one local shell after remount; no leaked connections; map input disabled beneath a modal; a queued notification cannot replace a purchase confirmation; closing a shop never cancels reconciliation; keyboard and pointer activation emit one intent; unseen/unauthorized assets never appear in layers. News/timer rendering does not trigger network calls every frame.
 
 Live-commerce validation is deferred: identical 2× factor for both benefit sources, no stacking, expiry in a settlement interval, active/pause/offline transitions, crash/reconnect/lease races, rebirth preservation, pass obtained mid-boost, unknown ownership, price changes and duplicate request IDs. A UI mock passing does not prove any of these server guarantees. Use the phase gates in [Layout](GUI-LAYOUT-SPEC.md#migration-and-validation-plan) and [Testing](TESTING.md).
+
+## Operations v1.3 control-room detail contract
+
+The isolated Training console uses stable fleet cards, concise overview/cause-action text and existing 44px controls. Bank, generator costs/history, forecast samples and bounded server alerts are secondary live detail views using the shared feedback scroller. A detail update must preserve its focus owner and CanvasPosition; route/viewport changes may intentionally recalculate geometry. Do not rebuild a card on each snapshot or intermediate text fragment. Card measurement uses available width and text scale, not changing MW/Credit values. This changes presentation only; Training, Native map and all authority/economy contracts remain.
+
+## Visual Redesign v1 shared components
+
+`Theme` owns midnight background, panel/raised, cyan grid/selection, financial gold, healthy/warning/error, spacing and typography roles. The experimental palette is gated to Studio/Test10776833313. `Components.surface` explicitly applies restrained depth to chrome; never attach it indiscriminately to terrain. `action` distinguishes primary/financial/secondary intent; `selected` retains a visible outline and label. Existing outlined icons and44px controls remain.
+
+`DetailRows` is a fixed20-row pool with section, key/value and narrative presentation. Values retain exact canonical public text, including financial carries/history descriptions; content beyond the pool remains in a measured text tail. It is display-only. Width/font measurements are cached; numeric snapshot changes reuse existing instances. The original canonical message remains available as a fallback. On narrow layouts values stack under labels. Scroll position is not reset by data updates.
+
+`ProjectCategories` shares Connections, Generation Later and Storage Later tabs plus Cancel/Close review and the existing server-controlled confirmation/Refresh action. Closing a pending review is not cancellation of a committed purchase. Saving, uncertain, expired and already-built semantics remain owned by existing clients/server responses.
+
+`InfrastructureDirectory` uses existing public nodes and built district only, with filters, current status, supported generator toggle and Locate. No condition/history/staff/upgrade claims. `OperationsView` uses stable fleet cards with separate name, prominent actual MW, status, available/cap/cost information and existing cap/On-Off/Locate/details controls. See the vision document for future Government/Staff/Shop/ticker contracts.
+
+## Visual Redesign v1.1 components
+
+NavigationIcon adds native Bank/power/alert/reserve and gas/wind/peaker symbols using bounded primitives; no uploaded assets. Technology identity is paired with text, not colour alone. Fleet output bars display completed public output divided by available output, clamped to [0,1]; zero availability produces an empty bar. They are cosmetic projections, never dispatch calculations. Exact output, availability, cap and costs remain textual.
+
+Directory rows separate asset name from actual status and retain accessible labels and existing targets. Its generator bar uses the existing 5MW capacity. Financial rows retain the full canonical source message and measured overflow; compact geometry must still pass enlarged-text checks. No fake maintenance ratings or catalogue entries are added.
+
+
+## Illustrated World v1 audit boundary
+
+The owner accepts v1.1 chrome as the baseline; no further shell redesign is authorized. The [Illustrated World audit](ILLUSTRATED-WORLD-V1-VALIDATION.md) stops before renderer code at the explicit existing-art sufficiency gate. Frozen authored headland/1200×800 placements are not a generated-sector contract. The proposed shore-edge family, flat-coordinate pivots, same-lighting variants and bounded Test adapter are design handoff only. Native,44px targets, authoritative graph overlays, selection/camera and600 total descendants remain unchanged. No new atlas, upload, mode control or default renderer is implemented. See the report for exact gaps and owner-review options.
+
+
+**Local artwork follow-up (D210/D211):** the audit boundary above is historical. Owner subsequently approved18 local motifs across the original main atlas and a two-diagonal companion. [Actual artwork and pixel/visual evidence](ILLUSTRATED-WORLD-V1-ART-VALIDATION.md) are ready for review; no upload, integration or visual/default adoption follows automatically. Native geometry/default, overlays,44px targets and600-descendant ceiling remain unchanged. Ground transitions and bounded shore-slot issues require review before a later renderer proof.

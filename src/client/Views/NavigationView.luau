@@ -7,7 +7,8 @@ local NavigationIcon = require(script.Parent.NavigationIcon)
 local NavigationView = {}
 function NavigationView.create(parent: Instance)
 	local root = C.frame(parent, "Navigation")
-	root.BackgroundTransparency = 1
+	root.BackgroundTransparency = if Theme.visualRedesign then 0 else 1
+	C.corner(root,Theme.panelRadius);C.surface(root)
 	local rail = C.scroll(root, "Rail")
 	rail.Size = UDim2.new(1, 0, 1, -52)
 	local collapse = C.button(root, "Expand")
@@ -27,6 +28,17 @@ function NavigationView.create(parent: Instance)
 		button.Name = destination.id
 		button:SetAttribute("AccessibleLabel", destination.label .. (if destination.id == "Map" then "" else " · Later"))
 		buttons[destination.id] = button
+		if Theme.visualRedesign then
+			button.MouseEnter:Connect(function()
+				local stroke=button:FindFirstChildOfClass("UIStroke")
+				if stroke then stroke.Transparency=0;stroke.Color=Theme.grid end
+			end)
+			button.MouseLeave:Connect(function()
+				local selected=button:GetAttribute("Selected")==true
+				local stroke=button:FindFirstChildOfClass("UIStroke")
+				if stroke then stroke.Transparency=if selected then 0 else .8;stroke.Color=if selected then Theme.grid else Theme.border end
+			end)
+		end
 		button.Text = ""
 		icons[destination.id] = NavigationIcon.create(button, destination.id)
 		labels[destination.id] = C.label(button, destination.label, 14)
@@ -61,11 +73,11 @@ function NavigationView.create(parent: Instance)
 			end
 			local button = buttons[destination.id]
 			button.Position = UDim2.fromOffset(2, y)
-			local height = math.ceil(56 * layout.textScale)
+			local height = math.ceil((if Theme.visualRedesign and layout.railExpanded then 44 else 56) * layout.textScale)
 			button.Size = UDim2.new(1, -8, 0, height)
 			button.TextSize = (if layout.railExpanded then 14 else 12) * layout.textScale
 			local label = labels[destination.id]
-			label.TextSize = (if layout.railExpanded then 14 else 10) * layout.textScale
+			label.TextSize = (if layout.railExpanded then 16 else 10) * layout.textScale
 			label.Text = if layout.railExpanded then destination.label .. (if destination.id ~= "Map" then " · Later" else "") else destination.shortLabel
 			local override = button:GetAttribute(if layout.railExpanded then "LabelOverride" else "ShortLabelOverride")
 			if type(override) == "string" then label.Text = override end
@@ -74,9 +86,14 @@ function NavigationView.create(parent: Instance)
 			label.TextXAlignment = if layout.railExpanded then Enum.TextXAlignment.Left else Enum.TextXAlignment.Center
 			icons[destination.id].Position = if layout.railExpanded then UDim2.new(0, 7, 0.5, -10) else UDim2.new(0.5, -10, 0, 6)
 			markers[destination.id].Visible = route == destination.id
-			label.TextColor3 = if route == destination.id then Theme.accent else Theme.muted
+			label.TextColor3 = if route == destination.id then Theme.accent else Theme.text
 			button.TextColor3 = if route == destination.id then Theme.accent else Theme.muted
 			button.BackgroundColor3 = if route == destination.id then Theme.raised else Theme.panel
+			if Theme.visualRedesign then
+                C.selected(button,route==destination.id)
+                button.BackgroundTransparency=if route==destination.id then 0 else 1
+                local border=button:FindFirstChildOfClass("UIStroke");if border then border.Transparency=if route==destination.id then 0 else .8 end
+            end
 			button:SetAttribute("Selected", route == destination.id)
 			y += height + 6
 		end
@@ -87,6 +104,7 @@ function NavigationView.create(parent: Instance)
 			button.Size = UDim2.new(1 / 5, -4, 1, 0)
 			button.TextSize = 14 * layout.textScale
 			button.TextColor3 = if route == id then Theme.accent else Theme.text
+			if Theme.visualRedesign then C.selected(button,route==id) end
 			button:SetAttribute("Selected", route == id)
 		end
 	end

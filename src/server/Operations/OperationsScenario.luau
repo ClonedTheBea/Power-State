@@ -1,4 +1,5 @@
 --!strict
+local Investment = require(script.Parent.ReinforcementModel)
 local Country = require(script.Parent.OperationsCountry)
 local Wind = require(script.Parent.OperationsWind)
 local Model = require(script.Parent.FleetNetworkModel)
@@ -40,7 +41,7 @@ function Scenario.new(ownerId: number, epoch: number): any
 	}, 100000)
 end
 function Scenario.prepare(state: any): any
-	return Country.inputs(state, Scenario.network(state.step), {scenarioVersion = 1, windVersion = 1, seed = Scenario.SEED, region = Scenario.REGION})
+	return Country.inputs(state, Investment.compose(state, Scenario.network(state.step)), {scenarioVersion = 1, windVersion = 1, seed = Scenario.SEED, region = Scenario.REGION})
 end
 function Scenario.forecast(state: any): any
 	local samples = {}
@@ -50,7 +51,7 @@ function Scenario.forecast(state: any): any
 		for _, source in n.sources do local c = state.controls[source.id]; if c.on then available += math.min(c.capKW, source.availableKW) end end
 		local demand = n.sinks[1].requestedKW + n.sinks[2].requestedKW
 		table.insert(samples, {offset = offset, demandKW = demand, windKW = n.sources[2].availableKW,
-			availableKW = available, capacityShortfallKW = math.max(0, demand - available), branchLimited = n.sinks[2].requestedKW > 3000})
+			availableKW = available, capacityShortfallKW = math.max(0, demand - available), branchLimited = n.sinks[2].requestedKW > (if state.version == 2 and state.investments.serial == 1 then 4000 else 3000)})
 	end
 	return {step = state.step, conditional = true, approximateRouting = true, samples = samples}
 end

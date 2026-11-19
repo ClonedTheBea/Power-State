@@ -8,12 +8,14 @@ local Batch = require(script.Parent.OperationsBatch)
 local Commands = require(script.Parent.OperationsCommands)
 local Projection = require(script.Parent.OperationsProjection)
 local Store = require(script.Parent.OperationsStore)
+local Investment = require(script.Parent.ReinforcementCoordinator)
 local Service = {}
 local host: any = nil
 function Service.start(): any
 	assert(Run:IsServer() and Run:IsStudio() and game.GameId == 10776833313, "Operations is isolated fake Test only")
 	if host then return host end
-	local store = Store.new()
+	local store = Store.new({reinforcement=true})
+	local investment = Investment.new(store, os.clock, function() return Http:GenerateGUID(false) end)
 	local actors: {[Player]: any} = {}; local buckets: {[Player]: any} = {}
 	local retained: {[number]: boolean} = {}; local retainedCount = 0
 	local folder = Instance.new("Folder"); folder.Name = "OperationsTraining"
@@ -29,7 +31,7 @@ function Service.start(): any
 		snapshot:FireClient(player, value)
 	end
 	local function checkpoint(player: Player, actor: any, release: boolean)
-		if actor.saving then return end
+		if actor.saving or actor.investing then return end
 		actor.saving = true
 		local captured = actor.state
 		task.spawn(function()
@@ -37,13 +39,16 @@ function Service.start(): any
 			actor.saving = false
 			if callOk and ok then
 				actor.record = result; actor.saveBlocked = false
-				if release then
+				if release and not result.active then
 					actors[player] = nil
 					if player.Parent == Players then
 						player:SetAttribute("OperationsTraining", false)
 						snapshot:FireClient(player, {version = 1, mode = "FirstPlayable", outcome = "Released", last = Projection.create(actor)})
 					end
-				else send(player, actor) end
+				else
+					if release then actor.releaseRequested = true end
+					send(player, actor)
+				end
 			else
 				actor.saveBlocked = true; actor.status = "Suspended"
 				actor.reason = if callOk then tostring(result) else "Training checkpoint failed; no further simulation"
@@ -55,7 +60,7 @@ function Service.start(): any
 		local actor = actors[player]
 		if not actor then return end
 		actor.active = false
-		if actor.saving then actor.releaseRequested = true else checkpoint(player, actor, true) end
+		if actor.saving or actor.investing then actor.releaseRequested = true else checkpoint(player, actor, true) end
 	end
 	local function enter(player: Player)
 		local existing = actors[player]
@@ -80,12 +85,25 @@ function Service.start(): any
 		if payload.kind == "Retry" and actor.saveBlocked then
 			-- Retry only the captured full checkpoint; never a fresh financial interval.
 			if payload.epoch == actor.epoch and payload.revision == actor.state.countryRevision and payload.sequence == actor.nextSequence then
-				actor.nextSequence += 1; checkpoint(player, actor, not actor.active)
+				actor.nextSequence += 1
+				if actor.investmentPending then
+					task.spawn(function() actor.investmentOutcome = investment.finish(actor); send(player, actor) end)
+				else checkpoint(player, actor, not actor.active) end
 			end
 			return
 		end
 		local outcome = Commands.apply(actor, player.UserId, payload); actor.outcome = outcome
-		if outcome == "Accepted" then
+		if outcome == "Accepted" and payload.kind == "QuoteReinforcement" then
+			actor.investmentOutcome = investment.quote(actor)
+		elseif outcome == "Accepted" and payload.kind == "ConfirmReinforcement" then
+			actor.investmentOutcome = "Saving"
+			task.spawn(function()
+				local ok, result = pcall(investment.confirm, actor, payload.quoteId)
+				actor.investmentOutcome = if ok then result else "Uncertain"
+				if not ok then actor.saveBlocked = true; actor.status = "Suspended"; actor.reason = "Investment unavailable; no further mutation" end
+				send(player, actor)
+			end)
+		elseif outcome == "Accepted" then
 			actor.controlsRevision += 1
 			if payload.kind == "Control" then checkpoint(player, actor, false) end
 		end
@@ -95,7 +113,7 @@ function Service.start(): any
 	Run.Heartbeat:Connect(function()
 		local now = os.clock()
 		for player, actor in actors do
-			if actor.releaseRequested and not actor.saving then actor.releaseRequested = false; checkpoint(player, actor, true) end
+			if actor.releaseRequested and not actor.saving and not actor.investing then actor.releaseRequested = false; checkpoint(player, actor, true) end
 		end
 		if batch then
 			if now < delayUntil then return end
@@ -110,7 +128,7 @@ function Service.start(): any
 			if batch.done() then
 				batch.close(); batch = nil
 				for player, actor in actors do
-					if actor.status == "Completed" and actor.active then checkpoint(player, actor, false)
+					if actor.status == "Completed" and actor.active and not actor.investing then checkpoint(player, actor, false)
 					elseif actor.status == "Suspended" then metrics.suspended += 1 end
 					send(player, actor)
 				end
@@ -119,7 +137,10 @@ function Service.start(): any
 			nextAt = now + 1 -- Never accumulate missed time or run a catch-up burst.
 			local ready = {}
 			for player, actor in actors do
-				if actor.active and not actor.saving and not actor.saveBlocked and actor.status ~= "Suspended" then
+				if actor.record.version == 2 and actor.record.leaseUntil - now <= 30 then
+					actor.saveBlocked = true; actor.status = "Suspended"; actor.reason = "Training lease safety expired; no further simulation"
+				end
+				if actor.active and not actor.saving and not actor.investing and not actor.saveBlocked and actor.status ~= "Suspended" then
 					local ok, value = pcall(Scenario.prepare, actor.state)
 					if ok then actor.state = value; table.insert(ready, actor)
 					else actor.status = "Suspended"; actor.reason = "Scenario inputs unavailable"; send(player, actor) end

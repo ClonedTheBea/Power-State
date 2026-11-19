@@ -25,7 +25,7 @@ function Batch.new(actors: {any}, options: any?): any
 	config.isCurrent = function(input: any): boolean
 		local binding = bindings[input.countryId]
 		-- Deep-frozen object identity binds ALL input fields, including owner, costs, cursor and controls.
-		return binding ~= nil and binding.actor.active == true and binding.actor.state == binding.base
+		return binding ~= nil and binding.actor.active == true and not binding.actor.investing and binding.actor.state == binding.base
 			and binding.actor.ownerId == binding.base.ownerId and binding.actor.epoch == binding.base.epoch
 	end
 	local scheduler = Scheduler.new(config)
@@ -65,8 +65,12 @@ function Batch.new(actors: {any}, options: any?): any
 				end
 				record.done = true
 			elseif status.state ~= "pending" then
-				actor.status = if status.state == "stale" then "Invalidated" else "Suspended"
-				actor.reason = status.state .. ": no interval settled; retry safely"
+				local confirmedInvestment = actor.state.version == 2 and base.version == 2
+					and actor.state.investments.serial == 1 and base.investments.serial == 0
+				if not actor.investing and not confirmedInvestment then
+					actor.status = if status.state == "stale" then "Invalidated" else "Suspended"
+					actor.reason = status.state .. ": no interval settled; retry safely"
+				end
 				record.done = true
 			end
 		end end

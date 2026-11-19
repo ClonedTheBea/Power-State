@@ -4,6 +4,7 @@ local Theme = require(script.Parent.Parent.Theme)
 local InspectorView = {}
 function InspectorView.create(parent: Instance)
 	local root = C.panel(parent, "Inspector")
+	C.surface(root)
 	root.ZIndex = 10
 	root.Active = true
 	root.ClipsDescendants = true
@@ -28,11 +29,16 @@ function InspectorView.create(parent: Instance)
 	tag.LayoutOrder = 1
 	local body = C.paragraph(scroll, "Select a marker to inspect this illustrative country. Nothing on this map is simulated.", Theme.muted)
 	body.LayoutOrder = 2
+	if Theme.visualRedesign then
+	 body.BackgroundTransparency=0;body.BackgroundColor3=Theme.raised;C.corner(body,Theme.panelRadius)
+	 local pad=Instance.new("UIPadding");pad.PaddingTop=UDim.new(0,12);pad.PaddingBottom=UDim.new(0,12);pad.PaddingLeft=UDim.new(0,12);pad.PaddingRight=UDim.new(0,12);pad.Parent=body
+	end
 	local note = C.paragraph(scroll, "G  Generator\nS  Substation\nT  Settlement\n\nDrag to pan. Use + / − to zoom, or Recenter to return.", Theme.muted)
 	note.LayoutOrder = 3
 	local locate = C.button(scroll, "Locate on map")
 	locate.Size = UDim2.new(1, -8, 0, 44)
 	locate.LayoutOrder = 4
+	if Theme.visualRedesign then C.action(locate,"primary");tag.Font=Theme.fontBold end
 	locate.Visible = false
 	local demos: { [string]: TextButton } = {}
 	for index, kind in { "loading", "notice", "error" } do
@@ -49,7 +55,7 @@ function InspectorView.create(parent: Instance)
 		apply = function(stage: string, scale: number)
 			scroll.Visible = stage ~= "peek"
 			expand.Text = if stage == "peek" then "Open" elseif stage == "half" then "Expand" else "Peek"
-			title.TextSize = 16 * scale
+			title.TextSize = (if Theme.visualRedesign then 18 else 16) * scale
 			tag.TextSize = 16 * scale; body.TextSize = 16 * scale; note.TextSize = 16 * scale
 			root:SetAttribute("Stage", stage)
 		end,

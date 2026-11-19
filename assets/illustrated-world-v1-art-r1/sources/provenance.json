@@ -1,0 +1,34 @@
+[
+  {
+    "id": "hill-low-a",
+    "prompt": "Use case: stylized-concept. Create ONE production game sprite, hill-low-a, for Power State. Use the attached approved forest, town and gas sprites only as style/palette/lighting references; do not reproduce their subjects. Subject: two gently rolling, snow-free temperate grassy hills, one low rounded broad main slope and a smaller shoulder; muted sage and olive grass, a few restrained grey stone outcrops. Softly painted elevated 2.5D strategy-game illustration, fixed north-up world orientation, light from upper-left, short soft lower-right shadows, same visual family as references. The hills are compact and readable at 50-100px display. One isolated cluster on genuinely transparent background, no rectangular ground tile, no sky, no snow, no trees, no buildings, no roads, no wires, no text, no icons. Centre the entire silhouette with generous transparent space; ground contact near lower centre, not a floating island or cutaway rock pedestal. Restrained relief, accessible polished strategy-game asset rather than photorealism. Square canvas.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-055e3fdf-b332-4fa2-b49d-4b0cafb4c684.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "hill-low-b",
+    "prompt": "Create ONE transparent production game sprite for Power State. Use supplied sprites as STYLE references only. Softly painted elevated 2.5D strategy illustration, north up, light upper-left, short lower-right shadows; muted sage/olive, warm grey stone and charcoal metal, cohesive with approved gas and forest art. Square canvas, entire isolated object centred with generous transparent margins, genuinely transparent background, ground contact lower centre. No text, UI, symbols, roads, people, overhead power wires, landscape scene, sky, frame, or floating cutaway island. Readable silhouette at 50–100px, restrained detail.\nSubject: a distinctly different pair of low rolling temperate hills: a long gentle saddle ridge rising to the right, with a small left foreground grassy knoll and restrained grey rock outcrops. No snow, trees or structures. Maintain upper-left lighting; do not mirror the reference hill.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-7f3e4475-722e-471b-8ab9-d721c35d3dfa.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "substation",
+    "prompt": "Create ONE transparent production game sprite for Power State. Use supplied sprites as STYLE references only. Softly painted elevated 2.5D strategy illustration, north up, light upper-left, short lower-right shadows; muted sage/olive, warm grey stone and charcoal metal, cohesive with approved gas and forest art. Square canvas, entire isolated object centred with generous transparent margins, genuinely transparent background, ground contact lower centre. No text, UI, symbols, roads, people, overhead power wires, landscape scene, sky, frame, or floating cutaway island. Readable silhouette at 50–100px, restrained detail.\nSubject: one recognizable compact electricity substation yard, two power transformers, three low switching gantries, visible porcelain insulators and orderly equipment on a restrained gravel ground patch, subtle low perimeter fence. Match gas-station visual scale. No nearby buildings, no transmission pylons, no attached external wires. Internal rigid busbars are structural equipment, not drawn network connections.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-8894f50b-eeb4-4029-a41f-8cec9f0465d3.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "pylon",
+    "prompt": "Create ONE transparent production game sprite for Power State. Use supplied sprites as STYLE references only. Softly painted elevated 2.5D strategy illustration, north up, light upper-left, short lower-right shadows; muted sage/olive, warm grey stone and charcoal metal, cohesive with approved gas and forest art. Square canvas, entire isolated object centred with generous transparent margins, genuinely transparent background, ground contact lower centre. No text, UI, symbols, roads, people, overhead power wires, landscape scene, sky, frame, or floating cutaway island. Readable silhouette at 50–100px, restrained detail.\nSubject: one isolated steel lattice electricity transmission pylon, broad stable footings, tapered tower and two crossarms with insulators. Warm grey/charcoal metal with upper-left highlights, small sage ground contact and short lower-right shadow. No wires or cables attached, no surrounding infrastructure. Bold simplified silhouette readable at 18–58px; avoid hairline detail.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-cdc122f6-dedd-4c24-b1b2-63d9a964797d.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  }
+]

@@ -1,8 +1,16 @@
 --!strict
+local redesign = game:GetService("RunService"):IsStudio() and game.GameId == 10776833313
 return table.freeze({
-	background = Color3.fromRGB(11, 20, 32),
-	panel = Color3.fromRGB(22, 35, 51),
-	raised = Color3.fromRGB(32, 51, 71),
+	visualRedesign = redesign,
+	grid = Color3.fromRGB(77, 220, 235),
+	surfaceTop = Color3.fromRGB(31, 58, 72),
+	surfaceShade = Color3.fromRGB(160, 184, 199),
+	selected = Color3.fromRGB(24, 72, 87),
+	space = table.freeze({xs=4, sm=8, md=12, lg=16, xl=24}),
+	typeScale = table.freeze({caption=12, body=16, section=20, title=26, value=28}),
+	background = if redesign then Color3.fromRGB(5, 17, 28) else Color3.fromRGB(11, 20, 32),
+	panel = if redesign then Color3.fromRGB(12, 30, 44) else Color3.fromRGB(22, 35, 51),
+	raised = if redesign then Color3.fromRGB(23, 48, 64) else Color3.fromRGB(32, 51, 71),
 	border = Color3.fromRGB(48, 71, 92), -- Decorative only.
 	borderInteractive = Color3.fromRGB(102, 131, 152),
 	text = Color3.fromRGB(237, 244, 248),

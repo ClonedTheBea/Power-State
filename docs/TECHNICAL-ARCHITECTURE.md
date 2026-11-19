@@ -131,3 +131,22 @@ Checked 15 November 2026 by reading official project/platform documentation. The
 ## Acceptance
 
 Current presentation evidence and remaining hardware checks are recorded in [R3 validation](R3-VALIDATION.md); [P1 validation](P1-VALIDATION.md) preserves the initial milestone. P2 proves simulation contracts; P3 proves persistence against an isolated Roblox environment. Profiling gates precede higher world caps, extra countries per server and event launch. Written performance targets are not measured results.
+
+
+## Grid Reinforcement v1 — isolated fake Test integration
+
+Owner-approved D191 adds Operations record/training ledger2, investment contract1 and composition2, **not persistent profile schema4**. ReinforcementModel owns exact `sb` overlay and permanent receipt/capital agreement; Country provides frozen validated conversion and purchase candidates. Scenario retains its immutable version1 recipe and composes saved capacity before each authoritative preparation. Projection/forecast read that rating and invalidate cached forecasts on topology revision. The original solver and source/fairness policies are unchanged.
+
+ReinforcementCoordinator owns a single30-second quote and pending candidate per active country. OperationsStore accepts only injected Fake adapters and reserves the key for a v2 transition: maximum four concurrent calls, no queued request accumulation, five update attempts per candidate/30-second mutation window, exact returned-state or readback reconciliation. A candidate is constructed once outside retried callbacks. Epoch, full expected record, monotonic revision and180-second fake lease/30-second safety margin fence the commit. These are fake protocol tests, not cross-server Roblox guarantees. Legacy v1 compare-and-swap fixtures remain for regression.
+
+The critical barrier cancels stale captured solver work, excludes conflicting checkpoints/controls and advances no simulation while unresolved. Permanent investment cannot be removed by later saves. Departure requests release only after resolution. Unknown outcomes remain blocked rather than creating a replacement debit or blind refund. First Playable and its schema1–3 persistence remain separate. Normal entry into Training explicitly acquires a disposable v2 record; Stop Play discards it.
+
+ReinforcementView reuses FeedbackView, focus and native scrolling. Inspector/Build/control-room entry points share one review; one existing native line frame supplies selected-route feedback. No terrain changes or extra map instances. View state is server-projected, with local expiry used only to suppress stale confirmation. [Acceptance and limits](GRID-REINFORCEMENT-V1-VALIDATION.md).
+
+## Operations v1.3 incremental presentation
+
+AppController separates structural `refresh` (route/viewport/text-scale layout) from data-only `present`. Operations snapshots, command acknowledgements and quote/stale clocks invoke the latter. OperationsPresentation writes only changed properties. OperationsView creates the fleet controls once and measures stable worst-case card text on width/font changes, not on dispatch changes. OperationsDetails updates the existing feedback body for Bank, generator, forecast and bounded server alerts; opening/closing uses established focus restoration. No polling remount, GUI-derived electricity or client financial calculation is added. Text measurement counters are local diagnostics, not replicated fields. See [v1.3 evidence](OPERATIONS-V13-VALIDATION.md).
+
+## Visual Redesign v1 presentation boundary
+
+Test-only Construction/Operations clients retain existing remotes and fake coordinators. Construction snapshot updates now use `AppController.present`, as Operations already did, keeping structural layout separate. New `InfrastructureDirectory`, `ProjectCategories` and `DetailRows` are client presentation modules; they do not calculate electricity, price, eligibility, financial state or persistence. Directory inputs are public snapshots. No new server state, service, schema, asset ID or remote is introduced.

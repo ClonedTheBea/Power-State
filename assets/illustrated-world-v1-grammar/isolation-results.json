@@ -1,0 +1,26 @@
+[
+  {
+    "name": "R33",
+    "exitCode": 0,
+    "output": "{\"passed\": 83, \"atlasSha256\": \"e1dcb61948e575bab85d94a6eed3dce1939fe87389455fc3bce735a28cab63cb\"}\n",
+    "error": ""
+  },
+  {
+    "name": "R34",
+    "exitCode": 0,
+    "output": "{\"passed\": 14, \"checks\": [\"Approved atlas unchanged\", \"PowerState isolates RealAtlas\", \"PowerState isolates R34.spec\", \"PowerState isolates HybridProof\", \"PowerState approved URI isolation\", \"PowerStateTests isolates RealAtlas\", \"PowerStateTests isolates R34.spec\", \"PowerStateTests isolates HybridProof\", \"PowerStateTests approved URI isolation\", \"Approved Test guard\", \"ContentProvider off main path\", \"Actual label readiness\", \"Bounded six sprites\", \"No source texture ID\"], \"scope\": \"Local isolation only; engine evidence separate\"}\n",
+    "error": ""
+  },
+  {
+    "name": "R35",
+    "exitCode": 0,
+    "output": "{\"passed\": 4, \"checks\": [\"PowerState isolates HybridPresentation\", \"PowerState isolates R35.spec\", \"PowerStateTests isolates HybridPresentation\", \"PowerStateTests isolates R35.spec\"], \"scope\": \"Build isolation; engine evidence separate\"}\n",
+    "error": ""
+  },
+  {
+    "name": "R37",
+    "exitCode": 0,
+    "output": "{\"passed\": 27, \"checks\": [\"Settlement SHA-256\", \"RGBA dimensions\", \"southbank sourceRect\", \"southbank pivotPx\", \"southbank groundAnchorWorld\", \"southbank worldCanvasSize\", \"southbank fallback\", \"eastmere sourceRect\", \"eastmere pivotPx\", \"eastmere groundAnchorWorld\", \"eastmere worldCanvasSize\", \"eastmere fallback\", \"PowerState isolates SettlementProfiles\", \"PowerState isolates SettlementAtlas\", \"PowerState isolates SettlementRenderer\", \"PowerState isolates SettlementProof\", \"PowerState isolates R37.spec\", \"PowerState image ID isolation\", \"PowerStateTests isolates SettlementProfiles\", \"PowerStateTests isolates SettlementAtlas\", \"PowerStateTests isolates SettlementRenderer\", \"PowerStateTests isolates SettlementProof\", \"PowerStateTests isolates R37.spec\", \"PowerStateTests image ID isolation\", \"Six-slot construction\", \"Test universe guard\", \"No new gameplay remotes\"], \"scope\": \"local static/build checks only\"}\n",
+    "error": ""
+  }
+]

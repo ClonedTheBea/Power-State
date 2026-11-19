@@ -10,7 +10,8 @@ function Commands.admit(bucket: any, payload: any, now: number): boolean
 	local keys = {version = true, kind = true}
 	if payload.kind == "Control" then
 		keys = {version = true, kind = true, epoch = true, revision = true, sequence = true, sourceId = true, on = true, capKW = true}
-	elseif payload.kind == "Retry" then keys = {version = true, kind = true, epoch = true, revision = true, sequence = true}
+	elseif payload.kind == "ConfirmReinforcement" then keys = {version=true, kind=true, epoch=true, revision=true, sequence=true, quoteId=true}
+	elseif payload.kind == "QuoteReinforcement" or payload.kind == "Retry" then keys = {version = true, kind = true, epoch = true, revision = true, sequence = true}
 	elseif not table.find({"Enter", "Exit", "Sync"}, payload.kind) then return false end
 	local count = 0
 	for k, v in payload do
@@ -21,6 +22,7 @@ function Commands.admit(bucket: any, payload: any, now: number): boolean
 		elseif type(v) ~= "boolean" then return false end
 	end
 	for k in keys do if payload[k] == nil then return false end end
+	if payload.kind == "ConfirmReinforcement" and (type(payload.quoteId) ~= "string" or #payload.quoteId == 0) then return false end
 	return payload.version == 1
 end
 function Commands.apply(actor: any, ownerId: number, payload: any): string
@@ -30,12 +32,13 @@ function Commands.apply(actor: any, ownerId: number, payload: any): string
 	if payload.sequence ~= actor.nextSequence then return "ReplayRejected" end
 	actor.nextSequence += 1
 	if payload.revision ~= state.countryRevision then return "StaleRevision" end
-	if actor.saving or actor.saveBlocked then return "CheckpointUnavailable" end
+	if actor.saving or actor.saveBlocked or actor.investing then return "CheckpointUnavailable" end
 	if payload.kind == "Retry" then
 		if actor.status ~= "Suspended" and actor.status ~= "Invalidated" then return "NoChange" end
 		actor.status = "Accepted"; actor.reason = nil
 		return "Accepted"
 	end
+	if payload.kind == "QuoteReinforcement" or payload.kind == "ConfirmReinforcement" then return "Accepted" end
 	if payload.kind ~= "Control" then return "Rejected" end
 	local ok, nextState = pcall(Country.control, state, ownerId, payload.epoch, payload.revision, payload.sourceId, payload.on, payload.capKW)
 	if not ok then return "InvalidControl" end

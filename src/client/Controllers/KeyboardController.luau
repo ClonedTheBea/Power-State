@@ -5,6 +5,7 @@ local Scope = require(script.Parent.Parent.Util.Scope)
 local Theme = require(script.Parent.Parent.Theme)
 local StarterGui = game:GetService("StarterGui")
 local C = require(script.Parent.Parent.Views.Components)
+local ScrollNavigation = require(script.Parent.ScrollNavigation)
 local KeyboardController = {}
 function KeyboardController.attach(root: GuiObject, actions: { [TextButton]: () -> () }, getFocusRoot: () -> GuiObject, isMapFocus: () -> boolean, onBack: () -> (), mapInput: (InputObject) -> (), getOccluder: () -> GuiObject?)
 	local scope = Scope.new()
@@ -77,6 +78,10 @@ function KeyboardController.attach(root: GuiObject, actions: { [TextButton]: () 
 		for i, candidate in list do if candidate == GuiService.SelectedObject then index = i end end
 		focus(list[(index - 1 + direction) % #list + 1])
 	end
+	local function scrollPage(direction: number): boolean
+		if isMapFocus() then return false end
+		return ScrollNavigation.page(getFocusRoot(), GuiService.SelectedObject, direction)
+	end
 	local function activate()
 		local selected = GuiService.SelectedObject
 		if selected and selected:IsA("TextButton") and selected:IsDescendantOf(root) and not isVisible(selected, getFocusRoot()) then
@@ -92,10 +97,14 @@ function KeyboardController.attach(root: GuiObject, actions: { [TextButton]: () 
 		if UserInputService:GetFocusedTextBox() or GuiService.MenuIsOpen then return end
 		if input.KeyCode == Enum.KeyCode.Tab then
 			step(if UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) or UserInputService:IsKeyDown(Enum.KeyCode.RightShift) then -1 else 1)
-		elseif input.KeyCode == Enum.KeyCode.Return then activate() end
+		elseif input.KeyCode == Enum.KeyCode.Return then activate()
+		elseif input.KeyCode == Enum.KeyCode.PageUp then scrollPage(-1)
+		elseif input.KeyCode == Enum.KeyCode.PageDown then scrollPage(1) end
 		if isMapFocus() then mapInput(input)
 		else
-			if input.KeyCode == Enum.KeyCode.ButtonA then activate()
+			if input.KeyCode == Enum.KeyCode.ButtonL1 then scrollPage(-1)
+			elseif input.KeyCode == Enum.KeyCode.ButtonR1 then scrollPage(1)
+			elseif input.KeyCode == Enum.KeyCode.ButtonA then activate()
 			elseif input.KeyCode == Enum.KeyCode.ButtonB then onBack()
 			elseif input.KeyCode == Enum.KeyCode.DPadUp or input.KeyCode == Enum.KeyCode.DPadLeft then step(-1)
 			elseif input.KeyCode == Enum.KeyCode.DPadDown or input.KeyCode == Enum.KeyCode.DPadRight then step(1) end
@@ -125,7 +134,7 @@ function KeyboardController.attach(root: GuiObject, actions: { [TextButton]: () 
 			end
 		end
 	end))
-	return { step = step, activate = activate, focus = focus,
+	return { step = step, activate = activate, focus = focus, scrollPage = scrollPage,
 		first = function() local list = candidates(); if list[1] then focus(list[1]) end end,
 		valid = function(button: TextButton) return isVisible(button, getFocusRoot()) end,
 		destroy = function()

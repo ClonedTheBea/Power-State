@@ -123,3 +123,31 @@ R1–R3 are implemented under separate requests from the migration plan in [Layo
 Design-task checks performed on 15 November 2026: all eight local references reviewed; proposed opaque theme contrasts calculated using the stated sRGB formula; 40 source/test/script/config/reference/asset files compared by SHA-256 with no change, including AGENTS.md; local Markdown file/anchor links checked; Git whitespace check run. These checks validate documentation and preservation, not a redesigned running GUI. P1's 98/80 runtime results were not rerun or reattributed to the design. No code, tests, dependencies, game settings, passes, purchases, commits, pushes or published content changed.
 
 Created: GUI-VISION.md, GUI-LAYOUT-SPEC.md, GUI-COMPONENT-SPEC.md. Updated: README.md, PLANS.md, UI-UX.md, DECISIONS.md, ECONOMY-AND-REBIRTHS.md, DATA-AND-SECURITY.md, TECHNICAL-ARCHITECTURE.md, TESTING.md, ELECTRICITY-SIMULATION.md, MULTIPLAYER-AND-NEWS.md and COMPANY-PROFILES.md. Terminology-only alignment also touched GOVERNMENT.md, INFRASTRUCTURE-AND-STAFF.md, EVENTS.md and TUTORIAL.md. Existing P1 validation/setup records remain unchanged. AGENTS.md needed no new enduring instruction and was preserved.
+
+## Visual Redesign v1 — isolated Test presentation (19 November 2026)
+
+The eight `Inspiration/` concepts guide chrome and hierarchy, not country data or gameplay. Use midnight/navy layered native panels, cyan grid/selection accents, gold financial actions, and text plus colour for status. Preserve the real procedural map, native terrain and electrical anchors. Live values update mounted components; they do not reconstruct screens. The Test identity and temporary Training identity remain explicit.
+
+Implemented: shared chrome depth, KPI accents, selected navigation and infrastructure outline, fixed reusable financial rows, construction categories and explicit cancellation, an actual-asset directory and responsive three-generator control room. New artwork is not part of this sprint. See [validation](VISUAL-REDESIGN-V1-VALIDATION.md).
+
+### Future screens — visual specification only
+
+Government: header with country identity; inner tabs Overview, Policies, Projects, Priorities, Legislation. Desktop uses an information list and selected proposal panel; narrow screens use one column and a back action. Until approved data/services exist, show `Coming later` and explanatory text; no approval rating, budget, policy effects or actionable approval controls.
+
+Staff: reuse the asset-list/detail pattern for future departments and selected staff. Reserve sections for assignments and qualifications without inventing employees, wages, condition or maintenance histories. No hiring/assignment controls in the current build.
+
+Shop: separate Credits and Robux tabs, bounded offer cards, clear eligibility and confirmation space. Example concept prices are not approved prices. Future temporary 2× Income consumes 30 active online simulation minutes; ordinary menus do not pause it. Permanent Double Income makes remaining temporary duration dormant. Maximum effective multiplier is 2× and applies only to eligible electricity sales; costs, grants, rewards and rebirth points are excluded. No speed boosts, purchases, entitlement checks or transactions are implemented.
+
+Ticker: future single-line headline component, source badge (National / Server / Global), timestamp and accessible open/dismiss controls; bounded queue and detail drawer, paused motion for accessibility. On mobile use a compact alert entry rather than sacrificing map height. No running feed, fake headlines, cross-server service or fabricated events in this sprint. Delivery, moderation, rate and retention rules require later approval.
+
+## Visual Redesign v1.1 — reference polish
+
+Owner accepts v1 as the technical foundation. This Test-only pass strengthens native composition: wide-screen Power State wordmark separated from actual country identity; compact grouped rail; semantic KPI symbols; technology-marked fleet cards with actual/available output bars; structured asset rows and investment reviews. It does not import fictional concept values, flags, dates, condition, maintenance or staff. Natural procedural terrain remains deliberately unchanged. [Comparison and validation](VISUAL-REDESIGN-V11-VALIDATION.md).
+
+
+## Illustrated World v1 audit boundary
+
+The owner accepts v1.1 chrome as the baseline; no further shell redesign is authorized. The [Illustrated World audit](ILLUSTRATED-WORLD-V1-VALIDATION.md) stops before renderer code at the explicit existing-art sufficiency gate. Frozen authored headland/1200×800 placements are not a generated-sector contract. The proposed shore-edge family, flat-coordinate pivots, same-lighting variants and bounded Test adapter are design handoff only. Native,44px targets, authoritative graph overlays, selection/camera and600 total descendants remain unchanged. No new atlas, upload, mode control or default renderer is implemented. See the report for exact gaps and owner-review options.
+
+
+**Local artwork follow-up (D210/D211):** the audit boundary above is historical. Owner subsequently approved18 local motifs across the original main atlas and a two-diagonal companion. [Actual artwork and pixel/visual evidence](ILLUSTRATED-WORLD-V1-ART-VALIDATION.md) are ready for review; no upload, integration or visual/default adoption follows automatically. Native geometry/default, overlays,44px targets and600-descendant ceiling remain unchanged. Ground transitions and bounded shore-slot issues require review before a later renderer proof.

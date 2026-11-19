@@ -1,0 +1,873 @@
+{
+  "scope": "Actual Studio engine with fake storage; selected test output only, not real services or device acceptance",
+  "events": [
+    {
+      "utc": "2026-11-19T09:51:29.803Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":33,\"added\":0,\"refreshes\":33,\"canvasChanges\":330,\"panel\":\"fleet\",\"seconds\":12.00005540001439,\"snapshots\":33,\"steps\":11,\"measurements\":297,\"focusChanges\":0,\"textChanges\":297,\"scrollChanges\":0,\"cpuMs\":119.50589990010485,\"scrollDrift\":0,\"peakMs\":0,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T09:51:41.902Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":34,\"added\":0,\"refreshes\":34,\"canvasChanges\":341,\"panel\":\"Bank\",\"seconds\":12.013617400021758,\"snapshots\":34,\"steps\":11,\"measurements\":306,\"focusChanges\":0,\"textChanges\":306,\"scrollChanges\":0,\"cpuMs\":124.55699994461611,\"scrollDrift\":0,\"peakMs\":0.061700004152953628,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T09:51:54.001Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":82,\"added\":0,\"refreshes\":82,\"canvasChanges\":820,\"panel\":\"reinforcement\",\"seconds\":12.01652429997921,\"snapshots\":36,\"steps\":12,\"measurements\":750,\"focusChanges\":0,\"textChanges\":738,\"scrollChanges\":0,\"cpuMs\":293.4444000129588,\"scrollDrift\":0,\"peakMs\":0,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T09:51:54.005Z",
+      "message": "[Operations V13 stability] COMPLETE Baseline"
+    },
+    {
+      "utc": "2026-11-19T09:53:47.630Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":22,\"panel\":\"fleet\",\"seconds\":12.010583100025542,\"snapshots\":33,\"steps\":11,\"measurements\":33,\"focusChanges\":0,\"textChanges\":33,\"scrollChanges\":0,\"cpuMs\":34.01119983755052,\"scrollDrift\":0,\"peakMs\":3.144600021187216,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T09:53:59.729Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":21,\"panel\":\"Bank\",\"seconds\":12.015093200025149,\"snapshots\":33,\"steps\":11,\"measurements\":33,\"focusChanges\":0,\"textChanges\":33,\"scrollChanges\":0,\"cpuMs\":32.10510005010292,\"scrollDrift\":0,\"peakMs\":2.390799985732883,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T09:54:11.830Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":81,\"canvasChanges\":22,\"panel\":\"reinforcement\",\"seconds\":12.015341799997259,\"snapshots\":35,\"steps\":12,\"measurements\":47,\"focusChanges\":0,\"textChanges\":35,\"scrollChanges\":0,\"cpuMs\":42.443799786269668,\"scrollDrift\":0,\"peakMs\":3.146099974401295,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T09:54:11.831Z",
+      "message": "[Operations V13 stability] COMPLETE Stability"
+    },
+    {
+      "utc": "2026-11-19T09:59:42.766Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":0,\"panel\":\"fleet\",\"seconds\":12.010130600014236,\"snapshots\":33,\"steps\":11,\"measurements\":0,\"focusChanges\":0,\"textChanges\":33,\"scrollChanges\":0,\"cpuMs\":10.71589981438592,\"scrollDrift\":0,\"peakMs\":0.6420999998226762,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T09:59:54.867Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":0,\"panel\":\"Bank\",\"seconds\":12.01576490001753,\"snapshots\":33,\"steps\":11,\"measurements\":11,\"focusChanges\":0,\"textChanges\":33,\"scrollChanges\":0,\"cpuMs\":17.805699724704028,\"scrollDrift\":0,\"peakMs\":2.7274999883957209,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:00:06.965Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":82,\"canvasChanges\":0,\"panel\":\"reinforcement\",\"seconds\":12.016009100014344,\"snapshots\":36,\"steps\":12,\"measurements\":12,\"focusChanges\":0,\"textChanges\":36,\"scrollChanges\":0,\"cpuMs\":20.231399743352087,\"scrollDrift\":0,\"peakMs\":1.1446999851614237,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:00:06.966Z",
+      "message": "[Operations V13 stability] COMPLETE Stability"
+    },
+    {
+      "utc": "2026-11-19T10:03:01.831Z",
+      "message": "[Operations V13 startup] fresh resource round 1"
+    },
+    {
+      "utc": "2026-11-19T10:03:05.442Z",
+      "message": "[Operations V13 acknowledgement] \u2212 63.912 ms"
+    },
+    {
+      "utc": "2026-11-19T10:03:05.493Z",
+      "message": "[Operations V13 acknowledgement] + 49.640 ms"
+    },
+    {
+      "utc": "2026-11-19T10:03:05.541Z",
+      "message": "[Operations V13 acknowledgement] Switch On 49.972 ms"
+    },
+    {
+      "utc": "2026-11-19T10:03:05.592Z",
+      "message": "[Operations V13 acknowledgement] Switch On 49.970 ms"
+    },
+    {
+      "utc": "2026-11-19T10:03:07.411Z",
+      "message": "[Operations GUI] PASS: 129 assertions; map descendants=394"
+    },
+    {
+      "utc": "2026-11-19T10:03:19.492Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"fleet\",\"seconds\":12.016334699990694,\"snapshots\":36,\"steps\":12,\"measurements\":0,\"focusChanges\":0,\"textChanges\":36,\"scrollChanges\":0,\"cpuMs\":18.200899939984084,\"scrollDrift\":0,\"peakMs\":1.5991000109352172,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:03:31.590Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"generator details\",\"seconds\":12.016157599980943,\"snapshots\":36,\"steps\":12,\"measurements\":24,\"focusChanges\":0,\"textChanges\":36,\"scrollChanges\":0,\"cpuMs\":23.46119994763285,\"scrollDrift\":0,\"peakMs\":1.3358999858610333,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:03:43.673Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"forecast\",\"seconds\":12.000030800001696,\"snapshots\":36,\"steps\":12,\"measurements\":12,\"focusChanges\":0,\"textChanges\":36,\"scrollChanges\":0,\"cpuMs\":18.80600006552413,\"scrollDrift\":0,\"peakMs\":1.0618999949656428,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:03:55.776Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"Bank\",\"seconds\":12.018332100007683,\"snapshots\":36,\"steps\":12,\"measurements\":12,\"focusChanges\":0,\"textChanges\":32,\"scrollChanges\":0,\"cpuMs\":18.253899877890946,\"scrollDrift\":0,\"peakMs\":1.1303999926894904,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:04:07.872Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":79,\"canvasChanges\":0,\"panel\":\"reinforcement\",\"seconds\":12.01665539998794,\"snapshots\":33,\"steps\":11,\"measurements\":11,\"focusChanges\":0,\"textChanges\":22,\"scrollChanges\":0,\"cpuMs\":18.517700082156808,\"scrollDrift\":0,\"peakMs\":1.261900004465133,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:04:07.874Z",
+      "message": "[Operations V13 stability] COMPLETE All"
+    },
+    {
+      "utc": "2026-11-19T10:04:10.472Z",
+      "message": "[Operations v1.2 interaction] PASS: 101 engine paging/focus assertions (not physical swipe)"
+    },
+    {
+      "utc": "2026-11-19T10:04:15.505Z",
+      "message": "[Operations Remote] PASS: 38 assertions; flood response count=6"
+    },
+    {
+      "utc": "2026-11-19T10:05:11.336Z",
+      "message": "[Operations V13 startup] fresh resource round 1"
+    },
+    {
+      "utc": "2026-11-19T10:05:15.263Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":4.146800027228892,\"transaction\":1.0506999678909779,\"prepare\":17.57919997908175,\"solver\":1.7742000054568053,\"install\":2.0106000010855498},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":2219}"
+    },
+    {
+      "utc": "2026-11-19T10:05:15.338Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:05:15.338Z",
+      "message": "[Operations V13 startup] fresh resource round 2"
+    },
+    {
+      "utc": "2026-11-19T10:05:17.474Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":2.8030999819748105,\"transaction\":1.1851000017486513,\"prepare\":3.5582000273279847,\"solver\":1.8630999838933349,\"install\":1.6975000035017729},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":141}"
+    },
+    {
+      "utc": "2026-11-19T10:05:17.555Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:05:17.555Z",
+      "message": "[Operations V13 startup] fresh resource round 3"
+    },
+    {
+      "utc": "2026-11-19T10:05:19.685Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":2.535599982365966,\"transaction\":1.0712999501265586,\"prepare\":4.996299976482987,\"solver\":1.664699986577034,\"install\":2.0631999941542746},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":1610}"
+    },
+    {
+      "utc": "2026-11-19T10:05:19.772Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:05:19.772Z",
+      "message": "[Operations V13 startup] fresh resource round 4"
+    },
+    {
+      "utc": "2026-11-19T10:05:21.911Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":2.7264999807812275,\"transaction\":1.0582000249996782,\"prepare\":2.7154000126756729,\"solver\":1.9303999724797905,\"install\":2.1158999879844488},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":554}"
+    },
+    {
+      "utc": "2026-11-19T10:05:21.993Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:05:22.430Z",
+      "message": "[Operations V13 startup] PASS 129 staggered assertions; four fresh eight-country resource runs"
+    },
+    {
+      "utc": "2026-11-19T10:05:22.436Z",
+      "message": "[Operations V13 startup] recovery PASS; total staggered/recovery 131"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.629Z",
+      "message": "[Operations V13 resize] 1366x704"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.637Z",
+      "message": "[Operations V13 resize] 1024x720"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.670Z",
+      "message": "[Operations V13 resize] 390x780"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.708Z",
+      "message": "[Operations V13 resize] 844x390"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.804Z",
+      "message": "[Operations V13 acknowledgement] \u2212 62.202 ms"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.852Z",
+      "message": "[Operations V13 acknowledgement] + 48.831 ms"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.903Z",
+      "message": "[Operations V13 acknowledgement] Switch On 50.964 ms"
+    },
+    {
+      "utc": "2026-11-19T10:05:23.953Z",
+      "message": "[Operations V13 acknowledgement] Switch On 48.936 ms"
+    },
+    {
+      "utc": "2026-11-19T10:05:25.770Z",
+      "message": "[Operations GUI] PASS: 129 assertions; map descendants=394"
+    },
+    {
+      "utc": "2026-11-19T10:05:37.852Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"fleet\",\"seconds\":12.016027999983635,\"snapshots\":36,\"steps\":12,\"measurements\":0,\"focusChanges\":0,\"textChanges\":36,\"scrollChanges\":0,\"cpuMs\":13.772099919151515,\"scrollDrift\":0,\"peakMs\":0.7717999978922308,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:05:49.951Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"generator details\",\"seconds\":12.016269300016575,\"snapshots\":36,\"steps\":12,\"measurements\":24,\"focusChanges\":0,\"textChanges\":36,\"scrollChanges\":0,\"cpuMs\":20.96650016028434,\"scrollDrift\":0,\"peakMs\":1.1501000262796879,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:06:02.051Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"forecast\",\"seconds\":12.016118200030178,\"snapshots\":36,\"steps\":12,\"measurements\":12,\"focusChanges\":0,\"textChanges\":36,\"scrollChanges\":0,\"cpuMs\":17.231299832928927,\"scrollDrift\":0,\"peakMs\":1.0062999790534378,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:06:14.151Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":36,\"canvasChanges\":0,\"panel\":\"Bank\",\"seconds\":12.016471699986142,\"snapshots\":36,\"steps\":12,\"measurements\":12,\"focusChanges\":0,\"textChanges\":32,\"scrollChanges\":0,\"cpuMs\":17.922800092492254,\"scrollDrift\":0,\"peakMs\":1.1642000172287226,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:06:26.234Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":82,\"canvasChanges\":0,\"panel\":\"reinforcement\",\"seconds\":12.000089100038167,\"snapshots\":36,\"steps\":12,\"measurements\":12,\"focusChanges\":0,\"textChanges\":24,\"scrollChanges\":0,\"cpuMs\":20.209900045301766,\"scrollDrift\":0,\"peakMs\":1.331400009803474,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:06:26.235Z",
+      "message": "[Operations V13 stability] COMPLETE All"
+    },
+    {
+      "utc": "2026-11-19T10:06:28.833Z",
+      "message": "[Operations v1.2 interaction] PASS: 101 engine paging/focus assertions (not physical swipe)"
+    },
+    {
+      "utc": "2026-11-19T10:06:33.867Z",
+      "message": "[Operations Remote] PASS: 38 assertions; flood response count=6"
+    },
+    {
+      "utc": "2026-11-19T10:10:56.196Z",
+      "message": "[Reinforcement journey] PASS 27 actual-engine/remote assertions; fake storage"
+    },
+    {
+      "utc": "2026-11-19T10:10:56.208Z",
+      "message": "[Operations V13 capture] desktop"
+    },
+    {
+      "utc": "2026-11-19T10:11:11.239Z",
+      "message": "[Operations V13 capture] tablet"
+    },
+    {
+      "utc": "2026-11-19T10:11:26.272Z",
+      "message": "[Operations V13 capture] portrait"
+    },
+    {
+      "utc": "2026-11-19T10:11:41.307Z",
+      "message": "[Operations V13 capture] landscape"
+    },
+    {
+      "utc": "2026-11-19T10:11:56.324Z",
+      "message": "[Operations V13 final] COMPLETE; normal fake journey and captures"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.052Z",
+      "message": "[Operations V13 resize] 1366x704"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.059Z",
+      "message": "[Operations V13 resize] 1024x720"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.094Z",
+      "message": "[Operations V13 resize] 390x780"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.126Z",
+      "message": "[Operations V13 resize] 844x390"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.225Z",
+      "message": "[Operations V13 acknowledgement] \u2212 62.980 ms"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.276Z",
+      "message": "[Operations V13 acknowledgement] + 50.928 ms"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.326Z",
+      "message": "[Operations V13 acknowledgement] Switch On 49.132 ms"
+    },
+    {
+      "utc": "2026-11-19T10:16:58.376Z",
+      "message": "[Operations V13 acknowledgement] Switch On 50.020 ms"
+    },
+    {
+      "utc": "2026-11-19T10:17:00.209Z",
+      "message": "[Operations GUI] PASS: 130 assertions; map descendants=394"
+    },
+    {
+      "utc": "2026-11-19T10:17:00.225Z",
+      "message": "[Operations V13 capture] desktop"
+    },
+    {
+      "utc": "2026-11-19T10:17:15.258Z",
+      "message": "[Operations V13 capture] tablet"
+    },
+    {
+      "utc": "2026-11-19T10:17:30.290Z",
+      "message": "[Operations V13 capture] portrait"
+    },
+    {
+      "utc": "2026-11-19T10:17:45.323Z",
+      "message": "[Operations V13 capture] landscape"
+    },
+    {
+      "utc": "2026-11-19T10:18:00.342Z",
+      "message": "[Operations V13 capture] COMPLETE"
+    },
+    {
+      "utc": "2026-11-19T10:19:18.741Z",
+      "message": "[Reinforcement Stage A] PASS 497 assertions; pure model and actual FleetSolver"
+    },
+    {
+      "utc": "2026-11-19T10:19:19.331Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:19:22.566Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":3.2063000253401698,\"transaction\":1.0982999810948969,\"prepare\":4.030599957332015,\"solver\":1.9936999888159335,\"install\":2.00899998890236},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":937}"
+    },
+    {
+      "utc": "2026-11-19T10:19:22.576Z",
+      "message": "[Operations Encoding] PASS: 5020 assertions; first scalar calls 78"
+    },
+    {
+      "utc": "2026-11-19T10:19:22.921Z",
+      "message": "[Operations Atomic] PASS: 326 assertions; one-hour Bank 120600 minor; state 5434 bytes"
+    },
+    {
+      "utc": "2026-11-19T10:19:23.141Z",
+      "message": "[Operations Scenario] PASS: 3144 assertions; shortage936 kW, peaker936 kW, constrained500 kW; record=5596"
+    },
+    {
+      "utc": "2026-11-19T10:19:23.143Z",
+      "message": "[Operations Security] PASS: 231 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:19:25.228Z",
+      "message": "[Operations Fleet Lifecycle] PASS: 2062 assertions; {\"snapshotBytes\":2318,\"intervals\":120,\"profileBytes\":5712,\"prepPeakMs\":3.60180001007393,\"countries\":8,\"storage\":{\"writes\":984,\"profiles\":8,\"calls\":984},\"heapDeltaKiB\":-660,\"installPeakMs\":1.6195999924093485,\"solverPeakMs\":2.1924999891780319,\"fakeSavePeakMs\":3.642899973783642}"
+    },
+    {
+      "utc": "2026-11-19T10:19:25.958Z",
+      "message": "[Operations oracle] PASS: 2187 exhaustive topology/supply/demand cases"
+    },
+    {
+      "utc": "2026-11-19T10:19:26.121Z",
+      "message": "[Operations performance] p95 0.1650ms; max 0.4830ms; eight-country 1.0546ms; max operations 521; checks 8842"
+    },
+    {
+      "utc": "2026-11-19T10:19:26.212Z",
+      "message": "[Operations maximum bounds] p95 1.3266ms; max 1.3353ms; eight-country 9.3518ms; operations 8084"
+    },
+    {
+      "utc": "2026-11-19T10:19:26.212Z",
+      "message": "[Operations Stage 1] PASS: 8854 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:19:29.370Z",
+      "message": "[Fleet 1D yield equivalence] {\"quantums\":[1,16,128],\"boundaries\":{\"validated\":true,\"allocated\":true,\"routed\":true,\"complete\":true,\"feasibility\":true,\"cut-test\":true,\"compiled\":true,\"prefix\":true,\"start\":true,\"round\":true,\"edge\":true,\"freeze\":true},\"checks\":9100,\"oracleCases\":2187}"
+    },
+    {
+      "utc": "2026-11-19T10:19:29.593Z",
+      "message": "[Fleet 1D cleanup memory] 32 cancelled eight-job intervals; heap delta KiB 2274"
+    },
+    {
+      "utc": "2026-11-19T10:19:33.995Z",
+      "message": "[Fleet 1D cancellation census] occurrences 1395"
+    },
+    {
+      "utc": "2026-11-19T10:19:33.996Z",
+      "message": "[Fleet 1D safety] PASS: 1486 assertions; all 12 cancellation boundaries"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.006Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-291,\"cadenceHz\":0,\"elapsedMs\":2.9546000296249987,\"completed\":8,\"cpuMs\":1.3892999850213528,\"overshootMs\":0,\"installPeakMs\":0.7206000154837966,\"retained\":0,\"round\":1,\"peakMs\":1.1261000181548298,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.047Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":603,\"cadenceHz\":0,\"elapsedMs\":15.458900015801192,\"completed\":8,\"cpuMs\":6.65420014411211,\"overshootMs\":0,\"installPeakMs\":2.2538999910466375,\"retained\":0,\"round\":1,\"peakMs\":3.7601999938488008,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.128Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1051,\"cadenceHz\":0,\"elapsedMs\":46.72440001741052,\"completed\":8,\"cpuMs\":13.017999939620495,\"overshootMs\":0.014000005554407752,\"installPeakMs\":1.4525000005960465,\"retained\":0,\"round\":1,\"peakMs\":4.014000005554408,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.295Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-292,\"cadenceHz\":0,\"elapsedMs\":121.00320000899956,\"completed\":8,\"cpuMs\":28.753099963068963,\"overshootMs\":0,\"installPeakMs\":1.5428999904543162,\"retained\":0,\"round\":1,\"peakMs\":3.7651999737136068,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.497Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1097,\"cadenceHz\":0,\"elapsedMs\":147.9737000190653,\"completed\":8,\"cpuMs\":36.925500025972727,\"overshootMs\":0,\"installPeakMs\":1.9404999911785126,\"retained\":0,\"round\":1,\"peakMs\":3.7675999919883909,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.567Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-893,\"cadenceHz\":0,\"elapsedMs\":37.39289997611195,\"completed\":8,\"cpuMs\":11.167099932208658,\"overshootMs\":0,\"installPeakMs\":2.743299992289394,\"retained\":0,\"round\":1,\"peakMs\":3.7583999801427128,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.681Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2024,\"cadenceHz\":0,\"elapsedMs\":76.77220000186935,\"completed\":8,\"cpuMs\":18.16279999911785,\"overshootMs\":0,\"installPeakMs\":2.1631999989040198,\"retained\":0,\"round\":1,\"peakMs\":3.77660000231117,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.693Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":35,\"cadenceHz\":0,\"elapsedMs\":3.6167000071145596,\"completed\":8,\"cpuMs\":1.419499923940748,\"overshootMs\":0,\"installPeakMs\":0.8251999970525503,\"retained\":0,\"round\":2,\"peakMs\":1.1837999918498099,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.731Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":463,\"cadenceHz\":0,\"elapsedMs\":13.6707000201568,\"completed\":8,\"cpuMs\":6.7440998973324899,\"overshootMs\":0,\"installPeakMs\":2.39430001238361,\"retained\":0,\"round\":2,\"peakMs\":3.768900001887232,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.799Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":583,\"cadenceHz\":0,\"elapsedMs\":34.334000025410208,\"completed\":8,\"cpuMs\":11.77419989835471,\"overshootMs\":0,\"installPeakMs\":2.828700002282858,\"retained\":0,\"round\":2,\"peakMs\":3.7614000029861929,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:34.965Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-81,\"cadenceHz\":0,\"elapsedMs\":121.30320002324879,\"completed\":8,\"cpuMs\":30.500800057779999,\"overshootMs\":0,\"installPeakMs\":2.5434999843128027,\"retained\":0,\"round\":2,\"peakMs\":3.7732000346295537,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.181Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1431,\"cadenceHz\":0,\"elapsedMs\":162.0847000158392,\"completed\":8,\"cpuMs\":39.98130006948486,\"overshootMs\":0,\"installPeakMs\":2.8670000028796496,\"retained\":0,\"round\":2,\"peakMs\":3.7702000117860736,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.250Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-61,\"cadenceHz\":0,\"elapsedMs\":34.935399948153648,\"completed\":8,\"cpuMs\":11.629499902483076,\"overshootMs\":0,\"installPeakMs\":2.4581000325269999,\"retained\":0,\"round\":2,\"peakMs\":3.759699990041554,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.366Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1768,\"cadenceHz\":0,\"elapsedMs\":77.55720004206524,\"completed\":8,\"cpuMs\":18.745100125670434,\"overshootMs\":0,\"installPeakMs\":2.2298000403679909,\"retained\":0,\"round\":2,\"peakMs\":3.7820999859832229,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.377Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1218,\"cadenceHz\":0,\"elapsedMs\":4.967100045178086,\"completed\":8,\"cpuMs\":1.2838999391533435,\"overshootMs\":0,\"installPeakMs\":0.7233000360429287,\"retained\":0,\"round\":3,\"peakMs\":1.0763999889604748,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.418Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":167,\"cadenceHz\":0,\"elapsedMs\":14.043600007425994,\"completed\":8,\"cpuMs\":7.172500074375421,\"overshootMs\":0,\"installPeakMs\":2.070199989248067,\"retained\":0,\"round\":3,\"peakMs\":3.762700012885034,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.484Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1055,\"cadenceHz\":0,\"elapsedMs\":31.33920003892854,\"completed\":8,\"cpuMs\":12.332600017543883,\"overshootMs\":0,\"installPeakMs\":2.6340000331401827,\"retained\":0,\"round\":3,\"peakMs\":3.7552000139839949,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.646Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-142,\"cadenceHz\":0,\"elapsedMs\":113.4466000366956,\"completed\":8,\"cpuMs\":28.45859993249178,\"overshootMs\":0,\"installPeakMs\":1.5684000100009144,\"retained\":0,\"round\":3,\"peakMs\":3.7663999828509988,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.862Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-584,\"cadenceHz\":0,\"elapsedMs\":165.06930004106835,\"completed\":8,\"cpuMs\":38.87269995175302,\"overshootMs\":0,\"installPeakMs\":1.5419000410474837,\"retained\":0,\"round\":3,\"peakMs\":3.767400048673153,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:35.932Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":137,\"cadenceHz\":0,\"elapsedMs\":38.65540004335344,\"completed\":8,\"cpuMs\":11.28260005498305,\"overshootMs\":0,\"installPeakMs\":2.445999998599291,\"retained\":0,\"round\":3,\"peakMs\":3.7619000067934396,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:36.032Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-40,\"cadenceHz\":0,\"elapsedMs\":63.158700009807947,\"completed\":8,\"cpuMs\":18.690899887587876,\"overshootMs\":0,\"installPeakMs\":3.322899981867522,\"retained\":0,\"round\":3,\"peakMs\":3.7699000095017256,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:36.072Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":739,\"cadenceHz\":30,\"elapsedMs\":32.90600003674626,\"completed\":8,\"cpuMs\":1.2698998325504363,\"overshootMs\":0,\"installPeakMs\":0.6463000318035483,\"retained\":0,\"round\":1,\"peakMs\":1.0550000006332994,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:36.163Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":737,\"cadenceHz\":30,\"elapsedMs\":64.46710001910106,\"completed\":8,\"cpuMs\":6.509599974378943,\"overshootMs\":0,\"installPeakMs\":2.3128000320866706,\"retained\":0,\"round\":1,\"peakMs\":3.75729997176677,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:36.283Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-76,\"cadenceHz\":30,\"elapsedMs\":86.77100000204519,\"completed\":8,\"cpuMs\":11.875099909957499,\"overshootMs\":0,\"installPeakMs\":2.638300007674843,\"retained\":0,\"round\":1,\"peakMs\":3.767400048673153,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:36.633Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":219,\"cadenceHz\":30,\"elapsedMs\":301.83080001734199,\"completed\":8,\"cpuMs\":30.85689985891804,\"overshootMs\":0,\"installPeakMs\":2.3268000222742559,\"retained\":0,\"round\":1,\"peakMs\":3.7712999619543554,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:37.129Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":931,\"cadenceHz\":30,\"elapsedMs\":441.54080003499987,\"completed\":8,\"cpuMs\":39.29899993818253,\"overshootMs\":0,\"installPeakMs\":1.8853000365197659,\"retained\":0,\"round\":1,\"peakMs\":3.7793999654240908,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:37.294Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":495,\"cadenceHz\":30,\"elapsedMs\":131.35500001953916,\"completed\":8,\"cpuMs\":12.812600063625724,\"overshootMs\":0,\"installPeakMs\":2.1226999815553428,\"retained\":0,\"round\":1,\"peakMs\":3.760599996894598,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:37.533Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":361,\"cadenceHz\":30,\"elapsedMs\":196.48260000394658,\"completed\":8,\"cpuMs\":19.30260012159124,\"overshootMs\":0,\"installPeakMs\":2.8190999873913826,\"retained\":0,\"round\":1,\"peakMs\":3.7688000011257829,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:37.556Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1029,\"cadenceHz\":30,\"elapsedMs\":15.82929998403415,\"completed\":8,\"cpuMs\":1.4334000297822059,\"overshootMs\":0,\"installPeakMs\":0.7440999615937471,\"retained\":0,\"round\":2,\"peakMs\":1.1393000022508205,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:37.646Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-941,\"cadenceHz\":30,\"elapsedMs\":65.0739999837242,\"completed\":8,\"cpuMs\":6.377200072165579,\"overshootMs\":0,\"installPeakMs\":2.3800000199116768,\"retained\":0,\"round\":2,\"peakMs\":3.7629000144079329,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:37.783Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2513,\"cadenceHz\":30,\"elapsedMs\":103.89369999757037,\"completed\":8,\"cpuMs\":11.809999996330589,\"overshootMs\":0,\"installPeakMs\":2.7039999840781094,\"retained\":0,\"round\":2,\"peakMs\":3.757099970243871,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:38.180Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1280,\"cadenceHz\":30,\"elapsedMs\":350.9141000104137,\"completed\":8,\"cpuMs\":32.35380002297461,\"overshootMs\":0,\"installPeakMs\":2.2258000099100174,\"retained\":0,\"round\":2,\"peakMs\":3.80619999486953,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:38.682Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":512,\"cadenceHz\":30,\"elapsedMs\":444.0166999702342,\"completed\":8,\"cpuMs\":38.6610000859946,\"overshootMs\":0,\"installPeakMs\":2.1439999691210689,\"retained\":0,\"round\":2,\"peakMs\":3.7684999988414349,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:38.860Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-610,\"cadenceHz\":30,\"elapsedMs\":146.341499988921,\"completed\":8,\"cpuMs\":12.994599994271994,\"overshootMs\":0,\"installPeakMs\":1.9614999764598907,\"retained\":0,\"round\":2,\"peakMs\":3.8830999983474614,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:39.081Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":613,\"cadenceHz\":30,\"elapsedMs\":180.9771999833174,\"completed\":8,\"cpuMs\":17.4606999498792,\"overshootMs\":0,\"installPeakMs\":2.2912999847903849,\"retained\":0,\"round\":2,\"peakMs\":3.7713999627158047,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:39.107Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1329,\"cadenceHz\":30,\"elapsedMs\":20.057199988514186,\"completed\":8,\"cpuMs\":1.4624999021179975,\"overshootMs\":0,\"installPeakMs\":0.7478000479750335,\"retained\":0,\"round\":3,\"peakMs\":1.171999960206449,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:39.212Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":855,\"cadenceHz\":30,\"elapsedMs\":80.88749996386469,\"completed\":8,\"cpuMs\":6.299100001342595,\"overshootMs\":0,\"installPeakMs\":2.1935999975539746,\"retained\":0,\"round\":3,\"peakMs\":3.759999992325902,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:39.332Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":390,\"cadenceHz\":30,\"elapsedMs\":84.9937999737449,\"completed\":8,\"cpuMs\":11.849200120195747,\"overshootMs\":0,\"installPeakMs\":2.860599954146892,\"retained\":0,\"round\":3,\"peakMs\":3.7649000296369197,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:39.680Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-206,\"cadenceHz\":30,\"elapsedMs\":300.63969996990638,\"completed\":8,\"cpuMs\":28.857000055722894,\"overshootMs\":0,\"installPeakMs\":2.4026999599300327,\"retained\":0,\"round\":3,\"peakMs\":3.7672999897040428,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:40.129Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1238,\"cadenceHz\":30,\"elapsedMs\":398.19949999218809,\"completed\":8,\"cpuMs\":36.86179977376014,\"overshootMs\":0,\"installPeakMs\":1.4202999882400036,\"retained\":0,\"round\":3,\"peakMs\":3.819099976681173,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:40.265Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3623,\"cadenceHz\":30,\"elapsedMs\":104.05719996197149,\"completed\":8,\"cpuMs\":11.168099998030812,\"overshootMs\":0,\"installPeakMs\":2.1394999930635096,\"retained\":0,\"round\":3,\"peakMs\":3.758500039111823,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:40.482Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":737,\"cadenceHz\":30,\"elapsedMs\":178.8875999627635,\"completed\":8,\"cpuMs\":18.297500151675196,\"overshootMs\":0,\"installPeakMs\":3.3675000304356219,\"retained\":0,\"round\":3,\"peakMs\":3.7637000204995276,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:40.540Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-744,\"cadenceHz\":15,\"elapsedMs\":49.92439999477938,\"completed\":8,\"cpuMs\":1.3533999444916845,\"overshootMs\":0,\"installPeakMs\":0.7870999979786575,\"retained\":0,\"round\":1,\"peakMs\":1.0957999620586634,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:40.680Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-187,\"cadenceHz\":15,\"elapsedMs\":114.86949998652563,\"completed\":8,\"cpuMs\":6.340400082990527,\"overshootMs\":0,\"installPeakMs\":2.1863000001758339,\"retained\":0,\"round\":1,\"peakMs\":3.7680999957956375,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:40.979Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3148,\"cadenceHz\":15,\"elapsedMs\":265.78340004198255,\"completed\":8,\"cpuMs\":12.952100194524974,\"overshootMs\":0,\"installPeakMs\":1.4505000435747207,\"retained\":0,\"round\":1,\"peakMs\":3.759100043680519,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:41.581Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1689,\"cadenceHz\":15,\"elapsedMs\":554.947099997662,\"completed\":8,\"cpuMs\":30.447299766819925,\"overshootMs\":0,\"installPeakMs\":1.532800029963255,\"retained\":0,\"round\":1,\"peakMs\":3.782199986744672,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:42.330Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1830,\"cadenceHz\":15,\"elapsedMs\":697.7258999831975,\"completed\":8,\"cpuMs\":36.71300015412271,\"overshootMs\":0,\"installPeakMs\":1.517999975476414,\"retained\":0,\"round\":1,\"peakMs\":3.768299997318536,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:42.549Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":558,\"cadenceHz\":15,\"elapsedMs\":188.22310003452004,\"completed\":8,\"cpuMs\":11.7150999722071,\"overshootMs\":0,\"installPeakMs\":2.806000004056841,\"retained\":0,\"round\":1,\"peakMs\":3.7577999755740167,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:42.914Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":121,\"cadenceHz\":15,\"elapsedMs\":325.86839998839425,\"completed\":8,\"cpuMs\":17.633400100748987,\"overshootMs\":0,\"installPeakMs\":1.667700009420514,\"retained\":0,\"round\":1,\"peakMs\":3.773299977183342,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:42.990Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-990,\"cadenceHz\":15,\"elapsedMs\":69.35790000716225,\"completed\":8,\"cpuMs\":1.2715000193566085,\"overshootMs\":0,\"installPeakMs\":0.7846999797038734,\"retained\":0,\"round\":2,\"peakMs\":1.0239999974146486,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:43.146Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3280,\"cadenceHz\":15,\"elapsedMs\":130.01780002377928,\"completed\":8,\"cpuMs\":6.1826001037843529,\"overshootMs\":0,\"installPeakMs\":1.8965000053867698,\"retained\":0,\"round\":2,\"peakMs\":3.756200021598488,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:43.446Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1896,\"cadenceHz\":15,\"elapsedMs\":262.76479999069127,\"completed\":8,\"cpuMs\":12.844300013966859,\"overshootMs\":0,\"installPeakMs\":1.7994000227190555,\"retained\":0,\"round\":2,\"peakMs\":3.7709999596700074,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:44.063Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-894,\"cadenceHz\":15,\"elapsedMs\":570.4846999724396,\"completed\":8,\"cpuMs\":28.58500013826415,\"overshootMs\":0,\"installPeakMs\":1.9405000493861735,\"retained\":0,\"round\":2,\"peakMs\":3.7678999942727389,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:44.796Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3437,\"cadenceHz\":15,\"elapsedMs\":684.0039999806322,\"completed\":8,\"cpuMs\":37.38769993651658,\"overshootMs\":0,\"installPeakMs\":2.2470999974757435,\"retained\":0,\"round\":2,\"peakMs\":3.7672000471502544,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:45.033Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":421,\"cadenceHz\":15,\"elapsedMs\":204.18850000714884,\"completed\":8,\"cpuMs\":11.437100125476718,\"overshootMs\":0,\"installPeakMs\":2.9758000164292754,\"retained\":0,\"round\":2,\"peakMs\":3.761500003747642,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:45.415Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-420,\"cadenceHz\":15,\"elapsedMs\":344.8377000167966,\"completed\":8,\"cpuMs\":17.963099933695049,\"overshootMs\":0,\"installPeakMs\":2.3892000317573549,\"retained\":0,\"round\":2,\"peakMs\":3.7641999660991134,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:45.491Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1212,\"cadenceHz\":15,\"elapsedMs\":68.35810001939535,\"completed\":8,\"cpuMs\":2.1271000732667746,\"overshootMs\":0,\"installPeakMs\":1.3873999705538154,\"retained\":0,\"round\":3,\"peakMs\":1.7800000496208668,\"workload\":\"small\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:45.664Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":207,\"cadenceHz\":15,\"elapsedMs\":145.0479999766685,\"completed\":8,\"cpuMs\":6.667000183369964,\"overshootMs\":0,\"installPeakMs\":2.656299970112741,\"retained\":0,\"round\":3,\"peakMs\":3.7876000278629364,\"workload\":\"intermediate\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:45.961Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3512,\"cadenceHz\":15,\"elapsedMs\":264.56809998489919,\"completed\":8,\"cpuMs\":12.70479999948293,\"overshootMs\":0,\"installPeakMs\":1.5501999878324569,\"retained\":0,\"round\":3,\"peakMs\":3.764500026591122,\"workload\":\"maximum\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:46.563Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-94,\"cadenceHz\":15,\"elapsedMs\":555.7237999746576,\"completed\":8,\"cpuMs\":29.21720006270334,\"overshootMs\":0,\"installPeakMs\":2.085600048303604,\"retained\":0,\"round\":3,\"peakMs\":3.771500021684915,\"workload\":\"adversarial\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:47.312Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-593,\"cadenceHz\":15,\"elapsedMs\":700.1509999972768,\"completed\":8,\"cpuMs\":37.18740021577105,\"overshootMs\":0,\"installPeakMs\":1.6508999979123474,\"retained\":0,\"round\":3,\"peakMs\":3.769800008740276,\"workload\":\"independent\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:47.548Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3085,\"cadenceHz\":15,\"elapsedMs\":204.10159998573364,\"completed\":8,\"cpuMs\":11.351200169883669,\"overshootMs\":0,\"installPeakMs\":2.438400057144463,\"retained\":0,\"round\":3,\"peakMs\":3.7628000136464836,\"workload\":\"islands\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:47.932Z",
+      "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-652,\"cadenceHz\":15,\"elapsedMs\":343.1111999670975,\"completed\":8,\"cpuMs\":17.725200101267548,\"overshootMs\":0,\"installPeakMs\":2.3906000424176456,\"retained\":0,\"round\":3,\"peakMs\":3.771000017877668,\"workload\":\"equalCost\"}"
+    },
+    {
+      "utc": "2026-11-19T10:19:47.932Z",
+      "message": "[Operations Schedule] PASS: 63 eight-country intervals; safely suspended countries=0"
+    },
+    {
+      "utc": "2026-11-19T10:20:18.495Z",
+      "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.66 ms"
+    },
+    {
+      "utc": "2026-11-19T10:20:19.667Z",
+      "message": "[Power State P3c] PASS: 94 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:20:20.553Z",
+      "message": "[Power State P3c safety] PASS: 31 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:20:20.659Z",
+      "message": "[First Playable controls] PASS: 42 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:20:20.764Z",
+      "message": "[P2b accounting] PASS 2941 assertions; two-day requested 150.915967 / delivered 139.355967 MWh"
+    },
+    {
+      "utc": "2026-11-19T10:20:21.088Z",
+      "message": "[P3a fake] PASS 178 assertions; max checkpoint 84620 bytes; canonical encode p95 7.212 ms; no real DataStore calls"
+    },
+    {
+      "utc": "2026-11-19T10:20:26.968Z",
+      "message": "[P3b] PASS: 93 assertions; full profile 89670 bytes; whole candidate-step p95 0.465 ms (includes physical history clone/validation, not economy-only)"
+    },
+    {
+      "utc": "2026-11-19T10:20:27.285Z",
+      "message": "[P3b.3 fake] PASS: 44 assertions; no real DataStore access"
+    },
+    {
+      "utc": "2026-11-19T10:20:27.499Z",
+      "message": "[P3b4] PASS 33 assertions; fake only; 7683 bytes; 14 calls / 8 writes"
+    },
+    {
+      "utc": "2026-11-19T10:20:28.555Z",
+      "message": "[P3b5 fake] PASS 50 assertions; 5 intervals / 7 commits / 5 reads; four fault scenarios; no real calls"
+    },
+    {
+      "utc": "2026-11-19T10:20:30.731Z",
+      "message": "[P3c accounting] PASS: 1440 billed intervals / 12 exact restores; net 353303 minor; full-ring profile 92283 bytes; elapsed 1.164s"
+    },
+    {
+      "utc": "2026-11-19T10:22:55.802Z",
+      "message": "[Power State P2b world] PASS: 2916780 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:22:55.803Z",
+      "message": "[Power State P3c world] PASS: 10000 accepted seed routes/pads, four rotations and safe fallback; retained P2b gates"
+    },
+    {
+      "utc": "2026-11-19T10:22:55.803Z",
+      "message": "[P3c retained server regression] PASS; fake/local only"
+    },
+    {
+      "utc": "2026-11-19T10:23:04.252Z",
+      "message": "[First Playable remotes] PASS: 12 actual transport assertions; invalid flood snapshots 1"
+    },
+    {
+      "utc": "2026-11-19T10:23:10.056Z",
+      "message": "[First Playable normal journey] PASS: 34 assertions; 5.803 seconds; step 166; bank 31240; map 362"
+    },
+    {
+      "utc": "2026-11-19T10:23:14.995Z",
+      "message": "[P3b Bank GUI] PASS 83 assertions; status faults synthetic; actual server uses fake storage"
+    },
+    {
+      "utc": "2026-11-19T10:23:16.487Z",
+      "message": "[Power State R2 GUI] PASS: 348 engine layout assertions"
+    },
+    {
+      "utc": "2026-11-19T10:23:16.817Z",
+      "message": "[Power State R1 Currency GUI] PASS: 16 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:23:22.600Z",
+      "message": "[Power State R2 Interaction] PASS: 135 assertions"
+    },
+    {
+      "utc": "2026-11-19T10:23:29.178Z",
+      "message": "[Power State R3] PASS: 190 rendering/interaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:23:30.547Z",
+      "message": "[Power State R3.1] PASS: 52 framing/refinement assertions"
+    },
+    {
+      "utc": "2026-11-19T10:23:56.048Z",
+      "message": "[Power State R3.3] PASS: 739 synthetic assertions; no atlas fetched"
+    },
+    {
+      "utc": "2026-11-19T10:23:58.343Z",
+      "message": "[Power State R3.5] PASS: 241 presentation assertions"
+    },
+    {
+      "utc": "2026-11-19T10:24:39.785Z",
+      "message": "[Operations V13 startup] fresh resource round 1"
+    },
+    {
+      "utc": "2026-11-19T10:24:43.647Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":4.59889997728169,\"transaction\":0.9349000174552202,\"prepare\":4.858500033151358,\"solver\":3.7625000113621356,\"install\":2.172799955587834},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":2675}"
+    },
+    {
+      "utc": "2026-11-19T10:24:43.724Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:24:43.724Z",
+      "message": "[Operations V13 startup] fresh resource round 2"
+    },
+    {
+      "utc": "2026-11-19T10:24:45.882Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":2.5896999868564309,\"transaction\":1.5102000324986876,\"prepare\":2.7144000050611796,\"solver\":1.9384999759495259,\"install\":2.10829998832196},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":310}"
+    },
+    {
+      "utc": "2026-11-19T10:24:45.965Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:24:45.965Z",
+      "message": "[Operations V13 startup] fresh resource round 3"
+    },
+    {
+      "utc": "2026-11-19T10:24:48.150Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":3.2048000139184298,\"transaction\":1.1003999970853329,\"prepare\":3.8074000040069224,\"solver\":2.143199963029474,\"install\":2.100599987898022},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":732}"
+    },
+    {
+      "utc": "2026-11-19T10:24:48.232Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:24:48.232Z",
+      "message": "[Operations V13 startup] fresh resource round 4"
+    },
+    {
+      "utc": "2026-11-19T10:24:50.430Z",
+      "message": "[Reinforcement resources] PASS 2065 assertions; {\"peaks\":{\"profile\":6232,\"snapshot\":2237,\"checkpoint\":3.597100032493472,\"transaction\":1.1191999656148255,\"prepare\":3.3890000195242466,\"solver\":2.228100027423352,\"install\":1.954499981366098},\"storage\":{\"writes\":992,\"profiles\":8,\"calls\":992},\"heapDeltaKiB\":474}"
+    },
+    {
+      "utc": "2026-11-19T10:24:50.506Z",
+      "message": "[Reinforcement Stage B] PASS 61 fake transaction assertions"
+    },
+    {
+      "utc": "2026-11-19T10:24:50.939Z",
+      "message": "[Operations V13 startup] PASS 129 staggered assertions; four fresh eight-country resource runs"
+    },
+    {
+      "utc": "2026-11-19T10:24:50.947Z",
+      "message": "[Operations V13 startup] recovery PASS; total staggered/recovery 131"
+    },
+    {
+      "utc": "2026-11-19T10:24:59.489Z",
+      "message": "[Reinforcement Stage C] PASS 20179 assertions; peak preparation 0.965 / solve 0.947 / installation 0.856 ms"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.044Z",
+      "message": "[Operations V13 resize] 1366x704"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.052Z",
+      "message": "[Operations V13 resize] 1024x720"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.077Z",
+      "message": "[Operations V13 resize] 390x780"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.112Z",
+      "message": "[Operations V13 resize] 844x390"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.212Z",
+      "message": "[Operations V13 acknowledgement] \u2212 62.645 ms"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.261Z",
+      "message": "[Operations V13 acknowledgement] + 49.290 ms"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.311Z",
+      "message": "[Operations V13 acknowledgement] Switch On 49.815 ms"
+    },
+    {
+      "utc": "2026-11-19T10:25:56.361Z",
+      "message": "[Operations V13 acknowledgement] Switch On 49.745 ms"
+    },
+    {
+      "utc": "2026-11-19T10:25:58.197Z",
+      "message": "[Operations GUI] PASS: 130 assertions; map descendants=394"
+    },
+    {
+      "utc": "2026-11-19T10:25:58.211Z",
+      "message": "[Operations V13 capture] desktop"
+    },
+    {
+      "utc": "2026-11-19T10:26:13.245Z",
+      "message": "[Operations V13 capture] tablet"
+    },
+    {
+      "utc": "2026-11-19T10:26:28.276Z",
+      "message": "[Operations V13 capture] portrait"
+    },
+    {
+      "utc": "2026-11-19T10:26:43.310Z",
+      "message": "[Operations V13 capture] landscape"
+    },
+    {
+      "utc": "2026-11-19T10:26:58.330Z",
+      "message": "[Operations V13 capture] COMPLETE"
+    },
+    {
+      "utc": "2026-11-19T10:27:51.406Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":0,\"panel\":\"fleet\",\"seconds\":12.00147299998207,\"snapshots\":33,\"steps\":11,\"measurements\":0,\"focusChanges\":0,\"textChanges\":33,\"scrollChanges\":0,\"cpuMs\":10.891800164245069,\"scrollDrift\":0,\"peakMs\":0.7718999986536801,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:28:03.490Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":0,\"panel\":\"generator details\",\"seconds\":12.00075010000728,\"snapshots\":33,\"steps\":11,\"measurements\":22,\"focusChanges\":0,\"textChanges\":33,\"scrollChanges\":0,\"cpuMs\":19.32010002201423,\"scrollDrift\":0,\"peakMs\":1.5830000047571958,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:28:15.589Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":0,\"panel\":\"forecast\",\"seconds\":12.014385899994523,\"snapshots\":33,\"steps\":11,\"measurements\":11,\"focusChanges\":0,\"textChanges\":33,\"scrollChanges\":0,\"cpuMs\":15.761999995447696,\"scrollDrift\":0,\"peakMs\":1.5417999820783735,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:28:27.689Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":33,\"canvasChanges\":0,\"panel\":\"Bank\",\"seconds\":12.016098599997349,\"snapshots\":33,\"steps\":11,\"measurements\":11,\"focusChanges\":0,\"textChanges\":32,\"scrollChanges\":0,\"cpuMs\":18.03900010418147,\"scrollDrift\":0,\"peakMs\":1.7822000081650913,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:28:39.789Z",
+      "message": "[Operations V13 stability] {\"removed\":0,\"layouts\":0,\"added\":0,\"refreshes\":79,\"canvasChanges\":0,\"panel\":\"reinforcement\",\"seconds\":12.015642200014554,\"snapshots\":33,\"steps\":11,\"measurements\":11,\"focusChanges\":0,\"textChanges\":22,\"scrollChanges\":0,\"cpuMs\":18.15830043051392,\"scrollDrift\":0,\"peakMs\":1.0388000519014896,\"focusLost\":false}"
+    },
+    {
+      "utc": "2026-11-19T10:28:39.790Z",
+      "message": "[Operations V13 stability] COMPLETE Stability"
+    },
+    {
+      "utc": "2026-11-19T10:29:06.236Z",
+      "message": "[Operations V13 cleanup] normal fake First Playable startup restored; no real-service execution"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ return function()
 	end
 	waitFor(function() return First.active() ~= nil end, 60, "normal First Playable entry")
 	local first = First.active()
-	first.app.actions[first.app.view.navigation.buttons.Infrastructure]()
+	first.app.actions[first.app.view.navigation.buttons.Infrastructure](); first.app.actions[first.directory.training]()
 	waitFor(function() return Operations.active() ~= nil and Operations.active().app ~= nil end, 15, "normal Training entry")
 	local training = Operations.active(); local app = training.app; local ui = training.ui
 	check(not first.app.view.gui.Parent, "Only one live GUI/controller")
@@ -19,20 +19,26 @@ return function()
 	waitFor(function() return training.current().step >= 2 end, 8, "authoritative progression")
 	local initial = training.current()
 	check(initial.bankMinor ~= 100000 and initial.generatedKW == initial.deliveredKW, "Genuine delivered electricity earns Credits")
-	check(string.find(ui.fleet.wind.text.Text, "Weather changes", 1, true) ~= nil, "Wind explanation")
-	check(string.find(ui.fleet.peak.text.Text, "standby cost", 1, true) ~= nil, "Peaker costs explained")
+	for _, info in {{"wind", "Weather changes"}, {"peak", "standby cost"}} do
+		app.actions[ui.fleet[info[1]].details]()
+		local text=""
+		for _, item in app.view.feedback.root:GetDescendants() do if item:IsA("TextLabel") then text..=item.Text end end
+		check(string.find(text,info[2],1,true)~=nil,"Generator explanation remains accessible in details")
+		app.back()
+	end
 	for _, button in {app.view.kpis.buttons[1], app.view.kpis.buttons[4], app.view.header.overview, app.view.drawer.buttons.Overview} do
 		local before = training.current()
 		app.actions[button]()
 		local text = ""
 		for _, item in app.view.feedback.root:GetDescendants() do if item:IsA("TextLabel") then text ..= item.Text end end
 		check(string.find(text, string.format("%.2f Credits", before.bankMinor / 100), 1, true) ~= nil, "Actual Bank overview, not preview")
-		check(string.find(text, "snapshot at opening", 1, true) ~= nil and string.find(text, "illustrative", 1, true) == nil, "Honest overview time and authority")
+		check(string.find(text, "Live server values", 1, true) ~= nil and string.find(text, "illustrative", 1, true) == nil, "Honest overview time and authority")
 		app.back()
 	end
 	local descendants = #app.view.map.root:GetDescendants()
 	check(descendants <= 600, "600 map descendant bound")
 	for _, size in {Vector2.new(1366, 704), Vector2.new(1024, 720), Vector2.new(390, 780), Vector2.new(844, 390)} do
+		print(string.format("[Operations V13 resize] %dx%d",size.X,size.Y))
 		app.view.root.Size = UDim2.fromOffset(size.X, size.Y); app.refresh()
 		R.RenderStepped:Wait(); R.RenderStepped:Wait()
 		for _, row in ui.fleet do
@@ -47,8 +53,9 @@ return function()
 	local function source(id: string): any for _, v in training.current().fleet do if v.id == id then return v end end; return nil end
 	local function operate(button: TextButton, predicate: () -> boolean)
 		waitFor(function() return not training.current().saving and training.current().status ~= "Pending" end, 5, "command window")
-		app.actions[button]()
+		local sent=os.clock();app.actions[button]()
 		waitFor(predicate, 4, "authoritative control acknowledgement")
+		print(string.format("[Operations V13 acknowledgement] %s %.3f ms",button.Name,(os.clock()-sent)*1000))
 	end
 	operate(ui.fleet.gas.minus, function() return source("gas").capKW == 4900 end)
 	operate(ui.fleet.gas.plus, function() return source("gas").capKW == 5000 end)
@@ -79,5 +86,11 @@ return function()
 	waitFor(function() return gui.SelectedObject == app.view.feedback.close end, 2, "help modal focus")
 	app.back()
 	check(app.view.map.root:GetAttribute("CameraX") == camera, "Help preserves map camera")
+ app.actions[app.view.header.buttons.Alerts]()
+ local alertText=""
+ for _,item in app.view.feedback.root:GetDescendants()do if item:IsA("TextLabel")then alertText..=item.Text end end
+ check(string.find(alertText,"Last command:",1,true)~=nil,"Bounded authoritative alert details accessible")
+ app.back()
+
 	print("[Operations GUI] PASS: " .. count .. " assertions; map descendants=" .. descendants)
 end

@@ -1,0 +1,29 @@
+{
+  "status": "PASS local structural/pixel checks; visual/Roblox acceptance separate",
+  "assertions": 579,
+  "exhaustive3x3Masks": 512,
+  "uniqueCompatibleDirectedPortPairs": 128,
+  "maximumPremultipliedEdgeDelta": 0,
+  "materialClassViolations": {
+    "12": 0,
+    "5": 0,
+    "3": 0,
+    "10": 0,
+    "4": 0,
+    "1": 0,
+    "2": 0,
+    "8": 0,
+    "13": 0,
+    "7": 0,
+    "11": 0,
+    "14": 0,
+    "9": 0,
+    "6": 0
+  },
+  "elapsedSeconds": 0.2889251000015065,
+  "limits": [
+    "Source-resolution port equality does not prove Roblox filtered sampling or mip behavior.",
+    "Categorical material classification is not semantic image understanding or visual acceptance.",
+    "Four-connected Native geometry remains supplied data; no new runtime implementation."
+  ]
+}

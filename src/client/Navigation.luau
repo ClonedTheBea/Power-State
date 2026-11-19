@@ -9,8 +9,8 @@ local destinations: { Types.Destination } = {
 	{ id = "Research", label = "Research", shortLabel = "R&D", group = "Strategy", phase = "P7", description = "Research belongs to the future Government system. This route does not create a separate research economy." },
 	{ id = "Events", label = "Events", shortLabel = "Events", group = "Community", phase = "P11", description = "Event data is unavailable in this preview. No event, deadline or reward is running." },
 	{ id = "Company", label = "Company", shortLabel = "Co.", group = "Community", phase = "P9", description = "Company profiles, achievements and rankings are not connected." },
-	{ id = "News", label = "News", shortLabel = "News", group = "Community", phase = "P10", description = "No live news feed is connected. The sample ticker is a separate R4 task." },
-	{ id = "Shop", label = "Energy Shop", shortLabel = "Shop", group = "Optional", phase = "R5 preview / later live milestone", description = "The Energy Shop is not built in R2. No products, prices, boosts or purchase controls are available." },
+	{ id = "News", label = "News", shortLabel = "News", group = "Community", phase = "P10", description = "Coming later · National, Server and Global news. No headline feed, event or cross-server subscription is connected." },
+	{ id = "Shop", label = "Energy Shop", shortLabel = "Shop", group = "Optional", phase = "R5 preview / later live milestone", description = "Coming later · Credits and optional Robux categories. Future Double Income affects eligible electricity sales only; costs are unchanged. No price, boost, entitlement or purchase is active." },
 }
 for _, destination in destinations do table.freeze(destination) end
 return table.freeze(destinations)

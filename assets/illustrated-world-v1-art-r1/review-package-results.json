@@ -1,0 +1,9 @@
+{
+  "openRasterLayers": {
+    "main": 16,
+    "diagonal": 2
+  },
+  "individualSpriteCount": 18,
+  "zoomSamples": 90,
+  "sourceImageCount": 18
+}

@@ -1,0 +1,77 @@
+{
+  "status": "UNAPPROVED AMENDMENT; no artwork produced",
+  "reason": "Two diagonal junctions absent from direct twelve-pattern shoreline vocabulary",
+  "mainAtlas": "Retain approved 1024x1024 sixteen allocations unchanged",
+  "companionAtlas": {
+    "proposedFilename": "power-state-shore-diagonals-proof-v1.png",
+    "size": [
+      512,
+      256
+    ],
+    "gutterPx": 8,
+    "sha256": null,
+    "robloxImageId": null,
+    "sprites": [
+      {
+        "artId": "shore-diagonal-nw-se",
+        "cell": [
+          0,
+          0,
+          256,
+          256
+        ],
+        "sourceRect": [
+          8,
+          8,
+          240,
+          240
+        ],
+        "pivotPx": [
+          120,
+          120
+        ],
+        "worldCanvas": [
+          64,
+          64
+        ],
+        "landQuadrants": [
+          "NW",
+          "SE"
+        ],
+        "rotation": 0,
+        "status": "PROPOSED; not generated"
+      },
+      {
+        "artId": "shore-diagonal-ne-sw",
+        "cell": [
+          256,
+          0,
+          256,
+          256
+        ],
+        "sourceRect": [
+          264,
+          8,
+          240,
+          240
+        ],
+        "pivotPx": [
+          120,
+          120
+        ],
+        "worldCanvas": [
+          64,
+          64
+        ],
+        "landQuadrants": [
+          "NE",
+          "SW"
+        ],
+        "rotation": 0,
+        "status": "PROPOSED; not generated"
+      }
+    ]
+  },
+  "totalProposedMotifs": 18,
+  "totalShorelineMotifs": 14
+}

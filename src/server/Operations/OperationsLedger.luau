@@ -17,7 +17,7 @@ function Ledger.open(openingMinor: number, network: any): any
 		deliveredKwMinutes = 0, salesMinor = 0, salesCarry = 0, expensesMinor = 0, units = units }
 end
 function Ledger.validate(ledger: any, network: any, controls: any, step: number)
-	assert(ledger.version == 1 and ledger.cursor == step, "Training ledger version/cursor")
+	assert((ledger.version == 1 or ledger.version == 2) and ledger.cursor == step, "Training ledger version/cursor")
 	Model.integer(step, 0, 1000000000)
 	Model.integer(ledger.openingMinor, 0, Ledger.LIMIT)
 	Model.integer(ledger.balanceMinor, 0, Ledger.LIMIT)
@@ -41,7 +41,10 @@ function Ledger.validate(ledger: any, network: any, controls: any, step: number)
 	end
 	assert(generated == ledger.deliveredKwMinutes, "Lossless energy and paid meters")
 	assert(ledger.expensesMinor == expenses and expenses <= Ledger.LIMIT and sales <= Ledger.LIMIT, "Expense sum/bounds")
-	assert(ledger.balanceMinor == ledger.openingMinor + sales - expenses, "Bank conservation")
+	local capital = if ledger.version == 2 then ledger.capitalExpenseMinor else 0
+	Model.integer(capital, 0, Ledger.LIMIT)
+	assert(ledger.version ~= 1 or ledger.capitalExpenseMinor == nil, "Legacy ledger has no capital")
+	assert(ledger.balanceMinor == ledger.openingMinor + sales - expenses - capital, "Bank conservation")
 end
 function Ledger.reservation(ledger: any, network: any, controls: any): number
 	local total = 0
@@ -76,7 +79,7 @@ function Ledger.settle(ledger: any, network: any, controls: any, report: any, st
 	nextLedger.salesMinor, nextLedger.salesCarry = amount(nextLedger.deliveredKwMinutes, Ledger.SALE)
 	nextLedger.expensesMinor = 0
 	for _, unit in nextLedger.units do nextLedger.expensesMinor += unit.variableMinor + unit.fixedMinor end
-	nextLedger.balanceMinor = nextLedger.openingMinor + nextLedger.salesMinor - nextLedger.expensesMinor
+	nextLedger.balanceMinor = nextLedger.openingMinor + nextLedger.salesMinor - nextLedger.expensesMinor - (nextLedger.capitalExpenseMinor or 0)
 	Ledger.validate(nextLedger, network, controls, step + 1)
 	return nextLedger
 end

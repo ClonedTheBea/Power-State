@@ -100,3 +100,24 @@ Observe players without coaching: explain MW/MWh, diagnose congestion, connect a
 For this milestone check all 19 required Markdown files exist, internal relative file links resolve, decision/phase identifiers agree and no application code or dependencies were added. Review specifications manually for clock, units, authority, reset behavior and phase dependencies. These checks validate documents only.
 
 Future phase completion report must list scope delivered, test commands/environment and actual results, known failures/untested manual steps, changed decisions and remaining work. Release blockers include save corruption, duplicated rewards, unauthorized cross-country mutations, unbounded work, invalid energy accounting and unusable primary touch controls. Publishing remains a separately authorized action.
+
+
+## Grid Reinforcement v1 opt-in Test checks
+
+In Test10776833313 only, use `ReinforcementTests` with other regression flags off. `A` runs pure model/overlay/history checks; `B` adds fake transaction/fault checks; `All` adds actual solver one/seven-day comparisons and normal-navigation client journey. The All journey includes a labelled three-second fake-save delay for pending-state inspection and waits for natural demand peaks; it never sets the simulation clock or gives funds. `Regression` runs reinforced eight-country resources plus retained Operations encoding/atomic/scenario/security/lifecycle/oracle/yield/scheduler gates. Restart Play between runs and clear the attribute afterward. `OperationsV11Legacy=true` separately retains First Playable/P3a/P3b/P3c/10,000-seed and shared GUI coverage.
+
+Use canonical complete-record equality for restored ledgers and permanent receipts; raw JSON property order is not semantic state. Preserve failed logs and test the same assertions after fixes. Screenshots and engine-method input are not physical-device acceptance. Never enable any real execution gate for these suites.
+
+`ReinforcementTests="Capture"` is an optional Test-only evidence runner, excluded from the default build. It first runs A/B and the normal Operations GUI suite, shows an explicitly labelled insufficient-funds presentation fixture (no server financial mutation), then invokes the ordinary quote/confirm actions against the fake host. A12-second injected fake response delay exposes the real pending UI; the saved result and capacity come from the normal transaction. It does not prove a12-second service latency guarantee. Clear `ReinforcementTests`, `ReinforcementReady` and legacy runner flags before ordinary Play. See [final evidence and known limits](GRID-REINFORCEMENT-V1-VALIDATION.md).
+
+## Operations v1.3 opt-in acceptance
+
+Use `OperationsV13="All"` only in Studio Test with other opt-in runner flags unset. An explicit server-ready attribute separates repeated eight-country acceptance from aggressive client viewport tests. Client instrumentation records snapshots, full layouts, measurements, canvas changes, remounts, focus/scroll retention and active presentation time. Five panels remain open for twelve seconds each while authoritative steps advance. Direct CanvasPosition setup is not physical-swipe evidence. `OperationsV13="Server"` repeats startup/fault/economy checks; `"Capture"` runs the ordinary GUI suite then four fifteen-second safe-root capture windows. All are absent from the production build. Clear runner/readiness attributes after Play.
+
+The normal reinforcement journey waits for its specified phase of the unchanged cyclic scenario, so preceding tests cannot make it miss the first peak and assert against an unrelated time. Keep the bounded wait and all electrical/financial assertions. Resource failures retain exact step/status/capital diagnostics plus elapsed time, largest Heartbeat gap and batch counters. Never increase the runtime deadline to make the test pass. [Report and physical-device limitations](OPERATIONS-V13-VALIDATION.md).
+
+## Visual Redesign v1 acceptance runner
+
+In stopped Studio/Test10776833313, set `ReplicatedStorage.VisualRedesignTests` to `Screens` for genuine visual capture pauses and live stability, or `All` for directory/fleet/interaction/remote/reinforcement journey acceptance. Clear other opt-in runners before starting. The runner uses fake storage and refuses other environments. `Screens` logs named12-second capture windows; screenshots must be captured during that window, not inferred from an old log marker. Injected safe-root screenshots are engine layout evidence, not hardware touch/gamepad acceptance.
+
+Retain separate `OperationsV11Legacy=true`, `ReinforcementTests="Regression"`, `OperationsV13="Server"` runs to avoid competing acceptance workloads. No real adapter flags are enabled. Stop Play and clear flags after acceptance. Both Rojo builds/static checks and full-project Script Analysis remain required.

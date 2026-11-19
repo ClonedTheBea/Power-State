@@ -1,0 +1,114 @@
+[
+  {
+    "id": "shore-n",
+    "prompt": "Use case: stylized-concept. Create ONE modular game shoreline sprite shore-n. First reference is an exact geometry guide: upper half ocean, lower half grass; boundary MUST stay exactly horizontal at 50% image height, meeting both left/right image edges at midpoint. Second/third references define softly illustrated Power State strategy-game style. Paint a low rocky shore, restrained grey warm stones, narrow pale sandy lip, muted sage grass on SOUTH side and shallow teal blue water on NORTH side. North-up elevated 2.5D, upper-left lighting, short lower-right shadows; modest relief, not a tall cliff. Artwork only a narrow horizontal band around centre: from y=38% to62%, with soft transparent falloff toward both north and south; continue seamlessly all the way to left and right edges, no end caps. Genuine transparent background outside band. Keep water strictly north of the centre and land strictly south. No bending the shore, no diagonal perspective rotation, no detached island, no buildings, no plants taller than grass, no text, no border. Hand-painted coherent natural texture readable at 35–115px. Square canvas. It is a tile edge strip, not a whole landscape.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-4ada95e6-a207-45d9-8e5a-c2068c0add8c.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-e",
+    "prompt": "Create ONE modular Power State shoreline sprite. First image is EXACT GEOMETRY guide, second painted north shore is STYLE ONLY, third hill is palette/style. Soft hand-painted elevated 2.5D, north-up upper-left lighting, short lower-right shadows. Low warm grey rocky/sandy lip, muted sage grass, restrained teal shallow water. Keep the shoreline centred exactly as guide. Only a narrow band around boundary, 12% canvas width each side, soft alpha falloff away from shore; genuine transparency elsewhere. Band continues to image edges, no end caps. No horizon, text, buildings, trees, whole scene, island pedestal or diagonal perspective rotation. Independently paint the lighting correctly; DO NOT rotate or mirror the reference. Square canvas. Boundary is vertical x=50%, grass WEST/left, water EAST/right. Runs full top to bottom.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-8fa1f509-d1de-46a9-98de-1f1b7762f7f3.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-s",
+    "prompt": "Create ONE modular Power State shoreline sprite. First image is EXACT GEOMETRY guide, second painted north shore is STYLE ONLY, third hill is palette/style. Soft hand-painted elevated 2.5D, north-up upper-left lighting, short lower-right shadows. Low warm grey rocky/sandy lip, muted sage grass, restrained teal shallow water. Keep the shoreline centred exactly as guide. Only a narrow band around boundary, 12% canvas width each side, soft alpha falloff away from shore; genuine transparency elsewhere. Band continues to image edges, no end caps. No horizon, text, buildings, trees, whole scene, island pedestal or diagonal perspective rotation. Independently paint the lighting correctly; DO NOT rotate or mirror the reference. Square canvas. Boundary horizontal y=50%, grass NORTH/top, water SOUTH/bottom. Runs full left to right.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-49e2729b-1e8d-4902-8041-b75a84981add.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-w",
+    "prompt": "Create ONE modular Power State shoreline sprite. First image is EXACT GEOMETRY guide, second painted north shore is STYLE ONLY, third hill is palette/style. Soft hand-painted elevated 2.5D, north-up upper-left lighting, short lower-right shadows. Low warm grey rocky/sandy lip, muted sage grass, restrained teal shallow water. Keep the shoreline centred exactly as guide. Only a narrow band around boundary, 12% canvas width each side, soft alpha falloff away from shore; genuine transparency elsewhere. Band continues to image edges, no end caps. No horizon, text, buildings, trees, whole scene, island pedestal or diagonal perspective rotation. Independently paint the lighting correctly; DO NOT rotate or mirror the reference. Square canvas. Boundary vertical x=50%, water WEST/left, grass EAST/right. Runs full top to bottom.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-389ef5dc-2b45-4d75-be27-aa762305b070.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-convex-ne",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references are painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water, same palette/style as straight shore. Paint ONLY a narrow L-shaped band following the boundary, about12% canvas each side, with genuinely transparent soft outer falloff. Keep straight shore legs centred on guide boundaries; run each leg to its designated image edge with no cap. Central elbow remains precisely at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame, no floating island. Square canvas. Independently author this orientation, never rotate/mirror references. LAND ONLY SOUTHWEST quadrant. Water other3quadrants. Convex land tip atcentre, shore legs extend LEFT and DOWN.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-1acd1cc8-6211-4a4c-8cb8-c76daaf59d63.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-convex-se",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references are painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water, same palette/style as straight shore. Paint ONLY a narrow L-shaped band following the boundary, about12% canvas each side, with genuinely transparent soft outer falloff. Keep straight shore legs centred on guide boundaries; run each leg to its designated image edge with no cap. Central elbow remains precisely at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame, no floating island. Square canvas. Independently author this orientation, never rotate/mirror references. LAND ONLY NORTHWEST quadrant. Water other3quadrants. Convex land tip atcentre, shore legs extend LEFT and UP.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-9e236cd2-937b-4914-a067-6fcbba81089c.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-convex-sw",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references are painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water, same palette/style as straight shore. Paint ONLY a narrow L-shaped band following the boundary, about12% canvas each side, with genuinely transparent soft outer falloff. Keep straight shore legs centred on guide boundaries; run each leg to its designated image edge with no cap. Central elbow remains precisely at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame, no floating island. Square canvas. Independently author this orientation, never rotate/mirror references. LAND ONLY NORTHEAST quadrant. Water other3quadrants. Convex land tip atcentre, shore legs extend RIGHT and UP.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-6bc67f7e-780e-489e-8ddc-a1c86ee60ff6.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-convex-nw",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references are painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water, same palette/style as straight shore. Paint ONLY a narrow L-shaped band following the boundary, about12% canvas each side, with genuinely transparent soft outer falloff. Keep straight shore legs centred on guide boundaries; run each leg to its designated image edge with no cap. Central elbow remains precisely at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame, no floating island. Square canvas. Independently author this orientation, never rotate/mirror references. LAND ONLY SOUTHEAST quadrant. Water other3quadrants. Convex land tip atcentre, shore legs extend RIGHT and DOWN.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-f5934b91-c01c-4554-ada8-9a522f7dc8db.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-concave-ne",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water. Paint ONLY narrow L-shaped shore band, about12% canvas each side, genuinely transparent soft outer falloff. Keep straight legs centred on guide boundaries, reaching designated image edges with no end caps. Central elbow at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame or floating island. Square canvas. Independently author orientation, never rotate/mirror. WATER ONLY NORTHEAST quadrant, LAND other3quadrants. Concave land inlet, shore legs UP and RIGHT.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-2cdb1737-9ba6-4f59-befd-0bb2e36c2ae9.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-concave-se",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water. Paint ONLY narrow L-shaped shore band, about12% canvas each side, genuinely transparent soft outer falloff. Keep straight legs centred on guide boundaries, reaching designated image edges with no end caps. Central elbow at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame or floating island. Square canvas. Independently author orientation, never rotate/mirror. WATER ONLY SOUTHEAST quadrant, LAND other3quadrants. Concave land inlet, shore legs DOWN and RIGHT.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-062da430-68b8-4591-b7b0-41e78a1a0ef7.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-concave-sw",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water. Paint ONLY narrow L-shaped shore band, about12% canvas each side, genuinely transparent soft outer falloff. Keep straight legs centred on guide boundaries, reaching designated image edges with no end caps. Central elbow at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame or floating island. Square canvas. Independently author orientation, never rotate/mirror. WATER ONLY SOUTHWEST quadrant, LAND other3quadrants. Concave land inlet, shore legs DOWN and LEFT.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-0d406d7e-9789-4ac1-8c91-78421a77c8a2.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-concave-nw",
+    "prompt": "Create ONE modular Power State shoreline sprite. First reference is EXACT occupancy geometry; green is land and dark blue water, junction precisely at centre. Other references painted STYLE only. Soft painted elevated 2.5D strategy game, north-up, upper-left lighting, short lower-right shadows, low grey rocks and pale sandy lip, muted sage grass and subtle teal shallow water. Paint ONLY narrow L-shaped shore band, about12% canvas each side, genuinely transparent soft outer falloff. Keep straight legs centred on guide boundaries, reaching designated image edges with no end caps. Central elbow at50%,50%; no curved bulge or diagonal shore. No trees/buildings/text/horizon/frame or floating island. Square canvas. Independently author orientation, never rotate/mirror. WATER ONLY NORTHWEST quadrant, LAND other3quadrants. Concave land inlet, shore legs UP and LEFT.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-1adbb074-c6a7-4cfd-bd50-2d8ba5b19846.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-diagonal-nw-se",
+    "prompt": "Create ONE Power State modular diagonal shore-junction sprite. First reference exact geometry: four quadrants meet precisely centre, two diagonal land quadrants, two diagonal water quadrants. Second/third references painted STYLE only. Soft hand-painted elevated2.5D north-up, light upper-left, short lower-right shadows; low warm grey shore stones, pale sand, sage grass, teal shallow water. Paint narrow CROSS-SHAPED boundary band centred x=50%,y=50%, extends all4edges atmidpoint. Genuine transparency away from band, softly feathered outer falloff. Each arm straight, about12% canvas band each side. IMPORTANT preserve centre shared point: diagonally separated land MUST NOT form a bridge; water must not cut an invented channel between them. Author central water treatment ONCE, not two overlapping corner paintings, no double-darkening. No islands, rounded landbulges, diagonal perspective rotation, text/buildings/trees/horizon. Square canvas. Independently paint orientation, no rotations/mirrors. LAND northwest and southeast ONLY; WATER northeast and southwest ONLY.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-08025e71-b214-4795-95f6-d5675a8a929e.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  },
+  {
+    "id": "shore-diagonal-ne-sw",
+    "prompt": "Create ONE Power State modular diagonal shore-junction sprite. First reference exact geometry: four quadrants meet precisely centre, two diagonal land quadrants, two diagonal water quadrants. Second/third references painted STYLE only. Soft hand-painted elevated2.5D north-up, light upper-left, short lower-right shadows; low warm grey shore stones, pale sand, sage grass, teal shallow water. Paint narrow CROSS-SHAPED boundary band centred x=50%,y=50%, extends all4edges atmidpoint. Genuine transparency away from band, softly feathered outer falloff. Each arm straight, about12% canvas band each side. IMPORTANT preserve centre shared point: diagonally separated land MUST NOT form a bridge; water must not cut an invented channel between them. Author central water treatment ONCE, not two overlapping corner paintings, no double-darkening. No islands, rounded landbulges, diagonal perspective rotation, text/buildings/trees/horizon. Square canvas. Independently paint orientation, no rotations/mirrors. LAND northeast and southwest ONLY; WATER northwest and southeast ONLY.",
+    "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-27d083c9-c1ed-46ae-a050-6b2ffb7cc07c.png",
+    "tool": "image_gen.imagegen",
+    "model": "not exposed",
+    "date": "2026-11-19"
+  }
+]

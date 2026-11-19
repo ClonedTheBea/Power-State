@@ -4,6 +4,8 @@ local Projection = {}
 local names = {gas = "Central Gas", wind = "Coastal Wind", peak = "Reserve Peaker"}
 function Projection.create(actor: any): any
 	local state = actor.state; local report = state.report
+	local eastCapacity = 3000
+	for _, line in state.network.lines do if line.id == "sb" then eastCapacity = line.capacityKW end end
 	local fleet = {}; local available, headroom = 0, 0
 	local alerts = {}
 	for _, source in state.network.sources do
@@ -23,13 +25,13 @@ function Projection.create(actor: any): any
 	local demand = if report then report.requestedKW else state.network.sinks[1].requestedKW + state.network.sinks[2].requestedKW
 	local delivered = if report then report.deliveredKW else 0
 	if report and report.unmetKW > 0 then table.insert(alerts, string.format("Unserved demand: %.3f MW", report.unmetKW / 1000)) end
-	if report and state.network.sinks[2].requestedKW > 3000 then table.insert(alerts, "East feeder constrained: 3 MW route. More generators cannot widen this connection.") end
+	if report and state.network.sinks[2].requestedKW > eastCapacity then table.insert(alerts, string.format("East feeder constrained: %.0f MW route. More generators cannot widen this connection.", eastCapacity / 1000)) end
 	if headroom < math.max(500, math.ceil(demand / 10)) then table.insert(alerts, "Low dispatchable headroom; review the forecast and peaker.") end
 	if actor.status == "Suspended" or actor.status == "Invalidated" then table.insert(alerts, actor.reason or "Calculation unavailable; retry safely") end
 	if actor.status == "Pending" then table.insert(alerts, "Calculation pending; previous completed electricity result shown") end
 	assert(#alerts <= 8, "Bounded deduplicated alerts")
-	if not actor.forecast or state.step - actor.forecast.step >= 15 or actor.forecastControls ~= actor.controlsRevision then
-		actor.forecast = Scenario.forecast(state); actor.forecastControls = actor.controlsRevision
+	if not actor.forecast or state.step - actor.forecast.step >= 15 or actor.forecastControls ~= actor.controlsRevision or actor.forecastTopology ~= state.topologyRevision then
+		actor.forecast = Scenario.forecast(state); actor.forecastControls = actor.controlsRevision; actor.forecastTopology = state.topologyRevision
 	end
 	return {version = 1, mode = "Operations", epoch = actor.epoch, revision = state.countryRevision, nextSequence = actor.nextSequence,
 		step = state.step, status = actor.status, reason = actor.reason, outcome = actor.outcome or "Ready", fleet = fleet,
@@ -38,7 +40,12 @@ function Projection.create(actor: any): any
 		reliability = if state.requestedKwMinutes > 0 then state.deliveredKwMinutes / state.requestedKwMinutes else 1,
 		bankMinor = state.ledger.balanceMinor, savedBankMinor = actor.record.state.ledger.balanceMinor,
 		salesMinor = state.ledger.salesMinor, expensesMinor = state.ledger.expensesMinor,
-		forecast = actor.forecast, alerts = alerts, saving = actor.saving == true, saveBlocked = actor.saveBlocked == true,
+		capitalExpenseMinor = state.ledger.capitalExpenseMinor or 0, eastCapacityKW = eastCapacity,
+		investment = {version=1, built=eastCapacity == 4000, priceMinor=50000, bufferMinor=25000,
+			outcome=actor.investmentOutcome or "Ready", pending=actor.investing == true,
+			quoteId=if actor.quote then actor.quote.id else nil,
+			quoteRemaining=if actor.quote then math.max(0, actor.quote.expires-os.clock()) else 0},
+		forecast = actor.forecast, alerts = alerts, saving = actor.saving == true or actor.investing == true, saveBlocked = actor.saveBlocked == true,
 		flowsKW = if report then report.flowsKW else {}, sinks = if report then report.sinks else {}}
 end
 return table.freeze(Projection)

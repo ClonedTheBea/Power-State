@@ -48,23 +48,16 @@ function Client.mount(playerGui:PlayerGui)
  table.insert(preview.links,{from=current.proposedLine.from,to=p.id})
  app=App.mount(playerGui,preview)
  local view=app.view
+
  local playable:any=nil
+ local directory:any=nil
  local button=C.button(view.inspector.note.Parent,"Review connection")
  button.Size=UDim2.new(1,-8,0,44);button.LayoutOrder=3;button.ZIndex=11
  local confirm=C.button(view.feedback.root,"Build for 1,000 Credits")
  confirm.Size=UDim2.new(1,-32,0,44);confirm.Position=UDim2.new(0,16,1,-60);confirm.ZIndex=32
+ local categories=require(script.Parent.Parent.Views.ProjectCategories).create(app,"ConstructionOverview",confirm)
  local scroll=view.feedback.root:FindFirstChild("Message") :: ScrollingFrame
- local body=scroll:FindFirstChildWhichIsA("TextLabel") :: TextLabel
- -- Measure the full string: live TextBounds can reflect the clipped viewport.
- scroll.AutomaticCanvasSize=Enum.AutomaticSize.None
- body.AutomaticSize=Enum.AutomaticSize.None
- local function resizeCanvas()
-  local width=math.max(1,scroll.AbsoluteSize.X-8)
-  local bounds=game:GetService("TextService"):GetTextSize(body.Text,body.TextSize,body.Font,Vector2.new(width,100000))
-  body.Size=UDim2.new(1,-8,0,bounds.Y+4);scroll.CanvasSize=UDim2.fromOffset(0,bounds.Y+12)
- end
- local canvasConnections={body:GetPropertyChangedSignal("Text"):Connect(resizeCanvas),body:GetPropertyChangedSignal("TextSize"):Connect(resizeCanvas),scroll:GetPropertyChangedSignal("AbsoluteSize"):Connect(resizeCanvas)}
- resizeCanvas()
+ -- Shared FeedbackView owns full-string sizing for construction and Bank alike.
  local function send(command:string)
   local sequence=nextSequence;nextSequence+=1
   intent:FireServer({version=1,epoch=current.epoch,sequence=sequence,command=command,quoteId=if command=="Confirm"then current.construction.quoteId else nil})
@@ -102,16 +95,18 @@ function Client.mount(playerGui:PlayerGui)
   confirm.Visible=view.feedback.root:GetAttribute("ConstructionOverview")==true
   local action=QuoteAction.resolve(current,healthy,os.clock()-received)
   confirm.Active=action~="Disabled";confirm.Selectable=confirm.Active
-  confirm.BackgroundColor3=if confirm.Active then Theme.raised else Theme.panel
+  C.action(confirm,if confirm.Active then "financial" else "secondary")
   confirm.Text=if current.built then "Connected · saved in this Test server"elseif current.construction.state=="Saving" then "Checking saved result…"elseif action=="Quote" then "Refresh Quote"else "Build for 1,000 Credits"
   confirm:SetAttribute("AccessibleLabel",confirm.Text)
   if view.feedback.root.Visible and confirm.Visible then
-   scroll.Size=UDim2.new(1,-32,1,-140);view.feedback.updateText(text())
+   scroll.Size=UDim2.new(1,-32,1,-140);view.feedback.updateDetails(text())
   elseif view.feedback.root.Visible and view.feedback.root:GetAttribute("ConstructionBank")==true then
    scroll.Size=UDim2.new(1,-32,1,-76)
-   view.feedback.updateText(Bank.text(current)..string.format("\n\nConstruction spending: %.2f Credits (capital; excluded from operating net)",current.finance.bank.constructionSpentMinor/100))
+   view.feedback.updateDetails(Bank.text(current)..string.format("\n\nConstruction spending: %.2f Credits (capital; excluded from operating net)",current.finance.bank.constructionSpentMinor/100))
   end
+  categories.refresh()
   if playable then playable.refresh()end
+  if directory then directory.refresh()end
  end
  app.bind(button,function()
   send("Quote");app.showFeedback("Connect new district",text(),button,"info")
@@ -134,15 +129,18 @@ function Client.mount(playerGui:PlayerGui)
   intent:FireServer({version=1,kind="SetGenerator",epoch=current.epoch,sequence=sequence,revision=current.controlRevision,assetId=current.generatorId,online=not current.online})
  end
  playable=require(script.Parent.PlayablePresentation).attach(app,function()return current end,function()return os.clock()-received<3 end,requestToggle,function()app.actions[button]()end)
- update=function()app.refresh()end
+ view.navigation.buttons.Build:SetAttribute("LabelOverride","Build")
+ view.drawer.buttons.Build.Text="Build";view.drawer.buttons.Infrastructure.Text="Infrastructure"
+ directory=require(script.Parent.InfrastructureDirectory).create(app,function()return current end,requestToggle,function()return os.clock()-received<3 end)
+ update=function()app.present()end
  app.setPresenter(refresh)
  local beat=game:GetService("RunService").Heartbeat:Connect(function()if os.clock()-received>=3 or (confirm.Visible and view.feedback.root.Visible and current.construction.expiresIn>0 and os.clock()-received>=current.construction.expiresIn)then refresh()end end)
  local function cleanup()
   if destroyed then return end;destroyed=true;mounted=nil
-  intent:FireServer({version=1,command="Unsubscribe"});connection:Disconnect();beat:Disconnect();for _,c in canvasConnections do c:Disconnect()end;update=nil
+  intent:FireServer({version=1,command="Unsubscribe"});connection:Disconnect();beat:Disconnect();update=nil
  end
  view.gui.Destroying:Once(cleanup)
- mounted={app=app,button=button,confirm=confirm,toggle=playable.toggle,requestToggle=requestToggle,current=function()return current end,
+ mounted={app=app,directory=directory,button=button,confirm=confirm,toggle=playable.toggle,requestToggle=requestToggle,current=function()return current end,
   destroy=function()cleanup();app.destroy()end}
  return mounted
 end

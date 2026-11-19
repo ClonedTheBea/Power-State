@@ -27,6 +27,25 @@ function Components.panel(parent: Instance, name: string): Frame
 	return frame
 end
 
+-- Explicit chrome treatment: never add gradients to every terrain/map object.
+function Components.surface(parent: GuiObject)
+ if not Theme.visualRedesign or parent:FindFirstChild("SurfaceDepth") then return end
+ local gradient=Instance.new("UIGradient");gradient.Name="SurfaceDepth"
+ gradient.Color=ColorSequence.new(Color3.new(1,1,1),Theme.surfaceShade);gradient.Rotation=90;gradient.Parent=parent
+end
+function Components.action(button: TextButton, kind: string)
+ local primary=kind=="primary";local money=kind=="financial"
+ button:SetAttribute("VisualKind",kind)
+ button.BackgroundColor3=if primary then Theme.accent elseif money then Theme.credits else Theme.raised
+ button.TextColor3=if primary or money then Theme.onAccent else Theme.text
+ button.Font=Theme.fontBold
+end
+function Components.selected(button: TextButton, selected: boolean)
+ button.BackgroundColor3=if selected then Theme.selected else Theme.panel
+ local stroke=button:FindFirstChildOfClass("UIStroke")
+ if stroke then stroke.Color=if selected then Theme.grid else Theme.border;stroke.Thickness=if selected then 2 else 1 end
+end
+
 function Components.label(parent: Instance, text: string, size: number?, color: Color3?): TextLabel
 	local label = Instance.new("TextLabel")
 	label.Name = "Label"
@@ -51,7 +70,7 @@ function Components.button(parent: Instance, text: string): TextButton
 	button.BorderSizePixel = 0
 	button.TextColor3 = Theme.text
 	button.TextSize = Theme.bodySize
-	button.Font = Theme.font
+	button.Font = if Theme.visualRedesign then Enum.Font.GothamMedium else Theme.font
 	button.Text = text
 	button.TextWrapped = true
 	button.AutoButtonColor = true

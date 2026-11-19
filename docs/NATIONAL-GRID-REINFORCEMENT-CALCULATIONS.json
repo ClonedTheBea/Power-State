@@ -1,0 +1,1038 @@
+{
+  "method": "Analytical radial design replay, not engine/solver acceptance",
+  "proposedPriceCredits": 500,
+  "results": [
+    {
+      "base": {
+        "minutes": 120,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.225,
+        "sourceMWh": [
+          8.754833333333334,
+          0.9319,
+          0.5382666666666667
+        ],
+        "salesMinor": 122700,
+        "variableMinor": 75958,
+        "fixedMinor": 3600,
+        "netMinor": 43142,
+        "bankMinor": 143142,
+        "energyReliability": 0.9761336515513126,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 120,
+        "capacityKW": 3500,
+        "policy": "ready",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.475,
+        "sourceMWh": [
+          8.760233333333334,
+          0.9319,
+          0.7828666666666667
+        ],
+        "salesMinor": 125700,
+        "variableMinor": 78692,
+        "fixedMinor": 3600,
+        "netMinor": 43408,
+        "bankMinor": 143408,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25,
+      "incrementalNetMinor": 266,
+      "extrapolated500CreditPaybackSimHours": 375.9398496240602
+    },
+    {
+      "base": {
+        "minutes": 120,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.225,
+        "sourceMWh": [
+          8.754833333333334,
+          0.9319,
+          0.5382666666666667
+        ],
+        "salesMinor": 122700,
+        "variableMinor": 75958,
+        "fixedMinor": 3600,
+        "netMinor": 43142,
+        "bankMinor": 143142,
+        "energyReliability": 0.9761336515513126,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 120,
+        "capacityKW": 4000,
+        "policy": "ready",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.475,
+        "sourceMWh": [
+          8.760233333333334,
+          0.9319,
+          0.7828666666666667
+        ],
+        "salesMinor": 125700,
+        "variableMinor": 78692,
+        "fixedMinor": 3600,
+        "netMinor": 43408,
+        "bankMinor": 143408,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25,
+      "incrementalNetMinor": 266,
+      "extrapolated500CreditPaybackSimHours": 375.9398496240602
+    },
+    {
+      "base": {
+        "minutes": 120,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 9.686733333333333,
+        "sourceMWh": [
+          8.754833333333334,
+          0.9319,
+          0.0
+        ],
+        "salesMinor": 116240,
+        "variableMinor": 70038,
+        "fixedMinor": 3200,
+        "netMinor": 43002,
+        "bankMinor": 143002,
+        "energyReliability": 0.9247478122513922,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 120,
+        "capacityKW": 3500,
+        "policy": "off",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 9.692133333333333,
+        "sourceMWh": [
+          8.760233333333334,
+          0.9319,
+          0.0
+        ],
+        "salesMinor": 116305,
+        "variableMinor": 70081,
+        "fixedMinor": 3200,
+        "netMinor": 43024,
+        "bankMinor": 143024,
+        "energyReliability": 0.9252633253778838,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.005399999999999849,
+      "incrementalNetMinor": 22,
+      "extrapolated500CreditPaybackSimHours": 4545.454545454545
+    },
+    {
+      "base": {
+        "minutes": 120,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 9.686733333333333,
+        "sourceMWh": [
+          8.754833333333334,
+          0.9319,
+          0.0
+        ],
+        "salesMinor": 116240,
+        "variableMinor": 70038,
+        "fixedMinor": 3200,
+        "netMinor": 43002,
+        "bankMinor": 143002,
+        "energyReliability": 0.9247478122513922,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 120,
+        "capacityKW": 4000,
+        "policy": "off",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 9.692133333333333,
+        "sourceMWh": [
+          8.760233333333334,
+          0.9319,
+          0.0
+        ],
+        "salesMinor": 116305,
+        "variableMinor": 70081,
+        "fixedMinor": 3200,
+        "netMinor": 43024,
+        "bankMinor": 143024,
+        "energyReliability": 0.9252633253778838,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.005399999999999849,
+      "incrementalNetMinor": 22,
+      "extrapolated500CreditPaybackSimHours": 4545.454545454545
+    },
+    {
+      "base": {
+        "minutes": 120,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.225,
+        "sourceMWh": [
+          8.754833333333334,
+          0.9319,
+          0.5382666666666667
+        ],
+        "salesMinor": 122700,
+        "variableMinor": 75958,
+        "fixedMinor": 3443,
+        "netMinor": 43299,
+        "bankMinor": 143299,
+        "energyReliability": 0.9761336515513126,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 120,
+        "capacityKW": 3500,
+        "policy": "responsive",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.475,
+        "sourceMWh": [
+          8.760233333333334,
+          0.9319,
+          0.7828666666666667
+        ],
+        "salesMinor": 125700,
+        "variableMinor": 78692,
+        "fixedMinor": 3443,
+        "netMinor": 43565,
+        "bankMinor": 143565,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25,
+      "incrementalNetMinor": 266,
+      "extrapolated500CreditPaybackSimHours": 375.9398496240602
+    },
+    {
+      "base": {
+        "minutes": 120,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.225,
+        "sourceMWh": [
+          8.754833333333334,
+          0.9319,
+          0.5382666666666667
+        ],
+        "salesMinor": 122700,
+        "variableMinor": 75958,
+        "fixedMinor": 3443,
+        "netMinor": 43299,
+        "bankMinor": 143299,
+        "energyReliability": 0.9761336515513126,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 120,
+        "capacityKW": 4000,
+        "policy": "responsive",
+        "requestedMWh": 10.475,
+        "deliveredMWh": 10.475,
+        "sourceMWh": [
+          8.760233333333334,
+          0.9319,
+          0.7828666666666667
+        ],
+        "salesMinor": 125700,
+        "variableMinor": 78692,
+        "fixedMinor": 3443,
+        "netMinor": 43565,
+        "bankMinor": 143565,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25,
+      "incrementalNetMinor": 266,
+      "extrapolated500CreditPaybackSimHours": 375.9398496240602
+    },
+    {
+      "base": {
+        "minutes": 240,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.741666666666667,
+        "sourceMWh": [
+          14.308133333333334,
+          2.8735,
+          0.5600333333333334
+        ],
+        "salesMinor": 212900,
+        "variableMinor": 120625,
+        "fixedMinor": 7200,
+        "netMinor": 85075,
+        "bankMinor": 185075,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 240,
+        "capacityKW": 3500,
+        "policy": "ready",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 18.0,
+        "sourceMWh": [
+          14.314866666666667,
+          2.8735,
+          0.8116333333333333
+        ],
+        "salesMinor": 216000,
+        "variableMinor": 123445,
+        "fixedMinor": 7200,
+        "netMinor": 85355,
+        "bankMinor": 185355,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25833333333333286,
+      "incrementalNetMinor": 280,
+      "extrapolated500CreditPaybackSimHours": 714.2857142857143
+    },
+    {
+      "base": {
+        "minutes": 240,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.741666666666667,
+        "sourceMWh": [
+          14.308133333333334,
+          2.8735,
+          0.5600333333333334
+        ],
+        "salesMinor": 212900,
+        "variableMinor": 120625,
+        "fixedMinor": 7200,
+        "netMinor": 85075,
+        "bankMinor": 185075,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 240,
+        "capacityKW": 4000,
+        "policy": "ready",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 18.0,
+        "sourceMWh": [
+          14.314866666666667,
+          2.8735,
+          0.8116333333333333
+        ],
+        "salesMinor": 216000,
+        "variableMinor": 123445,
+        "fixedMinor": 7200,
+        "netMinor": 85355,
+        "bankMinor": 185355,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25833333333333286,
+      "incrementalNetMinor": 280,
+      "extrapolated500CreditPaybackSimHours": 714.2857142857143
+    },
+    {
+      "base": {
+        "minutes": 240,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.181633333333334,
+        "sourceMWh": [
+          14.308133333333334,
+          2.8735,
+          0.0
+        ],
+        "salesMinor": 206179,
+        "variableMinor": 114465,
+        "fixedMinor": 6400,
+        "netMinor": 85314,
+        "bankMinor": 185314,
+        "energyReliability": 0.9545351851851852,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 240,
+        "capacityKW": 3500,
+        "policy": "off",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.188366666666667,
+        "sourceMWh": [
+          14.314866666666667,
+          2.8735,
+          0.0
+        ],
+        "salesMinor": 206260,
+        "variableMinor": 114518,
+        "fixedMinor": 6400,
+        "netMinor": 85342,
+        "bankMinor": 185342,
+        "energyReliability": 0.9549092592592593,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.006733333333333036,
+      "incrementalNetMinor": 28,
+      "extrapolated500CreditPaybackSimHours": 7142.857142857143
+    },
+    {
+      "base": {
+        "minutes": 240,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.181633333333334,
+        "sourceMWh": [
+          14.308133333333334,
+          2.8735,
+          0.0
+        ],
+        "salesMinor": 206179,
+        "variableMinor": 114465,
+        "fixedMinor": 6400,
+        "netMinor": 85314,
+        "bankMinor": 185314,
+        "energyReliability": 0.9545351851851852,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 240,
+        "capacityKW": 4000,
+        "policy": "off",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.188366666666667,
+        "sourceMWh": [
+          14.314866666666667,
+          2.8735,
+          0.0
+        ],
+        "salesMinor": 206260,
+        "variableMinor": 114518,
+        "fixedMinor": 6400,
+        "netMinor": 85342,
+        "bankMinor": 185342,
+        "energyReliability": 0.9549092592592593,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.006733333333333036,
+      "incrementalNetMinor": 28,
+      "extrapolated500CreditPaybackSimHours": 7142.857142857143
+    },
+    {
+      "base": {
+        "minutes": 240,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.741666666666667,
+        "sourceMWh": [
+          14.308133333333334,
+          2.8735,
+          0.5600333333333334
+        ],
+        "salesMinor": 212900,
+        "variableMinor": 120625,
+        "fixedMinor": 6670,
+        "netMinor": 85605,
+        "bankMinor": 185605,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 240,
+        "capacityKW": 3500,
+        "policy": "responsive",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 18.0,
+        "sourceMWh": [
+          14.314866666666667,
+          2.8735,
+          0.8116333333333333
+        ],
+        "salesMinor": 216000,
+        "variableMinor": 123445,
+        "fixedMinor": 6670,
+        "netMinor": 85885,
+        "bankMinor": 185885,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25833333333333286,
+      "incrementalNetMinor": 280,
+      "extrapolated500CreditPaybackSimHours": 714.2857142857143
+    },
+    {
+      "base": {
+        "minutes": 240,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 17.741666666666667,
+        "sourceMWh": [
+          14.308133333333334,
+          2.8735,
+          0.5600333333333334
+        ],
+        "salesMinor": 212900,
+        "variableMinor": 120625,
+        "fixedMinor": 6670,
+        "netMinor": 85605,
+        "bankMinor": 185605,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 240,
+        "capacityKW": 4000,
+        "policy": "responsive",
+        "requestedMWh": 18.0,
+        "deliveredMWh": 18.0,
+        "sourceMWh": [
+          14.314866666666667,
+          2.8735,
+          0.8116333333333333
+        ],
+        "salesMinor": 216000,
+        "variableMinor": 123445,
+        "fixedMinor": 6670,
+        "netMinor": 85885,
+        "bankMinor": 185885,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.25833333333333286,
+      "incrementalNetMinor": 280,
+      "extrapolated500CreditPaybackSimHours": 714.2857142857143
+    },
+    {
+      "base": {
+        "minutes": 1440,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 106.45,
+        "sourceMWh": [
+          84.45096666666667,
+          19.9793,
+          2.0197333333333334
+        ],
+        "salesMinor": 1277400,
+        "variableMinor": 697824,
+        "fixedMinor": 43200,
+        "netMinor": 536376,
+        "bankMinor": 636376,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 1440,
+        "capacityKW": 3500,
+        "policy": "ready",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 108.0,
+        "sourceMWh": [
+          84.98803333333333,
+          19.9793,
+          3.0326666666666666
+        ],
+        "salesMinor": 1296000,
+        "variableMinor": 713263,
+        "fixedMinor": 43200,
+        "netMinor": 539537,
+        "bankMinor": 639537,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 1.5499999999999972,
+      "incrementalNetMinor": 3161,
+      "extrapolated500CreditPaybackSimHours": 379.6267004112623
+    },
+    {
+      "base": {
+        "minutes": 1440,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 106.45,
+        "sourceMWh": [
+          84.45096666666667,
+          19.9793,
+          2.0197333333333334
+        ],
+        "salesMinor": 1277400,
+        "variableMinor": 697824,
+        "fixedMinor": 43200,
+        "netMinor": 536376,
+        "bankMinor": 636376,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 1440,
+        "capacityKW": 4000,
+        "policy": "ready",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 108.0,
+        "sourceMWh": [
+          84.98803333333333,
+          19.9793,
+          3.0326666666666666
+        ],
+        "salesMinor": 1296000,
+        "variableMinor": 713263,
+        "fixedMinor": 43200,
+        "netMinor": 539537,
+        "bankMinor": 639537,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 1.5499999999999972,
+      "incrementalNetMinor": 3161,
+      "extrapolated500CreditPaybackSimHours": 379.6267004112623
+    },
+    {
+      "base": {
+        "minutes": 1440,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 104.43026666666667,
+        "sourceMWh": [
+          84.45096666666667,
+          19.9793,
+          0.0
+        ],
+        "salesMinor": 1253163,
+        "variableMinor": 675607,
+        "fixedMinor": 38400,
+        "netMinor": 539156,
+        "bankMinor": 639156,
+        "energyReliability": 0.9669469135802469,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 1440,
+        "capacityKW": 3500,
+        "policy": "off",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 104.96733333333333,
+        "sourceMWh": [
+          84.98803333333333,
+          19.9793,
+          0.0
+        ],
+        "salesMinor": 1259608,
+        "variableMinor": 679904,
+        "fixedMinor": 38400,
+        "netMinor": 541304,
+        "bankMinor": 641304,
+        "energyReliability": 0.9719197530864198,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.5370666666666608,
+      "incrementalNetMinor": 2148,
+      "extrapolated500CreditPaybackSimHours": 558.659217877095
+    },
+    {
+      "base": {
+        "minutes": 1440,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 104.43026666666667,
+        "sourceMWh": [
+          84.45096666666667,
+          19.9793,
+          0.0
+        ],
+        "salesMinor": 1253163,
+        "variableMinor": 675607,
+        "fixedMinor": 38400,
+        "netMinor": 539156,
+        "bankMinor": 639156,
+        "energyReliability": 0.9669469135802469,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 1440,
+        "capacityKW": 4000,
+        "policy": "off",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 104.96733333333333,
+        "sourceMWh": [
+          84.98803333333333,
+          19.9793,
+          0.0
+        ],
+        "salesMinor": 1259608,
+        "variableMinor": 679904,
+        "fixedMinor": 38400,
+        "netMinor": 541304,
+        "bankMinor": 641304,
+        "energyReliability": 0.9719197530864198,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 0.5370666666666608,
+      "incrementalNetMinor": 2148,
+      "extrapolated500CreditPaybackSimHours": 558.659217877095
+    },
+    {
+      "base": {
+        "minutes": 1440,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 106.45,
+        "sourceMWh": [
+          84.45096666666667,
+          19.9793,
+          2.0197333333333334
+        ],
+        "salesMinor": 1277400,
+        "variableMinor": 697824,
+        "fixedMinor": 39613,
+        "netMinor": 539963,
+        "bankMinor": 639963,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 1440,
+        "capacityKW": 3500,
+        "policy": "responsive",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 108.0,
+        "sourceMWh": [
+          84.98803333333333,
+          19.9793,
+          3.0326666666666666
+        ],
+        "salesMinor": 1296000,
+        "variableMinor": 713263,
+        "fixedMinor": 39613,
+        "netMinor": 543124,
+        "bankMinor": 643124,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 1.5499999999999972,
+      "incrementalNetMinor": 3161,
+      "extrapolated500CreditPaybackSimHours": 379.6267004112623
+    },
+    {
+      "base": {
+        "minutes": 1440,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 106.45,
+        "sourceMWh": [
+          84.45096666666667,
+          19.9793,
+          2.0197333333333334
+        ],
+        "salesMinor": 1277400,
+        "variableMinor": 697824,
+        "fixedMinor": 39613,
+        "netMinor": 539963,
+        "bankMinor": 639963,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 1440,
+        "capacityKW": 4000,
+        "policy": "responsive",
+        "requestedMWh": 108.0,
+        "deliveredMWh": 108.0,
+        "sourceMWh": [
+          84.98803333333333,
+          19.9793,
+          3.0326666666666666
+        ],
+        "salesMinor": 1296000,
+        "variableMinor": 713263,
+        "fixedMinor": 39613,
+        "netMinor": 543124,
+        "bankMinor": 643124,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 1.5499999999999972,
+      "incrementalNetMinor": 3161,
+      "extrapolated500CreditPaybackSimHours": 379.6267004112623
+    },
+    {
+      "base": {
+        "minutes": 10080,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 745.15,
+        "sourceMWh": [
+          601.7704,
+          133.4397,
+          9.9399
+        ],
+        "salesMinor": 8941800,
+        "variableMinor": 4923501,
+        "fixedMinor": 302400,
+        "netMinor": 3715899,
+        "bankMinor": 3815899,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 10080,
+        "capacityKW": 3500,
+        "policy": "ready",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 756.0,
+        "sourceMWh": [
+          606.3087666666667,
+          133.4397,
+          16.251533333333334
+        ],
+        "salesMinor": 9072000,
+        "variableMinor": 5029236,
+        "fixedMinor": 302400,
+        "netMinor": 3740364,
+        "bankMinor": 3840364,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 10.850000000000023,
+      "incrementalNetMinor": 24465,
+      "extrapolated500CreditPaybackSimHours": 343.3476394849785
+    },
+    {
+      "base": {
+        "minutes": 10080,
+        "capacityKW": 3000,
+        "policy": "ready",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 745.15,
+        "sourceMWh": [
+          601.7704,
+          133.4397,
+          9.9399
+        ],
+        "salesMinor": 8941800,
+        "variableMinor": 4923501,
+        "fixedMinor": 302400,
+        "netMinor": 3715899,
+        "bankMinor": 3815899,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 10080,
+        "capacityKW": 4000,
+        "policy": "ready",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 756.0,
+        "sourceMWh": [
+          606.3087666666667,
+          133.4397,
+          16.251533333333334
+        ],
+        "salesMinor": 9072000,
+        "variableMinor": 5029236,
+        "fixedMinor": 302400,
+        "netMinor": 3740364,
+        "bankMinor": 3840364,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 10.850000000000023,
+      "incrementalNetMinor": 24465,
+      "extrapolated500CreditPaybackSimHours": 343.3476394849785
+    },
+    {
+      "base": {
+        "minutes": 10080,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 735.2101,
+        "sourceMWh": [
+          601.7704,
+          133.4397,
+          0.0
+        ],
+        "salesMinor": 8822521,
+        "variableMinor": 4814163,
+        "fixedMinor": 268800,
+        "netMinor": 3739558,
+        "bankMinor": 3839558,
+        "energyReliability": 0.9725001322751323,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 10080,
+        "capacityKW": 3500,
+        "policy": "off",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 739.7484666666667,
+        "sourceMWh": [
+          606.3087666666667,
+          133.4397,
+          0.0
+        ],
+        "salesMinor": 8876981,
+        "variableMinor": 4850470,
+        "fixedMinor": 268800,
+        "netMinor": 3757711,
+        "bankMinor": 3857711,
+        "energyReliability": 0.9785032627865962,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 4.538366666666661,
+      "incrementalNetMinor": 18153,
+      "extrapolated500CreditPaybackSimHours": 462.7334324904975
+    },
+    {
+      "base": {
+        "minutes": 10080,
+        "capacityKW": 3000,
+        "policy": "off",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 735.2101,
+        "sourceMWh": [
+          601.7704,
+          133.4397,
+          0.0
+        ],
+        "salesMinor": 8822521,
+        "variableMinor": 4814163,
+        "fixedMinor": 268800,
+        "netMinor": 3739558,
+        "bankMinor": 3839558,
+        "energyReliability": 0.9725001322751323,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 10080,
+        "capacityKW": 4000,
+        "policy": "off",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 739.7484666666667,
+        "sourceMWh": [
+          606.3087666666667,
+          133.4397,
+          0.0
+        ],
+        "salesMinor": 8876981,
+        "variableMinor": 4850470,
+        "fixedMinor": 268800,
+        "netMinor": 3757711,
+        "bankMinor": 3857711,
+        "energyReliability": 0.9785032627865962,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 4.538366666666661,
+      "incrementalNetMinor": 18153,
+      "extrapolated500CreditPaybackSimHours": 462.7334324904975
+    },
+    {
+      "base": {
+        "minutes": 10080,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 745.15,
+        "sourceMWh": [
+          601.7704,
+          133.4397,
+          9.9399
+        ],
+        "salesMinor": 8941800,
+        "variableMinor": 4923501,
+        "fixedMinor": 276536,
+        "netMinor": 3741763,
+        "bankMinor": 3841763,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 10080,
+        "capacityKW": 3500,
+        "policy": "responsive",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 756.0,
+        "sourceMWh": [
+          606.3087666666667,
+          133.4397,
+          16.251533333333334
+        ],
+        "salesMinor": 9072000,
+        "variableMinor": 5029236,
+        "fixedMinor": 276536,
+        "netMinor": 3766228,
+        "bankMinor": 3866228,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 10.850000000000023,
+      "incrementalNetMinor": 24465,
+      "extrapolated500CreditPaybackSimHours": 343.3476394849785
+    },
+    {
+      "base": {
+        "minutes": 10080,
+        "capacityKW": 3000,
+        "policy": "responsive",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 745.15,
+        "sourceMWh": [
+          601.7704,
+          133.4397,
+          9.9399
+        ],
+        "salesMinor": 8941800,
+        "variableMinor": 4923501,
+        "fixedMinor": 276536,
+        "netMinor": 3741763,
+        "bankMinor": 3841763,
+        "energyReliability": 0.9856481481481482,
+        "first750CreditsStep": 0
+      },
+      "reinforced": {
+        "minutes": 10080,
+        "capacityKW": 4000,
+        "policy": "responsive",
+        "requestedMWh": 756.0,
+        "deliveredMWh": 756.0,
+        "sourceMWh": [
+          606.3087666666667,
+          133.4397,
+          16.251533333333334
+        ],
+        "salesMinor": 9072000,
+        "variableMinor": 5029236,
+        "fixedMinor": 276536,
+        "netMinor": 3766228,
+        "bankMinor": 3866228,
+        "energyReliability": 1.0,
+        "first750CreditsStep": 0
+      },
+      "extraMWh": 10.850000000000023,
+      "incrementalNetMinor": 24465,
+      "extrapolated500CreditPaybackSimHours": 343.3476394849785
+    }
+  ]
+}

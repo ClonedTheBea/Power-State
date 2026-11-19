@@ -4,6 +4,7 @@ local Model = require(script.Parent.FleetNetworkModel)
 local Snapshot = require(script.Parent.FleetJobSnapshot)
 local Ledger = require(script.Parent.OperationsLedger)
 local Codec = require(script.Parent.Parent.Domain.ProfileCodec)
+local Investment = require(script.Parent.ReinforcementModel)
 local Country = {}
 local function freeze(value: any): any
 	if type(value) == "table" and not table.isfrozen(value) then
@@ -13,7 +14,7 @@ local function freeze(value: any): any
 	return value
 end
 function Country.validate(state: any)
-	assert(state.version == 1 and state.inputVersion == 1, "Training state version")
+	assert((state.version == 1 or state.version == 2) and state.inputVersion == 1, "Training state version")
 	Model.integer(state.ownerId, -9007199254740991, 9007199254740991)
 	assert(state.ownerId ~= 0, "Nonzero owner")
 	if state.ownerId < 0 then
@@ -25,6 +26,7 @@ function Country.validate(state: any)
 	Model.integer(state.topologyRevision, 1, 1000000000)
 	assert(type(state.countryId) == "string" and #state.countryId > 0 and #state.countryId <= 64, "Country identity")
 	Model.validate(state.network)
+	Investment.validate(state)
 	local count = 0
 	for _ in state.controls do count += 1 end
 	assert(count == #state.network.sources, "Control membership")
@@ -51,6 +53,18 @@ function Country.new(countryId: string, ownerId: number, epoch: number, network:
 		ledger = Ledger.open(openingMinor, network) }
 	Country.validate(state)
 	return freeze(state)
+end
+function Country.convert(state: any): any
+	Country.validate(state)
+	local candidate = Investment.convert(state)
+	Country.validate(candidate)
+	return freeze(candidate)
+end
+function Country.invest(state: any, operationId: string): any
+	Country.validate(state)
+	local candidate = Investment.purchase(state, operationId, Ledger.reservation(state.ledger, state.network, state.controls))
+	Country.validate(candidate)
+	return freeze(candidate)
 end
 function Country.envelope(state: any): any
 	Country.validate(state)

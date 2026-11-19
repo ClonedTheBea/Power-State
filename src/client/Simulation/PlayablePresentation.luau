@@ -39,7 +39,7 @@ function Presentation.attach(app:any,current:()->any,healthy:()->boolean,request
   local s=current();local r=s.report;local selected=app.state.selectedId
   if v.kpis.root.Visible then
    local name="Your country";for _,n in s.nodes do if n.id==s.demandId then name=n.name end end
-   v.header.identity.Text="POWER STATE · "..name
+   v.header.identity.Text=(if v.header.brand.Visible then "" else "POWER STATE · ")..name
   end
   if selected==s.proposedNode.id and s.built and r.sinks[2] then
    local sink=r.sinks[2]

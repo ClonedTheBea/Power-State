@@ -208,3 +208,27 @@ Preserve the current 98 layout/map and 80 engine assertions as regression covera
 Review matrix: 1366×768 and 1920×1080 desktop; 768×1024 and 1024×768 tablet; 360×640 and 640×360 phone, plus reduced safe areas 360×580/640×300. Exercise 125%/150% text, long names/translations, full Credits values, missing art/data, input-mode switching, open sheet rotation and ten-minute resize/pan smoke sessions. Actual low-end touch hardware remains a release gate; emulator screenshots alone do not prove it. Validate all primary tasks with keyboard and gamepad; map focus and core Roblox menus must coexist.
 
 Acceptance follows behavior, not pixel imitation of the references. No simulation-speed feature is a gate: the conflicting brief item is replaced by the conditional simulation status and non-stacking Double Income design (D22/D27).
+
+## Visual Redesign v1 layout refinement
+
+Existing safe-root/breakpoint and inspector contracts remain authoritative. The normal Grid retains its four desktop/two mobile KPI arrangement, five mobile navigation entries, map controls and collapsible inspector. Test chrome adds visual depth without changing world coordinates.
+
+Infrastructure is an actual-asset directory, not an implicit switch to the independent Training country. Its explicit `Open National Operations Training` action retains that workflow. Directory list/detail are side by side above 860px of usable content width, stacked below; one parent scroll region retains access in short landscape. Category filtering does not change electrical state.
+
+The Training fleet occupies the available page rather than a 420px panel beside an unused map. Cards use three columns at 1050px usable width, two at720px, one below. Width/font determine geometry; changing generation values does not. Details remain separate focused review panels. Grid camera/selection survive returning from the full-page view.
+
+Test review dialogs use at most620×560px within the safe root (16px clearance), fixed close/action targets, and scrollable details. Financial rows are side by side at480px × text scale, otherwise stacked. Build tabs remain above the scroll body, Cancel/confirmation below. Category previews are explicitly unavailable and cannot purchase. The existing server30-second expiry and Refresh Quote path remain unchanged.
+
+## Visual Redesign v1.1 responsive refinement
+
+Preserve the existing safe-root rectangles. Expanded Test rail rows are 44px × text scale; collapsed rows retain their icon/label geometry. Wide headers separate brand and country when at least 760px × text scale remains after utilities; compact headers retain the existing summary. KPI icons appear only when card width reaches 280px × text scale, preserving value space on phones.
+
+Financial key/value rows retain 44px minimum wide-row height and stack below 480px × text scale. Investment review adds a compact context caption above the existing categories; footer controls remain fixed and body scrolls. Three fleet cards retain 3/2/1 columns and 44px actions; output bars occupy reserved fixed space and never change card height. Infrastructure retains four bounded asset slots and its existing list/detail breakpoint.
+
+
+## Illustrated World v1 audit boundary
+
+The owner accepts v1.1 chrome as the baseline; no further shell redesign is authorized. The [Illustrated World audit](ILLUSTRATED-WORLD-V1-VALIDATION.md) stops before renderer code at the explicit existing-art sufficiency gate. Frozen authored headland/1200×800 placements are not a generated-sector contract. The proposed shore-edge family, flat-coordinate pivots, same-lighting variants and bounded Test adapter are design handoff only. Native,44px targets, authoritative graph overlays, selection/camera and600 total descendants remain unchanged. No new atlas, upload, mode control or default renderer is implemented. See the report for exact gaps and owner-review options.
+
+
+**Local artwork follow-up (D210/D211):** the audit boundary above is historical. Owner subsequently approved18 local motifs across the original main atlas and a two-diagonal companion. [Actual artwork and pixel/visual evidence](ILLUSTRATED-WORLD-V1-ART-VALIDATION.md) are ready for review; no upload, integration or visual/default adoption follows automatically. Native geometry/default, overlays,44px targets and600-descendant ceiling remain unchanged. Ground transitions and bounded shore-slot issues require review before a later renderer proof.

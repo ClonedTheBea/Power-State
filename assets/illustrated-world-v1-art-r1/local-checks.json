@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-19",
+  "scope": "Local artwork/static/build validation only",
+  "checks": [
+    {"command": "python assets/illustrated-world-v1-art-r1/validate_art.py", "passed": 579},
+    {"command": "python assets/illustrated-world-v1-art-r1/validate_grammar.py", "passed": true, "seeds": 10000, "orientationMasks": 40000, "exhaustive3x3": 512, "goldenElevations": 289},
+    {"command": "python scripts/ValidateIllustratedWorldAudit.py", "passed": 77},
+    {"command": "python scripts/ValidateR33.py", "passed": 83},
+    {"command": "python scripts/ValidateR34.py", "passed": 14},
+    {"command": "python scripts/ValidateR35.py", "passed": 4},
+    {"command": "python scripts/ValidateR37.py", "passed": 27},
+    {"command": "scripts/Validate.ps1", "passed": true, "builds": ["default.project.json", "test.project.json"], "notes": "Existing Git LF/CRLF normalization notices only"}
+  ],
+  "notPerformed": ["New Studio runtime validation", "New Script Analysis", "Roblox texture loading", "GPU or physical-device measurements", "Upload", "Renderer integration"],
+  "visualAcceptance": "Pending owner review; large Native colour blocks and orthogonal silhouette remain"
+}

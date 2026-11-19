@@ -1,0 +1,462 @@
+{
+  "status": "DESIGN TEMPLATE ONLY; not a runtime or upload-ready manifest",
+  "atlasFile": "power-state-terrain-edges-proof-v1.png",
+  "atlasSha256": null,
+  "assetId": null,
+  "size": [
+    1024,
+    1024
+  ],
+  "gutterPx": 8,
+  "format": "RGBA PNG; straight alpha; sRGB",
+  "entries": [
+    {
+      "artId": "shore-n",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        0,
+        0,
+        256,
+        256
+      ],
+      "sourceRect": [
+        8,
+        8,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-e",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        256,
+        0,
+        256,
+        256
+      ],
+      "sourceRect": [
+        264,
+        8,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-s",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        512,
+        0,
+        256,
+        256
+      ],
+      "sourceRect": [
+        520,
+        8,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-w",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        768,
+        0,
+        256,
+        256
+      ],
+      "sourceRect": [
+        776,
+        8,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-convex-ne",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        0,
+        256,
+        256,
+        256
+      ],
+      "sourceRect": [
+        8,
+        264,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-convex-se",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        256,
+        256,
+        256,
+        256
+      ],
+      "sourceRect": [
+        264,
+        264,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-convex-sw",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        512,
+        256,
+        256,
+        256
+      ],
+      "sourceRect": [
+        520,
+        264,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-convex-nw",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        768,
+        256,
+        256,
+        256
+      ],
+      "sourceRect": [
+        776,
+        264,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-concave-ne",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        0,
+        512,
+        256,
+        256
+      ],
+      "sourceRect": [
+        8,
+        520,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-concave-se",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        256,
+        512,
+        256,
+        256
+      ],
+      "sourceRect": [
+        264,
+        520,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-concave-sw",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        512,
+        512,
+        256,
+        256
+      ],
+      "sourceRect": [
+        520,
+        520,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "shore-concave-nw",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        768,
+        512,
+        256,
+        256
+      ],
+      "sourceRect": [
+        776,
+        520,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        120
+      ],
+      "nominalWorldCanvas": [
+        64,
+        64
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": "orthogonal-sampled-coast-v1"
+    },
+    {
+      "artId": "hill-low-a",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        0,
+        768,
+        256,
+        256
+      ],
+      "sourceRect": [
+        8,
+        776,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        184
+      ],
+      "nominalWorldCanvas": [
+        96,
+        96
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": null
+    },
+    {
+      "artId": "hill-low-b",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        256,
+        768,
+        256,
+        256
+      ],
+      "sourceRect": [
+        264,
+        776,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        184
+      ],
+      "nominalWorldCanvas": [
+        96,
+        96
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": null
+    },
+    {
+      "artId": "substation",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        512,
+        768,
+        256,
+        256
+      ],
+      "sourceRect": [
+        520,
+        776,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        184
+      ],
+      "nominalWorldCanvas": [
+        80,
+        80
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": null
+    },
+    {
+      "artId": "pylon",
+      "revision": 1,
+      "status": "PROPOSED; artwork not produced or uploaded",
+      "cell": [
+        768,
+        768,
+        256,
+        256
+      ],
+      "sourceRect": [
+        776,
+        776,
+        240,
+        240
+      ],
+      "pivotPx": [
+        120,
+        184
+      ],
+      "nominalWorldCanvas": [
+        32,
+        32
+      ],
+      "rotation": 0,
+      "lighting": "upper-left; short lower-right shadow",
+      "edgeFamily": null
+    }
+  ]
+}

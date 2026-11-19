@@ -1,0 +1,15 @@
+{
+  "scope": "Diagnostic package hashes; no finished atlas exists",
+  "files": {
+    "adversarial-arrangements.png": "613023495af76878abd73c3961530434446affa35b54d75c89268b285323c5ae",
+    "amendment-proposal.json": "3a3b63d7db546140b935436fd30b85051573c13922a4822240c669d726032662",
+    "corpus-mask-contact-sheet.png": "1c6ca2857eaa8c273f1833170e419149cb3967d0beb4ee10d3a66b3a232af5d6",
+    "five-zoom-mask-check.png": "f9492b3f69932a1287d5cd6f637c8570f7e343dd66e716cea9524ac0ea8c14b2",
+    "grammar-16-patterns.png": "4717144a2991a5ed77eda77f36c44fbb4a4ceebb1cc174494e305dbbac20dc88",
+    "grammar-results.json": "efff022b90f4aaa0bcd0af16881e50c85686141ef9e001a87057cfb47361436f",
+    "isolation-results.json": "9da93e70df0c51a9710fd970e71b96facd30604de12dbe1eccb1cd2c76b48f3c",
+    "paired-corner-overlap.png": "ced08594b9ce5c7217125a5723e6c67fda5ba848a333169fe7891e6bc69a68c0",
+    "README.md": "da01b2e04b471a1ce1381c968e21a355353b7c3f5a5cdb14e25ad1fbbdfe939f",
+    "validate_grammar.py": "70ecdf0f11c699ce31cb7761a2e5b21ab312fe4d553109a7111733592a295fff"
+  }
+}

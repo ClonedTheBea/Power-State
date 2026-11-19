@@ -10,7 +10,7 @@ local function waitFor(f: () -> boolean, limit: number)
 	error("Actual-client condition deadline")
 end
 waitFor(function() return First.active() ~= nil end, 90)
-local first = First.active(); first.app.actions[first.app.view.navigation.buttons.Infrastructure]()
+local first = First.active(); first.app.actions[first.app.view.navigation.buttons.Infrastructure](); first.app.actions[first.directory.training]()
 waitFor(function() return Ops.active() ~= nil and Ops.active().app ~= nil end, 30)
 -- Full fixed-window flood suite runs separately in Play Solo. Here retain the
 -- actual sending-player attack under concurrent load without counting unsolicited packets.
@@ -37,7 +37,7 @@ assert(#live.app.view.map.root:GetDescendants() <= 600, "Map bound")
 live.app.actions[live.ui.leave]()
 waitFor(function() return Ops.active() == nil and First.active() ~= nil end, 15)
 local release = Ops.lastRelease(); task.wait(1)
-first = First.active(); first.app.actions[first.app.view.navigation.buttons.Infrastructure]()
+first = First.active(); first.app.actions[first.app.view.navigation.buttons.Infrastructure](); first.app.actions[first.directory.training]()
 waitFor(function() return Ops.active() ~= nil and Ops.active().app ~= nil end, 15)
 live = Ops.active()
 assert(live.entry.step == release.step and live.entry.bankMinor == release.bankMinor, "Exact same-player fake re-entry, no offline settlement")
