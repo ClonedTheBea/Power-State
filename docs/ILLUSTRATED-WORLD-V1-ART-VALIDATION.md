@@ -1,5 +1,7 @@
 # Illustrated World v1 — amended eighteen-motif local art validation
 
+Subsequent owner decision, 19 November 2026: all eighteen R1 motifs accepted for an **experimental Test proof**, and the owner uploaded both atlases. [Verified IDs, hashes and isolated renderer evidence](ILLUSTRATED-WORLD-V1-RENDERER-VALIDATION.md). This supersedes the local-art review stop below; final landscape/default adoption remains unapproved. The frozen artwork package remains unchanged.
+
 19 November2026. **Owner-approved grammar amendment implemented; local artwork package produced for visual review. No upload or renderer integration.** Numerical compatibility passes; full illustrated-world visual acceptance is not claimed. The historical Stage A failure is retained below.
 
 ## Current deliverables

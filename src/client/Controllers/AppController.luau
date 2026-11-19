@@ -297,9 +297,22 @@ function AppController.mount(playerGui: PlayerGui, data: typeof(Preview)?)
 		RunService.RenderStepped:Wait(); RunService.RenderStepped:Wait()
 		if not destroyed then mapController.recenter() end
 	end)
-	return { view = view, state = state, actions = actions, navigate = navigate, selectAsset = selectAsset,
+	local app = { view = view, state = state, actions = actions, navigate = navigate, selectAsset = selectAsset,
 		refresh = refresh, present = function() if presenter then presenter() end end, bind = bind, showFeedback = showFeedback, setPresenter = function(callback: () -> ()) presenter = callback; refresh() end, keyboard = keyboard, mapController = mapController, back = back,
 		setLayoutAdapter = function(callback: (Layout.Result, string) -> boolean?) layoutAdapter = callback; refresh() end,
 		destroy = function() cleanup(); view.gui:Destroy() end }
+	-- Optional comparison code exists only in the Test Rojo tree. Native is always
+	-- the initial renderer; retained regression suites opt into their own fixtures.
+	if preview.world and RunService:IsStudio() and game.GameId == 10776833313
+		and game.ReplicatedStorage:GetAttribute("IllustratedWorldProof") ~= false
+		and game.ReplicatedStorage:GetAttribute("RunRegressionTests") ~= true then
+		task.defer(function()
+			if destroyed then return end
+			local tests = script.Parent.Parent.Parent:FindFirstChild("DevelopmentTests")
+			local proof = if tests then tests:FindFirstChild("IllustratedWorld") else nil
+			if proof then require(script.Parent.Parent.Parent.DevelopmentTests.IllustratedWorld.IllustratedController).attach(app, preview) end
+		end)
+	end
+	return app
 end
 return AppController

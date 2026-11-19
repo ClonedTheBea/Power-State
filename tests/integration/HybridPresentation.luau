@@ -8,11 +8,11 @@ type Map = {
 	render: (number,number,number)->(), setSelected: (string?)->(), setOptions: (boolean,boolean)->(),
 }
 local Presentation = {}
-function Presentation.attach(map: Map)
+function Presentation.attach(map: Map, expectedMarkers: number?)
 	assert(game:GetService("RunService"):IsStudio() and game.GameId == 10776833313, "Test-only presentation")
 	local markerCount=0
 	for _ in map.markers do markerCount+=1 end
-	assert(markerCount==5 and #map.root:GetDescendants()+markerCount*3<=600,"R3.5 fixed presentation budget exceeded")
+	assert(markerCount==(expectedMarkers or 5) and markerCount<=32 and #map.root:GetDescendants()+markerCount*3<=600,"R3.5 fixed presentation budget exceeded")
 	local originalRender, originalSelected, originalOptions = map.render, map.setSelected, map.setOptions
 	local labels = map.viewport:FindFirstChild("MapLabels") :: Frame
 	local records = {}
@@ -48,7 +48,8 @@ function Presentation.attach(map: Map)
 			r.marker.BackgroundTransparency=if enabled then 1 else r.background
 			r.stroke.Transparency=if enabled then 1 else r.strokeTransparency
 			r.badge.Visible=enabled
-			for _,piece in r.art do piece.Parent=if enabled then r.badge else r.marker end
+			local parent: Instance=if enabled then r.badge else r.marker
+			for _,piece in r.art do if piece.Parent~=parent then piece.Parent=parent end end
 			local context=r.marker:GetAttribute("Selected")==true or hovered==id or GuiService.SelectedObject==r.marker
 			local py=r.marker.Position.Y.Offset
 			local fits=r.marker.Visible and map.root:GetAttribute("LabelsVisible")==true and py>52 and py+55<map.viewport.AbsoluteSize.Y-60

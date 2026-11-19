@@ -42,8 +42,34 @@ return function(playerGui:PlayerGui)
  check(live.current().save.storage=="Fake" and #live.current().report.sinks==2,"Real engine, fake storage, two sinks")
  app.actions[live.button]();waitFor(function()return live.current().construction.state=="AlreadyBuilt"end,3)
  check(not live.confirm.Active,"Repeat purchase disabled")
-	modalFocus();app.keyboard.step(1)
-	check(GuiService.SelectedObject~=live.confirm and GuiService.SelectedObject==app.view.feedback.close,"Completed review excludes disabled purchase from traversal")
+	modalFocus()
+	-- The approved redesign adds category navigation and a second dismissal action.
+	-- Traverse the entire modal in both directions; disabled purchase stays excluded.
+	local allowed: {[TextButton]: boolean}={}
+	local expected=0
+	for button in app.actions do
+		if app.keyboard.valid(button) then
+			check(button:IsDescendantOf(app.view.feedback.root),"Completed modal contains every eligible target")
+			allowed[button]=true;expected+=1
+		end
+	end
+	check(expected>=1 and expected<=16 and not allowed[live.confirm],"Bounded traversal excludes completed purchase")
+	for _,direction in {1,-1} do
+		local visited: {[Instance]: boolean}={}
+		for _=1,expected do
+			app.keyboard.step(direction)
+			local focused=GuiService.SelectedObject
+			check(focused~=nil and focused:IsA("TextButton") and allowed[focused]==true and not visited[focused],"Each modal target visited once; no disabled purchase or escape")
+			if focused then visited[focused]=true end
+		end
+		check(GuiService.SelectedObject==app.view.feedback.close,"Traversal returns to dismiss control")
+	end
+	check(not live.confirm.Selectable and not live.confirm.Active,"Completed purchase cannot be selected or activated")
+	local capital=live.current().finance.bank.constructionSpentMinor
+	app.actions[live.confirm]();task.wait(.2)
+	check(live.current().built and live.current().finance.bank.constructionSpentMinor==capital and capital==100000,"Disabled action cannot repeat the capital debit")
+	app.keyboard.activate()
+	check(not app.view.feedback.root.Visible,"Keyboard/gamepad dismissal closes completed review")
  app.actions[app.view.feedback.close]()
  app.actions[app.view.inspector.locate]();task.wait(.2)
  check(#app.view.map.root:GetDescendants()<=600,"Locate retains bounded map")

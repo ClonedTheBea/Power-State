@@ -1,0 +1,27 @@
+2026-11-19T15:22:14.625Z,33904.625000,a4cc,6,Info [FLog::CreatorOutput] [Power State R2 Shell] PASS: 324 assertions
+2026-11-19T15:22:14.628Z,33904.628906,a4cc,6,Info [FLog::CreatorOutput] [Power State R1 Currency] PASS: 26 assertions
+2026-11-19T15:22:14.679Z,33904.679688,a4cc,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.80 ms
+2026-11-19T15:22:15.875Z,33905.875000,a4cc,6,Info [FLog::CreatorOutput] [P3c fake profile] 18476 bytes; solver p50 0.0673 / p95 0.1084 ms; peak calls 1; synthetic suspension total 1.10s
+2026-11-19T15:22:15.875Z,33905.875000,a4cc,6,Info [FLog::CreatorOutput] [Power State P3c] PASS: 94 assertions
+2026-11-19T15:22:15.968Z,33905.968750,a4cc,6,Info [FLog::CreatorOutput] [First Playable controls] PASS: 42 assertions
+2026-11-19T15:22:16.769Z,33906.769531,a4cc,6,Info [FLog::CreatorOutput] [P3c eight fake] commits CPU 508.792ms; max profile 18473 bytes; heap delta -1.0KiB; peak calls 4
+2026-11-19T15:22:16.851Z,33906.851562,a4cc,6,Info [FLog::CreatorOutput] [Power State P3c safety] PASS: 31 assertions
+2026-11-19T15:22:16.855Z,33906.855469,a4cc,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-19T15:22:16.859Z,33906.859375,a4cc,6,Info [FLog::CreatorOutput] [P2a] Isolated server started; 1 wall second = 1 simulated minute; no persistence or economy
+2026-11-19T15:22:16.863Z,33906.863281,a4cc,6,Info [FLog::CreatorOutput] [P2b] Test service: GUID seed, version 1; session only; Native presentation
+2026-11-19T15:22:17.964Z,33907.964844,a968,6,Info [FLog::CreatorOutput] [P2b.1 timing] {"timing":{"status":"complete","wallMs":994.6780999889597,"resumes":21,"resumeMs":20.092499908059837,"queueMs":22.983299975749106,"cpuMs":20.021699892822654,"yields":20,"waitMs":951.6023001051508},"userId":149564436,"ready":true}
+2026-11-19T15:22:18.707Z,33908.707031,af2c,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-19T15:22:26.859Z,33916.859375,8b90,6,Info [FLog::CreatorOutput] [Power State P2a GUI] PASS: 57 assertions; map 541 descendants
+2026-11-19T15:22:28.105Z,33918.105469,a4cc,6,Info [FLog::CreatorOutput] [P3c accounting] PASS: 1440 billed intervals / 12 exact restores; net 353303 minor; full-ring profile 92283 bytes; elapsed 1.175s
+2026-11-19T15:22:34.324Z,33924.324219,53d4,6,Info [FLog::CreatorOutput] [P2b rendering] 1366x704 CPU p50/p95 0.0945/0.1458ms frame 16.60/17.51ms map 345
+2026-11-19T15:22:36.390Z,33926.390625,53d4,6,Info [FLog::CreatorOutput] [P2b rendering] 360x580 CPU p50/p95 0.1206/0.2060ms frame 16.65/17.49ms map 345
+2026-11-19T15:22:38.457Z,33928.457031,53d4,6,Info [FLog::CreatorOutput] [P2b rendering] 768x960 CPU p50/p95 0.0962/0.1683ms frame 16.61/17.50ms map 345
+2026-11-19T15:22:40.675Z,33930.675781,7f68,6,Info [FLog::CreatorOutput] [Power State P2b GUI] PASS: 88 assertions; map 345 descendants
+2026-11-19T15:22:54.472Z,33944.472656,7934,6,Info [FLog::CreatorOutput] [Power State P2a remotes] PASS: 32 actual transport assertions
+2026-11-19T15:23:07.789Z,33957.789062,a958,6,Info [FLog::CreatorOutput] [Power State P2b remotes] PASS: 32 actual transport assertions
+2026-11-19T15:23:16.089Z,33966.089844,a920,6,Info [FLog::CreatorOutput] [P3c GUI] Waiting for genuinely earned fake Credits; no test grant
+2026-11-19T15:24:29.820Z,34039.820312,5c3c,6,Error [FLog::CreatorError] Error: Players.missawfulname.PlayerScripts.DevelopmentTests.P3c.spec:5: Completed review excludes disabled purchase from traversal
+2026-11-19T15:24:29.820Z,34039.820312,5c3c,6,Info [FLog::CreatorOutput] Info: Stack Begin
+2026-11-19T15:24:29.820Z,34039.820312,5c3c,6,Info [FLog::CreatorOutput] Info: Script 'Players.missawfulname.PlayerScripts.DevelopmentTests.P3c.spec', Line 5
+2026-11-19T15:24:29.820Z,34039.820312,5c3c,6,Info [FLog::CreatorOutput] Info: Script 'Players.missawfulname.PlayerScripts.DevelopmentTests.Run', Line 19
+2026-11-19T15:24:29.820Z,34039.820312,5c3c,6,Info [FLog::CreatorOutput] Info: Stack End

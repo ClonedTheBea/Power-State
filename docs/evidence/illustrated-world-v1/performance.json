@@ -1,0 +1,50 @@
+{
+  "scope": "Actual Studio desktop, matched synthetic test country/camera paths, four approved real atlases. Native mode includes dormant comparison pool/badges. Whole-client memory; cache state unknown. Not device/GPU guarantee.",
+  "samplesPerPath": 180,
+  "results": [
+    {
+      "cpuWorst": 0.8054000209085643,
+      "frameWorst": 18.085699528455734,
+      "frameP50": 16.586700454354286,
+      "cpuP95": 0.5739000043831766,
+      "descendants": 470,
+      "fixture": 1,
+      "mode": "Native",
+      "frameP95": 17.591899260878563,
+      "cpuP50": 0.43760001426562667
+    },
+    {
+      "cpuWorst": 1.1909999884665012,
+      "frameWorst": 17.987800762057304,
+      "frameP50": 16.62999950349331,
+      "cpuP95": 0.78219996066764,
+      "descendants": 470,
+      "fixture": 1,
+      "mode": "Illustrated",
+      "frameP95": 17.57490076124668,
+      "cpuP50": 0.5753000150434673
+    },
+    {
+      "cpuWorst": 0.7677000248804688,
+      "frameWorst": 18.248500302433968,
+      "frameP50": 16.60499908030033,
+      "cpuP95": 0.5743000074289739,
+      "descendants": 470,
+      "fixture": 2,
+      "mode": "Native",
+      "frameP95": 17.61610060930252,
+      "cpuP50": 0.4668000037781894
+    },
+    {
+      "cpuWorst": 1.2271999730728567,
+      "frameWorst": 18.35690066218376,
+      "frameP50": 16.632700338959694,
+      "cpuP95": 1.0074999881908298,
+      "descendants": 470,
+      "fixture": 2,
+      "mode": "Illustrated",
+      "frameP95": 17.63240061700344,
+      "cpuP50": 0.6688999710604548
+    }
+  ]
+}

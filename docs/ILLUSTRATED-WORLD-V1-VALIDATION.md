@@ -1,6 +1,6 @@
 # Illustrated World v1 — audit and prototype validation
 
-**Art-production follow-up (current):** owner approved the two-diagonal/companion-atlas amendment. All18 local candidates and painted compatibility evidence now exist; source pixel checks pass, owner visual acceptance and remaining ground quality are separate. [Current artwork report](ILLUSTRATED-WORLD-V1-ART-VALIDATION.md). This original audit remains historical; no renderer integration/upload authorized.
+**Historical art-production follow-up:** owner approved the two-diagonal/companion-atlas amendment. All18 local candidates and painted compatibility evidence now exist; source pixel checks pass, owner visual acceptance and remaining ground quality are separate. [Current artwork report](ILLUSTRATED-WORLD-V1-ART-VALIDATION.md). This original audit remains historical. Subsequent owner approval and verified uploads authorize the isolated [Test renderer proof](ILLUSTRATED-WORLD-V1-RENDERER-VALIDATION.md); Native remains default.
 
 19 November 2026. Visual Redesign v1.1 accepted by owner. Test/fake storage only; Native default, no real records, uploads or Production changes.
 

@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-19",
+  "universe": 10776833313,
+  "authenticatedStudioUser": 149564436,
+  "creator": 149564436,
+  "method": "Guarded edit-mode MarketplaceService metadata; InsertService decal dependency; AssetService EditableImage ReadPixelsBuffer and EncodingService SHA256, compared with local decoded straight RGBA bytes. Temporary instances destroyed.",
+  "decalId": "73359575646217",
+  "resolvedImageId": "133413370857301",
+  "assets": [
+    {
+      "file": "assets\\illustrated-world-v1-art-r1\\power-state-terrain-edges-proof-v1.png",
+      "fileSha256": "d8d3994469c68f31d800cadec9c8e3aeda3d25ecd3693c6140e781c402c5b0cb",
+      "decodedRGBASha256": "45639a686c62f464fb5d2966ca63a3a1870c756a9818c20f72062716e95a60fe",
+      "imageId": "96236605552471",
+      "verifiedOwner": 149564436,
+      "verifiedType": "Image",
+      "hostedRGBAMatch": true
+    },
+    {
+      "file": "assets\\illustrated-world-v1-art-r1\\power-state-diagonal-shores-proof-v1.png",
+      "fileSha256": "e669e58a0b8b32d0f19f21025b79cc878eed134ed285ad4880353b6d580fd62f",
+      "decodedRGBASha256": "ca4cc3a6eb27d5208ed0cc49f3396270ea57bb903c2f26bdf8de64054e988d02",
+      "imageId": "133413370857301",
+      "verifiedOwner": 149564436,
+      "verifiedType": "Image",
+      "hostedRGBAMatch": true
+    }
+  ],
+  "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+  "limitations": "Metadata/pixel verification alone does not establish ImageLabel readiness; actual Play readiness results are recorded separately in renderer-engine-log.txt. No privacy settings changed or dashboard privacy reinspection claimed."
+}

@@ -1,0 +1,25 @@
+2026-11-19T15:37:37.121Z,34827.121094,a920,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313 and not game:GetService("RunService"):IsRunning());local r=game.ReplicatedStorage;r:SetAttribute("RunIllustratedRetained",false);r:SetAttribute("VisualRedesignTests","All");r:SetAttribute("IllustratedWorldProof",true);print("IW_CURRENT_GUI_ARMED_FAKE_ONLY")
+2026-11-19T15:37:37.136Z,34827.136719,a958,6,Info [FLog::CreatorOutput] IW_CURRENT_GUI_ARMED_FAKE_ONLY
+2026-11-19T15:37:55.316Z,34845.316406,a958,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-19T15:37:57.089Z,34847.089844,3308,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-19T15:37:57.613Z,34847.613281,53d4,6,Info [FLog::CreatorOutput] [Visual directory] PASS 35 assertions
+2026-11-19T15:38:28.253Z,34878.253906,7f68,6,Info [FLog::CreatorOutput] [Quote Refresh GUI] PASS: 20 assertions; real 30-second server expiry, fake storage
+2026-11-19T15:38:41.886Z,34891.886719,a920,6,Info [FLog::CreatorOutput] [Operations V13 resize] 1366x704
+2026-11-19T15:38:41.894Z,34891.894531,53d4,6,Info [FLog::CreatorOutput] [Operations V13 resize] 1024x720
+2026-11-19T15:38:41.921Z,34891.921875,53d4,6,Info [FLog::CreatorOutput] [Operations V13 resize] 390x780
+2026-11-19T15:38:41.953Z,34891.953125,53d4,6,Info [FLog::CreatorOutput] [Operations V13 resize] 844x390
+2026-11-19T15:38:42.054Z,34892.054688,3af4,6,Info [FLog::CreatorOutput] [Operations V13 acknowledgement] − 62.597 ms
+2026-11-19T15:38:42.105Z,34892.105469,a968,6,Info [FLog::CreatorOutput] [Operations V13 acknowledgement] + 50.376 ms
+2026-11-19T15:38:42.152Z,34892.152344,8b90,6,Info [FLog::CreatorOutput] [Operations V13 acknowledgement] Switch On 49.011 ms
+2026-11-19T15:38:42.203Z,34892.203125,a958,6,Info [FLog::CreatorOutput] [Operations V13 acknowledgement] Switch On 49.947 ms
+2026-11-19T15:38:44.042Z,34894.042969,7b98,6,Info [FLog::CreatorOutput] [Operations GUI] PASS: 130 assertions; map descendants=394
+2026-11-19T15:38:46.667Z,34896.667969,53d4,6,Info [FLog::CreatorOutput] [Operations v1.2 interaction] PASS: 101 engine paging/focus assertions (not physical swipe)
+2026-11-19T15:38:59.085Z,34909.085938,53d4,6,Info [FLog::CreatorOutput] [Visual stability] {"panel":"fleet","layouts":0,"added":0,"removed":0,"map":394,"calls":36,"frameP95":17.712000757455827,"cpuMs":16.189500223845245,"peakMs":0.9094999986700714,"shell":1045}
+2026-11-19T15:39:11.253Z,34921.253906,53d4,6,Info [FLog::CreatorOutput] [Visual stability] {"panel":"Bank","layouts":0,"added":0,"removed":0,"map":394,"calls":36,"frameP95":17.584100365638734,"cpuMs":26.640200172550978,"peakMs":2.9471999732777478,"shell":1045}
+2026-11-19T15:39:23.417Z,34933.417969,53d4,6,Info [FLog::CreatorOutput] [Visual stability] {"panel":"review","layouts":0,"added":0,"removed":0,"map":394,"calls":82,"frameP95":17.56189949810505,"cpuMs":26.877800177317114,"peakMs":1.357699977234006,"shell":1045}
+2026-11-19T15:39:28.417Z,34938.417969,7b98,6,Info [FLog::CreatorOutput] [Operations Remote] PASS: 38 assertions; flood response count=9
+2026-11-19T15:40:11.804Z,34981.804688,53d4,6,Info [FLog::CreatorOutput] [Reinforcement GUI capture] Proposal visible; eight-second capture window
+2026-11-19T15:40:42.101Z,35012.101562,7f68,6,Info [FLog::CreatorOutput] [Reinforcement GUI capture] Confirmed purchase visible
+2026-11-19T15:44:14.140Z,35224.140625,a4cc,6,Info [FLog::CreatorOutput] [Reinforcement GUI capture] Post-upgrade peak; 6 MW delivered
+2026-11-19T15:44:14.433Z,35224.433594,a920,6,Info [FLog::CreatorOutput] [Reinforcement journey] PASS 27 actual-engine/remote assertions; fake storage
+2026-11-19T15:44:14.433Z,35224.433594,a920,6,Info [FLog::CreatorOutput] [Visual acceptance] COMPLETE All checks=6097

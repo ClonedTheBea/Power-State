@@ -1,0 +1,29 @@
+2026-11-19T15:54:16.644Z,35826.644531,a958,6,Info [FLog::CreatorOutput] [Power State R2 Shell] PASS: 324 assertions
+2026-11-19T15:54:16.648Z,35826.648438,a958,6,Info [FLog::CreatorOutput] [Power State R1 Currency] PASS: 26 assertions
+2026-11-19T15:54:16.687Z,35826.687500,a958,6,Info [FLog::CreatorOutput] [Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.13 ms
+2026-11-19T15:54:17.882Z,35827.882812,a958,6,Info [FLog::CreatorOutput] [P3c fake profile] 18476 bytes; solver p50 0.0680 / p95 0.1152 ms; peak calls 1; synthetic suspension total 1.10s
+2026-11-19T15:54:17.882Z,35827.882812,a958,6,Info [FLog::CreatorOutput] [Power State P3c] PASS: 94 assertions
+2026-11-19T15:54:17.980Z,35827.980469,a958,6,Info [FLog::CreatorOutput] [First Playable controls] PASS: 42 assertions
+2026-11-19T15:54:18.773Z,35828.773438,a958,6,Info [FLog::CreatorOutput] [P3c eight fake] commits CPU 492.424ms; max profile 18473 bytes; heap delta -613.0KiB; peak calls 4
+2026-11-19T15:54:18.855Z,35828.855469,a958,6,Info [FLog::CreatorOutput] [Power State P3c safety] PASS: 31 assertions
+2026-11-19T15:54:18.855Z,35828.855469,a958,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-19T15:54:18.863Z,35828.863281,a958,6,Info [FLog::CreatorOutput] [P2a] Isolated server started; 1 wall second = 1 simulated minute; no persistence or economy
+2026-11-19T15:54:18.867Z,35828.867188,a958,6,Info [FLog::CreatorOutput] [P2b] Test service: GUID seed, version 1; session only; Native presentation
+2026-11-19T15:54:20.562Z,35830.562500,8b90,6,Info [FLog::CreatorOutput] [P2b.1 timing] {"timing":{"status":"complete","wallMs":1589.720199990552,"resumes":21,"resumeMs":19.68179998220876,"queueMs":23.205499979667367,"cpuMs":19.615900062490256,"yields":20,"waitMs":1546.8329000286759},"userId":149564436,"ready":true}
+2026-11-19T15:54:20.792Z,35830.792969,3c5c,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-19T15:54:29.578Z,35839.578125,7f68,6,Info [FLog::CreatorOutput] [Power State P2a GUI] PASS: 57 assertions; map 541 descendants
+2026-11-19T15:54:30.113Z,35840.113281,a958,6,Info [FLog::CreatorOutput] [P3c accounting] PASS: 1440 billed intervals / 12 exact restores; net 353303 minor; full-ring profile 92283 bytes; elapsed 1.178s
+2026-11-19T15:54:36.933Z,35846.933594,53d4,6,Info [FLog::CreatorOutput] [P2b rendering] 1366x704 CPU p50/p95 0.0939/0.1395ms frame 16.62/17.45ms map 345
+2026-11-19T15:54:39.000Z,35849.000000,53d4,6,Info [FLog::CreatorOutput] [P2b rendering] 360x580 CPU p50/p95 0.1206/0.1521ms frame 16.62/17.55ms map 345
+2026-11-19T15:54:41.066Z,35851.066406,53d4,6,Info [FLog::CreatorOutput] [P2b rendering] 768x960 CPU p50/p95 0.0924/0.1144ms frame 16.62/17.53ms map 345
+2026-11-19T15:54:43.281Z,35853.281250,a958,6,Info [FLog::CreatorOutput] [Power State P2b GUI] PASS: 88 assertions; map 345 descendants
+2026-11-19T15:54:57.148Z,35867.148438,a958,6,Info [FLog::CreatorOutput] [Power State P2a remotes] PASS: 32 actual transport assertions
+2026-11-19T15:55:10.496Z,35880.496094,a920,6,Info [FLog::CreatorOutput] [Power State P2b remotes] PASS: 32 actual transport assertions
+2026-11-19T15:55:19.230Z,35889.230469,a968,6,Info [FLog::CreatorOutput] [P3c GUI] Waiting for genuinely earned fake Credits; no test grant
+2026-11-19T15:56:33.191Z,35963.191406,5758,6,Error [FLog::CreatorError] Error: Players.missawfulname.PlayerScripts.DevelopmentTests.P3c.spec:5: Full Bank text fits measured content, including capital row
+2026-11-19T15:56:33.191Z,35963.191406,5758,6,Info [FLog::CreatorOutput] Info: Stack Begin
+2026-11-19T15:56:33.191Z,35963.191406,5758,6,Info [FLog::CreatorOutput] Info: Script 'Players.missawfulname.PlayerScripts.DevelopmentTests.P3c.spec', Line 5
+2026-11-19T15:56:33.191Z,35963.191406,5758,6,Info [FLog::CreatorOutput] Info: Script 'Players.missawfulname.PlayerScripts.DevelopmentTests.Run', Line 19
+2026-11-19T15:56:33.191Z,35963.191406,5758,6,Info [FLog::CreatorOutput] Info: Stack End
+2026-11-19T15:58:21.128Z,36071.128906,a920,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313 and game:GetService("RunService"):IsClient());local s=game.Players.LocalPlayer.PlayerGui.PowerStateShell.SafeRoot;local f=s:FindFirstChild("Feedback",true);assert(f);local m=f.Message;local body=m:FindFirstChildWhichIsA("TextLabel");local rows=0;local bad=0;for _,r in m:GetChildren() do if r:IsA("Frame") and r.Visible then rows+=1;for _,t in r:GetChildren() do if t:IsA("TextLabel") and t.Visible and (t.TextBounds.Y>t.AbsoluteSize.Y+1 or t.TextBounds.X>t.AbsoluteSize.X+1) then bad+=1 end end end end;print("IW11_BANK_DIAGNOSTIC",body.Visible,body.TextFits,body.AbsoluteSize.Y,rows,bad,m.AbsoluteCanvasSize.Y,m.AbsoluteSize.Y,m.CanvasPosition.Y)
+2026-11-19T15:58:21.156Z,36071.156250,8b90,6,Info [FLog::CreatorOutput] IW11_BANK_DIAGNOSTIC false false 612 20 0 1484 484 920
