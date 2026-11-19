@@ -3,13 +3,12 @@
 local Fake = require(script.Parent.Parent.Adapters.FakeDataStoreAdapter)
 local Country = require(script.Parent.OperationsCountry)
 local Scenario = require(script.Parent.OperationsScenario)
-local Codec = require(script.Parent.Parent.Domain.ProfileCodec)
+local Encoding = require(script.Parent.OperationsEncoding)
 local Store = {}
 function Store.new(): any
 	assert(game:GetService("RunService"):IsStudio() and game.GameId == 10776833313, "Training Test only")
 	local adapter = Fake.create()
 	local H = game:GetService("HttpService")
-	local function encode(v: any): string return Codec.encode(v, function(x) return H:JSONEncode(x) end) end
 	local api = {faults = adapter}
 	function api.acquire(ownerId: number): any
 		local key = "training:" .. ownerId
@@ -27,6 +26,7 @@ function Store.new(): any
 		return record
 	end
 	function api.save(record: any, state: any, release: boolean): (boolean, any)
+		local encode = Encoding.new(function(value) return H:JSONEncode(value) end)
 		Country.validate(state)
 		assert(record.ownerId == state.ownerId and record.epoch == state.epoch, "Checkpoint ownership")
 		local candidate = {version = 1, ownerId = record.ownerId, epoch = record.epoch, revision = record.revision + 1,

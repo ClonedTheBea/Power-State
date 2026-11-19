@@ -73,6 +73,16 @@ function Client.mount(first: any, playerGui: PlayerGui, reopen: () -> ()): any
 	for _, pair in {{"gas", "sub"}, {"wind", "sub"}, {"peak", "sub"}, {"sub", "a"}, {"sub", "b"}} do table.insert(preview.links, {from = pair[1], to = pair[2]}) end
 	first.destroy()
 	app = App.mount(playerGui, preview); ui = View.create(app)
+	local function overview(button: GuiButton)
+		app.showFeedback("Operations overview · minute " .. current.step,
+			string.format("Temporary Test country · snapshot at opening\n\nLive Bank: %.2f Credits\nConfirmed fake checkpoint: %.2f Credits\nSales: %.2f Credits\nOperating costs: %.2f Credits\nNet earnings: %.2f Credits\n\nDelivered / requested: %.3f / %.3f MW\nLifetime energy served: %.1f%%\nReady dispatchable headroom: %.3f MW\n\nHeadroom excludes wind and is not a guarantee of delivery through constrained feeders. Menus do not pause the simulation. Stop Play discards this country.",
+				current.bankMinor / 100, current.savedBankMinor / 100, current.salesMinor / 100, current.expensesMinor / 100,
+				(current.salesMinor - current.expensesMinor) / 100, current.deliveredKW / 1000, current.demandKW / 1000,
+				current.reliability * 100, current.headroomKW / 1000), button)
+	end
+	for _, button in app.view.kpis.buttons do app.actions[button] = function() overview(button) end end
+	app.actions[app.view.header.overview] = function() overview(app.view.header.overview) end
+	app.actions[app.view.drawer.buttons.Overview] = function() overview(app.view.drawer.buttons.Overview) end
 	local function send(kind: "Control" | "Retry", source: any?, on: boolean?, cap: number?)
 		if pending or leaving or os.clock() - received >= 3 then return end
 		if current.saving then return end
@@ -104,10 +114,9 @@ function Client.mount(first: any, playerGui: PlayerGui, reopen: () -> ()): any
 			app.actions[button] = function() app.navigate("Infrastructure") end
 		end
 	end
-	for _, button in {app.view.header.overview, app.view.drawer.buttons.Overview, app.view.header.buttons.Alerts, app.view.drawer.buttons.Alerts} do
+	for _, button in {app.view.header.buttons.Alerts, app.view.drawer.buttons.Alerts} do
 		app.actions[button] = function() app.navigate("Infrastructure") end
 	end
-	for _, button in app.view.kpis.buttons do app.actions[button] = function() app.navigate("Infrastructure") end end
 	for _, button in {app.view.header.buttons.Help, app.view.drawer.buttons.Help} do app.actions[button] = function()
 		app.showFeedback("Operating your national grid", "1. Review the conditional forecast. Wind falls as demand rises.\n2. Enable Reserve Peaker before the shortage; it costs more but can restore service.\n3. Output caps are limits, not forced generation. The server chooses the cheapest feasible dispatch.\n4. Spare generation cannot widen East's 3 MW feeder. Reinforcement is a future project.\n\nMenus keep the active simulation running. Retry resumes a safely suspended calculation without catching up missed time.\n\nTab / D-pad: focus. Enter / A: activate. M: grid. Escape / B: back. Map focus supports arrows/stick and zoom controls.\n\nTraining is temporary fake storage. Stop Play discards it.", button)
 	end end
@@ -133,7 +142,9 @@ function Client.mount(first: any, playerGui: PlayerGui, reopen: () -> ()): any
 		local v = app.view
 		local healthy = os.clock() - received < 3
 		v.header.identity.Text = "POWER STATE · Operations Training"
-		v.header.status.Text = if not healthy then "Connection unavailable" else current.status .. " · minute " .. current.step
+		local statusNames = {Accepted = "Operating", Completed = "Operating", Pending = "Calculating", Suspended = "Paused · action needed", Invalidated = "Inputs changed"}
+		local statusText = statusNames[current.status] or current.status
+		v.header.status.Text = if not healthy then "Connection unavailable" else statusText .. " · minute " .. current.step
 		v.kpis.cards[1].value.Text = string.format("%.2f Credits", current.bankMinor / 100)
 		v.kpis.cards[2].value.Text = string.format("%.3f / %.3f MW", current.deliveredKW / 1000, current.demandKW / 1000)
 		v.kpis.cards[3].value.Text = string.format("%.1f%%", current.reliability * 100)
@@ -151,15 +162,19 @@ function Client.mount(first: any, playerGui: PlayerGui, reopen: () -> ()): any
 			v.pageTitle.Visible = true; v.pageTag.Visible = true; v.pageBody.Visible = true; v.pageBack.Visible = true
 		end
 		ui.status.Text = if leaving then "Saving and leaving training…" elseif not healthy then "Connection unavailable. Controls disabled."
-			elseif pending then "Command pending — awaiting server" else current.outcome .. " · " .. current.status .. (if current.saving then " · checkpoint pending" else "")
-		ui.totals.Text = string.format("Generated %.3f MW · Installed 9 MW\nAvailable %.3f MW · Unserved %.3f MW\nLive Bank %.2f Credits · Confirmed %.2f Credits\nSales %.2f · Expenses %.2f · Net %.2f Credits\nHeadroom is not guaranteed deliverable reserve.", current.generatedKW / 1000, current.availableKW / 1000, current.unmetKW / 1000,
+			elseif pending then "Command pending — awaiting server" else statusText .. (if current.saving then " · saving fake checkpoint" else " · server confirmed")
+		if current.outcome == "StaleRevision" or current.outcome == "CheckpointUnavailable" then ui.status.Text ..= "\nState changed while sending. Review the current controls and try again." end
+		ui.totals.Text = string.format("LAST COMPLETED INTERVAL\nGenerated %.3f MW · Installed 9 MW\nEnabled/capped capacity %.3f MW · Unserved %.3f MW\nLive Bank %.2f Credits\nConfirmed checkpoint %.2f Credits\nTOTALS SINCE TRAINING BEGAN\nSales %.2f Credits\nOperating costs %.2f Credits\nNet earnings %.2f Credits\nOnly delivered energy earns income. Unserved demand lowers lifetime reliability.\nReady headroom excludes wind and may be blocked by a feeder.", current.generatedKW / 1000, current.availableKW / 1000, current.unmetKW / 1000,
 			current.bankMinor / 100, current.savedBankMinor / 100, current.salesMinor / 100, current.expensesMinor / 100, (current.salesMinor - current.expensesMinor) / 100)
 		for _, source in current.fleet do
 			local row = ui.fleet[source.id]
 			row.text.TextSize = 14 * (v.root:GetAttribute("TextScale") or 1)
-			row.text.Text = string.format("%s · %s\nOutput %.3f / available %.3f MW · Installed %.1f MW\nCap %.1f MW · %.0f Credits/MWh + %.0f Credits/h On\nCosts %.2f variable + %.2f fixed Credits%s", source.name, if source.on then "On" else "Off", source.outputKW / 1000, source.availableKW / 1000, source.installedKW / 1000, source.capKW / 1000,
+			row.text.Text = string.format("%s · %s\nLast output %.3f MW · Ready now %.3f MW\nInstalled %.1f MW · Cap %.1f MW\n%.0f Credits/MWh + %.0f Credits/h On\nTotal costs %.2f variable + %.2f fixed Credits%s", source.name, if not source.on then "Off" elseif source.availableKW == 0 then "On · no usable capacity" elseif source.outputKW == 0 then "On · ready, not dispatched" else "On · producing (last interval)", source.outputKW / 1000, source.availableKW / 1000, source.installedKW / 1000, source.capKW / 1000,
 				source.variableMinorPerMWh / 100, source.fixedMinorPerHour / 100, source.variableExpenseMinor / 100, source.fixedExpenseMinor / 100,
 				if source.id == "wind" then string.format("\nWind potential %.3f MW · curtailed %.3f MW", source.potentialKW / 1000, source.curtailedKW / 1000) else "")
+			row.text.Text ..= if source.id == "wind" then "\nWeather changes with simulated time. Unused potential is curtailed."
+				elseif source.id == "peak" then "\nBackup for shortages; higher fuel cost. On pays standby cost even at zero output."
+				else "\nFlexible main supply. Auto dispatch uses cheaper available generation first."
 			row.toggle.Text = if source.on then "Switch Off" else "Switch On"
 			for _, button in {row.toggle, row.minus, row.plus} do button.Active = healthy and not pending and not leaving and not current.saving and not current.saveBlocked end
 		end
@@ -169,15 +184,17 @@ function Client.mount(first: any, playerGui: PlayerGui, reopen: () -> ()): any
 			table.insert(forecast, string.format("+%d min: demand %.2f · wind %.2f · available %.2f MW%s%s", sample.offset, sample.demandKW / 1000, sample.windKW / 1000, sample.availableKW / 1000,
 				if sample.capacityShortfallKW > 0 then " · SHORTAGE" else "", if sample.branchLimited then " · feeder constrained" else ""))
 		end
+		table.insert(forecast, "Caps are upper limits, not output orders. Forecasts assume unchanged controls; they do not guarantee delivery through constrained routes.")
 		ui.forecast.Text = table.concat(forecast, "\n")
 		ui.alerts.Text = if #current.alerts > 0 then table.concat(current.alerts, "\n") else "No active operational alerts."
 		ui.retry.Visible = current.status == "Suspended" or current.status == "Invalidated" or current.saveBlocked
-		ui.retry.Active = healthy and not pending and not leaving
+		ui.retry.Active = healthy and not pending and not leaving and not current.saving
+		if ui.retry.Visible then ui.alerts.Text ..= "\nNo energy or Credits settle while paused. Resolve the cause, then Retry once; missed time is not replayed." end
 		local selected = app.state.selectedId
 		if positions[selected] then
 			v.inspector.title.Text = names[selected]; v.inspector.tag.Text = "OPERATIONS · TRAINING"
 			local source = find(selected)
-			v.inspector.body.Text = if source then string.format("%s · output %.3f MW\nAvailable %.3f MW · cap %.1f MW\nOpen Control room to change dispatch limits.", if source.on then "On" else "Off", source.outputKW / 1000, source.availableKW / 1000, source.capKW / 1000)
+			v.inspector.body.Text = if source then string.format("%s · output %.3f MW\nAvailable %.3f MW · cap %.1f MW\nOpen Control room to change dispatch limits.", if not source.on then "Off" elseif source.availableKW == 0 then "On · no usable capacity" elseif source.outputKW == 0 then "On · ready, not dispatched" else "On · producing (last interval)", source.outputKW / 1000, source.availableKW / 1000, source.capKW / 1000)
 				else "Shared electrical network. East feeder capacity: 3 MW. View Control room for national service and forecast."
 			local sink = current.sinks[selected]
 			if sink then v.inspector.body.Text = string.format("Requested %.3f MW\nDelivered %.3f MW\nUnserved %.3f MW\n%s", sink.requestedKW / 1000, sink.deliveredKW / 1000, sink.unmetKW / 1000, if selected == "b" then "East feeder limit: 3 MW" else "North feeder limit: 6 MW") end

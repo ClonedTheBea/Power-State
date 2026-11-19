@@ -1,5 +1,13 @@
 # Decisions, questions and risks
 
+## Operations v1.1 — 19 November 2026
+
+- **D182 (owner-approved):** accept v1 as a fake-storage technical/gameplay milestone and authorize performance investigation, an atomicity/scheduling safety gate, actual Studio multiplayer, control-room usability and retained acceptance. No real records, schema4, permanent purchases or Production. Historical timing failures remain evidence.
+- **D183 (implementation within D182):** memoize scalar JSON encoding within each fake Operations save, bounded at4,096 entries; retain full canonical traversals/comparisons and fenced idempotent mutations. Signed zero bypasses caching. No generic codec, real adapter, financial rule or acceptance-policy change. Local Studio negative UserIds are accepted only behind the existing Studio/Test guard; zero remains invalid and ownership still comes from Player.
+- **D184 (presentation within D182):** prioritize alerts/fleet controls over detailed totals; explain dispatchable headroom, conditional forecast issue time, generator roles, last production/current readiness and standby costs. Operations overview uses its actual authoritative snapshot and distinguishes live/confirmed fake balances. No change to dispatch or billing. [Validation and outstanding acceptance limits](NATIONAL-GRID-OPERATIONS-V11-VALIDATION.md).
+- **D185 (observed v1.1 result, not release approval):** matched checkpoint p95 improved 22.492 to11.326 ms and measured active eight-country lifecycle p95 27.815 to16.655 ms; unchanged safety/oracle/scheduler gates passed before actual eight-client testing. All eight clients passed isolation and in-session re-entry; one actual departure cleanup passed. Retained regressions/builds and full-project Play Script Analysis passed. Manual swipe interaction, same-account network reconnect, physical devices and hosted-load acceptance remain outstanding. Additional final edit-mode analysis inspection was blocked by computer control. No solver target is a whole-frame guarantee; no real persistence or next milestone is enabled.
+
+
 ## Operations v1 large sprint — 18 November 2026
 
 - **D178 (owner-approved):** Stages A–D, fake Test only. Provisional4ms cooperative solver target,80ms aggregate/eight-country interval,750ms deadline at native/30Hz;15Hz must fail safely. Preserve graph/fairness/accounting/security bounds and historical synchronous failures. Atomic/scheduling gate precedes gameplay. No real records/schema4/purchases/Production/publication.

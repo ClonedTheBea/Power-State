@@ -1,0 +1,1862 @@
+[
+  {
+    "time": "2026-11-19T06:09:39.653Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 Stage A] COMPLETE Baseline"
+  },
+  {
+    "time": "2026-11-19T06:10:57.079Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 Stage A] COMPLETE Baseline"
+  },
+  {
+    "time": "2026-11-19T06:13:30.313Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Encoding] PASS: 5019 assertions; first scalar calls 78"
+  },
+  {
+    "time": "2026-11-19T06:13:30.650Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Atomic] PASS: 326 assertions; one-hour Bank 120600 minor; state 5434 bytes"
+  },
+  {
+    "time": "2026-11-19T06:13:30.865Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Scenario] PASS: 3144 assertions; shortage936 kW, peaker936 kW, constrained500 kW; record=5596"
+  },
+  {
+    "time": "2026-11-19T06:13:30.867Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Security] PASS: 231 assertions"
+  },
+  {
+    "time": "2026-11-19T06:13:32.879Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Fleet Lifecycle] PASS: 2062 assertions; {\"snapshotBytes\":2139,\"intervals\":120,\"profileBytes\":5712,\"prepPeakMs\":2.8888999950140716,\"countries\":8,\"storage\":{\"writes\":984,\"profiles\":8,\"calls\":984},\"heapDeltaKiB\":1688,\"installPeakMs\":1.5231999568641186,\"solverPeakMs\":2.0606000325642528,\"fakeSavePeakMs\":3.082199953496456}"
+  },
+  {
+    "time": "2026-11-19T06:13:33.590Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations oracle] PASS: 2187 exhaustive topology/supply/demand cases"
+  },
+  {
+    "time": "2026-11-19T06:13:33.751Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations performance] p95 0.1593ms; max 0.2361ms; eight-country 0.9987ms; max operations 521; checks 8842"
+  },
+  {
+    "time": "2026-11-19T06:13:33.843Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations maximum bounds] p95 1.3452ms; max 1.5744ms; eight-country 9.3606ms; operations 8084"
+  },
+  {
+    "time": "2026-11-19T06:13:33.843Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Stage 1] PASS: 8854 assertions"
+  },
+  {
+    "time": "2026-11-19T06:13:36.933Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Fleet 1D yield equivalence] {\"quantums\":[1,16,128],\"boundaries\":{\"validated\":true,\"allocated\":true,\"routed\":true,\"complete\":true,\"feasibility\":true,\"cut-test\":true,\"compiled\":true,\"prefix\":true,\"start\":true,\"round\":true,\"edge\":true,\"freeze\":true},\"checks\":9100,\"oracleCases\":2187}"
+  },
+  {
+    "time": "2026-11-19T06:13:41.610Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Fleet 1D safety] PASS: 1486 assertions; all 12 cancellation boundaries"
+  },
+  {
+    "time": "2026-11-19T06:13:41.620Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-323,\"cadenceHz\":0,\"elapsedMs\":3.131599980406463,\"completed\":8,\"cpuMs\":1.4199000434018672,\"overshootMs\":0,\"installPeakMs\":0.8024999988265336,\"retained\":0,\"round\":1,\"peakMs\":1.1739999754354358,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:41.661Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-575,\"cadenceHz\":0,\"elapsedMs\":16.394500038586558,\"completed\":8,\"cpuMs\":6.893100100569427,\"overshootMs\":0,\"installPeakMs\":2.368599991314113,\"retained\":0,\"round\":1,\"peakMs\":3.7560000200755896,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:41.744Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":601,\"cadenceHz\":0,\"elapsedMs\":50.42980000143871,\"completed\":8,\"cpuMs\":13.056499941740185,\"overshootMs\":0,\"installPeakMs\":2.301200001966208,\"retained\":0,\"round\":1,\"peakMs\":3.763600019738078,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:41.911Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-58,\"cadenceHz\":0,\"elapsedMs\":122.23169999197126,\"completed\":8,\"cpuMs\":29.33119999943301,\"overshootMs\":0,\"installPeakMs\":2.1223000367172064,\"retained\":0,\"round\":1,\"peakMs\":3.760599996894598,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.112Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":231,\"cadenceHz\":0,\"elapsedMs\":149.71299999160693,\"completed\":8,\"cpuMs\":36.932800023350868,\"overshootMs\":0,\"installPeakMs\":1.4115999802015722,\"retained\":0,\"round\":1,\"peakMs\":3.7669999874196948,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.182Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-394,\"cadenceHz\":0,\"elapsedMs\":37.52660000463948,\"completed\":8,\"cpuMs\":12.075199978426099,\"overshootMs\":0,\"installPeakMs\":3.024500038009137,\"retained\":0,\"round\":1,\"peakMs\":3.808200010098517,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.296Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1127,\"cadenceHz\":0,\"elapsedMs\":74.09199996618554,\"completed\":8,\"cpuMs\":18.222699931357057,\"overshootMs\":0,\"installPeakMs\":2.91890004882589,\"retained\":0,\"round\":1,\"peakMs\":3.7693000049330296,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.308Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1189,\"cadenceHz\":0,\"elapsedMs\":4.628400027286261,\"completed\":8,\"cpuMs\":2.018500061240047,\"overshootMs\":0,\"installPeakMs\":1.235299976542592,\"retained\":0,\"round\":2,\"peakMs\":1.7974000074900687,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.346Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":673,\"cadenceHz\":0,\"elapsedMs\":13.183999981265515,\"completed\":8,\"cpuMs\":6.299600063357502,\"overshootMs\":0,\"installPeakMs\":2.242900023702532,\"retained\":0,\"round\":2,\"peakMs\":3.757600032258779,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.426Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-630,\"cadenceHz\":0,\"elapsedMs\":44.216200010851029,\"completed\":8,\"cpuMs\":13.113300083205104,\"overshootMs\":0,\"installPeakMs\":2.1930999937467279,\"retained\":0,\"round\":2,\"peakMs\":3.7657999782823028,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.595Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":16,\"cadenceHz\":0,\"elapsedMs\":122.7717999718152,\"completed\":8,\"cpuMs\":28.507999959401788,\"overshootMs\":0,\"installPeakMs\":1.901299983728677,\"retained\":0,\"round\":2,\"peakMs\":3.769500006455928,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.796Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":175,\"cadenceHz\":0,\"elapsedMs\":150.27839998947457,\"completed\":8,\"cpuMs\":37.4292999622412,\"overshootMs\":0,\"installPeakMs\":1.6041999915614725,\"retained\":0,\"round\":2,\"peakMs\":3.7641999660991134,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.864Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2599,\"cadenceHz\":0,\"elapsedMs\":35.71299999020994,\"completed\":8,\"cpuMs\":11.080599972046912,\"overshootMs\":0,\"installPeakMs\":2.1413000067695977,\"retained\":0,\"round\":2,\"peakMs\":3.7598999915644528,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.962Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1603,\"cadenceHz\":0,\"elapsedMs\":60.95519999507815,\"completed\":8,\"cpuMs\":17.298600054346026,\"overshootMs\":0,\"installPeakMs\":2.159699972253293,\"retained\":0,\"round\":2,\"peakMs\":3.7732000346295537,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:42.972Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-611,\"cadenceHz\":0,\"elapsedMs\":3.3159000449813904,\"completed\":8,\"cpuMs\":1.3069999404251576,\"overshootMs\":0,\"installPeakMs\":0.6226000259630382,\"retained\":0,\"round\":3,\"peakMs\":1.0670999763533474,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.012Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":406,\"cadenceHz\":0,\"elapsedMs\":14.461599988862873,\"completed\":8,\"cpuMs\":6.281399982981384,\"overshootMs\":0,\"installPeakMs\":2.0216000266373159,\"retained\":0,\"round\":3,\"peakMs\":3.7763999425806107,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.081Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":502,\"cadenceHz\":0,\"elapsedMs\":36.1469000345096,\"completed\":8,\"cpuMs\":12.291100050788373,\"overshootMs\":0,\"installPeakMs\":2.5627000140957536,\"retained\":0,\"round\":3,\"peakMs\":3.763000015169382,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.245Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1775,\"cadenceHz\":0,\"elapsedMs\":119.75979997077957,\"completed\":8,\"cpuMs\":29.87530012615025,\"overshootMs\":0,\"installPeakMs\":2.139099990017712,\"retained\":0,\"round\":3,\"peakMs\":3.7609999999403955,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.446Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1311,\"cadenceHz\":0,\"elapsedMs\":151.2051999452524,\"completed\":8,\"cpuMs\":37.722199980635199,\"overshootMs\":0,\"installPeakMs\":2.2220000391826035,\"retained\":0,\"round\":3,\"peakMs\":3.7746999878436329,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.517Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":394,\"cadenceHz\":0,\"elapsedMs\":38.27620000811294,\"completed\":8,\"cpuMs\":11.797300074249506,\"overshootMs\":0,\"installPeakMs\":3.6415000213310124,\"retained\":0,\"round\":3,\"peakMs\":3.7596000474877657,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.629Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":700,\"cadenceHz\":0,\"elapsedMs\":75.2267999923788,\"completed\":8,\"cpuMs\":17.63829990522936,\"overshootMs\":0,\"installPeakMs\":2.2302999859675767,\"retained\":0,\"round\":3,\"peakMs\":3.770699957385659,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.672Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":96,\"cadenceHz\":30,\"elapsedMs\":35.80299997702241,\"completed\":8,\"cpuMs\":1.7533998470753432,\"overshootMs\":0,\"installPeakMs\":0.6260999944061041,\"retained\":0,\"round\":1,\"peakMs\":1.504399988334626,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.761Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":671,\"cadenceHz\":30,\"elapsedMs\":64.27819997770712,\"completed\":8,\"cpuMs\":6.46450009662658,\"overshootMs\":0,\"installPeakMs\":2.182300027925521,\"retained\":0,\"round\":1,\"peakMs\":3.757900034543127,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:43.882Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2281,\"cadenceHz\":30,\"elapsedMs\":87.93500001775101,\"completed\":8,\"cpuMs\":11.67500001611188,\"overshootMs\":0,\"installPeakMs\":3.492399991955608,\"retained\":0,\"round\":1,\"peakMs\":3.7614000029861929,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:44.196Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":175,\"cadenceHz\":30,\"elapsedMs\":268.11440003803,\"completed\":8,\"cpuMs\":29.648399795405568,\"overshootMs\":0,\"installPeakMs\":2.00899998890236,\"retained\":0,\"round\":1,\"peakMs\":3.7663999828509988,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:44.647Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":120,\"cadenceHz\":30,\"elapsedMs\":398.41780002461749,\"completed\":8,\"cpuMs\":37.329900020267817,\"overshootMs\":0,\"installPeakMs\":2.2950000129640104,\"retained\":0,\"round\":1,\"peakMs\":3.7705000140704216,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:44.763Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1475,\"cadenceHz\":30,\"elapsedMs\":85.913100047037,\"completed\":8,\"cpuMs\":11.451800004579127,\"overshootMs\":0,\"installPeakMs\":2.4139000452123584,\"retained\":0,\"round\":1,\"peakMs\":3.7647999706678094,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:44.981Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":377,\"cadenceHz\":30,\"elapsedMs\":179.284900019411,\"completed\":8,\"cpuMs\":18.087900010868908,\"overshootMs\":0,\"installPeakMs\":2.783200005069375,\"retained\":0,\"round\":1,\"peakMs\":3.768299997318536,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:45.022Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1579,\"cadenceHz\":30,\"elapsedMs\":35.75300000375137,\"completed\":8,\"cpuMs\":1.6593000036664308,\"overshootMs\":0,\"installPeakMs\":0.6845999741926789,\"retained\":0,\"round\":2,\"peakMs\":1.3847000082023442,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:45.111Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-269,\"cadenceHz\":30,\"elapsedMs\":63.90939996344969,\"completed\":8,\"cpuMs\":6.536400003824383,\"overshootMs\":0,\"installPeakMs\":2.2114000166766347,\"retained\":0,\"round\":2,\"peakMs\":3.7574999732896687,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:45.247Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1893,\"cadenceHz\":30,\"elapsedMs\":103.72839996125549,\"completed\":8,\"cpuMs\":11.944400030188263,\"overshootMs\":0,\"installPeakMs\":2.694499969948083,\"retained\":0,\"round\":2,\"peakMs\":3.7672999897040428,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:45.594Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":83,\"cadenceHz\":30,\"elapsedMs\":301.64180003339427,\"completed\":8,\"cpuMs\":28.763600101228805,\"overshootMs\":0,\"installPeakMs\":1.4702999615110458,\"retained\":0,\"round\":2,\"peakMs\":3.7752999924123289,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:46.062Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":952,\"cadenceHz\":30,\"elapsedMs\":407.06300002057108,\"completed\":8,\"cpuMs\":37.810999900102618,\"overshootMs\":0,\"installPeakMs\":1.7810999997891486,\"retained\":0,\"round\":2,\"peakMs\":3.7691000034101309,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:46.227Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-165,\"cadenceHz\":30,\"elapsedMs\":129.97249996988104,\"completed\":8,\"cpuMs\":13.737699890043587,\"overshootMs\":0,\"installPeakMs\":2.1699999924749138,\"retained\":0,\"round\":2,\"peakMs\":3.850799985229969,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:46.463Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2738,\"cadenceHz\":30,\"elapsedMs\":197.98850000370295,\"completed\":8,\"cpuMs\":19.47010005824268,\"overshootMs\":0,\"installPeakMs\":2.48009996721521,\"retained\":0,\"round\":2,\"peakMs\":3.7918000016361477,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:46.505Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-3899,\"cadenceHz\":30,\"elapsedMs\":34.31660000933334,\"completed\":8,\"cpuMs\":1.3467000680975617,\"overshootMs\":0,\"installPeakMs\":0.6573999999091029,\"retained\":0,\"round\":3,\"peakMs\":1.0424999636597932,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:46.612Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":776,\"cadenceHz\":30,\"elapsedMs\":81.74289995804429,\"completed\":8,\"cpuMs\":6.375799945089966,\"overshootMs\":0,\"installPeakMs\":2.3361999774351718,\"retained\":0,\"round\":3,\"peakMs\":3.755600017029792,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:46.793Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-131,\"cadenceHz\":30,\"elapsedMs\":147.29270001407714,\"completed\":8,\"cpuMs\":13.750200101640076,\"overshootMs\":0,\"installPeakMs\":1.8475999822840095,\"retained\":0,\"round\":3,\"peakMs\":3.803499974310398,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:47.162Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1674,\"cadenceHz\":30,\"elapsedMs\":323.3227000455372,\"completed\":8,\"cpuMs\":29.72230000887066,\"overshootMs\":0,\"installPeakMs\":2.7336000348441304,\"retained\":0,\"round\":3,\"peakMs\":3.7943999632261695,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:47.594Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1275,\"cadenceHz\":30,\"elapsedMs\":374.28769998950886,\"completed\":8,\"cpuMs\":36.109200038481507,\"overshootMs\":0,\"installPeakMs\":1.6004000208340586,\"retained\":0,\"round\":3,\"peakMs\":3.7688000011257829,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:47.730Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3504,\"cadenceHz\":30,\"elapsedMs\":104.77580002043396,\"completed\":8,\"cpuMs\":11.013899988029153,\"overshootMs\":0,\"installPeakMs\":2.4435999803245069,\"retained\":0,\"round\":3,\"peakMs\":3.7661000387743117,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:47.927Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2033,\"cadenceHz\":30,\"elapsedMs\":160.065800009761,\"completed\":8,\"cpuMs\":17.4117999849841,\"overshootMs\":0,\"installPeakMs\":1.5722999814897776,\"retained\":0,\"round\":3,\"peakMs\":3.767399990465492,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:47.987Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":41,\"cadenceHz\":15,\"elapsedMs\":53.42999997083098,\"completed\":8,\"cpuMs\":1.2434999807737768,\"overshootMs\":0,\"installPeakMs\":0.6313000340014696,\"retained\":0,\"round\":1,\"peakMs\":0.9931999957188964,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:48.144Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-825,\"cadenceHz\":15,\"elapsedMs\":131.3720000325702,\"completed\":8,\"cpuMs\":6.339799962006509,\"overshootMs\":0,\"installPeakMs\":2.1240999922156336,\"retained\":0,\"round\":1,\"peakMs\":3.755599958822131,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:48.363Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1064,\"cadenceHz\":15,\"elapsedMs\":188.0568999913521,\"completed\":8,\"cpuMs\":11.233499913942069,\"overshootMs\":0,\"installPeakMs\":2.8830000082962217,\"retained\":0,\"round\":1,\"peakMs\":3.765299974475056,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:49.012Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":604,\"cadenceHz\":15,\"elapsedMs\":603.6720999982208,\"completed\":8,\"cpuMs\":29.2039000778459,\"overshootMs\":0,\"installPeakMs\":2.41499999538064,\"retained\":0,\"round\":1,\"peakMs\":3.7650999729521574,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:49.744Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":278,\"cadenceHz\":15,\"elapsedMs\":681.971899990458,\"completed\":8,\"cpuMs\":36.07700002612546,\"overshootMs\":0,\"installPeakMs\":1.6444000066258014,\"retained\":0,\"round\":1,\"peakMs\":3.7662999820895495,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:49.979Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":310,\"cadenceHz\":15,\"elapsedMs\":205.84289997350425,\"completed\":8,\"cpuMs\":10.847399884369225,\"overshootMs\":0,\"installPeakMs\":1.8800999969244004,\"retained\":0,\"round\":1,\"peakMs\":3.7642999668605627,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:50.363Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-773,\"cadenceHz\":15,\"elapsedMs\":345.5423000268638,\"completed\":8,\"cpuMs\":17.67979993019253,\"overshootMs\":0,\"installPeakMs\":1.5254999743774534,\"retained\":0,\"round\":1,\"peakMs\":3.771900024730712,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:50.421Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1031,\"cadenceHz\":15,\"elapsedMs\":50.157700025010857,\"completed\":8,\"cpuMs\":1.2885999749414623,\"overshootMs\":0,\"installPeakMs\":0.7698000408709049,\"retained\":0,\"round\":2,\"peakMs\":1.0099999490194023,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:50.577Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2787,\"cadenceHz\":15,\"elapsedMs\":130.65290002850817,\"completed\":8,\"cpuMs\":6.025100010447204,\"overshootMs\":0,\"installPeakMs\":1.6415000427514315,\"retained\":0,\"round\":2,\"peakMs\":3.7536000018008055,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:50.815Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":684,\"cadenceHz\":15,\"elapsedMs\":205.65439999336378,\"completed\":8,\"cpuMs\":11.685799865517766,\"overshootMs\":0,\"installPeakMs\":2.7673000004142525,\"retained\":0,\"round\":2,\"peakMs\":3.760599996894598,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:51.410Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1270,\"cadenceHz\":15,\"elapsedMs\":550.7839000201784,\"completed\":8,\"cpuMs\":28.474099934101106,\"overshootMs\":0,\"installPeakMs\":1.7029999871738256,\"retained\":0,\"round\":2,\"peakMs\":3.7680999957956375,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:52.176Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1562,\"cadenceHz\":15,\"elapsedMs\":715.6391000025906,\"completed\":8,\"cpuMs\":35.662899899762127,\"overshootMs\":0,\"installPeakMs\":2.341700019314885,\"retained\":0,\"round\":2,\"peakMs\":3.7683999980799856,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:52.432Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-74,\"cadenceHz\":15,\"elapsedMs\":224.08750001341105,\"completed\":8,\"cpuMs\":11.231299955397845,\"overshootMs\":0,\"installPeakMs\":2.640900027472526,\"retained\":0,\"round\":2,\"peakMs\":3.7631000159308316,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:52.815Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1077,\"cadenceHz\":15,\"elapsedMs\":344.2630000063218,\"completed\":8,\"cpuMs\":18.248800071887673,\"overshootMs\":0,\"installPeakMs\":2.6737000443972649,\"retained\":0,\"round\":2,\"peakMs\":3.7794000236317517,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:52.872Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-88,\"cadenceHz\":15,\"elapsedMs\":48.391499964054677,\"completed\":8,\"cpuMs\":1.3256999664008618,\"overshootMs\":0,\"installPeakMs\":1.0022000060416759,\"retained\":0,\"round\":3,\"peakMs\":1.0785000049509109,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:53.043Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2900,\"cadenceHz\":15,\"elapsedMs\":146.74210001248867,\"completed\":8,\"cpuMs\":6.569999968633056,\"overshootMs\":0,\"installPeakMs\":1.9104999955743552,\"retained\":0,\"round\":3,\"peakMs\":3.764999972190708,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:53.263Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":647,\"cadenceHz\":15,\"elapsedMs\":187.34450003830717,\"completed\":8,\"cpuMs\":11.919100070372224,\"overshootMs\":0,\"installPeakMs\":2.811300044413656,\"retained\":0,\"round\":3,\"peakMs\":3.7569000269286336,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:53.876Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":817,\"cadenceHz\":15,\"elapsedMs\":568.3245999971405,\"completed\":8,\"cpuMs\":28.213399986270816,\"overshootMs\":0,\"installPeakMs\":2.0380999776534738,\"retained\":0,\"round\":3,\"peakMs\":3.7578000337816777,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:54.613Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3430,\"cadenceHz\":15,\"elapsedMs\":686.495499976445,\"completed\":8,\"cpuMs\":37.34369995072484,\"overshootMs\":0,\"installPeakMs\":2.6178999687545,\"retained\":0,\"round\":3,\"peakMs\":3.770900017116219,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:54.846Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":194,\"cadenceHz\":15,\"elapsedMs\":204.12860001670198,\"completed\":8,\"cpuMs\":11.22599997324869,\"overshootMs\":0,\"installPeakMs\":2.8941999771632256,\"retained\":0,\"round\":3,\"peakMs\":3.7588999839499594,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:55.212Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":726,\"cadenceHz\":15,\"elapsedMs\":327.4319999618456,\"completed\":8,\"cpuMs\":17.4604999483563,\"overshootMs\":0,\"installPeakMs\":2.239100052975118,\"retained\":0,\"round\":3,\"peakMs\":3.7565999664366247,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:13:55.212Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] PASS: 63 eight-country intervals; safely suspended countries=0"
+  },
+  {
+    "time": "2026-11-19T06:13:55.212Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 Stage A] COMPLETE Candidate"
+  },
+  {
+    "time": "2026-11-19T06:21:17.493Z",
+    "log": "0.748.0.7481526_20261119T062106Z_Studio_669A0_last.log",
+    "message": "[Operations Remote] PASS: 43 assertions; flood response count=8"
+  },
+  {
+    "time": "2026-11-19T06:21:24.175Z",
+    "log": "0.748.0.7481526_20261119T062106Z_Studio_669A0_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":16.610700637102128,\"bankMinor\":103979,\"frameP95Ms\":17.573900520801545,\"userId\":-1,\"mapDescendants\":394,\"capKW\":4900,\"commandObservedMs\":412.56150003755467,\"frameWorstMs\":20.720500499010087,\"restoredStep\":12}"
+  },
+  {
+    "time": "2026-11-19T06:23:36.864Z",
+    "log": "0.748.0.7481526_20261119T062317Z_Studio_90C83_last.log",
+    "message": "[Operations Remote] PASS: 38 assertions; flood response count=9"
+  },
+  {
+    "time": "2026-11-19T06:23:40.762Z",
+    "log": "0.748.0.7481526_20261119T062319Z_Studio_6DB4F_last.log",
+    "message": "[Operations Remote] PASS: 38 assertions; flood response count=9"
+  },
+  {
+    "time": "2026-11-19T06:23:41.087Z",
+    "log": "0.748.0.7481526_20261119T062321Z_Studio_BFD5C_last.log",
+    "message": "[Operations Remote] PASS: 38 assertions; flood response count=6"
+  },
+  {
+    "time": "2026-11-19T06:23:41.124Z",
+    "log": "0.748.0.7481526_20261119T062315Z_Studio_938B1_last.log",
+    "message": "[Operations Remote] PASS: 50 assertions; flood response count=9"
+  },
+  {
+    "time": "2026-11-19T06:23:55.174Z",
+    "log": "0.748.0.7481526_20261119T062321Z_Studio_BFD5C_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":16.651500016450883,\"bankMinor\":106363,\"frameP95Ms\":18.451999872922899,\"userId\":-6,\"mapDescendants\":394,\"capKW\":4400,\"commandObservedMs\":6196.99850003235,\"frameWorstMs\":1439.8311376571656,\"restoredStep\":19}"
+  },
+  {
+    "time": "2026-11-19T06:24:03.230Z",
+    "log": "0.748.0.7481526_20261119T062315Z_Studio_938B1_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.66679680347443,\"bankMinor\":111619,\"frameP95Ms\":69.50829923152924,\"userId\":-2,\"mapDescendants\":394,\"capKW\":4800,\"commandObservedMs\":849.1658000275493,\"frameWorstMs\":74.68680292367935,\"restoredStep\":34}"
+  },
+  {
+    "time": "2026-11-19T06:24:07.294Z",
+    "log": "0.748.0.7481526_20261119T062317Z_Studio_90C83_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.69840216636658,\"bankMinor\":111977,\"frameP95Ms\":68.52380186319351,\"userId\":-4,\"mapDescendants\":394,\"capKW\":4600,\"commandObservedMs\":5442.557999980636,\"frameWorstMs\":3740.302324295044,\"restoredStep\":35}"
+  },
+  {
+    "time": "2026-11-19T06:24:10.232Z",
+    "log": "0.748.0.7481526_20261119T062319Z_Studio_6DB4F_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.67239964008332,\"bankMinor\":111262,\"frameP95Ms\":68.2113990187645,\"userId\":-8,\"mapDescendants\":394,\"capKW\":4200,\"commandObservedMs\":418.4358000056818,\"frameWorstMs\":2438.5299682617189,\"restoredStep\":33}"
+  },
+  {
+    "time": "2026-11-19T06:31:31.457Z",
+    "log": "0.748.0.7481526_20261119T063047Z_Studio_4E430_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.62780046463013,\"bankMinor\":111262,\"frameP95Ms\":74.66679811477661,\"userId\":-1,\"mapDescendants\":394,\"capKW\":4900,\"commandObservedMs\":416.27529996912929,\"frameWorstMs\":6496.646404266357,\"restoredStep\":33}"
+  },
+  {
+    "time": "2026-11-19T06:31:32.441Z",
+    "log": "0.748.0.7481526_20261119T063055Z_Studio_52FA5_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":16.616199165582658,\"bankMinor\":107398,\"frameP95Ms\":19.36909928917885,\"userId\":-7,\"mapDescendants\":394,\"capKW\":4300,\"commandObservedMs\":416.15329997148367,\"frameWorstMs\":2237.34450340271,\"restoredStep\":22}"
+  },
+  {
+    "time": "2026-11-19T06:31:40.692Z",
+    "log": "0.748.0.7481526_20261119T063048Z_Studio_5CDE1_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.60450249910355,\"bankMinor\":112696,\"frameP95Ms\":70.91909646987915,\"userId\":-2,\"mapDescendants\":394,\"capKW\":4800,\"commandObservedMs\":415.79990001628178,\"frameWorstMs\":7187.633991241455,\"restoredStep\":37}"
+  },
+  {
+    "time": "2026-11-19T06:31:43.297Z",
+    "log": "0.748.0.7481526_20261119T063049Z_Studio_003E2_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.66869670152664,\"bankMinor\":113417,\"frameP95Ms\":70.42709738016129,\"userId\":-3,\"mapDescendants\":394,\"capKW\":4700,\"commandObservedMs\":416.55340004945176,\"frameWorstMs\":4373.748779296875,\"restoredStep\":39}"
+  },
+  {
+    "time": "2026-11-19T06:31:44.338Z",
+    "log": "0.748.0.7481526_20261119T063051Z_Studio_DE961_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.66159629821778,\"bankMinor\":113056,\"frameP95Ms\":69.8079988360405,\"userId\":-5,\"mapDescendants\":394,\"capKW\":4500,\"commandObservedMs\":832.8403000487015,\"frameWorstMs\":2456.0821056365969,\"restoredStep\":38}"
+  },
+  {
+    "time": "2026-11-19T06:31:45.344Z",
+    "log": "0.748.0.7481526_20261119T063052Z_Studio_1FB82_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.64379686117172,\"bankMinor\":113056,\"frameP95Ms\":68.46150010824204,\"userId\":-6,\"mapDescendants\":394,\"capKW\":4400,\"commandObservedMs\":416.63730004802349,\"frameWorstMs\":2199.6450424194338,\"restoredStep\":38}"
+  },
+  {
+    "time": "2026-11-19T06:31:45.698Z",
+    "log": "0.748.0.7481526_20261119T063054Z_Studio_47914_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.65799766778946,\"bankMinor\":112333,\"frameP95Ms\":69.92989778518677,\"userId\":-8,\"mapDescendants\":394,\"capKW\":4200,\"commandObservedMs\":416.44760000053796,\"frameWorstMs\":1657.7658653259278,\"restoredStep\":36}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.302Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--1\",\"bankMinor\":116336,\"requested\":195050,\"delivered\":194950,\"epoch\":2,\"userId\":-1,\"step\":47}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.302Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--2\",\"bankMinor\":114873,\"requested\":174150,\"delivered\":174150,\"epoch\":2,\"userId\":-2,\"step\":43}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.302Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--3\",\"bankMinor\":114507,\"requested\":169050,\"delivered\":169050,\"epoch\":2,\"userId\":-3,\"step\":42}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.302Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--4\",\"bankMinor\":113780,\"requested\":159000,\"delivered\":159000,\"epoch\":2,\"userId\":-4,\"step\":40}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.303Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--5\",\"bankMinor\":113779,\"requested\":159000,\"delivered\":158994,\"epoch\":2,\"userId\":-5,\"step\":40}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.303Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--6\",\"bankMinor\":113414,\"requested\":154050,\"delivered\":154012,\"epoch\":2,\"userId\":-6,\"step\":39}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.303Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--7\",\"bankMinor\":112335,\"requested\":139500,\"delivered\":139500,\"epoch\":2,\"userId\":-7,\"step\":36}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.303Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual owner] PASS {\"countryId\":\"operations-training--8\",\"bankMinor\":112333,\"requested\":139500,\"delivered\":139466,\"epoch\":2,\"userId\":-8,\"step\":36}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.303Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual server] PASS 8 connected clients; {\"peakInstallMs\":1.5042999875731767,\"intervals\":48,\"peakSolverMs\":1.6068000113591552,\"suspended\":0,\"maxSnapshotBytes\":2113}"
+  },
+  {
+    "time": "2026-11-19T06:31:46.341Z",
+    "log": "0.748.0.7481526_20261119T063051Z_Studio_88609_last.log",
+    "message": "[Operations V11 actual client] PASS {\"frameP50Ms\":66.66009873151779,\"bankMinor\":113780,\"frameP95Ms\":69.55719739198685,\"userId\":-4,\"mapDescendants\":394,\"capKW\":4600,\"commandObservedMs\":415.3474000049755,\"frameWorstMs\":3778.360366821289,\"restoredStep\":40}"
+  },
+  {
+    "time": "2026-11-19T06:33:05.648Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -7"
+  },
+  {
+    "time": "2026-11-19T06:40:12.702Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -1"
+  },
+  {
+    "time": "2026-11-19T06:40:12.702Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -2"
+  },
+  {
+    "time": "2026-11-19T06:40:12.702Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -3"
+  },
+  {
+    "time": "2026-11-19T06:40:12.703Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -4"
+  },
+  {
+    "time": "2026-11-19T06:40:12.721Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -5"
+  },
+  {
+    "time": "2026-11-19T06:40:12.721Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -6"
+  },
+  {
+    "time": "2026-11-19T06:40:12.721Z",
+    "log": "0.748.0.7481526_20261119T063039Z_Studio_578C4_last.log",
+    "message": "[Operations V11 actual departure] PASS -8"
+  },
+  {
+    "time": "2026-11-19T06:41:35.730Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Atomic] PASS: 326 assertions; one-hour Bank 120600 minor; state 5434 bytes"
+  },
+  {
+    "time": "2026-11-19T06:41:35.951Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Scenario] PASS: 3144 assertions; shortage936 kW, peaker936 kW, constrained500 kW; record=5596"
+  },
+  {
+    "time": "2026-11-19T06:41:35.953Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Security] PASS: 231 assertions"
+  },
+  {
+    "time": "2026-11-19T06:41:39.798Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Fleet Lifecycle] PASS: 2062 assertions; {\"snapshotBytes\":2139,\"intervals\":120,\"profileBytes\":5712,\"prepPeakMs\":4.445099970325828,\"countries\":8,\"storage\":{\"writes\":984,\"profiles\":8,\"calls\":984},\"heapDeltaKiB\":1947,\"installPeakMs\":2.2826999775134029,\"solverPeakMs\":3.0927000334486367,\"fakeSavePeakMs\":2.9027999844402077}"
+  },
+  {
+    "time": "2026-11-19T06:41:39.810Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":947,\"cadenceHz\":0,\"elapsedMs\":3.0551000381819906,\"completed\":8,\"cpuMs\":1.2362999841570855,\"overshootMs\":0,\"installPeakMs\":0.7214000215753913,\"retained\":0,\"round\":1,\"peakMs\":1.0338000138290227,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:39.849Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-197,\"cadenceHz\":0,\"elapsedMs\":13.25129996985197,\"completed\":8,\"cpuMs\":6.477300135884434,\"overshootMs\":0,\"installPeakMs\":2.265000017359853,\"retained\":0,\"round\":1,\"peakMs\":3.7617000052705409,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:39.926Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1133,\"cadenceHz\":0,\"elapsedMs\":43.59769995789975,\"completed\":8,\"cpuMs\":13.553299999330193,\"overshootMs\":0.49770002160221329,\"installPeakMs\":1.9070000271312893,\"retained\":0,\"round\":1,\"peakMs\":4.497700021602213,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.094Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":19,\"cadenceHz\":0,\"elapsedMs\":123.94989997847006,\"completed\":8,\"cpuMs\":28.551999828778209,\"overshootMs\":0,\"installPeakMs\":1.4406999689526857,\"retained\":0,\"round\":1,\"peakMs\":3.7607999984174969,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.313Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-310,\"cadenceHz\":0,\"elapsedMs\":166.22369998367504,\"completed\":8,\"cpuMs\":41.535200201906267,\"overshootMs\":0,\"installPeakMs\":1.7016999772749842,\"retained\":0,\"round\":1,\"peakMs\":3.8713000249117615,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.380Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":473,\"cadenceHz\":0,\"elapsedMs\":37.17540000798181,\"completed\":8,\"cpuMs\":12.070899945683778,\"overshootMs\":0,\"installPeakMs\":2.5250999606214465,\"retained\":0,\"round\":1,\"peakMs\":3.7559999618679287,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.496Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":783,\"cadenceHz\":0,\"elapsedMs\":76.41529996180907,\"completed\":8,\"cpuMs\":18.393100064713509,\"overshootMs\":0,\"installPeakMs\":2.1850000484846534,\"retained\":0,\"round\":1,\"peakMs\":3.770099952816963,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.508Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":913,\"cadenceHz\":0,\"elapsedMs\":3.5493000177666547,\"completed\":8,\"cpuMs\":1.3626001309603453,\"overshootMs\":0,\"installPeakMs\":0.7454000297002494,\"retained\":0,\"round\":2,\"peakMs\":1.1563000152818859,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.553Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":654,\"cadenceHz\":0,\"elapsedMs\":19.20169999357313,\"completed\":8,\"cpuMs\":6.919099949300289,\"overshootMs\":0,\"installPeakMs\":2.868300012778491,\"retained\":0,\"round\":2,\"peakMs\":3.769399947486818,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.615Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":561,\"cadenceHz\":0,\"elapsedMs\":29.856699984520675,\"completed\":8,\"cpuMs\":11.749400000553579,\"overshootMs\":0,\"installPeakMs\":3.3875000081025066,\"retained\":0,\"round\":2,\"peakMs\":3.76769999274984,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.779Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2217,\"cadenceHz\":0,\"elapsedMs\":118.0682000122033,\"completed\":8,\"cpuMs\":29.582299932371826,\"overshootMs\":0,\"installPeakMs\":1.7952999914996327,\"retained\":0,\"round\":2,\"peakMs\":3.7665999843738975,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:40.979Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":447,\"cadenceHz\":0,\"elapsedMs\":149.80680000735448,\"completed\":8,\"cpuMs\":37.131500081159177,\"overshootMs\":0,\"installPeakMs\":2.002799999900162,\"retained\":0,\"round\":2,\"peakMs\":3.772100026253611,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.048Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1057,\"cadenceHz\":0,\"elapsedMs\":36.01810004329309,\"completed\":8,\"cpuMs\":11.327099928166718,\"overshootMs\":0,\"installPeakMs\":2.8324000304564835,\"retained\":0,\"round\":2,\"peakMs\":3.7663999828509988,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.146Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1791,\"cadenceHz\":0,\"elapsedMs\":61.50430004345253,\"completed\":8,\"cpuMs\":17.83549995161593,\"overshootMs\":0,\"installPeakMs\":2.751599997282028,\"retained\":0,\"round\":2,\"peakMs\":3.778700018301606,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.157Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-41,\"cadenceHz\":0,\"elapsedMs\":3.637799993157387,\"completed\":8,\"cpuMs\":1.3871000264771283,\"overshootMs\":0,\"installPeakMs\":0.74230000609532,\"retained\":0,\"round\":3,\"peakMs\":1.0789999505504966,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.194Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":839,\"cadenceHz\":0,\"elapsedMs\":13.117800001055003,\"completed\":8,\"cpuMs\":6.427200103644282,\"overshootMs\":0,\"installPeakMs\":2.363000006880611,\"retained\":0,\"round\":3,\"peakMs\":3.765100031159818,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.264Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":475,\"cadenceHz\":0,\"elapsedMs\":37.72419999586418,\"completed\":8,\"cpuMs\":11.761400033719838,\"overshootMs\":0,\"installPeakMs\":2.821900008711964,\"retained\":0,\"round\":3,\"peakMs\":3.7671999889425935,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.427Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":508,\"cadenceHz\":0,\"elapsedMs\":117.19110002741218,\"completed\":8,\"cpuMs\":28.559999889694156,\"overshootMs\":0,\"installPeakMs\":1.6611000173725188,\"retained\":0,\"round\":3,\"peakMs\":3.767099988181144,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.643Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-144,\"cadenceHz\":0,\"elapsedMs\":163.80280000157655,\"completed\":8,\"cpuMs\":38.85350003838539,\"overshootMs\":0,\"installPeakMs\":2.1345000131987037,\"retained\":0,\"round\":3,\"peakMs\":3.778000012971461,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.713Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":157,\"cadenceHz\":0,\"elapsedMs\":36.658600030932579,\"completed\":8,\"cpuMs\":11.176500003784895,\"overshootMs\":0,\"installPeakMs\":2.5387000059708955,\"retained\":0,\"round\":3,\"peakMs\":3.7620000075548889,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.812Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1402,\"cadenceHz\":0,\"elapsedMs\":61.07200001133606,\"completed\":8,\"cpuMs\":17.486099968664349,\"overshootMs\":0,\"installPeakMs\":2.196800021920353,\"retained\":0,\"round\":3,\"peakMs\":3.7600999930873515,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.855Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-146,\"cadenceHz\":30,\"elapsedMs\":36.543200025334957,\"completed\":8,\"cpuMs\":1.4506999868899584,\"overshootMs\":0,\"installPeakMs\":0.6763000274077058,\"retained\":0,\"round\":1,\"peakMs\":1.205399981699884,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:41.945Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":107,\"cadenceHz\":30,\"elapsedMs\":64.40840003779158,\"completed\":8,\"cpuMs\":6.188099971041083,\"overshootMs\":0,\"installPeakMs\":2.1026000031270088,\"retained\":0,\"round\":1,\"peakMs\":3.770400013308972,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:42.063Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":401,\"cadenceHz\":30,\"elapsedMs\":87.11660001426935,\"completed\":8,\"cpuMs\":12.034500017762185,\"overshootMs\":0,\"installPeakMs\":2.7055999962612988,\"retained\":0,\"round\":1,\"peakMs\":3.7561000208370389,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:42.427Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1167,\"cadenceHz\":30,\"elapsedMs\":318.7315000104718,\"completed\":8,\"cpuMs\":28.59909983817488,\"overshootMs\":0,\"installPeakMs\":1.4245000202208758,\"retained\":0,\"round\":1,\"peakMs\":3.770299954339862,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:42.896Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-10,\"cadenceHz\":30,\"elapsedMs\":418.2042999891564,\"completed\":8,\"cpuMs\":37.360800022725019,\"overshootMs\":0,\"installPeakMs\":1.7423999961465598,\"retained\":0,\"round\":1,\"peakMs\":3.7707999581471087,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:43.029Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1671,\"cadenceHz\":30,\"elapsedMs\":102.86109999287874,\"completed\":8,\"cpuMs\":11.149000085424632,\"overshootMs\":0,\"installPeakMs\":2.4759999942034485,\"retained\":0,\"round\":1,\"peakMs\":3.755000012461096,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:43.244Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1145,\"cadenceHz\":30,\"elapsedMs\":176.0315999854356,\"completed\":8,\"cpuMs\":17.233100021257998,\"overshootMs\":0,\"installPeakMs\":1.8871999927796424,\"retained\":0,\"round\":1,\"peakMs\":3.7640000227838756,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:43.272Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-233,\"cadenceHz\":30,\"elapsedMs\":19.4340999587439,\"completed\":8,\"cpuMs\":1.3112000306136907,\"overshootMs\":0,\"installPeakMs\":0.7835999713279307,\"retained\":0,\"round\":2,\"peakMs\":1.0576000204309822,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:43.392Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-853,\"cadenceHz\":30,\"elapsedMs\":94.82200001366437,\"completed\":8,\"cpuMs\":8.780200034379959,\"overshootMs\":0,\"installPeakMs\":2.2958999616093935,\"retained\":0,\"round\":2,\"peakMs\":3.7683999980799856,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:43.575Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":42,\"cadenceHz\":30,\"elapsedMs\":151.3707999838516,\"completed\":8,\"cpuMs\":12.673500052187592,\"overshootMs\":0,\"installPeakMs\":1.8872999935410917,\"retained\":0,\"round\":2,\"peakMs\":3.7623000098392369,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:43.895Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1544,\"cadenceHz\":30,\"elapsedMs\":274.12250003544616,\"completed\":8,\"cpuMs\":28.843899897765369,\"overshootMs\":0,\"installPeakMs\":1.8235999741591514,\"retained\":0,\"round\":2,\"peakMs\":3.76180000603199,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:44.348Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":358,\"cadenceHz\":30,\"elapsedMs\":401.46379999350759,\"completed\":8,\"cpuMs\":37.5927000422962,\"overshootMs\":0,\"installPeakMs\":2.590100048109889,\"retained\":0,\"round\":2,\"peakMs\":3.781599982175976,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:44.462Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2471,\"cadenceHz\":30,\"elapsedMs\":84.72480002092198,\"completed\":8,\"cpuMs\":11.152999999467284,\"overshootMs\":0,\"installPeakMs\":2.438099996652454,\"retained\":0,\"round\":2,\"peakMs\":3.757300029974431,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:44.697Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":575,\"cadenceHz\":30,\"elapsedMs\":195.8512999699451,\"completed\":8,\"cpuMs\":17.841699940618129,\"overshootMs\":0,\"installPeakMs\":2.7452000067569317,\"retained\":0,\"round\":2,\"peakMs\":3.7819999852217736,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:44.738Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1835,\"cadenceHz\":30,\"elapsedMs\":35.03750002710149,\"completed\":8,\"cpuMs\":1.267799932975322,\"overshootMs\":0,\"installPeakMs\":0.73640001937747,\"retained\":0,\"round\":3,\"peakMs\":0.9893999667838216,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:44.827Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1028,\"cadenceHz\":30,\"elapsedMs\":65.59129996458069,\"completed\":8,\"cpuMs\":6.404599989764392,\"overshootMs\":0,\"installPeakMs\":2.26239999756217,\"retained\":0,\"round\":3,\"peakMs\":3.7603999953716995,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:44.964Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1196,\"cadenceHz\":30,\"elapsedMs\":104.70539995003492,\"completed\":8,\"cpuMs\":12.139799888245762,\"overshootMs\":0,\"installPeakMs\":2.8558000340126457,\"retained\":0,\"round\":3,\"peakMs\":3.7654999759979548,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:45.326Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1539,\"cadenceHz\":30,\"elapsedMs\":315.63099997583779,\"completed\":8,\"cpuMs\":28.004599967971445,\"overshootMs\":0,\"installPeakMs\":2.388100023381412,\"retained\":0,\"round\":3,\"peakMs\":3.7607999984174969,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:45.780Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":157,\"cadenceHz\":30,\"elapsedMs\":404.40529998159038,\"completed\":8,\"cpuMs\":38.376500247977677,\"overshootMs\":0,\"installPeakMs\":2.6789999683387579,\"retained\":0,\"round\":3,\"peakMs\":3.766800044104457,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:45.912Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2907,\"cadenceHz\":30,\"elapsedMs\":100.49749998142943,\"completed\":8,\"cpuMs\":11.611699999775738,\"overshootMs\":0,\"installPeakMs\":2.393700007814914,\"retained\":0,\"round\":3,\"peakMs\":3.7564000231213869,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:46.129Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-525,\"cadenceHz\":30,\"elapsedMs\":179.40500000258909,\"completed\":8,\"cpuMs\":18.36310006910935,\"overshootMs\":0,\"installPeakMs\":2.21950002014637,\"retained\":0,\"round\":3,\"peakMs\":3.771800023969263,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:46.188Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1108,\"cadenceHz\":15,\"elapsedMs\":51.06919998070225,\"completed\":8,\"cpuMs\":1.3576001510955394,\"overshootMs\":0,\"installPeakMs\":0.651199952699244,\"retained\":0,\"round\":1,\"peakMs\":1.00020004902035,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:46.345Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-865,\"cadenceHz\":15,\"elapsedMs\":132.72059999872,\"completed\":8,\"cpuMs\":6.951000017579645,\"overshootMs\":0,\"installPeakMs\":2.0590000203810634,\"retained\":0,\"round\":1,\"peakMs\":3.7548000109381975,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:46.580Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-445,\"cadenceHz\":15,\"elapsedMs\":203.5784000181593,\"completed\":8,\"cpuMs\":11.790000076871366,\"overshootMs\":0,\"installPeakMs\":2.5880999746732415,\"retained\":0,\"round\":1,\"peakMs\":3.7691000034101309,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:47.195Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1123,\"cadenceHz\":15,\"elapsedMs\":568.021500017494,\"completed\":8,\"cpuMs\":29.026500007603319,\"overshootMs\":0,\"installPeakMs\":1.5756000066176057,\"retained\":0,\"round\":1,\"peakMs\":3.777500009164214,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:47.964Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-40,\"cadenceHz\":15,\"elapsedMs\":721.2237000348978,\"completed\":8,\"cpuMs\":38.51310006575659,\"overshootMs\":0,\"installPeakMs\":2.9824000084772708,\"retained\":0,\"round\":1,\"peakMs\":3.7705000140704216,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:48.180Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1560,\"cadenceHz\":15,\"elapsedMs\":182.65239999163897,\"completed\":8,\"cpuMs\":10.947500064503402,\"overshootMs\":0,\"installPeakMs\":2.4497000267729165,\"retained\":0,\"round\":1,\"peakMs\":3.758300037588924,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:48.562Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1102,\"cadenceHz\":15,\"elapsedMs\":345.29440000187608,\"completed\":8,\"cpuMs\":18.61739990999922,\"overshootMs\":0,\"installPeakMs\":2.7808999875560405,\"retained\":0,\"round\":1,\"peakMs\":3.7778999540023507,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:48.620Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":601,\"cadenceHz\":15,\"elapsedMs\":50.503999984357509,\"completed\":8,\"cpuMs\":1.2750999885611237,\"overshootMs\":0,\"installPeakMs\":0.6423000013455749,\"retained\":0,\"round\":2,\"peakMs\":0.9965999634005129,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:48.761Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":813,\"cadenceHz\":15,\"elapsedMs\":115.20649999147281,\"completed\":8,\"cpuMs\":6.299899949226528,\"overshootMs\":0,\"installPeakMs\":1.969299977645278,\"retained\":0,\"round\":2,\"peakMs\":3.7641999660991134,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:49.045Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2463,\"cadenceHz\":15,\"elapsedMs\":250.54440001258627,\"completed\":8,\"cpuMs\":13.17739998921752,\"overshootMs\":0,\"installPeakMs\":1.518299977760762,\"retained\":0,\"round\":2,\"peakMs\":3.7625000113621356,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:49.661Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1240,\"cadenceHz\":15,\"elapsedMs\":568.7893000431359,\"completed\":8,\"cpuMs\":28.085499885492028,\"overshootMs\":0,\"installPeakMs\":1.7145000165328384,\"retained\":0,\"round\":2,\"peakMs\":3.765300032682717,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:50.410Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-211,\"cadenceHz\":15,\"elapsedMs\":701.225400029216,\"completed\":8,\"cpuMs\":36.583099979907277,\"overshootMs\":0,\"installPeakMs\":2.177499991375953,\"retained\":0,\"round\":2,\"peakMs\":3.768299997318536,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:50.630Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":48,\"cadenceHz\":15,\"elapsedMs\":189.3643000512384,\"completed\":8,\"cpuMs\":11.061800003517419,\"overshootMs\":0,\"installPeakMs\":2.600700012408197,\"retained\":0,\"round\":2,\"peakMs\":3.7568999687209727,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:50.997Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":265,\"cadenceHz\":15,\"elapsedMs\":329.0557999862358,\"completed\":8,\"cpuMs\":18.837799900211395,\"overshootMs\":0,\"installPeakMs\":2.6962999836541714,\"retained\":0,\"round\":2,\"peakMs\":3.8168999599292876,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:51.070Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1636,\"cadenceHz\":15,\"elapsedMs\":67.4952000263147,\"completed\":8,\"cpuMs\":1.2546000652946532,\"overshootMs\":0,\"installPeakMs\":0.6953999982215464,\"retained\":0,\"round\":3,\"peakMs\":0.9976000292226672,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:51.210Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":835,\"cadenceHz\":15,\"elapsedMs\":115.75479997554794,\"completed\":8,\"cpuMs\":6.288799981120974,\"overshootMs\":0,\"installPeakMs\":1.9425000064074994,\"retained\":0,\"round\":3,\"peakMs\":3.7675999919883909,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:51.447Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1983,\"cadenceHz\":15,\"elapsedMs\":203.1317000510171,\"completed\":8,\"cpuMs\":11.87350001418963,\"overshootMs\":0,\"installPeakMs\":2.4295999901369216,\"retained\":0,\"round\":3,\"peakMs\":3.7594999885186555,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:52.028Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-37,\"cadenceHz\":15,\"elapsedMs\":537.3243000358343,\"completed\":8,\"cpuMs\":29.07769999001175,\"overshootMs\":0,\"installPeakMs\":2.646500011906028,\"retained\":0,\"round\":3,\"peakMs\":3.7765000015497209,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:52.824Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2438,\"cadenceHz\":15,\"elapsedMs\":751.4462000108324,\"completed\":2,\"cpuMs\":38.349199981894347,\"overshootMs\":0,\"installPeakMs\":1.2019999558106065,\"retained\":0,\"round\":3,\"peakMs\":3.792200004681945,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:53.063Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1199,\"cadenceHz\":15,\"elapsedMs\":209.37950001098216,\"completed\":8,\"cpuMs\":11.420599883422256,\"overshootMs\":0,\"installPeakMs\":2.884600020479411,\"retained\":0,\"round\":3,\"peakMs\":3.763299959246069,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:53.429Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-714,\"cadenceHz\":15,\"elapsedMs\":327.1394000039436,\"completed\":8,\"cpuMs\":18.067200027871878,\"overshootMs\":0,\"installPeakMs\":2.3015000042505564,\"retained\":0,\"round\":3,\"peakMs\":3.7995000020600857,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:41:53.429Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] PASS: 63 eight-country intervals; safely suspended countries=6"
+  },
+  {
+    "time": "2026-11-19T06:41:56.802Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations GUI] PASS: 129 assertions; map descendants=394"
+  },
+  {
+    "time": "2026-11-19T06:42:01.816Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Remote] PASS: 38 assertions; flood response count=9"
+  },
+  {
+    "time": "2026-11-19T06:43:29.579Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations journey host] Bounded two-second delay injected"
+  },
+  {
+    "time": "2026-11-19T06:43:38.881Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Journey] PASS: 11 assertions; released minute=96; Bank=133691; restored without offline revenue"
+  },
+  {
+    "time": "2026-11-19T06:43:38.882Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations integrated runner] PASS: complete fake-only operator journey"
+  },
+  {
+    "time": "2026-11-19T06:46:51.246Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State P2a unit] PASS: 432 assertions; 1000 starter solves 14.73 ms"
+  },
+  {
+    "time": "2026-11-19T06:46:52.395Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3c fake profile] 18476 bytes; solver p50 0.0657 / p95 0.1004 ms; peak calls 1; synthetic suspension total 1.10s"
+  },
+  {
+    "time": "2026-11-19T06:46:52.395Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State P3c] PASS: 94 assertions"
+  },
+  {
+    "time": "2026-11-19T06:46:53.289Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State P3c safety] PASS: 31 assertions"
+  },
+  {
+    "time": "2026-11-19T06:46:53.384Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[First Playable controls] PASS: 42 assertions"
+  },
+  {
+    "time": "2026-11-19T06:46:53.485Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P2b accounting] PASS 2941 assertions; two-day requested 150.915967 / delivered 139.355967 MWh"
+  },
+  {
+    "time": "2026-11-19T06:46:53.808Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3a fake] PASS 178 assertions; max checkpoint 84620 bytes; canonical encode p95 7.004 ms; no real DataStore calls"
+  },
+  {
+    "time": "2026-11-19T06:46:59.756Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b] PASS: 93 assertions; full profile 89670 bytes; whole candidate-step p95 0.423 ms (includes physical history clone/validation, not economy-only)"
+  },
+  {
+    "time": "2026-11-19T06:47:00.064Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b.3 fake] PASS: 44 assertions; no real DataStore access"
+  },
+  {
+    "time": "2026-11-19T06:47:00.323Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b4] PASS 33 assertions; fake only; 7683 bytes; 14 calls / 8 writes"
+  },
+  {
+    "time": "2026-11-19T06:47:01.417Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b5 fake] PASS 50 assertions; 5 intervals / 7 commits / 5 reads; four fault scenarios; no real calls"
+  },
+  {
+    "time": "2026-11-19T06:47:02.369Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P2b.1 scheduler] PASS 49 assertions; eight synthetic jobs 936.327ms / 56 Heartbeats"
+  },
+  {
+    "time": "2026-11-19T06:47:03.595Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3c accounting] PASS: 1440 billed intervals / 12 exact restores; net 353303 minor; full-ring profile 92283 bytes; elapsed 1.157s"
+  },
+  {
+    "time": "2026-11-19T06:49:26.602Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P2b gates] unique=10000/10000 fallback=0 cpuP95=14.953ms maxEncoded=43705 samples=2667 dayMWh=75.457983 peakMW=3.811"
+  },
+  {
+    "time": "2026-11-19T06:49:26.602Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State P2b world] PASS: 2916780 assertions"
+  },
+  {
+    "time": "2026-11-19T06:49:26.602Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State P3c world] PASS: 10000 accepted seed routes/pads, four rotations and safe fallback; retained P2b gates"
+  },
+  {
+    "time": "2026-11-19T06:49:26.603Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3c retained server regression] PASS; fake/local only"
+  },
+  {
+    "time": "2026-11-19T06:49:26.604Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 retained server] COMPLETE; pure/fake only"
+  },
+  {
+    "time": "2026-11-19T06:49:35.022Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[First Playable remotes] PASS: 12 actual transport assertions; invalid flood snapshots 1"
+  },
+  {
+    "time": "2026-11-19T06:49:40.846Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[First Playable normal journey] PASS: 34 assertions; 5.823 seconds; step 164; bank 31048; map 362"
+  },
+  {
+    "time": "2026-11-19T06:49:42.790Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b.1 Bank progression] 1366x704 initial step/rev 14/15 expected >=15/16 observed 15/16 wait 1.1966s exceeds1.2=false"
+  },
+  {
+    "time": "2026-11-19T06:49:43.805Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b.1 Bank progression] 360x580 initial step/rev 15/16 expected >=16/17 observed 16/17 wait 0.7984s exceeds1.2=false"
+  },
+  {
+    "time": "2026-11-19T06:49:44.822Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b.1 Bank progression] 640x300 initial step/rev 16/17 expected >=17/18 observed 17/18 wait 0.7987s exceeds1.2=false"
+  },
+  {
+    "time": "2026-11-19T06:49:45.839Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b.1 Bank progression] 768x960 initial step/rev 17/18 expected >=18/19 observed 18/19 wait 0.7986s exceeds1.2=false"
+  },
+  {
+    "time": "2026-11-19T06:49:45.850Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[P3b Bank GUI] PASS 83 assertions; status faults synthetic; actual server uses fake storage"
+  },
+  {
+    "time": "2026-11-19T06:49:47.341Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State R2 GUI] PASS: 348 engine layout assertions"
+  },
+  {
+    "time": "2026-11-19T06:49:47.671Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State R1 Currency GUI] PASS: 16 assertions"
+  },
+  {
+    "time": "2026-11-19T06:49:53.453Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State R2 Interaction] PASS: 135 assertions"
+  },
+  {
+    "time": "2026-11-19T06:50:00.037Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State R3] PASS: 190 rendering/interaction assertions"
+  },
+  {
+    "time": "2026-11-19T06:50:01.417Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State R3.1] PASS: 52 framing/refinement assertions"
+  },
+  {
+    "time": "2026-11-19T06:50:26.883Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State R3.3] PASS: 739 synthetic assertions; no atlas fetched"
+  },
+  {
+    "time": "2026-11-19T06:50:29.702Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Power State R3.5] PASS: 241 presentation assertions"
+  },
+  {
+    "time": "2026-11-19T06:50:29.702Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 retained client] COMPLETE; actual GUI / fake storage"
+  },
+  {
+    "time": "2026-11-19T06:52:08.515Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Encoding] PASS: 5020 assertions; first scalar calls 78"
+  },
+  {
+    "time": "2026-11-19T06:52:08.868Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Atomic] PASS: 326 assertions; one-hour Bank 120600 minor; state 5434 bytes"
+  },
+  {
+    "time": "2026-11-19T06:52:09.086Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Scenario] PASS: 3144 assertions; shortage936 kW, peaker936 kW, constrained500 kW; record=5596"
+  },
+  {
+    "time": "2026-11-19T06:52:09.087Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Security] PASS: 231 assertions"
+  },
+  {
+    "time": "2026-11-19T06:52:11.123Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Fleet Lifecycle] PASS: 2062 assertions; {\"snapshotBytes\":2139,\"intervals\":120,\"profileBytes\":5712,\"prepPeakMs\":3.2472999882884325,\"countries\":8,\"storage\":{\"writes\":984,\"profiles\":8,\"calls\":984},\"heapDeltaKiB\":936,\"installPeakMs\":1.8237000331282616,\"solverPeakMs\":2.388700027950108,\"fakeSavePeakMs\":2.6464000111445786}"
+  },
+  {
+    "time": "2026-11-19T06:52:11.844Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations oracle] PASS: 2187 exhaustive topology/supply/demand cases"
+  },
+  {
+    "time": "2026-11-19T06:52:11.999Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations performance] p95 0.1815ms; max 0.5411ms; eight-country 1.0262ms; max operations 521; checks 8842"
+  },
+  {
+    "time": "2026-11-19T06:52:12.091Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations maximum bounds] p95 1.3139ms; max 1.3662ms; eight-country 9.2680ms; operations 8084"
+  },
+  {
+    "time": "2026-11-19T06:52:12.091Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Stage 1] PASS: 8854 assertions"
+  },
+  {
+    "time": "2026-11-19T06:52:15.215Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Fleet 1D yield equivalence] {\"quantums\":[1,16,128],\"boundaries\":{\"validated\":true,\"allocated\":true,\"routed\":true,\"complete\":true,\"feasibility\":true,\"cut-test\":true,\"compiled\":true,\"prefix\":true,\"start\":true,\"round\":true,\"edge\":true,\"freeze\":true},\"checks\":9100,\"oracleCases\":2187}"
+  },
+  {
+    "time": "2026-11-19T06:52:19.762Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Fleet 1D safety] PASS: 1486 assertions; all 12 cancellation boundaries"
+  },
+  {
+    "time": "2026-11-19T06:52:19.772Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-689,\"cadenceHz\":0,\"elapsedMs\":2.6715999701991679,\"completed\":8,\"cpuMs\":1.2792000197805465,\"overshootMs\":0,\"installPeakMs\":0.6634999881498516,\"retained\":0,\"round\":1,\"peakMs\":1.0480000055395067,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:19.814Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1658,\"cadenceHz\":0,\"elapsedMs\":16.52740000281483,\"completed\":8,\"cpuMs\":6.708000029902905,\"overshootMs\":0,\"installPeakMs\":2.4817000376060607,\"retained\":0,\"round\":1,\"peakMs\":3.7586999824270608,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:19.879Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":9,\"cadenceHz\":0,\"elapsedMs\":32.21330000087619,\"completed\":8,\"cpuMs\":12.4661999871023,\"overshootMs\":0,\"installPeakMs\":2.6134999934583904,\"retained\":0,\"round\":1,\"peakMs\":3.763000015169382,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.042Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":79,\"cadenceHz\":0,\"elapsedMs\":118.48689999897033,\"completed\":8,\"cpuMs\":29.01470009237528,\"overshootMs\":0,\"installPeakMs\":1.7710000392980874,\"retained\":0,\"round\":1,\"peakMs\":3.7623000098392369,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.242Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1083,\"cadenceHz\":0,\"elapsedMs\":145.89709998108448,\"completed\":8,\"cpuMs\":36.6312000551261,\"overshootMs\":0,\"installPeakMs\":1.616199966520071,\"retained\":0,\"round\":1,\"peakMs\":3.7678000517189504,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.323Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":297,\"cadenceHz\":0,\"elapsedMs\":49.2886999854818,\"completed\":8,\"cpuMs\":12.478099903091789,\"overshootMs\":0,\"installPeakMs\":1.9370000227354468,\"retained\":0,\"round\":1,\"peakMs\":3.7594999885186555,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.425Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":691,\"cadenceHz\":0,\"elapsedMs\":64.92109998362139,\"completed\":8,\"cpuMs\":17.56580005167052,\"overshootMs\":0,\"installPeakMs\":1.8568999948911369,\"retained\":0,\"round\":1,\"peakMs\":3.769800008740276,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.437Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1639,\"cadenceHz\":0,\"elapsedMs\":4.165800055488944,\"completed\":8,\"cpuMs\":1.6225999570451677,\"overshootMs\":0,\"installPeakMs\":0.7178999949246645,\"retained\":0,\"round\":2,\"peakMs\":1.179100014269352,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.475Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":827,\"cadenceHz\":0,\"elapsedMs\":13.247299997601658,\"completed\":8,\"cpuMs\":6.435899995267391,\"overshootMs\":0,\"installPeakMs\":2.2712000063620509,\"retained\":0,\"round\":2,\"peakMs\":3.7662999820895495,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.546Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-764,\"cadenceHz\":0,\"elapsedMs\":38.23399997781962,\"completed\":8,\"cpuMs\":12.204599916003645,\"overshootMs\":0,\"installPeakMs\":2.6853999588638546,\"retained\":0,\"round\":2,\"peakMs\":3.7653999752365054,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.711Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2141,\"cadenceHz\":0,\"elapsedMs\":119.099700008519,\"completed\":8,\"cpuMs\":29.991400137078018,\"overshootMs\":0,\"installPeakMs\":1.5273999888449908,\"retained\":0,\"round\":2,\"peakMs\":3.784300002735108,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.911Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":464,\"cadenceHz\":0,\"elapsedMs\":150.21940000588075,\"completed\":8,\"cpuMs\":37.28970012161881,\"overshootMs\":0,\"installPeakMs\":2.262699999846518,\"retained\":0,\"round\":2,\"peakMs\":3.80469998344779,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:20.977Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":936,\"cadenceHz\":0,\"elapsedMs\":34.87390000373125,\"completed\":8,\"cpuMs\":11.192600068170578,\"overshootMs\":0,\"installPeakMs\":2.139099990017712,\"retained\":0,\"round\":2,\"peakMs\":3.7555000162683429,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.077Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1146,\"cadenceHz\":0,\"elapsedMs\":61.92980002379045,\"completed\":8,\"cpuMs\":18.002200056798757,\"overshootMs\":0,\"installPeakMs\":2.5175000191666188,\"retained\":0,\"round\":2,\"peakMs\":3.7674999912269415,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.087Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1714,\"cadenceHz\":0,\"elapsedMs\":3.4102999488823118,\"completed\":8,\"cpuMs\":1.2990001123398543,\"overshootMs\":0,\"installPeakMs\":0.6732999463565648,\"retained\":0,\"round\":3,\"peakMs\":1.0534000466577709,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.125Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":336,\"cadenceHz\":0,\"elapsedMs\":13.747999968472869,\"completed\":8,\"cpuMs\":6.403600098565221,\"overshootMs\":0,\"installPeakMs\":2.2367999772541227,\"retained\":0,\"round\":3,\"peakMs\":3.7631000159308316,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.195Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-726,\"cadenceHz\":0,\"elapsedMs\":38.184600009117279,\"completed\":8,\"cpuMs\":12.042100075632334,\"overshootMs\":0,\"installPeakMs\":2.724299964029342,\"retained\":0,\"round\":3,\"peakMs\":3.7607999984174969,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.358Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":276,\"cadenceHz\":0,\"elapsedMs\":117.1881000045687,\"completed\":8,\"cpuMs\":28.084600053261967,\"overshootMs\":0,\"installPeakMs\":2.0044000120833518,\"retained\":0,\"round\":3,\"peakMs\":3.7675000494346024,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.561Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1682,\"cadenceHz\":0,\"elapsedMs\":151.608899992425,\"completed\":8,\"cpuMs\":37.638099980540577,\"overshootMs\":0,\"installPeakMs\":2.8671000036410989,\"retained\":0,\"round\":3,\"peakMs\":3.777400008402765,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.640Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":485,\"cadenceHz\":0,\"elapsedMs\":48.333599988836798,\"completed\":8,\"cpuMs\":12.75189989246428,\"overshootMs\":0,\"installPeakMs\":1.5981000033207238,\"retained\":0,\"round\":3,\"peakMs\":3.7603999953716995,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.743Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1232,\"cadenceHz\":0,\"elapsedMs\":65.96989999525249,\"completed\":8,\"cpuMs\":17.648500041104854,\"overshootMs\":0,\"installPeakMs\":3.209299989975989,\"retained\":0,\"round\":3,\"peakMs\":3.7784999585710468,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.769Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":869,\"cadenceHz\":30,\"elapsedMs\":18.061900045722724,\"completed\":8,\"cpuMs\":1.255099952686578,\"overshootMs\":0,\"installPeakMs\":0.7217000238597393,\"retained\":0,\"round\":1,\"peakMs\":1.0429999674670399,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.859Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2045,\"cadenceHz\":30,\"elapsedMs\":63.2880000048317,\"completed\":8,\"cpuMs\":6.441799981985241,\"overshootMs\":0,\"installPeakMs\":1.6453000134788454,\"retained\":0,\"round\":1,\"peakMs\":3.7579999770969154,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:21.978Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1538,\"cadenceHz\":30,\"elapsedMs\":88.26450002379716,\"completed\":8,\"cpuMs\":11.826099827885628,\"overshootMs\":0,\"installPeakMs\":2.661100006662309,\"retained\":0,\"round\":1,\"peakMs\":3.766799985896796,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:22.325Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":450,\"cadenceHz\":30,\"elapsedMs\":301.18280003080147,\"completed\":8,\"cpuMs\":27.851899911183865,\"overshootMs\":0,\"installPeakMs\":1.2277999776415527,\"retained\":0,\"round\":1,\"peakMs\":3.762700012885034,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:22.775Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":325,\"cadenceHz\":30,\"elapsedMs\":398.4265999752097,\"completed\":8,\"cpuMs\":36.45489981863648,\"overshootMs\":0,\"installPeakMs\":1.53929996304214,\"retained\":0,\"round\":1,\"peakMs\":3.770600014831871,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:22.912Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1535,\"cadenceHz\":30,\"elapsedMs\":106.11860000062734,\"completed\":8,\"cpuMs\":12.295199965592474,\"overshootMs\":0,\"installPeakMs\":2.895599987823516,\"retained\":0,\"round\":1,\"peakMs\":3.7611000007018449,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:23.125Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-438,\"cadenceHz\":30,\"elapsedMs\":175.34850002266468,\"completed\":8,\"cpuMs\":17.32430001720786,\"overshootMs\":0,\"installPeakMs\":1.6144000110216439,\"retained\":0,\"round\":1,\"peakMs\":3.771500021684915,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:23.154Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1026,\"cadenceHz\":30,\"elapsedMs\":20.162400032859297,\"completed\":8,\"cpuMs\":1.2624000082723797,\"overshootMs\":0,\"installPeakMs\":0.7247999892570078,\"retained\":0,\"round\":2,\"peakMs\":1.0266000172123314,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:23.259Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":309,\"cadenceHz\":30,\"elapsedMs\":82.28500001132488,\"completed\":8,\"cpuMs\":7.176099927164614,\"overshootMs\":0,\"installPeakMs\":2.802400034852326,\"retained\":0,\"round\":2,\"peakMs\":3.759099985472858,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:23.379Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-830,\"cadenceHz\":30,\"elapsedMs\":86.75499999662861,\"completed\":8,\"cpuMs\":11.875800031702966,\"overshootMs\":0,\"installPeakMs\":2.753900014795363,\"retained\":0,\"round\":2,\"peakMs\":3.7672999897040428,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:23.743Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":149,\"cadenceHz\":30,\"elapsedMs\":319.2437999532558,\"completed\":8,\"cpuMs\":28.90449995175004,\"overshootMs\":0,\"installPeakMs\":2.145600039511919,\"retained\":0,\"round\":2,\"peakMs\":3.7620000075548889,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:24.194Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1737,\"cadenceHz\":30,\"elapsedMs\":397.6517000119202,\"completed\":8,\"cpuMs\":37.2351998812519,\"overshootMs\":0,\"installPeakMs\":1.9251999910920859,\"retained\":0,\"round\":2,\"peakMs\":3.763600019738078,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:24.328Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":434,\"cadenceHz\":30,\"elapsedMs\":103.17610000493005,\"completed\":8,\"cpuMs\":10.883500042837114,\"overshootMs\":0,\"installPeakMs\":2.731100015807897,\"retained\":0,\"round\":2,\"peakMs\":3.756499965675175,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:24.540Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":429,\"cadenceHz\":30,\"elapsedMs\":173.34290000144393,\"completed\":8,\"cpuMs\":17.17310003004968,\"overshootMs\":0,\"installPeakMs\":1.3215999933890999,\"retained\":0,\"round\":2,\"peakMs\":3.765899979043752,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:24.568Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-376,\"cadenceHz\":30,\"elapsedMs\":20.24640003219247,\"completed\":8,\"cpuMs\":1.3179000234231353,\"overshootMs\":0,\"installPeakMs\":0.770999991800636,\"retained\":0,\"round\":3,\"peakMs\":1.0671000345610083,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:24.658Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":183,\"cadenceHz\":30,\"elapsedMs\":65.70549996104092,\"completed\":8,\"cpuMs\":6.861699977889657,\"overshootMs\":0,\"installPeakMs\":2.252700040116906,\"retained\":0,\"round\":3,\"peakMs\":3.757300029974431,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:24.780Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1505,\"cadenceHz\":30,\"elapsedMs\":87.97619998222217,\"completed\":8,\"cpuMs\":11.950100015383214,\"overshootMs\":0,\"installPeakMs\":2.648700028657913,\"retained\":0,\"round\":3,\"peakMs\":3.7595999892801048,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:25.140Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":700,\"cadenceHz\":30,\"elapsedMs\":316.554399963934,\"completed\":8,\"cpuMs\":28.164299961645157,\"overshootMs\":0,\"installPeakMs\":2.0611000363714995,\"retained\":0,\"round\":3,\"peakMs\":3.7758999969810249,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:25.608Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1893,\"cadenceHz\":30,\"elapsedMs\":416.37300001457336,\"completed\":8,\"cpuMs\":35.640900023281577,\"overshootMs\":0,\"installPeakMs\":1.8003999721258879,\"retained\":0,\"round\":3,\"peakMs\":3.7770000053569676,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:25.729Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-815,\"cadenceHz\":30,\"elapsedMs\":88.92469998681918,\"completed\":8,\"cpuMs\":11.875900090672076,\"overshootMs\":0,\"installPeakMs\":2.505799988284707,\"retained\":0,\"round\":3,\"peakMs\":3.7558000185526909,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:25.925Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2647,\"cadenceHz\":30,\"elapsedMs\":160.00059997895733,\"completed\":8,\"cpuMs\":17.75229995837435,\"overshootMs\":0,\"installPeakMs\":2.0040000090375544,\"retained\":0,\"round\":3,\"peakMs\":3.7591999862343075,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:26.002Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-3402,\"cadenceHz\":15,\"elapsedMs\":69.56510001327843,\"completed\":8,\"cpuMs\":1.375800056848675,\"overshootMs\":0,\"installPeakMs\":0.6662000087089837,\"retained\":0,\"round\":1,\"peakMs\":1.0320000001229346,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:26.176Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-817,\"cadenceHz\":15,\"elapsedMs\":147.55220001097769,\"completed\":8,\"cpuMs\":7.280200021341443,\"overshootMs\":0.006700008176267064,\"installPeakMs\":2.467599988449365,\"retained\":0,\"round\":1,\"peakMs\":4.006700008176267,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:26.412Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1988,\"cadenceHz\":15,\"elapsedMs\":201.31919998675586,\"completed\":8,\"cpuMs\":11.925799946766347,\"overshootMs\":0,\"installPeakMs\":2.6460999506525697,\"retained\":0,\"round\":1,\"peakMs\":3.7614000029861929,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:27.009Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2980,\"cadenceHz\":15,\"elapsedMs\":553.2024999847636,\"completed\":8,\"cpuMs\":29.63939995970577,\"overshootMs\":0,\"installPeakMs\":1.8727999995462597,\"retained\":0,\"round\":1,\"peakMs\":3.7606999976560475,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:27.743Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3099,\"cadenceHz\":15,\"elapsedMs\":680.2500999765471,\"completed\":8,\"cpuMs\":37.86679997574538,\"overshootMs\":0,\"installPeakMs\":1.7221999587491155,\"retained\":0,\"round\":1,\"peakMs\":3.765000030398369,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:27.993Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-260,\"cadenceHz\":15,\"elapsedMs\":217.68449997762219,\"completed\":8,\"cpuMs\":10.846499993931502,\"overshootMs\":0,\"installPeakMs\":1.923499978147447,\"retained\":0,\"round\":1,\"peakMs\":3.7648999714292588,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:28.375Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-742,\"cadenceHz\":15,\"elapsedMs\":344.90870003355669,\"completed\":8,\"cpuMs\":17.445200064685197,\"overshootMs\":0,\"installPeakMs\":1.735700003337115,\"retained\":0,\"round\":1,\"peakMs\":3.7679000524803998,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:28.435Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1267,\"cadenceHz\":15,\"elapsedMs\":53.15900000277907,\"completed\":8,\"cpuMs\":1.40889995964244,\"overshootMs\":0,\"installPeakMs\":0.7040000054985285,\"retained\":0,\"round\":2,\"peakMs\":1.164899964351207,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:28.591Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1307,\"cadenceHz\":15,\"elapsedMs\":130.29489998007194,\"completed\":8,\"cpuMs\":6.461599899921566,\"overshootMs\":0,\"installPeakMs\":1.6852999688126147,\"retained\":0,\"round\":2,\"peakMs\":3.7536000018008055,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:28.828Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2129,\"cadenceHz\":15,\"elapsedMs\":204.27080005174504,\"completed\":8,\"cpuMs\":12.288199970498681,\"overshootMs\":0,\"installPeakMs\":2.6771000120788814,\"retained\":0,\"round\":2,\"peakMs\":3.757099970243871,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:29.458Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2133,\"cadenceHz\":15,\"elapsedMs\":585.513899975922,\"completed\":8,\"cpuMs\":28.62510015256703,\"overshootMs\":0,\"installPeakMs\":1.6762000159360469,\"retained\":0,\"round\":2,\"peakMs\":3.7658000364899637,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:30.302Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2202,\"cadenceHz\":15,\"elapsedMs\":795.8723999909125,\"completed\":4,\"cpuMs\":38.882600027136508,\"overshootMs\":0,\"installPeakMs\":1.4384000096470118,\"retained\":0,\"round\":2,\"peakMs\":3.7728999741375448,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:30.543Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2749,\"cadenceHz\":15,\"elapsedMs\":210.56039998074994,\"completed\":8,\"cpuMs\":10.904299968387932,\"overshootMs\":0,\"installPeakMs\":1.857800001744181,\"retained\":0,\"round\":2,\"peakMs\":3.7600999930873515,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:30.926Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2368,\"cadenceHz\":15,\"elapsedMs\":345.5551999504678,\"completed\":8,\"cpuMs\":17.99129997380078,\"overshootMs\":0,\"installPeakMs\":1.9425000064074994,\"retained\":0,\"round\":2,\"peakMs\":3.7768000038340689,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:30.986Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":152,\"cadenceHz\":15,\"elapsedMs\":51.12090002512559,\"completed\":8,\"cpuMs\":1.2603000504896045,\"overshootMs\":0,\"installPeakMs\":0.6634999881498516,\"retained\":0,\"round\":3,\"peakMs\":1.0500000207684935,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:31.142Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1787,\"cadenceHz\":15,\"elapsedMs\":131.97889999719338,\"completed\":8,\"cpuMs\":6.38890010304749,\"overshootMs\":0,\"installPeakMs\":1.9779999856837094,\"retained\":0,\"round\":3,\"peakMs\":3.771900024730712,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:31.458Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1551,\"cadenceHz\":15,\"elapsedMs\":282.27239998523148,\"completed\":8,\"cpuMs\":13.556599791627378,\"overshootMs\":0,\"installPeakMs\":1.2506000348366798,\"retained\":0,\"round\":3,\"peakMs\":3.7627999554388227,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:32.058Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1616,\"cadenceHz\":15,\"elapsedMs\":555.9327999944799,\"completed\":8,\"cpuMs\":28.906199848279358,\"overshootMs\":0,\"installPeakMs\":2.012200013268739,\"retained\":0,\"round\":3,\"peakMs\":3.7816999829374255,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:32.805Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2362,\"cadenceHz\":15,\"elapsedMs\":698.2656000182033,\"completed\":8,\"cpuMs\":35.39310005726293,\"overshootMs\":0,\"installPeakMs\":1.9952000002376736,\"retained\":0,\"round\":3,\"peakMs\":3.768900001887232,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:33.045Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":244,\"cadenceHz\":15,\"elapsedMs\":207.91370002552868,\"completed\":8,\"cpuMs\":11.311700043734163,\"overshootMs\":0,\"installPeakMs\":2.7409999747760596,\"retained\":0,\"round\":3,\"peakMs\":3.756200021598488,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:33.443Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":302,\"cadenceHz\":15,\"elapsedMs\":359.3066000030376,\"completed\":8,\"cpuMs\":17.830300086643548,\"overshootMs\":0,\"installPeakMs\":2.4360999814234676,\"retained\":0,\"round\":3,\"peakMs\":3.76769999274984,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:52:33.443Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] PASS: 63 eight-country intervals; safely suspended countries=4"
+  },
+  {
+    "time": "2026-11-19T06:52:33.443Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 Stage A] COMPLETE Candidate"
+  },
+  {
+    "time": "2026-11-19T06:54:07.694Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Atomic] PASS: 326 assertions; one-hour Bank 120600 minor; state 5434 bytes"
+  },
+  {
+    "time": "2026-11-19T06:54:07.919Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Scenario] PASS: 3144 assertions; shortage936 kW, peaker936 kW, constrained500 kW; record=5596"
+  },
+  {
+    "time": "2026-11-19T06:54:07.921Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Security] PASS: 231 assertions"
+  },
+  {
+    "time": "2026-11-19T06:54:11.609Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Fleet Lifecycle] PASS: 2062 assertions; {\"snapshotBytes\":2139,\"intervals\":120,\"profileBytes\":5712,\"prepPeakMs\":4.414799972437322,\"countries\":8,\"storage\":{\"writes\":984,\"profiles\":8,\"calls\":984},\"heapDeltaKiB\":3592,\"installPeakMs\":1.8341000541113318,\"solverPeakMs\":2.542200032621622,\"fakeSavePeakMs\":3.7403000169433655}"
+  },
+  {
+    "time": "2026-11-19T06:54:11.621Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-376,\"cadenceHz\":0,\"elapsedMs\":3.442099958192557,\"completed\":8,\"cpuMs\":1.3655999791808427,\"overshootMs\":0,\"installPeakMs\":0.6871999939903617,\"retained\":0,\"round\":1,\"peakMs\":1.0467999964021147,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:11.672Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":940,\"cadenceHz\":0,\"elapsedMs\":26.860799989663066,\"completed\":8,\"cpuMs\":6.856800056993961,\"overshootMs\":0,\"installPeakMs\":2.286899951286614,\"retained\":0,\"round\":1,\"peakMs\":3.763800021260977,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:11.741Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-810,\"cadenceHz\":0,\"elapsedMs\":36.47759999148548,\"completed\":8,\"cpuMs\":12.328699987847358,\"overshootMs\":0,\"installPeakMs\":3.171499993186444,\"retained\":0,\"round\":1,\"peakMs\":3.7618999485857786,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:11.905Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-199,\"cadenceHz\":0,\"elapsedMs\":117.30939999688417,\"completed\":8,\"cpuMs\":29.031099926214666,\"overshootMs\":0,\"installPeakMs\":1.8291999585926533,\"retained\":0,\"round\":1,\"peakMs\":3.765299974475056,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.119Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":42,\"cadenceHz\":0,\"elapsedMs\":163.335699995514,\"completed\":8,\"cpuMs\":38.69749995646998,\"overshootMs\":0,\"installPeakMs\":2.148600004147738,\"retained\":0,\"round\":1,\"peakMs\":3.770100011024624,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.190Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-738,\"cadenceHz\":0,\"elapsedMs\":39.4772999570705,\"completed\":8,\"cpuMs\":11.24839996919036,\"overshootMs\":0,\"installPeakMs\":2.5074000004678966,\"retained\":0,\"round\":1,\"peakMs\":3.759999992325902,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.289Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1966,\"cadenceHz\":0,\"elapsedMs\":59.61070000194013,\"completed\":8,\"cpuMs\":17.649099929258229,\"overshootMs\":0,\"installPeakMs\":2.1295000333338978,\"retained\":0,\"round\":1,\"peakMs\":3.7715999642387034,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.301Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-34,\"cadenceHz\":0,\"elapsedMs\":3.621299983933568,\"completed\":8,\"cpuMs\":1.3204999850131572,\"overshootMs\":0,\"installPeakMs\":0.7233999785967171,\"retained\":0,\"round\":2,\"peakMs\":1.045399985741824,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.339Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":793,\"cadenceHz\":0,\"elapsedMs\":13.737800007220358,\"completed\":8,\"cpuMs\":6.838600034825504,\"overshootMs\":0,\"installPeakMs\":2.3017999483272435,\"retained\":0,\"round\":2,\"peakMs\":3.773600037675351,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.420Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":506,\"cadenceHz\":0,\"elapsedMs\":48.434299998916689,\"completed\":8,\"cpuMs\":12.863700045272708,\"overshootMs\":0,\"installPeakMs\":1.8125000060535968,\"retained\":0,\"round\":2,\"peakMs\":3.7560000200755896,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.589Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":254,\"cadenceHz\":0,\"elapsedMs\":122.41529999300838,\"completed\":8,\"cpuMs\":28.79660000326112,\"overshootMs\":0,\"installPeakMs\":1.4367999974638224,\"retained\":0,\"round\":2,\"peakMs\":3.770300012547523,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.803Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-13,\"cadenceHz\":0,\"elapsedMs\":161.55980003532023,\"completed\":8,\"cpuMs\":38.92960009397939,\"overshootMs\":0,\"installPeakMs\":1.9331999938003719,\"retained\":0,\"round\":2,\"peakMs\":3.7736999802291395,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.874Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-539,\"cadenceHz\":0,\"elapsedMs\":39.24499999266118,\"completed\":8,\"cpuMs\":11.34340005228296,\"overshootMs\":0,\"installPeakMs\":2.7258999762125315,\"retained\":0,\"round\":2,\"peakMs\":3.7595999892801048,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.974Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1517,\"cadenceHz\":0,\"elapsedMs\":61.56480003846809,\"completed\":8,\"cpuMs\":18.193600117228927,\"overshootMs\":0,\"installPeakMs\":2.781699993647635,\"retained\":0,\"round\":2,\"peakMs\":3.7678999942727389,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:12.985Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":797,\"cadenceHz\":0,\"elapsedMs\":3.4534999867901208,\"completed\":8,\"cpuMs\":1.4565000892616809,\"overshootMs\":0,\"installPeakMs\":0.713899964466691,\"retained\":0,\"round\":3,\"peakMs\":1.2543000048026443,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.021Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":561,\"cadenceHz\":0,\"elapsedMs\":12.960799969732762,\"completed\":8,\"cpuMs\":6.286800082307309,\"overshootMs\":0,\"installPeakMs\":2.3563000140711667,\"retained\":0,\"round\":3,\"peakMs\":3.757900034543127,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.092Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":972,\"cadenceHz\":0,\"elapsedMs\":38.54979999596253,\"completed\":8,\"cpuMs\":12.311100028455258,\"overshootMs\":0,\"installPeakMs\":3.1478999881073834,\"retained\":0,\"round\":3,\"peakMs\":3.756499965675175,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.255Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2183,\"cadenceHz\":0,\"elapsedMs\":118.58899996150285,\"completed\":8,\"cpuMs\":30.362499761395158,\"overshootMs\":0,\"installPeakMs\":1.830599969252944,\"retained\":0,\"round\":3,\"peakMs\":3.763599961530417,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.455Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2397,\"cadenceHz\":0,\"elapsedMs\":149.2005999898538,\"completed\":8,\"cpuMs\":37.07709989976138,\"overshootMs\":0,\"installPeakMs\":1.9944999949075282,\"retained\":0,\"round\":3,\"peakMs\":3.8199000409804286,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.524Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":213,\"cadenceHz\":0,\"elapsedMs\":35.891100007575008,\"completed\":8,\"cpuMs\":11.572199931833893,\"overshootMs\":0,\"installPeakMs\":2.845600014552474,\"retained\":0,\"round\":3,\"peakMs\":3.7648999714292588,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.640Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1617,\"cadenceHz\":0,\"elapsedMs\":77.70680001704022,\"completed\":8,\"cpuMs\":19.485299882944675,\"overshootMs\":0,\"installPeakMs\":2.4560000165365638,\"retained\":0,\"round\":3,\"peakMs\":3.781899984460324,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.666Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":139,\"cadenceHz\":30,\"elapsedMs\":16.944400034844877,\"completed\":8,\"cpuMs\":1.5381000121124089,\"overshootMs\":0,\"installPeakMs\":0.7624999852851033,\"retained\":0,\"round\":1,\"peakMs\":1.2382999993860722,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.772Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1049,\"cadenceHz\":30,\"elapsedMs\":80.48459998099134,\"completed\":8,\"cpuMs\":6.625099922530353,\"overshootMs\":0,\"installPeakMs\":2.548599964939058,\"retained\":0,\"round\":1,\"peakMs\":3.7609999999403955,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:13.892Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":289,\"cadenceHz\":30,\"elapsedMs\":85.80239996081218,\"completed\":8,\"cpuMs\":11.902399826794863,\"overshootMs\":0,\"installPeakMs\":3.024500038009137,\"retained\":0,\"round\":1,\"peakMs\":3.759399987757206,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:14.253Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2086,\"cadenceHz\":30,\"elapsedMs\":317.4826000467874,\"completed\":8,\"cpuMs\":28.31050008535385,\"overshootMs\":0,\"installPeakMs\":1.8583000055514277,\"retained\":0,\"round\":1,\"peakMs\":3.7653999752365054,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:14.689Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-10,\"cadenceHz\":30,\"elapsedMs\":384.1985000181012,\"completed\":8,\"cpuMs\":36.84239991707727,\"overshootMs\":0,\"installPeakMs\":1.9809000077657402,\"retained\":0,\"round\":1,\"peakMs\":3.770899958908558,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:14.824Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-734,\"cadenceHz\":30,\"elapsedMs\":102.67759999260307,\"completed\":8,\"cpuMs\":11.158599925693125,\"overshootMs\":0,\"installPeakMs\":2.2159000509418549,\"retained\":0,\"round\":1,\"peakMs\":3.769699949771166,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:15.040Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3363,\"cadenceHz\":30,\"elapsedMs\":178.61070000799374,\"completed\":8,\"cpuMs\":18.516700307372959,\"overshootMs\":0,\"installPeakMs\":2.565499977208674,\"retained\":0,\"round\":1,\"peakMs\":3.8781000184826555,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:15.066Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-416,\"cadenceHz\":30,\"elapsedMs\":18.854300025850536,\"completed\":8,\"cpuMs\":1.6385000199079514,\"overshootMs\":0,\"installPeakMs\":1.0175000061281026,\"retained\":0,\"round\":2,\"peakMs\":1.37779995566234,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:15.154Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":10,\"cadenceHz\":30,\"elapsedMs\":61.93820002954453,\"completed\":8,\"cpuMs\":6.354300072416663,\"overshootMs\":0,\"installPeakMs\":2.2006999934092166,\"retained\":0,\"round\":2,\"peakMs\":3.7654999759979548,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:15.322Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2635,\"cadenceHz\":30,\"elapsedMs\":127.42599996272475,\"completed\":8,\"cpuMs\":13.784100126940757,\"overshootMs\":0,\"installPeakMs\":2.1652999566867949,\"retained\":0,\"round\":2,\"peakMs\":3.763800021260977,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:15.653Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-448,\"cadenceHz\":30,\"elapsedMs\":284.7534000175074,\"completed\":8,\"cpuMs\":27.978900005109609,\"overshootMs\":0,\"installPeakMs\":2.321500040125102,\"retained\":0,\"round\":2,\"peakMs\":3.764100023545325,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:16.105Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":54,\"cadenceHz\":30,\"elapsedMs\":402.016400010325,\"completed\":8,\"cpuMs\":36.70079988660291,\"overshootMs\":0,\"installPeakMs\":2.268599986564368,\"retained\":0,\"round\":2,\"peakMs\":3.8102000253275039,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:16.239Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2690,\"cadenceHz\":30,\"elapsedMs\":102.4178999941796,\"completed\":8,\"cpuMs\":11.3683000090532,\"overshootMs\":0,\"installPeakMs\":2.5382000021636488,\"retained\":0,\"round\":2,\"peakMs\":3.756500023882836,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:16.440Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1810,\"cadenceHz\":30,\"elapsedMs\":162.814499984961,\"completed\":8,\"cpuMs\":18.63890007371083,\"overshootMs\":0,\"installPeakMs\":2.7481999713927509,\"retained\":0,\"round\":2,\"peakMs\":3.76630004029721,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:16.480Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":312,\"cadenceHz\":30,\"elapsedMs\":32.80430001905188,\"completed\":8,\"cpuMs\":1.2422000290825964,\"overshootMs\":0,\"installPeakMs\":0.6332999910227954,\"retained\":0,\"round\":3,\"peakMs\":0.9878000128082931,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:16.570Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":930,\"cadenceHz\":30,\"elapsedMs\":65.18370000412688,\"completed\":8,\"cpuMs\":6.357600097544491,\"overshootMs\":0,\"installPeakMs\":2.2468999959528448,\"retained\":0,\"round\":3,\"peakMs\":3.761500003747642,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:16.708Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":506,\"cadenceHz\":30,\"elapsedMs\":104.88850000547245,\"completed\":8,\"cpuMs\":11.817299935501069,\"overshootMs\":0,\"installPeakMs\":2.6461000088602306,\"retained\":0,\"round\":3,\"peakMs\":3.7660999805666508,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:17.055Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2740,\"cadenceHz\":30,\"elapsedMs\":302.0541000296362,\"completed\":8,\"cpuMs\":29.38299998641014,\"overshootMs\":0,\"installPeakMs\":1.892699976451695,\"retained\":0,\"round\":3,\"peakMs\":3.8041999796405436,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:17.473Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-223,\"cadenceHz\":30,\"elapsedMs\":367.7433999837376,\"completed\":8,\"cpuMs\":37.51399973407388,\"overshootMs\":0,\"installPeakMs\":2.481799980159849,\"retained\":0,\"round\":3,\"peakMs\":3.7803000304847957,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:17.611Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":940,\"cadenceHz\":30,\"elapsedMs\":101.91149997990579,\"completed\":8,\"cpuMs\":11.753100028727204,\"overshootMs\":0,\"installPeakMs\":2.403699967544526,\"retained\":0,\"round\":3,\"peakMs\":3.7607999984174969,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:17.839Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1392,\"cadenceHz\":30,\"elapsedMs\":186.4750999957323,\"completed\":8,\"cpuMs\":17.845600261352958,\"overshootMs\":0,\"installPeakMs\":3.0654000001959504,\"retained\":0,\"round\":3,\"peakMs\":3.772700030822307,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:17.914Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":10,\"cadenceHz\":15,\"elapsedMs\":67.75240000570193,\"completed\":8,\"cpuMs\":1.3414000277407468,\"overshootMs\":0,\"installPeakMs\":0.6958000012673438,\"retained\":0,\"round\":1,\"peakMs\":1.0560000082477928,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:18.071Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1962,\"cadenceHz\":15,\"elapsedMs\":130.7577000115998,\"completed\":8,\"cpuMs\":5.9624999994412068,\"overshootMs\":0,\"installPeakMs\":1.6590000013820828,\"retained\":0,\"round\":1,\"peakMs\":3.757899976335466,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:18.291Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3394,\"cadenceHz\":15,\"elapsedMs\":188.7544000055641,\"completed\":8,\"cpuMs\":11.788200004957617,\"overshootMs\":0,\"installPeakMs\":2.494600019417703,\"retained\":0,\"round\":1,\"peakMs\":3.7604999961331488,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:18.871Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1944,\"cadenceHz\":15,\"elapsedMs\":535.4747999808751,\"completed\":8,\"cpuMs\":29.619499982800336,\"overshootMs\":0,\"installPeakMs\":1.616499968804419,\"retained\":0,\"round\":1,\"peakMs\":3.7666000425815584,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:19.655Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":74,\"cadenceHz\":15,\"elapsedMs\":733.016999962274,\"completed\":8,\"cpuMs\":36.151899956166747,\"overshootMs\":0,\"installPeakMs\":1.4474000199697912,\"retained\":0,\"round\":1,\"peakMs\":3.767399990465492,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:19.905Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":4638,\"cadenceHz\":15,\"elapsedMs\":218.55640003923328,\"completed\":8,\"cpuMs\":10.830600105691702,\"overshootMs\":0,\"installPeakMs\":2.4692000006325545,\"retained\":0,\"round\":1,\"peakMs\":3.7606999976560475,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:20.273Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":237,\"cadenceHz\":15,\"elapsedMs\":329.2710999958217,\"completed\":8,\"cpuMs\":17.602199921384455,\"overshootMs\":0,\"installPeakMs\":2.915400022175163,\"retained\":0,\"round\":1,\"peakMs\":3.764200024306774,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:20.347Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1952,\"cadenceHz\":15,\"elapsedMs\":67.20529997255653,\"completed\":8,\"cpuMs\":1.3500000932253898,\"overshootMs\":0,\"installPeakMs\":0.651500013191253,\"retained\":0,\"round\":2,\"peakMs\":1.0281000286340714,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:20.505Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1152,\"cadenceHz\":15,\"elapsedMs\":133.31699999980629,\"completed\":8,\"cpuMs\":6.736899958923459,\"overshootMs\":0,\"installPeakMs\":2.4498000275343658,\"retained\":0,\"round\":2,\"peakMs\":3.7544000078924,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:20.723Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":2667,\"cadenceHz\":15,\"elapsedMs\":185.91130001004786,\"completed\":8,\"cpuMs\":11.616199859417975,\"overshootMs\":0,\"installPeakMs\":2.5466999504715206,\"retained\":0,\"round\":2,\"peakMs\":3.7609999999403955,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:21.324Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":202,\"cadenceHz\":15,\"elapsedMs\":556.0654000146315,\"completed\":8,\"cpuMs\":30.572499963454903,\"overshootMs\":0,\"installPeakMs\":3.384800045751035,\"retained\":0,\"round\":2,\"peakMs\":3.767399990465492,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:22.123Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":665,\"cadenceHz\":15,\"elapsedMs\":746.5098000247963,\"completed\":8,\"cpuMs\":38.54120004689321,\"overshootMs\":0,\"installPeakMs\":2.4361999821849169,\"retained\":0,\"round\":2,\"peakMs\":3.777800011448562,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:22.373Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-813,\"cadenceHz\":15,\"elapsedMs\":217.7007000427693,\"completed\":8,\"cpuMs\":11.054199887439609,\"overshootMs\":0,\"installPeakMs\":2.750599989667535,\"retained\":0,\"round\":2,\"peakMs\":3.7663999828509988,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:22.756Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-79,\"cadenceHz\":15,\"elapsedMs\":345.856600033585,\"completed\":8,\"cpuMs\":17.317899968475105,\"overshootMs\":0,\"installPeakMs\":2.6843000086955728,\"retained\":0,\"round\":2,\"peakMs\":3.765300032682717,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:22.832Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-1494,\"cadenceHz\":15,\"elapsedMs\":68.42959998175502,\"completed\":8,\"cpuMs\":1.6026999801397324,\"overshootMs\":0,\"installPeakMs\":0.666000007186085,\"retained\":0,\"round\":3,\"peakMs\":1.2740999809466303,\"workload\":\"small\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:22.986Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-281,\"cadenceHz\":15,\"elapsedMs\":130.14269998529927,\"completed\":8,\"cpuMs\":6.141899910289794,\"overshootMs\":0,\"installPeakMs\":1.6555999754928053,\"retained\":0,\"round\":3,\"peakMs\":3.759099985472858,\"workload\":\"intermediate\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:23.206Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3966,\"cadenceHz\":15,\"elapsedMs\":188.10650001978503,\"completed\":8,\"cpuMs\":11.82020001579076,\"overshootMs\":0,\"installPeakMs\":2.490099985152483,\"retained\":0,\"round\":3,\"peakMs\":3.7702000117860736,\"workload\":\"maximum\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:23.855Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":-332,\"cadenceHz\":15,\"elapsedMs\":603.7157000391744,\"completed\":8,\"cpuMs\":29.849400103557856,\"overshootMs\":0,\"installPeakMs\":2.0035000052303078,\"retained\":0,\"round\":3,\"peakMs\":3.770600014831871,\"workload\":\"adversarial\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:24.604Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":3840,\"cadenceHz\":15,\"elapsedMs\":699.9583999859169,\"completed\":8,\"cpuMs\":36.628699977882209,\"overshootMs\":0,\"installPeakMs\":1.2543000048026443,\"retained\":0,\"round\":3,\"peakMs\":3.768299997318536,\"workload\":\"independent\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:24.839Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":1222,\"cadenceHz\":15,\"elapsedMs\":205.25749999796973,\"completed\":8,\"cpuMs\":11.275800119619817,\"overshootMs\":0,\"installPeakMs\":2.6926000136882068,\"retained\":0,\"round\":3,\"peakMs\":3.76469996990636,\"workload\":\"islands\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:25.207Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] {\"maxQueue\":8,\"heapDeltaKiB\":516,\"cadenceHz\":15,\"elapsedMs\":329.2176999966614,\"completed\":8,\"cpuMs\":18.345000105910004,\"overshootMs\":0,\"installPeakMs\":2.6653999811969699,\"retained\":0,\"round\":3,\"peakMs\":3.7785000167787077,\"workload\":\"equalCost\"}"
+  },
+  {
+    "time": "2026-11-19T06:54:25.207Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Schedule] PASS: 63 eight-country intervals; safely suspended countries=0"
+  },
+  {
+    "time": "2026-11-19T06:54:29.029Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations GUI] PASS: 129 assertions; map descendants=394"
+  },
+  {
+    "time": "2026-11-19T06:54:34.059Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Remote] PASS: 38 assertions; flood response count=9"
+  },
+  {
+    "time": "2026-11-19T06:56:01.807Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations journey host] Bounded two-second delay injected"
+  },
+  {
+    "time": "2026-11-19T06:56:11.228Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations Journey] PASS: 11 assertions; released minute=96; Bank=133691; restored without offline revenue"
+  },
+  {
+    "time": "2026-11-19T06:56:11.228Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations integrated runner] PASS: complete fake-only operator journey"
+  },
+  {
+    "time": "2026-11-19T06:58:37.018Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 review] portrait safe root 390x640"
+  },
+  {
+    "time": "2026-11-19T06:59:49.582Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 review] tablet safe root 1024x640"
+  },
+  {
+    "time": "2026-11-19T07:01:08.360Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 review] short landscape safe root 844x390"
+  },
+  {
+    "time": "2026-11-19T07:08:54.227Z",
+    "log": "0.748.0.7481526_20261119T055710Z_Studio_4E526_last.log",
+    "message": "[Operations V11 cleanup] Normal fake First Playable startup; diagnostics disabled"
+  }
+]

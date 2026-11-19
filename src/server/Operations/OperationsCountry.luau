@@ -14,7 +14,11 @@ local function freeze(value: any): any
 end
 function Country.validate(state: any)
 	assert(state.version == 1 and state.inputVersion == 1, "Training state version")
-	Model.integer(state.ownerId, 1, 9007199254740991)
+	Model.integer(state.ownerId, -9007199254740991, 9007199254740991)
+	assert(state.ownerId ~= 0, "Nonzero owner")
+	if state.ownerId < 0 then
+		assert(game:GetService("RunService"):IsStudio() and game.GameId == 10776833313, "Local Studio Test identities only")
+	end
 	Model.integer(state.epoch, 1, 1000000000)
 	Model.integer(state.step, 0, 1000000000)
 	Model.integer(state.countryRevision, state.step, 1000000000)

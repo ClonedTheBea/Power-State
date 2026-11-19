@@ -19,6 +19,17 @@ return function()
 	waitFor(function() return training.current().step >= 2 end, 8, "authoritative progression")
 	local initial = training.current()
 	check(initial.bankMinor ~= 100000 and initial.generatedKW == initial.deliveredKW, "Genuine delivered electricity earns Credits")
+	check(string.find(ui.fleet.wind.text.Text, "Weather changes", 1, true) ~= nil, "Wind explanation")
+	check(string.find(ui.fleet.peak.text.Text, "standby cost", 1, true) ~= nil, "Peaker costs explained")
+	for _, button in {app.view.kpis.buttons[1], app.view.kpis.buttons[4], app.view.header.overview, app.view.drawer.buttons.Overview} do
+		local before = training.current()
+		app.actions[button]()
+		local text = ""
+		for _, item in app.view.feedback.root:GetDescendants() do if item:IsA("TextLabel") then text ..= item.Text end end
+		check(string.find(text, string.format("%.2f Credits", before.bankMinor / 100), 1, true) ~= nil, "Actual Bank overview, not preview")
+		check(string.find(text, "snapshot at opening", 1, true) ~= nil and string.find(text, "illustrative", 1, true) == nil, "Honest overview time and authority")
+		app.back()
+	end
 	local descendants = #app.view.map.root:GetDescendants()
 	check(descendants <= 600, "600 map descendant bound")
 	for _, size in {Vector2.new(1366, 704), Vector2.new(1024, 720), Vector2.new(390, 780), Vector2.new(844, 390)} do
