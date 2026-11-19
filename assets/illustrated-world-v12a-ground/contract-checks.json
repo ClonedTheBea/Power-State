@@ -1,0 +1,6 @@
+{
+  "checks": 42,
+  "status": "PASS local raster/crop/colour checks only",
+  "syntheticColourBoundaryMaxAdjacentDifference": 0.002977521288201501,
+  "thresholds": "Seam mean <=1.3x interior and max <=interior are local diagnostics, not owner/Roblox acceptance"
+}

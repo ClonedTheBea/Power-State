@@ -6,7 +6,8 @@ export type Entry = {id: string, art: string, x: number, y: number, node: string
 function Descriptor.pattern(a: boolean, b: boolean, c: boolean, d: boolean): number
 	return (if a then 1 else 0)+(if b then 2 else 0)+(if c then 4 else 0)+(if d then 8 else 0)
 end
-function Descriptor.create(world: any, nodes: {any}, links: {any})
+function Descriptor.create(world: any, nodes: {any}, links: {any}, cosmeticVersion: number?)
+	assert(cosmeticVersion==nil or cosmeticVersion==1 or cosmeticVersion==2,"Unsupported cosmetic version")
 	assert(world.width == 1024 and world.height == 1024 and #world.samples == 289, "Illustrated sector bounds")
 	assert(world.generationVersion==1 and world.climateVersion==1 and world.startTemplateVersion==1,"Unknown illustrated geography version")
 	assert(#nodes <= 32 and #links <= 64, "Illustrated infrastructure bounds")
@@ -63,6 +64,7 @@ function Descriptor.create(world: any, nodes: {any}, links: {any})
 			table.insert(decorations,{id="land:"..x..":"..y,art=art,x=wx,y=wy})
 		end
 	end end
+	if cosmeticVersion==2 then decorations=require(script.Parent.LandscapeComposition).create(world,nodes,links) end
 	return {shores=shores,assets=assets,decorations=decorations}
 end
 return table.freeze(Descriptor)

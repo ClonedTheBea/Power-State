@@ -1,0 +1,108 @@
+{
+  "approaches": 1,
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "mode": "RGBA",
+  "sha256": "107448465ac25fc182841da2eeb706bec04a2774401641161301745393d3f1e2",
+  "sources": [
+    {
+      "path": "assets\\illustrated-world-v12-ground-study\\candidate-edit.png",
+      "sha256": "52794fb984fa6d89a2da90f9c7baaac0a6119b0f20886f1a126bf82f04963712"
+    },
+    {
+      "path": "assets\\illustrated-world-v12-ground-study\\candidate-new.png",
+      "sha256": "40141e82eb999ea2e6dd9735b32f3972e58ddb00dbb8a28e40888e464deabaa3"
+    }
+  ],
+  "seed": 120019,
+  "provenance": "Processed derivative of retained AI-generated source experiments; no new generation",
+  "steps": [
+    "Lanczos resample both source candidates to1024",
+    "Average luminance source power spectrum",
+    "92% radial /8% original directional power; smooth highpass radius14 and lowpass330 cycles/tile",
+    "Seeded Hermitian phase synthesis on a1024 torus; grain standard deviation1.9",
+    "Independent periodic Gaussian18px meadow variation standard deviation1.05",
+    "Base RGB107/132/99; channel texture weights1/.95/.85; round to8-bit opaque RGBA"
+  ],
+  "raw": {
+    "wrapX": {
+      "mean": 0.75390625,
+      "p95": 2.0,
+      "max": 3.0
+    },
+    "wrapY": {
+      "mean": 0.724609375,
+      "p95": 2.0,
+      "max": 3.0
+    },
+    "internalX": {
+      "mean": 0.7373024600847181,
+      "p95": 2.0,
+      "max": 5.0
+    },
+    "internalY": {
+      "mean": 0.7424840644346693,
+      "p95": 2.0,
+      "max": 5.0
+    }
+  },
+  "filtered1_5": {
+    "wrapX": {
+      "mean": 0.25461467671120014,
+      "p95": 0.6527727689664636,
+      "max": 1.3227961205076184
+    },
+    "wrapY": {
+      "mean": 0.2651805166407682,
+      "p95": 0.6312214004391946,
+      "max": 0.9594048218016553
+    },
+    "internalX": {
+      "mean": 0.26422531473205607,
+      "p95": 0.6527124817646239,
+      "max": 1.8706298377623085
+    },
+    "internalY": {
+      "mean": 0.26577140219425915,
+      "p95": 0.6560480167054088,
+      "max": 1.827775816413677
+    }
+  },
+  "filtered4": {
+    "wrapX": {
+      "mean": 0.08073751073367712,
+      "p95": 0.20837289823783378,
+      "max": 0.2841976489914515
+    },
+    "wrapY": {
+      "mean": 0.11154191610948067,
+      "p95": 0.24404024671013927,
+      "max": 0.44533254108765163
+    },
+    "internalX": {
+      "mean": 0.09480681753631588,
+      "p95": 0.2341462554945224,
+      "max": 0.5845331341290461
+    },
+    "internalY": {
+      "mean": 0.09549182788425419,
+      "p95": 0.23658303035580275,
+      "max": 0.5998431718129495
+    }
+  },
+  "crop256ReassemblyExact": true,
+  "meanRGB": [
+    106.99596500396729,
+    131.99585437774658,
+    98.99627304077148
+  ],
+  "stdRGB": [
+    2.191160774401595,
+    2.0836230473550343,
+    1.8694547504511991
+  ],
+  "sourceIntegrity": true,
+  "runtimeAcceptance": false
+}

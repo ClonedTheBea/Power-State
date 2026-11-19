@@ -1,0 +1,70 @@
+2026-11-19T16:21:05.472Z,37435.472656,8b90,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63889
+2026-11-19T16:21:05.472Z,37435.472656,8b90,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63889
+2026-11-19T16:21:51.281Z,37481.281250,a920,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313 and not game:GetService("RunService"):IsRunning());game.ReplicatedStorage:SetAttribute("RunRegressionTests",false);game.ReplicatedStorage:SetAttribute("RunIllustratedEnduranceTail",true);print("IW11_R34_NATIVE_P2B_FULL_DURATION")
+2026-11-19T16:21:51.289Z,37481.289062,a958,6,Info [FLog::CreatorOutput] IW11_R34_NATIVE_P2B_FULL_DURATION
+2026-11-19T16:22:11.238Z,37501.238281,3af4,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-19T16:22:12.992Z,37502.992188,3730,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-19T16:22:14.125Z,37504.125000,a958,6,Info [FLog::CreatorOutput] [Hybrid proof real] Set CountryMap.RequestedProofMode to Native or Hybrid in client Explorer.
+2026-11-19T16:22:14.171Z,37504.171875,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:22:14.171Z,37504.171875,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:22:14.171Z,37504.171875,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:22:14.171Z,37504.171875,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:22:14.171Z,37504.171875,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:22:14.171Z,37504.171875,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:22:14.187Z,37504.187500,8b90,6,Info [FLog::CreatorOutput] [R3.4 REAL load] ready=true elapsed=29.239 ms; cache state unknown
+2026-11-19T16:22:14.199Z,37504.199219,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL readiness] state=Ready elapsed=38.369 ms; GraphicsTexture before=41.7139892578125 after=41.7139892578125 MiB (whole client, not atlas-only)
+2026-11-19T16:22:19.222Z,37509.222656,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 360x580 pass 1 draw p50/p95 0.048/0.407 ms; frame 16.61/17.45 ms
+2026-11-19T16:22:21.390Z,37511.390625,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 360x580 pass 1 draw p50/p95 0.051/0.411 ms; frame 16.61/17.44 ms
+2026-11-19T16:22:23.554Z,37513.554688,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 360x580 pass 2 draw p50/p95 0.048/0.413 ms; frame 16.67/17.49 ms
+2026-11-19T16:22:25.722Z,37515.722656,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 360x580 pass 2 draw p50/p95 0.050/0.410 ms; frame 16.61/17.55 ms
+2026-11-19T16:22:27.890Z,37517.890625,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 360x580 pass 3 draw p50/p95 0.046/0.426 ms; frame 16.62/17.46 ms
+2026-11-19T16:22:30.054Z,37520.054688,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 360x580 pass 3 draw p50/p95 0.049/0.405 ms; frame 16.59/17.68 ms
+2026-11-19T16:22:32.289Z,37522.289062,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 768x960 pass 1 draw p50/p95 0.049/0.531 ms; frame 16.64/17.70 ms
+2026-11-19T16:22:34.457Z,37524.457031,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 768x960 pass 1 draw p50/p95 0.050/0.531 ms; frame 16.62/17.60 ms
+2026-11-19T16:22:36.621Z,37526.621094,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 768x960 pass 2 draw p50/p95 0.051/0.528 ms; frame 16.62/17.65 ms
+2026-11-19T16:22:38.789Z,37528.789062,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 768x960 pass 2 draw p50/p95 0.047/0.525 ms; frame 16.62/17.55 ms
+2026-11-19T16:22:40.957Z,37530.957031,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 768x960 pass 3 draw p50/p95 0.049/0.533 ms; frame 16.67/17.62 ms
+2026-11-19T16:22:43.121Z,37533.121094,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 768x960 pass 3 draw p50/p95 0.050/0.527 ms; frame 16.55/17.99 ms
+2026-11-19T16:22:45.371Z,37535.371094,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 1366x704 pass 1 draw p50/p95 0.050/0.545 ms; frame 16.64/17.97 ms
+2026-11-19T16:22:47.539Z,37537.539062,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 1366x704 pass 1 draw p50/p95 0.051/0.535 ms; frame 16.62/17.61 ms
+2026-11-19T16:22:49.718Z,37539.718750,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 1366x704 pass 2 draw p50/p95 0.093/0.584 ms; frame 16.60/17.81 ms
+2026-11-19T16:22:51.902Z,37541.902344,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 1366x704 pass 2 draw p50/p95 0.052/0.543 ms; frame 16.65/17.63 ms
+2026-11-19T16:22:54.070Z,37544.070312,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Native 1366x704 pass 3 draw p50/p95 0.047/0.528 ms; frame 16.64/17.55 ms
+2026-11-19T16:22:56.253Z,37546.253906,53d4,6,Info [FLog::CreatorOutput] [R3.4 REAL benchmark] Hybrid 1366x704 pass 3 draw p50/p95 0.057/0.542 ms; frame 16.60/17.65 ms
+2026-11-19T16:23:57.250Z,37607.250000,7b98,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 60 cycles; pool/readiness stable
+2026-11-19T16:24:58.250Z,37668.250000,7b98,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 120 cycles; pool/readiness stable
+2026-11-19T16:25:59.246Z,37729.246094,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 180 cycles; pool/readiness stable
+2026-11-19T16:27:00.246Z,37790.246094,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 240 cycles; pool/readiness stable
+2026-11-19T16:28:01.242Z,37851.242188,5c3c,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 300 cycles; pool/readiness stable
+2026-11-19T16:29:02.238Z,37912.238281,7934,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 360 cycles; pool/readiness stable
+2026-11-19T16:30:03.234Z,37973.234375,7934,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 420 cycles; pool/readiness stable
+2026-11-19T16:31:04.234Z,38034.234375,a968,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 480 cycles; pool/readiness stable
+2026-11-19T16:32:05.234Z,38095.234375,7b98,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] 540 cycles; pool/readiness stable
+2026-11-19T16:32:57.082Z,38147.082031,a4cc,6,Info [FLog::CreatorOutput] [R3.4 REAL soak] PASS 600.8 seconds / 591 cycles / 1075 descendants
+2026-11-19T16:32:57.117Z,38147.117188,a4cc,6,Info [FLog::CreatorOutput] [Hybrid proof real] Set CountryMap.RequestedProofMode to Native or Hybrid in client Explorer.
+2026-11-19T16:32:57.125Z,38147.125000,a920,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:32:57.125Z,38147.125000,a920,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:32:57.125Z,38147.125000,a920,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:32:57.125Z,38147.125000,a920,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:32:57.125Z,38147.125000,a920,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:32:57.125Z,38147.125000,a920,6,Info [FLog::CreatorOutput] [R3.4 REAL fetch] Success
+2026-11-19T16:32:57.132Z,38147.132812,a4cc,6,Info [FLog::CreatorOutput] [R3.4 REAL load] ready=true elapsed=14.624 ms; cache state unknown
+2026-11-19T16:32:57.136Z,38147.136719,53d4,6,Info [FLog::CreatorOutput] [Power State R3.4] PASS: 260 real-texture assertions
+2026-11-19T16:33:58.160Z,38208.160156,a4cc,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 60 resize/pan cycles; instance count stable
+2026-11-19T16:34:59.160Z,38269.160156,a920,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 120 resize/pan cycles; instance count stable
+2026-11-19T16:36:00.156Z,38330.156250,a958,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 180 resize/pan cycles; instance count stable
+2026-11-19T16:37:01.171Z,38391.171875,5c3c,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 240 resize/pan cycles; instance count stable
+2026-11-19T16:38:02.167Z,38452.167969,8b90,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 300 resize/pan cycles; instance count stable
+2026-11-19T16:39:03.164Z,38513.164062,3af4,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 360 resize/pan cycles; instance count stable
+2026-11-19T16:40:04.164Z,38574.164062,5c3c,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 420 resize/pan cycles; instance count stable
+2026-11-19T16:41:05.144Z,38635.144531,a920,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 480 resize/pan cycles; instance count stable
+2026-11-19T16:42:06.222Z,38696.222656,5c3c,6,Info [FLog::CreatorOutput] [Power State R2 Soak] 540 resize/pan cycles; instance count stable
+2026-11-19T16:42:58.125Z,38748.125000,7934,6,Info [FLog::CreatorOutput] [Power State R2 Soak] PASS: 601.0 seconds, 591 cycles, 1069 GUI descendants stable
+2026-11-19T16:43:03.152Z,38753.152344,3af4,6,Error [FLog::CreatorError] Error: Players.missawfulname.PlayerScripts.Client.Simulation.SimulationClient:17: P2b server unavailable
+2026-11-19T16:43:03.152Z,38753.152344,3af4,6,Info [FLog::CreatorOutput] Info: Stack Begin
+2026-11-19T16:43:03.156Z,38753.156250,3af4,6,Info [FLog::CreatorOutput] Info: Script 'Players.missawfulname.PlayerScripts.Client.Simulation.SimulationClient', Line 17 - function mount
+2026-11-19T16:43:03.156Z,38753.156250,3af4,6,Info [FLog::CreatorOutput] Info: Script 'Players.missawfulname.PlayerScripts.DevelopmentTests.P2bSoak.spec', Line 5
+2026-11-19T16:43:03.156Z,38753.156250,3af4,6,Info [FLog::CreatorOutput] Info: Script 'Players.missawfulname.PlayerScripts.DevelopmentTests.EnduranceTail', Line 13
+2026-11-19T16:43:03.156Z,38753.156250,3af4,6,Info [FLog::CreatorOutput] Info: Stack End
+2026-11-19T16:44:33.753Z,38843.753906,a968,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63425
+2026-11-19T16:44:33.753Z,38843.753906,a968,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63425

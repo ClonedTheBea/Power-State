@@ -1,0 +1,17 @@
+2026-11-19T16:46:12.285Z,38942.285156,a968,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-19T16:46:12.292Z,38942.292969,a968,6,Info [FLog::CreatorOutput] [P2b] Test service: GUID seed, version 1; session only; Native presentation
+2026-11-19T16:46:13.914Z,38943.914062,701c,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-19T16:46:14.046Z,38944.046875,a920,6,Info [FLog::CreatorOutput] [P2b.1 timing] {"timing":{"status":"complete","wallMs":1690.3792999801227,"resumes":21,"resumeMs":16.66490000206977,"queueMs":23.81380001315847,"cpuMs":16.61320001585409,"yields":20,"waitMs":1649.9005999648944},"userId":149564436,"ready":true}
+2026-11-19T16:47:16.578Z,39006.578125,5758,6,Info [FLog::CreatorOutput] [P2b soak] 60 cycles; stable 345 map descendants
+2026-11-19T16:48:17.578Z,39067.578125,a968,6,Info [FLog::CreatorOutput] [P2b soak] 120 cycles; stable 345 map descendants
+2026-11-19T16:49:18.574Z,39128.574219,5c3c,6,Info [FLog::CreatorOutput] [P2b soak] 180 cycles; stable 345 map descendants
+2026-11-19T16:50:19.570Z,39189.570312,a968,6,Info [FLog::CreatorOutput] [P2b soak] 240 cycles; stable 345 map descendants
+2026-11-19T16:51:20.570Z,39250.570312,8b90,6,Info [FLog::CreatorOutput] [P2b soak] 300 cycles; stable 345 map descendants
+2026-11-19T16:52:21.566Z,39311.566406,8b90,6,Info [FLog::CreatorOutput] [P2b soak] 360 cycles; stable 345 map descendants
+2026-11-19T16:53:22.562Z,39372.562500,a920,6,Info [FLog::CreatorOutput] [P2b soak] 420 cycles; stable 345 map descendants
+2026-11-19T16:54:23.562Z,39433.562500,5758,6,Info [FLog::CreatorOutput] [P2b soak] 480 cycles; stable 345 map descendants
+2026-11-19T16:55:24.558Z,39494.558594,8b90,6,Info [FLog::CreatorOutput] [P2b soak] 540 cycles; stable 345 map descendants
+2026-11-19T16:56:16.417Z,39546.417969,a958,6,Info [FLog::CreatorOutput] [P2b soak] PASS 600.8s / 591 cycles / 345 map descendants
+2026-11-19T16:56:16.417Z,39546.417969,a958,6,Info [FLog::CreatorOutput] [IW11 endurance tail] COMPLETE: full-duration P2b continuation
+2026-11-19T16:57:06.761Z,39596.761719,7f68,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|60963
+2026-11-19T16:57:06.761Z,39596.761719,7f68,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|60963

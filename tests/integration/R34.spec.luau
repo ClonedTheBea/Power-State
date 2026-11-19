@@ -13,6 +13,12 @@ return function(playerGui: PlayerGui)
 		return if ok then value else nil
 	end
 	local existing=playerGui:FindFirstChild("PowerStateShell"); if existing then existing:Destroy() end
+	-- Approved dashboard revisions add pooled detail rows outside the map. Check
+	-- the exact six-sprite delta against the current Native shell, not the old chrome.
+	local native=require(script.Parent.Parent.Client.Controllers.AppController).mount(playerGui)
+	local nativeShellCount=#native.view.gui:GetDescendants()
+	check(#native.view.map.root:GetDescendants()==574,"Unchanged Native map baseline")
+	native.destroy()
 	local memoryBefore=textureMemory()
 	local mounted=Proof.mount(playerGui,"real",false)
 	local app,proof=mounted.app,mounted.proof
@@ -31,7 +37,7 @@ return function(playerGui: PlayerGui)
 			check(image.BackgroundTransparency==1 and not image.Active and not image.Selectable,"Transparent noninteractive art")
 		end
 		local pool=#app.view.gui:GetDescendants()
-		check(#map.root:GetDescendants()==580 and pool==935,"Six-image bound")
+		check(#proof.images==6 and #map.root:GetDescendants()==580 and pool==nativeShellCount+6,"Exact six-image addition; unchanged map bound")
 		for _,size in {{360,580},{640,300},{768,960},{1024,708},{1366,704},{1920,1020}} do
 			app.view.root.Size=UDim2.fromOffset(size[1],size[2]);settle()
 			app.mapController.recenter();app.selectAsset("station");settle()

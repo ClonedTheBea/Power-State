@@ -1,0 +1,6988 @@
+[
+  {
+    "metrics": [
+      {
+        "value": "Merefield",
+        "detail": "No financial state",
+        "label": "TEST FIXTURE"
+      },
+      {
+        "value": "12fee3f7",
+        "detail": "Generated geometry",
+        "label": "SEED"
+      },
+      {
+        "value": "36",
+        "detail": "Exact Native mask",
+        "label": "SHORES"
+      },
+      {
+        "value": "Experimental",
+        "detail": "No gameplay changes",
+        "label": "ART"
+      }
+    ],
+    "nodes": [
+      {
+        "y": 704,
+        "x": 512,
+        "name": "Starter Generator",
+        "id": "illustrated-fixture-1:0,0:generator",
+        "kind": "Generator",
+        "description": "Server-generated Test fixture"
+      },
+      {
+        "y": 512,
+        "x": 512,
+        "name": "Central Substation",
+        "id": "illustrated-fixture-1:0,0:substation",
+        "kind": "Substation",
+        "description": "Server-generated Test fixture"
+      },
+      {
+        "y": 320,
+        "x": 512,
+        "name": "Merefield",
+        "id": "illustrated-fixture-1:0,0:settlement",
+        "kind": "Settlement",
+        "description": "Server-generated Test fixture"
+      },
+      {
+        "y": 320,
+        "x": 704,
+        "name": "Merefield district",
+        "id": "illustrated-fixture-1:b:1",
+        "kind": "Settlement",
+        "description": "Surveyed district \u00b7 preview only until saved"
+      }
+    ],
+    "composition": {
+      "shores": [
+        {
+          "id": "shore:14:1",
+          "art": "shore-e",
+          "y": 64,
+          "x": 896
+        },
+        {
+          "id": "shore:14:2",
+          "art": "shore-concave-ne",
+          "y": 128,
+          "x": 896
+        },
+        {
+          "id": "shore:15:2",
+          "art": "shore-n",
+          "y": 128,
+          "x": 960
+        },
+        {
+          "id": "shore:1:8",
+          "art": "shore-s",
+          "y": 512,
+          "x": 64
+        },
+        {
+          "id": "shore:2:8",
+          "art": "shore-s",
+          "y": 512,
+          "x": 128
+        },
+        {
+          "id": "shore:3:8",
+          "art": "shore-concave-sw",
+          "y": 512,
+          "x": 192
+        },
+        {
+          "id": "shore:3:9",
+          "art": "shore-w",
+          "y": 576,
+          "x": 192
+        },
+        {
+          "id": "shore:1:10",
+          "art": "shore-n",
+          "y": 640,
+          "x": 64
+        },
+        {
+          "id": "shore:2:10",
+          "art": "shore-n",
+          "y": 640,
+          "x": 128
+        },
+        {
+          "id": "shore:3:10",
+          "art": "shore-diagonal-ne-sw",
+          "y": 640,
+          "x": 192
+        },
+        {
+          "id": "shore:4:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 256
+        },
+        {
+          "id": "shore:5:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 320
+        },
+        {
+          "id": "shore:6:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 384
+        },
+        {
+          "id": "shore:7:10",
+          "art": "shore-concave-sw",
+          "y": 640,
+          "x": 448
+        },
+        {
+          "id": "shore:3:11",
+          "art": "shore-concave-ne",
+          "y": 704,
+          "x": 192
+        },
+        {
+          "id": "shore:4:11",
+          "art": "shore-n",
+          "y": 704,
+          "x": 256
+        },
+        {
+          "id": "shore:5:11",
+          "art": "shore-convex-ne",
+          "y": 704,
+          "x": 320
+        },
+        {
+          "id": "shore:7:11",
+          "art": "shore-w",
+          "y": 704,
+          "x": 448
+        },
+        {
+          "id": "shore:5:12",
+          "art": "shore-e",
+          "y": 768,
+          "x": 320
+        },
+        {
+          "id": "shore:7:12",
+          "art": "shore-w",
+          "y": 768,
+          "x": 448
+        },
+        {
+          "id": "shore:1:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 64
+        },
+        {
+          "id": "shore:2:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 128
+        },
+        {
+          "id": "shore:3:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 192
+        },
+        {
+          "id": "shore:4:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 256
+        },
+        {
+          "id": "shore:5:13",
+          "art": "shore-convex-se",
+          "y": 832,
+          "x": 320
+        },
+        {
+          "id": "shore:7:13",
+          "art": "shore-w",
+          "y": 832,
+          "x": 448
+        },
+        {
+          "id": "shore:10:13",
+          "art": "shore-concave-se",
+          "y": 832,
+          "x": 640
+        },
+        {
+          "id": "shore:11:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 704
+        },
+        {
+          "id": "shore:12:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 768
+        },
+        {
+          "id": "shore:13:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 832
+        },
+        {
+          "id": "shore:14:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 896
+        },
+        {
+          "id": "shore:15:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 960
+        },
+        {
+          "id": "shore:7:14",
+          "art": "shore-w",
+          "y": 896,
+          "x": 448
+        },
+        {
+          "id": "shore:10:14",
+          "art": "shore-e",
+          "y": 896,
+          "x": 640
+        },
+        {
+          "id": "shore:7:15",
+          "art": "shore-w",
+          "y": 960,
+          "x": 448
+        },
+        {
+          "id": "shore:10:15",
+          "art": "shore-e",
+          "y": 960,
+          "x": 640
+        }
+      ],
+      "decorations": [
+        {
+          "id": "land-v2:4:5",
+          "art": "forest",
+          "y": 328,
+          "x": 274
+        },
+        {
+          "id": "land-v2:1:1",
+          "art": "hill-low-b",
+          "y": 117,
+          "x": 79
+        },
+        {
+          "id": "land-v2:11:11",
+          "art": "forest",
+          "y": 747,
+          "x": 721
+        },
+        {
+          "id": "land-v2:4:2",
+          "art": "hill-low-b",
+          "y": 177,
+          "x": 299
+        },
+        {
+          "id": "land-v2:3:1",
+          "art": "hill-low-b",
+          "y": 101,
+          "x": 223
+        },
+        {
+          "id": "land-v2:11:6",
+          "art": "fields",
+          "y": 433,
+          "x": 731
+        },
+        {
+          "id": "land-v2:4:1",
+          "art": "hill-low-a",
+          "y": 92,
+          "x": 310
+        },
+        {
+          "id": "land-v2:12:3",
+          "art": "fields",
+          "y": 228,
+          "x": 798
+        },
+        {
+          "id": "land-v2:9:6",
+          "art": "fields",
+          "y": 430,
+          "x": 596
+        },
+        {
+          "id": "land-v2:6:2",
+          "art": "hill-low-b",
+          "y": 161,
+          "x": 411
+        },
+        {
+          "id": "land-v2:6:1",
+          "art": "hill-low-a",
+          "y": 76,
+          "x": 406
+        },
+        {
+          "id": "land-v2:5:6",
+          "art": "fields",
+          "y": 399,
+          "x": 357
+        },
+        {
+          "id": "land-v2:2:5",
+          "art": "forest",
+          "y": 345,
+          "x": 147
+        },
+        {
+          "id": "land-v2:3:6",
+          "art": "forest",
+          "y": 428,
+          "x": 214
+        },
+        {
+          "id": "land-v2:12:11",
+          "art": "forest",
+          "y": 733,
+          "x": 823
+        },
+        {
+          "id": "land-v2:9:2",
+          "art": "fields",
+          "y": 138,
+          "x": 592
+        },
+        {
+          "id": "land-v2:11:10",
+          "art": "forest",
+          "y": 668,
+          "x": 758
+        },
+        {
+          "id": "land-v2:11:8",
+          "art": "fields",
+          "y": 554,
+          "x": 736
+        },
+        {
+          "id": "land-v2:10:2",
+          "art": "hill-low-b",
+          "y": 183,
+          "x": 669
+        },
+        {
+          "id": "land-v2:2:2",
+          "art": "hill-low-a",
+          "y": 176,
+          "x": 170
+        },
+        {
+          "id": "land-v2:6:3",
+          "art": "hill-low-a",
+          "y": 246,
+          "x": 396
+        },
+        {
+          "id": "land-v2:10:1",
+          "art": "hill-low-a",
+          "y": 90,
+          "x": 672
+        },
+        {
+          "id": "land-v2:5:8",
+          "art": "fields",
+          "y": 548,
+          "x": 334
+        },
+        {
+          "id": "land-v2:1:3",
+          "art": "hill-low-b",
+          "y": 207,
+          "x": 85
+        },
+        {
+          "id": "land-v2:10:9",
+          "art": "forest",
+          "y": 627,
+          "x": 665
+        }
+      ],
+      "assets": [
+        {
+          "y": 728,
+          "x": 512,
+          "id": "asset:illustrated-fixture-1:0,0:generator",
+          "art": "gas",
+          "node": "illustrated-fixture-1:0,0:generator",
+          "preview": false
+        },
+        {
+          "y": 536,
+          "x": 512,
+          "id": "asset:illustrated-fixture-1:0,0:substation",
+          "art": "substation",
+          "node": "illustrated-fixture-1:0,0:substation",
+          "preview": false
+        },
+        {
+          "y": 344,
+          "x": 512,
+          "id": "asset:illustrated-fixture-1:0,0:settlement",
+          "art": "town",
+          "node": "illustrated-fixture-1:0,0:settlement",
+          "preview": false
+        },
+        {
+          "y": 344,
+          "x": 704,
+          "id": "asset:illustrated-fixture-1:b:1",
+          "art": "village",
+          "node": "illustrated-fixture-1:b:1",
+          "preview": true
+        },
+        {
+          "y": 636.8,
+          "x": 512,
+          "link": 1,
+          "id": "pylon:1",
+          "art": "pylon"
+        },
+        {
+          "y": 444.8,
+          "x": 512,
+          "link": 2,
+          "id": "pylon:2",
+          "art": "pylon"
+        },
+        {
+          "y": 320,
+          "x": 579.2,
+          "link": 3,
+          "id": "pylon:3",
+          "art": "pylon"
+        }
+      ]
+    },
+    "links": [
+      {
+        "to": "illustrated-fixture-1:0,0:substation",
+        "from": "illustrated-fixture-1:0,0:generator"
+      },
+      {
+        "to": "illustrated-fixture-1:0,0:settlement",
+        "from": "illustrated-fixture-1:0,0:substation"
+      },
+      {
+        "to": "illustrated-fixture-1:b:1",
+        "from": "illustrated-fixture-1:0,0:settlement"
+      }
+    ],
+    "world": {
+      "namePoolVersion": 1,
+      "nameId": 5,
+      "samples": [
+        {
+          "y": 0,
+          "x": 0,
+          "lapseCentiC": -121,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 201,
+          "rawTemperatureCentiC": -1200
+        },
+        {
+          "y": 0,
+          "x": 64,
+          "lapseCentiC": -124,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 206,
+          "rawTemperatureCentiC": -1199
+        },
+        {
+          "y": 0,
+          "x": 128,
+          "lapseCentiC": -124,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 206,
+          "rawTemperatureCentiC": -1197
+        },
+        {
+          "y": 0,
+          "x": 192,
+          "lapseCentiC": -106,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 176,
+          "rawTemperatureCentiC": -1193
+        },
+        {
+          "y": 0,
+          "x": 256,
+          "lapseCentiC": -87,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 145,
+          "rawTemperatureCentiC": -1188
+        },
+        {
+          "y": 0,
+          "x": 320,
+          "lapseCentiC": -85,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 142,
+          "rawTemperatureCentiC": -1182
+        },
+        {
+          "y": 0,
+          "x": 384,
+          "lapseCentiC": -84,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 140,
+          "rawTemperatureCentiC": -1174
+        },
+        {
+          "y": 0,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1165
+        },
+        {
+          "y": 0,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1154
+        },
+        {
+          "y": 0,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1141
+        },
+        {
+          "y": 0,
+          "x": 640,
+          "lapseCentiC": -67,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 111,
+          "rawTemperatureCentiC": -1128
+        },
+        {
+          "y": 0,
+          "x": 704,
+          "lapseCentiC": -63,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 105,
+          "rawTemperatureCentiC": -1113
+        },
+        {
+          "y": 0,
+          "x": 768,
+          "lapseCentiC": -58,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 96,
+          "rawTemperatureCentiC": -1098
+        },
+        {
+          "y": 0,
+          "x": 832,
+          "lapseCentiC": -21,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 35,
+          "rawTemperatureCentiC": -1081
+        },
+        {
+          "y": 0,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -23,
+          "rawTemperatureCentiC": -1063
+        },
+        {
+          "y": 0,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -36,
+          "rawTemperatureCentiC": -1043
+        },
+        {
+          "y": 0,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -40,
+          "rawTemperatureCentiC": -1022
+        },
+        {
+          "y": 64,
+          "x": 0,
+          "lapseCentiC": -107,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 178,
+          "rawTemperatureCentiC": -1200
+        },
+        {
+          "y": 64,
+          "x": 64,
+          "lapseCentiC": -106,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 177,
+          "rawTemperatureCentiC": -1199
+        },
+        {
+          "y": 64,
+          "x": 128,
+          "lapseCentiC": -104,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 173,
+          "rawTemperatureCentiC": -1197
+        },
+        {
+          "y": 64,
+          "x": 192,
+          "lapseCentiC": -101,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 169,
+          "rawTemperatureCentiC": -1193
+        },
+        {
+          "y": 64,
+          "x": 256,
+          "lapseCentiC": -98,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 164,
+          "rawTemperatureCentiC": -1188
+        },
+        {
+          "y": 64,
+          "x": 320,
+          "lapseCentiC": -94,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 157,
+          "rawTemperatureCentiC": -1182
+        },
+        {
+          "y": 64,
+          "x": 384,
+          "lapseCentiC": -89,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 149,
+          "rawTemperatureCentiC": -1174
+        },
+        {
+          "y": 64,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1165
+        },
+        {
+          "y": 64,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1154
+        },
+        {
+          "y": 64,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1141
+        },
+        {
+          "y": 64,
+          "x": 640,
+          "lapseCentiC": -74,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 123,
+          "rawTemperatureCentiC": -1128
+        },
+        {
+          "y": 64,
+          "x": 704,
+          "lapseCentiC": -62,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 103,
+          "rawTemperatureCentiC": -1113
+        },
+        {
+          "y": 64,
+          "x": 768,
+          "lapseCentiC": -49,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 82,
+          "rawTemperatureCentiC": -1098
+        },
+        {
+          "y": 64,
+          "x": 832,
+          "lapseCentiC": -22,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 37,
+          "rawTemperatureCentiC": -1081
+        },
+        {
+          "y": 64,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -5,
+          "rawTemperatureCentiC": -1063
+        },
+        {
+          "y": 64,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -11,
+          "rawTemperatureCentiC": -1043
+        },
+        {
+          "y": 64,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -9,
+          "rawTemperatureCentiC": -1022
+        },
+        {
+          "y": 128,
+          "x": 0,
+          "lapseCentiC": -84,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 140,
+          "rawTemperatureCentiC": -1199
+        },
+        {
+          "y": 128,
+          "x": 64,
+          "lapseCentiC": -81,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 135,
+          "rawTemperatureCentiC": -1198
+        },
+        {
+          "y": 128,
+          "x": 128,
+          "lapseCentiC": -75,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 125,
+          "rawTemperatureCentiC": -1196
+        },
+        {
+          "y": 128,
+          "x": 192,
+          "lapseCentiC": -90,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 150,
+          "rawTemperatureCentiC": -1192
+        },
+        {
+          "y": 128,
+          "x": 256,
+          "lapseCentiC": -103,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 172,
+          "rawTemperatureCentiC": -1187
+        },
+        {
+          "y": 128,
+          "x": 320,
+          "lapseCentiC": -96,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 160,
+          "rawTemperatureCentiC": -1181
+        },
+        {
+          "y": 128,
+          "x": 384,
+          "lapseCentiC": -90,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 150,
+          "rawTemperatureCentiC": -1173
+        },
+        {
+          "y": 128,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1164
+        },
+        {
+          "y": 128,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1153
+        },
+        {
+          "y": 128,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1140
+        },
+        {
+          "y": 128,
+          "x": 640,
+          "lapseCentiC": -77,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 128,
+          "rawTemperatureCentiC": -1127
+        },
+        {
+          "y": 128,
+          "x": 704,
+          "lapseCentiC": -59,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 98,
+          "rawTemperatureCentiC": -1112
+        },
+        {
+          "y": 128,
+          "x": 768,
+          "lapseCentiC": -40,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 67,
+          "rawTemperatureCentiC": -1097
+        },
+        {
+          "y": 128,
+          "x": 832,
+          "lapseCentiC": -25,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 42,
+          "rawTemperatureCentiC": -1080
+        },
+        {
+          "y": 128,
+          "x": 896,
+          "lapseCentiC": -11,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 19,
+          "rawTemperatureCentiC": -1062
+        },
+        {
+          "y": 128,
+          "x": 960,
+          "lapseCentiC": -13,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 21,
+          "rawTemperatureCentiC": -1042
+        },
+        {
+          "y": 128,
+          "x": 1024,
+          "lapseCentiC": -17,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 29,
+          "rawTemperatureCentiC": -1021
+        },
+        {
+          "y": 192,
+          "x": 0,
+          "lapseCentiC": -67,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 111,
+          "rawTemperatureCentiC": -1197
+        },
+        {
+          "y": 192,
+          "x": 64,
+          "lapseCentiC": -67,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 112,
+          "rawTemperatureCentiC": -1196
+        },
+        {
+          "y": 192,
+          "x": 128,
+          "lapseCentiC": -66,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 110,
+          "rawTemperatureCentiC": -1194
+        },
+        {
+          "y": 192,
+          "x": 192,
+          "lapseCentiC": -73,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 121,
+          "rawTemperatureCentiC": -1190
+        },
+        {
+          "y": 192,
+          "x": 256,
+          "lapseCentiC": -79,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 131,
+          "rawTemperatureCentiC": -1185
+        },
+        {
+          "y": 192,
+          "x": 320,
+          "lapseCentiC": -77,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 128,
+          "rawTemperatureCentiC": -1179
+        },
+        {
+          "y": 192,
+          "x": 384,
+          "lapseCentiC": -75,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 125,
+          "rawTemperatureCentiC": -1171
+        },
+        {
+          "y": 192,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1162
+        },
+        {
+          "y": 192,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1151
+        },
+        {
+          "y": 192,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1138
+        },
+        {
+          "y": 192,
+          "x": 640,
+          "lapseCentiC": -54,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 90,
+          "rawTemperatureCentiC": -1125
+        },
+        {
+          "y": 192,
+          "x": 704,
+          "lapseCentiC": -43,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 72,
+          "rawTemperatureCentiC": -1110
+        },
+        {
+          "y": 192,
+          "x": 768,
+          "lapseCentiC": -31,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 52,
+          "rawTemperatureCentiC": -1095
+        },
+        {
+          "y": 192,
+          "x": 832,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1078
+        },
+        {
+          "y": 192,
+          "x": 896,
+          "lapseCentiC": -17,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 28,
+          "rawTemperatureCentiC": -1060
+        },
+        {
+          "y": 192,
+          "x": 960,
+          "lapseCentiC": -23,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 38,
+          "rawTemperatureCentiC": -1040
+        },
+        {
+          "y": 192,
+          "x": 1024,
+          "lapseCentiC": -31,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 52,
+          "rawTemperatureCentiC": -1019
+        },
+        {
+          "y": 256,
+          "x": 0,
+          "lapseCentiC": -46,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 77,
+          "rawTemperatureCentiC": -1195
+        },
+        {
+          "y": 256,
+          "x": 64,
+          "lapseCentiC": -51,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 85,
+          "rawTemperatureCentiC": -1194
+        },
+        {
+          "y": 256,
+          "x": 128,
+          "lapseCentiC": -54,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 90,
+          "rawTemperatureCentiC": -1192
+        },
+        {
+          "y": 256,
+          "x": 192,
+          "lapseCentiC": -53,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 89,
+          "rawTemperatureCentiC": -1188
+        },
+        {
+          "y": 256,
+          "x": 256,
+          "lapseCentiC": -52,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 87,
+          "rawTemperatureCentiC": -1183
+        },
+        {
+          "y": 256,
+          "x": 320,
+          "lapseCentiC": -55,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 92,
+          "rawTemperatureCentiC": -1177
+        },
+        {
+          "y": 256,
+          "x": 384,
+          "lapseCentiC": -58,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 97,
+          "rawTemperatureCentiC": -1169
+        },
+        {
+          "y": 256,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1160
+        },
+        {
+          "y": 256,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1149
+        },
+        {
+          "y": 256,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1136
+        },
+        {
+          "y": 256,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1123
+        },
+        {
+          "y": 256,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1108
+        },
+        {
+          "y": 256,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1093
+        },
+        {
+          "y": 256,
+          "x": 832,
+          "lapseCentiC": -23,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 38,
+          "rawTemperatureCentiC": -1076
+        },
+        {
+          "y": 256,
+          "x": 896,
+          "lapseCentiC": -23,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 39,
+          "rawTemperatureCentiC": -1058
+        },
+        {
+          "y": 256,
+          "x": 960,
+          "lapseCentiC": -35,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 58,
+          "rawTemperatureCentiC": -1038
+        },
+        {
+          "y": 256,
+          "x": 1024,
+          "lapseCentiC": -47,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 78,
+          "rawTemperatureCentiC": -1017
+        },
+        {
+          "y": 320,
+          "x": 0,
+          "lapseCentiC": -40,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 66,
+          "rawTemperatureCentiC": -1192
+        },
+        {
+          "y": 320,
+          "x": 64,
+          "lapseCentiC": -41,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 68,
+          "rawTemperatureCentiC": -1191
+        },
+        {
+          "y": 320,
+          "x": 128,
+          "lapseCentiC": -42,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 70,
+          "rawTemperatureCentiC": -1189
+        },
+        {
+          "y": 320,
+          "x": 192,
+          "lapseCentiC": -34,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 57,
+          "rawTemperatureCentiC": -1185
+        },
+        {
+          "y": 320,
+          "x": 256,
+          "lapseCentiC": -26,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 44,
+          "rawTemperatureCentiC": -1180
+        },
+        {
+          "y": 320,
+          "x": 320,
+          "lapseCentiC": -40,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 66,
+          "rawTemperatureCentiC": -1174
+        },
+        {
+          "y": 320,
+          "x": 384,
+          "lapseCentiC": -52,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 87,
+          "rawTemperatureCentiC": -1166
+        },
+        {
+          "y": 320,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1157
+        },
+        {
+          "y": 320,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1146
+        },
+        {
+          "y": 320,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1133
+        },
+        {
+          "y": 320,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1120
+        },
+        {
+          "y": 320,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1105
+        },
+        {
+          "y": 320,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1090
+        },
+        {
+          "y": 320,
+          "x": 832,
+          "lapseCentiC": -40,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 66,
+          "rawTemperatureCentiC": -1073
+        },
+        {
+          "y": 320,
+          "x": 896,
+          "lapseCentiC": -41,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 68,
+          "rawTemperatureCentiC": -1056
+        },
+        {
+          "y": 320,
+          "x": 960,
+          "lapseCentiC": -47,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 78,
+          "rawTemperatureCentiC": -1036
+        },
+        {
+          "y": 320,
+          "x": 1024,
+          "lapseCentiC": -51,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 85,
+          "rawTemperatureCentiC": -1015
+        },
+        {
+          "y": 384,
+          "x": 0,
+          "lapseCentiC": -35,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 59,
+          "rawTemperatureCentiC": -1188
+        },
+        {
+          "y": 384,
+          "x": 64,
+          "lapseCentiC": -33,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 55,
+          "rawTemperatureCentiC": -1187
+        },
+        {
+          "y": 384,
+          "x": 128,
+          "lapseCentiC": -32,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 54,
+          "rawTemperatureCentiC": -1185
+        },
+        {
+          "y": 384,
+          "x": 192,
+          "lapseCentiC": -17,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 29,
+          "rawTemperatureCentiC": -1181
+        },
+        {
+          "y": 384,
+          "x": 256,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 3,
+          "rawTemperatureCentiC": -1176
+        },
+        {
+          "y": 384,
+          "x": 320,
+          "lapseCentiC": -26,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 43,
+          "rawTemperatureCentiC": -1171
+        },
+        {
+          "y": 384,
+          "x": 384,
+          "lapseCentiC": -49,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 81,
+          "rawTemperatureCentiC": -1163
+        },
+        {
+          "y": 384,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1154
+        },
+        {
+          "y": 384,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1143
+        },
+        {
+          "y": 384,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1130
+        },
+        {
+          "y": 384,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1117
+        },
+        {
+          "y": 384,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1102
+        },
+        {
+          "y": 384,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1087
+        },
+        {
+          "y": 384,
+          "x": 832,
+          "lapseCentiC": -56,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 93,
+          "rawTemperatureCentiC": -1070
+        },
+        {
+          "y": 384,
+          "x": 896,
+          "lapseCentiC": -58,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 96,
+          "rawTemperatureCentiC": -1052
+        },
+        {
+          "y": 384,
+          "x": 960,
+          "lapseCentiC": -57,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 95,
+          "rawTemperatureCentiC": -1032
+        },
+        {
+          "y": 384,
+          "x": 1024,
+          "lapseCentiC": -53,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 89,
+          "rawTemperatureCentiC": -1011
+        },
+        {
+          "y": 448,
+          "x": 0,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 3,
+          "rawTemperatureCentiC": -1184
+        },
+        {
+          "y": 448,
+          "x": 64,
+          "lapseCentiC": -3,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 5,
+          "rawTemperatureCentiC": -1183
+        },
+        {
+          "y": 448,
+          "x": 128,
+          "lapseCentiC": -6,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 10,
+          "rawTemperatureCentiC": -1181
+        },
+        {
+          "y": 448,
+          "x": 192,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 11,
+          "rawTemperatureCentiC": -1177
+        },
+        {
+          "y": 448,
+          "x": 256,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 11,
+          "rawTemperatureCentiC": -1172
+        },
+        {
+          "y": 448,
+          "x": 320,
+          "lapseCentiC": -22,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 37,
+          "rawTemperatureCentiC": -1167
+        },
+        {
+          "y": 448,
+          "x": 384,
+          "lapseCentiC": -38,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 63,
+          "rawTemperatureCentiC": -1159
+        },
+        {
+          "y": 448,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1150
+        },
+        {
+          "y": 448,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1139
+        },
+        {
+          "y": 448,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1126
+        },
+        {
+          "y": 448,
+          "x": 640,
+          "lapseCentiC": -34,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 56,
+          "rawTemperatureCentiC": -1113
+        },
+        {
+          "y": 448,
+          "x": 704,
+          "lapseCentiC": -38,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 64,
+          "rawTemperatureCentiC": -1098
+        },
+        {
+          "y": 448,
+          "x": 768,
+          "lapseCentiC": -43,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 72,
+          "rawTemperatureCentiC": -1083
+        },
+        {
+          "y": 448,
+          "x": 832,
+          "lapseCentiC": -52,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 86,
+          "rawTemperatureCentiC": -1066
+        },
+        {
+          "y": 448,
+          "x": 896,
+          "lapseCentiC": -59,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 99,
+          "rawTemperatureCentiC": -1048
+        },
+        {
+          "y": 448,
+          "x": 960,
+          "lapseCentiC": -64,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 107,
+          "rawTemperatureCentiC": -1029
+        },
+        {
+          "y": 448,
+          "x": 1024,
+          "lapseCentiC": -66,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 110,
+          "rawTemperatureCentiC": -1008
+        },
+        {
+          "y": 512,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -40,
+          "rawTemperatureCentiC": -1180
+        },
+        {
+          "y": 512,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -32,
+          "rawTemperatureCentiC": -1179
+        },
+        {
+          "y": 512,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -21,
+          "rawTemperatureCentiC": -1177
+        },
+        {
+          "y": 512,
+          "x": 192,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 4,
+          "rawTemperatureCentiC": -1173
+        },
+        {
+          "y": 512,
+          "x": 256,
+          "lapseCentiC": -17,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 29,
+          "rawTemperatureCentiC": -1168
+        },
+        {
+          "y": 512,
+          "x": 320,
+          "lapseCentiC": -25,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 41,
+          "rawTemperatureCentiC": -1162
+        },
+        {
+          "y": 512,
+          "x": 384,
+          "lapseCentiC": -32,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 53,
+          "rawTemperatureCentiC": -1154
+        },
+        {
+          "y": 512,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1145
+        },
+        {
+          "y": 512,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1134
+        },
+        {
+          "y": 512,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1121
+        },
+        {
+          "y": 512,
+          "x": 640,
+          "lapseCentiC": -41,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 68,
+          "rawTemperatureCentiC": -1108
+        },
+        {
+          "y": 512,
+          "x": 704,
+          "lapseCentiC": -36,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 60,
+          "rawTemperatureCentiC": -1093
+        },
+        {
+          "y": 512,
+          "x": 768,
+          "lapseCentiC": -32,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 54,
+          "rawTemperatureCentiC": -1079
+        },
+        {
+          "y": 512,
+          "x": 832,
+          "lapseCentiC": -45,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 75,
+          "rawTemperatureCentiC": -1062
+        },
+        {
+          "y": 512,
+          "x": 896,
+          "lapseCentiC": -57,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 95,
+          "rawTemperatureCentiC": -1044
+        },
+        {
+          "y": 512,
+          "x": 960,
+          "lapseCentiC": -67,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 112,
+          "rawTemperatureCentiC": -1024
+        },
+        {
+          "y": 512,
+          "x": 1024,
+          "lapseCentiC": -73,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 122,
+          "rawTemperatureCentiC": -1003
+        },
+        {
+          "y": 576,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -15,
+          "rawTemperatureCentiC": -1174
+        },
+        {
+          "y": 576,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -12,
+          "rawTemperatureCentiC": -1173
+        },
+        {
+          "y": 576,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -8,
+          "rawTemperatureCentiC": -1171
+        },
+        {
+          "y": 576,
+          "x": 192,
+          "lapseCentiC": -1,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 2,
+          "rawTemperatureCentiC": -1167
+        },
+        {
+          "y": 576,
+          "x": 256,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 12,
+          "rawTemperatureCentiC": -1162
+        },
+        {
+          "y": 576,
+          "x": 320,
+          "lapseCentiC": -10,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 17,
+          "rawTemperatureCentiC": -1156
+        },
+        {
+          "y": 576,
+          "x": 384,
+          "lapseCentiC": -14,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 24,
+          "rawTemperatureCentiC": -1148
+        },
+        {
+          "y": 576,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1140
+        },
+        {
+          "y": 576,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1129
+        },
+        {
+          "y": 576,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1116
+        },
+        {
+          "y": 576,
+          "x": 640,
+          "lapseCentiC": -22,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 36,
+          "rawTemperatureCentiC": -1103
+        },
+        {
+          "y": 576,
+          "x": 704,
+          "lapseCentiC": -32,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 54,
+          "rawTemperatureCentiC": -1088
+        },
+        {
+          "y": 576,
+          "x": 768,
+          "lapseCentiC": -44,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 73,
+          "rawTemperatureCentiC": -1073
+        },
+        {
+          "y": 576,
+          "x": 832,
+          "lapseCentiC": -52,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 87,
+          "rawTemperatureCentiC": -1057
+        },
+        {
+          "y": 576,
+          "x": 896,
+          "lapseCentiC": -61,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 102,
+          "rawTemperatureCentiC": -1039
+        },
+        {
+          "y": 576,
+          "x": 960,
+          "lapseCentiC": -62,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 103,
+          "rawTemperatureCentiC": -1019
+        },
+        {
+          "y": 576,
+          "x": 1024,
+          "lapseCentiC": -59,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 98,
+          "rawTemperatureCentiC": -998
+        },
+        {
+          "y": 640,
+          "x": 0,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 7,
+          "rawTemperatureCentiC": -1168
+        },
+        {
+          "y": 640,
+          "x": 64,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 4,
+          "rawTemperatureCentiC": -1167
+        },
+        {
+          "y": 640,
+          "x": 128,
+          "lapseCentiC": -1,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 2,
+          "rawTemperatureCentiC": -1165
+        },
+        {
+          "y": 640,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -5,
+          "rawTemperatureCentiC": -1161
+        },
+        {
+          "y": 640,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -12,
+          "rawTemperatureCentiC": -1157
+        },
+        {
+          "y": 640,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -13,
+          "rawTemperatureCentiC": -1151
+        },
+        {
+          "y": 640,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -14,
+          "rawTemperatureCentiC": -1143
+        },
+        {
+          "y": 640,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1134
+        },
+        {
+          "y": 640,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1123
+        },
+        {
+          "y": 640,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1110
+        },
+        {
+          "y": 640,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1097
+        },
+        {
+          "y": 640,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1083
+        },
+        {
+          "y": 640,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1068
+        },
+        {
+          "y": 640,
+          "x": 832,
+          "lapseCentiC": -53,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 88,
+          "rawTemperatureCentiC": -1051
+        },
+        {
+          "y": 640,
+          "x": 896,
+          "lapseCentiC": -56,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 94,
+          "rawTemperatureCentiC": -1033
+        },
+        {
+          "y": 640,
+          "x": 960,
+          "lapseCentiC": -49,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 81,
+          "rawTemperatureCentiC": -1014
+        },
+        {
+          "y": 640,
+          "x": 1024,
+          "lapseCentiC": -36,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 60,
+          "rawTemperatureCentiC": -993
+        },
+        {
+          "y": 704,
+          "x": 0,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 7,
+          "rawTemperatureCentiC": -1162
+        },
+        {
+          "y": 704,
+          "x": 64,
+          "lapseCentiC": -5,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 8,
+          "rawTemperatureCentiC": -1161
+        },
+        {
+          "y": 704,
+          "x": 128,
+          "lapseCentiC": -6,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 10,
+          "rawTemperatureCentiC": -1159
+        },
+        {
+          "y": 704,
+          "x": 192,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 6,
+          "rawTemperatureCentiC": -1155
+        },
+        {
+          "y": 704,
+          "x": 256,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 3,
+          "rawTemperatureCentiC": -1150
+        },
+        {
+          "y": 704,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -16,
+          "rawTemperatureCentiC": -1144
+        },
+        {
+          "y": 704,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -35,
+          "rawTemperatureCentiC": -1136
+        },
+        {
+          "y": 704,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1127
+        },
+        {
+          "y": 704,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1117
+        },
+        {
+          "y": 704,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1104
+        },
+        {
+          "y": 704,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1091
+        },
+        {
+          "y": 704,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1076
+        },
+        {
+          "y": 704,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1062
+        },
+        {
+          "y": 704,
+          "x": 832,
+          "lapseCentiC": -30,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 50,
+          "rawTemperatureCentiC": -1045
+        },
+        {
+          "y": 704,
+          "x": 896,
+          "lapseCentiC": -37,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 61,
+          "rawTemperatureCentiC": -1027
+        },
+        {
+          "y": 704,
+          "x": 960,
+          "lapseCentiC": -29,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 48,
+          "rawTemperatureCentiC": -1008
+        },
+        {
+          "y": 704,
+          "x": 1024,
+          "lapseCentiC": -19,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 31,
+          "rawTemperatureCentiC": -987
+        },
+        {
+          "y": 768,
+          "x": 0,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 4,
+          "rawTemperatureCentiC": -1155
+        },
+        {
+          "y": 768,
+          "x": 64,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 11,
+          "rawTemperatureCentiC": -1154
+        },
+        {
+          "y": 768,
+          "x": 128,
+          "lapseCentiC": -10,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 16,
+          "rawTemperatureCentiC": -1152
+        },
+        {
+          "y": 768,
+          "x": 192,
+          "lapseCentiC": -9,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 15,
+          "rawTemperatureCentiC": -1148
+        },
+        {
+          "y": 768,
+          "x": 256,
+          "lapseCentiC": -8,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 14,
+          "rawTemperatureCentiC": -1143
+        },
+        {
+          "y": 768,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -21,
+          "rawTemperatureCentiC": -1137
+        },
+        {
+          "y": 768,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -57,
+          "rawTemperatureCentiC": -1130
+        },
+        {
+          "y": 768,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1121
+        },
+        {
+          "y": 768,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1110
+        },
+        {
+          "y": 768,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1097
+        },
+        {
+          "y": 768,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1085
+        },
+        {
+          "y": 768,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1070
+        },
+        {
+          "y": 768,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1055
+        },
+        {
+          "y": 768,
+          "x": 832,
+          "lapseCentiC": -5,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 9,
+          "rawTemperatureCentiC": -1039
+        },
+        {
+          "y": 768,
+          "x": 896,
+          "lapseCentiC": -13,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 22,
+          "rawTemperatureCentiC": -1021
+        },
+        {
+          "y": 768,
+          "x": 960,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 12,
+          "rawTemperatureCentiC": -1001
+        },
+        {
+          "y": 768,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -2,
+          "rawTemperatureCentiC": -981
+        },
+        {
+          "y": 832,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -16,
+          "rawTemperatureCentiC": -1147
+        },
+        {
+          "y": 832,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -16,
+          "rawTemperatureCentiC": -1146
+        },
+        {
+          "y": 832,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -17,
+          "rawTemperatureCentiC": -1145
+        },
+        {
+          "y": 832,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -16,
+          "rawTemperatureCentiC": -1141
+        },
+        {
+          "y": 832,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -15,
+          "rawTemperatureCentiC": -1136
+        },
+        {
+          "y": 832,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -38,
+          "rawTemperatureCentiC": -1130
+        },
+        {
+          "y": 832,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -61,
+          "rawTemperatureCentiC": -1122
+        },
+        {
+          "y": 832,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1113
+        },
+        {
+          "y": 832,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1103
+        },
+        {
+          "y": 832,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1090
+        },
+        {
+          "y": 832,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -29,
+          "rawTemperatureCentiC": -1077
+        },
+        {
+          "y": 832,
+          "x": 704,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -39,
+          "rawTemperatureCentiC": -1063
+        },
+        {
+          "y": 832,
+          "x": 768,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -49,
+          "rawTemperatureCentiC": -1048
+        },
+        {
+          "y": 832,
+          "x": 832,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -43,
+          "rawTemperatureCentiC": -1031
+        },
+        {
+          "y": 832,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -39,
+          "rawTemperatureCentiC": -1014
+        },
+        {
+          "y": 832,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -45,
+          "rawTemperatureCentiC": -994
+        },
+        {
+          "y": 832,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -54,
+          "rawTemperatureCentiC": -974
+        },
+        {
+          "y": 896,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -35,
+          "rawTemperatureCentiC": -1139
+        },
+        {
+          "y": 896,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -41,
+          "rawTemperatureCentiC": -1138
+        },
+        {
+          "y": 896,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -50,
+          "rawTemperatureCentiC": -1137
+        },
+        {
+          "y": 896,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -45,
+          "rawTemperatureCentiC": -1133
+        },
+        {
+          "y": 896,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -41,
+          "rawTemperatureCentiC": -1128
+        },
+        {
+          "y": 896,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -52,
+          "rawTemperatureCentiC": -1122
+        },
+        {
+          "y": 896,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -63,
+          "rawTemperatureCentiC": -1114
+        },
+        {
+          "y": 896,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1105
+        },
+        {
+          "y": 896,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1095
+        },
+        {
+          "y": 896,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1082
+        },
+        {
+          "y": 896,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -35,
+          "rawTemperatureCentiC": -1070
+        },
+        {
+          "y": 896,
+          "x": 704,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -62,
+          "rawTemperatureCentiC": -1055
+        },
+        {
+          "y": 896,
+          "x": 768,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -90,
+          "rawTemperatureCentiC": -1040
+        },
+        {
+          "y": 896,
+          "x": 832,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -92,
+          "rawTemperatureCentiC": -1024
+        },
+        {
+          "y": 896,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -95,
+          "rawTemperatureCentiC": -1006
+        },
+        {
+          "y": 896,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -99,
+          "rawTemperatureCentiC": -987
+        },
+        {
+          "y": 896,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -102,
+          "rawTemperatureCentiC": -967
+        },
+        {
+          "y": 960,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -38,
+          "rawTemperatureCentiC": -1130
+        },
+        {
+          "y": 960,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -39,
+          "rawTemperatureCentiC": -1130
+        },
+        {
+          "y": 960,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -43,
+          "rawTemperatureCentiC": -1128
+        },
+        {
+          "y": 960,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -57,
+          "rawTemperatureCentiC": -1124
+        },
+        {
+          "y": 960,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -71,
+          "rawTemperatureCentiC": -1119
+        },
+        {
+          "y": 960,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -78,
+          "rawTemperatureCentiC": -1113
+        },
+        {
+          "y": 960,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -85,
+          "rawTemperatureCentiC": -1105
+        },
+        {
+          "y": 960,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1097
+        },
+        {
+          "y": 960,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1086
+        },
+        {
+          "y": 960,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1073
+        },
+        {
+          "y": 960,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -75,
+          "rawTemperatureCentiC": -1061
+        },
+        {
+          "y": 960,
+          "x": 704,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -80,
+          "rawTemperatureCentiC": -1046
+        },
+        {
+          "y": 960,
+          "x": 768,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -85,
+          "rawTemperatureCentiC": -1032
+        },
+        {
+          "y": 960,
+          "x": 832,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -84,
+          "rawTemperatureCentiC": -1015
+        },
+        {
+          "y": 960,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -83,
+          "rawTemperatureCentiC": -998
+        },
+        {
+          "y": 960,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -100,
+          "rawTemperatureCentiC": -979
+        },
+        {
+          "y": 960,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -118,
+          "rawTemperatureCentiC": -958
+        },
+        {
+          "y": 1024,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -39,
+          "rawTemperatureCentiC": -1122
+        },
+        {
+          "y": 1024,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -34,
+          "rawTemperatureCentiC": -1121
+        },
+        {
+          "y": 1024,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -34,
+          "rawTemperatureCentiC": -1119
+        },
+        {
+          "y": 1024,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -64,
+          "rawTemperatureCentiC": -1115
+        },
+        {
+          "y": 1024,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -95,
+          "rawTemperatureCentiC": -1110
+        },
+        {
+          "y": 1024,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -98,
+          "rawTemperatureCentiC": -1104
+        },
+        {
+          "y": 1024,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -100,
+          "rawTemperatureCentiC": -1097
+        },
+        {
+          "y": 1024,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1088
+        },
+        {
+          "y": 1024,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1077
+        },
+        {
+          "y": 1024,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": -1065
+        },
+        {
+          "y": 1024,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -107,
+          "rawTemperatureCentiC": -1052
+        },
+        {
+          "y": 1024,
+          "x": 704,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -88,
+          "rawTemperatureCentiC": -1038
+        },
+        {
+          "y": 1024,
+          "x": 768,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -70,
+          "rawTemperatureCentiC": -1023
+        },
+        {
+          "y": 1024,
+          "x": 832,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -64,
+          "rawTemperatureCentiC": -1007
+        },
+        {
+          "y": 1024,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -58,
+          "rawTemperatureCentiC": -990
+        },
+        {
+          "y": 1024,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -89,
+          "rawTemperatureCentiC": -971
+        },
+        {
+          "y": 1024,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -120,
+          "rawTemperatureCentiC": -950
+        }
+      ],
+      "fallback": false,
+      "climateVersion": 1,
+      "demandVersion": 1,
+      "countryId": "illustrated-fixture-1",
+      "generationVersion": 1,
+      "startTemplateVersion": 1,
+      "seed": "12fee3f76be963c09033cdfd9ccffb36",
+      "height": 1024,
+      "width": 1024,
+      "name": "Merefield",
+      "candidate": 0
+    }
+  },
+  {
+    "metrics": [
+      {
+        "value": "Rowanbridge",
+        "detail": "No financial state",
+        "label": "TEST FIXTURE"
+      },
+      {
+        "value": "fe0512aa",
+        "detail": "Generated geometry",
+        "label": "SEED"
+      },
+      {
+        "value": "78",
+        "detail": "Exact Native mask",
+        "label": "SHORES"
+      },
+      {
+        "value": "Experimental",
+        "detail": "No gameplay changes",
+        "label": "ART"
+      }
+    ],
+    "nodes": [
+      {
+        "y": 512,
+        "x": 320,
+        "name": "Starter Generator",
+        "id": "illustrated-fixture-2:0,0:generator",
+        "kind": "Generator",
+        "description": "Server-generated Test fixture"
+      },
+      {
+        "y": 512,
+        "x": 512,
+        "name": "Central Substation",
+        "id": "illustrated-fixture-2:0,0:substation",
+        "kind": "Substation",
+        "description": "Server-generated Test fixture"
+      },
+      {
+        "y": 512,
+        "x": 704,
+        "name": "Rowanbridge",
+        "id": "illustrated-fixture-2:0,0:settlement",
+        "kind": "Settlement",
+        "description": "Server-generated Test fixture"
+      },
+      {
+        "y": 704,
+        "x": 704,
+        "name": "Rowanbridge district",
+        "id": "illustrated-fixture-2:b:1",
+        "kind": "Settlement",
+        "description": "Surveyed district \u00b7 preview only until saved"
+      }
+    ],
+    "composition": {
+      "shores": [
+        {
+          "id": "shore:13:1",
+          "art": "shore-concave-ne",
+          "y": 64,
+          "x": 832
+        },
+        {
+          "id": "shore:14:1",
+          "art": "shore-convex-ne",
+          "y": 64,
+          "x": 896
+        },
+        {
+          "id": "shore:14:2",
+          "art": "shore-concave-ne",
+          "y": 128,
+          "x": 896
+        },
+        {
+          "id": "shore:15:2",
+          "art": "shore-convex-ne",
+          "y": 128,
+          "x": 960
+        },
+        {
+          "id": "shore:1:3",
+          "art": "shore-concave-sw",
+          "y": 192,
+          "x": 64
+        },
+        {
+          "id": "shore:15:3",
+          "art": "shore-concave-ne",
+          "y": 192,
+          "x": 960
+        },
+        {
+          "id": "shore:1:4",
+          "art": "shore-convex-sw",
+          "y": 256,
+          "x": 64
+        },
+        {
+          "id": "shore:2:4",
+          "art": "shore-concave-sw",
+          "y": 256,
+          "x": 128
+        },
+        {
+          "id": "shore:8:4",
+          "art": "shore-concave-se",
+          "y": 256,
+          "x": 512
+        },
+        {
+          "id": "shore:9:4",
+          "art": "shore-s",
+          "y": 256,
+          "x": 576
+        },
+        {
+          "id": "shore:10:4",
+          "art": "shore-s",
+          "y": 256,
+          "x": 640
+        },
+        {
+          "id": "shore:11:4",
+          "art": "shore-s",
+          "y": 256,
+          "x": 704
+        },
+        {
+          "id": "shore:12:4",
+          "art": "shore-s",
+          "y": 256,
+          "x": 768
+        },
+        {
+          "id": "shore:13:4",
+          "art": "shore-concave-sw",
+          "y": 256,
+          "x": 832
+        },
+        {
+          "id": "shore:2:5",
+          "art": "shore-convex-sw",
+          "y": 320,
+          "x": 128
+        },
+        {
+          "id": "shore:3:5",
+          "art": "shore-s",
+          "y": 320,
+          "x": 192
+        },
+        {
+          "id": "shore:4:5",
+          "art": "shore-s",
+          "y": 320,
+          "x": 256
+        },
+        {
+          "id": "shore:5:5",
+          "art": "shore-s",
+          "y": 320,
+          "x": 320
+        },
+        {
+          "id": "shore:6:5",
+          "art": "shore-s",
+          "y": 320,
+          "x": 384
+        },
+        {
+          "id": "shore:7:5",
+          "art": "shore-s",
+          "y": 320,
+          "x": 448
+        },
+        {
+          "id": "shore:8:5",
+          "art": "shore-convex-se",
+          "y": 320,
+          "x": 512
+        },
+        {
+          "id": "shore:12:5",
+          "art": "shore-convex-nw",
+          "y": 320,
+          "x": 768
+        },
+        {
+          "id": "shore:13:5",
+          "art": "shore-concave-nw",
+          "y": 320,
+          "x": 832
+        },
+        {
+          "id": "shore:11:6",
+          "art": "shore-convex-nw",
+          "y": 384,
+          "x": 704
+        },
+        {
+          "id": "shore:12:6",
+          "art": "shore-concave-nw",
+          "y": 384,
+          "x": 768
+        },
+        {
+          "id": "shore:1:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 64
+        },
+        {
+          "id": "shore:2:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 128
+        },
+        {
+          "id": "shore:3:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 192
+        },
+        {
+          "id": "shore:4:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 256
+        },
+        {
+          "id": "shore:5:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 320
+        },
+        {
+          "id": "shore:6:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 384
+        },
+        {
+          "id": "shore:7:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 448
+        },
+        {
+          "id": "shore:8:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 512
+        },
+        {
+          "id": "shore:9:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 576
+        },
+        {
+          "id": "shore:10:7",
+          "art": "shore-n",
+          "y": 448,
+          "x": 640
+        },
+        {
+          "id": "shore:11:7",
+          "art": "shore-concave-nw",
+          "y": 448,
+          "x": 704
+        },
+        {
+          "id": "shore:1:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 64
+        },
+        {
+          "id": "shore:2:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 128
+        },
+        {
+          "id": "shore:3:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 192
+        },
+        {
+          "id": "shore:4:10",
+          "art": "shore-concave-sw",
+          "y": 640,
+          "x": 256
+        },
+        {
+          "id": "shore:7:10",
+          "art": "shore-concave-se",
+          "y": 640,
+          "x": 448
+        },
+        {
+          "id": "shore:8:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 512
+        },
+        {
+          "id": "shore:9:10",
+          "art": "shore-s",
+          "y": 640,
+          "x": 576
+        },
+        {
+          "id": "shore:10:10",
+          "art": "shore-concave-sw",
+          "y": 640,
+          "x": 640
+        },
+        {
+          "id": "shore:4:11",
+          "art": "shore-w",
+          "y": 704,
+          "x": 256
+        },
+        {
+          "id": "shore:7:11",
+          "art": "shore-e",
+          "y": 704,
+          "x": 448
+        },
+        {
+          "id": "shore:10:11",
+          "art": "shore-w",
+          "y": 704,
+          "x": 640
+        },
+        {
+          "id": "shore:4:12",
+          "art": "shore-w",
+          "y": 768,
+          "x": 256
+        },
+        {
+          "id": "shore:7:12",
+          "art": "shore-e",
+          "y": 768,
+          "x": 448
+        },
+        {
+          "id": "shore:10:12",
+          "art": "shore-w",
+          "y": 768,
+          "x": 640
+        },
+        {
+          "id": "shore:4:13",
+          "art": "shore-convex-sw",
+          "y": 832,
+          "x": 256
+        },
+        {
+          "id": "shore:5:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 320
+        },
+        {
+          "id": "shore:6:13",
+          "art": "shore-s",
+          "y": 832,
+          "x": 384
+        },
+        {
+          "id": "shore:7:13",
+          "art": "shore-convex-se",
+          "y": 832,
+          "x": 448
+        },
+        {
+          "id": "shore:10:13",
+          "art": "shore-convex-sw",
+          "y": 832,
+          "x": 640
+        },
+        {
+          "id": "shore:11:13",
+          "art": "shore-concave-sw",
+          "y": 832,
+          "x": 704
+        },
+        {
+          "id": "shore:2:14",
+          "art": "shore-convex-nw",
+          "y": 896,
+          "x": 128
+        },
+        {
+          "id": "shore:3:14",
+          "art": "shore-n",
+          "y": 896,
+          "x": 192
+        },
+        {
+          "id": "shore:4:14",
+          "art": "shore-convex-ne",
+          "y": 896,
+          "x": 256
+        },
+        {
+          "id": "shore:5:14",
+          "art": "shore-convex-nw",
+          "y": 896,
+          "x": 320
+        },
+        {
+          "id": "shore:6:14",
+          "art": "shore-n",
+          "y": 896,
+          "x": 384
+        },
+        {
+          "id": "shore:7:14",
+          "art": "shore-n",
+          "y": 896,
+          "x": 448
+        },
+        {
+          "id": "shore:8:14",
+          "art": "shore-convex-ne",
+          "y": 896,
+          "x": 512
+        },
+        {
+          "id": "shore:11:14",
+          "art": "shore-convex-sw",
+          "y": 896,
+          "x": 704
+        },
+        {
+          "id": "shore:12:14",
+          "art": "shore-s",
+          "y": 896,
+          "x": 768
+        },
+        {
+          "id": "shore:13:14",
+          "art": "shore-concave-sw",
+          "y": 896,
+          "x": 832
+        },
+        {
+          "id": "shore:2:15",
+          "art": "shore-convex-sw",
+          "y": 960,
+          "x": 128
+        },
+        {
+          "id": "shore:3:15",
+          "art": "shore-s",
+          "y": 960,
+          "x": 192
+        },
+        {
+          "id": "shore:4:15",
+          "art": "shore-convex-se",
+          "y": 960,
+          "x": 256
+        },
+        {
+          "id": "shore:5:15",
+          "art": "shore-convex-sw",
+          "y": 960,
+          "x": 320
+        },
+        {
+          "id": "shore:6:15",
+          "art": "shore-concave-sw",
+          "y": 960,
+          "x": 384
+        },
+        {
+          "id": "shore:7:15",
+          "art": "shore-concave-se",
+          "y": 960,
+          "x": 448
+        },
+        {
+          "id": "shore:8:15",
+          "art": "shore-convex-se",
+          "y": 960,
+          "x": 512
+        },
+        {
+          "id": "shore:9:15",
+          "art": "shore-convex-nw",
+          "y": 960,
+          "x": 576
+        },
+        {
+          "id": "shore:10:15",
+          "art": "shore-n",
+          "y": 960,
+          "x": 640
+        },
+        {
+          "id": "shore:11:15",
+          "art": "shore-n",
+          "y": 960,
+          "x": 704
+        },
+        {
+          "id": "shore:12:15",
+          "art": "shore-n",
+          "y": 960,
+          "x": 768
+        },
+        {
+          "id": "shore:13:15",
+          "art": "shore-concave-nw",
+          "y": 960,
+          "x": 832
+        }
+      ],
+      "decorations": [
+        {
+          "id": "land-v2:2:8",
+          "art": "forest",
+          "y": 521,
+          "x": 147
+        },
+        {
+          "id": "land-v2:13:9",
+          "art": "fields",
+          "y": 606,
+          "x": 852
+        },
+        {
+          "id": "land-v2:13:11",
+          "art": "fields",
+          "y": 740,
+          "x": 878
+        },
+        {
+          "id": "land-v2:13:7",
+          "art": "fields",
+          "y": 488,
+          "x": 882
+        },
+        {
+          "id": "land-v2:12:12",
+          "art": "forest",
+          "y": 822,
+          "x": 812
+        },
+        {
+          "id": "land-v2:6:1",
+          "art": "hill-low-a",
+          "y": 90,
+          "x": 416
+        },
+        {
+          "id": "land-v2:10:1",
+          "art": "hill-low-a",
+          "y": 76,
+          "x": 678
+        },
+        {
+          "id": "land-v2:14:6",
+          "art": "hill-low-a",
+          "y": 398,
+          "x": 932
+        },
+        {
+          "id": "land-v2:14:10",
+          "art": "hill-low-b",
+          "y": 659,
+          "x": 937
+        },
+        {
+          "id": "land-v2:8:1",
+          "art": "hill-low-b",
+          "y": 105,
+          "x": 531
+        },
+        {
+          "id": "land-v2:14:4",
+          "art": "hill-low-a",
+          "y": 288,
+          "x": 938
+        },
+        {
+          "id": "land-v2:6:2",
+          "art": "hill-low-b",
+          "y": 183,
+          "x": 429
+        }
+      ],
+      "assets": [
+        {
+          "y": 536,
+          "x": 320,
+          "id": "asset:illustrated-fixture-2:0,0:generator",
+          "art": "gas",
+          "node": "illustrated-fixture-2:0,0:generator",
+          "preview": false
+        },
+        {
+          "y": 536,
+          "x": 512,
+          "id": "asset:illustrated-fixture-2:0,0:substation",
+          "art": "substation",
+          "node": "illustrated-fixture-2:0,0:substation",
+          "preview": false
+        },
+        {
+          "y": 536,
+          "x": 704,
+          "id": "asset:illustrated-fixture-2:0,0:settlement",
+          "art": "town",
+          "node": "illustrated-fixture-2:0,0:settlement",
+          "preview": false
+        },
+        {
+          "y": 728,
+          "x": 704,
+          "id": "asset:illustrated-fixture-2:b:1",
+          "art": "village",
+          "node": "illustrated-fixture-2:b:1",
+          "preview": true
+        },
+        {
+          "y": 512,
+          "x": 387.2,
+          "link": 1,
+          "id": "pylon:1",
+          "art": "pylon"
+        },
+        {
+          "y": 512,
+          "x": 579.2,
+          "link": 2,
+          "id": "pylon:2",
+          "art": "pylon"
+        },
+        {
+          "y": 579.2,
+          "x": 704,
+          "link": 3,
+          "id": "pylon:3",
+          "art": "pylon"
+        }
+      ]
+    },
+    "links": [
+      {
+        "to": "illustrated-fixture-2:0,0:substation",
+        "from": "illustrated-fixture-2:0,0:generator"
+      },
+      {
+        "to": "illustrated-fixture-2:0,0:settlement",
+        "from": "illustrated-fixture-2:0,0:substation"
+      },
+      {
+        "to": "illustrated-fixture-2:b:1",
+        "from": "illustrated-fixture-2:0,0:settlement"
+      }
+    ],
+    "world": {
+      "namePoolVersion": 1,
+      "nameId": 7,
+      "samples": [
+        {
+          "y": 0,
+          "x": 0,
+          "lapseCentiC": -45,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 75,
+          "rawTemperatureCentiC": 2180
+        },
+        {
+          "y": 0,
+          "x": 64,
+          "lapseCentiC": -42,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 70,
+          "rawTemperatureCentiC": 2179
+        },
+        {
+          "y": 0,
+          "x": 128,
+          "lapseCentiC": -42,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 70,
+          "rawTemperatureCentiC": 2177
+        },
+        {
+          "y": 0,
+          "x": 192,
+          "lapseCentiC": -35,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 59,
+          "rawTemperatureCentiC": 2173
+        },
+        {
+          "y": 0,
+          "x": 256,
+          "lapseCentiC": -30,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 50,
+          "rawTemperatureCentiC": 2168
+        },
+        {
+          "y": 0,
+          "x": 320,
+          "lapseCentiC": -56,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 94,
+          "rawTemperatureCentiC": 2162
+        },
+        {
+          "y": 0,
+          "x": 384,
+          "lapseCentiC": -81,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 135,
+          "rawTemperatureCentiC": 2154
+        },
+        {
+          "y": 0,
+          "x": 448,
+          "lapseCentiC": -64,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 107,
+          "rawTemperatureCentiC": 2145
+        },
+        {
+          "y": 0,
+          "x": 512,
+          "lapseCentiC": -44,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 74,
+          "rawTemperatureCentiC": 2134
+        },
+        {
+          "y": 0,
+          "x": 576,
+          "lapseCentiC": -61,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 101,
+          "rawTemperatureCentiC": 2121
+        },
+        {
+          "y": 0,
+          "x": 640,
+          "lapseCentiC": -69,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 115,
+          "rawTemperatureCentiC": 2108
+        },
+        {
+          "y": 0,
+          "x": 704,
+          "lapseCentiC": -41,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 69,
+          "rawTemperatureCentiC": 2093
+        },
+        {
+          "y": 0,
+          "x": 768,
+          "lapseCentiC": -11,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 19,
+          "rawTemperatureCentiC": 2078
+        },
+        {
+          "y": 0,
+          "x": 832,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -19,
+          "rawTemperatureCentiC": 2061
+        },
+        {
+          "y": 0,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -53,
+          "rawTemperatureCentiC": 2043
+        },
+        {
+          "y": 0,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -75,
+          "rawTemperatureCentiC": 2023
+        },
+        {
+          "y": 0,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -86,
+          "rawTemperatureCentiC": 2002
+        },
+        {
+          "y": 64,
+          "x": 0,
+          "lapseCentiC": -27,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 45,
+          "rawTemperatureCentiC": 2180
+        },
+        {
+          "y": 64,
+          "x": 64,
+          "lapseCentiC": -27,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 45,
+          "rawTemperatureCentiC": 2179
+        },
+        {
+          "y": 64,
+          "x": 128,
+          "lapseCentiC": -29,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 49,
+          "rawTemperatureCentiC": 2177
+        },
+        {
+          "y": 64,
+          "x": 192,
+          "lapseCentiC": -32,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 53,
+          "rawTemperatureCentiC": 2173
+        },
+        {
+          "y": 64,
+          "x": 256,
+          "lapseCentiC": -35,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 58,
+          "rawTemperatureCentiC": 2168
+        },
+        {
+          "y": 64,
+          "x": 320,
+          "lapseCentiC": -52,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 86,
+          "rawTemperatureCentiC": 2162
+        },
+        {
+          "y": 64,
+          "x": 384,
+          "lapseCentiC": -68,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 113,
+          "rawTemperatureCentiC": 2154
+        },
+        {
+          "y": 64,
+          "x": 448,
+          "lapseCentiC": -59,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 98,
+          "rawTemperatureCentiC": 2145
+        },
+        {
+          "y": 64,
+          "x": 512,
+          "lapseCentiC": -48,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 80,
+          "rawTemperatureCentiC": 2134
+        },
+        {
+          "y": 64,
+          "x": 576,
+          "lapseCentiC": -56,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 93,
+          "rawTemperatureCentiC": 2121
+        },
+        {
+          "y": 64,
+          "x": 640,
+          "lapseCentiC": -56,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 94,
+          "rawTemperatureCentiC": 2108
+        },
+        {
+          "y": 64,
+          "x": 704,
+          "lapseCentiC": -40,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 66,
+          "rawTemperatureCentiC": 2093
+        },
+        {
+          "y": 64,
+          "x": 768,
+          "lapseCentiC": -20,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 34,
+          "rawTemperatureCentiC": 2078
+        },
+        {
+          "y": 64,
+          "x": 832,
+          "lapseCentiC": -3,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 5,
+          "rawTemperatureCentiC": 2061
+        },
+        {
+          "y": 64,
+          "x": 896,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -21,
+          "rawTemperatureCentiC": 2043
+        },
+        {
+          "y": 64,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -47,
+          "rawTemperatureCentiC": 2023
+        },
+        {
+          "y": 64,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -62,
+          "rawTemperatureCentiC": 2002
+        },
+        {
+          "y": 128,
+          "x": 0,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 6,
+          "rawTemperatureCentiC": 2179
+        },
+        {
+          "y": 128,
+          "x": 64,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 11,
+          "rawTemperatureCentiC": 2178
+        },
+        {
+          "y": 128,
+          "x": 128,
+          "lapseCentiC": -12,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 20,
+          "rawTemperatureCentiC": 2176
+        },
+        {
+          "y": 128,
+          "x": 192,
+          "lapseCentiC": -22,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 37,
+          "rawTemperatureCentiC": 2172
+        },
+        {
+          "y": 128,
+          "x": 256,
+          "lapseCentiC": -33,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 55,
+          "rawTemperatureCentiC": 2167
+        },
+        {
+          "y": 128,
+          "x": 320,
+          "lapseCentiC": -40,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 66,
+          "rawTemperatureCentiC": 2161
+        },
+        {
+          "y": 128,
+          "x": 384,
+          "lapseCentiC": -46,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 76,
+          "rawTemperatureCentiC": 2153
+        },
+        {
+          "y": 128,
+          "x": 448,
+          "lapseCentiC": -46,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 76,
+          "rawTemperatureCentiC": 2144
+        },
+        {
+          "y": 128,
+          "x": 512,
+          "lapseCentiC": -43,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 71,
+          "rawTemperatureCentiC": 2133
+        },
+        {
+          "y": 128,
+          "x": 576,
+          "lapseCentiC": -43,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 71,
+          "rawTemperatureCentiC": 2120
+        },
+        {
+          "y": 128,
+          "x": 640,
+          "lapseCentiC": -38,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 63,
+          "rawTemperatureCentiC": 2107
+        },
+        {
+          "y": 128,
+          "x": 704,
+          "lapseCentiC": -34,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 57,
+          "rawTemperatureCentiC": 2092
+        },
+        {
+          "y": 128,
+          "x": 768,
+          "lapseCentiC": -29,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 49,
+          "rawTemperatureCentiC": 2077
+        },
+        {
+          "y": 128,
+          "x": 832,
+          "lapseCentiC": -20,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 34,
+          "rawTemperatureCentiC": 2060
+        },
+        {
+          "y": 128,
+          "x": 896,
+          "lapseCentiC": -12,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 20,
+          "rawTemperatureCentiC": 2042
+        },
+        {
+          "y": 128,
+          "x": 960,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -6,
+          "rawTemperatureCentiC": 2022
+        },
+        {
+          "y": 128,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -25,
+          "rawTemperatureCentiC": 2001
+        },
+        {
+          "y": 192,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -17,
+          "rawTemperatureCentiC": 2177
+        },
+        {
+          "y": 192,
+          "x": 64,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 3,
+          "rawTemperatureCentiC": 2176
+        },
+        {
+          "y": 192,
+          "x": 128,
+          "lapseCentiC": -15,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 25,
+          "rawTemperatureCentiC": 2174
+        },
+        {
+          "y": 192,
+          "x": 192,
+          "lapseCentiC": -20,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 33,
+          "rawTemperatureCentiC": 2170
+        },
+        {
+          "y": 192,
+          "x": 256,
+          "lapseCentiC": -26,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 44,
+          "rawTemperatureCentiC": 2165
+        },
+        {
+          "y": 192,
+          "x": 320,
+          "lapseCentiC": -28,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 47,
+          "rawTemperatureCentiC": 2159
+        },
+        {
+          "y": 192,
+          "x": 384,
+          "lapseCentiC": -30,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 50,
+          "rawTemperatureCentiC": 2151
+        },
+        {
+          "y": 192,
+          "x": 448,
+          "lapseCentiC": -26,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 43,
+          "rawTemperatureCentiC": 2142
+        },
+        {
+          "y": 192,
+          "x": 512,
+          "lapseCentiC": -21,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 35,
+          "rawTemperatureCentiC": 2131
+        },
+        {
+          "y": 192,
+          "x": 576,
+          "lapseCentiC": -19,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 32,
+          "rawTemperatureCentiC": 2118
+        },
+        {
+          "y": 192,
+          "x": 640,
+          "lapseCentiC": -16,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 27,
+          "rawTemperatureCentiC": 2105
+        },
+        {
+          "y": 192,
+          "x": 704,
+          "lapseCentiC": -15,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 25,
+          "rawTemperatureCentiC": 2090
+        },
+        {
+          "y": 192,
+          "x": 768,
+          "lapseCentiC": -14,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 23,
+          "rawTemperatureCentiC": 2075
+        },
+        {
+          "y": 192,
+          "x": 832,
+          "lapseCentiC": -21,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 35,
+          "rawTemperatureCentiC": 2058
+        },
+        {
+          "y": 192,
+          "x": 896,
+          "lapseCentiC": -28,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 46,
+          "rawTemperatureCentiC": 2040
+        },
+        {
+          "y": 192,
+          "x": 960,
+          "lapseCentiC": -14,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 24,
+          "rawTemperatureCentiC": 2020
+        },
+        {
+          "y": 192,
+          "x": 1024,
+          "lapseCentiC": -3,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 5,
+          "rawTemperatureCentiC": 1999
+        },
+        {
+          "y": 256,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -42,
+          "rawTemperatureCentiC": 2175
+        },
+        {
+          "y": 256,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -8,
+          "rawTemperatureCentiC": 2174
+        },
+        {
+          "y": 256,
+          "x": 128,
+          "lapseCentiC": -16,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 27,
+          "rawTemperatureCentiC": 2172
+        },
+        {
+          "y": 256,
+          "x": 192,
+          "lapseCentiC": -16,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 27,
+          "rawTemperatureCentiC": 2168
+        },
+        {
+          "y": 256,
+          "x": 256,
+          "lapseCentiC": -17,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 29,
+          "rawTemperatureCentiC": 2163
+        },
+        {
+          "y": 256,
+          "x": 320,
+          "lapseCentiC": -14,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 24,
+          "rawTemperatureCentiC": 2157
+        },
+        {
+          "y": 256,
+          "x": 384,
+          "lapseCentiC": -11,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 18,
+          "rawTemperatureCentiC": 2149
+        },
+        {
+          "y": 256,
+          "x": 448,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 7,
+          "rawTemperatureCentiC": 2140
+        },
+        {
+          "y": 256,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -6,
+          "rawTemperatureCentiC": 2129
+        },
+        {
+          "y": 256,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -11,
+          "rawTemperatureCentiC": 2116
+        },
+        {
+          "y": 256,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -14,
+          "rawTemperatureCentiC": 2103
+        },
+        {
+          "y": 256,
+          "x": 704,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -9,
+          "rawTemperatureCentiC": 2088
+        },
+        {
+          "y": 256,
+          "x": 768,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -3,
+          "rawTemperatureCentiC": 2073
+        },
+        {
+          "y": 256,
+          "x": 832,
+          "lapseCentiC": -23,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 38,
+          "rawTemperatureCentiC": 2056
+        },
+        {
+          "y": 256,
+          "x": 896,
+          "lapseCentiC": -46,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 76,
+          "rawTemperatureCentiC": 2038
+        },
+        {
+          "y": 256,
+          "x": 960,
+          "lapseCentiC": -35,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 59,
+          "rawTemperatureCentiC": 2018
+        },
+        {
+          "y": 256,
+          "x": 1024,
+          "lapseCentiC": -23,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 38,
+          "rawTemperatureCentiC": 1997
+        },
+        {
+          "y": 320,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -49,
+          "rawTemperatureCentiC": 2172
+        },
+        {
+          "y": 320,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -30,
+          "rawTemperatureCentiC": 2171
+        },
+        {
+          "y": 320,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -13,
+          "rawTemperatureCentiC": 2169
+        },
+        {
+          "y": 320,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -19,
+          "rawTemperatureCentiC": 2165
+        },
+        {
+          "y": 320,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -26,
+          "rawTemperatureCentiC": 2160
+        },
+        {
+          "y": 320,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -29,
+          "rawTemperatureCentiC": 2154
+        },
+        {
+          "y": 320,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -31,
+          "rawTemperatureCentiC": 2146
+        },
+        {
+          "y": 320,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -30,
+          "rawTemperatureCentiC": 2137
+        },
+        {
+          "y": 320,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -28,
+          "rawTemperatureCentiC": 2126
+        },
+        {
+          "y": 320,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -26,
+          "rawTemperatureCentiC": 2113
+        },
+        {
+          "y": 320,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -14,
+          "rawTemperatureCentiC": 2100
+        },
+        {
+          "y": 320,
+          "x": 704,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -2,
+          "rawTemperatureCentiC": 2085
+        },
+        {
+          "y": 320,
+          "x": 768,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 12,
+          "rawTemperatureCentiC": 2070
+        },
+        {
+          "y": 320,
+          "x": 832,
+          "lapseCentiC": -31,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 51,
+          "rawTemperatureCentiC": 2053
+        },
+        {
+          "y": 320,
+          "x": 896,
+          "lapseCentiC": -52,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 87,
+          "rawTemperatureCentiC": 2036
+        },
+        {
+          "y": 320,
+          "x": 960,
+          "lapseCentiC": -56,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 93,
+          "rawTemperatureCentiC": 2016
+        },
+        {
+          "y": 320,
+          "x": 1024,
+          "lapseCentiC": -54,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 90,
+          "rawTemperatureCentiC": 1995
+        },
+        {
+          "y": 384,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -53,
+          "rawTemperatureCentiC": 2168
+        },
+        {
+          "y": 384,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -49,
+          "rawTemperatureCentiC": 2167
+        },
+        {
+          "y": 384,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -49,
+          "rawTemperatureCentiC": 2165
+        },
+        {
+          "y": 384,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -62,
+          "rawTemperatureCentiC": 2161
+        },
+        {
+          "y": 384,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -78,
+          "rawTemperatureCentiC": 2156
+        },
+        {
+          "y": 384,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -77,
+          "rawTemperatureCentiC": 2151
+        },
+        {
+          "y": 384,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -76,
+          "rawTemperatureCentiC": 2143
+        },
+        {
+          "y": 384,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -63,
+          "rawTemperatureCentiC": 2134
+        },
+        {
+          "y": 384,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -47,
+          "rawTemperatureCentiC": 2123
+        },
+        {
+          "y": 384,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -36,
+          "rawTemperatureCentiC": 2110
+        },
+        {
+          "y": 384,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -11,
+          "rawTemperatureCentiC": 2097
+        },
+        {
+          "y": 384,
+          "x": 704,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 6,
+          "rawTemperatureCentiC": 2082
+        },
+        {
+          "y": 384,
+          "x": 768,
+          "lapseCentiC": -16,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 27,
+          "rawTemperatureCentiC": 2067
+        },
+        {
+          "y": 384,
+          "x": 832,
+          "lapseCentiC": -38,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 63,
+          "rawTemperatureCentiC": 2050
+        },
+        {
+          "y": 384,
+          "x": 896,
+          "lapseCentiC": -56,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 94,
+          "rawTemperatureCentiC": 2032
+        },
+        {
+          "y": 384,
+          "x": 960,
+          "lapseCentiC": -74,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 123,
+          "rawTemperatureCentiC": 2012
+        },
+        {
+          "y": 384,
+          "x": 1024,
+          "lapseCentiC": -82,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 137,
+          "rawTemperatureCentiC": 1991
+        },
+        {
+          "y": 448,
+          "x": 0,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2164
+        },
+        {
+          "y": 448,
+          "x": 64,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2163
+        },
+        {
+          "y": 448,
+          "x": 128,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2161
+        },
+        {
+          "y": 448,
+          "x": 192,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2157
+        },
+        {
+          "y": 448,
+          "x": 256,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2152
+        },
+        {
+          "y": 448,
+          "x": 320,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2147
+        },
+        {
+          "y": 448,
+          "x": 384,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2139
+        },
+        {
+          "y": 448,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2130
+        },
+        {
+          "y": 448,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2119
+        },
+        {
+          "y": 448,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2106
+        },
+        {
+          "y": 448,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2093
+        },
+        {
+          "y": 448,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2078
+        },
+        {
+          "y": 448,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2063
+        },
+        {
+          "y": 448,
+          "x": 832,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2046
+        },
+        {
+          "y": 448,
+          "x": 896,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2028
+        },
+        {
+          "y": 448,
+          "x": 960,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2009
+        },
+        {
+          "y": 448,
+          "x": 1024,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 1988
+        },
+        {
+          "y": 512,
+          "x": 0,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2160
+        },
+        {
+          "y": 512,
+          "x": 64,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2159
+        },
+        {
+          "y": 512,
+          "x": 128,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2157
+        },
+        {
+          "y": 512,
+          "x": 192,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2153
+        },
+        {
+          "y": 512,
+          "x": 256,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2148
+        },
+        {
+          "y": 512,
+          "x": 320,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2142
+        },
+        {
+          "y": 512,
+          "x": 384,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2134
+        },
+        {
+          "y": 512,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2125
+        },
+        {
+          "y": 512,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2114
+        },
+        {
+          "y": 512,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2101
+        },
+        {
+          "y": 512,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2088
+        },
+        {
+          "y": 512,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2073
+        },
+        {
+          "y": 512,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2059
+        },
+        {
+          "y": 512,
+          "x": 832,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2042
+        },
+        {
+          "y": 512,
+          "x": 896,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2024
+        },
+        {
+          "y": 512,
+          "x": 960,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2004
+        },
+        {
+          "y": 512,
+          "x": 1024,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 1983
+        },
+        {
+          "y": 576,
+          "x": 0,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2154
+        },
+        {
+          "y": 576,
+          "x": 64,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2153
+        },
+        {
+          "y": 576,
+          "x": 128,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2151
+        },
+        {
+          "y": 576,
+          "x": 192,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2147
+        },
+        {
+          "y": 576,
+          "x": 256,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2142
+        },
+        {
+          "y": 576,
+          "x": 320,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2136
+        },
+        {
+          "y": 576,
+          "x": 384,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2128
+        },
+        {
+          "y": 576,
+          "x": 448,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2120
+        },
+        {
+          "y": 576,
+          "x": 512,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2109
+        },
+        {
+          "y": 576,
+          "x": 576,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2096
+        },
+        {
+          "y": 576,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2083
+        },
+        {
+          "y": 576,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2068
+        },
+        {
+          "y": 576,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2053
+        },
+        {
+          "y": 576,
+          "x": 832,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2037
+        },
+        {
+          "y": 576,
+          "x": 896,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2019
+        },
+        {
+          "y": 576,
+          "x": 960,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 1999
+        },
+        {
+          "y": 576,
+          "x": 1024,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 1978
+        },
+        {
+          "y": 640,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -51,
+          "rawTemperatureCentiC": 2148
+        },
+        {
+          "y": 640,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -48,
+          "rawTemperatureCentiC": 2147
+        },
+        {
+          "y": 640,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -46,
+          "rawTemperatureCentiC": 2145
+        },
+        {
+          "y": 640,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -39,
+          "rawTemperatureCentiC": 2141
+        },
+        {
+          "y": 640,
+          "x": 256,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2137
+        },
+        {
+          "y": 640,
+          "x": 320,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2131
+        },
+        {
+          "y": 640,
+          "x": 384,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2123
+        },
+        {
+          "y": 640,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -76,
+          "rawTemperatureCentiC": 2114
+        },
+        {
+          "y": 640,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -39,
+          "rawTemperatureCentiC": 2103
+        },
+        {
+          "y": 640,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -66,
+          "rawTemperatureCentiC": 2090
+        },
+        {
+          "y": 640,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2077
+        },
+        {
+          "y": 640,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2063
+        },
+        {
+          "y": 640,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2048
+        },
+        {
+          "y": 640,
+          "x": 832,
+          "lapseCentiC": -31,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 52,
+          "rawTemperatureCentiC": 2031
+        },
+        {
+          "y": 640,
+          "x": 896,
+          "lapseCentiC": -53,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 89,
+          "rawTemperatureCentiC": 2013
+        },
+        {
+          "y": 640,
+          "x": 960,
+          "lapseCentiC": -81,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 135,
+          "rawTemperatureCentiC": 1994
+        },
+        {
+          "y": 640,
+          "x": 1024,
+          "lapseCentiC": -100,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 166,
+          "rawTemperatureCentiC": 1973
+        },
+        {
+          "y": 704,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -51,
+          "rawTemperatureCentiC": 2142
+        },
+        {
+          "y": 704,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -52,
+          "rawTemperatureCentiC": 2141
+        },
+        {
+          "y": 704,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -54,
+          "rawTemperatureCentiC": 2139
+        },
+        {
+          "y": 704,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -50,
+          "rawTemperatureCentiC": 2135
+        },
+        {
+          "y": 704,
+          "x": 256,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2130
+        },
+        {
+          "y": 704,
+          "x": 320,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2124
+        },
+        {
+          "y": 704,
+          "x": 384,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2116
+        },
+        {
+          "y": 704,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -58,
+          "rawTemperatureCentiC": 2107
+        },
+        {
+          "y": 704,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -23,
+          "rawTemperatureCentiC": 2097
+        },
+        {
+          "y": 704,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -38,
+          "rawTemperatureCentiC": 2084
+        },
+        {
+          "y": 704,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2071
+        },
+        {
+          "y": 704,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2056
+        },
+        {
+          "y": 704,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2042
+        },
+        {
+          "y": 704,
+          "x": 832,
+          "lapseCentiC": -33,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 55,
+          "rawTemperatureCentiC": 2025
+        },
+        {
+          "y": 704,
+          "x": 896,
+          "lapseCentiC": -48,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 80,
+          "rawTemperatureCentiC": 2007
+        },
+        {
+          "y": 704,
+          "x": 960,
+          "lapseCentiC": -71,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 118,
+          "rawTemperatureCentiC": 1988
+        },
+        {
+          "y": 704,
+          "x": 1024,
+          "lapseCentiC": -86,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 144,
+          "rawTemperatureCentiC": 1967
+        },
+        {
+          "y": 768,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -49,
+          "rawTemperatureCentiC": 2135
+        },
+        {
+          "y": 768,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -55,
+          "rawTemperatureCentiC": 2134
+        },
+        {
+          "y": 768,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -61,
+          "rawTemperatureCentiC": 2132
+        },
+        {
+          "y": 768,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -59,
+          "rawTemperatureCentiC": 2128
+        },
+        {
+          "y": 768,
+          "x": 256,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2123
+        },
+        {
+          "y": 768,
+          "x": 320,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2117
+        },
+        {
+          "y": 768,
+          "x": 384,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2110
+        },
+        {
+          "y": 768,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -36,
+          "rawTemperatureCentiC": 2101
+        },
+        {
+          "y": 768,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -5,
+          "rawTemperatureCentiC": 2090
+        },
+        {
+          "y": 768,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -7,
+          "rawTemperatureCentiC": 2077
+        },
+        {
+          "y": 768,
+          "x": 640,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2065
+        },
+        {
+          "y": 768,
+          "x": 704,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2050
+        },
+        {
+          "y": 768,
+          "x": 768,
+          "lapseCentiC": -24,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 40,
+          "rawTemperatureCentiC": 2035
+        },
+        {
+          "y": 768,
+          "x": 832,
+          "lapseCentiC": -34,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 57,
+          "rawTemperatureCentiC": 2019
+        },
+        {
+          "y": 768,
+          "x": 896,
+          "lapseCentiC": -41,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 69,
+          "rawTemperatureCentiC": 2001
+        },
+        {
+          "y": 768,
+          "x": 960,
+          "lapseCentiC": -59,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 99,
+          "rawTemperatureCentiC": 1981
+        },
+        {
+          "y": 768,
+          "x": 1024,
+          "lapseCentiC": -71,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 119,
+          "rawTemperatureCentiC": 1961
+        },
+        {
+          "y": 832,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -28,
+          "rawTemperatureCentiC": 2127
+        },
+        {
+          "y": 832,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -28,
+          "rawTemperatureCentiC": 2126
+        },
+        {
+          "y": 832,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -27,
+          "rawTemperatureCentiC": 2125
+        },
+        {
+          "y": 832,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -28,
+          "rawTemperatureCentiC": 2121
+        },
+        {
+          "y": 832,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -29,
+          "rawTemperatureCentiC": 2116
+        },
+        {
+          "y": 832,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -26,
+          "rawTemperatureCentiC": 2110
+        },
+        {
+          "y": 832,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -24,
+          "rawTemperatureCentiC": 2102
+        },
+        {
+          "y": 832,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -15,
+          "rawTemperatureCentiC": 2093
+        },
+        {
+          "y": 832,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -9,
+          "rawTemperatureCentiC": 2083
+        },
+        {
+          "y": 832,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -7,
+          "rawTemperatureCentiC": 2070
+        },
+        {
+          "y": 832,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 0,
+          "rawTemperatureCentiC": 2057
+        },
+        {
+          "y": 832,
+          "x": 704,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 7,
+          "rawTemperatureCentiC": 2043
+        },
+        {
+          "y": 832,
+          "x": 768,
+          "lapseCentiC": -9,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 15,
+          "rawTemperatureCentiC": 2028
+        },
+        {
+          "y": 832,
+          "x": 832,
+          "lapseCentiC": -17,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 29,
+          "rawTemperatureCentiC": 2011
+        },
+        {
+          "y": 832,
+          "x": 896,
+          "lapseCentiC": -23,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 39,
+          "rawTemperatureCentiC": 1994
+        },
+        {
+          "y": 832,
+          "x": 960,
+          "lapseCentiC": -35,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 59,
+          "rawTemperatureCentiC": 1974
+        },
+        {
+          "y": 832,
+          "x": 1024,
+          "lapseCentiC": -43,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 71,
+          "rawTemperatureCentiC": 1954
+        },
+        {
+          "y": 896,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -9,
+          "rawTemperatureCentiC": 2119
+        },
+        {
+          "y": 896,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -3,
+          "rawTemperatureCentiC": 2118
+        },
+        {
+          "y": 896,
+          "x": 128,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 6,
+          "rawTemperatureCentiC": 2117
+        },
+        {
+          "y": 896,
+          "x": 192,
+          "lapseCentiC": -1,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 1,
+          "rawTemperatureCentiC": 2113
+        },
+        {
+          "y": 896,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -4,
+          "rawTemperatureCentiC": 2108
+        },
+        {
+          "y": 896,
+          "x": 320,
+          "lapseCentiC": -5,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 8,
+          "rawTemperatureCentiC": 2102
+        },
+        {
+          "y": 896,
+          "x": 384,
+          "lapseCentiC": -11,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 19,
+          "rawTemperatureCentiC": 2094
+        },
+        {
+          "y": 896,
+          "x": 448,
+          "lapseCentiC": -2,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 3,
+          "rawTemperatureCentiC": 2085
+        },
+        {
+          "y": 896,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -16,
+          "rawTemperatureCentiC": 2075
+        },
+        {
+          "y": 896,
+          "x": 576,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -11,
+          "rawTemperatureCentiC": 2062
+        },
+        {
+          "y": 896,
+          "x": 640,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -2,
+          "rawTemperatureCentiC": 2050
+        },
+        {
+          "y": 896,
+          "x": 704,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -7,
+          "rawTemperatureCentiC": 2035
+        },
+        {
+          "y": 896,
+          "x": 768,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -11,
+          "rawTemperatureCentiC": 2020
+        },
+        {
+          "y": 896,
+          "x": 832,
+          "lapseCentiC": -1,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 1,
+          "rawTemperatureCentiC": 2004
+        },
+        {
+          "y": 896,
+          "x": 896,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 12,
+          "rawTemperatureCentiC": 1986
+        },
+        {
+          "y": 896,
+          "x": 960,
+          "lapseCentiC": -13,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 21,
+          "rawTemperatureCentiC": 1967
+        },
+        {
+          "y": 896,
+          "x": 1024,
+          "lapseCentiC": -16,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 26,
+          "rawTemperatureCentiC": 1947
+        },
+        {
+          "y": 960,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -5,
+          "rawTemperatureCentiC": 2110
+        },
+        {
+          "y": 960,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -5,
+          "rawTemperatureCentiC": 2110
+        },
+        {
+          "y": 960,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 0,
+          "rawTemperatureCentiC": 2108
+        },
+        {
+          "y": 960,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -7,
+          "rawTemperatureCentiC": 2104
+        },
+        {
+          "y": 960,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -14,
+          "rawTemperatureCentiC": 2099
+        },
+        {
+          "y": 960,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -6,
+          "rawTemperatureCentiC": 2093
+        },
+        {
+          "y": 960,
+          "x": 384,
+          "lapseCentiC": -1,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 1,
+          "rawTemperatureCentiC": 2085
+        },
+        {
+          "y": 960,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -1,
+          "rawTemperatureCentiC": 2077
+        },
+        {
+          "y": 960,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -7,
+          "rawTemperatureCentiC": 2066
+        },
+        {
+          "y": 960,
+          "x": 576,
+          "lapseCentiC": -7,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 12,
+          "rawTemperatureCentiC": 2053
+        },
+        {
+          "y": 960,
+          "x": 640,
+          "lapseCentiC": -20,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 34,
+          "rawTemperatureCentiC": 2041
+        },
+        {
+          "y": 960,
+          "x": 704,
+          "lapseCentiC": -12,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 20,
+          "rawTemperatureCentiC": 2026
+        },
+        {
+          "y": 960,
+          "x": 768,
+          "lapseCentiC": -5,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 8,
+          "rawTemperatureCentiC": 2012
+        },
+        {
+          "y": 960,
+          "x": 832,
+          "lapseCentiC": -5,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 9,
+          "rawTemperatureCentiC": 1995
+        },
+        {
+          "y": 960,
+          "x": 896,
+          "lapseCentiC": -6,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 10,
+          "rawTemperatureCentiC": 1978
+        },
+        {
+          "y": 960,
+          "x": 960,
+          "lapseCentiC": -6,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 10,
+          "rawTemperatureCentiC": 1959
+        },
+        {
+          "y": 960,
+          "x": 1024,
+          "lapseCentiC": -4,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 6,
+          "rawTemperatureCentiC": 1938
+        },
+        {
+          "y": 1024,
+          "x": 0,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -5,
+          "rawTemperatureCentiC": 2102
+        },
+        {
+          "y": 1024,
+          "x": 64,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -10,
+          "rawTemperatureCentiC": 2101
+        },
+        {
+          "y": 1024,
+          "x": 128,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -10,
+          "rawTemperatureCentiC": 2099
+        },
+        {
+          "y": 1024,
+          "x": 192,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -20,
+          "rawTemperatureCentiC": 2095
+        },
+        {
+          "y": 1024,
+          "x": 256,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -30,
+          "rawTemperatureCentiC": 2090
+        },
+        {
+          "y": 1024,
+          "x": 320,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -27,
+          "rawTemperatureCentiC": 2084
+        },
+        {
+          "y": 1024,
+          "x": 384,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -25,
+          "rawTemperatureCentiC": 2077
+        },
+        {
+          "y": 1024,
+          "x": 448,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -13,
+          "rawTemperatureCentiC": 2068
+        },
+        {
+          "y": 1024,
+          "x": 512,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -6,
+          "rawTemperatureCentiC": 2057
+        },
+        {
+          "y": 1024,
+          "x": 576,
+          "lapseCentiC": -17,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 28,
+          "rawTemperatureCentiC": 2045
+        },
+        {
+          "y": 1024,
+          "x": 640,
+          "lapseCentiC": -37,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 62,
+          "rawTemperatureCentiC": 2032
+        },
+        {
+          "y": 1024,
+          "x": 704,
+          "lapseCentiC": -26,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 44,
+          "rawTemperatureCentiC": 2018
+        },
+        {
+          "y": 1024,
+          "x": 768,
+          "lapseCentiC": -16,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 26,
+          "rawTemperatureCentiC": 2003
+        },
+        {
+          "y": 1024,
+          "x": 832,
+          "lapseCentiC": -12,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 20,
+          "rawTemperatureCentiC": 1987
+        },
+        {
+          "y": 1024,
+          "x": 896,
+          "lapseCentiC": -8,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 14,
+          "rawTemperatureCentiC": 1970
+        },
+        {
+          "y": 1024,
+          "x": 960,
+          "lapseCentiC": -3,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": 5,
+          "rawTemperatureCentiC": 1951
+        },
+        {
+          "y": 1024,
+          "x": 1024,
+          "lapseCentiC": 0,
+          "rainfallMm": 1000,
+          "temperatureCentiC": 1700,
+          "temperateWeightQ12": 4096,
+          "elevationM": -6,
+          "rawTemperatureCentiC": 1930
+        }
+      ],
+      "fallback": false,
+      "climateVersion": 1,
+      "demandVersion": 1,
+      "countryId": "illustrated-fixture-2",
+      "generationVersion": 1,
+      "startTemplateVersion": 1,
+      "seed": "fe0512aa351b994df1656b88f0d94f1b",
+      "height": 1024,
+      "width": 1024,
+      "name": "Rowanbridge",
+      "candidate": 0
+    }
+  }
+]

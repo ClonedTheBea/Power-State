@@ -6,6 +6,11 @@ game.ReplicatedStorage:SetAttribute("IllustratedWorldProof",false)
 local player=game.Players.LocalPlayer
 local gui=player:WaitForChild("PlayerGui") :: PlayerGui
 local shell=gui:WaitForChild("PowerStateShell",60);assert(shell,"Initial fake shell")
+local pureDeadline=os.clock()+30
+while game.ReplicatedStorage:GetAttribute("LandscapePurePassed")~=true do
+	assert(os.clock()<pureDeadline,"Fresh landscape pure tests must pass")
+	game:GetService("RunService").Heartbeat:Wait()
+end
 local fixtures=game.HttpService:JSONDecode((game.ReplicatedStorage:WaitForChild("IllustratedFixtures",10) :: StringValue).Value)
 task.wait(1)
 require(script.Parent.IllustratedWorld["IllustratedWorld.spec"])(gui,fixtures)

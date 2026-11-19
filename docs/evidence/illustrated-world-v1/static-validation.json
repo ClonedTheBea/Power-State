@@ -1,5 +1,5 @@
 {
-  "passed": 79,
+  "passed": 80,
   "scope": "Local frozen art/catalog/build/security checks; actual engine evidence separate",
   "checks": [
     "main frozen PNG",
@@ -80,6 +80,7 @@
     "IllustratedSectorDescriptor.luau cosmetic only",
     "IllustratedSectorRenderer.luau cosmetic only",
     "IllustratedWorld.spec.luau cosmetic only",
+    "LandscapeComposition.luau cosmetic only",
     "fixed 96 images"
   ]
 }

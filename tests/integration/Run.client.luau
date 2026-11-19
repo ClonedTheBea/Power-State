@@ -16,6 +16,11 @@ require(script.Parent["P2a.spec"])(playerGui)
 require(script.Parent["P2b.spec"])(playerGui)
 require(script.Parent["P2aRemote.spec"])()
 require(script.Parent["P2aRemote.spec"])("P2b")
+-- Exercise expiry before the one-per-country purchase; uses the same fake session.
+local construction=require(script.Parent.Parent.Client.Simulation.ConstructionClient)
+if construction.active() then construction.active().destroy() end
+require(script.Parent["QuoteRefresh.spec"])(playerGui)
+construction.active().destroy()
 require(script.Parent["P3c.spec"])(playerGui)
 local total=0
 for _,run in {require(script.Parent["Gui.spec"]),require(script.Parent["R1.spec"]),require(script.Parent["R2.spec"]),

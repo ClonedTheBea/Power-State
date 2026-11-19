@@ -1,0 +1,178 @@
+{
+  "status": "STOP: neither source meets required dimensions; seam acceptance failed",
+  "sources": [
+    {
+      "file": "candidate-edit.png",
+      "sha256": "52794fb984fa6d89a2da90f9c7baaac0a6119b0f20886f1a126bf82f04963712",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "meanRGB": [
+        112.76389874570434,
+        135.16673725418374,
+        88.9465111960705
+      ],
+      "exact1024": false,
+      "raw": {
+        "horizontal": {
+          "mean": 3.0209994683678896,
+          "p95": 7.0,
+          "maximum": 12
+        },
+        "vertical": {
+          "mean": 2.4635832004253055,
+          "p95": 6.0,
+          "maximum": 11
+        },
+        "internalHorizontal": {
+          "mean": 1.1416320129933772,
+          "p95": 3.0,
+          "maximum": 10
+        },
+        "internalVertical": {
+          "mean": 1.3055246886472995,
+          "p95": 3.0,
+          "maximum": 11
+        }
+      },
+      "filteredRadius4": {
+        "horizontal": {
+          "mean": 2.4853801169590644,
+          "p95": 5.0,
+          "maximum": 8
+        },
+        "vertical": {
+          "mean": 1.956140350877193,
+          "p95": 5.0,
+          "maximum": 10
+        },
+        "internalHorizontal": {
+          "mean": 0.12828117356197333,
+          "p95": 1.0,
+          "maximum": 1
+        },
+        "internalVertical": {
+          "mean": 0.1284290377204226,
+          "p95": 1.0,
+          "maximum": 1
+        }
+      },
+      "filteredMethod": "Each source tile Gaussian radius4 before repetition; not Roblox filtering",
+      "diagnosticTopLeft1024CropOnly": {
+        "internalAssemblyIdentical": true,
+        "wrap": {
+          "horizontal": {
+            "mean": 3.1878255208333335,
+            "p95": 8.0,
+            "maximum": 15
+          },
+          "vertical": {
+            "mean": 2.8684895833333335,
+            "p95": 7.0,
+            "maximum": 12
+          },
+          "internalHorizontal": {
+            "mean": 1.149162682775334,
+            "p95": 3.0,
+            "maximum": 9
+          },
+          "internalVertical": {
+            "mean": 1.31388227028348,
+            "p95": 3.0,
+            "maximum": 11
+          }
+        },
+        "notAFinalAsset": true
+      }
+    },
+    {
+      "file": "candidate-new.png",
+      "sha256": "40141e82eb999ea2e6dd9735b32f3972e58ddb00dbb8a28e40888e464deabaa3",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "meanRGB": [
+        106.44159169127691,
+        130.99773929168288,
+        81.83915394183589
+      ],
+      "exact1024": false,
+      "raw": {
+        "horizontal": {
+          "mean": 3.174641148325359,
+          "p95": 8.0,
+          "maximum": 15
+        },
+        "vertical": {
+          "mean": 2.7331206804891015,
+          "p95": 7.0,
+          "maximum": 14
+        },
+        "internalHorizontal": {
+          "mean": 1.3842730662783589,
+          "p95": 4.0,
+          "maximum": 19
+        },
+        "internalVertical": {
+          "mean": 1.5274045109387655,
+          "p95": 4.0,
+          "maximum": 18
+        }
+      },
+      "filteredRadius4": {
+        "horizontal": {
+          "mean": 2.3543328017012226,
+          "p95": 5.0,
+          "maximum": 9
+        },
+        "vertical": {
+          "mean": 1.8692185007974482,
+          "p95": 5.0,
+          "maximum": 7
+        },
+        "internalHorizontal": {
+          "mean": 0.14316963052629034,
+          "p95": 1.0,
+          "maximum": 2
+        },
+        "internalVertical": {
+          "mean": 0.12913356694597505,
+          "p95": 1.0,
+          "maximum": 1
+        }
+      },
+      "filteredMethod": "Each source tile Gaussian radius4 before repetition; not Roblox filtering",
+      "diagnosticTopLeft1024CropOnly": {
+        "internalAssemblyIdentical": true,
+        "wrap": {
+          "horizontal": {
+            "mean": 3.2561848958333335,
+            "p95": 8.0,
+            "maximum": 16
+          },
+          "vertical": {
+            "mean": 2.9293619791666665,
+            "p95": 7.0,
+            "maximum": 13
+          },
+          "internalHorizontal": {
+            "mean": 1.3969938166951776,
+            "p95": 4.0,
+            "maximum": 17
+          },
+          "internalVertical": {
+            "mean": 1.5399824225114043,
+            "p95": 4.0,
+            "maximum": 18
+          }
+        },
+        "notAFinalAsset": true
+      }
+    }
+  ],
+  "previewOnly": true
+}

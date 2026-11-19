@@ -1,0 +1,25 @@
+{
+  "source": "C:\\Users\\matt9\\.codex\\generated_images\\01a1dd6d-d693-7112-a0d5-8d2d332f9cf6\\exec-55d89948-ce13-4f2b-b792-e79a7ad177a6.png",
+  "file": "temperate-ground-candidate-v1.png",
+  "sha256": "fce3294679663b8b574a91e39e7a3b8752de63fc3edb3cae055f929a8a121d79",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "mode": "RGB",
+  "alphaExtrema": [
+    255,
+    255
+  ],
+  "meanRGB": [
+    115.57715851539825,
+    137.4520424593454,
+    75.20341669019584
+  ],
+  "oppositeEdgeMeanAbsoluteRGBDifference": {
+    "horizontal": 3.715311004784689,
+    "vertical": 3.123338649654439
+  },
+  "sampledInternalAdjacentMeanAbsoluteRGBDifference": 1.794798977646152,
+  "status": "LOCAL REVIEW CANDIDATE ONLY; no Roblox ID; exact seamlessness not established"
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "file": "candidate-edit.png",
+    "sha256": "52794fb984fa6d89a2da90f9c7baaac0a6119b0f20886f1a126bf82f04963712",
+    "tool": "built-in image_gen",
+    "model": "not exposed",
+    "date": "2026-11-19",
+    "prompt": "Edit target: existing Power State ground material. Produce a corrected SINGLE EXACT 1024 x 1024 pixel opaque tileable game ground texture, seamless in BOTH X and Y. Preserve soft subtle hand-painted grass/meadow/earth grain, but cool and desaturate the yellow olive to muted meadow base sRGB #6B8463 (107,132,99). Very low contrast irregular fine brush grain with gentle natural earth variation, no broad diagonal bands or identifiable clumps/landmarks; no vignette or border. Flat top-down north-up ground under 2.5D strategy-game sprites; only tiny upper-left-lit brush texture, no directional global illumination. Opposite edges must wrap continuously in colour AND texture; treat canvas as a torus. All 256px subdivisions must join naturally. No roads, rivers, water, trees, buildings, infrastructure, labels, shadows of objects, square patches, grid or contact-sheet layout. Entire image is the single repeating material. This is an actual production texture candidate, not a mockup. Exact final dimensions 1024x1024.",
+    "references": [
+      "assets/illustrated-world-v11-ground-study/temperate-ground-candidate-v1.png"
+    ],
+    "originalSource": "C:/Users/matt9/.codex/generated_images/01a1dd6d-d693-7112-a0d5-8d2d332f9cf6/exec-86bbb532-2626-4a73-9d64-d6b1b02f9c24.png",
+    "pixelEdits": "none; byte-identical copy",
+    "approvedForUpload": false
+  },
+  {
+    "file": "candidate-new.png",
+    "sha256": "40141e82eb999ea2e6dd9735b32f3972e58ddb00dbb8a28e40888e464deabaa3",
+    "tool": "built-in image_gen",
+    "model": "not exposed",
+    "date": "2026-11-19",
+    "prompt": "Create one production game material texture, exactly 1024x1024 pixels. Seamless tile in both horizontal and vertical directions. Flat top-down temperate meadow ground, softly painted gouache style for a muted 2.5D strategy map. Base colour sRGB #6B8463. Extremely subtle irregular fine grass/earth brush grain, no large motifs, no directional bands, no recognizable patches. Uniform overall brightness throughout, including edges and corners. Toroidal wrap: all opposite edges continue naturally, no visible border or repeated square. Not a photograph. No objects, trees, rocks, paths, buildings, labels, UI, shadows, water, horizon, vignette, or contact sheet. Entire square is opaque, cool muted green-gray natural grass material. Single tile only. 1024 by 1024 pixel final artwork, no margin.",
+    "references": [],
+    "originalSource": "C:/Users/matt9/.codex/generated_images/01a1dd6d-d693-7112-a0d5-8d2d332f9cf6/exec-0f49f912-0d4a-4022-9730-060c15e2460b.png",
+    "pixelEdits": "none; byte-identical copy",
+    "approvedForUpload": false
+  }
+]

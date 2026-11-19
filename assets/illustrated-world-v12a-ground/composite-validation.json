@@ -1,0 +1,97 @@
+{
+  "fixturesFileSha256": "0c3846f0d8fcde33134141d453e796baf528e15a4198669420f8cb9693558de4",
+  "cases": [
+    {
+      "case": "normal",
+      "seed": "12fee3f76be963c09033cdfd9ccffb36",
+      "countryId": "illustrated-fixture-1",
+      "builtPresentationOnly": false,
+      "crop": null,
+      "viewport": [
+        600,
+        600
+      ],
+      "shoreCount": 36,
+      "drawnMotifs": 66,
+      "sharedEdgeComparisons": 93600,
+      "sharedEdgeMaximumError": 0.0,
+      "cellReassemblyExact": true,
+      "originalLandPixels": 815104,
+      "maskExact": true,
+      "sameOverlayEntries": true
+    },
+    {
+      "case": "diagonal",
+      "seed": "12fee3f76be963c09033cdfd9ccffb36",
+      "countryId": "illustrated-fixture-1",
+      "builtPresentationOnly": false,
+      "crop": [
+        64,
+        512,
+        320,
+        768
+      ],
+      "viewport": [
+        600,
+        600
+      ],
+      "shoreCount": 36,
+      "drawnMotifs": 66,
+      "sharedEdgeComparisons": 93600,
+      "sharedEdgeMaximumError": 0.0,
+      "cellReassemblyExact": true,
+      "originalLandPixels": 815104,
+      "maskExact": true,
+      "sameOverlayEntries": true
+    },
+    {
+      "case": "maximum",
+      "seed": "fe0512aa351b994df1656b88f0d94f1b",
+      "countryId": "illustrated-fixture-2",
+      "builtPresentationOnly": false,
+      "crop": null,
+      "viewport": [
+        600,
+        600
+      ],
+      "shoreCount": 78,
+      "drawnMotifs": 92,
+      "sharedEdgeComparisons": 93600,
+      "sharedEdgeMaximumError": 0.0,
+      "cellReassemblyExact": true,
+      "originalLandPixels": 700416,
+      "maskExact": true,
+      "sameOverlayEntries": true
+    },
+    {
+      "case": "connected-district",
+      "seed": "fe0512aa351b994df1656b88f0d94f1b",
+      "countryId": "illustrated-fixture-2",
+      "builtPresentationOnly": true,
+      "crop": null,
+      "viewport": [
+        600,
+        600
+      ],
+      "shoreCount": 78,
+      "drawnMotifs": 92,
+      "sharedEdgeComparisons": 93600,
+      "sharedEdgeMaximumError": 0.0,
+      "cellReassemblyExact": true,
+      "originalLandPixels": 700416,
+      "maskExact": true,
+      "sameOverlayEntries": true
+    }
+  ],
+  "fixturesUnchanged": true,
+  "approvedAtlasHashes": {
+    "assets\\illustrated-world-v1-art-r1\\power-state-terrain-edges-proof-v1.png": "d8d3994469c68f31d800cadec9c8e3aeda3d25ecd3693c6140e781c402c5b0cb",
+    "assets\\illustrated-world-v1-art-r1\\power-state-diagonal-shores-proof-v1.png": "e669e58a0b8b32d0f19f21025b79cc878eed134ed285ad4880353b6d580fd62f",
+    "assets\\r32-proof-v3\\power-state-map-proof-v3.png": "e1dcb61948e575bab85d94a6eed3dce1939fe87389455fc3bce735a28cab63cb",
+    "assets\\r37-settlements-v1\\power-state-settlements-proof-v1.png": "baff92a631e89bbf9a1506f5401488e40fc2d5fe56a71399b1f410df5b05ff4e"
+  },
+  "status": "Local geometry/colour proof only; runtime renderer not implemented",
+  "texturePeriodWorldUnits": 256,
+  "sourcePixelsPerWorldUnit": 4,
+  "bufferPixelsPerWorldUnit": 1
+}

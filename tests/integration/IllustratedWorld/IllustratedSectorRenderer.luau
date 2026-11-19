@@ -9,7 +9,8 @@ local Renderer = {}
 function Renderer.attach(map: any, preview: any, injected: any?)
 	assert(game:GetService("RunService"):IsStudio() and game.GameId==10776833313,"Test only")
 	assert(#map.root:GetDescendants()+Catalog.POOL_SIZE+#preview.nodes*3<=600,"Illustrated pool and badges exceed map budget")
-	local descriptor=Descriptor.create(preview.world,preview.nodes,preview.links)
+	local version=game.ReplicatedStorage:GetAttribute("IllustratedCompositionVersion") or 2
+	local descriptor=Descriptor.create(preview.world,preview.nodes,preview.links,version :: number)
 	local images: {ImageLabel}={}
 	local probes: {ImageLabel}={}
 	for i=1,Catalog.POOL_SIZE do
