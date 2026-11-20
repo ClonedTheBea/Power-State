@@ -10,7 +10,7 @@ function Terrain.create(parent:Instance,world:any)
  local root=C.frame(parent,"GeneratedNativeTerrain");root.BackgroundTransparency=1
  root.Size=UDim2.fromOffset(1024,1024)
  local scale=Instance.new("UIScale");scale.Parent=root
- local cells:{Frame}={}
+ local cells:{GuiObject}={}
  for row=0,15 do for col=0,15 do
   local p=world.samples[row*17+col+1]
   local colour=if p.elevationM<=0 then T.map elseif p.elevationM<12 then T.coast
@@ -23,6 +23,12 @@ function Terrain.create(parent:Instance,world:any)
  local entries:{{root:Frame,detail:Frame,patch:Fixture.Patch}}={}
  local shores:{{root:Frame,patch:Fixture.Patch}}={}
  return {root=root,entries=entries,shores=shores,setReplacements=function(_value:{[string]:boolean})end,
+  -- Presentation adapter hook; normal terrain remains Frames. The Test adapter
+  -- replaces each slot once, keeping this culling closure bound to live objects.
+  replaceCells=function(factory:(GuiObject,number)->GuiObject):{GuiObject}
+   for i,old in cells do local replacement=factory(old,i);cells[i]=replacement;old:Destroy() end
+   return cells
+  end,
   render=function(x:number,y:number,zoom:number,size:Vector2)
    root.Position=UDim2.fromOffset(x,y);scale.Scale=zoom
    for i,tile in cells do

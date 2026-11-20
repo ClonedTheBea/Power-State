@@ -1,0 +1,429 @@
+{
+  "summary": [
+    {
+      "p50": 16.640599817037582,
+      "seconds": 180.00310979998903,
+      "worst": 158.87269377708435,
+      "samples": 10627,
+      "memoryStartMb": 2256.53125,
+      "p95": 17.721399664878845,
+      "eventLimit": 64,
+      "luaEndKb": 8287,
+      "luaStartKb": 11424,
+      "memoryEndMb": 2253.26171875
+    }
+  ],
+  "events": [
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1875102.7917000465,
+      "at": 0.0025687000015750527,
+      "descendants": 362,
+      "totalMb": 2256.53125,
+      "luaKb": 11435,
+      "dtMs": 59.69110131263733
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1875420.1662000269,
+      "at": 0.3199431999819353,
+      "descendants": 362,
+      "totalMb": 2256.91796875,
+      "luaKb": 11450,
+      "dtMs": 92.32640266418457
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1878406.897100038,
+      "at": 3.3066739999921992,
+      "descendants": 362,
+      "totalMb": 2256.46484375,
+      "luaKb": 11482,
+      "dtMs": 79.29539680480957
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1884406.0132000013,
+      "at": 9.30579009995563,
+      "descendants": 362,
+      "totalMb": 2257.05078125,
+      "luaKb": 11541,
+      "dtMs": 79.42970097064972
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1902779.8757000128,
+      "at": 27.679652699967846,
+      "descendants": 362,
+      "totalMb": 2255.84375,
+      "luaKb": 11686,
+      "dtMs": 71.247898042202
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1903405.93920002,
+      "at": 28.305716199974995,
+      "descendants": 362,
+      "totalMb": 2256.1640625,
+      "luaKb": 11699,
+      "dtMs": 80.076202750206
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1905405.7472000131,
+      "at": 30.305524199968204,
+      "descendants": 362,
+      "totalMb": 2256.65625,
+      "luaKb": 11720,
+      "dtMs": 79.8088014125824
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1906404.3569000205,
+      "at": 31.304133899975568,
+      "descendants": 362,
+      "totalMb": 2256.78125,
+      "luaKb": 11735,
+      "dtMs": 79.19230312108994
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1907406.758600031,
+      "at": 32.30653559998609,
+      "descendants": 362,
+      "totalMb": 2256.9921875,
+      "luaKb": 11750,
+      "dtMs": 81.113301217556
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1909415.0201000157,
+      "at": 34.31479709997075,
+      "descendants": 362,
+      "totalMb": 2256.55859375,
+      "luaKb": 11771,
+      "dtMs": 89.69440311193466
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1911419.6993000223,
+      "at": 36.31947639997816,
+      "descendants": 362,
+      "totalMb": 2256.76953125,
+      "luaKb": 11824,
+      "dtMs": 93.96730363368988
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1913407.9084999976,
+      "at": 38.30768540001009,
+      "descendants": 362,
+      "totalMb": 2256.78125,
+      "luaKb": 11846,
+      "dtMs": 82.68579840660095
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1915410.9210000024,
+      "at": 40.31069799995748,
+      "descendants": 362,
+      "totalMb": 2256.49609375,
+      "luaKb": 11867,
+      "dtMs": 85.9161987900734
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1921404.9070000183,
+      "at": 46.30468399997335,
+      "descendants": 362,
+      "totalMb": 2257.30859375,
+      "luaKb": 11915,
+      "dtMs": 79.76440340280533
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1928416.3147000363,
+      "at": 53.316091699991375,
+      "descendants": 362,
+      "totalMb": 2257.08203125,
+      "luaKb": 11969,
+      "dtMs": 91.64860099554062
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1931434.3364000088,
+      "at": 56.334113399963826,
+      "descendants": 362,
+      "totalMb": 2257.046875,
+      "luaKb": 11997,
+      "dtMs": 109.36020314693451
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1939405.925900035,
+      "at": 64.30570289999014,
+      "descendants": 362,
+      "totalMb": 2256.6484375,
+      "luaKb": 12057,
+      "dtMs": 81.34479820728302
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1941407.891800045,
+      "at": 66.3076688000001,
+      "descendants": 362,
+      "totalMb": 2256.7421875,
+      "luaKb": 12079,
+      "dtMs": 83.18399637937546
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1947404.375000042,
+      "at": 72.30415199999698,
+      "descendants": 362,
+      "totalMb": 2258.53125,
+      "luaKb": 12190,
+      "dtMs": 80.58589696884155
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1950476.2487999978,
+      "at": 75.37602579995291,
+      "descendants": 362,
+      "totalMb": 2258.42578125,
+      "luaKb": 12218,
+      "dtMs": 151.6329050064087
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1955474.965100002,
+      "at": 80.37474209995707,
+      "descendants": 362,
+      "totalMb": 2258.00390625,
+      "luaKb": 12259,
+      "dtMs": 151.5790969133377
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1958474.6989000123,
+      "at": 83.3744757999666,
+      "descendants": 362,
+      "totalMb": 2257.8359375,
+      "luaKb": 12286,
+      "dtMs": 151.07250213623047
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1960476.589100028,
+      "at": 85.37636609998299,
+      "descendants": 362,
+      "totalMb": 2258.32421875,
+      "luaKb": 12307,
+      "dtMs": 152.80519425868988
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1962482.2771000327,
+      "at": 87.38205409998773,
+      "descendants": 362,
+      "totalMb": 2258.28125,
+      "luaKb": 12328,
+      "dtMs": 158.87269377708435
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1962901.664200006,
+      "at": 87.80144119996112,
+      "descendants": 362,
+      "totalMb": 2258.27734375,
+      "luaKb": 12339,
+      "dtMs": 78.02809774875641
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1974414.2875000252,
+      "at": 99.31406439997954,
+      "descendants": 362,
+      "totalMb": 2256.2421875,
+      "luaKb": 12423,
+      "dtMs": 90.66049754619598
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1982425.1645000186,
+      "at": 107.32494139997289,
+      "descendants": 362,
+      "totalMb": 2256.484375,
+      "luaKb": 12483,
+      "dtMs": 102.23869979381561
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1983412.303500052,
+      "at": 108.3120806000079,
+      "descendants": 362,
+      "totalMb": 2256.86328125,
+      "luaKb": 12498,
+      "dtMs": 89.47519958019257
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1987410.3972000303,
+      "at": 112.31017419998534,
+      "descendants": 362,
+      "totalMb": 2257,
+      "luaKb": 12532,
+      "dtMs": 87.69579976797104
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1990428.240600042,
+      "at": 115.32801759999711,
+      "descendants": 362,
+      "totalMb": 2257.59765625,
+      "luaKb": 12560,
+      "dtMs": 106.08330368995667
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 1999414.9165000417,
+      "at": 124.31469359999755,
+      "descendants": 362,
+      "totalMb": 2256.32421875,
+      "luaKb": 12627,
+      "dtMs": 92.15469658374786
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2004410.5858000112,
+      "at": 129.31036269996548,
+      "descendants": 362,
+      "totalMb": 2256.3515625,
+      "luaKb": 12668,
+      "dtMs": 87.74720132350922
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2017409.192500054,
+      "at": 142.30896950000897,
+      "descendants": 362,
+      "totalMb": 2256.03515625,
+      "luaKb": 12889,
+      "dtMs": 88.20970356464386
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2019410.2807000163,
+      "at": 144.31005779997213,
+      "descendants": 362,
+      "totalMb": 2255.7265625,
+      "luaKb": 12911,
+      "dtMs": 89.34730291366577
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2022427.191100025,
+      "at": 147.32696809998015,
+      "descendants": 362,
+      "totalMb": 2255.87109375,
+      "luaKb": 12939,
+      "dtMs": 106.40779882669449
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2023036.1700000358,
+      "at": 147.93594699999085,
+      "descendants": 362,
+      "totalMb": 2255.75,
+      "luaKb": 12951,
+      "dtMs": 81.34879916906357
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2027411.882400047,
+      "at": 152.3116594000021,
+      "descendants": 362,
+      "totalMb": 2253.7890625,
+      "luaKb": 8073,
+      "dtMs": 90.02310037612915
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2035410.8061000006,
+      "at": 160.3105830999557,
+      "descendants": 362,
+      "totalMb": 2253.3515625,
+      "luaKb": 8133,
+      "dtMs": 90.03420174121857
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2041410.5773000047,
+      "at": 166.31035429995973,
+      "descendants": 362,
+      "totalMb": 2253.33984375,
+      "luaKb": 8181,
+      "dtMs": 90.68570286035538
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2045421.3325000019,
+      "at": 170.32110939995619,
+      "descendants": 362,
+      "totalMb": 2253.32421875,
+      "luaKb": 8215,
+      "dtMs": 100.40149837732315
+    },
+    {
+      "lastWorkMs": 0,
+      "phase": "Native idle; no ground adapter or image allocation",
+      "workAgeMs": 2047411.8170000147,
+      "at": 172.31159399996977,
+      "descendants": 362,
+      "totalMb": 2253.89453125,
+      "luaKb": 8236,
+      "dtMs": 91.09389781951904
+    }
+  ],
+  "qualification": "Command-bar task, idle Native; not identical scheduling/camera workload to mixed-mode harness. No transition means workAgeMs is not meaningful."
+}

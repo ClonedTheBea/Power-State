@@ -59,7 +59,9 @@ function Renderer.attach(map: any, preview: any, injected: any?)
 		local ready=enabled and state=="Ready"
 		local entries: {Descriptor.Entry}={}
 		if ready then
-			for _,e in descriptor.shores do if visible(e) then table.insert(entries,e) end end
+			if map.root:GetAttribute("OrganicShoreActive")~=true then
+    for _,e in descriptor.shores do if visible(e) then table.insert(entries,e) end end
+   end
 			if #entries>#images then ready=false;state="CoverageFallback"
 			else
 				for _,group in {descriptor.assets,descriptor.decorations} do for _,e in group do
@@ -101,6 +103,7 @@ function Renderer.attach(map: any, preview: any, injected: any?)
 		original(x,y,z,size);lastX=x;lastY=y;lastZoom=z;lastSize=size;draw()
 	end
 	local connections: {RBXScriptConnection}={}
+ table.insert(connections,map.root:GetAttributeChangedSignal("OrganicShoreActive"):Connect(draw))
 	-- Readiness wakes rendering without camera movement. No new instances or downloads.
 	local beat=game:GetService("RunService").Heartbeat:Connect(function()
 		local state=map.root:GetAttribute("IllustratedLoadState")

@@ -7,6 +7,15 @@ function Codec.copy(value:any):any
 end
 function Codec.encode(value:any,scalar:(any)->string):string
  local seen:{[any]:boolean}={};local count=0;local bytes=0
+ -- The injected canonical scalar encoder is pure. Cache repeated field names
+ -- and values for this bounded traversal only; every occurrence still counts
+ -- toward depth, nodes and bytes. Preserve the scalar encoder's signed-zero form.
+ local scalars:{[any]:string}={}
+ local function encodedScalar(v:any):string
+  if type(v)=="number"and v==0 then return scalar(v)end
+  local known=scalars[v];if known then return known end
+  local encoded=scalar(v);scalars[v]=encoded;return encoded
+ end
  local function emit(text:string):string
   bytes+=#text;assert(bytes<=262144,"Profile exceeds 256 KiB");return text
  end
@@ -17,7 +26,7 @@ function Codec.encode(value:any,scalar:(any)->string):string
   if kind=="string" then assert(#v<=256 and utf8.len(v)~=nil,"Invalid profile string")end
   if kind~="table" then
    assert(kind=="string" or kind=="number" or kind=="boolean","Unsupported profile value")
-   return emit(scalar(v))
+   return emit(encodedScalar(v))
   end
   assert(not seen[v] and getmetatable(v)==nil,"Cyclic/metatable profile")
   seen[v]=true
@@ -32,7 +41,7 @@ function Codec.encode(value:any,scalar:(any)->string):string
   if numeric then
    table.sort(keys);for i,key in keys do assert(key==i,"Sparse profile array");table.insert(parts,visit(v[key],depth+1))end
   else
-   table.sort(keys);for _,key in keys do table.insert(parts,emit(scalar(key)..":")..visit(v[key],depth+1))end
+   table.sort(keys);for _,key in keys do table.insert(parts,emit(encodedScalar(key)..":")..visit(v[key],depth+1))end
   end
   seen[v]=nil
   local delimiters=emit(string.rep(",",math.max(0,#parts-1))..(if numeric then "[]" else "{}"))

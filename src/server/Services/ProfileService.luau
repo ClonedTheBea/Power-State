@@ -46,7 +46,7 @@ function Service.create(deps:any)
   Schema.validate(value,e.owner,deps.scalar)
   if value.lastCommit.operationId~=op.id then fail(e,"OwnershipOrRevisionChanged");e.op=nil;return end
   e.profile=Codec.copy(value);e.fence=value.sessionEpoch;e.op=nil
-  if op.kind=="Build" then e.critical=false end
+  if op.kind=="Build" or op.kind=="BuildWind" then e.critical=false end
   if op.kind=="Release" then remove(e);return end
   if not owns(e) or value.lease.expiresAtUtcMs<=deps.utcMs() then fail(e,"OwnershipLost");return end
   e.safeUntil=deps.mono()+(value.lease.expiresAtUtcMs-deps.utcMs()-Lease.SAFETY_MS)/1000
@@ -105,7 +105,10 @@ function Service.create(deps:any)
   assert(api.canMutate(e),"Profile suspended")
   Schema.integer(revision,e.profile.countryRevision,Schema.MAX_INTEGER)
   if e.latest then assert(revision>=e.latest.revision,"Pending revision regression")end
-  local candidate=Codec.copy(e.profile);candidate.country=Codec.copy(country);candidate.countryRevision=revision
+  local candidate=table.clone(e.profile);candidate.lastCommit=table.clone(e.profile.lastCommit)
+  candidate.country=if Schema==require(script.Parent.Parent.Domain.ProfileSchema4)
+   then require(script.Parent.Parent.Domain.FleetRecord).copyLive(country,country.fleet.baseline)else Codec.copy(country)
+  candidate.countryRevision=revision
   candidate.lastCommit.countryRevision=revision
   local size,soft=Schema.validate(candidate,e.owner,deps.scalar)
   e.latest={country=candidate.country,revision=revision};e.bytes=size;e.soft=soft
@@ -117,8 +120,9 @@ function Service.create(deps:any)
  end
  -- The real capability is private, exact-Test/account and disabled during preparation.
  function api.build(e:any,operationId:string):(boolean,string?)
-  assert((deps.adapter.mode=="Fake" or approvedConstruction) and Schema==require(script.Parent.Parent.Domain.ProfileSchema3)
-   and Lease==require(script.Parent.Parent.Domain.ProfileLease3),"Construction requires fake storage or explicitly approved bounded capability")
+  local fleet=deps.adapter.mode=="Fake" and Schema==require(script.Parent.Parent.Domain.ProfileSchema4) and Lease==require(script.Parent.Parent.Domain.ProfileLease4)
+  assert(fleet or ((deps.adapter.mode=="Fake" or approvedConstruction) and Schema==require(script.Parent.Parent.Domain.ProfileSchema3)
+   and Lease==require(script.Parent.Parent.Domain.ProfileLease3)),"Construction requires fake storage or explicitly approved bounded capability")
   if not api.canMutate(e) then return false,"Unavailable"end
   if e.op or e.inFlight or e.result then return false,"DrainingSave"end
   local before=if e.latest then e.latest.country else e.profile.country
@@ -133,6 +137,24 @@ function Service.create(deps:any)
   if not candidate then return false,why end
   e.critical=true;e.op=op;e.status="Saving"
   return true,nil
+ end
+ function api.buildWind(e:any,operationId:string):(boolean,string?)
+  assert(deps.adapter.mode=="Fake" and Schema==require(script.Parent.Parent.Domain.ProfileSchema4)
+   and Lease==require(script.Parent.Parent.Domain.ProfileLease4),"Owned wind is fake-storage only")
+  if not api.canMutate(e)then return false,"Unavailable"end
+  if e.op or e.inFlight or e.result then return false,"DrainingSave"end
+  local before=if e.latest then e.latest.country else e.profile.country
+  local revision=if e.latest then e.latest.revision else e.profile.countryRevision
+  if before.fleet.windReceipt then return false,"AlreadyBuilt"end
+  if not before.construction.receipt then return false,"DistrictRequired"end
+  local Project=require(script.Parent.Parent.Domain.WindProject)
+  if before.bank.balanceMinor<Project.PRICE+Project.BUFFER then return false,"InsufficientCredits"end
+  local snapshot=Project.build(before,operationId,revision+1,e.profile.profileRevision+1)
+  local op=operation(e,"BuildWind",snapshot,revision+1)
+  op.id=operationId;op.before=Codec.copy(before);op.beforeRevision=revision
+  local candidate,why=Lease.apply(e.profile,op,deps.utcMs(),deps.scalar)
+  if not candidate then return false,why end
+  e.critical=true;e.op=op;e.status="Saving";return true,nil
  end
  function api.close(e:any)
   if entries[e.owner]~=e then return end

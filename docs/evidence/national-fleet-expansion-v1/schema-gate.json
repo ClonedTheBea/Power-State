@@ -1,0 +1,23 @@
+[
+  {
+    "nextStep": 114,
+    "rejection": "ServerScriptService.Server.Domain.Economy:45: Settlement cursor",
+    "cutoverStep": 113,
+    "proposedSimulationBytes": 4511,
+    "profileBytes": 7436,
+    "result": "Approval required: baseline simulation absent from W5 exact fields",
+    "baselineBytes": 970
+  },
+  {
+    "nextStep": 114,
+    "profileBytes": 7436,
+    "proposedSimulationBytes": 4511,
+    "fullRingEntries": 1440,
+    "rejection": "ServerScriptService.Server.Domain.Economy:45: Settlement cursor",
+    "cutoverStep": 113,
+    "fullRingCountryBytes": 96305,
+    "fullRingSimulationBytes": 89092,
+    "result": "Approval required: baseline simulation absent from W5 exact fields",
+    "baselineBytes": 970
+  }
+]

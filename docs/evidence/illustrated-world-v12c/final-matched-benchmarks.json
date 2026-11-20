@@ -1,0 +1,58 @@
+[
+  {
+    "timestamp": "2026-11-19T22:32:12.011Z",
+    "textureMemoryMb": 41.7139892578125,
+    "cpuWorst": 0.20790001144632697,
+    "samples": 180,
+    "frameP50": 16.652900725603104,
+    "cpuP95": 0.13480003690347075,
+    "totalMemoryMb": 2231.9375,
+    "mapDescendants": 362,
+    "frameWorst": 18.16689968109131,
+    "mode": "Native",
+    "frameP95": 17.75209978222847,
+    "cpuP50": 0.10140001541003585
+  },
+  {
+    "timestamp": "2026-11-19T22:32:15.078Z",
+    "textureMemoryMb": 41.7139892578125,
+    "cpuWorst": 2.1655999589711428,
+    "samples": 180,
+    "frameP50": 16.6120994836092,
+    "cpuP95": 1.03270000545308,
+    "totalMemoryMb": 2227.3125,
+    "mapDescendants": 470,
+    "frameWorst": 18.08840036392212,
+    "mode": "Illustrated",
+    "frameP95": 17.836900427937508,
+    "cpuP50": 0.7878000033088028
+  },
+  {
+    "timestamp": "2026-11-19T22:32:27.828Z",
+    "textureMemoryMb": 41.7139892578125,
+    "cpuWorst": 2.1901000291109085,
+    "samples": 180,
+    "frameP50": 16.67949929833412,
+    "cpuP95": 1.7269999952986836,
+    "totalMemoryMb": 2235.81640625,
+    "mapDescendants": 470,
+    "frameWorst": 18.046900629997253,
+    "mode": "Ground",
+    "frameP95": 17.53610000014305,
+    "cpuP50": 1.3283000444062054
+  },
+  {
+    "timestamp": "2026-11-19T22:32:30.894Z",
+    "textureMemoryMb": 41.7139892578125,
+    "cpuWorst": 3.5947999567724764,
+    "samples": 180,
+    "frameP50": 16.621600836515427,
+    "cpuP95": 1.5983000048436224,
+    "totalMemoryMb": 2233.5078125,
+    "mapDescendants": 470,
+    "frameWorst": 18.092799931764603,
+    "mode": "Ocean",
+    "frameP95": 17.497900873422623,
+    "cpuP50": 1.3425000361166894
+  }
+]

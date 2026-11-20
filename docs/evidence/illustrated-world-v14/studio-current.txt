@@ -1,0 +1,287 @@
+2026-11-20T09:31:30.724Z,4110.724609,a42c,6,Info [FLog::CreatorOutput] > assert(not game:GetService("RunService"):IsRunning() and game.GameId==10776833313 and game.CreatorId==149564436 and game:GetService("StudioService"):GetUserId()==149564436);print("IW14_PREFLIGHT",game.GameId,game.CreatorId,game:GetService("StudioService"):GetUserId(),game.HttpService:JSONEncode(game.ReplicatedStorage:GetAttributes()))
+2026-11-20T09:31:30.727Z,4110.727539,9a00,6,Info [FLog::CreatorOutput] IW14_PREFLIGHT 10776833313 149564436 149564436 {"ContinuousGroundProof":true,"RunRegressionTests":false,"IllustratedWorldProof":true}
+2026-11-20T09:32:18.373Z,4158.373535,649c,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313);local r=game.ReplicatedStorage;r:SetAttribute("RunIllustratedTests",true);r:SetAttribute("RunOrganicGeometryTests",true);r:SetAttribute("OrganicGeometryOnly",true);print("IW14_GEOMETRY_ARMED")
+2026-11-20T09:32:18.391Z,4158.391113,9a00,6,Info [FLog::CreatorOutput] IW14_GEOMETRY_ARMED
+2026-11-20T09:32:19.023Z,4159.023438,104c,6,Info [FLog::CreatorOutput] [Illustrated pure] PASS 4179 assertions; actual 78-shore fixture
+2026-11-20T09:32:19.198Z,4159.198242,104c,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-20T09:32:19.208Z,4159.208984,104c,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-20T09:32:21.095Z,4161.095215,7838,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-20T09:32:21.687Z,4161.687988,518c,6,Info [FLog::CreatorOutput] IW14_GEOMETRY_PASS 2469900
+2026-11-20T09:38:22.443Z,4522.443359,518c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|65494
+2026-11-20T09:38:22.444Z,4522.444336,518c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|65494
+2026-11-20T09:39:05.237Z,4565.237793,a42c,6,Info [FLog::CreatorOutput] > assert(not game:GetService("RunService"):IsRunning() and game.GameId==10776833313);local r=game.ReplicatedStorage;r:SetAttribute("OrganicGeometryOnly",false);r:SetAttribute("RunOrganicGeometryTests",false);r:SetAttribute("RunOrganicGroundTests",true);r:SetAttribute("OrganicGroundOnly",true);print("IW14_ORGANIC_ARMED")
+2026-11-20T09:39:05.243Z,4565.243652,adbc,6,Info [FLog::CreatorOutput] IW14_ORGANIC_ARMED
+2026-11-20T09:39:05.935Z,4565.935059,649c,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-20T09:39:06.016Z,4566.016602,649c,6,Info [FLog::CreatorOutput] [Illustrated pure] PASS 4179 assertions; actual 78-shore fixture
+2026-11-20T09:39:06.197Z,4566.197754,649c,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-20T09:39:08.095Z,4568.095703,9b00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://96236605552471 rbxassetid://96236605552471 Success
+2026-11-20T09:39:08.095Z,4568.095703,9b00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://133413370857301 rbxassetid://133413370857301 Success
+2026-11-20T09:39:08.095Z,4568.095703,9b00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://86222383311104 rbxassetid://86222383311104 Success
+2026-11-20T09:39:08.095Z,4568.095703,9b00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://90608851718773 rbxassetid://90608851718773 Success
+2026-11-20T09:39:08.139Z,4568.139648,4e6c,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-20T09:39:20.925Z,4580.925781,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:39:20.925Z,4580.925781,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":500.6362999556586,"writeMs":0.3451000084169209,"elapsedMs":12833.270199946128,"mapDescendants":470,"p95":17.652200534939767,"images":4,"bindingMs":99.74770003464073,"cpuMs":971.3897004839964,"worst":42.0817993581295,"frames":770}
+2026-11-20T09:39:24.125Z,4584.125488,8d10,6,Info [FLog::CreatorOutput] IW14_ORGANIC_FIXTURE 1 11630 470
+2026-11-20T09:39:24.129Z,4584.129395,8d10,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.6827000179328024,"images":4}
+2026-11-20T09:39:36.790Z,4596.790527,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:39:36.790Z,4596.790527,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":304.76830003317448,"writeMs":0.35450002178549769,"elapsedMs":12538.076800003182,"mapDescendants":470,"p95":17.674200236797334,"images":4,"bindingMs":99.03689997736365,"cpuMs":943.6052002129145,"worst":21.613800898194314,"frames":752}
+2026-11-20T09:39:39.992Z,4599.992676,8d10,6,Info [FLog::CreatorOutput] IW14_ORGANIC_FIXTURE 2 23248 470
+2026-11-20T09:39:39.995Z,4599.995605,8d10,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.6903000175952911,"images":4}
+2026-11-20T09:39:40.003Z,4600.003418,8d10,6,Info [FLog::CreatorOutput] IW14_ORGANIC_PASS 23249
+2026-11-20T09:40:41.469Z,4661.469238,2d8c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63379
+2026-11-20T09:40:41.469Z,4661.469238,2d8c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63379
+2026-11-20T09:41:09.819Z,4689.819336,a42c,6,Info [FLog::CreatorOutput] > assert(not game:GetService("RunService"):IsRunning() and game.GameId==10776833313);local r=game.ReplicatedStorage;r:SetAttribute("OrganicGroundOnly",false);r:SetAttribute("RunOrganicGeometryTests",true);r:SetAttribute("RunContinuousGroundTests",true);print("IW14_FULL_RENDER_ARMED")
+2026-11-20T09:41:09.821Z,4689.821289,9a00,6,Info [FLog::CreatorOutput] IW14_FULL_RENDER_ARMED
+2026-11-20T09:41:10.300Z,4690.300293,2d8c,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-20T09:41:10.375Z,4690.375488,2d8c,6,Info [FLog::CreatorOutput] [Illustrated pure] PASS 4179 assertions; actual 78-shore fixture
+2026-11-20T09:41:10.552Z,4690.552246,2d8c,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-20T09:41:12.296Z,4692.296875,4a24,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-20T09:41:13.030Z,4693.030273,9a00,6,Info [FLog::CreatorOutput] IW14_GEOMETRY_PASS 2469900
+2026-11-20T09:41:13.138Z,4693.138672,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://96236605552471 rbxassetid://96236605552471 Success
+2026-11-20T09:41:13.138Z,4693.138672,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://133413370857301 rbxassetid://133413370857301 Success
+2026-11-20T09:41:13.138Z,4693.138672,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://86222383311104 rbxassetid://86222383311104 Success
+2026-11-20T09:41:13.138Z,4693.138672,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://90608851718773 rbxassetid://90608851718773 Success
+2026-11-20T09:41:25.920Z,4705.920898,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:41:25.921Z,4705.921875,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":453.6340999766253,"writeMs":0.3499999875202775,"elapsedMs":12786.972799978685,"mapDescendants":470,"p95":17.5464004278183,"images":4,"bindingMs":99.41379999509081,"cpuMs":958.6737991776317,"worst":31.77659958600998,"frames":767}
+2026-11-20T09:41:29.121Z,4709.121094,8d10,6,Info [FLog::CreatorOutput] IW14_ORGANIC_FIXTURE 1 11630 470
+2026-11-20T09:41:29.125Z,4709.125488,8d10,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.8288999670185149,"images":4}
+2026-11-20T09:41:41.903Z,4721.903320,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:41:41.903Z,4721.903320,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":304.86249999376016,"writeMs":0.3415999817661941,"elapsedMs":12655.738900008146,"mapDescendants":470,"p95":17.55549944937229,"images":4,"bindingMs":99.62399996584282,"cpuMs":959.2262998921797,"worst":19.838400185108186,"frames":759}
+2026-11-20T09:41:45.103Z,4725.103027,8d10,6,Info [FLog::CreatorOutput] IW14_ORGANIC_FIXTURE 2 23248 470
+2026-11-20T09:41:45.105Z,4725.105957,8d10,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.7895000162534416,"images":4}
+2026-11-20T09:41:45.113Z,4725.113770,8d10,6,Info [FLog::CreatorOutput] IW14_ORGANIC_PASS 23249
+2026-11-20T09:41:46.204Z,4726.204590,8d10,6,Info [FLog::CreatorOutput] [Illustrated real load] fixture=1 elapsed=31.509ms session=13.171900005545467 fetches=4 map=470 textureBefore=40.6992301940918 after=40.6992301940918 MiB; whole-client/cache unknown
+2026-11-20T09:41:51.835Z,4731.835449,8d10,6,Info [FLog::CreatorOutput] [Illustrated performance] {"cpuWorst":0.7676000241190195,"frameWorst":18.146200105547906,"frameP50":16.67659915983677,"cpuP95":0.57640002341941,"descendants":470,"fixture":1,"mode":"Native","frameP95":17.687499523162843,"cpuP50":0.45730004785582425}
+2026-11-20T09:41:54.835Z,4734.835449,8d10,6,Info [FLog::CreatorOutput] [Illustrated performance] {"cpuWorst":1.0701999999582768,"frameWorst":18.38799938559532,"frameP50":16.61680079996586,"cpuP95":0.9262000094167888,"descendants":470,"fixture":1,"mode":"Illustrated","frameP95":17.63959974050522,"cpuP50":0.6211000145412982}
+2026-11-20T09:41:59.969Z,4739.969727,8d10,6,Info [FLog::CreatorOutput] [Illustrated real load] fixture=2 elapsed=31.081ms session=13.603199971839786 fetches=4 map=470 textureBefore=40.6992301940918 after=40.6992301940918 MiB; whole-client/cache unknown
+2026-11-20T09:42:05.618Z,4745.618164,8d10,6,Info [FLog::CreatorOutput] [Illustrated performance] {"cpuWorst":0.7832000264897943,"frameWorst":18.147699534893037,"frameP50":16.68190024793148,"cpuP95":0.5864999839104712,"descendants":470,"fixture":2,"mode":"Native","frameP95":17.594199627637864,"cpuP50":0.4507999983616173}
+2026-11-20T09:42:08.619Z,4748.619629,8d10,6,Info [FLog::CreatorOutput] [Illustrated performance] {"cpuWorst":1.276399998459965,"frameWorst":18.09450052678585,"frameP50":16.661599278450013,"cpuP95":1.0350999655202032,"descendants":470,"fixture":2,"mode":"Illustrated","frameP95":17.405500635504724,"cpuP50":0.6726999999955297}
+2026-11-20T09:42:08.633Z,4748.633301,8d10,6,Info [FLog::CreatorOutput] [Illustrated engine] PASS 3128 assertions; actual four-atlas readiness and synthetic fault cases separately
+2026-11-20T09:42:19.419Z,4759.419434,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:42:19.419Z,4759.419434,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":323.8716999767348,"writeMs":0.35830005072057249,"elapsedMs":10641.232799971476,"mapDescendants":470,"p95":17.596399411559106,"images":4,"bindingMs":100.25069996481762,"cpuMs":725.4546998301521,"worst":20.79099975526333,"frames":638}
+2026-11-20T09:42:21.690Z,4761.690918,8d10,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.7760999724268913,"images":4}
+2026-11-20T09:42:21.827Z,4761.827148,8d10,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:93: Source allocation denied
+2026-11-20T09:42:22.601Z,4762.601562,adbc,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:119: Chunk allocation denied
+2026-11-20T09:42:44.102Z,4784.102539,8d10,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 1 21979 470
+2026-11-20T09:42:54.800Z,4794.800293,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:42:54.800Z,4794.800293,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":322.74460000917318,"writeMs":0.38219999987632038,"elapsedMs":10556.099999987055,"mapDescendants":470,"p95":17.601199448108674,"images":4,"bindingMs":99.7677999548614,"cpuMs":723.720500129275,"worst":24.015599861741067,"frames":633}
+2026-11-20T09:42:57.071Z,4797.071777,8d10,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.6714999908581376,"images":4}
+2026-11-20T09:42:57.208Z,4797.208496,8d10,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:93: Source allocation denied
+2026-11-20T09:42:57.983Z,4797.983887,a42c,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:119: Chunk allocation denied
+2026-11-20T09:42:58.350Z,4798.350098,8d10,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 2 39727 470
+2026-11-20T09:42:58.350Z,4798.350098,8d10,6,Info [FLog::CreatorOutput] IW12C_ENGINE_PASS 39727
+2026-11-20T09:43:01.549Z,4801.549805,8d10,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":40.6992301940918,"cpuWorst":0.24149997625499965,"samples":180,"frameP50":16.67889952659607,"cpuP95":0.1341000315733254,"totalMemoryMb":1819.3359375,"mapDescendants":362,"frameWorst":18.068499863147737,"mode":"Native","frameP95":17.44839921593666,"cpuP50":0.10119995567947626}
+2026-11-20T09:43:04.617Z,4804.617188,8d10,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":40.6992301940918,"cpuWorst":1.5194000443443657,"samples":180,"frameP50":16.631700098514558,"cpuP95":1.0666000307537616,"totalMemoryMb":1814.82421875,"mapDescendants":470,"frameWorst":18.045099452137948,"mode":"Illustrated","frameP95":17.644299194216729,"cpuP50":0.7876000017859042}
+2026-11-20T09:43:14.816Z,4814.816406,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-20T09:43:14.816Z,4814.816406,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":309.42460004007446,"writeMs":0.3846999607048929,"elapsedMs":10192.699900013395,"mapDescendants":470,"p95":17.715899273753167,"images":4,"bindingMs":99.44469999754802,"cpuMs":696.7434998368844,"worst":20.67290060222149,"frames":611}
+2026-11-20T09:43:17.815Z,4817.815918,8d10,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":40.6992301940918,"cpuWorst":3.361599985510111,"samples":180,"frameP50":16.635900363326074,"cpuP95":1.8421999993734062,"totalMemoryMb":1822.1171875,"mapDescendants":470,"frameWorst":22.071700543165208,"mode":"Ground","frameP95":17.719199880957605,"cpuP50":1.3922000071033836}
+2026-11-20T09:43:20.883Z,4820.883789,8d10,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":40.6992301940918,"cpuWorst":3.171199990902096,"samples":180,"frameP50":16.622399911284448,"cpuP95":1.9133000168949366,"totalMemoryMb":1820.375,"mapDescendants":470,"frameWorst":18.283000215888025,"mode":"Ocean","frameP95":17.612000927329065,"cpuP50":1.414500002283603}
+2026-11-20T09:43:20.886Z,4820.886719,8d10,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.7840999751351774,"images":4}
+2026-11-20T09:43:21.015Z,4821.015625,8d10,6,Info [FLog::CreatorOutput] [Illustrated capture] 1-Native 1366 704 seed 12fee3f76be963c09033cdfd9ccffb36
+2026-11-20T09:44:08.670Z,4868.670410,a42c,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313 and game.Players.LocalPlayer.UserId==149564436 and game.ReplicatedStorage:GetAttribute("IllustratedTestsPassed"));game.ReplicatedStorage:SetAttribute("IllustratedZoom",.72);game.ReplicatedStorage:SetAttribute("IllustratedCapture","1-Organic")
+2026-11-20T09:44:08.757Z,4868.757324,8d10,6,Info [FLog::CreatorOutput] [Illustrated capture] 1-Organic 1366 704 seed 12fee3f76be963c09033cdfd9ccffb36
+2026-11-20T09:44:21.996Z,4881.996582,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-20T09:44:21.996Z,4881.996582,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":306.60590005572888,"writeMs":0.35719998413696887,"elapsedMs":13239.477600029204,"mapDescendants":470,"p95":17.5292007625103,"images":4,"bindingMs":98.61370001453907,"cpuMs":1023.8553006784059,"worst":20.217400044202806,"frames":794}
+2026-11-20T09:46:27.416Z,5007.416992,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("ContinuousGroundMode","Ocean")
+2026-11-20T09:46:27.428Z,5007.428711,a42c,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Ready","bindingAndDestroyMs":0.8698999881744385,"images":4}
+2026-11-20T09:46:37.358Z,5017.358398,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-20T09:46:37.358Z,5017.358398,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":378.68850002996626,"writeMs":0.34149998100474479,"elapsedMs":9929.498000012245,"mapDescendants":470,"p95":17.751000821590425,"images":4,"bindingMs":100.18309997394681,"cpuMs":671.0479997564107,"worst":22.213300690054895,"frames":596}
+2026-11-20T09:47:50.133Z,5090.133789,a42c,6,Info [FLog::CreatorOutput] > local r=game.ReplicatedStorage;r:SetAttribute("IllustratedZoom",.55);r:SetAttribute("IllustratedSelected",1);r:SetAttribute("IllustratedCapture","2-Built-Ocean")
+2026-11-20T09:47:50.141Z,5090.141602,518c,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Destroyed","bindingAndDestroyMs":0.7031999994069338,"images":4}
+2026-11-20T09:47:50.216Z,5090.216797,8d10,6,Info [FLog::CreatorOutput] [Illustrated capture] 2-Built-Ocean 1366 704 seed fe0512aa351b994df1656b88f0d94f1b
+2026-11-20T09:48:00.373Z,5100.373047,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:48:00.373Z,5100.373047,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":324.0150000201538,"writeMs":0.4186000442132354,"elapsedMs":10157.723999989685,"mapDescendants":470,"p95":17.68610067665577,"images":4,"bindingMs":100.54859996307641,"cpuMs":691.6214997763746,"worst":20.778000354766847,"frames":609}
+2026-11-20T09:49:09.266Z,5169.266602,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("ContinuousGroundMode","Organic")
+2026-11-20T09:49:09.288Z,5169.288574,8544,6,Info [FLog::CreatorOutput] IW13_RESOURCE_RELEASE {"state":"Ready","bindingAndDestroyMs":0.7813000120222569,"images":4}
+2026-11-20T09:49:21.951Z,5181.951172,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:49:21.952Z,5181.952148,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":278.957900009118,"writeMs":0.47280004946514966,"elapsedMs":12663.202900032047,"mapDescendants":470,"p95":17.715899273753167,"images":4,"bindingMs":100.68089998094365,"cpuMs":963.0641005351208,"worst":39.45929929614067,"frames":759}
+2026-11-20T09:51:54.151Z,5334.151855,518c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|64215
+2026-11-20T09:51:54.151Z,5334.151855,518c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|64215
+2026-11-20T09:52:37.934Z,5377.934082,a42c,6,Info [FLog::CreatorOutput] > assert(not game:GetService("RunService"):IsRunning() and game.GameId==10776833313);game.ReplicatedStorage:SetAttribute("RunOrganicFilterProbe",true)
+2026-11-20T09:52:38.523Z,5378.523438,104c,6,Info [FLog::CreatorOutput] [Illustrated pure] PASS 4179 assertions; actual 78-shore fixture
+2026-11-20T09:52:38.697Z,5378.697754,104c,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-20T09:52:38.709Z,5378.709961,104c,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-20T09:52:40.669Z,5380.669434,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://90608851718773 rbxassetid://90608851718773 Success
+2026-11-20T09:52:40.669Z,5380.669434,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://86222383311104 rbxassetid://86222383311104 Success
+2026-11-20T09:52:40.669Z,5380.669434,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://133413370857301 rbxassetid://133413370857301 Success
+2026-11-20T09:52:40.669Z,5380.669434,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://96236605552471 rbxassetid://96236605552471 Success
+2026-11-20T09:52:40.743Z,5380.743164,9ffc,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-20T09:52:53.860Z,5393.860352,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T09:52:53.860Z,5393.860352,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":428.44510002760219,"writeMs":0.3636000328697264,"elapsedMs":13228.622300026473,"mapDescendants":470,"p95":17.841100692749025,"images":4,"bindingMs":99.12020002957434,"cpuMs":1007.7541003702208,"worst":92.81440079212189,"frames":792}
+2026-11-20T09:52:53.864Z,5393.864258,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":358,"x":648,"index":180,"w":35,"h":35}
+2026-11-20T09:52:53.864Z,5393.864258,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":358,"x":683,"index":181,"w":35,"h":35}
+2026-11-20T09:52:53.864Z,5393.864258,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":358,"x":718,"index":182,"w":36,"h":35}
+2026-11-20T09:52:53.865Z,5393.865723,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":393,"x":648,"index":196,"w":35,"h":35}
+2026-11-20T09:52:53.865Z,5393.865723,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":393,"x":683,"index":197,"w":35,"h":35}
+2026-11-20T09:52:53.865Z,5393.865723,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":393,"x":718,"index":198,"w":36,"h":35}
+2026-11-20T09:52:53.865Z,5393.865723,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":428,"x":648,"index":212,"w":35,"h":35}
+2026-11-20T09:52:53.865Z,5393.865723,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":428,"x":683,"index":213,"w":35,"h":35}
+2026-11-20T09:52:53.865Z,5393.865723,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":428,"x":718,"index":214,"w":36,"h":35}
+2026-11-20T09:52:53.865Z,5393.865723,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 0.55 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T09:55:23.495Z,5543.495117,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",.72)
+2026-11-20T09:55:23.503Z,5543.503906,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":336,"x":626,"index":180,"w":46,"h":46}
+2026-11-20T09:55:23.503Z,5543.503906,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":336,"x":672,"index":181,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":336,"x":718,"index":182,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":382,"x":626,"index":196,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":382,"x":672,"index":197,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":382,"x":718,"index":198,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":428,"x":626,"index":212,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":428,"x":672,"index":213,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":428,"x":718,"index":214,"w":46,"h":46}
+2026-11-20T09:55:23.505Z,5543.505371,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 0.72 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T09:55:48.711Z,5568.711426,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",1)
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":300,"x":590,"index":180,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":300,"x":654,"index":181,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":300,"x":718,"index":182,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":364,"x":590,"index":196,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":364,"x":654,"index":197,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":364,"x":718,"index":198,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":428,"x":590,"index":212,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":428,"x":654,"index":213,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":428,"x":718,"index":214,"w":64,"h":64}
+2026-11-20T09:55:48.720Z,5568.720703,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 1 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T09:56:14.428Z,5594.428223,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",1.2)
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":275,"x":565,"index":180,"w":77,"h":76}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":275,"x":642,"index":181,"w":76,"h":76}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":275,"x":718,"index":182,"w":77,"h":76}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":351,"x":565,"index":196,"w":77,"h":77}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":351,"x":642,"index":197,"w":76,"h":77}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":351,"x":718,"index":198,"w":77,"h":77}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":428,"x":565,"index":212,"w":77,"h":77}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":428,"x":642,"index":213,"w":76,"h":77}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":428,"x":718,"index":214,"w":77,"h":77}
+2026-11-20T09:56:14.436Z,5594.436523,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 1.2 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T09:56:40.461Z,5620.461426,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",1.8)
+2026-11-20T09:56:40.484Z,5620.484375,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":198,"x":488,"index":180,"w":115,"h":115}
+2026-11-20T09:56:40.484Z,5620.484375,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":198,"x":603,"index":181,"w":115,"h":115}
+2026-11-20T09:56:40.484Z,5620.484375,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":198,"x":718,"index":182,"w":116,"h":115}
+2026-11-20T09:56:40.484Z,5620.484375,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":313,"x":488,"index":196,"w":115,"h":115}
+2026-11-20T09:56:40.484Z,5620.484375,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":313,"x":603,"index":197,"w":115,"h":115}
+2026-11-20T09:56:40.484Z,5620.484375,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":313,"x":718,"index":198,"w":116,"h":115}
+2026-11-20T09:56:40.484Z,5620.484375,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":428,"x":488,"index":212,"w":115,"h":115}
+2026-11-20T09:56:40.485Z,5620.485352,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":428,"x":603,"index":213,"w":115,"h":115}
+2026-11-20T09:56:40.485Z,5620.485352,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":428,"x":718,"index":214,"w":116,"h":115}
+2026-11-20T09:56:40.485Z,5620.485352,adbc,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 1.8 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T09:59:15.577Z,5775.577148,649c,6,Info [FLog::CreatorOutput] > local ok,result=pcall(function()return game:GetService("StudioCaptureService"):CanCaptureScreenshot()end);print("IW14_LOSSLESS_CAPABILITY",ok,result)
+2026-11-20T09:59:15.593Z,5775.593262,a42c,6,Info [FLog::CreatorOutput] IW14_LOSSLESS_CAPABILITY true false
+2026-11-20T10:00:25.495Z,5845.495605,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:02:04.060Z,5944.060547,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",.55)
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":358,"x":648,"index":180,"w":35,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":358,"x":683,"index":181,"w":35,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":358,"x":718,"index":182,"w":36,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":393,"x":648,"index":196,"w":35,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":393,"x":683,"index":197,"w":35,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":393,"x":718,"index":198,"w":36,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":428,"x":648,"index":212,"w":35,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":428,"x":683,"index":213,"w":35,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":428,"x":718,"index":214,"w":36,"h":35}
+2026-11-20T10:02:04.091Z,5944.091309,649c,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 0.55 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T10:02:04.422Z,5944.422363,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:02:53.175Z,5993.175781,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",.72)
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":336,"x":626,"index":180,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":336,"x":672,"index":181,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":336,"x":718,"index":182,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":382,"x":626,"index":196,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":382,"x":672,"index":197,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":382,"x":718,"index":198,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":428,"x":626,"index":212,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":428,"x":672,"index":213,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.72 {"y":428,"x":718,"index":214,"w":46,"h":46}
+2026-11-20T10:02:53.187Z,5993.187988,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 0.72 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T10:02:53.522Z,5993.522461,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:03:18.278Z,6018.278320,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",1)
+2026-11-20T10:03:18.285Z,6018.285156,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":300,"x":590,"index":180,"w":64,"h":64}
+2026-11-20T10:03:18.285Z,6018.285156,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":300,"x":654,"index":181,"w":64,"h":64}
+2026-11-20T10:03:18.285Z,6018.285156,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":300,"x":718,"index":182,"w":64,"h":64}
+2026-11-20T10:03:18.285Z,6018.285156,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":364,"x":590,"index":196,"w":64,"h":64}
+2026-11-20T10:03:18.285Z,6018.285156,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":364,"x":654,"index":197,"w":64,"h":64}
+2026-11-20T10:03:18.286Z,6018.286133,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":364,"x":718,"index":198,"w":64,"h":64}
+2026-11-20T10:03:18.286Z,6018.286133,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":428,"x":590,"index":212,"w":64,"h":64}
+2026-11-20T10:03:18.286Z,6018.286133,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":428,"x":654,"index":213,"w":64,"h":64}
+2026-11-20T10:03:18.286Z,6018.286133,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1 {"y":428,"x":718,"index":214,"w":64,"h":64}
+2026-11-20T10:03:18.286Z,6018.286133,9a00,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 1 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T10:03:18.653Z,6018.653320,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:03:45.924Z,6045.924316,a42c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",1.2)
+2026-11-20T10:03:45.934Z,6045.934082,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":275,"x":565,"index":180,"w":77,"h":76}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":275,"x":642,"index":181,"w":76,"h":76}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":275,"x":718,"index":182,"w":77,"h":76}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":351,"x":565,"index":196,"w":77,"h":77}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":351,"x":642,"index":197,"w":76,"h":77}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":351,"x":718,"index":198,"w":77,"h":77}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":428,"x":565,"index":212,"w":77,"h":77}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":428,"x":642,"index":213,"w":76,"h":77}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.2 {"y":428,"x":718,"index":214,"w":77,"h":77}
+2026-11-20T10:03:45.935Z,6045.935547,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 1.2 radius18 at320,832; actual saved fixture; sample centres; Studio viewport offset must be observed
+2026-11-20T10:03:46.269Z,6046.269043,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:06:17.424Z,6197.424316,a42c,6,Info [FLog::CreatorOutput] > local d=game.Players.LocalPlayer.PlayerScripts.DevelopmentTests;local p=require(d.IllustratedWorld.IllustratedController).active(game.Players.LocalPlayer.PlayerGui.PowerStateShell);local m=p.app.view.map;m.render(math.floor(m.viewport.AbsoluteSize.X/2-320*1.8)+.55,math.floor(m.viewport.AbsoluteSize.Y/2-704*1.8)+.15,1.8);for _,im in p.renderer().images do im.Visible=false end;local im=p.ground().cells[181];print("IW14_FILTER_R17",im.AbsolutePosition,im.AbsoluteSize)
+2026-11-20T10:06:17.431Z,6197.431641,a42c,6,Error [FLog::CreatorError] Error: CommandBar:1: attempt to index nil with 'app'
+2026-11-20T10:06:17.431Z,6197.431641,a42c,6,Info [FLog::CreatorOutput] Info: Stack Begin
+2026-11-20T10:06:17.431Z,6197.431641,a42c,6,Info [FLog::CreatorOutput] Info: Script 'CommandBar', Line 1
+2026-11-20T10:06:17.431Z,6197.431641,a42c,6,Info [FLog::CreatorOutput] Info: Stack End
+2026-11-20T10:06:17.460Z,6197.460449,518c,6,Error [FLog::CreatorError] Error: CommandBar:1: attempt to index nil with 'app'
+2026-11-20T10:06:17.796Z,6197.796387,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:08:11.622Z,6311.622559,104c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|50957
+2026-11-20T10:08:11.622Z,6311.622559,518c,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|50957
+2026-11-20T10:08:47.424Z,6347.424316,a42c,6,Info [FLog::CreatorOutput] > assert(not game:GetService("RunService"):IsRunning() and game.GameId==10776833313);game.ReplicatedStorage:SetAttribute("OrganicProbeCase",17);game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",1.8)
+2026-11-20T10:08:48.036Z,6348.036133,a42c,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-20T10:08:48.110Z,6348.110840,a42c,6,Info [FLog::CreatorOutput] [Illustrated pure] PASS 4179 assertions; actual 78-shore fixture
+2026-11-20T10:08:48.291Z,6348.291992,a42c,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-20T10:08:50.167Z,6350.167480,4c48,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-20T10:08:50.176Z,6350.176758,9a00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://90608851718773 rbxassetid://90608851718773 Success
+2026-11-20T10:08:50.176Z,6350.176758,9a00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://86222383311104 rbxassetid://86222383311104 Success
+2026-11-20T10:08:50.176Z,6350.176758,9a00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://133413370857301 rbxassetid://133413370857301 Success
+2026-11-20T10:08:50.176Z,6350.176758,9a00,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://96236605552471 rbxassetid://96236605552471 Success
+2026-11-20T10:09:03.254Z,6363.254395,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T10:09:03.254Z,6363.254395,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":504.9350999761373,"writeMs":0.32810005359351637,"elapsedMs":13121.737499954179,"mapDescendants":470,"p95":17.72809959948063,"images":4,"bindingMs":99.40019994974137,"cpuMs":986.666498996783,"worst":90.5413031578064,"frames":784}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":427,"x":488,"index":180,"w":115,"h":116}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":427,"x":603,"index":181,"w":116,"h":116}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":427,"x":719,"index":182,"w":115,"h":116}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":543,"x":488,"index":196,"w":115,"h":115}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":543,"x":603,"index":197,"w":116,"h":115}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":543,"x":719,"index":198,"w":115,"h":115}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":658,"x":488,"index":212,"w":115,"h":115}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":658,"x":603,"index":213,"w":116,"h":115}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":658,"x":719,"index":214,"w":115,"h":115}
+2026-11-20T10:09:03.259Z,6363.259277,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 1.8 radius17 at320,704 SW land actual saved fixture; sample centres; viewport offset must be observed
+2026-11-20T10:09:29.354Z,6389.354004,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:14:09.232Z,6669.232422,adbc,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63517
+2026-11-20T10:14:09.232Z,6669.232422,adbc,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|63517
+2026-11-20T10:14:37.312Z,6697.312988,adbc,6,Info [FLog::CreatorOutput] [Illustrated pure] PASS 4179 assertions; actual 78-shore fixture
+2026-11-20T10:14:37.492Z,6697.492188,adbc,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-20T10:14:37.504Z,6697.504395,adbc,6,Info [FLog::CreatorOutput] [Power State Test] Fake saves last only while this server runs; Stop Play discards them
+2026-11-20T10:14:39.447Z,6699.447266,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://90608851718773 rbxassetid://90608851718773 Success
+2026-11-20T10:14:39.447Z,6699.447266,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://86222383311104 rbxassetid://86222383311104 Success
+2026-11-20T10:14:39.447Z,6699.447266,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://133413370857301 rbxassetid://133413370857301 Success
+2026-11-20T10:14:39.447Z,6699.447266,a42c,6,Info [FLog::CreatorOutput] [Illustrated atlas fetch] rbxassetid://96236605552471 rbxassetid://96236605552471 Success
+2026-11-20T10:14:39.541Z,6699.541504,0d44,6,Warning [FLog::CreatorWarning] Warning: ContentId: rbxassetid://203785492 failed due to: Asset type does not match requested type
+2026-11-20T10:14:52.690Z,6712.690918,8d10,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-20T10:14:52.690Z,6712.690918,8d10,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":469.0341000095941,"writeMs":0.41310000233352187,"elapsedMs":13286.079599987715,"mapDescendants":470,"p95":17.62150041759014,"images":4,"bindingMs":99.06539996154607,"cpuMs":1023.6700996174477,"worst":91.80019795894623,"frames":794}
+2026-11-20T10:14:52.695Z,6712.695801,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":427,"x":488,"index":180,"w":115,"h":116}
+2026-11-20T10:14:52.695Z,6712.695801,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":427,"x":603,"index":181,"w":116,"h":116}
+2026-11-20T10:14:52.695Z,6712.695801,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":427,"x":719,"index":182,"w":115,"h":116}
+2026-11-20T10:14:52.695Z,6712.695801,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":543,"x":488,"index":196,"w":115,"h":115}
+2026-11-20T10:14:52.695Z,6712.695801,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":543,"x":603,"index":197,"w":116,"h":115}
+2026-11-20T10:14:52.695Z,6712.695801,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":543,"x":719,"index":198,"w":115,"h":115}
+2026-11-20T10:14:52.696Z,6712.696777,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":658,"x":488,"index":212,"w":115,"h":115}
+2026-11-20T10:14:52.696Z,6712.696777,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":658,"x":603,"index":213,"w":116,"h":115}
+2026-11-20T10:14:52.696Z,6712.696777,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 1.8 {"y":658,"x":719,"index":214,"w":115,"h":115}
+2026-11-20T10:14:52.696Z,6712.696777,8d10,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 1.8 radius17 at320,704 SW land actual saved fixture; sample centres; viewport offset must be observed
+2026-11-20T10:15:03.774Z,6723.774902,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:16:44.868Z,6824.868652,649c,6,Info [FLog::CreatorOutput] > game.ReplicatedStorage:SetAttribute("OrganicProbeZoom",.55)
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":427,"x":648,"index":180,"w":35,"h":36}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":427,"x":683,"index":181,"w":36,"h":36}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":427,"x":719,"index":182,"w":35,"h":36}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":463,"x":648,"index":196,"w":35,"h":35}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":463,"x":683,"index":197,"w":36,"h":35}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":463,"x":719,"index":198,"w":35,"h":35}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":498,"x":648,"index":212,"w":35,"h":35}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":498,"x":683,"index":213,"w":36,"h":35}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_RECT 0.55 {"y":498,"x":719,"index":214,"w":35,"h":35}
+2026-11-20T10:16:44.871Z,6824.871582,a42c,6,Info [FLog::CreatorOutput] IW14_FILTER_READY 0.55 radius17 at320,704 SW land actual saved fixture; sample centres; viewport offset must be observed
+2026-11-20T10:16:45.279Z,6825.279297,649c,6,Info [FLog::CreatorOutput] Info: Screenshot saved! Click here to open screenshot folder.
+2026-11-20T10:18:50.932Z,6950.932617,adbc,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|56737
+2026-11-20T10:18:50.932Z,6950.932617,adbc,6,Info [FLog::CreatorOutput] Disconnect from 127.0.0.1|56737
+2026-11-20T10:19:34.452Z,6994.452148,a42c,6,Info [FLog::CreatorOutput] > assert(not game:GetService("RunService"):IsRunning() and game.GameId==10776833313 and game.CreatorId==149564436);for k,v in game.ReplicatedStorage:GetAttributes() do if string.find(k,"Organic") or string.find(k,"IllustratedCapture") or k=="RunIllustratedTests" or k=="RunContinuousGroundTests" then game.ReplicatedStorage:SetAttribute(k,nil) end end;game.ReplicatedStorage:SetAttribute("ContinuousGroundMode","Native");for k,v in game.ReplicatedStorage:GetAttributes() do if type(v)=="boolean" then print("IW14_FINAL_GATE",k,v) end end
+2026-11-20T10:19:34.463Z,6994.463379,a42c,6,Info [FLog::CreatorOutput] IW14_FINAL_GATE ContinuousGroundProof true
+2026-11-20T10:19:34.463Z,6994.463379,a42c,6,Info [FLog::CreatorOutput] IW14_FINAL_GATE RunRegressionTests false
+2026-11-20T10:19:34.463Z,6994.463379,a42c,6,Info [FLog::CreatorOutput] IW14_FINAL_GATE IllustratedWorldProof true

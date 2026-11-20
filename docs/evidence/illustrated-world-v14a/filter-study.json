@@ -1,0 +1,168 @@
+{
+  "status": "Neither candidate passes; no runtime correction",
+  "convention": "Any nonzero land/water contribution occupies its full displayed pixel; both sides constrained",
+  "referenceOnly": true,
+  "zooms": [
+    0.55,
+    0.6,
+    0.72,
+    0.837,
+    0.937,
+    1,
+    1.2,
+    1.337,
+    1.8
+  ],
+  "radii": [
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24
+  ],
+  "rasterCases": 2079,
+  "orientationComplementChecks": 16632,
+  "candidates": [
+    {
+      "candidate": "inset-alpha",
+      "parameter": 0,
+      "failingRasterCases": 297,
+      "worstLocalFootprintWU": {
+        "value": 2.8312964871580526,
+        "radius": 16,
+        "zoom": 0.55,
+        "width": 35,
+        "height": 36,
+        "outward": 2.8312964871580526,
+        "inward": 2.244295349534468
+      }
+    },
+    {
+      "candidate": "inset-alpha",
+      "parameter": 0.25,
+      "failingRasterCases": 297,
+      "worstLocalFootprintWU": {
+        "value": 2.9888270733140168,
+        "radius": 24,
+        "zoom": 0.55,
+        "width": 35,
+        "height": 35,
+        "outward": 2.3105472759344856,
+        "inward": 2.9888270733140168
+      }
+    },
+    {
+      "candidate": "inset-alpha",
+      "parameter": 0.5,
+      "failingRasterCases": 297,
+      "worstLocalFootprintWU": {
+        "value": 3.3025481596986275,
+        "radius": 20,
+        "zoom": 0.55,
+        "width": 35,
+        "height": 35,
+        "outward": 1.9434523728791646,
+        "inward": 3.3025481596986275
+      }
+    },
+    {
+      "candidate": "inset-alpha",
+      "parameter": 0.75,
+      "failingRasterCases": 297,
+      "worstLocalFootprintWU": {
+        "value": 3.5720485062069223,
+        "radius": 16,
+        "zoom": 0.55,
+        "width": 35,
+        "height": 36,
+        "outward": 1.7371690394177577,
+        "inward": 3.5720485062069223
+      }
+    },
+    {
+      "candidate": "inset-alpha",
+      "parameter": 1,
+      "failingRasterCases": 297,
+      "worstLocalFootprintWU": {
+        "value": 3.733745903613512,
+        "radius": 19,
+        "zoom": 0.6,
+        "width": 39,
+        "height": 39,
+        "outward": 0.907775531867415,
+        "inward": 3.733745903613512
+      }
+    },
+    {
+      "candidate": "supersampled",
+      "parameter": 4,
+      "failingRasterCases": 297,
+      "worstLocalFootprintWU": {
+        "value": 2.8312964871580526,
+        "radius": 16,
+        "zoom": 0.55,
+        "width": 35,
+        "height": 36,
+        "outward": 2.8312964871580526,
+        "inward": 2.244295349534468
+      }
+    },
+    {
+      "candidate": "supersampled",
+      "parameter": 8,
+      "failingRasterCases": 297,
+      "worstLocalFootprintWU": {
+        "value": 2.8302873261379027,
+        "radius": 24,
+        "zoom": 0.55,
+        "width": 35,
+        "height": 35,
+        "outward": 2.689079016997013,
+        "inward": 2.8302873261379027
+      }
+    }
+  ],
+  "sampledUnavoidableLowerBound": {
+    "value": 1.2362543083561874,
+    "radius": 24,
+    "zoom": 0.55,
+    "width": 35,
+    "height": 36,
+    "pixel": [
+      5,
+      2
+    ],
+    "nearest": -1.2362543083561874,
+    "farthest": 1.2727126070694332
+  },
+  "retainedActualPixelWitness": {
+    "image": "docs\\evidence\\illustrated-world-v14\\filter-r17-055-nearest.png",
+    "sha256": "4f3c7d6ee5de8e28e024de5a6ac6ca287b674bf8bba7bc033c06ee2b5cbc6b26",
+    "pngPixel": [
+      712,
+      485
+    ],
+    "rgb": [
+      0,
+      0,
+      0
+    ],
+    "radius": 17,
+    "width": 36,
+    "height": 36,
+    "signedDistanceRangeWU": [
+      -1.1107226154721204,
+      1.1414197655837057
+    ],
+    "unavoidableBestBinaryErrorWU": 1.1107226154721204
+  },
+  "limitations": [
+    "Local quarter-circle interior only; not global worst-case",
+    "Reference bilinear RGBA model, not new Roblox candidate measurements",
+    "No full geography, channel, crop, protected-site or engine acceptance claimed"
+  ]
+}

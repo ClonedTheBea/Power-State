@@ -5,6 +5,7 @@ return function(player:Player)
  local Country=require(S.Domain.ConstructionCountry);local H=game:GetService("HttpService")
  local function scalar(v:any):string return H:JSONEncode(v)end
  local host=require(S.Services.ConstructionTestService).start()
+ if host.fleet then Country=host.country end
  local checks=0;local function check(v:boolean,why:string)assert(v,why);checks+=1 end
  local function waitFor(fn:()->boolean)
   local deadline=os.clock()+15;repeat task.wait(.05)until fn() or os.clock()>deadline;check(fn(),"Lifecycle deadline")
@@ -24,7 +25,8 @@ return function(player:Player)
   local nextActor=host.inspect(player)
   check(nextActor.state.epoch~=epoch,"Reconnect issues fresh command epoch")
   check(Codec.encode(Country.capture(nextActor.world,nextActor.state),scalar)==Codec.encode(saved.country,scalar),"Reconnect restores exact state without offline progression")
-  local n,outcome=require(S.Services.ConstructionControls).handle(nextActor.state,nextActor.world,player.UserId,
+  local controls:any=if host.fleet then require(S.Services.FleetControls)else require(S.Services.ConstructionControls)
+  local n,outcome=controls.handle(nextActor.state,nextActor.world,player.UserId,
    {version=1,kind="SetGenerator",epoch=epoch,sequence=1,revision=nextActor.state.controlRevision,assetId=nextActor.state.network.generatorId,online=false},os.clock(),true)
   check(outcome=="StaleSession" and n.online==nextActor.state.online,"Old player command cannot control new session")
   local status=nextActor.quotes.handle(player.UserId,{version=1,epoch=nextActor.state.epoch,sequence=1,command="Quote"})

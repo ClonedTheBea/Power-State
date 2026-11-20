@@ -60,6 +60,7 @@ function FeedbackView.create(parent: Instance)
 		root:SetAttribute("OperationsDetail", nil)
 		root:SetAttribute("BankOverview", false)
 		root:SetAttribute("ReinforcementReview", false)
+		root:SetAttribute("FleetReview", false)
 		title.Text = heading
 		title.TextColor3 = if kind == "error" then Theme.error elseif kind == "loading" then Theme.warning else Theme.accent
 		body.Text = message;resizeCanvas()

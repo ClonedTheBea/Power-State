@@ -12,8 +12,28 @@ while game.ReplicatedStorage:GetAttribute("LandscapePurePassed")~=true do
 	game:GetService("RunService").Heartbeat:Wait()
 end
 local fixtures=game.HttpService:JSONDecode((game.ReplicatedStorage:WaitForChild("IllustratedFixtures",10) :: StringValue).Value)
+if game.ReplicatedStorage:GetAttribute("RunOrganicFilterProbe")==true then
+ require(script.Parent.IllustratedWorld.OrganicFilterProbe)(gui,fixtures[1]);return
+end
+if game.ReplicatedStorage:GetAttribute("RunOrganicSoak")==true then
+ if game.ReplicatedStorage:GetAttribute("RunOrganicGroundTests")==true then
+  require(script.Parent.IllustratedWorld["OrganicGround.spec"])(gui,fixtures)
+ end
+ require(script.Parent.IllustratedWorld.OrganicSoak)(gui,fixtures[1]);return
+end
+if game.ReplicatedStorage:GetAttribute("RunOrganicGeometryTests")==true then
+ require(script.Parent.IllustratedWorld["OrganicCoast.spec"])(fixtures)
+ if game.ReplicatedStorage:GetAttribute("OrganicGeometryOnly")==true then return end
+end
+if game.ReplicatedStorage:GetAttribute("RunOrganicGroundTests")==true then
+ require(script.Parent.IllustratedWorld["OrganicGround.spec"])(gui,fixtures)
+ if game.ReplicatedStorage:GetAttribute("OrganicGroundOnly")==true then return end
+end
 task.wait(1)
 require(script.Parent.IllustratedWorld["IllustratedWorld.spec"])(gui,fixtures)
+if game.ReplicatedStorage:GetAttribute("RunContinuousGroundTests")==true then
+ require(script.Parent.IllustratedWorld["ContinuousGround.spec"])(gui,fixtures)
+end
 game.ReplicatedStorage:SetAttribute("IllustratedTestsPassed",true)
 local App=require(script.Parent.Parent.Client.Controllers.AppController)
 local Controller=require(script.Parent.IllustratedWorld.IllustratedController)
@@ -37,6 +57,9 @@ local function capture()
 		local x,y=game.ReplicatedStorage:GetAttribute("IllustratedLocateX"),game.ReplicatedStorage:GetAttribute("IllustratedLocateY")
 		if type(x)=="number" and type(y)=="number" then mounted.mapController.locate(x,y) end
 		proof.setEnabled(string.find(which :: string,"Illustrated",1,true)~=nil)
+		if string.find(which :: string,"Organic",1,true) then proof.setLandscapeMode("Organic")
+  elseif string.find(which :: string,"Ocean",1,true) then proof.setLandscapeMode("Ocean")
+		elseif string.find(which :: string,"Ground",1,true) then proof.setLandscapeMode("Ground") end
 		local selected=game.ReplicatedStorage:GetAttribute("IllustratedSelected")
 		if type(selected)=="number" then mounted.selectAsset(fixture.nodes[selected].id) end
 		print("[Illustrated capture]",which,w,h,"seed",fixture.world.seed)

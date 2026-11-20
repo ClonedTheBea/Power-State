@@ -1,0 +1,121 @@
+2026-11-19T20:39:35.324Z,52945.324219,a920,6,Info [FLog::CreatorOutput] IW12C_ARMED {"RunReinforcementTests":false,"RunRegressionTests":false,"R35FocusOnly":false,"IllustratedWorldProof":true,"RunGroundCapability":true,"RunIllustratedRetained":false,"RunIllustratedServerTests":false,"RunOperationsTests":false}
+2026-11-19T20:39:39.742Z,52949.742188,53d4,6,Info [FLog::CreatorOutput] IW12C_COVERAGE 23552 32 transforms; actual AbsolutePosition/Size; clipped negative positions included
+2026-11-19T20:47:59.253Z,53449.253906,53d4,6,Info [FLog::CreatorOutput] IW12C_COVERAGE 23552 32 transforms; actual AbsolutePosition/Size; clipped negative positions included
+2026-11-19T20:47:59.253Z,53449.253906,53d4,6,Info [FLog::CreatorOutput] IW12C_PREPARATION {"p50":16.599899157881738,"p95":26.951799169182779,"worst":43.95360127091408,"memoryReadyMb":2040.62890625,"frames":133,"memoryStartMb":1898.5078125}
+2026-11-19T20:48:33.285Z,53483.285156,53d4,6,Info [FLog::CreatorOutput] IW12C_COVERAGE 23552 32 transforms; actual AbsolutePosition/Size; clipped negative positions included
+2026-11-19T20:48:33.285Z,53483.285156,53d4,6,Info [FLog::CreatorOutput] IW12C_PREPARATION {"p50":16.626499593257905,"p95":18.176300451159479,"worst":26.209300383925439,"memoryReadyMb":2041.45703125,"frames":150,"memoryStartMb":2028.9921875}
+2026-11-19T20:48:33.316Z,53483.316406,5c3c,6,Info [FLog::CreatorOutput] IW12C_REMOUNT_PASS 1 2033.15625
+2026-11-19T20:48:35.835Z,53485.835938,53d4,6,Info [FLog::CreatorOutput] IW12C_COVERAGE 23552 32 transforms; actual AbsolutePosition/Size; clipped negative positions included
+2026-11-19T20:48:35.835Z,53485.835938,53d4,6,Info [FLog::CreatorOutput] IW12C_PREPARATION {"p50":16.645900905132295,"p95":18.859999254345895,"worst":25.582900270819665,"memoryReadyMb":2050.0078125,"frames":151,"memoryStartMb":2033.1640625}
+2026-11-19T20:48:35.867Z,53485.867188,7f68,6,Info [FLog::CreatorOutput] IW12C_REMOUNT_PASS 2 2041.70703125
+2026-11-19T20:48:38.367Z,53488.367188,53d4,6,Info [FLog::CreatorOutput] IW12C_COVERAGE 23552 32 transforms; actual AbsolutePosition/Size; clipped negative positions included
+2026-11-19T20:48:38.367Z,53488.367188,53d4,6,Info [FLog::CreatorOutput] IW12C_PREPARATION {"p50":16.67650043964386,"p95":17.879700288176538,"worst":25.18399991095066,"memoryReadyMb":2051.3359375,"frames":150,"memoryStartMb":2041.6796875}
+2026-11-19T20:48:38.402Z,53488.402344,7f68,6,Info [FLog::CreatorOutput] IW12C_REMOUNT_PASS 3 2043.0390625
+2026-11-19T20:50:48.398Z,53618.398438,53d4,6,Info [FLog::CreatorOutput] IW12C_COVERAGE 23552 32 transforms; actual AbsolutePosition/Size; clipped negative positions included
+2026-11-19T20:50:48.398Z,53618.398438,53d4,6,Info [FLog::CreatorOutput] IW12C_PREPARATION {"p50":16.65310002863407,"p95":27.08970010280609,"worst":41.33249819278717,"memoryReadyMb":2121.66796875,"frames":133,"memoryStartMb":1952.71875}
+2026-11-19T20:51:04.746Z,53634.746094,8b90,6,Info [FLog::CreatorOutput] IW12C_CANCEL_PASS 2106.828125
+2026-11-19T20:55:47.234Z,53917.234375,a4cc,6,Info [FLog::CreatorOutput] IW12C_GUI Players.missawfulname.PlayerGui.BubbleChat false
+2026-11-19T20:55:47.234Z,53917.234375,a4cc,6,Info [FLog::CreatorOutput] IW12C_GUI Players.missawfulname.PlayerGui.Chat false
+2026-11-19T20:55:47.234Z,53917.234375,a4cc,6,Info [FLog::CreatorOutput] IW12C_GUI Players.missawfulname.PlayerGui.Freecam false
+2026-11-19T20:55:47.234Z,53917.234375,a4cc,6,Info [FLog::CreatorOutput] IW12C_GUI Players.missawfulname.PlayerGui.PowerStateShell false
+2026-11-19T20:55:47.234Z,53917.234375,a4cc,6,Info [FLog::CreatorOutput] IW12C_ATTRS {"RunReinforcementTests":false,"RunIllustratedRetained":false,"IllustratedWorldProof":true,"RunRegressionTests":false,"ContinuousGroundProof":true,"RunOperationsTests":false,"RunIllustratedServerTests":false,"R35FocusOnly":false}
+2026-11-19T20:59:40.140Z,54150.140625,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:122: Ground label binding failed
+2026-11-19T21:02:23.785Z,54313.785156,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:02:23.785Z,54313.785156,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:128: Ground label binding failed
+2026-11-19T21:05:09.976Z,54479.976562,5c3c,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-19T21:05:35.242Z,54505.242188,53d4,6,Info [FLog::CreatorOutput] [Illustrated engine] PASS 3090 assertions; actual four-atlas readiness and synthetic fault cases separately
+2026-11-19T21:05:46.660Z,54516.660156,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 256 192
+2026-11-19T21:05:46.660Z,54516.660156,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:134: Visible ground label binding failed
+2026-11-19T21:07:36.769Z,54626.769531,a958,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-19T21:08:02.054Z,54652.054688,53d4,6,Info [FLog::CreatorOutput] [Illustrated engine] PASS 3090 assertions; actual four-atlas readiness and synthetic fault cases separately
+2026-11-19T21:08:12.355Z,54662.355469,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:08:12.355Z,54662.355469,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.497800290584565,"worst":20.71640081703663,"images":4,"cpuMs":678.1592001207173,"elapsedMs":10157.539999985602,"frames":609}
+2026-11-19T21:08:14.761Z,54664.761719,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:70: Source allocation denied
+2026-11-19T21:08:14.886Z,54664.886719,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 1 17716 470
+2026-11-19T21:08:24.906Z,54674.906250,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:08:24.906Z,54674.906250,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.65030063688755,"worst":20.140400156378747,"images":4,"cpuMs":684.5236000954174,"elapsedMs":9874.570799991488,"frames":592}
+2026-11-19T21:10:26.437Z,54796.437500,7f68,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-19T21:10:51.679Z,54821.679688,53d4,6,Info [FLog::CreatorOutput] [Illustrated engine] PASS 3090 assertions; actual four-atlas readiness and synthetic fault cases separately
+2026-11-19T21:11:01.648Z,54831.648438,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:11:01.648Z,54831.648438,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.50889979302883,"worst":19.932400435209276,"images":4,"cpuMs":659.9371997872368,"elapsedMs":9824.443900026381,"frames":589}
+2026-11-19T21:11:04.054Z,54834.054688,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:78: Source allocation denied
+2026-11-19T21:11:04.183Z,54834.183594,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 1 17740 470
+2026-11-19T21:11:14.312Z,54844.312500,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:11:14.312Z,54844.312500,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.74029992520809,"worst":19.551200792193414,"images":4,"cpuMs":690.5882004648447,"elapsedMs":9991.469600005075,"frames":599}
+2026-11-19T21:11:49.445Z,54879.445312,5c3c,6,Info [FLog::CreatorOutput] IW12C_FAILURE_STATE {"CameraX":81.39999999999998,"ContinuousGroundState":"Ready","ContinuousGroundCacheKey":"illustrated-fixture-2:fe0512aa351b994df1656b88f0d94f1b:sector0,0:g1:c1:t1:image82421581539732:colour1","WorldWidth":1024,"LinksVisible":true,"IllustratedShoreCount":78,"IllustratedMode":"Illustrated (Experimental)","LabelsVisible":true,"ContinuousGroundMode":"Ocean","CohesionActive":false,"PrimaryLayer":"Geography","CameraZoom":0.55,"ContinuousGroundActive":false,"ProofLoadState":"LabelTimedOut","WorldHeight":1024,"CameraY":134.39999999999999,"ProofMode":"Native","IllustratedLoadState":"LabelTimedOut","IllustratedActive":false,"IllustratedVisibleSlots":0,"ZoomBand":"overview"}
+2026-11-19T21:12:47.777Z,54937.777344,7f68,6,Info [FLog::CreatorOutput] IW12C_VIEW 82, 216 726, 832
+2026-11-19T21:15:02.269Z,55072.269531,a968,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-19T21:15:27.585Z,55097.585938,53d4,6,Info [FLog::CreatorOutput] [Illustrated engine] PASS 3090 assertions; actual four-atlas readiness and synthetic fault cases separately
+2026-11-19T21:15:37.972Z,55107.972656,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:15:37.972Z,55107.972656,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.650799825787546,"worst":19.244899973273279,"images":4,"cpuMs":696.3331998558715,"elapsedMs":10241.291599988472,"frames":614}
+2026-11-19T21:15:40.378Z,55110.378906,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:78: Source allocation denied
+2026-11-19T21:15:40.785Z,55110.785156,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 1 17742 470
+2026-11-19T21:15:50.753Z,55120.753906,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:15:50.753Z,55120.753906,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.573000863194467,"worst":20.655300468206407,"images":4,"cpuMs":679.7479003435001,"elapsedMs":9823.093599989079,"frames":589}
+2026-11-19T21:15:53.175Z,55123.175781,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:78: Source allocation denied
+2026-11-19T21:15:53.585Z,55123.585938,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 2 35484 470
+2026-11-19T21:15:53.585Z,55123.585938,53d4,6,Info [FLog::CreatorOutput] IW12C_ENGINE_PASS 35484
+2026-11-19T21:16:03.570Z,55133.570312,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:16:03.570Z,55133.570312,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.588499933481218,"worst":21.799899637699128,"images":4,"cpuMs":684.479400399141,"elapsedMs":9905.821399996057,"frames":594}
+2026-11-19T21:26:04.597Z,55734.597656,7934,6,Info [FLog::CreatorOutput] IW12C_SOAK_PASS {"p50":16.628699377179147,"seconds":601.0111244000145,"p95":17.626499757170678,"cycles":591,"descendants":470,"memoryStartMb":2096.9609375,"worst":270.77779173851016,"memoryEndMb":1987.59375}
+2026-11-19T21:27:36.578Z,55826.578125,a958,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-19T21:28:01.804Z,55851.804688,53d4,6,Info [FLog::CreatorOutput] [Illustrated engine] PASS 3090 assertions; actual four-atlas readiness and synthetic fault cases separately
+2026-11-19T21:28:12.023Z,55862.023438,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:28:12.023Z,55862.023438,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.75120012462139,"worst":20.33510059118271,"images":4,"cpuMs":680.1486006006599,"elapsedMs":10071.982600027695,"frames":604}
+2026-11-19T21:28:14.429Z,55864.429688,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:80: Source allocation denied
+2026-11-19T21:28:15.175Z,55865.175781,7f68,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:106: Chunk allocation denied
+2026-11-19T21:28:36.675Z,55886.675781,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 1 17745 470
+2026-11-19T21:28:46.554Z,55896.554688,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:28:46.554Z,55896.554688,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.504600808024408,"worst":24.723399430513383,"images":4,"cpuMs":672.5277999066748,"elapsedMs":9740.390199993271,"frames":584}
+2026-11-19T21:28:48.964Z,55898.964844,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:80: Source allocation denied
+2026-11-19T21:28:49.707Z,55899.707031,8b90,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:106: Chunk allocation denied
+2026-11-19T21:28:50.054Z,55900.054688,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 2 35489 470
+2026-11-19T21:28:50.054Z,55900.054688,53d4,6,Info [FLog::CreatorOutput] IW12C_ENGINE_PASS 35489
+2026-11-19T21:28:53.253Z,55903.253906,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"cpuWorst":0.20569999469444157,"samples":180,"frameP50":16.600100323557855,"cpuP95":0.12879999121651054,"totalMemoryMb":2008.31640625,"mapDescendants":362,"frameWorst":17.840899527072908,"mode":"Native","frameP95":17.566999420523645,"cpuP50":0.10329997166991234}
+2026-11-19T21:28:56.324Z,55906.324219,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"cpuWorst":1.9509000121615828,"samples":180,"frameP50":16.628099605441095,"cpuP95":1.0578000219538808,"totalMemoryMb":1999.328125,"mapDescendants":470,"frameWorst":18.55890080332756,"mode":"Illustrated","frameP95":17.535999417304994,"cpuP50":0.8017000509425998}
+2026-11-19T21:29:06.253Z,55916.253906,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T21:29:06.253Z,55916.253906,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.474200576543809,"worst":19.47079971432686,"images":4,"cpuMs":684.5680003170855,"elapsedMs":9926.582299987786,"frames":595}
+2026-11-19T21:29:09.253Z,55919.253906,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"cpuWorst":3.7566000246442856,"samples":180,"frameP50":16.606299206614496,"cpuP95":1.823199971113354,"totalMemoryMb":2008.35546875,"mapDescendants":470,"frameWorst":19.164299592375757,"mode":"Ground","frameP95":17.564300447702409,"cpuP50":1.3601999962702394}
+2026-11-19T21:29:12.320Z,55922.320312,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"cpuWorst":2.516400010790676,"samples":180,"frameP50":16.612200066447259,"cpuP95":1.7058999510481954,"totalMemoryMb":2006.0546875,"mapDescendants":470,"frameWorst":17.7816990762949,"mode":"Ocean","frameP95":17.500700429081918,"cpuP50":1.3504000380635262}
+2026-11-19T21:31:14.765Z,56044.765625,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-19T21:31:14.765Z,56044.765625,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.560400068759919,"worst":19.896799698472024,"images":4,"cpuMs":699.3960007675923,"elapsedMs":10141.089499986265,"frames":608}
+2026-11-19T21:32:08.230Z,56098.230469,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-19T21:32:08.230Z,56098.230469,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.63089932501316,"worst":22.73939922451973,"images":4,"cpuMs":713.7488005682826,"elapsedMs":10390.528000018094,"frames":623}
+2026-11-19T21:32:15.097Z,56105.097656,8b90,6,Info [FLog::CreatorOutput] IW12C_CAPTURE_STATE true
+2026-11-19T21:33:20.410Z,56170.410156,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-19T21:33:20.410Z,56170.410156,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.576100304722787,"worst":19.328000023961068,"images":4,"cpuMs":786.9359003962018,"elapsedMs":11689.529000024777,"frames":701}
+2026-11-19T21:33:48.507Z,56198.507812,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 224 224 224
+2026-11-19T21:33:48.511Z,56198.511719,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.674099653959276,"worst":22.33790047466755,"images":4,"cpuMs":681.7842996679246,"elapsedMs":9839.679299970157,"frames":590}
+2026-11-19T21:34:38.609Z,56248.609375,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 160 160 160
+2026-11-19T21:34:38.609Z,56248.609375,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.555300146341325,"worst":35.229600965976718,"images":4,"cpuMs":676.2309995829128,"elapsedMs":9873.662600002717,"frames":591}
+2026-11-19T21:35:31.390Z,56301.390625,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 72 72 72
+2026-11-19T21:35:31.390Z,56301.390625,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.55180023610592,"worst":21.157000213861467,"images":4,"cpuMs":683.9698012336157,"elapsedMs":9939.549900009297,"frames":596}
+2026-11-19T21:36:46.203Z,56376.203125,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 72 72 72
+2026-11-19T21:36:46.203Z,56376.203125,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.559800297021867,"worst":255.70610165596009,"images":4,"cpuMs":699.3049999000505,"elapsedMs":10372.85869999323,"frames":607}
+2026-11-19T21:37:33.035Z,56423.035156,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 96 96 96
+2026-11-19T21:37:33.035Z,56423.035156,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"mapDescendants":470,"p95":17.698200419545175,"worst":23.395700380206109,"images":4,"cpuMs":698.3263013535179,"elapsedMs":10107.29860002175,"frames":606}
+2026-11-19T22:30:55.019Z,59625.019531,a920,6,Info [FLog::CreatorOutput] [Landscape v2 pure] PASS 49008 assertions /128 identity cases; no geography mutation
+2026-11-19T22:31:20.363Z,59650.363281,53d4,6,Info [FLog::CreatorOutput] [Illustrated engine] PASS 3128 assertions; actual four-atlas readiness and synthetic fault cases separately
+2026-11-19T22:31:30.531Z,59660.531250,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-19T22:31:30.531Z,59660.531250,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":474.49090000009167,"writeMs":0.43480005115270617,"elapsedMs":10024.363300006371,"mapDescendants":470,"p95":17.602499574422838,"images":4,"bindingMs":99.52280001016334,"cpuMs":673.420199775137,"worst":21.9052005559206,"frames":601}
+2026-11-19T22:31:32.941Z,59662.941406,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:85: Source allocation denied
+2026-11-19T22:31:33.714Z,59663.714844,3af4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:111: Chunk allocation denied
+2026-11-19T22:31:55.195Z,59685.195312,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 1 17749 470
+2026-11-19T22:32:05.281Z,59695.281250,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-19T22:32:05.281Z,59695.281250,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":290.30569997848945,"writeMs":0.3618999617174268,"elapsedMs":9940.325499977916,"mapDescendants":470,"p95":17.579499632120134,"images":4,"bindingMs":98.58930000336841,"cpuMs":686.0995989409275,"worst":23.819800466299058,"frames":596}
+2026-11-19T22:32:07.687Z,59697.687500,53d4,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:85: Source allocation denied
+2026-11-19T22:32:08.480Z,59698.480469,7b98,6,Warning [FLog::CreatorWarning] Warning: IW12C_GROUND_FAILED Players.missawfulname.PlayerScripts.DevelopmentTests.IllustratedWorld.ContinuousGround:111: Chunk allocation denied
+2026-11-19T22:32:08.812Z,59698.812500,53d4,6,Info [FLog::CreatorOutput] IW12C_FIXTURE_PASS 2 35497 470
+2026-11-19T22:32:08.812Z,59698.812500,53d4,6,Info [FLog::CreatorOutput] IW12C_ENGINE_PASS 35497
+2026-11-19T22:32:12.011Z,59702.011719,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":41.7139892578125,"cpuWorst":0.20790001144632698,"samples":180,"frameP50":16.652900725603105,"cpuP95":0.13480003690347076,"totalMemoryMb":2231.9375,"mapDescendants":362,"frameWorst":18.16689968109131,"mode":"Native","frameP95":17.75209978222847,"cpuP50":0.10140001541003585}
+2026-11-19T22:32:15.078Z,59705.078125,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":41.7139892578125,"cpuWorst":2.1655999589711429,"samples":180,"frameP50":16.6120994836092,"cpuP95":1.03270000545308,"totalMemoryMb":2227.3125,"mapDescendants":470,"frameWorst":18.08840036392212,"mode":"Illustrated","frameP95":17.836900427937509,"cpuP50":0.7878000033088028}
+2026-11-19T22:32:24.828Z,59714.828125,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 192 192 192
+2026-11-19T22:32:24.828Z,59714.828125,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":308.7093000067398,"writeMs":0.3884999896399677,"elapsedMs":9742.24549997598,"mapDescendants":470,"p95":17.85079948604107,"images":4,"bindingMs":98.61129999626428,"cpuMs":657.1093004313298,"worst":19.649900496006013,"frames":584}
+2026-11-19T22:32:27.828Z,59717.828125,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":41.7139892578125,"cpuWorst":2.1901000291109087,"samples":180,"frameP50":16.67949929833412,"cpuP95":1.7269999952986837,"totalMemoryMb":2235.81640625,"mapDescendants":470,"frameWorst":18.046900629997255,"mode":"Ground","frameP95":17.53610000014305,"cpuP50":1.3283000444062055}
+2026-11-19T22:32:30.894Z,59720.894531,53d4,6,Info [FLog::CreatorOutput] IW12C_BENCH {"textureMemoryMb":41.7139892578125,"cpuWorst":3.5947999567724766,"samples":180,"frameP50":16.621600836515428,"cpuP95":1.5983000048436225,"totalMemoryMb":2233.5078125,"mapDescendants":470,"frameWorst":18.092799931764604,"mode":"Ocean","frameP95":17.497900873422624,"cpuP50":1.3425000361166895}
+2026-11-19T22:32:40.695Z,59730.695312,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-19T22:32:40.695Z,59730.695312,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":307.3654000181705,"writeMs":0.3527000080794096,"elapsedMs":9656.79070004262,"mapDescendants":470,"p95":17.552800476551057,"images":4,"bindingMs":99.32219999609515,"cpuMs":649.1289996774867,"worst":20.31010016798973,"frames":579}
+2026-11-19T22:42:41.539Z,60331.539062,a958,6,Info [FLog::CreatorOutput] IW12C_SOAK_PASS {"p50":16.636399552226068,"seconds":600.8295067999861,"p95":17.62229949235916,"cycles":591,"descendants":470,"memoryStartMb":2236.19921875,"worst":242.55569279193879,"memoryEndMb":2213.625}
+2026-11-19T22:43:45.953Z,60395.953125,53d4,6,Info [FLog::CreatorOutput] IW12C_BINDING 256 256 256
+2026-11-19T22:43:45.953Z,60395.953125,53d4,6,Info [FLog::CreatorOutput] IW12C_GROUND_READY {"sourceMs":355.67610000725838,"writeMs":0.4100000369362533,"elapsedMs":9890.865100023802,"mapDescendants":470,"p95":17.732899636030198,"images":4,"bindingMs":100.06810002960265,"cpuMs":671.6935007134453,"worst":28.20580080151558,"frames":594}
+2026-11-19T22:52:56.078Z,60946.078125,a958,6,Info [FLog::CreatorOutput] IW12C_FINAL_DISARMED 10776833313 149564436 149564436 true

@@ -1,0 +1,67 @@
+{
+  "report": {
+    "water_4connected": 1,
+    "land_4connected": 2,
+    "water_8connected": 1,
+    "land_8connected": 2,
+    "changedPixels": 1000,
+    "roundedCorners": 8,
+    "measuredChangedPixelDistanceWu": 6.0,
+    "analyticBoundaryHausdorffBoundWu": 9.941125496954283,
+    "conservativeChangeBandWu": 24,
+    "protectedAnchorCount": 0,
+    "name": "isolated-islands",
+    "seed": null,
+    "provenance": "synthetic adversarial, not a generated country"
+  },
+  "corners": [
+    {
+      "x": 64,
+      "y": 64,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 192,
+      "y": 64,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 64,
+      "y": 192,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 192,
+      "y": 192,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 256,
+      "y": 192,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 320,
+      "y": 192,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 256,
+      "y": 256,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 320,
+      "y": 256,
+      "radius": 24,
+      "minorityLand": true
+    }
+  ]
+}

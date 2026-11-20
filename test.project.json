@@ -2,7 +2,7 @@
   "name": "Power State P1 Tests",
   "tree": {
     "$className": "DataModel",
-    "ReplicatedStorage": { "$attributes": { "RunRegressionTests": false, "IllustratedWorldProof": true }, "Shared": { "$path": "src/shared" } },
+    "ReplicatedStorage": { "$attributes": { "RunRegressionTests": false, "IllustratedWorldProof": true, "ContinuousGroundProof": true }, "Shared": { "$path": "src/shared" } },
     "ServerScriptService": {
       "Server": { "$path": "src/server" },
       "DevelopmentTests": {

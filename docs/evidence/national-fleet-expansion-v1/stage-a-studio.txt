@@ -1,0 +1,113 @@
+2026-11-20T10:50:36.799Z,8856.799805,a42c,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313 and game.CreatorId==149564436 and game:GetService("StudioService"):GetUserId()==149564436 and not game:GetService("RunService"):IsRunning());for k,v in game.ReplicatedStorage:GetAttributes() do assert(not (v==true and (string.find(k,"Real") or string.find(k,"Execution") or string.find(k,"Organic"))),"Unrelated execution gate");end;print("WIND_STAGE_A_PREFLIGHT",game.GameId,game.CreatorId);task.spawn(function()require(game.ServerScriptService.DevelopmentTests.unit.WindGateRunner)()end)
+2026-11-20T10:50:36.804Z,8856.804688,a42c,6,Info [FLog::CreatorOutput] WIND_STAGE_A_PREFLIGHT 10776833313 149564436
+2026-11-20T10:50:36.824Z,8856.824219,a42c,6,Info [FLog::CreatorOutput] [P2b cold] first start 14.250ms; stages {"terrainMs":13.560199993662537,"validationMs":0.6748000159859657,"layoutMs":0.013499986380338669}
+2026-11-20T10:50:37.083Z,8857.083984,a42c,6,Info [FLog::CreatorOutput] [P2b memory] eight retained descriptors: 767.50 KiB/country (allocator/GC noise)
+2026-11-20T10:50:37.122Z,8857.122070,a42c,6,Info [FLog::CreatorOutput] [P2b demand] stepP95=0.0347ms batchP95=0.2562ms
+2026-11-20T10:50:38.717Z,8858.717773,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 100/10000 unique=100 fallback=0
+2026-11-20T10:50:40.300Z,8860.300781,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 200/10000 unique=200 fallback=0
+2026-11-20T10:50:41.885Z,8861.885742,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 300/10000 unique=300 fallback=0
+2026-11-20T10:50:43.431Z,8863.431641,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 400/10000 unique=400 fallback=0
+2026-11-20T10:50:44.976Z,8864.976562,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 500/10000 unique=500 fallback=0
+2026-11-20T10:50:46.537Z,8866.537109,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 600/10000 unique=600 fallback=0
+2026-11-20T10:50:48.120Z,8868.120117,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 700/10000 unique=700 fallback=0
+2026-11-20T10:50:49.743Z,8869.743164,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 800/10000 unique=800 fallback=0
+2026-11-20T10:50:51.365Z,8871.365234,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 900/10000 unique=900 fallback=0
+2026-11-20T10:50:52.933Z,8872.933594,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 1000/10000 unique=1000 fallback=0
+2026-11-20T10:50:54.575Z,8874.575195,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 1100/10000 unique=1100 fallback=0
+2026-11-20T10:50:56.161Z,8876.161133,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 1200/10000 unique=1200 fallback=0
+2026-11-20T10:50:57.749Z,8877.749023,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 1300/10000 unique=1300 fallback=0
+2026-11-20T10:50:59.395Z,8879.395508,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 1400/10000 unique=1400 fallback=0
+2026-11-20T10:51:00.984Z,8880.984375,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 1500/10000 unique=1500 fallback=0
+2026-11-20T10:51:02.563Z,8882.563477,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 1600/10000 unique=1600 fallback=0
+2026-11-20T10:51:04.194Z,8884.194336,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 1700/10000 unique=1700 fallback=0
+2026-11-20T10:51:05.764Z,8885.764648,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 1800/10000 unique=1800 fallback=0
+2026-11-20T10:51:07.380Z,8887.380859,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 1900/10000 unique=1900 fallback=0
+2026-11-20T10:51:08.969Z,8888.969727,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 2000/10000 unique=2000 fallback=0
+2026-11-20T10:51:10.556Z,8890.556641,3668,6,Info [FLog::CreatorOutput] [P2b sweep] 2100/10000 unique=2100 fallback=0
+2026-11-20T10:51:12.167Z,8892.167969,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 2200/10000 unique=2200 fallback=0
+2026-11-20T10:51:13.790Z,8893.790039,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 2300/10000 unique=2300 fallback=0
+2026-11-20T10:51:15.345Z,8895.345703,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 2400/10000 unique=2400 fallback=0
+2026-11-20T10:51:16.921Z,8896.921875,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 2500/10000 unique=2500 fallback=0
+2026-11-20T10:51:18.525Z,8898.525391,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 2600/10000 unique=2600 fallback=0
+2026-11-20T10:51:20.111Z,8900.111328,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 2700/10000 unique=2700 fallback=0
+2026-11-20T10:51:21.729Z,8901.729492,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 2800/10000 unique=2800 fallback=0
+2026-11-20T10:51:23.297Z,8903.297852,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 2900/10000 unique=2900 fallback=0
+2026-11-20T10:51:24.867Z,8904.867188,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 3000/10000 unique=3000 fallback=0
+2026-11-20T10:51:26.441Z,8906.441406,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 3100/10000 unique=3100 fallback=0
+2026-11-20T10:51:28.004Z,8908.004883,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 3200/10000 unique=3200 fallback=0
+2026-11-20T10:51:29.581Z,8909.581055,4874,6,Info [FLog::CreatorOutput] [P2b sweep] 3300/10000 unique=3300 fallback=0
+2026-11-20T10:51:31.183Z,8911.183594,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 3400/10000 unique=3400 fallback=0
+2026-11-20T10:51:32.757Z,8912.757812,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 3500/10000 unique=3500 fallback=0
+2026-11-20T10:51:34.314Z,8914.314453,9b00,6,Info [FLog::CreatorOutput] [P2b sweep] 3600/10000 unique=3600 fallback=0
+2026-11-20T10:51:35.885Z,8915.885742,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 3700/10000 unique=3700 fallback=0
+2026-11-20T10:51:37.448Z,8917.448242,104c,6,Info [FLog::CreatorOutput] [P2b sweep] 3800/10000 unique=3800 fallback=0
+2026-11-20T10:51:39.012Z,8919.012695,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 3900/10000 unique=3900 fallback=0
+2026-11-20T10:51:40.588Z,8920.588867,9b00,6,Info [FLog::CreatorOutput] [P2b sweep] 4000/10000 unique=4000 fallback=0
+2026-11-20T10:51:42.177Z,8922.177734,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 4100/10000 unique=4100 fallback=0
+2026-11-20T10:51:43.762Z,8923.762695,104c,6,Info [FLog::CreatorOutput] [P2b sweep] 4200/10000 unique=4200 fallback=0
+2026-11-20T10:51:45.355Z,8925.355469,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 4300/10000 unique=4300 fallback=0
+2026-11-20T10:51:46.909Z,8926.909180,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 4400/10000 unique=4400 fallback=0
+2026-11-20T10:51:48.488Z,8928.488281,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 4500/10000 unique=4500 fallback=0
+2026-11-20T10:51:50.071Z,8930.071289,104c,6,Info [FLog::CreatorOutput] [P2b sweep] 4600/10000 unique=4600 fallback=0
+2026-11-20T10:51:51.687Z,8931.687500,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 4700/10000 unique=4700 fallback=0
+2026-11-20T10:51:53.320Z,8933.320312,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 4800/10000 unique=4800 fallback=0
+2026-11-20T10:51:54.936Z,8934.936523,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 4900/10000 unique=4900 fallback=0
+2026-11-20T10:51:56.569Z,8936.569336,3668,6,Info [FLog::CreatorOutput] [P2b sweep] 5000/10000 unique=5000 fallback=0
+2026-11-20T10:51:58.212Z,8938.212891,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 5100/10000 unique=5100 fallback=0
+2026-11-20T10:51:59.776Z,8939.776367,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 5200/10000 unique=5200 fallback=0
+2026-11-20T10:52:01.359Z,8941.359375,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 5300/10000 unique=5300 fallback=0
+2026-11-20T10:52:02.930Z,8942.930664,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 5400/10000 unique=5400 fallback=0
+2026-11-20T10:52:04.490Z,8944.490234,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 5500/10000 unique=5500 fallback=0
+2026-11-20T10:52:06.054Z,8946.054688,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 5600/10000 unique=5600 fallback=0
+2026-11-20T10:52:07.601Z,8947.601562,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 5700/10000 unique=5700 fallback=0
+2026-11-20T10:52:09.171Z,8949.171875,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 5800/10000 unique=5800 fallback=0
+2026-11-20T10:52:10.818Z,8950.818359,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 5900/10000 unique=5900 fallback=0
+2026-11-20T10:52:12.399Z,8952.399414,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 6000/10000 unique=6000 fallback=0
+2026-11-20T10:52:14.018Z,8954.018555,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 6100/10000 unique=6100 fallback=0
+2026-11-20T10:52:15.589Z,8955.589844,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 6200/10000 unique=6200 fallback=0
+2026-11-20T10:52:17.169Z,8957.169922,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 6300/10000 unique=6300 fallback=0
+2026-11-20T10:52:18.726Z,8958.726562,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 6400/10000 unique=6400 fallback=0
+2026-11-20T10:52:20.286Z,8960.286133,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 6500/10000 unique=6500 fallback=0
+2026-11-20T10:52:21.856Z,8961.856445,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 6600/10000 unique=6600 fallback=0
+2026-11-20T10:52:23.415Z,8963.415039,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 6700/10000 unique=6700 fallback=0
+2026-11-20T10:52:24.978Z,8964.978516,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 6800/10000 unique=6800 fallback=0
+2026-11-20T10:52:26.566Z,8966.566406,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 6900/10000 unique=6900 fallback=0
+2026-11-20T10:52:28.129Z,8968.129883,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 7000/10000 unique=7000 fallback=0
+2026-11-20T10:52:29.717Z,8969.717773,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 7100/10000 unique=7100 fallback=0
+2026-11-20T10:52:31.306Z,8971.306641,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 7200/10000 unique=7200 fallback=0
+2026-11-20T10:52:32.923Z,8972.923828,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 7300/10000 unique=7300 fallback=0
+2026-11-20T10:52:34.504Z,8974.504883,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 7400/10000 unique=7400 fallback=0
+2026-11-20T10:52:36.070Z,8976.070312,9b00,6,Info [FLog::CreatorOutput] [P2b sweep] 7500/10000 unique=7500 fallback=0
+2026-11-20T10:52:37.667Z,8977.667969,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 7600/10000 unique=7600 fallback=0
+2026-11-20T10:52:39.281Z,8979.281250,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 7700/10000 unique=7700 fallback=0
+2026-11-20T10:52:40.842Z,8980.842773,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 7800/10000 unique=7800 fallback=0
+2026-11-20T10:52:42.424Z,8982.424805,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 7900/10000 unique=7900 fallback=0
+2026-11-20T10:52:43.991Z,8983.991211,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 8000/10000 unique=8000 fallback=0
+2026-11-20T10:52:44.416Z,8984.416016,a42c,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313 and game.CreatorId==149564436 and not game:GetService("RunService"):IsRunning());task.spawn(function()require(game.ServerScriptService.DevelopmentTests.unit["WindMigrationReadiness.spec"])()end)
+2026-11-20T10:52:45.588Z,8985.588867,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 8100/10000 unique=8100 fallback=0
+2026-11-20T10:52:47.156Z,8987.156250,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 8200/10000 unique=8200 fallback=0
+2026-11-20T10:52:48.750Z,8988.750977,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 8300/10000 unique=8300 fallback=0
+2026-11-20T10:52:48.802Z,8988.802734,8544,6,Info [FLog::CreatorOutput] WIND_SCHEMA_GATE {"nextStep":114,"rejection":"ServerScriptService.Server.Domain.Economy:45: Settlement cursor","cutoverStep":113,"proposedSimulationBytes":4511,"profileBytes":7436,"result":"Approval required: baseline simulation absent from W5 exact fields","baselineBytes":970}
+2026-11-20T10:52:50.368Z,8990.368164,3668,6,Info [FLog::CreatorOutput] [P2b sweep] 8400/10000 unique=8400 fallback=0
+2026-11-20T10:52:51.966Z,8991.966797,649c,6,Info [FLog::CreatorOutput] [P2b sweep] 8500/10000 unique=8500 fallback=0
+2026-11-20T10:52:53.538Z,8993.538086,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 8600/10000 unique=8600 fallback=0
+2026-11-20T10:52:55.101Z,8995.101562,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 8700/10000 unique=8700 fallback=0
+2026-11-20T10:52:56.695Z,8996.695312,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 8800/10000 unique=8800 fallback=0
+2026-11-20T10:52:58.258Z,8998.258789,adbc,6,Info [FLog::CreatorOutput] [P2b sweep] 8900/10000 unique=8900 fallback=0
+2026-11-20T10:52:59.861Z,8999.861328,104c,6,Info [FLog::CreatorOutput] [P2b sweep] 9000/10000 unique=9000 fallback=0
+2026-11-20T10:53:01.470Z,9001.470703,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 9100/10000 unique=9100 fallback=0
+2026-11-20T10:53:03.050Z,9003.050781,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 9200/10000 unique=9200 fallback=0
+2026-11-20T10:53:04.686Z,9004.686523,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 9300/10000 unique=9300 fallback=0
+2026-11-20T10:53:06.273Z,9006.273438,9a00,6,Info [FLog::CreatorOutput] [P2b sweep] 9400/10000 unique=9400 fallback=0
+2026-11-20T10:53:07.836Z,9007.836914,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 9500/10000 unique=9500 fallback=0
+2026-11-20T10:53:09.445Z,9009.445312,518c,6,Info [FLog::CreatorOutput] [P2b sweep] 9600/10000 unique=9600 fallback=0
+2026-11-20T10:53:11.000Z,9011.000977,8544,6,Info [FLog::CreatorOutput] [P2b sweep] 9700/10000 unique=9700 fallback=0
+2026-11-20T10:53:12.566Z,9012.566406,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 9800/10000 unique=9800 fallback=0
+2026-11-20T10:53:14.154Z,9014.154297,2d8c,6,Info [FLog::CreatorOutput] [P2b sweep] 9900/10000 unique=9900 fallback=0
+2026-11-20T10:53:15.721Z,9015.721680,a42c,6,Info [FLog::CreatorOutput] [P2b sweep] 10000/10000 unique=10000 fallback=0
+2026-11-20T10:53:15.724Z,9015.724609,518c,6,Info [FLog::CreatorOutput] [P2b gates] unique=10000/10000 fallback=0 cpuP95=16.589ms maxEncoded=43705 samples=2667 dayMWh=75.457983 peakMW=3.811
+2026-11-20T10:53:15.724Z,9015.724609,518c,6,Info [FLog::CreatorOutput] [P2b distributions] rotations=[2482,2460,2589,2469] names=[1205,1258,1292,1255,1244,1219,1236,1291]
+2026-11-20T10:53:15.724Z,9015.724609,518c,6,Info [FLog::CreatorOutput] [Power State P2b world] PASS: 2916780 assertions
+2026-11-20T10:53:15.738Z,9015.738281,518c,6,Info [FLog::CreatorOutput] [National Fleet wind site] PASS 930005 checks; 10000 accepted worlds and four reservation rotations
+2026-11-20T10:54:44.948Z,9104.948242,a42c,6,Info [FLog::CreatorOutput] > assert(game.GameId==10776833313 and not game:GetService("RunService"):IsRunning());local original=game.ServerScriptService.DevelopmentTests.unit["WindMigrationReadiness.spec"];local fresh=original:Clone();fresh.Name="WindReadinessRepeat";fresh.Parent=original.Parent;task.spawn(function()local ok,err=pcall(require(fresh));fresh:Destroy();assert(ok,err)end)
+2026-11-20T10:54:45.615Z,9105.615234,adbc,6,Info [FLog::CreatorOutput] WIND_SCHEMA_GATE {"nextStep":114,"profileBytes":7436,"proposedSimulationBytes":4511,"fullRingEntries":1440,"rejection":"ServerScriptService.Server.Domain.Economy:45: Settlement cursor","cutoverStep":113,"fullRingCountryBytes":96305,"fullRingSimulationBytes":89092,"result":"Approval required: baseline simulation absent from W5 exact fields","baselineBytes":970}

@@ -1,0 +1,60 @@
+{
+  "allowanceWU": 1,
+  "gate": "FAIL / not accepted",
+  "measurements": [
+    {
+      "image": "filter-r17-180-lossless.png",
+      "zoom": 1.8,
+      "filter": "Default",
+      "outwardPixelCentre": [
+        1.206439388199847,
+        710,
+        491,
+        4
+      ],
+      "inwardPixelCentre": [
+        0.979130732670729,
+        711,
+        498,
+        250
+      ],
+      "outwardFullPixelExtent": 1.5962163566248186
+    },
+    {
+      "image": "filter-r17-180-nearest.png",
+      "zoom": 1.8,
+      "filter": "Pixelated",
+      "outwardPixelCentre": [
+        0.4269325641923487,
+        709,
+        492,
+        255
+      ],
+      "inwardPixelCentre": [
+        0.33194615364559965,
+        717,
+        508,
+        0
+      ],
+      "outwardFullPixelExtent": 0.8166777805055965
+    },
+    {
+      "image": "filter-r17-055-nearest.png",
+      "zoom": 0.55,
+      "filter": "Pixelated",
+      "outwardPixelCentre": [
+        -0.07533030028516308,
+        714,
+        486,
+        255
+      ],
+      "inwardPixelCentre": [
+        0.07533030028520926,
+        717,
+        489,
+        0
+      ],
+      "outwardFullPixelExtent": 1.1523048905506386
+    }
+  ]
+}

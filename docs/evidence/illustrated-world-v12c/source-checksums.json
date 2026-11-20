@@ -1,0 +1,15 @@
+{
+  "note": "Final local code/source fingerprints; runtime evidence separately timestamped",
+  "files": {
+    "assets/illustrated-world-v12a-ground/temperate-ground-v12a.png": "107448465ac25fc182841da2eeb706bec04a2774401641161301745393d3f1e2",
+    "tests/integration/IllustratedWorld/ScreenGridEdges.luau": "286af8f6f6189014545a80445cae53959cbf97eeda206e4b165ed100459fbfca",
+    "tests/integration/IllustratedWorld/ContinuousGround.luau": "8c35dc14023467787200a3982ce13bb497a9291330a561c1fad4737a7b841796",
+    "tests/integration/IllustratedWorld/ContinuousGround.spec.luau": "db6446130aede933af4b0e82d04b3d42bf5737c3cffcc7a05fd2b1ce0b82e822",
+    "tests/integration/IllustratedWorld/IllustratedController.luau": "d20e9b68dfe14d7dc6819378f50b3b5a4580f1b962d8ccfd221153cc5fcb09a7",
+    "src/client/Views/Map/GeneratedTerrain.luau": "afb530298ef8452edd033bafb3254db906d8c6c62b56589315ea97dac2e3d1bd",
+    "tests/integration/GroundCapability.client.luau": "19a023eec1efd9623be52323cc7159eb1531f93b7485fbed3c32bc8ae3f37805",
+    "tests/integration/IllustratedRun.client.luau": "c582e7c14494849aee69a107e56cb1e0a8261ea188eaea02aec93baf58063210",
+    "test.project.json": "dfa70d35c60ec1a5946edeeeef0dc08b5e12afaf2ef5bff4a58b3a835a815484",
+    "scripts/ValidateIllustratedRenderer.py": "0642b1089733371c2df1dc8bdd87290e714a66adce1e3578df15b7a6e622041c"
+  }
+}

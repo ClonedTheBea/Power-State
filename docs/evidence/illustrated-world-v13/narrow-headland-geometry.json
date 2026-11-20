@@ -1,0 +1,43 @@
+{
+  "report": {
+    "water_4connected": 1,
+    "land_4connected": 1,
+    "water_8connected": 1,
+    "land_8connected": 1,
+    "changedPixels": 500,
+    "roundedCorners": 4,
+    "measuredChangedPixelDistanceWu": 6.0,
+    "analyticBoundaryHausdorffBoundWu": 9.941125496954283,
+    "conservativeChangeBandWu": 24,
+    "protectedAnchorCount": 0,
+    "name": "narrow-headland",
+    "seed": null,
+    "provenance": "synthetic adversarial, not a generated country"
+  },
+  "corners": [
+    {
+      "x": 128,
+      "y": 64,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 192,
+      "y": 64,
+      "radius": 24,
+      "minorityLand": true
+    },
+    {
+      "x": 128,
+      "y": 192,
+      "radius": 24,
+      "minorityLand": false
+    },
+    {
+      "x": 192,
+      "y": 192,
+      "radius": 24,
+      "minorityLand": false
+    }
+  ]
+}

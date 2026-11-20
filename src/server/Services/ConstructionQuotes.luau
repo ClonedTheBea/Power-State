@@ -3,6 +3,9 @@
 local Project=require(script.Parent.Parent.Domain.ConstructionProject)
 local Quotes={}
 function Quotes.create(deps:any)
+ local project=deps.project or Project
+ local receipt=deps.receipt or function(c:any):any return c.construction.receipt end
+ local topology=deps.topology or function(c:any):number return c.construction.topologyRevision end
  local quote:any=nil;local pending=false;local outcome="Available";local sequence=0
  local buckets:any={};local acceptedId:string?=nil;local suspendedAt=0;local suspension=0
  local api={}
@@ -23,9 +26,9 @@ function Quotes.create(deps:any)
  function api.status():any
   local c=deps.country()
   if quote and not pending and deps.now()>=quote.expires then outcome="QuoteExpired"end
-  return {state=if pending then "Saving" elseif c.construction.receipt then (if outcome=="Built" then "Built" else "AlreadyBuilt") else outcome,
+  return {state=if pending then "Saving" elseif receipt(c) then (if outcome=="Built" then "Built" else "AlreadyBuilt") else outcome,
    quoteId=if quote then quote.id else nil,expiresIn=if quote then math.max(0,quote.expires-deps.now()) else 0,
-   priceMinor=Project.PRICE,bufferMinor=Project.BUFFER,bankMinor=c.bank.balanceMinor,
+   priceMinor=project.PRICE,bufferMinor=project.BUFFER,bankMinor=c.bank.balanceMinor,
    nextSequence=sequence+1,suspensionSeconds=suspension}
  end
  function api.handle(actor:number,payload:any):any
@@ -33,13 +36,14 @@ function Quotes.create(deps:any)
   if payload.command=="Status"then return api.status()end
   if pending then return api.status()end
   local c=deps.country()
-  if c.construction.receipt then outcome="AlreadyBuilt";return api.status()end
+  if receipt(c) then outcome="AlreadyBuilt";return api.status()end
+  if deps.eligible and not deps.eligible(c)then outcome="DistrictRequired";quote=nil;return api.status()end
   if payload.command=="Quote"then
-   Project.validateSite(c)
-   quote={id=deps.id(),operationId=deps.id(),expires=deps.now()+30,topology=c.construction.topologyRevision}
-   outcome=if c.bank.balanceMinor>=125000 then "Available"else "InsufficientCredits"
+   project.validateSite(c)
+   quote={id=deps.id(),operationId=deps.id(),expires=deps.now()+30,topology=topology(c)}
+   outcome=if c.bank.balanceMinor>=project.PRICE+project.BUFFER then "Available"else "InsufficientCredits"
   elseif not quote or payload.quoteId~=quote.id or deps.now()>=quote.expires then outcome="QuoteExpired"
-  elseif quote.topology~=c.construction.topologyRevision then outcome="Unavailable"
+  elseif quote.topology~=topology(c) then outcome="Unavailable"
   else
    local ok,why=deps.build(quote.operationId)
    if ok then pending=true;acceptedId=quote.operationId;suspendedAt=deps.now();outcome="Saving";quote=nil
@@ -50,11 +54,14 @@ function Quotes.create(deps:any)
  function api.tick()
   if not pending then return end
   local status=deps.saveStatus();local p=deps.profile()
-  if p and p.country.construction.receipt and p.country.construction.receipt.operationId==acceptedId and deps.canResume()then
+  if p and receipt(p.country) and receipt(p.country).operationId==acceptedId and deps.canResume()then
    deps.install(p);suspension=deps.now()-suspendedAt;pending=false;outcome="Built"
   elseif status.state=="Suspended" or status.state=="Released" then
    pending=false;outcome="Unavailable";quote=nil
   end
+ end
+ function api.invalidate()
+  if not pending then quote=nil;outcome="QuoteExpired"end
  end
  return api
 end

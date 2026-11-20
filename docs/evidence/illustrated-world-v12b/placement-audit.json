@@ -1,0 +1,761 @@
+{
+  "method": "Conservative sprite rectangle versus NW categorical mask; two exported fixtures, not a full gameplay-legality proof. Transparent margins included. Overhang candidates additionally tested at source texel centres with alpha >=16; not engine filtering.",
+  "fixtures": [
+    {
+      "seed": "12fee3f76be963c09033cdfd9ccffb36",
+      "countryId": "illustrated-fixture-1",
+      "nodes": [
+        {
+          "id": "illustrated-fixture-1:0,0:generator",
+          "anchorLand": true
+        },
+        {
+          "id": "illustrated-fixture-1:0,0:substation",
+          "anchorLand": true
+        },
+        {
+          "id": "illustrated-fixture-1:0,0:settlement",
+          "anchorLand": true
+        },
+        {
+          "id": "illustrated-fixture-1:b:1",
+          "anchorLand": true
+        }
+      ],
+      "entries": [
+        {
+          "id": "asset:illustrated-fixture-1:0,0:generator",
+          "art": "gas",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            442.0,
+            634.6666666666666,
+            140,
+            140
+          ],
+          "nonlandCells": [
+            [
+              6,
+              10
+            ],
+            [
+              6,
+              11
+            ],
+            [
+              6,
+              12
+            ]
+          ],
+          "alpha16VisibleTexelsOverNonland": 0,
+          "alpha16VisibleTexelsTotal": 17681
+        },
+        {
+          "id": "asset:illustrated-fixture-1:0,0:substation",
+          "art": "substation",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            472.0,
+            474.6666666666667,
+            80,
+            80
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "asset:illustrated-fixture-1:0,0:settlement",
+          "art": "town",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            447.0,
+            257.3333333333333,
+            130,
+            130
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "asset:illustrated-fixture-1:b:1",
+          "art": "village",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            622.75,
+            245.41666666666669,
+            130,
+            130
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "pylon:1",
+          "art": "pylon",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            496.0,
+            612.2666666666667,
+            32,
+            32
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "pylon:2",
+          "art": "pylon",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            496.0,
+            420.26666666666665,
+            32,
+            32
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "pylon:3",
+          "art": "pylon",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            563.2,
+            295.46666666666664,
+            32,
+            32
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:4:5",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            214.0,
+            268.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:1:1",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            31.0,
+            43.400000000000006,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:11:11",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            661.0,
+            687.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:4:2",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            251.0,
+            103.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:3:1",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            175.0,
+            27.400000000000006,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:11:6",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            671.0,
+            373.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:4:1",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            262.0,
+            18.400000000000006,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:12:3",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            738.0,
+            168.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:9:6",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            536.0,
+            370.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:6:2",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            363.0,
+            87.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:6:1",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            358.0,
+            2.4000000000000057,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:5:6",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            297.0,
+            339.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:2:5",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            87.0,
+            285.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:3:6",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            154.0,
+            368.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:12:11",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            763.0,
+            673.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:9:2",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            532.0,
+            78.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:11:10",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            698.0,
+            608.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:11:8",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            676.0,
+            494.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:10:2",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            621.0,
+            109.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:2:2",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            122.0,
+            102.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:6:3",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            348.0,
+            172.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:10:1",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            624.0,
+            16.400000000000006,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:5:8",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            274.0,
+            488.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:1:3",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            37.0,
+            133.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:10:9",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            605.0,
+            567.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        }
+      ]
+    },
+    {
+      "seed": "fe0512aa351b994df1656b88f0d94f1b",
+      "countryId": "illustrated-fixture-2",
+      "nodes": [
+        {
+          "id": "illustrated-fixture-2:0,0:generator",
+          "anchorLand": true
+        },
+        {
+          "id": "illustrated-fixture-2:0,0:substation",
+          "anchorLand": true
+        },
+        {
+          "id": "illustrated-fixture-2:0,0:settlement",
+          "anchorLand": true
+        },
+        {
+          "id": "illustrated-fixture-2:b:1",
+          "anchorLand": true
+        }
+      ],
+      "entries": [
+        {
+          "id": "asset:illustrated-fixture-2:0,0:generator",
+          "art": "gas",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            250.0,
+            442.6666666666667,
+            140,
+            140
+          ],
+          "nonlandCells": [
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              5,
+              6
+            ],
+            [
+              6,
+              6
+            ]
+          ],
+          "alpha16VisibleTexelsOverNonland": 0,
+          "alpha16VisibleTexelsTotal": 17681
+        },
+        {
+          "id": "asset:illustrated-fixture-2:0,0:substation",
+          "art": "substation",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            472.0,
+            474.6666666666667,
+            80,
+            80
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "asset:illustrated-fixture-2:0,0:settlement",
+          "art": "town",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            639.0,
+            449.3333333333333,
+            130,
+            130
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "asset:illustrated-fixture-2:b:1",
+          "art": "village",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            622.75,
+            629.4166666666666,
+            130,
+            130
+          ],
+          "nonlandCells": [
+            [
+              9,
+              10
+            ],
+            [
+              9,
+              11
+            ]
+          ],
+          "alpha16VisibleTexelsOverNonland": 0,
+          "alpha16VisibleTexelsTotal": 12977
+        },
+        {
+          "id": "pylon:1",
+          "art": "pylon",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            371.2,
+            487.46666666666664,
+            32,
+            32
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "pylon:2",
+          "art": "pylon",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            563.2,
+            487.46666666666664,
+            32,
+            32
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "pylon:3",
+          "art": "pylon",
+          "group": "assets",
+          "anchorLand": true,
+          "bounds": [
+            688.0,
+            554.6666666666667,
+            32,
+            32
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:2:8",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            87.0,
+            461.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:13:9",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            792.0,
+            546.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:13:11",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            818.0,
+            680.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:13:7",
+          "art": "fields",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            822.0,
+            428.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:12:12",
+          "art": "forest",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            752.0,
+            762.0,
+            120,
+            120
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:6:1",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            368.0,
+            16.400000000000006,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:10:1",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            630.0,
+            2.4000000000000057,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:14:6",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            884.0,
+            324.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:14:10",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            889.0,
+            585.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:8:1",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            483.0,
+            31.400000000000006,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:14:4",
+          "art": "hill-low-a",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            890.0,
+            214.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        },
+        {
+          "id": "land-v2:6:2",
+          "art": "hill-low-b",
+          "group": "decorations",
+          "anchorLand": true,
+          "bounds": [
+            381.0,
+            109.4,
+            96,
+            96
+          ],
+          "nonlandCells": []
+        }
+      ]
+    }
+  ]
+}

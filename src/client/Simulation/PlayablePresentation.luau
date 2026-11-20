@@ -16,6 +16,13 @@ function Presentation.attach(app:any,current:()->any,healthy:()->boolean,request
   local names={};for _,n in s.nodes do names[n.id]=n.name end;names[s.proposedNode.id]=s.proposedNode.name
   for _,line in s.lines do table.insert(connections,string.format("%s → %s: %.3f / %.0f MW",names[line.from],names[line.to],math.abs(r.flows[line.id] or 0),line.capacity))end
   if s.built then table.insert(connections,string.format("Town → district: %.3f / 1 MW",r.flows[s.proposedLine.id] or 0))end
+  if s.fleet and s.fleet.built then
+   table.insert(connections,string.format("Wind → substation: %.3f / 2 MW",math.abs(r.flows[s.fleet.line.id]or 0)))
+   table.insert(connections,"\nFLEET OUTLOOK · current controls\nCapacity comparison, not guaranteed routed delivery or income.")
+   for _,point in s.fleet.forecast or {}do
+    table.insert(connections,string.format("+%d min: demand %.3f MW · wind available %.3f MW · capacity margin %+.3f MW",point.offsetMinutes,point.demandKW/1000,point.windAvailableKW/1000,point.capacityMarginKW/1000))
+   end
+  end
   app.showFeedback("Country overview",string.format("Delivered / demand: %.3f / %.3f MW\nUnserved: %.3f MW\nGenerator: %s\nBank: %s\n\nCustomers pay for electricity delivered. Running the generator incurs fuel and operating costs. Connect the surveyed district to serve more customers.\n\nFake saves last only while this Test server runs. Stop Play loses progress.",r.deliveredMW,r.demandMW,r.unmetMW,if s.online then "On" else "Off",Bank.exact(s))..table.concat(connections,"\n"),source)
   v.feedback.root:SetAttribute("ConstructionOverview",false);v.feedback.root:SetAttribute("ConstructionBank",false)
  end

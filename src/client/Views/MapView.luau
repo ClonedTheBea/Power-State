@@ -85,7 +85,7 @@ function MapView.create(parent: Instance, preview: Types.Preview)
 		renderTerrain(x, y, zoom, size); band = Geometry.band(band, zoom)
 		connections.Visible = root:GetAttribute("LinksVisible") == true
 		for index, link in preview.links do
-			local a, b = byId[link.from], byId[link.to]
+			local a, b = link.fromPoint or byId[link.from], link.toPoint or byId[link.to]
 			local ax, ay, bx, by = x + a.x * zoom, y + a.y * zoom, x + b.x * zoom, y + b.y * zoom
 			local dx, dy = bx - ax, by - ay
 			local line = linkFrames[index]

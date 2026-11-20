@@ -1,0 +1,7 @@
+2026-11-19T20:13:38.769Z,51388.769531,a958,6,Info [FLog::CreatorOutput] IW12B_OWNER {"sale":false,"creator":{"Name":"missawfulname","CreatorTargetId":149564436,"Id":149564436,"HasVerifiedBadge":false,"CreatorType":"User"},"id":98440954924603,"kind":13,"public":false,"name":"temperate-ground-v12a"}
+2026-11-19T20:13:39.535Z,51389.535156,a920,6,Info [FLog::CreatorOutput] IW12B_TEXTURE rbxassetid://82421581539732
+2026-11-19T20:14:29.664Z,51439.664062,a920,6,Info [FLog::CreatorOutput] IW12B_IMAGE_META {"creator":{"Name":"missawfulname","CreatorTargetId":149564436,"Id":149564436,"HasVerifiedBadge":false,"CreatorType":"User"},"id":82421581539732,"kind":1,"public":false,"name":"temperate-ground-v12a"}
+2026-11-19T20:14:30.546Z,51440.546875,a968,6,Info [FLog::CreatorOutput] IW12B_RGBA 1024 1024 0797df255894c517e38a249805ddc712f747d8ddb737855259a65eb536cc9cbd elapsedMs 881.1266000266187
+2026-11-19T20:19:35.753Z,51745.753906,a920,6,Info [FLog::CreatorOutput] IW12B_PROBE_ARMED
+2026-11-19T20:19:38.628Z,51748.628906,a920,6,Warning [FLog::CreatorWarning] Warning: IW12B_CAPABILITY_FAIL EditableImage is not accessible. Go to the Security Tab in Experience Settings to enable this API.
+2026-11-19T20:20:37.886Z,51807.886719,a958,6,Info [FLog::CreatorOutput] IW12B_PROBE_DISARMED

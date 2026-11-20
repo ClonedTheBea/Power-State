@@ -1,0 +1,9 @@
+{
+  "tests/integration/IllustratedWorld/OceanBoundary.luau": "679b1404e836227f16e1c3cb4d9f7faf8ca5f7d74d1b21a08ddb85498e677156",
+  "tests/integration/IllustratedWorld/ContinuousGround.luau": "af01b2cbf9443b9a15306cdfc02b8cbdb53f8227255784471dc914d2f8b57aec",
+  "tests/integration/IllustratedWorld/ContinuousGround.spec.luau": "ff2964e80755afd220210aa836764e03e51fb1db715c8629165d5ae73b21dc92",
+  "tests/integration/IllustratedWorld/FrameInvestigation.luau": "4a31a23e1f91f8439bf100fcd3f062d0143b46a6f824a2dd2ae17f67e8d480cd",
+  "scripts/StudyOrganicCoast.py": "6c1653eba11a5812c3fbacae643deb4951770ab47725402338460c1f481b3f8f",
+  "assets/illustrated-world-v12a-ground/temperate-ground-v12a.png": "107448465ac25fc182841da2eeb706bec04a2774401641161301745393d3f1e2",
+  "assets/illustrated-world-v12a-ground/fixtures.json": "0c3846f0d8fcde33134141d453e796baf528e15a4198669420f8cb9693558de4"
+}

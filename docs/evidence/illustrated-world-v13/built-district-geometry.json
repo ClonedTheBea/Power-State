@@ -1,0 +1,242 @@
+{
+  "report": {
+    "water_4connected": 3,
+    "land_4connected": 3,
+    "water_8connected": 3,
+    "land_8connected": 3,
+    "changedPixels": 2147,
+    "roundedCorners": 37,
+    "measuredChangedPixelDistanceWu": 5.0,
+    "analyticBoundaryHausdorffBoundWu": 9.941125496954283,
+    "conservativeChangeBandWu": 24,
+    "protectedAnchorCount": 4,
+    "protectedRouteCorridors": 3,
+    "name": "built-district",
+    "seed": "fe0512aa351b994df1656b88f0d94f1b",
+    "provenance": "same actual descriptor; district anchor protected, no purchase"
+  },
+  "corners": [
+    {
+      "x": 832,
+      "y": 64,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 896,
+      "y": 64,
+      "radius": 17,
+      "minorityLand": true
+    },
+    {
+      "x": 896,
+      "y": 128,
+      "radius": 17,
+      "minorityLand": false
+    },
+    {
+      "x": 960,
+      "y": 128,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 64,
+      "y": 192,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 960,
+      "y": 192,
+      "radius": 17,
+      "minorityLand": false
+    },
+    {
+      "x": 64,
+      "y": 256,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 128,
+      "y": 256,
+      "radius": 17,
+      "minorityLand": false
+    },
+    {
+      "x": 512,
+      "y": 256,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 832,
+      "y": 256,
+      "radius": 18,
+      "minorityLand": false
+    },
+    {
+      "x": 128,
+      "y": 320,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 512,
+      "y": 320,
+      "radius": 17,
+      "minorityLand": true
+    },
+    {
+      "x": 768,
+      "y": 320,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 832,
+      "y": 320,
+      "radius": 19,
+      "minorityLand": false
+    },
+    {
+      "x": 704,
+      "y": 384,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 768,
+      "y": 384,
+      "radius": 17,
+      "minorityLand": false
+    },
+    {
+      "x": 256,
+      "y": 640,
+      "radius": 18,
+      "minorityLand": false
+    },
+    {
+      "x": 448,
+      "y": 640,
+      "radius": 21,
+      "minorityLand": false
+    },
+    {
+      "x": 640,
+      "y": 640,
+      "radius": 18,
+      "minorityLand": false
+    },
+    {
+      "x": 256,
+      "y": 832,
+      "radius": 17,
+      "minorityLand": true
+    },
+    {
+      "x": 448,
+      "y": 832,
+      "radius": 17,
+      "minorityLand": true
+    },
+    {
+      "x": 640,
+      "y": 832,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 704,
+      "y": 832,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 128,
+      "y": 896,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 256,
+      "y": 896,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 320,
+      "y": 896,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 512,
+      "y": 896,
+      "radius": 17,
+      "minorityLand": true
+    },
+    {
+      "x": 704,
+      "y": 896,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 832,
+      "y": 896,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 128,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 256,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 320,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 384,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 448,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 512,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 576,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": true
+    },
+    {
+      "x": 832,
+      "y": 960,
+      "radius": 16,
+      "minorityLand": false
+    }
+  ]
+}

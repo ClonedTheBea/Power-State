@@ -18,9 +18,9 @@ for name in ['PowerState','PowerStateTests']:
  tree=ET.parse(root/'.build'/f'{name}.rbxlx')
  names=[e.text for e in tree.findall('.//Item/Properties/string[@name="Name"]')]
  source='\n'.join(e.text or '' for e in tree.findall('.//Properties/*[@name="Source"]'))
- for module in ['IllustratedAtlasCatalog','IllustratedSectorDescriptor','IllustratedSectorRenderer','IllustratedAtlasSession','IllustratedController','IllustratedRun']:
+ for module in ['IllustratedAtlasCatalog','IllustratedSectorDescriptor','IllustratedSectorRenderer','IllustratedAtlasSession','IllustratedController','IllustratedRun','ContinuousGround','ContinuousGround.spec','ScreenGridEdges','GroundCapability','OceanBoundary','FrameInvestigation','OrganicCoast','OrganicCoast.spec','OrganicRibbon','OrganicGround.spec','OrganicSoak','OrganicFilterProbe']:
   check(name+' isolation '+module,(module in names)==(name=='PowerStateTests'))
- for asset in ['96236605552471','133413370857301']:
+ for asset in ['96236605552471','133413370857301','82421581539732']:
   check(name+' ID isolation '+asset,(asset in source)==(name=='PowerStateTests'))
 for p in (root/'tests/integration/IllustratedWorld').glob('*.luau'):
  s=p.read_text()

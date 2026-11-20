@@ -1,18 +1,20 @@
 # National Fleet Expansion — First Player-Owned Wind Farm
 
-19 November 2026. **Proposal for owner approval, not implementation authority.** Operations v1.3 authorizes this design only. No schema4 code, permanent purchase, real profile read/write, grant or new runtime technology is introduced. Rowanbridge is not an input to the calculations.
+19 November 2026 proposal. **W1–W7 approved by the owner on20 November2026 for pure/fake-storage Test implementation only; real execution remains excluded.** The later [implementation gate report](NATIONAL-FLEET-EXPANSION-V1-VALIDATION.md) records the historical W5 gate; D242 now approves the single immutable `legacySimulation` addition, subject to full-profile correctness and size acceptance. Historical proposal wording follows.
 
-## Decisions requiring approval
+**Historical status:** Operations v1.3 authorizes this design only. No schema4 code, permanent purchase, real profile read/write, grant or new runtime technology is introduced. Rowanbridge is not an input to the calculations.
+
+## Owner-approved fake Test decisions (D240, amended by D242)
 
 | ID | Recommendation | Owner decision |
 | --- | --- | --- |
-| W1 | One surveyed `starter-wind-v1` project:2MW wind generator plus2MW connection, once/country, district prerequisite | Pending |
-| W2 |4,000 Credits total including survey/connection; Bank ≥4,250 and preserve next-step gross operating reservation; no separate survey fee | Pending;8,000 remains historical hypothesis |
-| W3 | Reserved western future pad at local(320,704), rotated with saved starter layout; route north to(320,512), then east to substation(512,512) | Pending; validates existing geometry, never changes terrain or starter coordinates |
-| W4 | Approved wind technology:2MW nameplate, existing v1 deterministic availability kernel,0 Credits/MWh and6 Credits/simulated hour while On; min0/cap in100kW increments; no ramp/storage/export | Technology model already approved for Training; permanent-country application pending |
-| W5 | Frozen namespaced wind-seed adapter and per-country region `starter-0-0`; schema4/ledger4/economy2/fleet1, no historical re-billing | Pending |
-| W6 | Fenced atomic whole-country Build with immutable semantic receipt and exact reconciliation; enable multi-source kernel only after confirmed purchase | Pending |
-| W7 | Separate pure/fake gate, schema4 readiness/approval, migration approval, then separate real purchase approval | Pending; no real execution implied by this proposal |
+| W1 | One surveyed `starter-wind-v1` project:2MW wind generator plus2MW connection, once/country, district prerequisite | Approved for fake Test |
+| W2 |4,000 Credits total including survey/connection; Bank ≥4,250 and preserve next-step gross operating reservation; no separate survey fee | Approved;8,000 remains historical hypothesis |
+| W3 | Reserved western future pad at local(320,704), rotated with saved starter layout; route north to(320,512), then east to substation(512,512) | Approved; preserves terrain and starter coordinates |
+| W4 | Approved wind technology:2MW nameplate, existing v1 deterministic availability kernel,0 Credits/MWh and6 Credits/simulated hour while On; min0/cap in100kW increments; no ramp/storage/export | Approved for owned-country fake Test |
+| W5 | Frozen namespaced wind-seed adapter and per-country region `starter-0-0`; schema4/ledger4/economy2/fleet1, no historical re-billing | Approved with D242 immutable legacySimulation addition |
+| W6 | Fenced atomic whole-country Build with immutable semantic receipt and exact reconciliation; enable multi-source kernel only after confirmed purchase | Approved for fake storage |
+| W7 | Separate pure/fake gate, schema4 readiness/approval, migration approval, then separate real purchase approval | Approved; real execution remains excluded |
 
 ## Player progression and site contract
 
@@ -52,7 +54,7 @@ After4,000 capital, seven-day comparative Bank is+5,343.97 Credits. In the32-see
 
 From250 Credits after a district purchase to4,250 eligibility requires4,000 earned Credits: about27.17 simulated hours at the reference gas-only daily average. At one completed minute per real second that is about27 active minutes, before accounting for transaction suspension, service delays or altered generator controls; ordinary menus keep simulation running. A stricter funds reservation wins if greater than250; no prospective sales fund the purchase.
 
-Without the district, reference gas-only net2,778.32/day implies about34.55 simulated hours to earn4,000; W1 deliberately makes district progression a prerequisite. Capping wind to500kW reduces savings to732.73/day and extrapolated payback131.02h. A disconnected but On wind unit costs144/day with no fuel savings. Wind Off yields no wind cost/benefit; calm periods can make On operation temporarily loss-making. Do not alter these rates to guarantee investment returns. Recommendation4,000 is a testable progression hypothesis, not an approved price.
+Without the district, reference gas-only net2,778.32/day implies about34.55 simulated hours to earn4,000; W1 deliberately makes district progression a prerequisite. Capping wind to500kW reduces savings to732.73/day and extrapolated payback131.02h. A disconnected but On wind unit costs144/day with no fuel savings. Wind Off yields no wind cost/benefit; calm periods can make On operation temporarily loss-making. Do not alter these rates to guarantee investment returns. The owner subsequently approved4,000 Credits for this fake Test proof under D240; gameplay balance and real execution remain separate acceptance questions.
 
 ## Exact proposed schema4 cutover
 
@@ -67,7 +69,7 @@ Start only from a freshly validated schema3 profile with the approved identity/v
 | recipe/seed/generation versions, settlement, original network, deltas, simulation/history, construction/receipt |Bit-for-bit canonical preservation |
 | profile/country revision, epoch/lease/lastCommit |Pure preview unchanged; future fenced Migration commit advances only contractually specified revisions, no simulation step |
 
-`fleet` fields: `version=1`, `compositionVersion=1`, `cutoverStep=current simulation.step`, `windVersion=1`, `windSeed`, `windRegion`, `investmentSerial=0`, `windReceipt=nil`, `windState=nil`, `units={ [existing generatorId]=gasUnit }`, `baseline={ legacyEconomy, legacyBank, legacyConstruction, migrationOperationId }`. Baseline economics/Bank/construction are complete canonical immutable copies for audit/validation, not a restorable live profile or an independent balance. `migrationOperationId` is prepared once for approved execution; pure design previews use an explicit preview marker and cannot be saved.
+`fleet` fields: `version=1`, `compositionVersion=1`, `cutoverStep=current simulation.step`, `windVersion=1`, `windSeed`, `windRegion`, `investmentSerial=0`, `windReceipt=nil`, `windState=nil`, `units={ [existing generatorId]=gasUnit }`, `baseline={ legacyEconomy, legacyBank, legacyConstruction, legacySimulation, migrationOperationId }`. Baseline economics/Bank/construction/simulation are complete canonical immutable copies for audit/validation, not a restorable live profile or an independent balance. `migrationOperationId` is prepared once for approved execution; pure design previews use an explicit preview marker and cannot be saved.
 
 `gasUnit` starts with exact old generatedKwMinutes, onlineSteps, variable/fixed expenses and both fractional remainders, costVersion1, on=current generator state, capKW=5000. No new wind unit is created during migration. National delivered/sales meters and their carries remain the existing values. Legacy `generatedKwMinutes` becomes explicitly total generation under economy2; per-unit meters separately sum to it. `onlineSteps` remains the legacy gas online count for compatibility; new units have independent counts. Existing aggregate fixed/variable expense fields become sums of source totals under the new version; the v1 fixed-cost formula must not be reapplied to total fleet On time.
 

@@ -1,0 +1,20 @@
+[
+  {
+    "timestamp": "2026-11-20T09:11:08.164Z",
+    "state": "Destroyed",
+    "bindingAndDestroyMs": 0.9976000292226672,
+    "images": 4
+  },
+  {
+    "timestamp": "2026-11-20T09:11:43.062Z",
+    "state": "Destroyed",
+    "bindingAndDestroyMs": 1.0093000018969178,
+    "images": 4
+  },
+  {
+    "timestamp": "2026-11-20T09:12:06.711Z",
+    "state": "Destroyed",
+    "bindingAndDestroyMs": 0.7120000082068145,
+    "images": 4
+  }
+]

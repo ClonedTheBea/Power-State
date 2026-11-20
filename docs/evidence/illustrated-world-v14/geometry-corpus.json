@@ -1,0 +1,11 @@
+{
+  "status": "PASS local independent geometry gate; not Luau/Studio/filtering acceptance",
+  "fullResolutionLocalCombinations": 4608,
+  "seeds": 10000,
+  "rotations": 4,
+  "corpusRasterWorldUnits": 8,
+  "acceptedCorners": 627049,
+  "maximumCorners": 40,
+  "analyticDeviation": 9.941125496954283,
+  "seconds": 84.87514700001338
+}

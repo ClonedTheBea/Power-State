@@ -46,7 +46,7 @@ function Directory.create(app:any,current:()->any,toggle:()->(),healthy:()->bool
   if not wide then detail.Position=UDim2.fromOffset(0,listHeight+12)end
   content.Size=UDim2.fromOffset(width,if wide then math.max(listHeight,detailHeight)else listHeight+12+detailHeight)
  end
- for i=1,4 do
+ for i=1,(if current().fleet then 5 else 4)do
   local button=C.button(grid,"");button.Visible=false;button.TextSize=16
   local icon=Icon.create(button,"Infrastructure",Theme.grid);icon.Position=UDim2.new(0,14,.5,-10)
   local name=C.label(button,"",17);name.Font=Theme.fontBold;name.Position=UDim2.fromOffset(48,8);name.Size=UDim2.new(1,-60,.5,-8);name.TextWrapped=false;name.TextTruncate=Enum.TextTruncate.AtEnd
@@ -59,21 +59,28 @@ function Directory.create(app:any,current:()->any,toggle:()->(),healthy:()->bool
   app.bind(button,function()category=name;refresh()end)
  end
  app.bind(locate,function()if selected then app.navigate("Map");app.selectAsset(selected);for _,node in records do if node.id==selected then app.mapController.locate(node.x,node.y)end end end end)
- app.bind(control,toggle)
+ app.bind(control,function()
+  if current().fleet and current().fleet.built then
+   app.navigate("Map");if selected then app.selectAsset(selected)end
+  else toggle()end
+ end)
  refresh=function()
   local s=current();local active=app.state.route=="Infrastructure";root.Visible=active
   for _,obj in {v.pageTitle,v.pageTag,v.pageBody,v.pageBack}do obj.Visible=not active end
   if not active then return end
   records={};for _,node in s.nodes do table.insert(records,node)end
   if s.built then table.insert(records,s.proposedNode)end
+  if s.fleet and s.fleet.built then table.insert(records,s.fleet.node)end
   selected=selected or s.generatorId
   local index=0;local chosen:any=nil
   for _,node in records do
    if node.id==selected then chosen=node end
-   local kind=if node.id==s.generatorId then "Generators" elseif node.kind=="Substation" then "Network" else "Customers"
+   local unit=if s.fleet then s.fleet.units[node.id]else nil
+   local kind=if node.id==s.generatorId or unit then "Generators" elseif node.kind=="Substation" then "Network" else "Customers"
    if category=="All" or category==kind then
     index+=1;local slot=slots[index];slot.id=node.id;slot.button.Visible=true
-    local status=if node.id==s.generatorId then (if s.online then "On" else "Off")..string.format(" · %.3f / 5 MW",s.report.outputMW) elseif node.kind=="Substation" then "10 MW routing capacity" else "Connected customers"
+    local status=if unit and s.fleet.built then (if unit.on then "On"else "Off")..string.format(" · cap %.1f MW",unit.capKW/1000)
+     elseif node.id==s.generatorId then (if s.online then "On" else "Off")..string.format(" · %.3f / 5 MW",s.report.outputMW) elseif node.kind=="Substation" then "10 MW routing capacity" else "Connected customers"
     slot.button:SetAttribute("AccessibleLabel",node.name.." · "..status);slot.name.Text=node.name;slot.status.Text=status;C.selected(slot.button,selected==node.id)
    end
   end
@@ -87,6 +94,15 @@ function Directory.create(app:any,current:()->any,toggle:()->(),healthy:()->bool
    else "Customer connection\nDelivery and unmet demand are shown on the Grid inspector.\nNo maintenance or population-growth model is active."
   control.Visible=isGenerator;control.Active=healthy() and not s.suspended;control.Selectable=control.Active
   control.Text=if s.online then "Switch Off" else "Switch On"
+  local unit=if s.fleet and s.fleet.built then s.fleet.units[selected]else nil
+  if unit then
+   local wind=selected~=s.generatorId;local capacity=if wind then 2 else 5
+   local output=if s.fleet.dispatch then s.fleet.dispatch.sources[selected]else nil
+   track.Visible=true;fill.Size=UDim2.fromScale(math.clamp((output or 0)/(capacity*1000),0,1),1)
+   info.Text=string.format("%s · %s · cap %.1f MW\nLast completed output: %s\n%s\nUse generator controls on the Grid.",if wind then "Wind generation"else "Gas generation",if unit.on then "On"else "Off",unit.capKW/1000,
+    if output then string.format("%.3f MW",output/1000)else "awaiting interval",if wind then "Variable wind · 0/MWh + 6 Credits/hour On"else "80 Credits/MWh + 10 Credits/hour On")
+   control.Visible=true;control.Text="Generator controls"
+  end
   locate.Active=chosen~=nil;arrange()
  end
  local changed=root:GetPropertyChangedSignal("AbsoluteSize"):Connect(arrange);local scaled=v.root:GetAttributeChangedSignal("TextScale"):Connect(arrange);root.Destroying:Once(function()changed:Disconnect();scaled:Disconnect()end)

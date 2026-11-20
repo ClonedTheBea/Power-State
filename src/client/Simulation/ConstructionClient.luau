@@ -14,7 +14,8 @@ function Client.mount(playerGui:PlayerGui)
  local remote=folder:WaitForChild("Snapshot") :: RemoteEvent
  local intent=folder:WaitForChild("Intent") :: RemoteEvent
  local current:any=nil;local app:any=nil;local received=0;local nextSequence=1;local destroyed=false
- local controlSequence=1
+ local subscriptionId=game:GetService("HttpService"):GenerateGUID(false)
+ local controlSequence=1;local windSequence=1;local ownedFleet:any=nil
  local update:(()->())?=nil
  local loading=Instance.new("ScreenGui");loading.Name="CountryLoading";loading.ResetOnSpawn=false
  local loadingText=C.label(loading,"Loading your country · fake Test saves",18,Theme.text)
@@ -22,22 +23,25 @@ function Client.mount(playerGui:PlayerGui)
  loading.Parent=playerGui
  local loadState="Loading"
  local connection=remote.OnClientEvent:Connect(function(value:any)
-  if destroyed or type(value)~="table" or value.version~=1 or value.profile~="P3c" then return end
+  -- RemoteEvents may retain queued replies while no GUI listener is mounted.
+  -- A new subscription must not adopt an obsolete session from that backlog.
+  if destroyed or type(value)~="table" or value.version~=1 or value.profile~="P3c" or value.subscriptionId~=subscriptionId then return end
   if value.loadState then loadState=value.loadState;loadingText.Text="Country "..loadState.." · fake Test saves";return end
   if current and (value.epoch~=current.epoch or value.revision<current.revision)then return end
   current=value;received=os.clock();controlSequence=math.max(controlSequence,value.nextSequence);nextSequence=math.max(nextSequence,value.construction.nextSequence)
+  if value.fleet then windSequence=math.max(windSequence,value.fleet.project.nextSequence)end
   if update then update()end
  end)
- intent:FireServer({version=1,command="Subscribe"})
+ intent:FireServer({version=1,command="Subscribe",subscriptionId=subscriptionId})
  local began=os.clock();local retryAt=began+1.1
  while not current and os.clock()-began<60 do
   task.wait(.1)
   if not current and os.clock()>=retryAt then
-   intent:FireServer({version=1,command="Subscribe"});retryAt=os.clock()+1.1
+   intent:FireServer({version=1,command="Subscribe",subscriptionId=subscriptionId});retryAt=os.clock()+1.1
   end
  end
  loading:Destroy()
- if not current then connection:Disconnect();intent:FireServer({version=1,command="Unsubscribe"});error("Country unavailable: "..loadState)end
+ if not current then connection:Disconnect();intent:FireServer({version=1,command="Unsubscribe",subscriptionId=subscriptionId});error("Country unavailable: "..loadState)end
  local existing=playerGui:FindFirstChild("PowerStateShell");if existing then existing:Destroy()end
  local preview=ViewModel.create(current)
  preview.metrics[1].label="BANK · LIVE";preview.metrics[1].detail="Fake storage · confirmed checkpoint shown in review"
@@ -46,6 +50,11 @@ function Client.mount(playerGui:PlayerGui)
  local p=current.proposedNode
  table.insert(preview.nodes,{id=p.id,name=p.name,kind="Settlement",x=p.x,y=p.y,description="Surveyed district · preview only until saved"})
  table.insert(preview.links,{from=current.proposedLine.from,to=p.id})
+ if current.fleet then
+  local f=current.fleet;local w=f.node
+  table.insert(preview.nodes,{id=w.id,name=w.name,kind=w.kind,x=w.x,y=w.y,description="Surveyed wind investment · built only after confirmed save"})
+  for i=1,2 do table.insert(preview.links,{from=f.line.from,to=f.line.to,fromPoint=f.route[i],toPoint=f.route[i+1]})end
+ end
  app=App.mount(playerGui,preview)
  local view=app.view
 
@@ -55,7 +64,8 @@ function Client.mount(playerGui:PlayerGui)
  button.Size=UDim2.new(1,-8,0,44);button.LayoutOrder=3;button.ZIndex=11
  local confirm=C.button(view.feedback.root,"Build for 1,000 Credits")
  confirm.Size=UDim2.new(1,-32,0,44);confirm.Position=UDim2.new(0,16,1,-60);confirm.ZIndex=32
- local categories=require(script.Parent.Parent.Views.ProjectCategories).create(app,"ConstructionOverview",confirm)
+ local categories=require(script.Parent.Parent.Views.ProjectCategories).create(app,"ConstructionOverview",confirm,
+  if current.fleet then function()if ownedFleet then ownedFleet.open()end end else nil)
  local scroll=view.feedback.root:FindFirstChild("Message") :: ScrollingFrame
  -- Shared FeedbackView owns full-string sizing for construction and Bank alike.
  local function send(command:string)
@@ -107,6 +117,11 @@ function Client.mount(playerGui:PlayerGui)
   categories.refresh()
   if playable then playable.refresh()end
   if directory then directory.refresh()end
+  if ownedFleet then
+   ownedFleet.refresh()
+   if current.fleet.built then playable.toggle.Visible=false end
+   if current.report.pending then view.kpis.cards[2].value.Text="Awaiting dispatch"end
+  end
  end
  app.bind(button,function()
   send("Quote");app.showFeedback("Connect new district",text(),button,"info")
@@ -132,15 +147,34 @@ function Client.mount(playerGui:PlayerGui)
  view.navigation.buttons.Build:SetAttribute("LabelOverride","Build")
  view.drawer.buttons.Build.Text="Build";view.drawer.buttons.Infrastructure.Text="Infrastructure"
  directory=require(script.Parent.InfrastructureDirectory).create(app,function()return current end,requestToggle,function()return os.clock()-received<3 end)
+ if current.fleet then
+  ownedFleet=require(script.Parent.OwnedFleetPresentation).create(app,function()return current end,function()return os.clock()-received<3 end,
+   function()return os.clock()-received end,
+   function(command)
+    local sequence=windSequence;windSequence+=1
+    intent:FireServer({version=1,epoch=current.epoch,sequence=sequence,command=command,projectId="starter-wind-v1",
+     quoteId=if command=="Confirm"then current.fleet.project.quoteId else nil})
+   end,
+   function(assetId,online,capKW)
+    local sequence=controlSequence;controlSequence+=1
+    intent:FireServer({version=1,kind="SetFleetGenerator",epoch=current.epoch,sequence=sequence,revision=current.controlRevision,
+     assetId=assetId,online=online,capKW=capKW})
+   end)
+ end
  update=function()app.present()end
  app.setPresenter(refresh)
- local beat=game:GetService("RunService").Heartbeat:Connect(function()if os.clock()-received>=3 or (confirm.Visible and view.feedback.root.Visible and current.construction.expiresIn>0 and os.clock()-received>=current.construction.expiresIn)then refresh()end end)
+ local beat=game:GetService("RunService").Heartbeat:Connect(function()
+  local stale=os.clock()-received>=3
+  local expired=confirm.Visible and view.feedback.root.Visible and current.construction.expiresIn>0 and os.clock()-received>=current.construction.expiresIn
+  local windExpired=ownedFleet and ownedFleet.confirm.Visible and current.fleet.project.expiresIn>0 and os.clock()-received>=current.fleet.project.expiresIn
+  if stale or expired or windExpired then refresh()end
+ end)
  local function cleanup()
   if destroyed then return end;destroyed=true;mounted=nil
-  intent:FireServer({version=1,command="Unsubscribe"});connection:Disconnect();beat:Disconnect();update=nil
+  intent:FireServer({version=1,command="Unsubscribe",subscriptionId=subscriptionId});connection:Disconnect();beat:Disconnect();update=nil
  end
  view.gui.Destroying:Once(cleanup)
- mounted={app=app,directory=directory,button=button,confirm=confirm,toggle=playable.toggle,requestToggle=requestToggle,current=function()return current end,
+ mounted={app=app,directory=directory,button=button,confirm=confirm,toggle=playable.toggle,ownedFleet=ownedFleet,requestToggle=requestToggle,current=function()return current end,
   destroy=function()cleanup();app.destroy()end}
  return mounted
 end

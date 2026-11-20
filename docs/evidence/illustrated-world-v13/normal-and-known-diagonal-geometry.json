@@ -1,0 +1,62 @@
+{
+  "report": {
+    "water_4connected": 4,
+    "land_4connected": 2,
+    "water_8connected": 3,
+    "land_8connected": 1,
+    "changedPixels": 427,
+    "roundedCorners": 7,
+    "measuredChangedPixelDistanceWu": 4.0,
+    "analyticBoundaryHausdorffBoundWu": 9.941125496954283,
+    "conservativeChangeBandWu": 24,
+    "protectedAnchorCount": 4,
+    "protectedRouteCorridors": 3,
+    "name": "normal-and-known-diagonal",
+    "seed": "12fee3f76be963c09033cdfd9ccffb36",
+    "provenance": "actual exported descriptor"
+  },
+  "corners": [
+    {
+      "x": 896,
+      "y": 128,
+      "radius": 17,
+      "minorityLand": false
+    },
+    {
+      "x": 192,
+      "y": 512,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 448,
+      "y": 640,
+      "radius": 18,
+      "minorityLand": false
+    },
+    {
+      "x": 192,
+      "y": 704,
+      "radius": 16,
+      "minorityLand": false
+    },
+    {
+      "x": 320,
+      "y": 704,
+      "radius": 17,
+      "minorityLand": true
+    },
+    {
+      "x": 320,
+      "y": 832,
+      "radius": 18,
+      "minorityLand": true
+    },
+    {
+      "x": 640,
+      "y": 832,
+      "radius": 17,
+      "minorityLand": false
+    }
+  ]
+}

@@ -20,10 +20,15 @@ function Bank.text(snapshot:any):string
   "", "STARTING FUNDS", "Opening grant: "..money(b.openingGrantMinor).." · Once only; not sales",
   "", "OPERATING BUFFER", "Operating buffer: "..money(b.operatingBufferMinor).." within this Bank; usable for operation.",
   if b.balanceMinor<b.operatingBufferMinor then "Low buffer · Existing funds must cover the next operating interval." else "Buffer funded · No separate wallet or protected minimum.",
-  if e.fundingReason then "Generator Off · Insufficient operating funds. No automatic restart or bailout." elseif snapshot.online then "Generator On · Costs apply only to completed online minutes." else "Generator Off · No operating charges.",
+  if e.fundingReason then "Generation Off · Insufficient operating funds. No automatic restart or bailout."
+   elseif snapshot.fleet then "Fleet costs follow each generator's On state and actual production."
+   elseif snapshot.online then "Generator On · Costs apply only to completed online minutes." else "Generator Off · No operating charges.",
   if snapshot.suspended then "Suspended · No billing while simulation is unavailable." else "Income factor: 1× · Opening this overview does not pause simulation.",
   "", "Hourly statements · newest first · maximum 24 completed hours plus current partial",
  }
+ if snapshot.fleet then
+  table.insert(lines,1,"Wind investment: "..money(b.windConstructionSpentMinor).." · capital, excluded from operating net")
+ end
  if #e.statements==0 then table.insert(lines,"No completed economic intervals yet.")end
  for i=#e.statements,1,-1 do
   local row=e.statements[i]
