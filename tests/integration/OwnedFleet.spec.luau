@@ -1,6 +1,7 @@
 --!strict
 -- Normal owned-country transport and bound GUI actions, not Training imports.
-return function(playerGui:PlayerGui,resumeBuilt:boolean?)
+return function(playerGui:PlayerGui,resumeBuilt:boolean?,expectedPrice:number?)
+ local price=expectedPrice or 400000;assert(price==400000 or price==200000,"Supported catalogue test")
  assert(game:GetService("RunService"):IsStudio()and game.GameId==10776833313,"Owned fleet Test diagnostics only")
  local Client=require(script.Parent.Parent.Client.Simulation.ConstructionClient)
  if Client.active()then Client.active().destroy()end
@@ -14,13 +15,15 @@ return function(playerGui:PlayerGui,resumeBuilt:boolean?)
  local wind=live.current().fleet.node.id;local gas=live.current().generatorId
  if not resumeBuilt then
  check(live.current().built and not live.current().fleet.built,"Earned district prerequisite, wind not granted")
- check(live.current().bankMinor>=425000,"Wind funded by prior genuine fake intervals")
+ check(live.current().bankMinor>=price+25000,"Wind funded by prior genuine fake intervals")
  local initialStep=live.current().step
  for _,size in {{1366,704},{768,960},{360,580},{640,300}}do
   app.view.root.Size=UDim2.fromOffset(size[1],size[2]);app.selectAsset(wind);task.wait(.3)
   check(ui.review.Visible and ui.review.AbsoluteSize.Y>=44,"Responsive wind review target")
   local camera=app.view.map.root:GetAttribute("CameraX")
   app.actions[ui.review]();waitFor(function()return live.current().fleet.project.state=="Available"end,5)
+  check(live.current().fleet.project.priceMinor==price,"Server catalogue price reaches GUI")
+  check(ui.confirm.Active and ui.confirm.Text=="Build for "..require(game.ReplicatedStorage.Shared.Util.CurrencyFormat).format(price),"Version-aware price and affordability action")
   check(ui.confirm.AbsoluteSize.Y>=44 and ui.confirm.AbsoluteSize.X>=44,"44px purchase target")
   check(app.keyboard.valid(app.view.feedback.close),"Accessible wind modal dismissal")
   check(app.state.selectedId==wind and app.view.map.root:GetAttribute("CameraX")==camera,"Review preserves camera and selection")
@@ -35,9 +38,9 @@ return function(playerGui:PlayerGui,resumeBuilt:boolean?)
  local camera=app.view.map.root:GetAttribute("CameraX")
  app.actions[ui.confirm]();app.actions[ui.confirm]();app.actions[app.view.feedback.close]()
  waitFor(function()return live.current().fleet.built end,10)
- check(live.current().finance.bank.windConstructionSpentMinor==400000 and live.current().bankMinor>=25000,"One capital debit and operating buffer")
+ check(live.current().finance.bank.windConstructionSpentMinor==price and live.current().bankMinor>=25000,"One capital debit and operating buffer")
  check(app.state.selectedId==wind and app.view.map.root:GetAttribute("CameraX")==camera,"Committed construction preserves map")
- else check(live.current().fleet.built and live.current().finance.bank.windConstructionSpentMinor==400000,"Resume only the already confirmed purchase, without resetting fake funds")end
+ else check(live.current().fleet.built and live.current().finance.bank.windConstructionSpentMinor==price,"Resume only the already confirmed purchase, without resetting fake funds")end
  waitFor(function()return live.current().fleet.dispatch~=nil end,5)
  check(live.current().report.sinks[1].id==live.current().demandId and live.current().report.sinks[2].id==live.current().proposedNode.id,"Town/district public ordering preserved")
  check(live.current().fleet.dispatch.sources[wind]>=0 and live.current().fleet.dispatch.sources[gas]>=0,"Separate real solver source outputs")

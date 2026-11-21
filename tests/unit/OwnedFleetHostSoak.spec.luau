@@ -1,6 +1,7 @@
 --!strict
 -- Explicit opt-in normal fake host endurance; never a real persistence adapter.
-return function(player:Player)
+return function(player:Player,expectedPrice:number?)
+ local price=expectedPrice or 400000;assert(price==400000 or price==200000,"Supported catalogue soak")
  assert(game:GetService("RunService"):IsStudio()and game.GameId==10776833313,"Isolated Test only")
  local S=game.ServerScriptService.Server;local H=game:GetService("HttpService")
  local host=require(S.Services.ConstructionTestService).start();assert(host.fleet,"Owned fleet required")
@@ -15,7 +16,7 @@ return function(player:Player)
   local at=os.clock();local c=host.country.capture(a.world,a.state);local bytes=#C.encode(c,scalar)
   capturePeak=math.max(capturePeak,(os.clock()-at)*1000);maxBytes=math.max(maxBytes,bytes)
   assert(C.encode(c.fleet.baseline,scalar)==baseline and C.encode(c.fleet.windReceipt,scalar)==receipt,"Immutable baseline and permanent purchase")
-  assert(c.bank.windConstructionSpentMinor==400000 and c.bank.openingGrantMinor==100000,"No repeat capital or grant")
+  assert(c.bank.windConstructionSpentMinor==price and c.bank.openingGrantMinor==100000,"No repeat capital or grant")
   assert(a.state.step>=step and c.economy.lastSettledStep==a.state.step,"Monotonic exact financial cursor")
   if a.state.step>step then advancedAt=os.clock();step=a.state.step end
   assert(os.clock()-advancedAt<10,"Normal owned host continues progressing")

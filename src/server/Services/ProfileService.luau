@@ -16,6 +16,10 @@ function Service.create(deps:any)
   assert(deps.schema==require(script.Parent.Parent.Domain.ProfileSchema2) and deps.lease==require(script.Parent.Parent.Domain.ExistingEconomyLease),"Existing economy contract required")
  end
  assert(not deps.schema or tostring(deps.adapter.mode)=="Fake" or approvedEconomy or approvedConstruction or approvedPostBuild,"Economic profiles are fake-storage only unless explicitly approved")
+ if deps.windDefinitionVersion~=nil then
+  assert(deps.adapter.mode=="Fake" and Schema==require(script.Parent.Parent.Domain.ProfileSchema4),"Wind catalogue trial is fake schema4 only")
+  require(script.Parent.Parent.Domain.WindProject).price(deps.windDefinitionVersion)
+ end
  local entries:{[number]:any}={};local count=0;local inFlight=0;local closing=false
  local peak=0;local calls=0;local lastUtc=deps.utcMs();local lastMono=deps.mono()
  local function owns(e:any):boolean
@@ -106,8 +110,12 @@ function Service.create(deps:any)
   Schema.integer(revision,e.profile.countryRevision,Schema.MAX_INTEGER)
   if e.latest then assert(revision>=e.latest.revision,"Pending revision regression")end
   local candidate=table.clone(e.profile);candidate.lastCommit=table.clone(e.profile.lastCommit)
-  candidate.country=if Schema==require(script.Parent.Parent.Domain.ProfileSchema4)
-   then require(script.Parent.Parent.Domain.FleetRecord).copyLive(country,country.fleet.baseline)else Codec.copy(country)
+  if Schema==require(script.Parent.Parent.Domain.ProfileSchema4)then
+   local Record=require(script.Parent.Parent.Domain.FleetRecord)
+   -- Capture has already validated the immutable server snapshot. Mutable
+   -- callers retain the independent-copy path; no callback can mutate a save.
+   candidate.country=Record.snapshot(country)
+  else candidate.country=Codec.copy(country)end
   candidate.countryRevision=revision
   candidate.lastCommit.countryRevision=revision
   local size,soft=Schema.validate(candidate,e.owner,deps.scalar)
@@ -147,10 +155,11 @@ function Service.create(deps:any)
   local revision=if e.latest then e.latest.revision else e.profile.countryRevision
   if before.fleet.windReceipt then return false,"AlreadyBuilt"end
   if not before.construction.receipt then return false,"DistrictRequired"end
-  local Project=require(script.Parent.Parent.Domain.WindProject)
+  local Project=require(script.Parent.Parent.Domain.WindProject).catalog(if deps.windDefinitionVersion==nil then 1 else deps.windDefinitionVersion)
   if before.bank.balanceMinor<Project.PRICE+Project.BUFFER then return false,"InsufficientCredits"end
   local snapshot=Project.build(before,operationId,revision+1,e.profile.profileRevision+1)
   local op=operation(e,"BuildWind",snapshot,revision+1)
+  op.windDefinitionVersion=Project.VERSION
   op.id=operationId;op.before=Codec.copy(before);op.beforeRevision=revision
   local candidate,why=Lease.apply(e.profile,op,deps.utcMs(),deps.scalar)
   if not candidate then return false,why end

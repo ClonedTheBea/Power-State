@@ -154,14 +154,15 @@ function Schema.country(c:any,scalar:((any)->string)?)
   assert(c.bank.constructionSpentMinor==District.PRICE,"District capital")
  else R.equal(c.construction,District.empty(),encode);assert(c.bank.constructionSpentMinor==0,"Empty district capital")end
  if f.windReceipt then
-  assert(district and f.investmentSerial==1 and c.bank.windConstructionSpentMinor==Wind.PRICE,"Wind prerequisite/serial/capital")
   local receipt=f.windReceipt
+  local price=Wind.price(receipt.definitionVersion)
+  assert(district and f.investmentSerial==1 and c.bank.windConstructionSpentMinor==price,"Wind prerequisite/serial/capital")
   R.fields(receipt,"projectId definitionVersion operationId priceMinor generatorId lineId step beforeBankMinor afterBankMinor countryRevision profileRevision")
   R.guid(receipt.operationId);local node,line=Wind.assets(c)
-  assert(receipt.projectId==Wind.ID and receipt.definitionVersion==1 and receipt.priceMinor==Wind.PRICE and receipt.generatorId==node.id and receipt.lineId==line.id,"Wind semantic receipt")
+  assert(receipt.projectId==Wind.ID and receipt.priceMinor==price and receipt.generatorId==node.id and receipt.lineId==line.id,"Wind semantic receipt")
   R.integer(receipt.step,math.max(f.cutoverStep,district.step),c.simulation.step)
-  R.integer(receipt.beforeBankMinor,Wind.PRICE+Wind.BUFFER,R.LIMIT);R.integer(receipt.afterBankMinor,Wind.BUFFER,R.LIMIT)
-  assert(receipt.beforeBankMinor-receipt.afterBankMinor==Wind.PRICE,"One capital debit")
+  R.integer(receipt.beforeBankMinor,price+Wind.BUFFER,R.LIMIT);R.integer(receipt.afterBankMinor,Wind.BUFFER,R.LIMIT)
+  assert(receipt.beforeBankMinor-receipt.afterBankMinor==price,"One capital debit")
   for _,key in {"countryRevision","profileRevision"}do R.integer(receipt[key],1,Schema.MAX_INTEGER)end
   table.insert(expected.builtNodes,node);table.insert(expected.builtLines,line)
   R.fields(f.windState,"on capKW");local u=f.units[node.id]

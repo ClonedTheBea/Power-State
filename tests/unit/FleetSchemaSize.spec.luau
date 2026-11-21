@@ -149,5 +149,5 @@ return function()
  print("FLEET_SCHEMA_SIZE_INITIAL",H:JSONEncode({checks=checks,samples=observations,
   status="Representative and supported-range pure gate samples; not persistence or runtime acceptance"}))
  print("FLEET_SCHEMA_SIZE_COUNTS",checks)
- return {funded=full,built=after,post=post,world=fixture.world,samples=observations,upperBytes=bound}
+ return {funded=full,built=after,post=post,high=large,world=fixture.world,samples=observations,upperBytes=bound}
 end

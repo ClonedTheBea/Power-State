@@ -1,8 +1,8 @@
 --!strict
-return function(fixtures:any)
+return function(fixtures:any,definitionVersion:number?,adapterFactory:any?)
  local S=game.ServerScriptService.Server;local H=game:GetService("HttpService")
  local C=require(S.Domain.ProfileCodec);local V=require(S.Domain.ProfileSchema4);local L=require(S.Domain.ProfileLease4)
- local Project=require(S.Domain.WindProject);local Service=require(S.Services.ProfileService)
+ local Project=require(S.Domain.WindProject).catalog(definitionVersion or 1);local Service=require(S.Services.ProfileService)
  local Fake=require(S.Adapters.FakeDataStoreAdapter);local Country=require(S.Domain.FleetCountry)
  local Network=require(S.Domain.CountryFleetNetwork);local Solver=require(S.Operations.FleetSolver)
  local Controls=require(S.Services.FleetControls);local Quotes=require(S.Services.ConstructionQuotes)
@@ -13,8 +13,9 @@ return function(fixtures:any)
  local owner=149564436;local key="u:"..owner
  local completed:any=nil
  for _,fault in {"None","BeforeWrite","AfterWrite","CallbackReplay"}do
-  local store=Fake.create({[key]=fixtures.funded});local now=2000000000
-  local p=Service.create({adapter=store,schema=V,lease=L,id=id,scalar=scalar,jobId="FleetFake",placeId=1,
+  task.wait() -- Between independent fake scenarios, never inside a transaction.
+  local store=(adapterFactory or Fake.create)({[key]=fixtures.funded});local now=2000000000
+  local p=Service.create({adapter=store,schema=V,lease=L,windDefinitionVersion=definitionVersion or 1,id=id,scalar=scalar,jobId="FleetFake",placeId=1,
    utcMs=function()return math.floor(now*1000)end,mono=function()return now end,random=function()return 0 end,spawn=function(fn)fn()end})
   local function drain(test:()->boolean)
    for _=1,60 do p.tick();if test()then return end;now+=.01 end;error("Bounded fake coordinator did not complete")
@@ -40,7 +41,7 @@ return function(fixtures:any)
   check((duplicate.state=="Saving"or duplicate.state=="Rejected")and e.op==operation and not p.canMutate(e),"Double click retains exactly one critical operation, including rate-limit rejection")
   drain(function()q.tick();return q.status().state=="Built"end)
   local saved=p.profile(e)
-  check(saved.country.bank.balanceMinor==fixtures.funded.country.bank.balanceMinor-400000,"Exactly one capital debit: "..fault)
+  check(saved.country.bank.balanceMinor==fixtures.funded.country.bank.balanceMinor-Project.PRICE,"Exactly one capital debit: "..fault)
   check(saved.country.simulation.step==step and equal(saved.country.economy,fixtures.funded.country.economy),"No critical-transaction billing")
   check(#saved.country.deltas.builtNodes==2 and #saved.country.deltas.builtLines==2,"Exactly one new node and edge")
   check(C.encode(saved.country.fleet.baseline,scalar)==baseline,"Build preserves frozen baseline")
@@ -75,13 +76,13 @@ return function(fixtures:any)
   p.close(re);drain(function()return p.stats().profiles==0 end)
   completed=store.inspect(key)
  end
- for _,amount in {424999,425000,425001}do
+ for _,amount in {Project.PRICE+24999,Project.PRICE+25000,Project.PRICE+25001}do
   -- Direct project precondition test; not a funded profile or claimed save.
   local c=C.copy(fixtures.funded.country);c.bank.balanceMinor=amount
   local ok,result=pcall(Project.build,c,id(),99999,99999)
-  check(ok==(amount>=425000),"Exact wind affordability boundary")
-  if ok then check(result.bank.balanceMinor==amount-400000,"Retained 250-Credit buffer")end
+  check(ok==(amount>=Project.PRICE+25000),"Exact wind affordability boundary")
+  if ok then check(result.bank.balanceMinor==amount-Project.PRICE,"Retained 250-Credit buffer")end
  end
- print("FLEET_TRANSACTIONS_PASS",checks)
+ print("FLEET_TRANSACTIONS_PASS",checks,"catalogue",Project.VERSION)
  return completed
 end

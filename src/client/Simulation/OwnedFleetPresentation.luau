@@ -3,6 +3,7 @@
 local C=require(script.Parent.Parent.Views.Components)
 local Theme=require(script.Parent.Parent.Theme)
 local Bank=require(script.Parent.BankPresentation)
+local Currency=require(game:GetService("ReplicatedStorage").Shared.Util.CurrencyFormat)
 local Presentation={}
 function Presentation.create(app:any,current:()->any,healthy:()->boolean,age:()->number,quote:(string)->(),control:(string,boolean,number)->()):any
  local v=app.view
@@ -21,14 +22,14 @@ function Presentation.create(app:any,current:()->any,healthy:()->boolean,age:()-
   local s=current();local q=s.fleet.project
   if not healthy()or s.suspended or s.fleet.built or not s.built or q.state=="Saving"or q.state=="Unavailable"then return "Disabled"end
   if not q.quoteId or q.expiresIn<=age()or q.state=="QuoteExpired"or q.state=="DrainingSave"then return "Quote"end
-  if s.bankMinor>=425000 and q.state=="Available"then return "Confirm"end
-  if s.bankMinor>=425000 and q.state=="InsufficientCredits"then return "Quote"end
+  if s.bankMinor>=q.priceMinor+q.bufferMinor and q.state=="Available"then return "Confirm"end
+  if s.bankMinor>=q.priceMinor+q.bufferMinor and q.state=="InsufficientCredits"then return "Quote"end
   return "Disabled"
  end
  local function details():string
   local s=current();local f=s.fleet
-  return string.format("%s\n\nStarter Wind Farm · 2 MW nameplate\nSurveyed western pad and 2 MW connection\nPrice: 4,000 Credits\nBank: %s\nConfirmed: %.2f Credits\nKeep at least 250 Credits and the next gross operating cost.\n\n%s\n\nVariable production: 0–1.6 MW under wind model v1. Gas supplies the remainder when available.\nWind cost: 0 Credits/MWh + 6 Credits/simulated hour while On. Only delivered energy earns 120 Credits/MWh. Curtailed wind earns nothing. Savings depend on actual dispatch.\n\nOne purchase per country. Closing this review cannot cancel a submitted save. Fake Test saves only.",
-   if f.built then "Built · saved once"else f.project.state,Bank.exact(s),(s.save.savedBankMinor or 0)/100,
+  return string.format("%s\n\nStarter Wind Farm · 2 MW nameplate\nSurveyed western pad and 2 MW connection\nPrice: %s\nBank: %s\nConfirmed: %.2f Credits\nKeep at least 250 Credits and the next gross operating cost.\n\n%s\n\nVariable production: 0–1.6 MW under wind model v1. Gas supplies the remainder when available.\nWind cost: 0 Credits/MWh + 6 Credits/simulated hour while On. Only delivered energy earns 120 Credits/MWh. Curtailed wind earns nothing. Savings depend on actual dispatch.\n\nOne purchase per country. Closing this review cannot cancel a submitted save. Fake Test saves only.",
+   if f.built then "Built · saved once"else f.project.state,Currency.format(if f.built then s.finance.bank.windConstructionSpentMinor else f.project.priceMinor),Bank.exact(s),(s.save.savedBankMinor or 0)/100,
    if s.built then "District prerequisite complete."else "Connect the new district first.")
  end
  local function open()
@@ -56,13 +57,14 @@ function Presentation.create(app:any,current:()->any,healthy:()->boolean,age:()-
    v.inspector.title.Text=if wind then "Starter Wind Farm"else "Gas power station"
    v.inspector.tag.Text=if wind and not f.built then "Surveyed · not built"else "Owned generation · fake Test"
    local output=if f.dispatch then f.dispatch.sources[app.state.selectedId]else nil
-   local supply=if f.dispatch and f.dispatch.availableKW then string.format("Last available %.3f MW · unused %.3f MW",f.dispatch.availableKW[app.state.selectedId]/1000,f.dispatch.curtailedKW[app.state.selectedId]/1000)else "Availability awaiting interval"
+   local supply=if f.dispatch and f.dispatch.availableKW then string.format("Last permitted %.3f MW · unused %.3f MW",f.dispatch.availableKW[app.state.selectedId]/1000,f.dispatch.curtailedKW[app.state.selectedId]/1000)else "Availability awaiting interval"
    v.inspector.body.Text=if u then string.format("%s · cap %.1f MW\nLast completed output: %s\n%s\n%s\nControl: %s",if u.on then "On"else "Off",u.capKW/1000,
     if output then string.format("%.3f MW",output/1000)else "awaiting interval",
     supply,
-    if wind then string.format("Next wind potential: %.3f MW · variable",f.potentialKW/1000)else "80 Credits/MWh + 10 Credits/hour On",
-    s.controlOutcome or "Ready")else "2 MW wind investment\n4,000 Credits · district required\nNo electricity or costs before saved construction."
-   v.inspector.note.Text=if u then string.format("Produced %.3f MWh\nVariable costs %.2f · running costs %.2f Credits\n%s",u.generatedKwMinutes/60000,u.variableExpenseMinor/100,u.fixedExpenseMinor/100,if f.pending then "Dispatch update pending"else "Server-confirmed interval accounting")else "Review a fresh server quote to build."
+    if wind then string.format("Next weather potential: %.3f MW",f.potentialKW/1000)else "80 Credits/MWh + 10 Credits/hour On",
+    s.controlOutcome or "Ready")else "2 MW wind investment\n"..Currency.format(f.project.priceMinor).." · district required\nNo electricity or costs before saved construction."
+   v.inspector.note.Text=if u then string.format("Produced %.3f MWh\nVariable costs %.2f · running costs %.2f Credits\n%s%s",u.generatedKwMinutes/60000,u.variableExpenseMinor/100,u.fixedExpenseMinor/100,if f.pending then "Dispatch update pending"else "Server-confirmed interval accounting",
+    if wind then "\nCap is a limit, not an output target. Weather, On/Off and network delivery limit production. Keep gas available for calm periods. Wind costs 6 Credits/hour while On."else "")else "Review a fresh server quote to build."
   end
   for i=4,#v.map.linkFrames do
    local line=v.map.linkFrames[i];local flow=if f.dispatch then math.abs(f.dispatch.flowsKW[f.line.id]or 0)/1000 else 0
@@ -72,7 +74,7 @@ function Presentation.create(app:any,current:()->any,healthy:()->boolean,age:()-
   confirm.Visible=v.feedback.root.Visible and v.feedback.root:GetAttribute("FleetReview")==true
   if confirm.Visible then
    local a=action();confirm.Active=a~="Disabled";confirm.Selectable=confirm.Active
-   confirm.Text=if f.built then "Built · saved in this Test server"elseif f.project.state=="Saving"then "Checking saved result…"elseif a=="Quote"then "Refresh Quote"elseif not s.built then "Connect the district first"elseif s.bankMinor<425000 then "Need 4,250 Credits"else "Build for 4,000 Credits"
+   confirm.Text=if f.built then "Built · saved in this Test server"elseif f.project.state=="Saving"then "Checking saved result…"elseif a=="Quote"then "Refresh Quote"elseif not s.built then "Connect the district first"elseif s.bankMinor<f.project.priceMinor+f.project.bufferMinor then "Need "..Currency.format(f.project.priceMinor+f.project.bufferMinor)else "Build for "..Currency.format(f.project.priceMinor)
    local scroll=v.feedback.root.Message :: ScrollingFrame
    scroll.Position=UDim2.fromOffset(16,60);scroll.Size=UDim2.new(1,-32,1,-136);v.feedback.updateDetails(details())
   end

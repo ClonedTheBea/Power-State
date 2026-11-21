@@ -1,0 +1,2079 @@
+[
+  {
+    "timestamp": "2026-11-21T10:00:15.814Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "requestedCadence": 60,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.4575000493787229,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.9431000216864049,
+        "cpuMs": 1.4581001596525311
+      },
+      "installed": 8,
+      "peakInstallMs": 29.933899990282953,
+      "admissionMs": 0.8500999538227916,
+      "totalCpuMs": 178.93729999195784,
+      "totalWallMs": 361.47589999018237,
+      "peakCallbackMs": 29.947400034870952
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:00:16.297Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "requestedCadence": 30,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.21970004308968782,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.9628000552766025,
+        "cpuMs": 1.249500084668398
+      },
+      "installed": 8,
+      "peakInstallMs": 23.168999992776662,
+      "admissionMs": 0.7411999977193773,
+      "totalCpuMs": 168.53409999748692,
+      "totalWallMs": 482.97399998409674,
+      "peakCallbackMs": 23.188999970443547
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.051Z",
+    "label": "after fullCountryCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.5712999845854938,
+      "p95": 0.9454999817535281,
+      "peak": 1.0238999966531992
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.150Z",
+    "label": "after liveCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.2970999921672046,
+      "p95": 0.526999996509403,
+      "peak": 0.5795999895781279
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.250Z",
+    "label": "after historyCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.25759998243302107,
+      "p95": 0.4592000041157007,
+      "peak": 0.4661999992094934
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.350Z",
+    "label": "after accountingCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.015900004655122757,
+      "p95": 0.032800016924738884,
+      "peak": 0.03489997470751405
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.450Z",
+    "label": "after countryValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.9040000042878091,
+      "p95": 2.4666000390425324,
+      "peak": 2.954399969894439
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.599Z",
+    "label": "after fullProfileValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 4.428400017786771,
+      "p95": 6.854999985080212,
+      "peak": 13.422099989838898
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.685Z",
+    "label": "after fullProfileEncoding",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.484999967738986,
+      "p95": 0.806800031568855,
+      "peak": 0.9280000231228769
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.785Z",
+    "label": "after capture",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.90690002636984,
+      "p95": 2.3819999769330025,
+      "peak": 2.400500001385808
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.883Z",
+    "label": "after settlement",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.3082000184804201,
+      "p95": 0.4963999963365495,
+      "peak": 0.505700008943677
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:44.983Z",
+    "label": "after complete",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 2.5111999711953104,
+      "p95": 3.043800010345876,
+      "peak": 3.099000023212284
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:46.225Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "requestedCadence": 60,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.17420004587620497,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.7634999928995967,
+        "cpuMs": 0.9968000231310725
+      },
+      "installed": 8,
+      "peakInstallMs": 23.47600000211969,
+      "admissionMs": 0.5309000262059271,
+      "totalCpuMs": 173.06769994320348,
+      "totalWallMs": 373.68010001955554,
+      "peakCallbackMs": 23.489599989261478
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:04:46.704Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "requestedCadence": 30,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.22579997312277555,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.9247999987564981,
+        "cpuMs": 1.2363000423647463
+      },
+      "installed": 8,
+      "peakInstallMs": 23.560900008305907,
+      "admissionMs": 0.6927000358700752,
+      "totalCpuMs": 176.01740005193278,
+      "totalWallMs": 479.39440002664924,
+      "peakCallbackMs": 23.596699989866465
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:16.361Z",
+    "label": "after fullCountryCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.6279000081121922,
+      "p95": 1.0563000105321407,
+      "peak": 1.3472000136971474
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:16.462Z",
+    "label": "after liveCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.32029999420046806,
+      "p95": 0.43210003059357405,
+      "peak": 0.5137999542057514
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:16.561Z",
+    "label": "after historyCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.2609000075608492,
+      "p95": 0.4292999510653317,
+      "peak": 0.4471999709494412
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:16.662Z",
+    "label": "after accountingCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.013000040780752897,
+      "p95": 0.021600048057734966,
+      "peak": 0.02169999061152339
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:16.762Z",
+    "label": "after countryValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.8727999995462596,
+      "p95": 2.378600009251386,
+      "peak": 2.648100024089217
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:16.912Z",
+    "label": "after fullProfileValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 4.443700017873198,
+      "p95": 5.419299995992333,
+      "peak": 14.283299969974905
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:17.012Z",
+    "label": "after fullProfileEncoding",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.5077000241726637,
+      "p95": 0.7838999736122787,
+      "peak": 0.7977000204846263
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:17.112Z",
+    "label": "after capture",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.9678000244311988,
+      "p95": 2.715500013437122,
+      "peak": 2.916300029028207
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:17.212Z",
+    "label": "after settlement",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.31450000824406743,
+      "p95": 0.44490001164376736,
+      "peak": 0.5698999739252031
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:17.311Z",
+    "label": "after complete",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 2.6230000075884163,
+      "p95": 3.1116000027395785,
+      "peak": 3.223499981686473
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:17.317Z",
+    "label": "after",
+    "kind": "FLEET11_SIZE_BREAKDOWN",
+    "data": {
+      "deltas": 804,
+      "construction": 448,
+      "simulation": 82162,
+      "frozenBaseline": 88186,
+      "frozenHistory": 81943,
+      "liveHistory": 81943,
+      "economy": 5152,
+      "bank": 324,
+      "fleet": 89279
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:18.551Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "requestedCadence": 60,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.24449999909847975,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.9928999934345484,
+        "cpuMs": 1.2994999415241182
+      },
+      "installed": 8,
+      "peakInstallMs": 23.18099996773526,
+      "admissionMs": 0.7543999818153679,
+      "totalCpuMs": 174.92529994342476,
+      "totalWallMs": 365.0200999691151,
+      "peakCallbackMs": 23.19879998685792
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:19.031Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "requestedCadence": 30,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.23799994960427284,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 1.0415000142529607,
+        "cpuMs": 1.3424998614937067
+      },
+      "installed": 8,
+      "peakInstallMs": 23.682500002905726,
+      "admissionMs": 0.6506000063382089,
+      "totalCpuMs": 169.4252000306733,
+      "totalWallMs": 479.98280002502725,
+      "peakCallbackMs": 23.736000002827495
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:30.762Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 2052,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1169220,
+      "firstDaySavingsMinor": 141496,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:31.962Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 2666,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1208602,
+      "firstDaySavingsMinor": 146747,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:33.218Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 3066,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1189426,
+      "firstDaySavingsMinor": 144190,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:35.414Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 158,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 4209,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1540,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1195050,
+      "firstDaySavingsMinor": 144940,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:37.360Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 2065,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1115642,
+      "firstDaySavingsMinor": 134353,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:38.528Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 2731,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1155404,
+      "firstDaySavingsMinor": 139654,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:39.790Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 3087,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1196326,
+      "firstDaySavingsMinor": 145110,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:42.056Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 180,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 4160,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1283746,
+      "firstDaySavingsMinor": 156766,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:44.033Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 20,
+      "below75KWIntervals": 10,
+      "paybackIntervals": 2089,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1568,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1258978,
+      "firstDaySavingsMinor": 153464,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:45.103Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 132,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 2393,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1568,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1264376,
+      "firstDaySavingsMinor": 154183,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:46.332Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 78,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 2928,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1514,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1189376,
+      "firstDaySavingsMinor": 144183,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:07:48.522Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 52,
+      "below75KWIntervals": 4,
+      "paybackIntervals": 4129,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1600,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1104466,
+      "firstDaySavingsMinor": 132862,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:30.441Z",
+    "label": "after fullCountryCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.5784999812021852,
+      "p95": 0.7870999979786575,
+      "peak": 0.8336000028066337
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:30.541Z",
+    "label": "after liveCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.31099998159334064,
+      "p95": 0.5407999851740897,
+      "peak": 0.5661000031977892
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:30.640Z",
+    "label": "after historyCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.2523000002838671,
+      "p95": 0.3797999816015363,
+      "peak": 0.45950000640004873
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:30.740Z",
+    "label": "after accountingCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.01309998333454132,
+      "p95": 0.029699993319809437,
+      "peak": 0.1210999907925725
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:30.841Z",
+    "label": "after countryValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.8625000375322998,
+      "p95": 2.38100002752617,
+      "peak": 2.6029999717138708
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:31.065Z",
+    "label": "after fullProfileValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 7.0303999818861485,
+      "p95": 8.132299990393221,
+      "peak": 13.063800055533648
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:31.158Z",
+    "label": "after fullProfileEncoding",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 2.642700041178614,
+      "p95": 3.3699999912641943,
+      "peak": 3.4411000087857246
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:31.257Z",
+    "label": "after capture",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.8551999819464982,
+      "p95": 2.0753000280819833,
+      "peak": 2.200899994932115
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:31.357Z",
+    "label": "after settlement",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.30390004394575953,
+      "p95": 0.42719999328255653,
+      "peak": 0.48940000124275684
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:31.457Z",
+    "label": "after complete",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 2.5600999942980707,
+      "p95": 4.81670000590384,
+      "peak": 5.203400040045381
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:31.461Z",
+    "label": "after",
+    "kind": "FLEET11_SIZE_BREAKDOWN",
+    "data": {
+      "deltas": 804,
+      "construction": 448,
+      "simulation": 82162,
+      "frozenBaseline": 88186,
+      "frozenHistory": 81943,
+      "liveHistory": 81943,
+      "economy": 5152,
+      "bank": 324,
+      "fleet": 89279
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:32.707Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 19.20179999433458,
+      "peakCallbackMs": 20.42519999668002,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.21549995290115476,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 1.0089999996125698,
+        "cpuMs": 1.278999901842326
+      },
+      "installed": 8,
+      "callbackP95Ms": 20.42519999668002,
+      "admissionMs": 0.6706999847665429,
+      "totalCpuMs": 150.7258999045007,
+      "peakInstallMs": 20.409599994309247,
+      "round": 1,
+      "totalWallMs": 340.7660000375472,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:33.121Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 16.42830000491813,
+      "peakCallbackMs": 20.979000022634864,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.20589993800967932,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8743000216782093,
+        "cpuMs": 1.139399886596948
+      },
+      "installed": 8,
+      "callbackP95Ms": 20.979000022634864,
+      "admissionMs": 0.6120000034570694,
+      "totalCpuMs": 136.7904000217095,
+      "peakInstallMs": 20.103299990296364,
+      "round": 1,
+      "totalWallMs": 413.14479999709874,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:33.425Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 17.25309999892488,
+      "peakCallbackMs": 20.374000014271587,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.20340003538876772,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8757999748922884,
+        "cpuMs": 1.1464000563137233
+      },
+      "installed": 8,
+      "callbackP95Ms": 20.374000014271587,
+      "admissionMs": 0.603899999987334,
+      "totalCpuMs": 140.45689994236454,
+      "peakInstallMs": 20.34839999396354,
+      "round": 2,
+      "totalWallMs": 304.41859998973086,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:33.839Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 15.238600026350468,
+      "peakCallbackMs": 19.706399994902313,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.20009995205327868,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8647000067867339,
+        "cpuMs": 1.1232999968342483
+      },
+      "installed": 8,
+      "callbackP95Ms": 19.706399994902313,
+      "admissionMs": 0.5975000094622374,
+      "totalCpuMs": 131.75800000317395,
+      "peakInstallMs": 18.83990003261715,
+      "round": 2,
+      "totalWallMs": 413.48790004849434,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:34.191Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 17.523699963930994,
+      "peakCallbackMs": 19.36460001161322,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.2017999067902565,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.9248999995179474,
+        "cpuMs": 1.189699920359999
+      },
+      "installed": 8,
+      "callbackP95Ms": 19.36460001161322,
+      "admissionMs": 0.7286000181920826,
+      "totalCpuMs": 142.22330006305128,
+      "peakInstallMs": 19.048099988140166,
+      "round": 3,
+      "totalWallMs": 351.57060000346974,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:34.609Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 16.350099991541356,
+      "peakCallbackMs": 17.637500015553087,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.18769997404888272,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.7643999997526407,
+        "cpuMs": 1.0244000004604459
+      },
+      "installed": 8,
+      "callbackP95Ms": 17.637500015553087,
+      "admissionMs": 0.8540999842807651,
+      "totalCpuMs": 131.07170001603663,
+      "peakInstallMs": 17.61650003027171,
+      "round": 3,
+      "totalWallMs": 418.4277000022121,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:34.971Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 18.26680003432557,
+      "peakCallbackMs": 19.982900004833937,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.17739995382726192,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.7737000123597682,
+        "cpuMs": 1.0151999886147678
+      },
+      "installed": 8,
+      "callbackP95Ms": 19.982900004833937,
+      "admissionMs": 0.8205999620258808,
+      "totalCpuMs": 145.02539997920394,
+      "peakInstallMs": 19.969600019976497,
+      "round": 4,
+      "totalWallMs": 362.1432000072673,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:35.359Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 16.37919998029247,
+      "peakCallbackMs": 23.25370005564764,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.1905999961309135,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 1.0012999991886318,
+        "cpuMs": 1.2539999443106353
+      },
+      "installed": 8,
+      "callbackP95Ms": 23.25370005564764,
+      "admissionMs": 0.6102000479586422,
+      "totalCpuMs": 138.68450006702915,
+      "peakInstallMs": 23.241200018674135,
+      "round": 4,
+      "totalWallMs": 387.6239000237547,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:35.691Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 17.926200001966208,
+      "peakCallbackMs": 20.5703999963589,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.18530001398175955,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.770400045439601,
+        "cpuMs": 1.019699964672327
+      },
+      "installed": 8,
+      "callbackP95Ms": 20.5703999963589,
+      "admissionMs": 0.8275000145658851,
+      "totalCpuMs": 144.01280001038685,
+      "peakInstallMs": 20.55439999094233,
+      "round": 5,
+      "totalWallMs": 331.76809997530654,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:36.108Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 16.085500014014542,
+      "peakCallbackMs": 19.404000020585954,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.24050002684816718,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 1.0636000079102814,
+        "cpuMs": 1.3654001522809267
+      },
+      "installed": 8,
+      "callbackP95Ms": 19.404000020585954,
+      "admissionMs": 0.6662000087089837,
+      "totalCpuMs": 136.9519999716431,
+      "peakInstallMs": 19.392299989704043,
+      "round": 5,
+      "totalWallMs": 416.96959995897487,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:48.182Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 2052,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1169220,
+      "firstDaySavingsMinor": 141496,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:49.308Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 2666,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1208602,
+      "firstDaySavingsMinor": 146747,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:50.544Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 3066,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1189426,
+      "firstDaySavingsMinor": 144190,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:52.712Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 158,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 4209,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1540,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1195050,
+      "firstDaySavingsMinor": 144940,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:54.660Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 2065,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1115642,
+      "firstDaySavingsMinor": 134353,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:55.801Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 2731,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1155404,
+      "firstDaySavingsMinor": 139654,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:57.085Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 3087,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1196326,
+      "firstDaySavingsMinor": 145110,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:09:59.300Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 180,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 4160,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1283746,
+      "firstDaySavingsMinor": 156766,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:10:01.337Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 20,
+      "below75KWIntervals": 10,
+      "paybackIntervals": 2089,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1568,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1258978,
+      "firstDaySavingsMinor": 153464,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:10:02.424Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 132,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 2393,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1568,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1264376,
+      "firstDaySavingsMinor": 154183,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:10:03.650Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 78,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 2928,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1514,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1189376,
+      "firstDaySavingsMinor": 144183,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:10:05.833Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 52,
+      "below75KWIntervals": 4,
+      "paybackIntervals": 4129,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1600,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1104466,
+      "firstDaySavingsMinor": 132862,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:21.818Z",
+    "label": "after fullCountryCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.571100041270256,
+      "p95": 0.8861999958753586,
+      "peak": 1.0342999594286084
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:21.918Z",
+    "label": "after liveCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.3060000017285347,
+      "p95": 0.49860001308843493,
+      "peak": 0.5377999623306096
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.017Z",
+    "label": "after historyCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.2704000216908753,
+      "p95": 0.5524000152945518,
+      "peak": 0.595899997279048
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.118Z",
+    "label": "after accountingCopy",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.01290004001930356,
+      "p95": 0.02150004729628563,
+      "peak": 0.02169999061152339
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.218Z",
+    "label": "after countryValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.8330999882891774,
+      "p95": 2.289900032337755,
+      "peak": 2.6456000050529838
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.432Z",
+    "label": "after fullProfileValidation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 6.814500025939196,
+      "p95": 7.492800010368228,
+      "peak": 13.455300009809434
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.519Z",
+    "label": "after fullProfileEncoding",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 2.443400037009269,
+      "p95": 3.4189000143669546,
+      "peak": 3.4848000505007803
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.618Z",
+    "label": "after capture",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 1.8748000147752464,
+      "p95": 2.286900009494275,
+      "peak": 2.4258000194095075
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.718Z",
+    "label": "after settlement",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.30590000096708536,
+      "p95": 0.3619000199250877,
+      "peak": 0.4811999970115721
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:22.818Z",
+    "label": "after complete",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 2.462900010868907,
+      "p95": 2.722300007008016,
+      "peak": 2.7941999724134803
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:23.116Z",
+    "label": "after coordinatorStage",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 6.734900001902133,
+      "p95": 7.877200026996434,
+      "peak": 14.263000048231333
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:26.257Z",
+    "label": "after checkpointPreparation",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 0.5003000260330737,
+      "p95": 0.6985000218264759,
+      "peak": 0.8658000151626766
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:29.438Z",
+    "label": "after checkpointExecuteAndConfirm",
+    "kind": "FLEET11_PHASE",
+    "data": {
+      "p50": 96.68779995990917,
+      "p95": 106.88859998481348,
+      "peak": 116.3255000137724
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:29.525Z",
+    "label": "after",
+    "kind": "FLEET11_SIZE_BREAKDOWN",
+    "data": {
+      "deltas": 804,
+      "construction": 448,
+      "simulation": 82162,
+      "frozenBaseline": 88186,
+      "frozenHistory": 81943,
+      "liveHistory": 81943,
+      "economy": 5152,
+      "bank": 324,
+      "fleet": 89279
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:30.738Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 18.77019996754825,
+      "peakCallbackMs": 20.007200015243143,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.18290005391463637,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.9343999554403126,
+        "cpuMs": 1.1835000477731228
+      },
+      "installed": 8,
+      "callbackP95Ms": 20.007200015243143,
+      "admissionMs": 0.5471000331453979,
+      "totalCpuMs": 149.4131000363268,
+      "peakInstallMs": 19.99850000720471,
+      "round": 1,
+      "totalWallMs": 342.03170001273975,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:31.212Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 17.592900025192648,
+      "peakCallbackMs": 26.840999955311418,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.20889996085315943,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.894600001629442,
+        "cpuMs": 1.1690999381244183
+      },
+      "installed": 8,
+      "callbackP95Ms": 26.840999955311418,
+      "admissionMs": 0.6570999976247549,
+      "totalCpuMs": 150.41540004312992,
+      "peakInstallMs": 26.830899994820356,
+      "round": 1,
+      "totalWallMs": 473.158799984958,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:31.522Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 17.02219998696819,
+      "peakCallbackMs": 22.159399988595396,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.19860005704686046,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8518000249750912,
+        "cpuMs": 1.1234000558033586
+      },
+      "installed": 8,
+      "callbackP95Ms": 22.159399988595396,
+      "admissionMs": 0.6469999789260328,
+      "totalCpuMs": 141.42130000982434,
+      "peakInstallMs": 21.306199952960014,
+      "round": 2,
+      "totalWallMs": 310.0376999936998,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:31.991Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 17.928300017956644,
+      "peakCallbackMs": 24.83589999610558,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.2117999829351902,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.901399995200336,
+        "cpuMs": 1.1947999591939151
+      },
+      "installed": 8,
+      "callbackP95Ms": 24.83589999610558,
+      "admissionMs": 0.6354000070132315,
+      "totalCpuMs": 161.11949988408014,
+      "peakInstallMs": 24.815900018438697,
+      "round": 2,
+      "totalWallMs": 468.88090000720695,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:32.285Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 16.654300037771463,
+      "peakCallbackMs": 22.953999985475093,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.21549995290115476,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8957000100053847,
+        "cpuMs": 1.179100014269352
+      },
+      "installed": 8,
+      "callbackP95Ms": 22.953999985475093,
+      "admissionMs": 0.6345000001601875,
+      "totalCpuMs": 138.21520004421473,
+      "peakInstallMs": 22.05679996404797,
+      "round": 3,
+      "totalWallMs": 293.8678999780677,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:32.771Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 19.543500035069883,
+      "peakCallbackMs": 23.051200027111918,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.2463000128045678,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8956999517977238,
+        "cpuMs": 1.21640000725165
+      },
+      "installed": 8,
+      "callbackP95Ms": 23.051200027111918,
+      "admissionMs": 0.7215000223368406,
+      "totalCpuMs": 161.79760004160926,
+      "peakInstallMs": 23.037799983285367,
+      "round": 3,
+      "totalWallMs": 485.9236000338569,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:33.106Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 17.43250002618879,
+      "peakCallbackMs": 20.95109998481348,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.23149990011006594,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 1.1635000118985772,
+        "cpuMs": 1.4808999258093536
+      },
+      "installed": 8,
+      "callbackP95Ms": 20.95109998481348,
+      "admissionMs": 0.8367999689653516,
+      "totalCpuMs": 144.31329997023568,
+      "peakInstallMs": 20.93970001442358,
+      "round": 4,
+      "totalWallMs": 334.8107999772765,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:33.565Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 18.08429998345673,
+      "peakCallbackMs": 19.61779996054247,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.19280007109045982,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8649000083096325,
+        "cpuMs": 1.128300093114376
+      },
+      "installed": 8,
+      "callbackP95Ms": 19.61779996054247,
+      "admissionMs": 0.5933999782428145,
+      "totalCpuMs": 141.18889987003058,
+      "peakInstallMs": 19.605700043030083,
+      "round": 4,
+      "totalWallMs": 458.9840000262484,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:33.869Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 16.233200032729656,
+      "peakCallbackMs": 18.948899989482015,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.3158000181429088,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.9319999953731894,
+        "cpuMs": 1.312500040512532
+      },
+      "installed": 8,
+      "callbackP95Ms": 18.948899989482015,
+      "admissionMs": 0.7598000229336321,
+      "totalCpuMs": 132.1017001173459,
+      "peakInstallMs": 18.931600032374263,
+      "round": 5,
+      "totalWallMs": 303.39050001930445,
+      "requestedCadence": 60
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:34.331Z",
+    "label": "",
+    "kind": "OWNED_FLEET_PERFORMANCE",
+    "data": {
+      "note": "Studio Play; includes fake-coordinator staging, not hosted/device acceptance",
+      "coordinator": {
+        "peakInFlight": 1,
+        "calls": 8,
+        "inFlight": 0,
+        "profiles": 8
+      },
+      "callbackP50Ms": 16.772600007243454,
+      "peakCallbackMs": 18.732399970758706,
+      "solver": {
+        "maxQueue": 8,
+        "admissionMs": 0.2530000056140125,
+        "admitted": 8,
+        "retained": 0,
+        "pending": 0,
+        "peakMs": 0.8787999977357686,
+        "cpuMs": 1.1932000052183867
+      },
+      "installed": 8,
+      "callbackP95Ms": 18.732399970758706,
+      "admissionMs": 0.6668000132776797,
+      "totalCpuMs": 134.0284000034444,
+      "peakInstallMs": 18.71979999123141,
+      "round": 5,
+      "totalWallMs": 461.5813000127673,
+      "requestedCadence": 30
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:46.076Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 2052,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1169220,
+      "firstDaySavingsMinor": 141496,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:47.213Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 2666,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1208602,
+      "firstDaySavingsMinor": 146747,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:48.451Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 46,
+      "below75KWIntervals": 5,
+      "paybackIntervals": 3066,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1594,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1189426,
+      "firstDaySavingsMinor": 144190,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:50.673Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 158,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 4209,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1540,
+      "seed": "df307a52185f423288df5749229f0808",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1195050,
+      "firstDaySavingsMinor": 144940,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:52.631Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 2065,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1115642,
+      "firstDaySavingsMinor": 134353,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:53.773Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 2731,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1155404,
+      "firstDaySavingsMinor": 139654,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:55.049Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 14,
+      "below75KWIntervals": 17,
+      "paybackIntervals": 3087,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1196326,
+      "firstDaySavingsMinor": 145110,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:57.238Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 180,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 4160,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1562,
+      "seed": "00000000000000000000000000000000",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1283746,
+      "firstDaySavingsMinor": 156766,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:12:59.179Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 832,
+      "potentialMinKW": 20,
+      "below75KWIntervals": 10,
+      "paybackIntervals": 2089,
+      "minimumFirstDayBankMinor": 25016,
+      "bankAfterMinor": 25016,
+      "affordableStep": 963,
+      "potentialMaxKW": 1568,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 225016,
+      "firstDayWindKwMinutes": 1258978,
+      "firstDaySavingsMinor": 153464,
+      "priceCredits": 2000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:13:00.229Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1035,
+      "potentialMinKW": 132,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 2393,
+      "minimumFirstDayBankMinor": 25180,
+      "bankAfterMinor": 25180,
+      "affordableStep": 1166,
+      "potentialMaxKW": 1568,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 275180,
+      "firstDayWindKwMinutes": 1264376,
+      "firstDaySavingsMinor": 154183,
+      "priceCredits": 2500
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:13:01.411Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1221,
+      "potentialMinKW": 78,
+      "below75KWIntervals": 0,
+      "paybackIntervals": 2928,
+      "minimumFirstDayBankMinor": 25003,
+      "bankAfterMinor": 25003,
+      "affordableStep": 1352,
+      "potentialMaxKW": 1514,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 325003,
+      "firstDayWindKwMinutes": 1189376,
+      "firstDaySavingsMinor": 144183,
+      "priceCredits": 3000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:13:03.600Z",
+    "label": "",
+    "kind": "FLEET11_PRICE",
+    "data": {
+      "afterDistrictIntervals": 1620,
+      "potentialMinKW": 52,
+      "below75KWIntervals": 4,
+      "paybackIntervals": 4129,
+      "minimumFirstDayBankMinor": 25007,
+      "bankAfterMinor": 25007,
+      "affordableStep": 1751,
+      "potentialMaxKW": 1600,
+      "seed": "ffffffffffffffffffffffffffffffff",
+      "bankBeforeMinor": 425007,
+      "firstDayWindKwMinutes": 1104466,
+      "firstDaySavingsMinor": 132862,
+      "priceCredits": 4000
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:36:55.777Z",
+    "label": "",
+    "kind": "FLEET11_STORAGE_STUDY",
+    "data": {
+      "warning": "proposal only; not a schema4 encoded profile or migration",
+      "proposedBytes": 109946,
+      "savedBytes": 69120,
+      "beforeBytes": 179066,
+      "originalSchemaValidatedAfterExpansion": true,
+      "rows": 2880
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:36:55.838Z",
+    "label": "",
+    "kind": "FLEET11_STORAGE_STUDY",
+    "data": {
+      "warning": "proposal only; not a schema4 encoded profile or migration",
+      "proposedBytes": 110985,
+      "savedBytes": 69120,
+      "beforeBytes": 180105,
+      "originalSchemaValidatedAfterExpansion": true,
+      "rows": 2880
+    }
+  },
+  {
+    "timestamp": "2026-11-21T10:36:55.898Z",
+    "label": "",
+    "kind": "FLEET11_STORAGE_STUDY",
+    "data": {
+      "warning": "proposal only; not a schema4 encoded profile or migration",
+      "proposedBytes": 107833,
+      "savedBytes": 69120,
+      "beforeBytes": 176953,
+      "originalSchemaValidatedAfterExpansion": true,
+      "rows": 2880
+    }
+  }
+]

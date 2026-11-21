@@ -1,10 +1,10 @@
 --!strict
-return function(fixtures:any)
+return function(fixtures:any,rounds:number?,adapterFactory:any?)
  local S=game.ServerScriptService.Server;local H=game:GetService("HttpService")
  local heapBefore=gcinfo()
  local Country=require(S.Domain.FleetCountry);local Batch=require(S.Services.CountryFleetBatch)
  local Profiles=require(S.Services.ProfileService);local Fake=require(S.Adapters.FakeDataStoreAdapter)
- local store=Fake.create();local profiles=Profiles.create({adapter=store,schema=require(S.Domain.ProfileSchema4),lease=require(S.Domain.ProfileLease4),
+ local store=(adapterFactory or Fake.create)();local profiles=Profiles.create({adapter=store,schema=require(S.Domain.ProfileSchema4),lease=require(S.Domain.ProfileLease4),
   id=function()return H:GenerateGUID(false)end,scalar=function(v:any)return H:JSONEncode(v)end,jobId="EightFleetFake",placeId=1,
   utcMs=function()return DateTime.now().UnixTimestampMillis end,mono=os.clock,random=function()return 0 end,spawn=function(fn)fn()end})
  local records={};local sourceId=fixtures.built.country.recipe.countryId
@@ -23,7 +23,7 @@ return function(fixtures:any)
   local actor:any={world=world,state=Country.restore(profiles.profile(e),world,e.commandEpoch)}
   table.insert(records,{actor=actor,entry=e})
  end
- for _,hz in {60,30}do
+ for round=1,rounds or 1 do for _,hz in {60,30}do
   local installed=0;local failure=nil;local at=os.clock()
   local batch=Batch.new(records,{current=function()return true end,
    install=function(b:any,state:any)
@@ -31,20 +31,21 @@ return function(fixtures:any)
     b.actor.state=state;installed+=1
    end,
    failed=function(_b:any,why:string)failure=why end})
-  local admission=(os.clock()-at)*1000;local peak=0;local installPeak=0;local callbacks=0
+  local admission=(os.clock()-at)*1000;local peak=0;local installPeak=0;local callbacks=0;local samples={}
   repeat
-   local began=os.clock();local m=batch.step();local cpu=(os.clock()-began)*1000;callbacks+=cpu;peak=math.max(peak,cpu);installPeak=math.max(installPeak,m.installMs)
+   local began=os.clock();local m=batch.step();local cpu=(os.clock()-began)*1000;callbacks+=cpu;peak=math.max(peak,cpu);installPeak=math.max(installPeak,m.installMs);table.insert(samples,cpu)
    if not batch.done()then task.wait(1/hz)end
   until batch.done()or os.clock()-at>2
   local stats=batch.stats();batch.close()
-  print("OWNED_FLEET_PERFORMANCE",H:JSONEncode({requestedCadence=hz,installed=installed,failure=failure,admissionMs=admission,
+  table.sort(samples)
+  print("OWNED_FLEET_PERFORMANCE",H:JSONEncode({storage=if adapterFactory then "compact"else "legacy",round=round,callbackP50Ms=samples[math.ceil(#samples*.5)],callbackP95Ms=samples[math.ceil(#samples*.95)],requestedCadence=hz,installed=installed,failure=failure,admissionMs=admission,
    peakCallbackMs=peak,peakInstallMs=installPeak,totalCpuMs=callbacks+admission,totalWallMs=(os.clock()-at)*1000,solver=stats,coordinator=profiles.stats(),
    note=if game:GetService("RunService"):IsRunning()then "Studio Play; includes fake-coordinator staging, not hosted/device acceptance"else "Studio edit mode; includes fake-coordinator staging, not client frame/device acceptance"}))
   assert(installed==8 and failure==nil,"All owned-country jobs must settle")
   assert(stats.peakMs<=4 and stats.cpuMs<=80,"Unchanged solver budgets")
   assert((os.clock()-at)<.750,"Eight-country native/30 Hz completion deadline")
   for _,b in records do assert(b.actor.fleetJob==nil,"No retained country job")end
- end
+ end end
  profiles.shutdown()
  for _=1,32 do profiles.tick();if profiles.stats().profiles==0 then break end end
  assert(profiles.stats().profiles==0 and profiles.stats().inFlight==0,"Eight fake owners released and coordinator drained")

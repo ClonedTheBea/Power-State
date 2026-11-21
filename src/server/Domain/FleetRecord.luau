@@ -3,6 +3,24 @@
 local Codec=require(script.Parent.ProfileCodec)
 local Legacy=require(script.Parent.ProfileSchema)
 local Record={integer=Legacy.integer,LIMIT=1000000000000000}
+local immutableProofs:any=setmetatable({},{__mode="k"})
+local function immutable(v:any,seen:any):boolean
+ if type(v)~="table"then return true end
+ if not table.isfrozen(v)or getmetatable(v)~=nil then return false end
+ if immutableProofs[v]then return true end
+ assert(not seen[v],"Cyclic immutable record");seen[v]=true
+ for _,item in v do if not immutable(item,seen)then seen[v]=nil;return false end end
+ seen[v]=nil
+ immutableProofs[v]=true;return true
+end
+function Record.immutable(v:any):boolean return immutable(v,{})end
+function Record.snapshot(v:any):any
+ -- Copy mutable branches only. Sharing a proven immutable branch cannot alias
+ -- a future mutation; the complete returned profile is still schema validated.
+ if type(v)~="table"or Record.immutable(v)then return v end
+ local n={};for key,item in v do n[key]=Record.snapshot(item)end
+ table.freeze(n);immutableProofs[n]=true;return n
+end
 function Record.fields(t:any,names:string,optional:string?)
  assert(type(t)=="table","Fleet record required")
  local allowed={}

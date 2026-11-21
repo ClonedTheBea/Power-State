@@ -18,14 +18,18 @@ function Service.start()
  assert(Run:IsStudio() and Run:IsServer() and game.GameId==10776833313,"Construction Test only")
  if started then return host end;started=true
  local fleet=game.ReplicatedStorage:GetAttribute("NationalFleetProof")==true
+ local fleet12=fleet and game.ReplicatedStorage:GetAttribute("Fleet12Proof")==true
+ if fleet12 then assert(game.CreatorId==149564436,"Fleet12 personal Test creator")end
+ local windCatalog=require(Domain.WindProject).catalog(if fleet12 then 2 else 1)
  local Schema:any=if fleet then require(Domain.ProfileSchema4)else Schema3
  local Lease:any=if fleet then require(Domain.ProfileLease4)else Lease3
  local Country:any=if fleet then require(Domain.FleetCountry)else Country3
  local batch:any=nil
- local store=require(script.Parent.Parent.Adapters.FakeDataStoreAdapter).create()
+ local store=if fleet12 then require(script.Parent.Parent.Adapters.FakeFleetStorageAdapter).create(nil,function(v:any):string return Http:JSONEncode(v)end)
+  else require(script.Parent.Parent.Adapters.FakeDataStoreAdapter).create()
  local function id():string return Http:GenerateGUID(false)end
  local function scalar(v:any):string return Http:JSONEncode(v)end
- local profiles=Profiles.create({adapter=store,schema=Schema,lease=Lease,id=id,scalar=scalar,jobId="P3cFake",placeId=game.PlaceId,
+ local profiles=Profiles.create({adapter=store,schema=Schema,lease=Lease,windDefinitionVersion=if fleet then windCatalog.VERSION else nil,id=id,scalar=scalar,jobId="P3cFake",placeId=game.PlaceId,
   utcMs=function()return DateTime.now().UnixTimestampMillis end,mono=os.clock,random=function()return .5 end,spawn=task.spawn})
  local actors:{[Player]:any}={};local admitted=0
  local folder=Instance.new("Folder");folder.Name="P3cConstruction"
@@ -156,7 +160,7 @@ function Service.start()
       canResume=function()return profiles.canMutate(e)end,
       install=function(p)a.state=Country.restore(p,a.world,e.commandEpoch,if fleet then a.state else nil);a.elapsed=0 end})
      if fleet then
-      a.windQuotes=Quotes.create({owner=player.UserId,epoch=e.commandEpoch,id=id,now=os.clock,project=require(Domain.WindProject),
+      a.windQuotes=Quotes.create({owner=player.UserId,epoch=e.commandEpoch,id=id,now=os.clock,project=windCatalog,
        receipt=function(c)return c.fleet.windReceipt end,
        topology=function(c:any)return c.construction.topologyRevision+c.fleet.investmentSerial end,
        eligible=function(c)return c.construction.receipt~=nil end,

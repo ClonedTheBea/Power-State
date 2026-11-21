@@ -52,7 +52,12 @@ function Project.validateSite(country:any)
  assert(length==384,"Pinned wind route length")
  return count
 end
-function Project.build(country:any,operationId:string,countryRevision:number,profileRevision:number):any
+function Project.price(version:number):number
+ assert(version==1 or version==2,"Unsupported wind catalogue revision")
+ return if version==1 then 400000 else 200000
+end
+function Project.build(country:any,operationId:string,countryRevision:number,profileRevision:number,definitionVersion:number?):any
+ local version=if definitionVersion==nil then 1 else definitionVersion;local price=Project.price(version)
  assert(country.fleet and country.bank.ledgerVersion==4,"Fleet migration required")
  assert(not country.fleet.windReceipt,"AlreadyBuilt")
  assert(country.construction.receipt,"DistrictRequired")
@@ -62,13 +67,18 @@ function Project.build(country:any,operationId:string,countryRevision:number,pro
  n.fleet.units[node.id]={costVersion=1,on=true,capKW=2000,generatedKwMinutes=0,onlineSteps=0,
   variableExpenseMinor=0,fixedExpenseMinor=0,variableExpenseRemainder=0,fixedExpenseRemainder=0}
  local reserve=require(script.Parent.FleetEconomy).reservation(n)
- assert(country.bank.balanceMinor>=Project.PRICE+math.max(Project.BUFFER,reserve),"InsufficientCredits")
- n.bank.balanceMinor-=Project.PRICE;n.bank.spentMinor+=Project.PRICE;n.bank.windConstructionSpentMinor=Project.PRICE
+ assert(country.bank.balanceMinor>=price+math.max(Project.BUFFER,reserve),"InsufficientCredits")
+ n.bank.balanceMinor-=price;n.bank.spentMinor+=price;n.bank.windConstructionSpentMinor=price
  table.insert(n.deltas.builtNodes,node);table.insert(n.deltas.builtLines,line)
  n.fleet.investmentSerial=1;n.fleet.windState={on=true,capKW=2000}
- n.fleet.windReceipt={projectId=Project.ID,definitionVersion=1,operationId=operationId,priceMinor=Project.PRICE,
+ n.fleet.windReceipt={projectId=Project.ID,definitionVersion=version,operationId=operationId,priceMinor=price,
   generatorId=node.id,lineId=line.id,step=n.simulation.step,beforeBankMinor=country.bank.balanceMinor,
   afterBankMinor=n.bank.balanceMinor,countryRevision=countryRevision,profileRevision=profileRevision}
  return n
+end
+function Project.catalog(version:number):any
+ local result=table.clone(Project);result.VERSION=version;result.PRICE=Project.price(version)
+ result.build=function(c:any,id:string,cr:number,pr:number):any return Project.build(c,id,cr,pr,version)end
+ return table.freeze(result)
 end
 return table.freeze(Project)

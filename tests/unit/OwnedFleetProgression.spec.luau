@@ -1,12 +1,12 @@
 --!strict
 -- Exact fresh-country progression, with no waiting, grants or Training imports.
 -- Accelerated pure replay measures simulated intervals, not human playtest time.
-return function()
+return function(onCandidate:((any,any,number,number)->())?,definitionVersion:number?)
  local S=game.ServerScriptService.Server;local H=game:GetService("HttpService")
  local L1=require(S.Domain.ProfileLease);local L2=require(S.Domain.ProfileLease2)
  local C=require(S.Domain.FleetCountry);local PC=require(S.Domain.ProfileCountry)
  local Base=require(S.Simulation.Country);local Demand=require(S.World.DemandModel)
- local District=require(S.Domain.ConstructionProject);local Wind=require(S.Domain.WindProject)
+ local District=require(S.Domain.ConstructionProject);local Wind=require(S.Domain.WindProject).catalog(definitionVersion or 1)
  local V=require(S.Domain.ProfileSchema4);local rows={}
  local function id():string return H:GenerateGUID(false)end
  local function scalar(v:any):string return H:JSONEncode(v)end
@@ -22,24 +22,32 @@ return function()
   p=require(S.Domain.ProfileMigrations3).read(p,149564436,scalar)
   p=require(S.Domain.ProfileMigrations4).read(p,149564436,id(),scalar)
   local epoch=id();local state=C.restore(p,world,epoch);local districtStep=0;local windStep=0;local windBank=0
+  local candidates={}
   local function install(country:any)
    p.country=country;p.countryRevision=state.revision+1;p.lastCommit.countryRevision=p.countryRevision
    V.validate(p,149564436,scalar);state=C.restore(p,world,epoch,state)
   end
   for i=1,3000 do
    state=C.advanceLegacy(state,world,Demand.atStep(state.step,world.meanTemperatureCentiC,1000).demandMW)
+   if state.construction.receipt and onCandidate then
+    for _,price in {200000,250000,300000,400000}do
+     if not candidates[price]and state.bank.balanceMinor>=price+25000 then
+      candidates[price]=true;onCandidate(C.capture(world,state),world,price,districtStep)
+     end
+    end
+   end
    if not state.construction.receipt and state.bank.balanceMinor>=125000 then
     districtStep=state.step;install(District.build(C.capture(world,state),id(),p.countryRevision+1,p.profileRevision))
-   elseif state.construction.receipt and state.bank.balanceMinor>=425000 then
+   elseif state.construction.receipt and state.bank.balanceMinor>=Wind.PRICE+Wind.BUFFER then
     windStep=state.step;windBank=state.bank.balanceMinor
     install(Wind.build(C.capture(world,state),id(),p.countryRevision+1,p.profileRevision));break
    end
    if i%30==0 then task.wait()end
   end
   assert(districtStep>0 and windStep>districtStep,"Bounded genuine progression reaches both projects")
-  assert(state.bank.balanceMinor==windBank-400000 and state.bank.balanceMinor>=25000,"Exact wind debit retains buffer")
-  assert(state.bank.openingGrantMinor==100000 and state.bank.constructionSpentMinor+state.bank.windConstructionSpentMinor==500000,"One original grant and two approved capital debits")
-  table.insert(rows,{seed=seed,districtStep=districtStep,windStep=windStep,afterDistrictIntervals=windStep-districtStep,
+  assert(state.bank.balanceMinor==windBank-Wind.PRICE and state.bank.balanceMinor>=25000,"Exact wind debit retains buffer")
+  assert(state.bank.openingGrantMinor==100000 and state.bank.constructionSpentMinor+state.bank.windConstructionSpentMinor==100000+Wind.PRICE,"One original grant and two approved capital debits")
+  table.insert(rows,{catalogue=Wind.VERSION,priceMinor=Wind.PRICE,seed=seed,districtStep=districtStep,windStep=windStep,afterDistrictIntervals=windStep-districtStep,
    windBankMinor=windBank,postWindBankMinor=state.bank.balanceMinor,temperature=world.meanTemperatureCentiC})
  end
  print("[Owned fleet progression] PASS",H:JSONEncode(rows),"accelerated exact replay; not wall-clock or player acceptance")
